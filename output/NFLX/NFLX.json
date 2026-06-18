@@ -8,14 +8,14 @@
   "currency": "USD",
   "date": "2026-06-18",
   "engine": "Atlas v3",
-  "our_view": "BUY with MEDIUM conviction. Netflix at $80.50 trades at the subscription floor; he business alone (subscription annuity at 22x EBIT) is worth the current price, meaning the market prices advertising at zero. The crux is whether ad ARPU can scale from $12/viewer/year today to $22 by 2030 ($6.5B revenue). That is our base case, anchored on contracted $3B FY2026 ad guidance, WARC's $8B 2030 CTV forecast, and the in-house ad tech platform scheduled for 2027 completion. At base, fair value is $88; 12m target $101 (+25%). The single biggest risk: Amazon's first-party purchase data creates a structural CPM gap that prevents Netflix from closing the yield arbitrage; n that scenario, the stock is fairly valued at $68.",
+  "our_view": "BUY with MEDIUM conviction. Netflix at $80.50 trades at the subscription floor; the business alone (subscription annuity at 22x EBIT) is worth the current price, meaning the market prices advertising at zero. The crux is whether ad ARPU can scale from $12/viewer/year today to $22 by 2030 ($6.5B revenue). That is our base case, anchored on contracted $3B FY2026 ad guidance, WARC's $8B 2030 CTV forecast, and the in-house ad tech platform scheduled for 2027 completion. At base, fair value is $88; 12m target $101 (+25%). The single biggest risk: Amazon's first-party purchase data creates a structural CPM gap that prevents Netflix from closing the yield arbitrage; in that scenario, the stock is fairly valued at $68.",
   "crux": {
-    "variable": "Netflix annual advertising revenue ($B); pecifically, advertising ARM (revenue per ad-tier MAV) per viewer-year",
+    "variable": "Netflix annual advertising revenue ($B); specifically, advertising ARM (revenue per ad-tier MAV) per viewer-year",
     "one_line": "Can advertising ARPU scale from $12/viewer/year today to $22+ by FY2030, functioning as a structurally durable second revenue engine rather than an ARPU patch?",
-    "base": "$6.5B FY2030 ad revenue, ARM ~$22/viewer-year on 295M MAV; ithin WARC's 9.2% CTV forecast range. In-house ad tech delivers CPM efficiency; international fill rates improve. Subscription compound at 8% ARPU/year. Implied fair value $87.79.",
+    "base": "$6.5B FY2030 ad revenue, ARM ~$22/viewer-year on 295M MAV; within WARC's 9.2% CTV forecast range. In-house ad tech delivers CPM efficiency; international fill rates improve. Subscription compound at 8% ARPU/year. Implied fair value $87.79.",
     "bull": "$9.5B FY2030 ad revenue, ARM ~$32/viewer-year on ~300M MAV. WARC ceiling case (Netflix achieves 20% global CTV share). In-house ad tech achieves YouTube-level CPM fill rates; live sports (FIFA 2027) lifts average CPM to $30+. Multiple re-rates from 22x to 25x EBIT. Implied value $114.",
     "bear": "$4.5B FY2030 ad revenue, ARM ~$15/viewer-year stalling. Amazon's first-party purchase data structurally suppresses Netflix CPMs; APAC subscriber growth disappoints vs JioCinema. Subscription multiple compresses to 18x on decelerating growth. Implied value $68.",
-    "what_decides_it": "Three observable signals: (1) Netflix ad revenue trajectory in Q3-Q4 2026 vs the $3B guided; oes the ramp hold after the easy YoY comps? (2) CPM trajectory data from the first full year of in-house ad tech (2027 launch); (3) FIFA Women's World Cup 2027 live ad inventory fill rate and CPM, which either confirms or refutes the live sports premium thesis."
+    "what_decides_it": "Three observable signals: (1) Netflix ad revenue trajectory in Q3-Q4 2026 vs the $3B guided; does the ramp hold after the easy YoY comps? (2) CPM trajectory data from the first full year of in-house ad tech (2027 launch); (3) FIFA Women's World Cup 2027 live ad inventory fill rate and CPM, which either confirms or refutes the live sports premium thesis."
   },
   "recommendation": {
     "action": "BUY",
@@ -24,7 +24,7 @@
     "target_12m": 100.8,
     "upside_pct": 25.2,
     "conviction": "MEDIUM",
-    "rationale": "The subscription business alone justifies current price at a peer-consistent 22x EBIT. Advertising is a call option the market prices at zero. Our base case. WARC-anchored $6.5B ad revenue by FY2030, in-house ad tech marginally improving CPMs; dds $7.30/share. A modest multiple re-rate from 27x to 28x NTM P/E (requiring only that $3B FY2026 ad guidance is delivered, which is contracted) gets to $101. Conviction is MEDIUM not HIGH because: (1) bundle had two corrected data artifacts; (2) the ad ARPU trajectory is EXTRAPOLATED, not contracted beyond FY2026; (3) Amazon's competing ad product is an observable near-term threat.",
+    "rationale": "The subscription business alone justifies current price at a peer-consistent 22x EBIT. Advertising is a call option the market prices at zero. Our base case. WARC-anchored $6.5B ad revenue by FY2030, in-house ad tech marginally improving CPMs; adds $7.30/share. A modest multiple re-rate from 27x to 28x NTM P/E (requiring only that $3B FY2026 ad guidance is delivered, which is contracted) gets to $101. Conviction is MEDIUM not HIGH because: (1) bundle had two corrected data artifacts; (2) the ad ARPU trajectory is EXTRAPOLATED, not contracted beyond FY2026; (3) Amazon's competing ad product is an observable near-term threat.",
     "next_earnings": "Q2 2026 (mid-July 2026)"
   },
   "four_numbers": {
@@ -32,7 +32,7 @@
       "value": 87.79,
       "multiple": 23.6,
       "multiple_label": "EV/NTM EBIT",
-      "basis": "SOTP base case; ubscription annuity (22x NTM EBIT) + advertising high-growth (exit multiple at T=4, FY2030 normalized NOPAT $1.93B, Gordon multiple 24.1x, WACC 10.5%)"
+      "basis": "SOTP base case; subscription annuity (22x NTM EBIT) + advertising high-growth (exit multiple at T=4, FY2030 normalized NOPAT $1.93B, Gordon multiple 24.1x, WACC 10.5%)"
     },
     "price_today": {
       "value": 80.5,
@@ -47,7 +47,7 @@
     },
     "target_12m": {
       "value": 100.8,
-      "basis": "28x P/E on FY2027E EPS $3.60; inimal re-rate from current 27x, requires only delivery of contracted $3B FY2026 ad guidance",
+      "basis": "28x P/E on FY2027E EPS $3.60; minimal re-rate from current 27x, requires only delivery of contracted $3B FY2026 ad guidance",
       "implied_12m_total_return_pct": 25.2
     }
   },
@@ -59,24 +59,24 @@
     "band_low": 67.93,
     "band_high": 114.01,
     "method_primary": "SOTP",
-    "method_why": "Two economically distinct segments: Subscription annuity (325M subscribers, 33% EBIT margin, 8-10% organic growth; alued as a recurring-revenue platform at peer EV/EBIT multiple) and Advertising high-growth ($3B FY2026, scaling to $6-9B; alued via exit multiple at T=4 FY2030 normalization, own WACC 10.5%). A blended NTM multiple would obscure the advertising option and value it at current near-zero margins."
+    "method_why": "Two economically distinct segments: Subscription annuity (325M subscribers, 33% EBIT margin, 8-10% organic growth; valued as a recurring-revenue platform at peer EV/EBIT multiple) and Advertising high-growth ($3B FY2026, scaling to $6-9B; valued via exit multiple at T=4 FY2030 normalization, own WACC 10.5%). A blended NTM multiple would obscure the advertising option and value it at current near-zero margins."
   },
   "thesis": [
     {
       "pillar": "The subscription business is fairly valued and the advertising business is free",
-      "detail": "At $80.50, the market prices 325M subscribers at 22x EBIT ($15.86B) = $348.9B EV; ssentially the entire enterprise value. The advertising segment (contracted $3B FY2026 guidance, 250M MAV growing ~32% in 6 months to May 2026) is priced at effectively zero. Our base case ad EV of $31.2B adds $7.30/share above the current subscription floor. You are buying the subscription at market price and getting the advertising ramp for free."
+      "detail": "At $80.50, the market prices 325M subscribers at 22x EBIT ($15.86B) = $348.9B EV; essentially the entire enterprise value. The advertising segment (contracted $3B FY2026 guidance, 250M MAV growing ~32% in 6 months to May 2026) is priced at effectively zero. Our base case ad EV of $31.2B adds $7.30/share above the current subscription floor. You are buying the subscription at market price and getting the advertising ramp for free."
     },
     {
-      "pillar": "The revenue ceiling is ARPU not subscribers; nd the addressable ARPU upside is large and partially contracted",
-      "detail": "At 43% broadband-household penetration, subscriber growth is structurally decelerating. Getting from $45B (FY2025) to $90B (management target) requires ~8.5%/year ARPU expansion. Subscription pricing alone ($19.99 Standard → perhaps $24.99 by 2029 = 5.5%/year) contributes 2-3% revenue growth. Advertising must deliver the rest. The arithmetic is clear: Netflix needs ad ARM to grow from $12/viewer/year to $35-40/year over 4 years. The path; n-house ad tech (2027) eliminating Microsoft's ~35% revenue share, fill rate improvement from ~65% to ~85%; s extrapolated but mechanically sound."
+      "pillar": "The revenue ceiling is ARPU not subscribers; and the addressable ARPU upside is large and partially contracted",
+      "detail": "At 43% broadband-household penetration, subscriber growth is structurally decelerating. Getting from $45B (FY2025) to $90B (management target) requires ~8.5%/year ARPU expansion. Subscription pricing alone ($19.99 Standard → perhaps $24.99 by 2029 = 5.5%/year) contributes 2-3% revenue growth. Advertising must deliver the rest. The arithmetic is clear: Netflix needs ad ARM to grow from $12/viewer/year to $35-40/year over 4 years. The path; n-house ad tech (2027) eliminating Microsoft's ~35% revenue share, fill rate improvement from ~65% to ~85%; is extrapolated but mechanically sound."
     },
     {
-      "pillar": "The 40% drawdown is a multiple reset, not a business deterioration; nd the reset has overshot",
-      "detail": "The stock fell from $134 (Jun 2025) to $80.50; 40% drawdown; n Q2 2026 guidance that missed the sell-side consensus by ~$60-70M (0.5% on $51B revenue). FY2026 guidance was maintained in full. The underlying business metrics. FCF $12.5B guided (+32% YoY), operating margin 31.5% (up from 29.5% in FY2025), ad revenue doubling YoY; re intact. The market has repriced from 35-40x NTM EPS (peak) to 27x (trough), which is historically the low end of Netflix's modern valuation range. The reset has compressed the multiple to below the justified level of 29.3x NTM P/E derived from our SOTP."
+      "pillar": "The 40% drawdown is a multiple reset, not a business deterioration; and the reset has overshot",
+      "detail": "The stock fell from $134 (Jun 2025) to $80.50; 40% drawdown; in Q2 2026 guidance that missed the sell-side consensus by ~$60-70M (0.5% on $51B revenue). FY2026 guidance was maintained in full. The underlying business metrics. FCF $12.5B guided (+32% YoY), operating margin 31.5% (up from 29.5% in FY2025), ad revenue doubling YoY; are intact. The market has repriced from 35-40x NTM EPS (peak) to 27x (trough), which is historically the low end of Netflix's modern valuation range. The reset has compressed the multiple to below the justified level of 29.3x NTM P/E derived from our SOTP."
     }
   ],
   "business_overview": {
-    "summary": "Netflix is the world's dominant subscription video-on-demand (SVOD) platform with 325M paid subscribers across 190+ countries as of Q1 2026. The business generates revenue through two channels: a monthly subscription (the annuity, 93% of FY2026E revenue) and advertising on its ad-supported tier (7% of FY2026E, guided to double YoY). Netflix does not own physical content infrastructure; t is a software and IP platform that licenses or produces content for global distribution, spending ~$18B annually. The business is capital-light from a physical asset standpoint (capex ~$400M/year) but content-capital-intensive. FCF is structurally positive ($12.5B guided FY2026) because amortization ($15.5B) lags content additions ($18B) in the cash P&L. Netflix front-loads content investment for multi-year value. The model has demonstrated operating leverage: EBIT margin expanded from 17.8% (FY2022) to 31.5% (FY2026 guided), a 1,370bp improvement in 4 years on flat content spend.",
+    "summary": "Netflix is the world's dominant subscription video-on-demand (SVOD) platform with 325M paid subscribers across 190+ countries as of Q1 2026. The business generates revenue through two channels: a monthly subscription (the annuity, 93% of FY2026E revenue) and advertising on its ad-supported tier (7% of FY2026E, guided to double YoY). Netflix does not own physical content infrastructure; it is a software and IP platform that licenses or produces content for global distribution, spending ~$18B annually. The business is capital-light from a physical asset standpoint (capex ~$400M/year) but content-capital-intensive. FCF is structurally positive ($12.5B guided FY2026) because amortization ($15.5B) lags content additions ($18B) in the cash P&L. Netflix front-loads content investment for multi-year value. The model has demonstrated operating leverage: EBIT margin expanded from 17.8% (FY2022) to 31.5% (FY2026 guided), a 1,370bp improvement in 4 years on flat content spend.",
     "business_model": "Dual-revenue platform: (1) monthly subscription fee ($8.99-$26.99/month in the US across ad-supported, Standard, and Premium tiers); (2) advertising on the ad-supported tier ($8.99/month, 250M MAV as of May 2026). The subscription model is a recurring-revenue annuity; advertising is a nascent layer being scaled through a third-party ad tech stack (Microsoft, transitioning to in-house by ~2027). Content is produced internally (Netflix Originals) and licensed; both types anchor subscriber retention and justify the monthly price.",
     "segments": [
       {
@@ -85,7 +85,7 @@
         "growth_pct": 10,
         "margin_pct": 33,
         "nature": "annuity",
-        "note": "FY2026E ~$48.2B; driven by 325M subscribers growing at low-single digits + ARPU hike 4-7%/year in UCAN/EMEA. Subscription ARM (average monthly revenue per paying member) in UCAN: ~$20.74 (Q1 2026). Globally ~$17.30/month ($11.70/year stated in key_metrics is wrong unit; ikely $/month). Key dynamic: price hike velocity has accelerated without churn. March 2026 US price increases (Standard $17.99→$19.99, Premium $24.99→$26.99) drove ARPU expansion with limited subscriber loss."
+        "note": "FY2026E ~$48.2B; driven by 325M subscribers growing at low-single digits + ARPU hike 4-7%/year in UCAN/EMEA. Subscription ARM (average monthly revenue per paying member) in UCAN: ~$20.74 (Q1 2026). Globally ~$17.30/month ($11.70/year stated in key_metrics is wrong unit; likely $/month). Key dynamic: price hike velocity has accelerated without churn. March 2026 US price increases (Standard $17.99→$19.99, Premium $24.99→$26.99) drove ARPU expansion with limited subscriber loss."
       },
       {
         "name": "Advertising",
@@ -93,7 +93,7 @@
         "growth_pct": 100,
         "margin_pct": 8,
         "nature": "growth",
-        "note": "FY2026E ~$3.0B (company guidance); 250M MAV as of May 2026, growing from 190M in Nov 2025 (+32% in 6 months). Current ad ARM: ~$12/viewer/year ($1/month). Low margins reflect Microsoft ad tech intermediary cost (~30-40% revenue share) and investing phase. In-house ad tech platform scheduled for launch ~2027; he key catalyst for margin expansion and CPM improvement."
+        "note": "FY2026E ~$3.0B (company guidance); 250M MAV as of May 2026, growing from 190M in Nov 2025 (+32% in 6 months). Current ad ARM: ~$12/viewer/year ($1/month). Low margins reflect Microsoft ad tech intermediary cost (~30-40% revenue share) and investing phase. In-house ad tech platform scheduled for launch ~2027; the key catalyst for margin expansion and CPM improvement."
       }
     ],
     "customers": [
@@ -104,7 +104,7 @@
       {
         "region": "UCAN",
         "revenue_share_pct": 44,
-        "note": "US/Canada; ighest ARPU, most mature, ~100M subscribers. Primary price hike market."
+        "note": "US/Canada; highest ARPU, most mature, ~100M subscribers. Primary price hike market."
       },
       {
         "region": "EMEA",
@@ -187,7 +187,7 @@
       "note": "Company guidance midpoint ($50.7-51.7B revenue, 31.5% OM, $12.5B FCF)"
     }
   ],
-  "historical_financials_read": "The story in the financials is one of two distinct chapters. Chapter one (2021-2022): stagnation; evenue growth halved to 6.7%, EBIT margin contracted from 20.6% to 17.8% as Netflix over-expanded content spend while subscriber growth stalled (the password sharing era). Chapter two (2023-2026E): the operating leverage inflection; argin expanded 1,370bp in 4 years as password sharing crackdown (2023), pricing hikes, and advertising layering drove revenue acceleration without commensurate cost increases. FCF went from $1.6B (FY2022) to $12.5B guided (FY2026), a 7.8x increase in 4 years. The deceleration narrative (FY2026 growth ~13% vs 16% in FY2025) is real but is entirely a denominator effect, $51B × 13% = $6.7B incremental revenue, actually larger in dollars than $45B × 16% = $7.2B. The question for FY2027+ is whether the incremental revenue engine (advertising) sustains the absolute dollar growth as the subscription base matures.",
+  "historical_financials_read": "The story in the financials is one of two distinct chapters. Chapter one (2021-2022): stagnation; revenue growth halved to 6.7%, EBIT margin contracted from 20.6% to 17.8% as Netflix over-expanded content spend while subscriber growth stalled (the password sharing era). Chapter two (2023-2026E): the operating leverage inflection; margin expanded 1,370bp in 4 years as password sharing crackdown (2023), pricing hikes, and advertising layering drove revenue acceleration without commensurate cost increases. FCF went from $1.6B (FY2022) to $12.5B guided (FY2026), a 7.8x increase in 4 years. The deceleration narrative (FY2026 growth ~13% vs 16% in FY2025) is real but is entirely a denominator effect, $51B × 13% = $6.7B incremental revenue, actually larger in dollars than $45B × 16% = $7.2B. The question for FY2027+ is whether the incremental revenue engine (advertising) sustains the absolute dollar growth as the subscription base matures.",
   "snapshot": [
     {
       "label": "Price",
@@ -279,7 +279,7 @@
     }
   ],
   "industry_position": {
-    "market_overview": "Netflix operates at the intersection of two markets: global SVOD ($98B in 2026, ~11% CAGR) and global CTV advertising ($175B in 2026, growing ~15%/year). The SVOD market is structurally post-competition: subscriber share is settled with Netflix at ~43% of addressable households and ~46% of global SVOD revenue. The competitive contest has shifted to ARPU monetization; pecifically, who can extract the most revenue per subscriber-year through a combination of pricing power and advertising yield. Netflix dominates subscriber share; Amazon threatens advertising yield.",
+    "market_overview": "Netflix operates at the intersection of two markets: global SVOD ($98B in 2026, ~11% CAGR) and global CTV advertising ($175B in 2026, growing ~15%/year). The SVOD market is structurally post-competition: subscriber share is settled with Netflix at ~43% of addressable households and ~46% of global SVOD revenue. The competitive contest has shifted to ARPU monetization; specifically, who can extract the most revenue per subscriber-year through a combination of pricing power and advertising yield. Netflix dominates subscriber share; Amazon threatens advertising yield.",
     "tam_usd_bn": 273,
     "tam_growth_pct": 12,
     "addressable_market": "Netflix defines its TAM as $650B+ in annual entertainment spend globally. A more conservative view: $98B SVOD market + Netflix's addressable CTV ad share (targeted $8-9B by 2030 from a $175B market in 2026). Netflix's realistic 3-5 year revenue ceiling is constrained by subscriber growth ceiling (~400-450M by 2028-2030) and ad ARM growth, not by market size.",
@@ -296,14 +296,14 @@
       "SBC discipline (SBC only $272M in FY2025 on $10.98B net income = minimal dilution)",
       "Geography mix (UCAN/EMEA higher margin; APAC investment phase short-term drag)"
     ],
-    "product_differentiation": "Content depth (no other service has matched Netflix's combination of original + licensed library across 190+ countries in 30+ languages), pricing architecture (four-tier pricing from $8.99 to $26.99 captures the full consumer surplus curve), simultaneous global releases (creates water-cooler moments that drive subscriber adds), and platform quality (UI, recommendations, download functionality; he non-content moat).",
-    "moat": "Network effect (larger subscriber base → more data → better recommendations → more retention), content flywheel (more subscribers → more content budget → better content → more subscribers), and geographic scale (marginal cost of serving 200th country near-zero on fixed content spend). The moat is solid but not impenetrable; t does not prevent competition, it raises the capital cost to compete at scale.",
+    "product_differentiation": "Content depth (no other service has matched Netflix's combination of original + licensed library across 190+ countries in 30+ languages), pricing architecture (four-tier pricing from $8.99 to $26.99 captures the full consumer surplus curve), simultaneous global releases (creates water-cooler moments that drive subscriber adds), and platform quality (UI, recommendations, download functionality; the non-content moat).",
+    "moat": "Network effect (larger subscriber base → more data → better recommendations → more retention), content flywheel (more subscribers → more content budget → better content → more subscribers), and geographic scale (marginal cost of serving 200th country near-zero on fixed content spend). The moat is solid but not impenetrable; it does not prevent competition, it raises the capital cost to compete at scale.",
     "competitors": [
       {
         "name": "Amazon Prime Video",
         "position": "Competitor in advertising, minor competitor in subscription",
         "share": "~200M subscribers estimated; 315M ad-supported viewers (Jan 2024 Prime Video ads launch)",
-        "trajectory": "RISING in advertising; tructural data advantage (purchase intent from Amazon.com) creates CPM premium; committing $1B+/year to NFL Thursday Night Football creates live sports ad inventory at scale. Subscriber competition is limited (Prime Video is bundled with Prime shipping, different value proposition). THREAT LEVEL: HIGH on advertising, LOW on subscription.",
+        "trajectory": "RISING in advertising; structural data advantage (purchase intent from Amazon.com) creates CPM premium; committing $1B+/year to NFL Thursday Night Football creates live sports ad inventory at scale. Subscriber competition is limited (Prime Video is bundled with Prime shipping, different value proposition). THREAT LEVEL: HIGH on advertising, LOW on subscription.",
         "note": "The primary bear case risk. Amazon's first-party data moat is real and structural, not addressable by Netflix without a major strategic pivot."
       },
       {
@@ -337,7 +337,7 @@
       "ev_ebitda_ntm": 14.0,
       "rev_growth_ttm_pct": 4.0,
       "highlight": false,
-      "note": "Disney+ 132M subs; conglomerate (parks, studios, linear); ot pure-play streaming comp"
+      "note": "Disney+ 132M subs; conglomerate (parks, studios, linear); not pure-play streaming comp"
     },
     {
       "ticker": "WBD",
@@ -364,7 +364,7 @@
       "ev_ebitda_ntm": 14.0,
       "rev_growth_ttm_pct": 12.0,
       "highlight": true,
-      "note": "YouTube $36B ads revenue; he benchmark for Netflix advertising scale potential"
+      "note": "YouTube $36B ads revenue; the benchmark for Netflix advertising scale potential"
     },
     {
       "ticker": "AMZN",
@@ -373,12 +373,12 @@
       "ev_ebitda_ntm": 22.0,
       "rev_growth_ttm_pct": 11.0,
       "highlight": true,
-      "note": "Prime Video ~200M subs; 315M ad-supported viewers; rimary advertising competitor"
+      "note": "Prime Video ~200M subs; 315M ad-supported viewers; primary advertising competitor"
     }
   ],
-  "peers_read": "Netflix lacks a clean pure-play peer. Disney, WBD, and Paramount are all distressed or conglomerate, trading at 7-14x EV/EBITDA vs Netflix's 22x. The relevant peer for the subscription annuity is Apple Services (~25x EBIT), Google's YouTube division (~20x implied), and Spotify (~28x EBITDA); one of which are publicly traded as standalone segments. Netflix at 22x EV/EBIT sits at the lower end of what dominant platform businesses command, reflecting the content cost burden (content is ≠ SaaS) and the early stage of advertising. The bear case peers. Disney and WBD; ll trade below 15x EBITDA and are fundamentally different in financial health and competitive position.",
+  "peers_read": "Netflix lacks a clean pure-play peer. Disney, WBD, and Paramount are all distressed or conglomerate, trading at 7-14x EV/EBITDA vs Netflix's 22x. The relevant peer for the subscription annuity is Apple Services (~25x EBIT), Google's YouTube division (~20x implied), and Spotify (~28x EBITDA); one of which are publicly traded as standalone segments. Netflix at 22x EV/EBIT sits at the lower end of what dominant platform businesses command, reflecting the content cost burden (content is ≠ SaaS) and the early stage of advertising. The bear case peers. Disney and WBD; all trade below 15x EBITDA and are fundamentally different in financial health and competitive position.",
   "market_view": {
-    "whats_priced_in": "At $80.50 (27x NTM P/E, 21.7x EV/EBIT), the market prices roughly 12-14% annual revenue growth for 3-4 years converging to 28-30% FCF margins, discounted at ~10% WACC. The implied terminal multiple embedded in 27x P/E at 10% WACC is 6-7% long-run growth; hich is actually a growth-duration premium, not a Gordon steady-state. The current price is consistent with the literal FY2026 guidance scenario with zero advertising premium beyond the contracted $3B. The market is not paying for the $9B ad scenario, the FIFA 2027 live premium, or the in-house ad tech margin improvement.",
+    "whats_priced_in": "At $80.50 (27x NTM P/E, 21.7x EV/EBIT), the market prices roughly 12-14% annual revenue growth for 3-4 years converging to 28-30% FCF margins, discounted at ~10% WACC. The implied terminal multiple embedded in 27x P/E at 10% WACC is 6-7% long-run growth; which is actually a growth-duration premium, not a Gordon steady-state. The current price is consistent with the literal FY2026 guidance scenario with zero advertising premium beyond the contracted $3B. The market is not paying for the $9B ad scenario, the FIFA 2027 live premium, or the in-house ad tech margin improvement.",
     "street_view": "50 analysts, 74% Buy, consensus target $114.15 (42% above current price). The street's bull case rests on Netflix achieving 13-16% revenue CAGR through FY2028 and 35%+ operating margins; scenario that requires advertising to scale to $7-9B by 2028. The outlier bear (Rosenblatt, $95) aligns with our subscription-floor value. The street high ($151.40, implied growth ~16.6% 10-year) is the full advertising scale scenario with a premium multiple.",
     "post_earnings_analyst_actions": [
       {
@@ -446,15 +446,15 @@
       }
     ],
     "news_narrative": "The stock is 40% below its Jun 2025 52-week high ($134.12) driven by two events: (1) Q1 2026 earnings on April 16-17, where Q2 revenue guidance of $12.57B missed consensus by ~$60-70M (0.5%), triggering a ~10% one-day decline despite Q1 beat on all metrics; (2) a June 16 -4% decline after reporting that Netflix had considered but abandoned a Roku acquisition. The business metrics are intact: Q1 2026 operating margin 32.3% (above guidance), ad revenue on track for $3B FY2026 guided, price hike executed with minimal churn. The narrative is a sentiment/valuation correction after the stock reached 35-40x NTM P/E in mid-2025.",
-    "sentiment_narrative": "Technical momentum is bearish: stock near 52-week low ($75.01), below both 50-day and 200-day moving averages, retail sentiment negative. Fundamental analyst tape is bullish (74% Buy). The divergence is classic post-drawdown setup; nstitutional analysts see the business intact while retail momentum traders see a broken chart.",
+    "sentiment_narrative": "Technical momentum is bearish: stock near 52-week low ($75.01), below both 50-day and 200-day moving averages, retail sentiment negative. Fundamental analyst tape is bullish (74% Buy). The divergence is classic post-drawdown setup; institutional analysts see the business intact while retail momentum traders see a broken chart.",
     "runway": "At 27x NTM P/E (the low end of the 2023-2026 range), the valuation risk is moderate rather than high. The 40% drawdown has reset multiples from a premium-growth valuation (35-40x) to a fair-growth valuation (27x). The fundamental runway is intact: guidance maintained, FCF accelerating, price hikes sticky. Near-term risk: Q2 2026 actuals (mid-July); guide miss on ad revenue or subscriber adds could extend the technical breakdown.",
-    "runway_verdict": "The valuation reset is over-done. At $80.50, the investor owns the dominant global SVOD platform at 21.7x EV/EBIT (below the subscription floor justified multiple of 22x) and gets the advertising ramp for free. The Q2 guidance miss was real but contained; he market priced in a year of deceleration; our base case prices in 4 years of managed transition.",
+    "runway_verdict": "The valuation reset is over-done. At $80.50, the investor owns the dominant global SVOD platform at 21.7x EV/EBIT (below the subscription floor justified multiple of 22x) and gets the advertising ramp for free. The Q2 guidance miss was real but contained; the market priced in a year of deceleration; our base case prices in 4 years of managed transition.",
     "market_lean": "BULL, MODERATE STRENGTH, 74% Buy-rated at a consensus target 42% above price; business fundamentals intact; the drawdown is a valuation reset, not a business impairment."
   },
   "street_reconstruction": {
     "currency": "EV/FCF",
-    "what_price_implies": "At $80.50, the market prices ~13% annual revenue CAGR for 4 years, FCF margins approaching 30%, discounted at ~10%; ssentially the literal FY2026 guidance extrapolated, with no advertising premium.",
-    "what_street_implies": "The $114.15 consensus target implies ~16-17% revenue CAGR through FY2028 and 35%+ operating margins; he advertising scenario delivered on time.",
+    "what_price_implies": "At $80.50, the market prices ~13% annual revenue CAGR for 4 years, FCF margins approaching 30%, discounted at ~10%; essentially the literal FY2026 guidance extrapolated, with no advertising premium.",
+    "what_street_implies": "The $114.15 consensus target implies ~16-17% revenue CAGR through FY2028 and 35%+ operating margins; the advertising scenario delivered on time.",
     "history_anchor": "Netflix's FCF grew from $1.6B (FY2022) to $9.5B (FY2025) = 82%/year absolute growth, entirely from operating leverage. Revenue CAGR was 16%/year. The FCF trajectory is now more predictable: guidance framework confirmed $12.5B for FY2026; the path to $18-20B by FY2028 requires advertising margin improvement and continued subscription ARM hikes.",
     "our_justified_multiple": "29.3x NTM P/E (SOTP-derived; fair value $87.79 / NTM EPS $3.00). EV/EBIT: 23.6x justified vs 21.7x current.",
     "agree_disagree": "We agree with the street direction (BUY) but are more conservative on the magnitude. The street's $114 implies the full advertising scale scenario (our bull case). Our base $88 implies the WARC-anchored $6.5B ad scenario, which the street would likely call the bear case for an Overweight. The gap is one of conviction about advertising CPM scaling, not about the subscription business."
@@ -465,7 +465,7 @@
     "capital_allocation_history": "Netflix does not pay a dividend. The company has been conducting share buybacks (FY2025 SBC of $272M on $10.98B net income = minimal dilution; net share count declining slowly). Capital allocation priority: content spend ($18B/year, essentially flat 2025-2026) → technology investment → share repurchases. The $2.8B WBD termination fee received in Q1 2026 represents an unusual cash event; management has not disclosed specific buyback plans for that capital. FCF will likely be directed to buybacks and content investment.",
     "recent_insider_activity": []
   },
-  "valuation_method": "SOTP; wo segments, each valued with its own method and WACC. (1) Subscription Annuity: EV/EBIT multiple of 22x on FY2026E subscription EBIT of $15.86B; own WACC 9.0%. This method is appropriate for a mature, recurring-revenue annuity where the multiple reflects the capitalized value of a growing stream of recurring earnings; nalogous to how Apple Services or Google Search is valued. (2) Advertising High-Growth: ExitMultiple at normalization year T=4 (FY2030), when in-house ad tech is operational and fill rates stabilized. NOPAT normalized at $1.925B ($6.5B ad revenue × 38% EBIT margin × 0.78 after-tax). Gordon steady-state multiple: (1 - g/ROIC)/(r - g) = (1 - 7%/45%)/(10.5% - 7%) = 24.1x. This method is appropriate for a high-growth segment where a blended current multiple or 10-year DCF would force an implausible g > r extrapolation; he exit multiple normalizes at a steady state and discounts back at the segment's own higher WACC (10.5%) to reflect unproven scale.",
+  "valuation_method": "SOTP; two segments, each valued with its own method and WACC. (1) Subscription Annuity: EV/EBIT multiple of 22x on FY2026E subscription EBIT of $15.86B; own WACC 9.0%. This method is appropriate for a mature, recurring-revenue annuity where the multiple reflects the capitalized value of a growing stream of recurring earnings; analogous to how Apple Services or Google Search is valued. (2) Advertising High-Growth: ExitMultiple at normalization year T=4 (FY2030), when in-house ad tech is operational and fill rates stabilized. NOPAT normalized at $1.925B ($6.5B ad revenue × 38% EBIT margin × 0.78 after-tax). Gordon steady-state multiple: (1 - g/ROIC)/(r - g) = (1 - 7%/45%)/(10.5% - 7%) = 24.1x. This method is appropriate for a high-growth segment where a blended current multiple or 10-year DCF would force an implausible g > r extrapolation; the exit multiple normalizes at a steady state and discounts back at the segment's own higher WACC (10.5%) to reflect unproven scale.",
   "segment_valuation": [
     {
       "name": "Subscription (Annuity)",
@@ -481,7 +481,7 @@
         "growth_rate_and_duration": "8-10%/year subscription revenue growth for 4-5 years: ARM hike 4-7%/year (UCAN/EMEA, demonstrated; March 2026 US prices $19.99 Standard after 3 consecutive annual hikes without material churn) + subscriber growth 2-3% (43% household penetration already, but APAC/LATAM still growing). Source: Q1 2026 8-K, ARPU trajectory 2022-2026.",
         "economics": "EBIT margin 33%: content spend flat (~$18B/year, essentially a fixed cost in dollars) while revenue grows 10%/year = 1-2% annual margin expansion from operating leverage alone. SBC only $272M (FY2025) = negligible dilution. Source: FY2025 financials, FY2026 guidance.",
         "wacc": "9.0%; nvestment-grade recurring revenue (CAPM: Rf 4.2% + β 1.0 × ERP 5.5% = 9.7% equity cost; blended with cost of debt 5% × 0.015 weight = ~9.6%, rounded to 9.0% for the subscription stability premium). Source: Rf = 10-yr UST Jun 2026; ERP = Damodaran.",
-        "exit_multiple": "22x EV/EBIT = implied (1 - g/ROIC) / (r - g) where g=8%, ROIC=40%, r=9%: (1 - 0.2)/(0.01) = 80x; oo high for a multiple proxy. The 22x reflects a peer anchor, not the pure Gordon formula, because the subscription business is already mature-growing, not a high-growth exit. The peer anchor (Apple Services ~25x, YouTube ~20x) is the appropriate benchmark."
+        "exit_multiple": "22x EV/EBIT = implied (1 - g/ROIC) / (r - g) where g=8%, ROIC=40%, r=9%: (1 - 0.2)/(0.01) = 80x; too high for a multiple proxy. The 22x reflects a peer anchor, not the pure Gordon formula, because the subscription business is already mature-growing, not a high-growth exit. The peer anchor (Apple Services ~25x, YouTube ~20x) is the appropriate benchmark."
       }
     },
     {
@@ -522,11 +522,11 @@
           "implied_px": 7.45
         }
       ],
-      "t_invariance_read": "T-invariant for T=4 through T+2 ($7.30-$7.49 range). Early years (T=2,3) are lower because NOPAT hasn't normalized; xpected for a ramp business. T=4 is the appropriate normalization year.",
+      "t_invariance_read": "T-invariant for T=4 through T+2 ($7.30-$7.49 range). Early years (T=2,3) are lower because NOPAT hasn't normalized; expected for a ramp business. T=4 is the appropriate normalization year.",
       "four_levers": {
         "growth_rate_and_duration": "50% ad revenue CAGR FY2026-FY2027 (contractually anchored at $3B FY2026 baseline, WARC forecasts 9.2% global CTV share by 2027 = ~$3.5B from CTV alone + international non-CTV). Then 30-25-15%/year deceleration to $6.5B by FY2030. Drivers: MAV growth (250M → 295M) × ARM growth ($12 → $22/year). Source: Theia NFLX_crux.json, WARC Media Investment Report 2026.",
         "economics": "NOPAT margin ramp: 8% FY2026 (Microsoft intermediary + low fill rates) → 20% FY2027 (in-house ad tech pilot) → 38% FY2030 (normalized). ROIC 45% at steady state: ad tech platforms are capital-light once the tech stack is built; incremental ad revenue carries near-zero incremental content capex. Source: YouTube ad division ~40% EBIT margin as benchmark (Alphabet FY2025 disclosures).",
-        "wacc": "10.5%; igher than subscription to reflect: (1) execution risk on in-house ad tech (Microsoft intermediary is a proven system; in-house is unproven at global scale); (2) competitive risk from Amazon's data moat; (3) CPM trajectory uncertainty (fill rate improvement not contracted beyond 2026 guidance). CAPM: same Rf/β as subscription but an additional 150bp risk premium for nascent segment execution.",
+        "wacc": "10.5%; higher than subscription to reflect: (1) execution risk on in-house ad tech (Microsoft intermediary is a proven system; in-house is unproven at global scale); (2) competitive risk from Amazon's data moat; (3) CPM trajectory uncertainty (fill rate improvement not contracted beyond 2026 guidance). CAPM: same Rf/β as subscription but an additional 150bp risk premium for nascent segment execution.",
         "exit_multiple": "Gordon formula: (1 - g_lt/ROIC) / (r - g_lt) = (1 - 7%/45%) / (10.5% - 7%) = 0.844/0.035 = 24.1x. Sanity check: CTV ad pure-plays (The Trade Desk, Magnite) trade at 20-35x EV/EBITDA. Netflix's advertising segment at normalized scale is a premium CTV inventory owner, 24x is consistent with the peer range. Lower than the bull case Gordon (42x at g=8%, r=10%) because base uses r=10.5% and g=7%."
       }
     }
@@ -577,7 +577,7 @@
     "adjustment_content_excess": -0.59,
     "adjustment_capex": -0.12,
     "fcf_per_share": 1.87,
-    "bridge_note": "EPS $3.00 → FCF/share $1.87: the $1.13 gap is content investment above amortization (content additions $18B - amortization $15.5B = $2.5B cash investment / 4.27B shares = $0.59/sh) + capex ($0.12/sh) + minor WC. This is not a quality concern; t reflects Netflix's content strategy of front-loading cash for multi-year value. Owner FCF is ~$2.23/sh (EPS adjusted for content excess; SBC $272M is non-cash and dilution is negligible). Note: the SOTP uses EV/EBIT for the subscription segment and ExitMultiple/NOPAT for advertising, so the FCF bridge is a transparency disclosure, not the valuation anchor."
+    "bridge_note": "EPS $3.00 → FCF/share $1.87: the $1.13 gap is content investment above amortization (content additions $18B - amortization $15.5B = $2.5B cash investment / 4.27B shares = $0.59/sh) + capex ($0.12/sh) + minor WC. This is not a quality concern; it reflects Netflix's content strategy of front-loading cash for multi-year value. Owner FCF is ~$2.23/sh (EPS adjusted for content excess; SBC $272M is non-cash and dilution is negligible). Note: the SOTP uses EV/EBIT for the subscription segment and ExitMultiple/NOPAT for advertising, so the FCF bridge is a transparency disclosure, not the valuation anchor."
   },
   "multiple_maths": {
     "current_multiple": {
@@ -591,15 +591,15 @@
       "label": "SOTP-derived fair value multiple"
     },
     "justified_grid": [],
-    "duality_decomposition": "Current 21.7x EV/EBIT prices approximately 7% terminal growth in a steady-state Gordon (at 9% WACC, 40% ROIC: justified multiple = (1-7%/40%)/(9%-7%) = 0.825/0.02 = 41.25x on NOPAT; hich implies growth of approximately 6-8%/year, consistent with subscription-only trajectory). Our justified 23.6x reflects the subscription annuity (22x on 98.5% of EBIT) + advertising option ($31B EV). The gap (23.6x vs 21.7x) is entirely the advertising segment valued at zero by the market."
+    "duality_decomposition": "Current 21.7x EV/EBIT prices approximately 7% terminal growth in a steady-state Gordon (at 9% WACC, 40% ROIC: justified multiple = (1-7%/40%)/(9%-7%) = 0.825/0.02 = 41.25x on NOPAT; which implies growth of approximately 6-8%/year, consistent with subscription-only trajectory). Our justified 23.6x reflects the subscription annuity (22x on 98.5% of EBIT) + advertising option ($31B EV). The gap (23.6x vs 21.7x) is entirely the advertising segment valued at zero by the market."
   },
   "key_debates": [
     {
       "debate": "Can Netflix advertising ARPU scale from $12 to $22+/viewer-year?",
       "is_crux": true,
-      "bull_view": "The case for ARPU scaling is mechanically clear: (1) Eliminate Microsoft's ~35% revenue take on ad inventory; t $3B ad revenue, that is ~$1.1B walking out the door annually; when in-house ad tech launches (~2027), that becomes operating income. At 250M MAV, that alone adds ~$4.50/viewer/year of ARM. (2) Fill rate improvement from ~65% to ~85% adds another ~$3/viewer/year at $20 CPM. (3) International CPM expansion as Netflix data matures in non-US markets adds another $2-3/year. The path from $12 to $22/year requires no heroic CPM assumption; t requires executing a known program (replace intermediary, improve fill). Evidence quality: EXTRAPOLATED (direction clear from technology roadmap; magnitude not contracted beyond 2026 guidance). Worth: +$26/share (bull ad EV $95.5B vs base $31.2B = $15/share; subscription re-rate 22→25x = $11/share).",
+      "bull_view": "The case for ARPU scaling is mechanically clear: (1) Eliminate Microsoft's ~35% revenue take on ad inventory; at $3B ad revenue, that is ~$1.1B walking out the door annually; when in-house ad tech launches (~2027), that becomes operating income. At 250M MAV, that alone adds ~$4.50/viewer/year of ARM. (2) Fill rate improvement from ~65% to ~85% adds another ~$3/viewer/year at $20 CPM. (3) International CPM expansion as Netflix data matures in non-US markets adds another $2-3/year. The path from $12 to $22/year requires no heroic CPM assumption; it requires executing a known program (replace intermediary, improve fill). Evidence quality: EXTRAPOLATED (direction clear from technology roadmap; magnitude not contracted beyond 2026 guidance). Worth: +$26/share (bull ad EV $95.5B vs base $31.2B = $15/share; subscription re-rate 22→25x = $11/share).",
       "bear_view": "Amazon's first-party purchase data creates a structural gap. Advertisers pay 20-40% CPM premiums for purchase-intent targeting (Amazon's Core) vs content-affinity targeting (Netflix's proxy signal). This gap does not close with better ad tech. Netflix has no purchase data and cannot acquire it without a major strategic pivot (acquiring a retailer, building a payments system). At $20-22 CPM on Netflix vs $25-30 CPM on Amazon, Netflix's ad ARM ceiling is structurally lower. Additionally, Netflix's 4-5 min/hour ad load commitment limits inventory depth. Observed mechanism: Amazon Prime Video already carries ads (Jan 2024 launch) at scale, and CPM gap data is available from agency channel checks. Evidence quality: OBSERVABLE-AND-NEAR. Worth: -$20/share (bear ad EV $9.8B vs base $31.2B = -$5/share; subscription multiple compresses 22→18x on deceleration narrative = -$14.8/share).",
-      "our_verdict": "The bull case is more mechanically tractable than the bear. Replacing the Microsoft intermediary is a known, time-bounded program that adds $4-5/viewer/year of ARM independently of CPM improvement. The Amazon data gap is real but affects the UPPER BOUND of Netflix's ad ARM, not the intermediate trajectory toward $22/year. Our base case ($22/year) requires only the intermediary replacement + moderate fill rate improvement; ot CPM parity with Amazon. The crux resolves in 2027 when: (1) Netflix reports the first year of in-house ad tech economics, and (2) FIFA Women's World Cup ad fill rates reveal the live sports premium CPM.",
+      "our_verdict": "The bull case is more mechanically tractable than the bear. Replacing the Microsoft intermediary is a known, time-bounded program that adds $4-5/viewer/year of ARM independently of CPM improvement. The Amazon data gap is real but affects the UPPER BOUND of Netflix's ad ARM, not the intermediate trajectory toward $22/year. Our base case ($22/year) requires only the intermediary replacement + moderate fill rate improvement; not CPM parity with Amazon. The crux resolves in 2027 when: (1) Netflix reports the first year of in-house ad tech economics, and (2) FIFA Women's World Cup ad fill rates reveal the live sports premium CPM.",
       "what_would_change_our_mind": "If Netflix's ad revenue misses the $3B FY2026 guide or the Q2 2026 print shows ad ARM stagnation after the price hike, the advertising option is mis-priced and we would lower our target. Conversely, if in-house ad tech delivers $5B in FY2027 (early track to $6.5B base), the bull case becomes the base.",
       "worth_per_share": {
         "bull_vs_base": "+$26",
@@ -609,10 +609,10 @@
     {
       "debate": "Can subscription pricing continue at 6-8%/year without triggering churn at 43% household penetration?",
       "is_crux": false,
-      "bull_view": "Three consecutive annual US price cycles (2024, 2025, 2026) with subscriber growth maintained is not anecdote; t is a pattern. Standard tier rose from $15.49 (2022) to $19.99 (2026), a 29% increase, while the subscriber base grew from 223M to 325M. The content moat (no compelling substitute at comparable breadth) prevents churn triggered by price. The 43% penetration figure is a floor, not a ceiling; t measures current subscribers against broadband households, not future subscribers against mobile-only or smart TV households. Evidence quality: CONTRACTED (3 hike cycles executed). Worth: base case holds 22x subscription multiple.",
-      "bear_view": "The next cohort of potential subscribers is structurally more price-sensitive. At $19.99/month for Standard, Netflix is approaching the US cable bundle of the early 2000s in nominal terms (~$40-50/month for basic cable). The 43% penetration means 57% of broadband households have not subscribed; any are active resisters at the current price, not just non-trialists. In APAC (JioCinema at ₹29/month) and LATAM, price ceiling is much lower. Future hikes above $22-24 for Standard may be the churn trigger. Evidence quality: MECHANISM (structural price-sensitivity of the un-penetrated addressable market). Worth: if ARPU growth stalls at 3%/year (vs 6-8% assumed), subscription EBIT grows 4%/year instead of 10%/year; ubscription multiple compresses 22x→18x = -$14.8/share.",
+      "bull_view": "Three consecutive annual US price cycles (2024, 2025, 2026) with subscriber growth maintained is not anecdote; it is a pattern. Standard tier rose from $15.49 (2022) to $19.99 (2026), a 29% increase, while the subscriber base grew from 223M to 325M. The content moat (no compelling substitute at comparable breadth) prevents churn triggered by price. The 43% penetration figure is a floor, not a ceiling; it measures current subscribers against broadband households, not future subscribers against mobile-only or smart TV households. Evidence quality: CONTRACTED (3 hike cycles executed). Worth: base case holds 22x subscription multiple.",
+      "bear_view": "The next cohort of potential subscribers is structurally more price-sensitive. At $19.99/month for Standard, Netflix is approaching the US cable bundle of the early 2000s in nominal terms (~$40-50/month for basic cable). The 43% penetration means 57% of broadband households have not subscribed; any are active resisters at the current price, not just non-trialists. In APAC (JioCinema at ₹29/month) and LATAM, price ceiling is much lower. Future hikes above $22-24 for Standard may be the churn trigger. Evidence quality: MECHANISM (structural price-sensitivity of the un-penetrated addressable market). Worth: if ARPU growth stalls at 3%/year (vs 6-8% assumed), subscription EBIT grows 4%/year instead of 10%/year; subscription multiple compresses 22x→18x = -$14.8/share.",
       "our_verdict": "The pattern of hike-without-churn is compelling through $19.99. The next price point ($22-24, likely 2027-2028) is the test. Our base case embeds 4-6%/year ARM growth (below the 2024-2026 realized rate) as a modest haircut for potential churn sensitivity at higher price points. We are not assuming the 8%/year rate continues indefinitely.",
-      "what_would_change_our_mind": "A subscriber net loss quarter in UCAN following a price hike; hich has not occurred. Monitor ARM quarterly vs subscriber net adds ratio.",
+      "what_would_change_our_mind": "A subscriber net loss quarter in UCAN following a price hike; which has not occurred. Monitor ARM quarterly vs subscriber net adds ratio.",
       "worth_per_share": {
         "bull_vs_base": "+$4",
         "bear_vs_base": "-$15"
@@ -621,9 +621,9 @@
     {
       "debate": "Does live sports content create a durable advertising premium, or is it a content cost treadmill?",
       "is_crux": false,
-      "bull_view": "WWE RAW (10-year deal), NFL Christmas Games, and FIFA Women's World Cup 2027/2031 create live event ad inventory at 3-4x standard CPM. Live sports advertising is the last linear TV holdout; t commands $40-60 CPM in the US because of simultaneous reach and purchase-intent adjacency (beer, autos, financial services). Netflix demonstrating it can host NFL Christmas at scale (Dec 2025 viewership metrics) proves the platform's live infrastructure. If live sports moves Netflix's global average CPM from $22 to $28-30, the advertising ARM improvement compounds on 250M+ MAV. Evidence quality: CONTRACTED (WWE 10-yr, NFL Christmas, FIFA 2027/2031 rights in place). Worth: +$4-6/share if live CPM premium materializes.",
+      "bull_view": "WWE RAW (10-year deal), NFL Christmas Games, and FIFA Women's World Cup 2027/2031 create live event ad inventory at 3-4x standard CPM. Live sports advertising is the last linear TV holdout; it commands $40-60 CPM in the US because of simultaneous reach and purchase-intent adjacency (beer, autos, financial services). Netflix demonstrating it can host NFL Christmas at scale (Dec 2025 viewership metrics) proves the platform's live infrastructure. If live sports moves Netflix's global average CPM from $22 to $28-30, the advertising ARM improvement compounds on 250M+ MAV. Evidence quality: CONTRACTED (WWE 10-yr, NFL Christmas, FIFA 2027/2031 rights in place). Worth: +$4-6/share if live CPM premium materializes.",
       "bear_view": "Sports rights inflation is structural. Competing with Amazon ($1B+/year NFL Sunday Ticket), Disney/ESPN, NBC/Peacock, and Apple TV+ (MLS) for live sports creates a treadmill where each deal requires the next escalation. The NFL Christmas games cost Netflix ~$150M/year; manageable cost for a signal. But a full-season NFL package would cost $3-5B/year, potentially wiping out the advertising margin improvement. Content cost escalation from sports threatens the operating leverage thesis that drives the subscription multiple. Evidence quality: MECHANISM (sports rights inflation is documented; Amazon's bidding history). Worth: -$3-5/share if content spend inflects from sports rights escalation.",
-      "our_verdict": "The current sports portfolio (WWE $500M/year, NFL Christmas ~$150M/year, FIFA 2027) is additive at current cost levels. The bear risk is in the next escalation cycle; full NFL package at market rates. Our base case assumes Netflix's live sports strategy remains disciplined (as it has been; o bid for NBA rights in 2024-2025 cycle). Monitor: any unannounced bid for a full-season sports package.",
+      "our_verdict": "The current sports portfolio (WWE $500M/year, NFL Christmas ~$150M/year, FIFA 2027) is additive at current cost levels. The bear risk is in the next escalation cycle; full NFL package at market rates. Our base case assumes Netflix's live sports strategy remains disciplined (as it has been; to bid for NBA rights in 2024-2025 cycle). Monitor: any unannounced bid for a full-season sports package.",
       "what_would_change_our_mind": "A confirmed full-season NFL Sunday Ticket-equivalent deal or an NBA package bid. Both would be negative for our base case on margin grounds.",
       "worth_per_share": {
         "bull_vs_base": "+$5",
@@ -631,7 +631,7 @@
       }
     }
   ],
-  "bear_paragraph": "The bear case has a specific name: Amazon. Prime Video added ads in January 2024 and is now actively scaling its CTV advertising product with a structural weapon Netflix cannot match; irst-party purchase data from 200M+ Amazon.com shoppers. Advertisers pay 20-40% CPM premiums for purchase-intent signals over content-affinity proxies. At $25-30 CPM on Amazon vs $20-22 CPM on Netflix, the yield gap is real and structural; t does not close with better ad tech. As Amazon scales its live sports inventory (NFL Sunday Ticket) and its first-party data advantage compounds, Netflix's addressable CPM ceiling is capped below what the bull case requires. Meanwhile, at 43% household penetration, subscriber growth is decelerating structurally. The next cohort of non-subscribers is more price-sensitive; a hike above $22-24/month Standard may trigger the first churn cycle. Add JioCinema's sub-$1/month offering in India as a ceiling on APAC subscriber growth, and the revenue model faces pressure from both sides: slower subscriber adds and capped advertising yield. At $68/share (the bear case), Netflix is not distressed; t is a mature subscription business at 18x EBIT growing 7-8%/year; ut it is not a BUY.",
+  "bear_paragraph": "The bear case has a specific name: Amazon. Prime Video added ads in January 2024 and is now actively scaling its CTV advertising product with a structural weapon Netflix cannot match; first-party purchase data from 200M+ Amazon.com shoppers. Advertisers pay 20-40% CPM premiums for purchase-intent signals over content-affinity proxies. At $25-30 CPM on Amazon vs $20-22 CPM on Netflix, the yield gap is real and structural; it does not close with better ad tech. As Amazon scales its live sports inventory (NFL Sunday Ticket) and its first-party data advantage compounds, Netflix's addressable CPM ceiling is capped below what the bull case requires. Meanwhile, at 43% household penetration, subscriber growth is decelerating structurally. The next cohort of non-subscribers is more price-sensitive; a hike above $22-24/month Standard may trigger the first churn cycle. Add JioCinema's sub-$1/month offering in India as a ceiling on APAC subscriber growth, and the revenue model faces pressure from both sides: slower subscriber adds and capped advertising yield. At $68/share (the bear case), Netflix is not distressed; it is a mature subscription business at 18x EBIT growing 7-8%/year; but it is not a BUY.",
   "key_risks": [
     {
       "rank": 1,
@@ -919,7 +919,7 @@
     {
       "label": "AD RERATE: Bull case materializes",
       "outcome_range": "$101-$114 (12m target to bull)",
-      "description": "In-house ad tech delivers $5B+ in FY2027 (ahead of base trajectory). FIFA Women's World Cup 2027 live ad fill rates demonstrate premium CPM ($35+). Market re-rates subscription segment from 22x to 25x EBIT as second revenue engine becomes visible in results. Subscription pricing delivers without churn at $21.99 Standard (next expected hike). The $114 case requires the full WARC ceiling scenario AND the subscription re-rate; oth are extrapolated, not contracted.",
+      "description": "In-house ad tech delivers $5B+ in FY2027 (ahead of base trajectory). FIFA Women's World Cup 2027 live ad fill rates demonstrate premium CPM ($35+). Market re-rates subscription segment from 22x to 25x EBIT as second revenue engine becomes visible in results. Subscription pricing delivers without churn at $21.99 Standard (next expected hike). The $114 case requires the full WARC ceiling scenario AND the subscription re-rate; both are extrapolated, not contracted.",
       "evidence_grade": "EXTRAPOLATED"
     },
     {
@@ -931,9 +931,9 @@
   ],
   "catalysts_to_watch": [
     {
-      "theme": "Q2 2026 earnings; he first real advertising momentum read",
+      "theme": "Q2 2026 earnings; the first real advertising momentum read",
       "horizon": "Near-term (mid-July 2026)",
-      "what_to_watch": "Q2 ad revenue trajectory; s the full-year $3B guide on track? Does Q2 2026 ad revenue (estimated $650-700M) show acceleration from Q1 ($500-550M)? Subscriber net adds vs Q2 guidance.",
+      "what_to_watch": "Q2 ad revenue trajectory; is the full-year $3B guide on track? Does Q2 2026 ad revenue (estimated $650-700M) show acceleration from Q1 ($500-550M)? Subscriber net adds vs Q2 guidance.",
       "why_it_matters": "The $3B FY2026 ad guide is the single contracted anchor in our base case. A miss here collapses the advertising option and forces a multiple compression. A beat validates the ARM trajectory and sets up the Q2/Q3 re-rate.",
       "bull_or_bear_tell": "Ad revenue > $700M in Q2 = bull tell; < $600M = bear tell on trajectory"
     },
@@ -941,7 +941,7 @@
       "theme": "In-house ad tech launch and first CPM disclosures (FY2027)",
       "horizon": "Medium-term (H1 2027)",
       "what_to_watch": "Netflix has disclosed it is building an in-house ad tech platform to replace Microsoft's intermediary (~2027 target). Watch for: (1) official launch announcement; (2) any disclosed metrics on CPM improvement or fill rate (unlikely to be granular, but any directional commentary at the FY2026 earnings or Upfront presentations); (3) whether Netflix discloses ad revenue separately.",
-      "why_it_matters": "The intermediary replacement is worth ~$4-5/viewer/year of ARM improvement at 250M MAV; pproximately $1.1B of annualized incremental revenue at full realization. This is the most mechanically certain part of the ad growth path, and its timing determines whether the bull or base case applies in FY2027.",
+      "why_it_matters": "The intermediary replacement is worth ~$4-5/viewer/year of ARM improvement at 250M MAV; approximately $1.1B of annualized incremental revenue at full realization. This is the most mechanically certain part of the ad growth path, and its timing determines whether the bull or base case applies in FY2027.",
       "bull_or_bear_tell": "In-house launch by Q2 2027 + any positive CPM commentary = bull tell; delay past H2 2027 = bear tell on timing"
     },
     {
@@ -955,17 +955,17 @@
       "theme": "Amazon Prime Video advertising scale and CPM data",
       "horizon": "Ongoing",
       "what_to_watch": "Amazon does not disclose Prime Video ad revenue separately. Watch proxy data: Alphabet/Google earnings commentary on CTV competition, agency channel checks on Amazon vs Netflix CPM spread, Amazon's US ad revenue growth rate as a proxy for market share absorption.",
-      "why_it_matters": "If Amazon's first-party data advantage is as structural as the bear case argues, it will be visible in stagnating Netflix ad revenue growth relative to the CTV market. This is the key bear signal; ot a discrete event but a gradual pattern.",
+      "why_it_matters": "If Amazon's first-party data advantage is as structural as the bear case argues, it will be visible in stagnating Netflix ad revenue growth relative to the CTV market. This is the key bear signal; not a discrete event but a gradual pattern.",
       "bull_or_bear_tell": "Netflix ad revenue growing faster than the CTV market (9.2% CTV share target) = bear threat not materializing; Netflix market share stagnating below WARC forecasts = bear tell"
     }
   ],
-  "conclusion": "At $80.50 to 21.7x EV/EBIT, 40% below the Jun 2025 peak, near the 52-week low; he market is pricing the subscription annuity at the floor and the advertising business at zero; the contracted $3B FY2026 ad guide and 250M MAV audience are simply not in the price. The crux is whether ad ARPU can scale from $12 to $22/viewer-year through a mechanically tractable program (replace Microsoft intermediary, improve fill rates, execute in-house ad tech); our base case says it can; the bear case says Amazon's structural data advantage caps the upside. We rate NFLX BUY at $80.50 with a 12m target of $101, MEDIUM conviction.",
+  "conclusion": "At $80.50 to 21.7x EV/EBIT, 40% below the Jun 2025 peak, near the 52-week low; the market is pricing the subscription annuity at the floor and the advertising business at zero; the contracted $3B FY2026 ad guide and 250M MAV audience are simply not in the price. The crux is whether ad ARPU can scale from $12 to $22/viewer-year through a mechanically tractable program (replace Microsoft intermediary, improve fill rates, execute in-house ad tech); our base case says it can; the bear case says Amazon's structural data advantage caps the upside. We rate NFLX BUY at $80.50 with a 12m target of $101, MEDIUM conviction.",
   "conviction": {
     "label": "MEDIUM",
     "assigned_by": "daedalus",
     "valuation_confidence": "MEDIUM",
     "path_confidence": "MEDIUM",
-    "basis": "BUY: Daedalus assigned MEDIUM. Subscription floor is clean and uncontested (22x EBIT = market price). Advertising trajectory is EXTRAPOLATED beyond FY2026 contracted guide. Data artifacts corrected (bundle Q2 guide $11.8B→$12.57B; net debt $10.3B→$5.2B); orrected data caps conviction below HIGH. Scenario band $68-$114 is 52% of fair value; elow the 60% HIGH cap, so band does not cap. MEDIUM is the right label: directional clarity is HIGH (BUY), magnitude uncertainty is real (advertising scale range $4.5B-$9.5B).",
+    "basis": "BUY: Daedalus assigned MEDIUM. Subscription floor is clean and uncontested (22x EBIT = market price). Advertising trajectory is EXTRAPOLATED beyond FY2026 contracted guide. Data artifacts corrected (bundle Q2 guide $11.8B→$12.57B; net debt $10.3B→$5.2B); orrected data caps conviction below HIGH. Scenario band $68-$114 is 52% of fair value; below the 60% HIGH cap, so band does not cap. MEDIUM is the right label: directional clarity is HIGH (BUY), magnitude uncertainty is real (advertising scale range $4.5B-$9.5B).",
     "caps_applied": [
       "data_quality CORRECTED -> capped at MEDIUM (not HIGH)"
     ]
@@ -995,7 +995,7 @@
     "Ad revenue by region not disclosed by Netflix (limits international ARM analysis)",
     "Fill rate and CPM data not publicly reported (inferred from MAV and guided total)"
   ],
-  "change_log": "First run; o prior NFLX report in output/ to diff against.",
+  "change_log": "First run; no prior NFLX report in output/ to diff against.",
   "sources": [
     {
       "type": "company_filed",
