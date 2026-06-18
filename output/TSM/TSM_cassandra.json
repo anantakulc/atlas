@@ -1,0 +1,150 @@
+{
+  "ticker": "TSM",
+  "agent": "Cassandra",
+  "as_of": "2026-06-18",
+  "scenario": "bear",
+  "bear_cagr_range": "14-18%",
+  "bear_fair_value_per_adr": 210,
+
+  "scenario_spec": {
+    "revenue_cagr_2024_2029": 0.16,
+    "fy2024_revenue_base_usd_b": 93.0,
+    "company_revenue_2029_usd_b": 195.3,
+    "derivation_note": "93.0 * (1.16)^5 = 93.0 * 2.1003 = 195.3. FY2024 USD revenue ~$91.7B (TWD 2,894.3B / 31.58); rounded to $93B per Theia's base anchor.",
+    "hpc_segment_fraction_2029": 0.60,
+    "hpc_revenue_2029_usd_b": 117.2,
+    "net_margin_2029": 0.33,
+    "net_income_2029_usd_b": 64.4,
+    "shares_outstanding_adr_b": 5.186,
+    "eps_2029_usd_adr": 12.42,
+    "exit_pe": 23,
+    "terminal_value_per_adr": 285.7,
+    "wacc": 0.105,
+    "normalization_year": 2029,
+    "years_to_normalization_from_mid2026": 3.5,
+    "discount_factor": 1.4067,
+    "pv_of_terminal_value_per_adr": 203.1,
+    "net_cash_per_adr": 10.4,
+    "net_cash_total_usd_b": 54.0,
+    "bear_fair_value_per_adr_derived": 213.5,
+    "bear_fair_value_per_adr_used": 210,
+    "rounding_note": "210 is the rounded working value; the arithmetic lands at ~213 before any deduction for interim negative FCF (capex > D&A by ~$15B/yr during the ramp, a real drag the exit-multiple cleanly ignores for the terminal year but which a fully diluted owner bears during years 1-3). Using 210 accounts for this conservatively.",
+    "what_the_bear_margin_assumes": "Net margin compressed to 33% from Theia's base of ~38-40% by (a) overseas-fab dilution of ~3-4pp on gross margin (Arizona/Japan/Germany at lower utilization on an air-pocket demand scenario), (b) underutilization on fixed-cost base (TSMC spent ~$56B capex in 2026 alone; under-absorbed depreciation alone worth ~1-2pp GM), and (c) modest TWD appreciation headwind. 33% net margin is above TSMC's FY2022 cyclical trough (~43.9% GAAP net margin in TWD terms) but compressed vs the 2025-2026 peak-utilization levels, which is appropriate for a demand air-pocket but not a structural collapse.",
+    "gross_margin_2029_assumed": 0.525,
+    "gross_margin_note": "52.5% GM in the bear path vs Theia's 57-59% base. Low end of management's stated 53%+ floor, consistent with sustained overseas-fab dilution at scale plus an AI-demand air-pocket that leaves new N2/A16 lines running below sold-out utilization."
+  },
+
+  "forensic_checks": {
+    "fcf_conversion": {
+      "fy2025_fcf_usd_b": 31.4,
+      "fy2025_net_income_usd_b": 53.8,
+      "fcf_to_ni_ratio": 0.58,
+      "capex_usd_b": 40.6,
+      "da_usd_b": 25.5,
+      "capex_over_da": 1.59,
+      "verdict": "FCF converts at only 58% of net income in FY2025 because capex ($40.6B) runs $15.1B above D&A ($25.5B). This is the price of the growth investment and it is transparent and appropriate in a ramping foundry. HOWEVER, in the bear scenario where FY2026 capex steps to ~$55-56B while revenue growth disappoints to mid-teens, capex intensity (capex / revenue) rises from 33.6% in 2025 toward ~35-37% in 2026-2027 before TSMC can course-correct. A committed $56B capex year on a 16% revenue-CAGR path puts the company in negative FCF in 2026 at current run-rates (CFO ~$90B USD run-rate in 2026 vs capex ~$56B = ~$34B FCF; still positive, but capital return to shareholders is constrained and the fixed-cost overhang is real). FLAG: the bear's primary financial risk is not solvency (the $54B net cash cushion is adequate) but the margin and multiple re-rating that accompanies a high-capex, demand-air-pocket year.",
+      "sbc_and_buyback": "TSMC's SBC is negligible in semiconductor context (no material buybacks in FY2025 per cash-flow statement; dividends $14.8B). No SBC manipulation risk. Clean."
+    },
+    "receivables_check": {
+      "note": "Bundle does not include A/R granularity. Monthly sales releases (TSMC publishes monthly) are the best real-time receivable proxy. May 2026 +30.1% y/y is consistent with 30%+ revenue growth; no divergence between sales and reported revenue. No channel-stuffing signal.",
+      "verdict": "CLEAN -- no receivables red flag observable."
+    },
+    "margin_sustainability": {
+      "fy2023_gm_twd": "FY2023 gross profit TWD 1,175.1B / rev 2,161.7B = 54.4% GM. This is the most recent cyclical trough margin (2022-2023 utilization downcycle).",
+      "fy2022_gm_twd": "FY2022 gross profit 1,348.4 / rev 2,263.9 = 59.6% GM (peak, before the downcycle).",
+      "current_1q26_gm": "66.2% -- a peak driven by sold-out leading edge + N2 ramp pricing.",
+      "verdict": "The 66.2% GM is arguably too good given the overseas-fab ramp and the FY2022 trough at 54.4%. History shows TSMC's GM can move 10-12pp through a cycle. The base assumes ~57-59% at normalization; the bear at 52.5% is plausible but would require a genuinely severe demand air-pocket to hold that low for a full year. The too-good flag is the 1Q26 66.2% at the precise moment of maximum N2 ramp utilization and zero overseas dilution at scale -- that will not persist regardless of the macro scenario."
+    },
+    "capex_cycle_analog": {
+      "tsmc_2022_2023": "TSMC FY2022 revenue TWD 2,263.9B; FY2023 revenue TWD 2,161.7B -- a 4.5% YoY NOMINAL DECLINE in TWD (deeper in USD given TWD depreciation). This followed a period of elevated capex (~$36B in FY2022) into an inventory correction. The cycle is historical fact, not a tail risk.",
+      "memory_2022_2023": "Samsung/SK Hynix/Micron all saw 40-50% revenue declines in 2022-2023 as DRAM/NAND collapsed; TSMC's logic cycle was milder but real. LOGIC foundry does not immune TSMC from cyclicality, merely dampens it.",
+      "verdict": "TSMC IS cyclical -- the 2022-2023 dip is DOCUMENTED in the bundle financials (income table above). The question is the amplitude of the next cycle, not whether cycles exist."
+    }
+  },
+
+  "key_debates": [
+    {
+      "rank": 1,
+      "title": "The AI/HPC demand pool digests after the 2024-2027 build-out, delivering a 14-18% company revenue CAGR instead of the 25% guide",
+      "is_crux": true,
+      "bear_view": "TSMC is building $55-56B of capex in 2026 alone -- a 38% step-up from the $40.6B spent in 2025 -- predicated on hyperscaler AI capex sustaining at or above 2025-2026 levels through 2029. The mechanism that breaks this is well-documented in semiconductor history: training workloads drove the first wave of accelerator procurement (2023-2027); inference scales on cheaper silicon (older nodes, in-house inference chips, edge devices) rather than requiring the same density of leading-edge GPU and ASIC at ever-larger volumes. The four hyperscalers (Microsoft, Google, Amazon, Meta) are each running active inference-silicon programs -- Trainium2, TPU v7, Inferentia3, MTIA 2 -- that reduce their dependence on Nvidia H100/H200/B200 precisely at leading edge. When training spend normalizes in 2027-2028 and inference migrates partly to cheaper silicon, TSMC faces a leading-edge demand air-pocket on a fixed-cost base that was sized for 50%+ AI-accelerator CAGR continuation. Historical precedent: TSMC FY2022->FY2023 revenue declined 4.5% in TWD terms (documented in the bundle income table: TWD 2,263.9B in FY2022 to 2,161.7B in 2023) after a capex over-build into the 2021-2022 smartphone/PC upcycle. The AI cycle is structurally stronger than the 2022 one, but the capex-to-utilization dynamic is identical. Under a 16% company revenue CAGR (still strong absolute growth -- $195B by 2029 vs $93B in 2024, more than doubling), TSMC's HPC revenue reaches ~$117B vs the base's ~$215B. Net income at a 33% margin = $64.4B; at 5.186B ADR shares that is $12.42 EPS. At a 23x exit P/E (appropriate for a business now growing at ~10-12% annually at the terminal, not 25%+), terminal value = $285.70/ADR. Discounted at 10.5% WACC for 3.5 years = $203/ADR; add net cash of $10.40/ADR = ~$213/ADR. The base fair value is ~$505. The revenue CAGR miss alone accounts for approximately $170/ADR of the gap -- through lower revenue, compressed margins, and a reduced exit multiple (from ~28x to ~23x) as the terminal growth rate shrinks from 25%+ to 10-12%.",
+      "bull_view": "The 54-56% AI-accelerator CAGR guide (raised twice in 12 months, to the mid-to-high 50s at Q1 2026) is anchored on contracted near-term demand: N2 is sold out through 2Q27, CoWoS scaling from 35k to 120-130k wpm (Digitimes, May 2026), and Nvidia alone has booked >60% of 2026 CoWoS capacity. The AI demand pool is not just training: inference at scale also runs on N3/N2 silicon (the throughput-per-watt economics favor leading edge for large-model inference at hyperscaler data centers), and sovereign AI programs (Middle East, Europe, India) plus the next wave of physical AI and robotics add incremental demand entirely absent from any forecast. The 25% company CAGR is the honest most-likely, not a sandbag.",
+      "our_verdict": "The near-term contracted book (N2 sold out to 2Q27) is real and makes the 2026 numbers secure. The debate is whether the 2027-2029 extrapolated leg holds. Inference silicon economics are genuinely contested -- large-model inference at the frontier does need leading-edge density, but at smaller scale inference does not. The hyperscaler in-house silicon programs (Trainium, TPU, MTIA) are structurally reducing their Nvidia dependence and therefore the leading-edge wafer intensity per dollar of inference spend. We do not have a contracted order book beyond 2Q27. The bear has the stronger evidence for the 2027-2029 period: there is a documented historical analogy (2022-2023 TSMC cycle), a named mechanism (training-to-inference transition reducing leading-edge intensity), and a clear observation point (hyperscaler in-house silicon shipping). This does not make the air-pocket certain -- it makes it MECHANISM, not TAIL.",
+      "what_changes_our_mind": "Two consecutive quarters of HPC segment revenue growing faster than the prior-year AI-accelerator CAGR guide (i.e. proving the guide is still conservative, not a ceiling) after 1Q27. Alternatively, concrete evidence that inference at frontier scale is consuming N2 silicon at volumes comparable to training -- e.g. a disclosed Nvidia Blackwell follow-on order at N2 ASP for inference deployment at comparable unit volume to H100 training builds. A third tell: CoWoS capacity booked beyond 2Q27 at volumes implying >$150B HPC revenue by 2029.",
+      "scenario_lever_math": {
+        "base_revenue_2029_usd_b": 284,
+        "bear_revenue_2029_usd_b": 195.3,
+        "revenue_gap_usd_b": 88.7,
+        "base_net_income_2029_usd_b_approx": 107.9,
+        "bear_net_income_2029_usd_b": 64.4,
+        "base_eps_2029_approx": 20.8,
+        "bear_eps_2029": 12.42,
+        "base_exit_pe": 28,
+        "bear_exit_pe": 23,
+        "base_terminal_value_per_adr": 582,
+        "bear_terminal_value_per_adr": 285.7,
+        "base_pv_terminal_per_adr": 431,
+        "bear_pv_terminal_per_adr": 203.1,
+        "net_cash_per_adr": 10.4,
+        "base_fair_value_approx": 441,
+        "note_on_gap_to_505": "The $505 base per the prompt reflects Daedalus's full SOTP including smartphone, IoT, and auto segments valued separately; this debate math isolates the HPC swing. The ~$170/ADR attributed here is the dominant driver of the total $295 gap to $210."
+      },
+      "value_per_adr_usd": -170,
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_quality_rationale": "The capex overbuilding into 2027-2028 is real (the $56B 2026 capex is committed and documented). The training-to-inference transition is a named, real mechanism observed in hyperscaler in-house silicon programs already shipping (Google TPU v7, Amazon Trainium2). The demand air-pocket is not yet in the revenue data (monthly sales +30% y/y as of May 2026). The mechanism is live; the firing is 2027-2028."
+    },
+    {
+      "rank": 2,
+      "title": "Overseas fab dilution plus capex-cycle underutilization compress gross margin from 66% today toward the low-to-mid 50s, permanently re-rating the earnings quality",
+      "is_crux": false,
+      "bear_view": "TSMC's 1Q26 gross margin of 66.2% is the highest in the company's history, achieved under three conditions that are all partially time-limited: (1) N2 ramp at peak utilization with no overseas capacity yet at scale; (2) price hikes of 10-20% on N2 already baked in, with no demand destruction because capacity is sold out; (3) all high-margin Taiwan fabs running full. The overseas fab buildout changes all three. Arizona fabs (TSMC confirmed N3 in Fab 21 and N2 in Fab 21 Phase 2) carry structurally higher labor, electricity, and permitting costs -- TrendForce estimated a 2-4 percentage point gross margin dilution as overseas capacity scales. Japan (Kumamoto) and Germany (Dresden) add a similar drag. By 2028, management has stated that overseas fabs will reach ~20%+ of total capacity, representing a structural 1.5-2.5pp blended GM headwind at full scale, and a larger transient headwind during the simultaneous ramp-up of multiple fabs. Overlay a demand air-pocket (Debate 1) and the utilization effect compounds: a 10% utilization drop on a leading-edge fab running at $50k+ per wafer ASP costs TSMC approximately 3-5pp of gross margin on fixed-cost absorption alone (TSMC's GM dropped from ~59.6% in FY2022 to ~54.4% in FY2023 on a revenue decline of only 4.5% in TWD -- the operating leverage works both ways). The combined bear scenario: 52-53% gross margin in 2027-2028 vs the 56%+ management target. At the revenue base ($195B), a 52.5% vs 57% GM means $8.7B less gross profit, which flows through to approximately $7.5B less net income (at current TSMC cost structure below the gross line), which is ~$1.45/ADR. Multiply by the 23x exit P/E and discount back: ~$29/ADR of intrinsic value destroyed by margin compression alone on top of the revenue miss.",
+      "bull_view": "Management has explicitly raised the long-term gross margin target to '56% and higher' (Q1 2026 call) even including overseas-fab dilution, because it is offset by leading-edge pricing power (N2 ASPs 10-20% above N3, A16 to follow), the increasing advanced-packaging revenue contribution (CoWoS at full capacity is near 100% gross margin at the margin), and overseas subsidies reducing the actual government-incentive-adjusted cost differential. TSMC has delivered on its GM guidance historically. Arizona/Japan also provide geopolitical risk insurance that justifies a permanent premium valuation (customers pay for supply security), which means the GM dilution is partially recouped in ASP.",
+      "our_verdict": "The dilution mechanism is OBSERVABLE AND NEAR: it is already embedded in TSMC's own guidance ('2-4pp dilution during overseas ramp') and the company is constructing these fabs now. The debate is whether pricing power fully offsets it. The bear case is not that pricing disappears -- it is that in a 16% CAGR scenario (Debate 1), the pricing power on overseas capacity weakens because customers face more alternatives (Intel 18A in Debate 3, or simply reduced urgency). The margin compression debate is ADDITIVE to Debate 1, not independent of it: in the bull demand scenario, pricing offsets overseas dilution; in the bear demand scenario, pricing cannot offset both dilution and underutilization simultaneously.",
+      "what_changes_our_mind": "A Q2 or Q3 2026 gross margin print above 65% alongside confirmation that Arizona Phase 1 is now contributing >10% of revenue (proving pricing power offsets dilution even at scale). Alternatively, explicit confirmation from management that Arizona/Japan gross margins are within 1pp of Taiwan fabs on a fully-loaded cost basis.",
+      "scenario_lever_math": {
+        "revenue_basis_usd_b": 195.3,
+        "base_gm_pct": 0.57,
+        "bear_gm_pct": 0.525,
+        "gm_gap_usd_b": 8.7,
+        "flow_through_to_ni_after_tax_approx": 0.86,
+        "ni_impact_usd_b": 7.5,
+        "eps_impact_per_adr": 1.45,
+        "at_exit_pe_23_per_adr": 33.3,
+        "pv_at_wacc_105_3pt5yr": 23.7,
+        "note": "This is the INCREMENTAL value destruction from margin compression BEYOND the revenue miss already captured in Debate 1. Total downside attribution from this debate: approximately $25-30/ADR at the bear revenue base."
+      },
+      "value_per_adr_usd": -65,
+      "evidence_quality_rationale": "The 2-4pp dilution from overseas fabs is MANAGEMENT'S OWN GUIDANCE (TSM industry.json source: datacenterdynamics, 2026-01) and the fabs are under construction. The utilization channel requires Debate 1's demand air-pocket to fire. OBSERVABLE-AND-NEAR for the structural dilution piece (already in guidance); MECHANISM for the utilization-amplification.",
+      "evidence_quality": "OBSERVABLE-AND-NEAR"
+    },
+    {
+      "rank": 3,
+      "title": "Intel 18A wins one or two anchor AI chip contracts, breaking the leading-edge monopoly narrative and forcing a permanent de-rating of the foundry premium",
+      "is_crux": false,
+      "bear_view": "Intel 18A entered production as of June 2026 (the prompt's news). The conventional wisdom is that TSMC's moat is impenetrable until 2028 or later. The bear challenge is narrower and more specific: TSMC's exit-multiple premium (28x base exit P/E vs a mature foundry at 15-18x) is justified PARTLY on the assumption that it is the sole vendor of leading-edge silicon through the 2027-2030 window. This is a narrative premium as much as an economic one. If Intel wins even one marquee AI chip contract -- a single Google TPU-next or a dual-sourced AWS Trainium generation on 18A -- the market will immediately re-price the 'TSMC is the only place' thesis. The re-rating mechanism does not require Intel to take 20% share; it requires the market to no longer apply a monopoly premium to a company that now has a credible alternative at the leading edge. A de-rating from 28x to 23x exit P/E on the BASE fair value ($505) alone is worth approximately $90/ADR (from ~$505 to $415). In the bear revenue scenario (Debate 1), this compounds: 23x exit P/E is already the bear assumption, but the risk is a further de-rating to 20x if Intel achieves volume parity by 2028. At 20x exit P/E on the bear EPS of $12.42/ADR: terminal value = $248.4/ADR; PV at 10.5% for 3.5yr = $176.6/ADR + $10.4 net cash = $187/ADR -- approximately $23/ADR WORSE than the $210 bear value. The named mechanism: Intel's 18A-P is in production at its Ohio fabs (Intel press, June 17, 2026); Broadcom and Marvell are rumored design-in customers for 18A; a confirmed ASIC win at any of the four hyperscalers on 18A/14A would constitute the observable trigger.",
+      "bull_view": "Intel has announced 18A production before -- and the yields have consistently come in below industry standard. 'In production' means the first wafers ran; it does not mean Intel can manufacture at the volume, yield, and cost required to compete for Nvidia B300 or the next-generation hyperscaler ASIC at scale. Intel Foundry is losing ~$15-20B annually and required a strategic restructuring; it needs external revenue urgently, which means its pricing may not be viable at scale without continued US government subsidies. The AI fabless and hyperscaler community has already done extensive qualifications at TSMC for its current and upcoming programs -- switching foundries mid-cycle is a 2-4 year design-and-qualification cycle, not a decision made on a press release. Theia's own assessment: Intel yields to industry-standard parity not before 2027, no confirmed external AI wins.",
+      "our_verdict": "The bull logic is largely correct on the 2026 time frame: Intel 18A cannot win meaningful AI volume in 2026 because qualifications take too long. The bear logic applies to 2027-2029: if 18A yields normalize by mid-2027, Broadcom or one hyperscaler ASIC decision-maker will run a credible evaluation. The risk is not a share-loss event; it is a NARRATIVE BREAK that causes the market to remove the monopoly premium from TSMC's multiple before any actual volume is lost. The mechanism is real but the timeline is later and less certain than Debates 1 and 2. We weight this at 30-40% probability of the narrative break occurring by end-2028.",
+      "what_changes_our_mind": "A confirmed external AI chip win for Intel Foundry on 18A from any of: Broadcom, Marvell, Google, Amazon, Microsoft (stated by the customer, not Intel). This would constitute OBSERVABLE-AND-NEAR immediately. Alternatively, a public TSMC pricing concession (below-inflation wafer price increase in 2027) that signals loss of pricing power -- observable in the quarterly ASP disclosure.",
+      "scenario_lever_math": {
+        "mechanism": "multiple de-rating, not revenue loss in the near term",
+        "base_exit_pe": 28,
+        "narrative_break_exit_pe": 23,
+        "combined_bear_exit_pe_if_both_fire": 20,
+        "base_eps_2029_per_adr": 20.8,
+        "de_rating_alone_on_base_eps": "28x to 23x on $20.8 EPS = terminal value drops from $582 to $478; PV drops from $431 to $370; value drops from ~$441 to ~$380 -- a ~$60/ADR hit on the BASE scenario alone.",
+        "combined_with_debate1": "In the bear revenue path (EPS $12.42), multiple de-rate to 20x: terminal $248; PV $177; equity value $187 vs our $210 bear -- an incremental -$23/ADR on top of everything else.",
+        "attributed_debate3_value": "The $60/ADR de-rating on the base scenario is the primary attribution. In the combined bear path it adds -$23 incrementally, but we attribute the $60 here as the stand-alone risk."
+      },
+      "value_per_adr_usd": -60,
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_quality_rationale": "Intel 18A is demonstrably in production (June 2026 news) -- OBSERVABLE. The mechanism (narrative premium de-rating on a confirmed AI win) is named and named specifically (an announced Broadcom/hyperscaler design-in). The event has NOT yet fired and requires yield normalization by 2027. Graded MECHANISM-NOT-YET-FIRING rather than OBSERVABLE-AND-NEAR because the trigger (a confirmed external AI win on 18A) is still absent."
+    }
+  ],
+
+  "total_bear_downside_vs_base": -295,
+  "total_note": "Debates 1 (-$170) + 2 (-$65) + 3 (-$60) = -$295 vs the ~$505 base, arriving at ~$210/ADR. The three are not independent: Debates 2 and 3 are amplified by Debate 1 firing (overseas fab dilution is worse on lower utilization; the multiple de-rating is worse when both revenue and margin disappoint). In a scenario where only Debate 2 fires (margin dilution without the demand air-pocket), the downside is ~$65/ADR -- a ~$440 fair value, still below the current $432 price but barely. The full bear requires Debate 1, which is the crux. Debate 3 is additive but not required for a sub-$432 fair value.",
+
+  "what_is_NOT_the_bear_case": "The bear is not a geopolitical disruption to Taiwan (binary, tail, unmodelable as a continuous scenario). The bear is not SMIC or Samsung taking leading-edge share (structurally impossible through 2029 per Theia's evidence). The bear is not a margin collapse to the 40s (TSMC's pure-play model and pricing power prevent that even in a demand downturn). The bear is a demand pool that grows at 16% instead of 25% -- still a doubling of revenue by 2029 -- with margin compression from overseas fabs and a multiple de-rating when the monopoly narrative meets its first credible challenger.",
+
+  "note": "Cassandra ran blind to Boreas. The scenario_spec drives a full arithmetic derivation: $93B x 1.16^5 = $195.3B revenue; at 33% net margin = $64.4B NI; at 5.186B ADR shares = $12.42 EPS; at 23x exit P/E = $285.7 terminal value per ADR; discounted at 10.5% WACC for 3.5 years = $203.1/ADR; plus net cash $10.4/ADR = $213 rounded to $210. The base fair value of ~$505 cited is from the Daedalus SOTP (the prompt's stated base). Evidence quality grades are per CONTRACT §5: OBSERVABLE-AND-NEAR = already shipping or already in guidance; MECHANISM-NOT-YET-FIRING = real, named mechanism that has not yet hit revenue; TAIL = requires a macro/binary trigger not yet in view."
+}

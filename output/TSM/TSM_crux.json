@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "ticker": "TSM",
+    "agent": "Theia",
+    "as_of": "2026-06-18",
+    "snapshot_id": "TSM_2026-06-18T0042Z",
+    "horizon": "FY2029 (the 5-year guidance window 2024-2029), with a normalization read to ~2030"
+  },
+
+  "crux": {
+    "variable": "The SIZE and DURABILITY of TSMC's leading-edge / HPC revenue engine through ~2029-2030, expressed as the whole-company USD revenue CAGR 2024-2029 — which is governed by (a) the AI/HPC demand POOL and (b) TSMC's pricing power on a sold-out leading edge. NOT competitive share (already maxed) but pool-size x ASP.",
+    "one_line": "TSMC keeps ~all of leading-edge foundry no matter what; the call is how big the AI/HPC wafer pool gets and how hard TSMC can price it — i.e. whether the 25% USD revenue CAGR guide proves conservative, met, or optimistic.",
+
+    "why_this_is_the_crux": "Share is settled: TSMC holds 90%+ of <7nm and effectively 100% of merchant AI-accelerator manufacturing, and grew ~4x faster than rivals in 2025. So the variance in TSM's value over the horizon comes almost entirely from one place — the dollar size of the leading-edge/HPC revenue line, which is the product of the AI demand pool (set by hyperscaler + sovereign AI capex) and TSMC's price per wafer. Margin and the mature segments are second-order; the bull and bear cases are different honest readings of how big and durable the AI/HPC pool is and how much pricing TSMC extracts from it.",
+
+    "decomposition_identity": "Company revenue CAGR ~= weighted( AI-accelerator revenue CAGR x AI-weight ) + ( rest-of-HPC CAGR x weight ) + ( smartphone CAGR x weight ) + ( IoT/auto/other CAGR x weight ). The swing term is AI-accelerator revenue = (AI accelerator unit/wafer demand, set by data-center capex) x (TSMC ASP per wafer, set by node + packaging pricing power). AI accelerator was ~17-19% of company revenue in 2025 (~$21-23B) and is the fastest-growing term; HPC overall is 61% of revenue.",
+
+    "drivers": [
+      {
+        "driver": "AI accelerator demand pool (the dominant term)",
+        "current": "AI-accelerator revenue ~17-19% of TSMC revenue in 2025 (~$21-23B), roughly doubled YoY. The end-pool: data-center AI accelerator TAM ~$300B+ in 2025 heading to >$500B by 2028 (AMD), with bull houses >$1T/yr by 2030.",
+        "trajectory_sourced": "TSMC raised its AI-accelerator revenue CAGR guide to 54-56% for 2024-2029 (1Q26 call), up from mid-40s a year earlier and mid-to-high 50s at 4Q25. CC Wei called AI demand 'extremely robust'. N2 sold out through 2Q27; CoWoS scaling ~35k->120-130k wpm by end-26; Nvidia alone secured >60% of 2026 CoWoS.",
+        "evidence_class": "CONTRACTED near term (sold-out N2, booked CoWoS, FY26 guide >30% USD), EXTRAPOLATED out-years (the 54-56% CAGR rests on hyperscaler+sovereign capex continuing).",
+        "sources": [
+          {"value": "AI accel CAGR 54-56% 2024-29 (1Q26); ~17-19% of 2025 rev (~$21-23B), ~doubled YoY", "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmcs-q1-2026-shows-strong-growth-and-margin-gains-93CH-4617167", "tier": "company_filed", "date": "2026-04"},
+          {"value": "Data-center AI accelerator TAM >$500B by 2028, >60%/yr (AMD)", "source_url": "https://www.trefis.com/stock/amd/articles/603344/the-real-engine-for-advanced-micro-devices-stock-might-not-be-what-you-think/2026-06-17", "tier": "sellside", "date": "2026-06"}
+        ]
+      },
+      {
+        "driver": "Pricing power / ASP per wafer",
+        "current": "N2 ~$30k/wafer (+10-20% vs N3 ~$25-27k). 3-7nm +single-digit % in 2026. 1Q26 GM 66.2%.",
+        "trajectory_sourced": "Management frames leading-edge price increases as 'unavoidable' to hold 53%+ GM, and raised the long-term GM target to '56% and higher'. With no second source at the leading edge, hikes pass through with little pushback ('effective monopoly pricing on 2nm from now through end-2027').",
+        "evidence_class": "OBSERVABLE — pricing already set for N2 and 2026; durable because of structural single-source position.",
+        "sources": [
+          {"value": "N2 ~$30k (+10-20%); 3-7nm single-digit 2026; GM target 56%+", "source_url": "https://www.trendforce.com/news/2025/10/08/news-tsmc-2nm-reportedly-up-10-20-far-below-rumored-50-3-7nm-to-rise-single-digit-in-2026/", "tier": "research_firm", "date": "2025-10"},
+          {"value": "Effective monopoly pricing on 2nm through end-2027; 1Q26 GM 66.2%", "source_url": "https://phemex.com/academy/tsmc-2nm-wafer-pricing-nvda-avgo-amd-ai-stack", "tier": "research_firm", "date": "2025-10"}
+        ]
+      },
+      {
+        "driver": "Competitive share (the term that is NOT contested)",
+        "current": "TSMC 72.3% pure-play foundry (1Q26, up from 70.4%), >90% leading edge, ~100% merchant AI accelerators.",
+        "trajectory_sourced": "Samsung ~11x smaller and yield-behind; SMIC walled off by export controls; only Intel 18A/14A is a credible challenger and it is unprofitable with yields-to-parity not before ~2027 and no proven external AI wins. Share flows toward TSMC.",
+        "evidence_class": "OBSERVABLE and stable — this is why share is NOT the crux; it bounds the downside.",
+        "sources": [
+          {"value": "TSMC 72.3% foundry share 1Q26; grew 4x faster than rivals 2025", "source_url": "https://www.tomshardware.com/tech-industry/why-tsmc-grew-four-times-faster-than-its-foundry-rivals-in-2025", "tier": "research_firm", "date": "2026"}
+        ]
+      }
+    ],
+
+    "ceiling": "Set by the AI/data-center demand pool, not by TSMC's share. If data-center AI accelerator TAM reaches ~$500B by 2028 and TSMC manufactures effectively all of it (merchant + ASIC), the wafer+packaging revenue TSMC captures from AI alone scales toward the high-$60s-$80B+ range by ~2029 on the company's own 54-56% CAGR. The physical ceiling is hyperscaler+sovereign capex sustaining (the 'is AI capex durable' question) and TSMC's own capacity (N2/A16 fabs + CoWoS), which TSMC is funding at $52-56B/yr.",
+    "floor": "Bounded by the share moat and the contracted book. Even in a sharp AI digestion, TSMC keeps ~all leading-edge share, smartphone/IoT/auto provide a ~$45-50B annuity-ish base, and the near term is contracted (N2 sold out to 2Q27, FY26 guide >30% USD). The floor is a slowdown in the AI pool, not a loss of position.",
+
+    "base": {
+      "estimate": "Whole-company USD revenue CAGR ~24-26% 2024-2029 (i.e. TSMC's own 25% guide is the honest base, treated as a credible management commitment, not a sandbag). AI-accelerator revenue CAGR ~50-56% within that. Blended gross margin holds ~57-59% (mid-to-high 50s) net of overseas dilution.",
+      "argument": "TSMC's 25% USD CAGR guide is itself a raised number (from 20% a year ago) and management has a long record of meeting or beating its long-term frame; the near term is contracted (N2 sold out to 2Q27, FY26 guided >30%, 1Q26 already +6.4% QoQ at 66.2% GM). The AI-accelerator 54-56% CAGR is anchored on real booked capacity (CoWoS scaling 3-4x, Nvidia locking 60% of 2026 packaging) and a demand pool independently forecast at >$500B by 2028. Pricing is set and durable (N2 +10-20%, single-source). The honest most-likely is that the guide is roughly right: AI/HPC compounds in the low-50s%, the leading-edge pool is real, and TSMC prices it well — landing the company at a ~25% top-line CAGR with mid-to-high-50s margins. This is neither a sandbag nor heroics; it is management's contracted+extrapolated frame taken at face value because the contracted portion validates it."
+    },
+
+    "bull": {
+      "estimate": "Whole-company USD revenue CAGR ~28-32% 2024-2029; AI-accelerator CAGR ~60%+; gross margin sustaining 59-62%.",
+      "argument": "The credible higher reading: AI capex proves a multi-year megatrend rather than a cycle — sovereign AI, inference scaling, and agentic/physical AI push the data-center accelerator TAM toward the >$1T/yr-by-2030 forecasts. TSMC, as the sole manufacturer of effectively all AI silicon AND the binding packaging constraint (CoWoS), captures the upside on both volume and price: it raises ASP harder (single-source on N2/A16), CoWoS becomes a fat second revenue line, and overseas-fab pricing premiums (US customers paying for Arizona supply security) lift the blend. In this world the 25% guide proves conservative and TSMC runs in the high-20s/low-30s with margins above target. Evidence class: EXTRAPOLATED-to-HOPED-FOR on the out-year capex durability, but grounded in observable booked capacity and pricing today."
+    },
+
+    "bear": {
+      "estimate": "Whole-company USD revenue CAGR ~14-18% 2024-2029; AI-accelerator CAGR decelerates to ~30-40%; gross margin drifts to low-to-mid 50s.",
+      "argument": "The credible lower reading: AI accelerator demand digests after a 2024-2027 build-out — hyperscaler capex growth normalizes, some inference shifts to cheaper/in-house silicon, and a 2027-2028 air-pocket hits leading-edge utilization (the classic semiconductor cycle, which TSMC is not immune to). Pricing power stays but on a smaller volume; overseas-fab dilution (Arizona/Japan/Germany, ~2-4 ppt) and TWD strength compress the blend toward low-50s GM; FX and a high capex base pressure FCF. Note this is a DEMAND-pool bear, not a share bear — even here TSMC keeps its position; the line just grows slower than the guide. A more severe (low-probability) tail is geopolitical disruption to Taiwan, which is a binary, not a fade. Evidence class: MECHANISM (capex cyclicality is real and observable in semi history) for the ~15% read; TAIL for the geopolitical leg."
+    },
+
+    "what_decides_it": [
+      "Hyperscaler + sovereign AI capex durability through 2027-2029 (the demand pool) — watch the big-4 hyperscaler capex guides and Nvidia/AMD/ASIC order books.",
+      "CoWoS / advanced-packaging capacity ramp actually filling (35k->120-130k wpm) and staying booked — the binding constraint and the tell on real demand.",
+      "TSMC's ability to sustain leading-edge price increases (N2/A16 ASP) without demand destruction — the pricing-power leg of the crux.",
+      "Margin defense vs overseas-fab dilution and TWD — whether the 56%+ GM target holds as Arizona/Japan/Germany scale.",
+      "Intel 18A/14A external traction — the ONLY thing that could touch the share floor; watch for a marquee AI/fabless dual-source win."
+    ]
+  }
+}

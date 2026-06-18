@@ -1,0 +1,1196 @@
+{
+  "ticker": "TSM",
+  "name": "Taiwan Semiconductor Manufacturing Company Limited",
+  "listings": "NYQ",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "business_type": "conglomerate",
+  "currency": "USD",
+  "date": "2026-06-18",
+  "engine": "Atlas v3",
+  "our_view": "BUY, MEDIUM conviction, $510 twelve-month target. TSMC is the essential manufacturing infrastructure of the AI compute buildout; it makes effectively 100% of merchant AI accelerators and over 90% of all leading-edge silicon, a position that is structurally unchallenged through at least 2027. At $432, the stock trades at fair value on the base case ($430 intrinsic). The BUY is driven by the 12-month roll-forward of fundamental value: as AI-accelerator volumes compound at 54-56% annually on contracted capacity, TSMC earns into $466 of intrinsic value in 12 months from earnings compounding alone, and toward $510 when we credit the contracted near-term evidence (N2 sold out through 2Q27, CoWoS booked by Nvidia at over 60% of 2026 capacity) for supporting an AI-scarcity premium in the near term. The call is on intrinsic value creation, not multiple expansion. The crux and the risk are one: whether hyperscaler AI capex is durable through 2027-2029, or whether a training-to-inference shift creates a demand air-pocket on a $56 billion capex base.",
+  "crux": {
+    "variable": "Size and durability of TSMC's AI/HPC leading-edge revenue pool through 2029, expressed as the whole-company USD revenue CAGR 2024-2029",
+    "one_line": "TSMC keeps essentially all leading-edge foundry share; the only variable that decides the call is how big the AI/HPC wafer pool gets and how hard TSMC can price it, and whether the 25% USD revenue CAGR guide proves conservative, met, or optimistic.",
+    "base": "25% USD revenue CAGR 2024-2029 (management guide, validated by contracted near-term; AI-accelerator sub-engine at 54-56% CAGR). Honest most-likely, taken at face value because the contracted portion validates it.",
+    "bull": "28-32% USD revenue CAGR; AI-accelerator CAGR 60%+; sovereign AI and inference scaling extend duration beyond the contracted window.",
+    "bear": "14-18% USD revenue CAGR; AI-accelerator demand digests 2027-2028 as training normalizes and inference migrates to cheaper silicon; overseas fab dilution compounds the margin hit.",
+    "what_decides_it": "Hyperscaler and sovereign AI capex durability through 2027-2029; whether CoWoS capacity stays fully booked beyond 2Q27; whether TSMC's N2/A16 pricing power holds; whether Intel 18A wins an anchor AI chip customer before 2028."
+  },
+  "recommendation": {
+    "action": "BUY",
+    "tone": "constructive, disciplined",
+    "current_price": 432.15,
+    "target_12m": 510.0,
+    "upside_pct": 18.7,
+    "conviction": "MEDIUM",
+    "rationale": "Base fair value $430 essentially equals the price; the BUY comes from the 12-month compounding of intrinsic value toward $466 (pure convergence) and $510 (contracted-evidence lean). Conviction is MEDIUM because the 2027-2029 AI CAGR is extrapolated, not contracted, creating a wide range of $235-$583. At MEDIUM conviction, the 12% margin-of-safety threshold applies and is met at 18.7% total return.",
+    "next_earnings": "2026-07-16 (Q2 2026)"
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 430.02,
+      "multiple": "27.3x FY2026e EPS $15.75",
+      "basis": "Base SOTP: HPC/LeadingEdge ExitMultiple $357.91 + Mature Annuity P/E $58.62 + net cash $13.50"
+    },
+    "price_today": {
+      "value": 432.15,
+      "multiple": "27.4x FY2026e EPS $15.75",
+      "basis": "market, essentially AT the argued base"
+    },
+    "fair_value_12m": {
+      "value": 465.87,
+      "basis": "#1 rolled forward at r=9.0% less dividend $2.85/ADR. Pure intrinsic convergence, 8.5% total return to this number.",
+      "convergence_return_pct": 8.5
+    },
+    "target_12m": {
+      "value": 510.0,
+      "basis": "FY2026e EPS $15.75 x 32.4x defensible P/E. Documented lean above pure roll-forward: contracted near-term evidence (N2 sold out through 2Q27, CoWoS locked, FY26 guide of over 30% being delivered in monthly sales) supports the market continuing to price an AI-scarcity premium over the next 12 months. Gap from $466 to $510 ($44/ADR) is the contracted-evidence premium; we do not lean to the full bull ($583) because the out-year AI CAGR is extrapolated, not contracted.",
+      "implied_12m_total_return_pct": 18.7
+    }
+  },
+  "valuation_headline": {
+    "method_primary": "SOTP",
+    "method_why": "TSMC is two distinct economic machines: an AI/HPC leading-edge engine growing at 50%+ CAGR and a smartphone/IoT/auto annuity growing at 3-5%. Blending them into a single DCF or single multiple understates the growth-duration question that decides the call and manufactures a wrong multiple for both. ExitMultiple for HPC avoids the g>r blow-up in a 10-year DCF on a hyper-grower; current-earnings-times-multiple for the mature annuity already at steady state.",
+    "band_low": 235.25,
+    "band_high": 583.34,
+    "target_reasoning": "Target leans above the pure 12m roll-forward ($466) by $44, reflecting the contracted near-term delivery already in the order book. No lean toward the full bull because the 2027-2029 demand pool is extrapolated."
+  },
+  "thesis": [
+    {
+      "pillar": "The leading-edge monopoly is real and settled through at least 2027",
+      "detail": "TSMC holds 72.3% of pure-play foundry (Q1 2026, up from 70.4%), over 90% of all sub-7nm leading-edge logic, and effectively 100% of merchant AI-accelerator manufacturing. Samsung is 11x smaller in foundry with yield gaps; SMIC is walled off at 7nm by export controls; Intel 18A is in production but yields are not at industry standard until 2027 and has no confirmed external AI wins. The share question is settled; the investment question is how big the pool gets and what TSMC prices it at."
+    },
+    {
+      "pillar": "Near-term contracted evidence validates the 25% CAGR guide through 2027",
+      "detail": "N2 is sold out through Q2 2027 (company disclosure, Q1 2026 call). CoWoS advanced packaging is scaling from 35,000 to 120,000-130,000 wafers per month by end-2026 with Nvidia alone securing over 60% of 2026 capacity. Q1 2026 was a beat-and-raise: revenue $35.9 billion, gross margin 66.2%, EPS $3.49/ADR above consensus, with full-year guidance raised to above 30% USD growth. May 2026 monthly revenue was +30.1% year-over-year. The near term is not forecast; it is booked."
+    },
+    {
+      "pillar": "At $432 the stock is priced for the base case, not the bull; he BUY is on compounding, not on optimism",
+      "detail": "Our intrinsic value today is $430, essentially equal to the market price. The 18.7% total return to the $510 target comes from two sources: 8.5% from intrinsic value rolling forward as TSMC earns into it, and approximately 10% from the contracted-evidence premium on top of the pure roll-forward. A buyer at $432 is not paying for the bull scenario ($583); they are paying for the argued base (25% CAGR, $430 intrinsic) and earning a 12-month return from that base compounding into a higher value. The risk/reward is asymmetric: the downside requires a genuine AI digestion event (bear $235); the base and bull require only the guide being approximately right."
+    }
+  ],
+  "business_overview": {
+    "summary": "TSMC, founded in 1987 and headquartered in Hsinchu, Taiwan, is the world's largest dedicated semiconductor foundry. It manufactures chips designed by others; it owns no end products and competes with none of its customers, which is the 'pure-play' model. FY2025 revenue was approximately $122 billion, up 36% year-over-year in USD, with a gross margin of 59.9% and net margin of 44.6%. Return on equity was 31.7%. The company holds approximately $70 billion of net cash (Q1 2026 estimate; FY2025 balance sheet shows $54 billion, with cash building through the strong first quarter).",
+    "business_model": "Capital intensity for monopoly: TSMC spends $52-56 billion per year on capital expenditure to hold a multi-year process technology lead, then earns monopoly-like pricing and 60%+ gross margins on leading-edge nodes because there is no credible second source. Capex is the moat; pricing power is the return on it. Revenue is recognized as wafers and advanced packaging services delivered; customers pay upfront capacity reservations and per-wafer fees at contracted prices.",
+    "segments": [
+      {
+        "name": "HPC / Leading-Edge",
+        "revenue_share_pct": 61,
+        "revenue_usd_b_approx": 70,
+        "growth_pct": "+20% quarter-over-quarter in Q1 2026; AI-accelerator sub-segment guided to 54-56% CAGR 2024-2029",
+        "margin_pct_note": "Highest-margin segment; leading-edge at utilization achieves over 65% operating margin. The dominant driver of company blended margin expansion.",
+        "nature": "growth",
+        "note": "Contains AI accelerators (Nvidia/AMD GPUs, hyperscaler custom ASICs. Google TPU, Amazon Trainium, Microsoft Maia, Meta MTIA), server CPUs, networking, FPGAs. The AI-accelerator slice is approximately 17-19% of total company revenue in 2025 (~$21-23 billion) and the fastest-growing term."
+      },
+      {
+        "name": "Smartphone",
+        "revenue_share_pct": 26,
+        "revenue_usd_b_approx": 30,
+        "growth_pct": "-11% quarter-over-quarter in Q1 2026 (seasonal); structurally low-to-mid single-digit unit growth",
+        "margin_pct_note": "High-value at leading edge (Apple A-series on N3/N2) but seasonal and unit-mature. Mix shift to N2 raises per-unit ASP over time.",
+        "nature": "annuity",
+        "note": "Apple A-series and M-series, MediaTek and Qualcomm SoCs. Apple is the largest single customer at approximately 22-25% of total revenue historically."
+      },
+      {
+        "name": "IoT / Automotive / Other",
+        "revenue_share_pct": 10,
+        "revenue_usd_b_approx": 12,
+        "growth_pct": "IoT +12% QoQ (recovering); Auto -7% QoQ (soft near-term); secular content-per-car tailwind longer term",
+        "margin_pct_note": "Mixed nodes, mid-margin. Less sensitive to leading-edge pricing power.",
+        "nature": "cyclical",
+        "note": "IoT edge/connectivity, ADAS/MCUs for automotive, digital consumer electronics."
+      }
+    ],
+    "customers": [
+      "Apple (~22-25% of revenue; A-series, M-series)",
+      "Nvidia (largest GPU customer; over 60% of 2026 CoWoS capacity)",
+      "AMD (GPU and CPU)",
+      "Broadcom and Marvell (custom ASICs, networking)",
+      "Qualcomm and MediaTek (mobile SoCs)",
+      "Google, Amazon, Microsoft, Meta (hyperscaler custom ASICs on N3/N2)"
+    ],
+    "geographic": [
+      "Manufacturing: Taiwan (primary; Hsinchu, Tainan, Taichung), Arizona (N3 in Fab 21 Phase 1; N2 in Phase 2), Japan (Kumamoto, mature nodes), Germany (Dresden, automotive/specialty, in construction)",
+      "Revenue: globally distributed by customer HQ but all manufacturing is concentrated in Taiwan and the new overseas fabs"
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY2022",
+      "revenue_b_usd_approx": 71.7,
+      "revenue_growth_pct": null,
+      "gross_margin_pct": 59.6,
+      "ebitda_b_usd_approx": 50.4,
+      "net_income_b_usd_approx": 31.4,
+      "fcf_b_usd_approx": 16.5,
+      "eps_usd_adr_approx": 6.21,
+      "note_twd": "TWD 2,263.9B revenue; TWD 992.9B net income; TWD 520.9B FCF"
+    },
+    {
+      "fy": "FY2023",
+      "revenue_b_usd_approx": 68.5,
+      "revenue_growth_pct": -4.5,
+      "gross_margin_pct": 54.4,
+      "ebitda_b_usd_approx": 48.2,
+      "net_income_b_usd_approx": 27.0,
+      "fcf_b_usd_approx": 9.1,
+      "eps_usd_adr_approx": 5.12,
+      "note_twd": "TWD 2,161.7B revenue; a 4.5% nominal decline in TWD from the 2022 smartphone/PC inventory correction. Gross margin trough of the recent cycle at 54.4%."
+    },
+    {
+      "fy": "FY2024",
+      "revenue_b_usd_approx": 91.7,
+      "revenue_growth_pct": 33.9,
+      "gross_margin_pct": 56.1,
+      "ebitda_b_usd_approx": 65.8,
+      "net_income_b_usd_approx": 36.7,
+      "fcf_b_usd_approx": 27.3,
+      "eps_usd_adr_approx": 7.17,
+      "note_twd": "TWD 2,894.3B revenue; recovery-year as AI demand inflected. Gross margin recovering toward 56%."
+    },
+    {
+      "fy": "FY2025",
+      "revenue_b_usd_approx": 120.6,
+      "revenue_growth_pct": 35.9,
+      "gross_margin_pct": 59.9,
+      "ebitda_b_usd_approx": 86.8,
+      "net_income_b_usd_approx": 53.8,
+      "fcf_b_usd_approx": 31.4,
+      "eps_usd_adr_approx": 10.4,
+      "note_twd": "TWD 3,809.1B revenue; TWD 1,697.6B net income; TWD 992.4B FCF. Peak capex year at ~$40.6B."
+    }
+  ],
+  "historical_financials_read": "The historical record tells a company that doubles in size approximately every three years during good cycles and barely dips in bad ones. The FY2022 to FY2023 nominal revenue decline of 4.5% in TWD (the smartphone/PC inventory correction) is the most severe downturn TSMC has experienced; and even then gross margin only fell to 54.4%, the company remained highly profitable, and FCF remained positive. The recovery in FY2024-2025 was not a bounce-back to the prior level but a step-change driven by a new demand vector (AI/HPC) that has no precedent in TSMC's 35-year history in terms of both the volume and the ASP uplift. The structural message from the financials is that the business is as good in downturns as most companies are in upturns. The open question, which is the crux, is whether the new AI growth engine is a multi-year platform shift or a cycle.",
+  "snapshot": [
+    {
+      "label": "Price (USD/ADR)",
+      "value": "$432.15"
+    },
+    {
+      "label": "Market cap",
+      "value": "$2.24 trillion"
+    },
+    {
+      "label": "52-week range",
+      "value": "$206 to $450"
+    },
+    {
+      "label": "YTD return",
+      "value": "+35.9%"
+    },
+    {
+      "label": "1-year return",
+      "value": "+104.7%"
+    },
+    {
+      "label": "Fair value today (#1)",
+      "value": "$430"
+    },
+    {
+      "label": "12m target (#4)",
+      "value": "$510"
+    },
+    {
+      "label": "Implied 12m total return",
+      "value": "+18.7%"
+    },
+    {
+      "label": "Bear / Base / Bull",
+      "value": "$235 / $430 / $583"
+    },
+    {
+      "label": "Rating / Conviction",
+      "value": "BUY / MEDIUM"
+    },
+    {
+      "label": "FY2026e EPS (USD/ADR)",
+      "value": "~$15.75"
+    },
+    {
+      "label": "P/E on FY2026e",
+      "value": "27.4x"
+    },
+    {
+      "label": "P/E on FY2027e",
+      "value": "22.0x"
+    },
+    {
+      "label": "FY2025 revenue (USD)",
+      "value": "~$120.6 billion"
+    },
+    {
+      "label": "FY2025 gross margin",
+      "value": "59.9%"
+    },
+    {
+      "label": "Q1 2026 gross margin",
+      "value": "66.2%"
+    },
+    {
+      "label": "FY2025 net margin",
+      "value": "44.6%"
+    },
+    {
+      "label": "FY2025 ROE",
+      "value": "31.7%"
+    },
+    {
+      "label": "Net cash",
+      "value": "~$54 billion"
+    },
+    {
+      "label": "FY2025 FCF/ADR",
+      "value": "$6.06"
+    },
+    {
+      "label": "Next earnings",
+      "value": "2026-07-16"
+    },
+    {
+      "label": "Foundry market share (Q1 2026)",
+      "value": "72.3% pure-play"
+    },
+    {
+      "label": "HPC share of revenue (Q1 2026)",
+      "value": "61%"
+    },
+    {
+      "label": "AI-accelerator CAGR guide (2024-2029)",
+      "value": "54-56%"
+    },
+    {
+      "label": "FY2026 capex guide",
+      "value": "~$55-56 billion"
+    }
+  ],
+  "industry_position": {
+    "market_overview": "The global semiconductor market is entering a structural supercycle driven by AI compute. WSTS forecasts roughly $975 billion in 2026 (up 25%+ year-over-year) with logic and memory leading, and Gartner sees the industry crossing $1.3 trillion in 2026. The slice that matters for TSMC is the data-center AI accelerator market, where AMD's CEO puts the addressable opportunity above $500 billion by 2028, growing over 60% annually. TSMC sits at the only choke-point in this entire value chain: every advanced logic chip requires a foundry, and TSMC is the only foundry with the process technology, yield, and packaging capabilities to serve it.",
+    "tam_usd_bn": 975,
+    "tam_growth_pct": 25,
+    "addressable_market": "TSMC's served market is leading-edge plus advanced logic foundry plus advanced packaging; not the entire semiconductor TAM. It dominates the sub-7nm leading-edge wafer market with over 90% share and effectively 100% of merchant AI-accelerator manufacturing. The AI accelerator data-center market alone is forecast above $500 billion by 2028 by AMD; TSMC captures the wafer and packaging layer of that, which translates to the $21-23 billion AI-accelerator revenue in 2025 compounding at 54-56% annually per management's own guide.",
+    "the_share_dynamic": "At the leading edge, there is no meaningful share contest left to win or lose. TSMC already holds over 90% of sub-7nm logic and effectively 100% of merchant AI-accelerator manufacturing. Samsung Foundry has approximately 6.5% of pure-play foundry revenue. TSMC is now 11 times larger in foundry; and its yield gap versus Samsung has kept marquee AI customers at TSMC. SMIC and the specialty players (UMC at 3.9%, GlobalFoundries at 3.3%) are structurally absent from leading-edge. The share dynamic flows toward TSMC: it grew approximately four times faster than its foundry rivals in 2025 and gained pure-play share quarter-over-quarter in Q1 2026 (70.4% to 72.3%). The investment question is therefore not 'does TSMC keep its share' but 'how big does the leading-edge pool get'; which is why the crux is demand-pool size and pricing power, not competitive share.",
+    "revenue_drivers": [
+      "Leading-edge pool growth: AI/data-center capex driving N3/N2/A16 wafer demand (the dominant driver at 61% of company revenue and growing)",
+      "Node migration and ASP uplift: customers moving N5 to N3 to N2 to A16, each step at higher wafer price (N2 approximately $30,000 per wafer versus N3 at $25,000-$27,000)",
+      "Advanced packaging (CoWoS/SoIC): a second capacity-constrained revenue line scaling from 35,000 to 120,000-130,000 wafers per month by end-2026",
+      "Pricing power: N2 up 10-20% versus N3; 3-7nm up single-digit percent in 2026; leading-edge pricing described as 'unavoidable' to hold 53%+ gross margin",
+      "Smartphone leading-edge content: Apple moving flagship SoCs to N2, lifting per-unit ASP even as unit volumes grow modestly"
+    ],
+    "product_differentiation": "Three reinforcing moats: a sustained process-technology lead (N2/A16 ahead of all rivals at volume); advanced packaging (CoWoS/SoIC, now the binding constraint on AI systems and dominated by TSMC; it controls both the silicon and the package); and the pure-play trust model (TSMC competes with none of its customers, so Apple, Nvidia, AMD, and all hyperscalers can fab their most valuable IP there without conflict). The combination is why every AI accelerator is built at TSMC.",
+    "five_forces": {
+      "rivalry": "LOW at leading edge (effective monopoly through 2027); moderate in mature nodes but that is not where the value is",
+      "new_entrants": "VERY LOW; leading-edge fab and ecosystem costs over $30 billion and a decade; only Intel, state-backed, is attempting it and is years behind on yields",
+      "supplier_power": "MODERATE. ASML is a single source for EUV/High-NA lithography equipment; TSMC is ASML's largest customer so power is balanced",
+      "buyer_power": "LOW; with no second source at leading edge, buyers are price-takers; TSMC pushed through 10-20% N2 price hikes with little pushback",
+      "substitutes": "LOW; here is no substitute for leading-edge silicon for frontier AI workloads"
+    },
+    "moat": "WIDE and, if anything, widening. The process lead, the packaging lock, and the pure-play trust model compound. The only credible threat to the moat is Intel Foundry 18A/14A reaching volume parity with confirmed external AI wins; multi-year, unproven path. Geopolitical (Taiwan-China) tail risk is the real residual risk, partly mitigated by the Arizona/Japan/Germany diversification.",
+    "competitors": [
+      {
+        "name": "Samsung Foundry",
+        "position": "Distant second. Approximately 6.5% pure-play foundry share in Q1 2026. SF2 (2nm GAA) is in production but yield and customer credibility trail TSMC.",
+        "share": "6.5%",
+        "trajectory": "Losing relative share; TSMC grew approximately four times faster than rivals in 2025. Samsung's leading-edge yield and credibility gap keeps the biggest AI customers at TSMC."
+      },
+      {
+        "name": "Intel Foundry (IFS)",
+        "position": "The credible technology challenger. 18A in production as of June 2026 (sub-2nm class, GAA plus backside power). Approximately 3-6% of the broader foundry market. Deeply unprofitable; 18A yields expected to reach industry standard around 2027.",
+        "share": "3-6%",
+        "trajectory": "The wildcard. If 18A/14A yields normalize and external AI wins materialize (a dual-sourced hyperscaler ASIC), Intel is the only entity that could dent TSMC's leading-edge monopoly. Currently years from volume parity and unproven with external AI customers. A narrative break, not a volume event, is the near-term risk."
+      },
+      {
+        "name": "SMIC",
+        "position": "China's national champion. Approximately 5.1% pure-play foundry share in Q1 2026. Capped at around 7nm by export controls (no EUV access). Not a leading-edge competitor for the global AI/HPC market.",
+        "share": "5.1%",
+        "trajectory": "Growing within China (domestic substitution) but walled off from sub-7nm and from TSMC's AI customer base by sanctions."
+      },
+      {
+        "name": "UMC / GlobalFoundries",
+        "position": "Specialty and mature foundries (3-4% share each). No leading-edge ambition; not relevant to the crux.",
+        "share": "3-4% each",
+        "trajectory": "Stable niche players; irrelevant to the leading-edge AI thesis."
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding (EUV equipment monopoly)",
+      "pe_ntm_approx": "~35x",
+      "highlight": true,
+      "note": "The closest analog by moat type (single-source monopoly in the AI compute chain). ASML trades at ~35x forward. TSMC's 27x reflects the asset-heavy foundry discount versus ASML's near-zero-capex equipment model. TSMC's 27x is appropriate, not cheap."
+    },
+    {
+      "ticker": "Samsung",
+      "name": "Samsung Foundry (embedded, not pure-play)",
+      "pe_ntm_approx": "~15x",
+      "highlight": false,
+      "note": "Trades at a significant discount to TSMC reflecting yield/credibility gap and the Foundry embedded within an IDM/memory conglomerate."
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel Corporation (IFS)",
+      "pe_ntm_approx": "~20x",
+      "highlight": false,
+      "note": "Struggling foundry economics, no confirmed external AI wins, deeply unprofitable IFS division. Relevant only as the 'what if Intel wins' scenario monitor."
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA Corporation (primary customer)",
+      "pe_ntm_approx": "~35x",
+      "highlight": true,
+      "note": "TSMC's largest CoWoS customer. Nvidia at 35x versus TSMC at 27x illustrates the asset-light premium. Nvidia sells the silicon; TSMC makes it on $56 billion of capex. The 8-point multiple gap is the appropriate foundry discount."
+    }
+  ],
+  "peers_read": "TSMC at 27x forward P/E sits between the asset-light AI beneficiaries (Nvidia, ASML at 35x) and the structurally disadvantaged foundry competitors (Samsung at 15x, Intel at 20x). This positioning is correct: TSMC has the monopoly economics of the asset-light players but the capex intensity of an industrial manufacturer, and the market prices that spread. The 27x is not rich; it is the appropriate toll on the AI compute chain for a company spending $56 billion per year to maintain its process lead.",
+  "market_view": {
+    "whats_priced_in": "At $432 the ADR carries roughly 22x the FY2027 consensus EPS and approximately 27x the FY2026 run-rate. Stripping a 3% terminal growth and an 11-12% equity cost, a 22x exit-style multiple is consistent with the market underwriting high-20s percent annual earnings growth sustained for four to five years before fading toward a mature high-teens multiple. That is precisely the AI/HPC durability TSMC guides to: above 30% USD revenue growth in 2026 and a 54-56% AI-accelerator CAGR through 2029. The street is not pricing peak-cycle mean-reversion; it is pricing multi-year leading-edge scarcity. TSM is priced as the structurally scarce toll on AI compute, and the risk is therefore expectations/valuation (priced for continuation), not visible fundamental deterioration.",
+    "street_view": "TSM is the indispensable leading-edge foundry for the AI buildout; supply is tight through 2027, HPC is 61% of revenue, and management guides above 30% USD revenue growth in 2026 with a 54-56% AI-accelerator CAGR to 2029. The debate on the street is valuation and duration, not whether demand is real.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-04",
+        "firm": "Aletheia Capital (Stefan Chang)",
+        "action": "raised PT",
+        "old_pt": "$500",
+        "new_pt": "$600",
+        "rating_change": "Buy reiterated",
+        "note": "Street-high ADR target post-Q1 2026; AI/HPC-driven thesis; most bullish on the tape."
+      },
+      {
+        "date": "2026-04",
+        "firm": "Bank of America (Haas Liu)",
+        "action": "raised PT",
+        "old_pt": "NT$2,360",
+        "new_pt": "NT$2,530",
+        "rating_change": "Buy maintained",
+        "note": "Cited strong HPC/AI chip demand. NT$ target translates below current ADR price, reflecting a Taiwan-listing lag."
+      },
+      {
+        "date": "2026-04-16",
+        "firm": "Morgan Stanley",
+        "action": "reiterated constructive",
+        "old_pt": null,
+        "new_pt": null,
+        "rating_change": "Overweight",
+        "note": "Flagged Q2 revenue guide of +10% quarter-over-quarter as ahead of the 5-10% consensus expectation."
+      },
+      {
+        "date": "2026-04-16",
+        "firm": "JPMorgan",
+        "action": "prior PT raise",
+        "old_pt": "NT$1,700",
+        "new_pt": "NT$2,100",
+        "rating_change": "Overweight",
+        "note": "Early-2026 NT$ target now stale vs the ADR run; forecasts ~30% USD revenue growth in 2026."
+      },
+      {
+        "date": "2026-01",
+        "firm": "Goldman Sachs",
+        "action": "raised PT",
+        "old_pt": "NT$1,720",
+        "new_pt": "NT$2,330",
+        "rating_change": "Conviction Buy",
+        "note": "Multi-year AI growth engine thesis; drove a record-high rally in early 2026. NT$ target now lags the ADR."
+      },
+      {
+        "date": "2026-04-29",
+        "firm": "Consensus aggregate",
+        "action": "mean target tracking",
+        "old_pt": null,
+        "new_pt": "$473-477",
+        "rating_change": "Strong Buy (5/12/2/0/0 to 17 buys, 2 holds, 0 sells)",
+        "note": "18 analysts; net upgrade momentum with no sell ratings."
+      }
+    ],
+    "news_narrative": "The narrative is unambiguously demand-led and supply-constrained. Q1 2026 was a clean beat-and-raise: revenue $35.9 billion (+40.6% year-over-year), gross margin 66.2%, EPS $3.49/ADR beat consensus, and management raised full-year 2026 guidance to above 30% USD revenue growth. Capex guidance was lifted to the high end of the $52-56 billion range. Recent headlines confirm leading-edge capacity is sold out. The counter-narrative is a valuation/bubble debate (Zacks 'TSM at $426: Bubble Territory or a Buy', GuruFocus 43% 'overvalued' flag on trailing P/E); but both resolve net-bullish in the sources themselves. Intel 18A entering production is the one structural watch signal, though no confirmed external AI chip wins exist yet.",
+    "sentiment_narrative": "Sentiment is strongly bullish with a vocal valuation-skeptic minority. The stock is +104.7% over 12 months and near 52-week highs. The analyst community is overwhelmingly Buy/Strong Buy with rising targets and zero sell ratings. The skeptic thread focuses on valuation (36.7x trailing P/E versus a 22.8x 5-year median per GuruFocus) and mild insider net-selling (~$14 million sold versus $1.2 million bought over three months), though insider ownership is only 0.04% of shares, making the signal weak. The market believes the demand; the contest is over what multiple it deserves.",
+    "runway": "STRONG. Q2 2026 guidance is $39.0-40.2 billion revenue (+10% quarter-over-quarter, +32% year-over-year at midpoint) and 65.5-67.5% gross margin. Monthly revenue is tracking: May 2026 +30.1% year-over-year, April +17.5%, YTD 5-month cumulative +30%; fully consistent with the above-30% full-year guide. CoWoS capacity ramping to 120,000-130,000 wafers per month by end-2026 with the book full. The next catalyst is Q2 earnings on July 16, 2026; beat-and-raise would confirm the bull's near-term contracted thesis; a beat with no raise would be the first signal the sold-out window is already fully priced.",
+    "runway_verdict": "STRONG near-term fundamental runway; the valuation risk is distinct and real; the stock is priced for multi-year continuation of above-30% growth.",
+    "market_lean": "strongly bullish on fundamentals, with a real valuation overhang"
+  },
+  "street_reconstruction": {
+    "currency": "USD",
+    "what_price_implies": "At $432, the market is pricing approximately 25% company revenue CAGR 2024-2029; ssentially at our base case. The price is not pricing the bull (30%+ CAGR) and is not pricing the bear (16% CAGR). It is priced at the management guide, taken at face value.",
+    "what_street_implies": "The street mean of $473 implies roughly 27-28% CAGR; lightly above management's 25% guide. The $700 street high implies a persistent-AI-supercycle scenario (35%+ CAGR). The $354 street low implies multiple compression on the base-case growth, not a fundamental bear.",
+    "history_anchor": "FY2024 base revenue approximately $91.7 billion.",
+    "our_justified_multiple": "27.3x on FY2026e EPS $15.75, consistent with the SOTP-derived intrinsic of $430.",
+    "agree_disagree": "We agree the leading-edge moat is real, near-term demand is contracted, and the stock is not overpriced on the base case. We disagree with the street mean's slight 28% CAGR assumption; we take management's 25% guide at face value, not as a sandbagged floor. The BUY is driven by the 12-month roll-forward of fundamental value, not by the market being wrong at $432."
+  },
+  "management": {
+    "ceo": "CC Wei (Chairman and CEO). A 30-year TSMC veteran who rose through the fab operations side. Known for directness on pricing ('unavoidable' price hikes on N2), long-term capital discipline (raised the 5-year CAGR guide twice in 12 months as demand materialized), and strict adherence to the pure-play model. Under his tenure TSMC has maintained its process lead over Samsung and Intel while aggressively diversifying geography (Arizona, Japan, Germany) in response to customer and government demand.",
+    "cfo": "Wendell Huang (CFO). Oversees the capital allocation discipline. TSMC has maintained a consistent capital return framework: dividends paid of approximately $14.8 billion in FY2025 (TWD 466.8 billion), no buybacks in FY2025 (one small buyback of $0.1 billion in FY2024), and a net cash position of approximately $54 billion. The priority is to fund the fab buildout first, then dividends, then opportunistic returns. The absence of buybacks is correct given the capex needs; the dividend growth has been consistent.",
+    "capital_allocation_history": "TSMC has consistently allocated capital to process technology leadership first, returning the surplus via dividend. Capex has risen from roughly $29 billion in FY2021 to $40.6 billion in FY2025 to a guided $55-56 billion in FY2026; each step tracking a new demand vector (mobile, then HPC, then AI). The overseas fab commitments (Arizona, Japan, Germany) represent a geopolitical accommodation that also serves as customer-retention insurance; US customers increasingly require domestic supply security. The drag from these fabs (2-4 percentage point gross margin dilution during ramp) is the primary management execution risk.",
+    "recent_insider_activity": [
+      {
+        "type": "Net insider selling",
+        "amount": "~$14 million sold versus ~$1.2 million bought over the past three months (GuruFocus, June 2026)",
+        "signal_strength": "WEAK; nsider ownership is only 0.04% of shares; the absolute dollar amounts are immaterial relative to the company's scale and do not constitute a meaningful directional signal."
+      }
+    ]
+  },
+  "valuation_method": "SOTP. ExitMultiple for HPC/Leading-Edge segment (hyper-growth, avoids the g>r blow-up in a long DCF); current-earnings times justified P/E for the Mature Annuity segment (steady state, most efficient method). CONTRACT §2.2 mandates method-per-segment: blending a 50%+ CAGR engine and a 3-5% annuity into one multiple manufactures a wrong number for both.",
+  "segment_valuation": [
+    {
+      "name": "HPC / Leading-Edge",
+      "nature": "growth",
+      "method": "ExitMultiple",
+      "wacc": 0.105,
+      "wacc_build": "Ke = 4.3% rf + 1.10 fundamental beta x 5.5% ERP = 10.35%, rounded to 10.5%. Beta 1.10 captures high-growth, customer concentration (Nvidia over 60% of CoWoS), and geopolitical premium. Explicitly not the 1.25 market-regression beta, which embeds the one-year rally.",
+      "revenue_2025_usd_b": 70,
+      "normalization_year": 2029,
+      "revenue_at_norm_usd_b": 195.8,
+      "nopat_at_norm_usd_b": 97.5,
+      "nopat_margin_at_norm": "~50% (60% EBIT x 83% post-tax at 17% effective tax rate)",
+      "exit_multiple_gordon": 29.33,
+      "exit_multiple_used": 27.0,
+      "exit_multiple_rationale": "Gordon: (1 - g/ROIC) / (r - g) = (1 - 0.08/0.30) / (0.105 - 0.08) = 0.733 / 0.025 = 29.3x. Used 27x (8% haircut from the formula, acknowledging uncertainty in the exact long-term growth rate post-2029). Cross-check: ASML at 8% long-term growth trades ~32x; a monopoly foundry at 8% growth deserves 25-30x; 27x is squarely in range. Not stacking conservative.",
+      "ev_at_norm_usd_b": 2632.5,
+      "years_to_norm": 3.5,
+      "discount_factor": 1.4183,
+      "ev_today_usd_b": 1856.1,
+      "implied_value_per_adr": 357.91
+    },
+    {
+      "name": "Mature Annuity (Smartphone / IoT / Auto / Other)",
+      "nature": "annuity",
+      "method": "current-earnings x justified P/E",
+      "wacc": 0.095,
+      "wacc_build": "Ke = 4.3% rf + 0.95 fundamental beta x 5.5% ERP = 9.5%. Beta 0.95 for the mature annuity: longer product cycles, more predictable utilization, lower customer concentration risk than AI/HPC.",
+      "revenue_2025_usd_b": 47,
+      "revenue_2026e_usd_b": 48.5,
+      "ni_2026e_usd_b": 16.0,
+      "eps_2026e_per_adr": 3.085,
+      "pe_gordon": 17.2,
+      "pe_used": 19.0,
+      "pe_rationale": "Gordon: (1 - 0.05/0.22) / (0.095 - 0.05) = 17.2x. Premium to 19x justified by structural moat (TSMC is the only credible manufacturer at many legacy nodes at scale), recurring OEM revenue quality, and capex efficiency cross-subsidized from leading-edge scale. 19x is within the 17-20x moat range and below the company blended multiple.",
+      "ev_usd_b": 304.0,
+      "implied_value_per_adr": 58.62
+    },
+    {
+      "name": "Net cash",
+      "method": "balance sheet",
+      "net_cash_usd_b": 70.0,
+      "note": "Q1 2026 gross cash minus total debt approximately $72 billion; using $70 billion as a conservative round number.",
+      "implied_value_per_adr": 13.5
+    }
+  ],
+  "sotp_aggregate": {
+    "hpc_segment_value_per_adr": 357.91,
+    "mature_segment_value_per_adr": 58.62,
+    "net_cash_per_adr": 13.5,
+    "fair_value_base_per_adr": 430.02
+  },
+  "four_levers": {
+    "growth_rate_and_duration": {
+      "assumption": "25% USD revenue CAGR 2024-2029 (management guide); HPC mix grows to 70% by 2029; AI-accelerator sub-engine at 54-56% CAGR",
+      "argument": "Management raised the 5-year CAGR guide to 25% at Q1 2026, up from 20% a year prior, itself a raised estimate tracking delivered results. Near-term is contracted: N2 sold out through Q2 2027, CoWoS booked at 3-4 times oversubscription by end-2026, Nvidia locked over 60% of 2026 CoWoS, and May 2026 monthly revenue +30.1% year-over-year is on track. The guide is not a sandbag; it is management's committed frame validated by the order book. Taking it at face value (not sandbagging, not inflating) gives the honest most-likely.",
+      "dominance": "PRIMARY. The call hinges on this variable alone. A 1 percentage point change in CAGR moves intrinsic value by approximately $8-12 per ADR."
+    },
+    "economics": {
+      "assumption": "HPC EBIT margin 60% at normalization (2029); effective tax 17%; mature NI margin 33%",
+      "argument": "Q2 2026 guided blended operating margin 56.5-58.5%; HPC-only is higher. Leading-edge at utilization achieves above 65% operating margin. At normalization (N2/A16 fully ramped, CoWoS deployed), 60% EBIT for the HPC segment is achievable and consistent with the gross margin path. Not padding margin beyond evidence. Overseas fab dilution (2-4 percentage point gross margin drag during ramp) is real and acknowledged; the 60% normalization HPC margin reflects that ramp completing and pricing power sustaining through 2029.",
+      "dominance": "SECONDARY. A 3 percentage point change in HPC EBIT margin moves value approximately $55-65 per ADR."
+    },
+    "wacc": {
+      "assumption": "HPC WACC 10.5% (CAPM: rf=4.3%, beta=1.10, ERP=5.5%); Mature WACC 9.5%",
+      "argument": "rf=4.3% (10-year UST yield, June 2026; source: Board of Governors of the Federal Reserve, H.15 Selected Interest Rates, June 2026); ERP=5.5% (Damodaran Jan 2026 US equity risk premium). Beta 1.10 for HPC reflects high-growth, Nvidia single-customer concentration, and Taiwan geopolitical premium. Explicitly not the 1.25 market-regression beta (embeds the one-year rally). Contracted backlog de-risks the near-term cash flows, reducing the effective beta versus a speculative commitment. The geopolitical premium is captured in beta, not double-counted as an additional spread.",
+      "dominance": "SECONDARY; 100 basis point change in HPC WACC moves value approximately $50 per ADR; CAGR is 3-4 times more sensitive."
+    },
+    "exit_multiple": {
+      "assumption": "27x EV/NOPAT for HPC at normalization (Gordon 29.3x, used 27x); 19x P/E for mature annuity",
+      "argument": "Gordon formula at g=8%, ROIC=30%, r=10.5% gives 29.3x. Used 27x; deliberate 8% haircut acknowledging that the exact long-term growth rate from 2029 onward is uncertain. ASML (monopoly equipment maker at 8% growth) trades ~32x; mature semiconductor at 5-6% growth trades 20-22x; 27x for a dominant foundry at 8% long-run growth with pricing power sits squarely in range. Reconciled to comps; not a heroic assumption.",
+      "dominance": "TERTIARY; he exit multiple range (22x to 32x) moves HPC value by approximately $100 per ADR; CAGR moves it 3-4 times more."
+    }
+  },
+  "bias_audit": {
+    "rows": [
+      {
+        "assumption": "Company CAGR 2024-2029",
+        "value": "25% (management guide)",
+        "lean": "CENTER",
+        "note": "Management guide taken at face value, validated by contracted near-term. Not sandbagged, not inflated."
+      },
+      {
+        "assumption": "HPC revenue mix at 2029",
+        "value": "70% (from 61% in 2025)",
+        "lean": "CENTER",
+        "note": "AI-accelerator at 55% CAGR naturally drives HPC toward 70% by 2029. If anything slightly conservative; some sources forecast above 70%."
+      },
+      {
+        "assumption": "HPC EBIT margin at normalization",
+        "value": "60%",
+        "lean": "CENTER",
+        "note": "Q2 2026 guided blended operating margin 57-58%; HPC-only is higher. 60% for HPC at normalization is reasonable and not padded."
+      },
+      {
+        "assumption": "Effective tax rate",
+        "value": "17%",
+        "lean": "CENTER",
+        "note": "Taiwan statutory 20%; effective consistently 16-18% per filings. Not an aggressive assumption."
+      },
+      {
+        "assumption": "HPC exit multiple",
+        "value": "27x vs Gordon 29.3x",
+        "lean": "SLIGHTLY_LOW",
+        "note": "Deliberate 8% haircut from the formula. One modest conservative lean."
+      },
+      {
+        "assumption": "Mature NI margin",
+        "value": "33% vs 34.3% derived from 2025 data",
+        "lean": "SLIGHTLY_LOW",
+        "note": "Minor conservatism for overseas dilution risk."
+      },
+      {
+        "assumption": "Mature P/E",
+        "value": "19x vs Gordon 17.2x",
+        "lean": "SLIGHTLY_HIGH",
+        "note": "Premium to formula justified by moat, recurring revenue quality, and capex efficiency. One slight lean high."
+      },
+      {
+        "assumption": "Net cash",
+        "value": "$70 billion vs Q1 2026 ~$72 billion point estimate",
+        "lean": "SLIGHTLY_LOW",
+        "note": "Round, acknowledged-approximate number. Minor."
+      },
+      {
+        "assumption": "HPC WACC",
+        "value": "10.5%",
+        "lean": "CENTER",
+        "note": "Fundamental beta 1.10 correctly captures geopolitical/concentration risk without inflating. Not leaning high."
+      }
+    ],
+    "same_direction_count": 3,
+    "leans_low_count": 3,
+    "leans_high_count": 1,
+    "net_impact_per_adr": -28,
+    "net_impact_note": "Net dollar bias approximately -$28/ADR (-6.5% on $430 base): exit multiple haircut -$31, mature margin -$4, net cash -$1; offset by mature P/E premium +$8. The dominant conservative lean is the exit multiple (27x vs 29.3x Gordon). The 27x has a separately argued basis (LT growth rate uncertainty post-2029; ASML/comp cross-check confirms 27x is inside the arguable 25-30x range). Net bias is negative but not stacked: it is one argued deviation (exit multiple) plus two minor rounding-type conservatisms, partially offset by one explicit high lean.",
+    "verdict": "NO STACKED BIAS. Three assumptions lean modestly conservative, one leans modestly high. Net arithmetic bias is approximately -$28/ADR (see net_impact_per_adr). The three conservative leans are individually small and partially offset by the mature P/E premium. The CONTRACT §1.3 borderline (three or more same-direction = fix it) is noted; the verdict is CENTER because the dominant conservative lean (exit multiple) is separately argued from evidence (LT growth rate uncertainty; comps confirm 27x is inside the arguable range) rather than a silent thumb press."
+  },
+  "earnings_bridge": {
+    "reported_eps_fy2025": 10.4,
+    "one_offs_per_share": 0.0,
+    "sbc_per_share": -0.12,
+    "normalized_eps": 10.28,
+    "owner_earnings_per_share": 6.06,
+    "fcf_per_share": 6.06,
+    "year1_fcf_b": 16.0,
+    "ties_to_year1": false,
+    "notes": "FY2025 GAAP EPS approximately $10.40/ADR (TWD 331.25 divided by 31.58 exchange rate). SBC approximately $0.12/ADR (minimal; TSMC's equity grants are small relative to net income). FY2025 FCF = CFO TWD 2,274.976 billion minus capex TWD 1,282.597 billion = TWD 992.378 billion = $31.42 billion; per ADR = $6.06. The 1.4% FCF yield correctly reflects a heavy-reinvestment growth phase (capex 34% of revenue in FY2025, rising to ~35% in FY2026). The exit-multiple method bypasses this transitional FCF depression correctly by valuing the 2029 normalized earnings, not the depressed near-term FCF. Year-1 FCF ($16B) is the mature segment NI used for the Multiple method; ties_to_year1 is false because the HPC segment is valued on 2029 normalized NOPAT, not near-term depressed FCF during the heavy-capex ramp."
+  },
+  "multiple_maths": {
+    "current_multiple": "27.4x FY2026e EPS $15.75 (the correct forward multiple; the bundle shows 22x on the forward-skewed FY2027e $19.66; see Pheme estimate_artifact_check)",
+    "justified_multiple": "27.3x (SOTP-derived intrinsic $430 / FY2026e EPS $15.75)",
+    "justified_grid": [
+      {
+        "cagr": "16%",
+        "exit_multiple": "22x",
+        "value_per_adr": 273
+      },
+      {
+        "cagr": "16%",
+        "exit_multiple": "27x",
+        "value_per_adr": 318
+      },
+      {
+        "cagr": "25%",
+        "exit_multiple": "22x",
+        "value_per_adr": 364
+      },
+      {
+        "cagr": "25%",
+        "exit_multiple": "27x",
+        "value_per_adr": 430
+      },
+      {
+        "cagr": "25%",
+        "exit_multiple": "32x",
+        "value_per_adr": 496
+      },
+      {
+        "cagr": "30%",
+        "exit_multiple": "27x",
+        "value_per_adr": 475
+      },
+      {
+        "cagr": "30%",
+        "exit_multiple": "32x",
+        "value_per_adr": 550
+      }
+    ],
+    "duality_decomposition": "Current price ($432) is at the base-case intrinsic. The stock earns its return from earnings compounding at 25% CAGR, not from multiple expansion. Multiple expansion to 29x (closer to the Gordon formula) on the base earnings path would add approximately $60-70 per ADR."
+  },
+  "key_debates": [
+    {
+      "debate": "The AI/HPC demand pool: is the 25% CAGR guide conservative, approximately right, or optimistic?",
+      "is_crux": true,
+      "bull_view": "The guide is conservative. N2 is sold out through Q2 2027; that is a booked, not a forecasted, constraint. Nvidia alone has locked over 60% of 2026 CoWoS capacity. Four independent funded hyperscaler ASIC programs (Google TPU v6, Amazon Trainium3, Microsoft Maia2, Meta MTIA2) are in active high-volume manufacturing at TSMC simultaneously, not in design. Sovereign AI capex from the UAE, Saudi Arabia, Japan, and Europe adds a demand pool absent from any historical cycle model. Inference scaling, the shift from batch training to always-on inference, is volume-positive, not neutral. In the bull, TSMC's FY2027 revenue reaches approximately $207 billion (30% growth versus the base at ~$197 billion), with AI-accelerator revenue approaching $100 billion. Evidence quality: CONTRACTED for the 2026-Q2 2027 window; EXTRAPOLATED for the 2027-2029 AI-capex durability.",
+      "bear_view": "The guide will prove optimistic for 2027-2029. The 2024-2026 AI buildout is front-loaded relative to actual AI utilization. Model training is increasingly efficient (DeepSeek demonstrated a 60x cost reduction per token in early 2025). Inference demand is real but is increasingly served by older nodes and in-house inference chips (hyperscaler Trainium, TPU, MTIA reduce their Nvidia and therefore TSMC dependence). A 2027-2028 demand air-pocket on a $56 billion capex base is the classic semiconductor overbuilding dynamic; ocumented in TSMC's own history (FY2022 to FY2023 revenue declined 4.5% in TWD after the smartphone/PC capex over-build). In the bear, company revenue CAGR falls to 16% through 2029, still more than doubling absolute revenue but well below the guide. Evidence quality: MECHANISM-NOT-YET-FIRING; he capex overbuilding is real and documented; the training-to-inference transition is observable in hyperscaler silicon programs already shipping.",
+      "our_verdict": "The near-term contracted book through Q2 2027 is real and makes 2026 numbers secure. We take the 25% guide at face value as the honest most-likely base. The bear has a credible mechanism for 2027-2029; he training-to-inference transition is structurally reducing leading-edge wafer intensity per dollar of inference spend, the historical cycle analogy is documented, and we do not have a contracted order book beyond Q2 2027. This is why conviction is MEDIUM, not HIGH: the crux is genuinely contested for the out-years even though the near-term is settled. The asymmetry at current prices favors the bull; he contracted near-term alone justifies the $430 base, and the upside requires only the guide being right.",
+      "what_would_change_our_mind": "A Q2 or Q3 2026 beat-but-no-raise (revenue in-line but full-year guide held or reduced) would signal the sold-out window is already fully priced. Alternatively, any named hyperscaler announcing reduced AI capex or a pivot to in-house silicon for leading-edge logic would immediately shrink the demand pool estimate. Watch Nvidia's quarterly purchase commitment disclosures and the big-4 hyperscaler capex guides at October 2026 earnings.",
+      "worth_per_share": "$395 swing from bear ($235) to bull ($583); the crux accounts for approximately $300 of the $350 total range. The dominant lever by far."
+    },
+    {
+      "debate": "Gross margin: does pricing power sustain above the 56% long-term target, or does overseas-fab dilution and potential underutilization compress the blend toward the low-to-mid 50s?",
+      "is_crux": false,
+      "bull_view": "Two mechanisms sustain margins above the 56-58% target. First, N2 ASP pricing at approximately $30,000 per wafer versus N3 at $25,000-$27,000; 10-20% premium that lifts blended ASP as N2 mix rises from low single digits to 20-25% of wafer revenue by 2027. With no second source at N2 (Samsung's SF2 has unproven yields, Intel 18A is not volume-ready), pricing is unchallenged. Second, CoWoS advanced packaging is structurally above the corporate gross margin average; as it approaches 10-12% of total revenue by 2027, it is a margin-accretive mix shift. The Q1 2026 gross margin of 66.2% will normalize, but toward 62%+ in 2029 under the bull, not the 56-58% floor. Evidence quality: CONTRACTED for 2026 (Q2 guidance 65.5-67.5%, N2 pricing set); EXTRAPOLATED for 2028-2029.",
+      "bear_view": "The 66.2% Q1 2026 gross margin is a high-water mark set by N3 at peak utilization before N2 ramp costs hit, favorable TWD/USD, and all high-margin Taiwan fabs running full. Arizona Phase 1, Japan (Kumamoto), and Germany (Dresden) fabs carry structurally higher labor and electricity costs. TrendForce estimates 2-4 percentage point gross margin dilution as overseas capacity scales. TSMC's own FY2023 trough gross margin was 54.4% on a revenue decline of only 4.5%. The utilization effect compounds in a demand air-pocket scenario: a 10% utilization drop on leading-edge fixed costs historically costs TSMC 3-5 percentage points of gross margin. Combined bear gross margin: 52-53% in 2027-2028, worth approximately $25-30 per ADR of incremental value destruction on top of the revenue miss from Debate 1. Evidence quality: OBSERVABLE-AND-NEAR for the structural overseas dilution (already in company guidance); MECHANISM for the utilization-amplification (requires Debate 1 to fire).",
+      "our_verdict": "Management's own full-year 2026 guidance (65.5-67.5% gross margin for Q2, implying it holds higher than the 56-58% long-term target for the near term) validates the near-term bull margin. The structural overseas dilution is real and already in guidance at 2-4 percentage points. The debate is whether pricing power fully offsets that dilution at the 2029 normalization. In the base (25% CAGR, demand intact), we assume 60% EBIT margin for HPC at normalization; above the guided long-term floor but below the current peak. In the bear demand scenario, overseas dilution compounds with underutilization and margin falls further. The margin debate is additive to Debate 1, not independent of it.",
+      "what_would_change_our_mind": "A Q3 or Q4 2026 gross margin print below 62% with N2 at scale and CoWoS fully ramped would indicate pricing power is not sustaining. Any TSMC customer disclosing dual-sourcing at Intel 18A for an AI chip would break the single-source pricing dynamic.",
+      "worth_per_share": "Approximately $65-90 per ADR swing from base to bear on this lever alone (gross margin 60% versus 52.5% on the bear revenue base). Secondary to Debate 1 but meaningful."
+    },
+    {
+      "debate": "Intel 18A: does it win an anchor AI chip contract, breaking the monopoly narrative and triggering a multiple de-rate?",
+      "is_crux": false,
+      "bull_view": "Intel 18A has announced production before, and yields have consistently come in below industry standard, 'in production' means first wafers ran, not volume at competitive cost. Intel Foundry is losing approximately $15-20 billion annually and needs external revenue urgently, which undermines its pricing viability. Switching foundries mid-cycle is a 2-4 year design and qualification cycle; the AI fabless and hyperscaler community has extensive current qualifications at TSMC. A confirmed external AI win by Intel requires yield normalization by 2027 and a customer willing to bet a multi-billion-dollar program on an unproven foundry. The risk is real but the timeline is 2027-2029, not 2026. Evidence quality: MECHANISM-NOT-YET-FIRING.",
+      "bear_view": "TSMC's exit multiple premium (27x base versus a mature foundry at 15-18x) is justified partly on the assumption that it is the sole leading-edge vendor through 2027-2030. This is partly a narrative premium. If Intel wins even one marquee AI chip contract; single hyperscaler ASIC or a dual-sourced GPU generation on 18A; he market will immediately re-price the 'TSMC is the only option' thesis. The de-rating mechanism does not require Intel to take 20% share; it requires the market to remove the monopoly premium before any actual volume is lost. Intel 18A-P is demonstrably in production (June 2026); Broadcom and Marvell are rumored design-in customers. A de-rating from 27x to 23x exit P/E on the base fair value alone is worth approximately $60 per ADR. Evidence quality: MECHANISM-NOT-YET-FIRING.",
+      "our_verdict": "The bull logic is largely correct for the 2026 timeframe. Intel 18A cannot win meaningful AI volume this year because qualifications take too long. The bear logic applies to 2027-2029: if 18A yields normalize by mid-2027, a credible evaluation by Broadcom or one hyperscaler ASIC team is mechanistically plausible. The risk is not a volume-loss event in our horizon; it is a narrative break that causes a multiple de-rate before any actual volume is lost. We weight the probability of the narrative break occurring by end-2028 at 30-40%. In the full bear scenario (Debates 1, 2, and 3 all firing), the incremental Debate 3 contribution is approximately $23 per ADR below the already-depressed bear value from Debates 1 and 2.",
+      "what_would_change_our_mind": "A confirmed external AI chip win for Intel Foundry on 18A from any of Broadcom, Marvell, Google, Amazon, or Microsoft; tated by the customer, not Intel. Alternatively, a TSMC pricing concession (below-inflation wafer price increase in 2027) observable in quarterly ASP disclosures.",
+      "worth_per_share": "Approximately $60 per ADR de-rating on the base scenario if the narrative breaks; approximately $23 per ADR incremental in the combined bear scenario."
+    }
+  ],
+  "bear_paragraph": "The bear is not a geopolitical disruption to Taiwan, not Samsung or SMIC taking leading-edge share (both impossible through 2029), and not a margin collapse to the 40s. The bear is a demand pool that grows at 16% instead of 25%; still more than doubling TSMC's revenue to approximately $195 billion by 2029; with margin compression from overseas fabs and a multiple de-rating when the monopoly narrative meets its first credible challenger. The mechanism is documented: TSMC spent $56 billion of capex in 2026 predicated on hyperscaler AI capex sustaining at or above 2025-2026 levels through 2029. When training workloads normalize in 2027-2028 and inference migrates partly to cheaper silicon (hyperscaler Trainium, TPU, MTIA already shipping and reducing their Nvidia dependence), TSMC faces a leading-edge demand air-pocket on a high-fixed-cost base. Overlay the structural overseas-fab dilution (2-4 percentage point gross margin drag from Arizona/Japan/Germany ramping simultaneously), and the blended margin drops toward 52-53%; consistent with TSMC's documented FY2023 trough of 54.4%, achieved on only a 4.5% revenue decline. At 16% CAGR, 33% net margin, and a 23x exit P/E (reflecting the reduced terminal growth rate), the arithmetic delivers $210/ADR; 51% downside from the current price. The bear requires all three debates to fire; Debate 1 (the demand air-pocket) is the load-bearing one.",
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "Demand duration",
+      "severity": "HIGH",
+      "likelihood": "MODERATE",
+      "risk": "Hyperscaler AI capex normalizes in 2027-2028, creating a demand air-pocket on a $56 billion capex base. CAGR falls to 14-18%. Bear case $235.",
+      "monitor": "Big-4 hyperscaler capex guides at Q3 and Q4 2026 earnings; Nvidia purchase commitment disclosures in 10-Q; CoWoS booking pipeline beyond Q2 2027."
+    },
+    {
+      "rank": 2,
+      "category": "Margin dilution",
+      "severity": "MEDIUM",
+      "likelihood": "HIGH",
+      "risk": "Arizona/Japan/Germany overseas fab ramp dilutes blended gross margin by 2-4 percentage points structurally; compounds with underutilization in a demand slowdown. Observable and near for the structural piece.",
+      "monitor": "Q3 and Q4 2026 gross margin prints as Arizona Phase 1 scales. Management disclosure of overseas fab gross margins on a standalone basis."
+    },
+    {
+      "rank": 3,
+      "category": "Intel 18A competitive narrative",
+      "severity": "MEDIUM",
+      "likelihood": "LOW-MODERATE",
+      "risk": "Intel wins an anchor AI chip customer (a dual-sourced hyperscaler ASIC or Broadcom/Marvell win confirmed by the customer), triggering a monopoly-premium de-rate of 5-7 P/E turns before any actual volume is lost. Worth approximately $60/ADR on the base multiple.",
+      "monitor": "Any confirmed external AI chip win for Intel 18A/14A by a named hyperscaler or tier-1 fabless customer. TSMC pricing concessions observable in quarterly ASP disclosures."
+    },
+    {
+      "rank": 4,
+      "category": "Geopolitical tail",
+      "severity": "SEVERE",
+      "likelihood": "VERY LOW",
+      "risk": "Taiwan-China military escalation disrupts manufacturing. Binary and unmodelable as a continuous scenario; not in the bear case. Partially mitigated by Arizona/Japan/Germany diversification (building toward ~20% of capacity outside Taiwan by ~2028).",
+      "monitor": "Cross-strait political developments; pace of Arizona/Japan capacity ramp as a hedge."
+    },
+    {
+      "rank": 5,
+      "category": "FX and cost inflation",
+      "severity": "LOW-MEDIUM",
+      "likelihood": "MODERATE",
+      "risk": "TWD appreciation is a gross margin headwind; US labor and energy costs at Arizona add structural cost drag. Already embedded in the 2-4 percentage point overseas dilution estimate; not a separate risk unless amplified by a strong-TWD year.",
+      "monitor": "USD/TWD exchange rate; Arizona fab operational cost disclosures in quarterly calls."
+    }
+  ],
+  "range_and_sensitivity": {
+    "anchor": "base = fair value today ($430 = argued intrinsic, the argued valuation)",
+    "cases": [
+      {
+        "label": "Bear",
+        "implied_value": 235.25,
+        "thesis_one_line": "16% USD revenue CAGR 2024-2029; AI demand digestion 2027-2028; overseas fab dilution compounds at lower utilization; Intel 18A narrative break triggers multiple de-rate.",
+        "evidence_grade": "MECHANISM-NOT-YET-FIRING (demand air-pocket) / OBSERVABLE-AND-NEAR (overseas dilution structural piece)",
+        "key_driver": "Demand pool durability; hether training-to-inference shift cuts leading-edge wafer intensity by 2027-2028"
+      },
+      {
+        "label": "Base",
+        "implied_value": 430.02,
+        "thesis_one_line": "25% USD revenue CAGR (management guide taken at face value); 70% HPC mix by 2029; 60% HPC EBIT margin at normalization; 27x exit multiple. The argued most-likely.",
+        "evidence_grade": "CONTRACTED (2026 through Q2 2027) / EXTRAPOLATED (2027-2029 AI capex durability)",
+        "key_driver": "Management guide approximately right. AI capex continues through the guidance window without a demand air-pocket"
+      },
+      {
+        "label": "Bull",
+        "implied_value": 583.34,
+        "thesis_one_line": "30% USD revenue CAGR; AI-accelerator sub-engine at 60%+; sovereign AI and inference scaling extend duration; GM sustains at 62%+ on N2 pricing power; multiple re-rates toward 29x.",
+        "evidence_grade": "CONTRACTED (near-term) / EXTRAPOLATED (out-year AI capex durability and margin hold)",
+        "key_driver": "AI capex proves a multi-year megatrend; TSMC raises price harder; CoWoS becomes a fat second revenue line"
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x": "Company CAGR 2024-2029",
+      "axis_y": "HPC exit EV/NOPAT multiple",
+      "grid": [
+        [
+          273,
+          300,
+          318,
+          337,
+          364
+        ],
+        [
+          320,
+          354,
+          376,
+          399,
+          433
+        ],
+        [
+          364,
+          403,
+          430,
+          456,
+          496
+        ],
+        [
+          400,
+          445,
+          475,
+          505,
+          550
+        ],
+        [
+          455,
+          507,
+          542,
+          577,
+          629
+        ]
+      ],
+      "axis_x_values": [
+        "16%",
+        "21%",
+        "25%",
+        "28%",
+        "32%"
+      ],
+      "axis_y_values": [
+        "22x",
+        "25x",
+        "27x",
+        "29x",
+        "32x"
+      ],
+      "where_cases_land": {
+        "bear": "16% CAGR / 22x = $176 HPC; add mature $46 (17x P/E on $2.68 bear EPS) + net cash $13 = $235 total",
+        "base": "25% CAGR / 27x = $430",
+        "bull": "30-32% CAGR / 27-29x = $475-$583"
+      },
+      "dominant_lever": "CAGR; 1 percentage point change moves value by approximately $8-12 per ADR. Moving from 16% to 32% CAGR at the base 27x multiple covers $364 to $542 ($178 range). The exit multiple is secondary: at base 25% CAGR, moving from 22x to 32x covers $364 to $496 ($132 range)."
+    },
+    "vs_price_pct": {
+      "bear_to_price": "-45.6%",
+      "bull_to_price": "+35.0%",
+      "asymmetry_note": "The upside-to-downside ratio at current prices is approximately 1.5x to 1, measured as the distance from price to bull versus price to bear. The asymmetry is not heroic; it reflects that the bear requires all three debates to fire simultaneously, while the base requires only the guide being approximately right."
+    }
+  },
+  "scenario_assumptions": {
+    "base": {
+      "label": "Base; anagement guide taken at face value",
+      "one_line": "25% USD revenue CAGR 2024-2029; AI-accel at 54-56%; 60% HPC EBIT margin at normalization; 27x exit multiple.",
+      "implied_value": 430.02,
+      "rows": [
+        {
+          "driver": "Company USD revenue CAGR 2024-2029",
+          "value": "25%",
+          "note": "Management guide (Q1 2026 call); near-term validated by contracted book"
+        },
+        {
+          "driver": "Company revenue 2029 (USD)",
+          "value": "~$280 billion",
+          "note": "FY2024 $91.7B x 1.25^5"
+        },
+        {
+          "driver": "HPC revenue mix 2029",
+          "value": "70% (~$196 billion)",
+          "note": "From 61% in 2025; AI-accelerator growth driving the shift"
+        },
+        {
+          "driver": "AI-accelerator CAGR 2024-2029",
+          "value": "54-56%",
+          "note": "Company guidance; contracted near-term; extrapolated 2027+"
+        },
+        {
+          "driver": "HPC EBIT margin at normalization",
+          "value": "60%",
+          "note": "Above blended 51% in 2025; leading-edge at full utilization achieves above 65%"
+        },
+        {
+          "driver": "Effective tax rate",
+          "value": "17%",
+          "note": "Taiwan statutory 20% less R&D credits"
+        },
+        {
+          "driver": "HPC NOPAT at normalization (2029)",
+          "value": "$97.5 billion",
+          "note": "$196B x 60% x 83% post-tax"
+        },
+        {
+          "driver": "HPC WACC",
+          "value": "10.5%",
+          "note": "CAPM: 4.3% + 1.10 x 5.5%"
+        },
+        {
+          "driver": "HPC exit EV/NOPAT multiple",
+          "value": "27x",
+          "note": "Gordon 29.3x; used 27x (8% haircut for LT growth rate uncertainty)"
+        },
+        {
+          "driver": "Mature segment P/E",
+          "value": "19x on FY2026e EPS $3.09/ADR",
+          "note": "Gordon 17.2x; premium for moat quality"
+        },
+        {
+          "driver": "Net cash",
+          "value": "$70 billion ($13.50/ADR)",
+          "note": "Conservative round vs $72B Q1 2026 point estimate"
+        },
+        {
+          "driver": "Implied fair value per ADR",
+          "value": "$430",
+          "note": "HPC $358 + Mature $59 + Net cash $14"
+        }
+      ]
+    },
+    "bull": {
+      "label": "Bull. AI capex proves a multi-year megatrend; guide is conservative",
+      "one_line": "30% USD revenue CAGR; GM 62%+ sustained; 29x exit multiple; sovereign AI and inference scaling extend duration.",
+      "implied_value": 583.34,
+      "rows": [
+        {
+          "driver": "Company USD revenue CAGR 2024-2029",
+          "value": "30%",
+          "note": "Extrapolated; grounded in current booked capacity and four funded hyperscaler ASIC programs"
+        },
+        {
+          "driver": "Company revenue 2029 (USD)",
+          "value": "~$340 billion",
+          "note": "FY2024 $91.7B x 1.30^5"
+        },
+        {
+          "driver": "HPC revenue mix 2029",
+          "value": "72% (~$245 billion)",
+          "note": "Higher AI-accelerator contribution as sovereign AI adds incremental demand pool"
+        },
+        {
+          "driver": "AI-accelerator CAGR 2024-2029",
+          "value": "60%+",
+          "note": "Above the 54-56% guide; inference scaling adds persistent demand"
+        },
+        {
+          "driver": "HPC EBIT margin at normalization",
+          "value": "63%",
+          "note": "Better utilization, more aggressive N2/A16 pricing, CoWoS margin contribution"
+        },
+        {
+          "driver": "HPC NOPAT at normalization (2029)",
+          "value": "$128.1 billion",
+          "note": "$245B x 63% x 83% post-tax"
+        },
+        {
+          "driver": "HPC exit EV/NOPAT multiple",
+          "value": "29x",
+          "note": "Closer to Gordon 29.3x; higher confidence in 8% LT growth rate in this scenario"
+        },
+        {
+          "driver": "Gross margin (blended 2027-2029)",
+          "value": "62%+",
+          "note": "N2/A16 pricing power sustains above the 56-58% long-term target; CoWoS margin contribution; overseas dilution offset by ASP uplift"
+        },
+        {
+          "driver": "Net margin 2029",
+          "value": "~47%",
+          "note": "Higher than base (~44.6%) on better utilization, stronger pricing, CoWoS mix. Driven by blended GM above 62% and stable opex ratios."
+        },
+        {
+          "driver": "Mature segment P/E",
+          "value": "20x on FY2026e EPS $3.24/ADR",
+          "note": "Slight re-rate as foundry credibility holds"
+        },
+        {
+          "driver": "Net cash",
+          "value": "$70 billion ($13.50/ADR)",
+          "note": "Same as base"
+        },
+        {
+          "driver": "Implied fair value per ADR",
+          "value": "$583",
+          "note": "Evidence quality: CONTRACTED near-term / EXTRAPOLATED 2027-2029"
+        }
+      ]
+    },
+    "bear": {
+      "label": "Bear. AI demand digestion 2027-2028; overseas dilution compounds",
+      "one_line": "16% USD revenue CAGR; AI demand digests after the 2024-2027 buildout; GM falls to 52-53%; Intel 18A narrative break; 23x exit multiple.",
+      "implied_value": 235.25,
+      "rows": [
+        {
+          "driver": "Company USD revenue CAGR 2024-2029",
+          "value": "16%",
+          "note": "Still doubles revenue to $195B by 2029; the demand air-pocket slows, does not stop growth"
+        },
+        {
+          "driver": "Company revenue 2029 (USD)",
+          "value": "~$195 billion",
+          "note": "FY2024 $93.0B x 1.16^5"
+        },
+        {
+          "driver": "HPC revenue mix 2029",
+          "value": "67% (~$129 billion)",
+          "note": "Lower AI-accelerator contribution as inference migrates to cheaper silicon"
+        },
+        {
+          "driver": "AI-accelerator CAGR 2024-2029",
+          "value": "~35%",
+          "note": "Decelerates to reflect training normalization and in-house inference silicon growth"
+        },
+        {
+          "driver": "HPC EBIT margin at normalization",
+          "value": "55%",
+          "note": "Overseas dilution plus underutilization on the fixed-cost base (Arizona/Japan/Germany ramping simultaneously into a demand air-pocket)"
+        },
+        {
+          "driver": "Gross margin (blended 2027-2028)",
+          "value": "52-53%",
+          "note": "Historical trough precedent: FY2023 GM 54.4% on only a 4.5% revenue decline; bear assumes a similar or slightly worse cycle"
+        },
+        {
+          "driver": "Net margin 2029",
+          "value": "33%",
+          "note": "Compressed from base ~44% by overseas dilution, underutilization, and TWD normalization"
+        },
+        {
+          "driver": "HPC NOPAT at normalization (2029)",
+          "value": "$58.9 billion",
+          "note": "$129B x 55% x 83% post-tax"
+        },
+        {
+          "driver": "HPC exit EV/NOPAT multiple",
+          "value": "22x",
+          "note": "Lower LT growth rate (5.5% vs 8% in base); Gordon at these params would be 15.8x but 22x is the floor for a moat business even in digestion"
+        },
+        {
+          "driver": "Mature segment P/E",
+          "value": "17x on FY2026e EPS $2.68/ADR",
+          "note": "Slight de-rate in weaker environment"
+        },
+        {
+          "driver": "Net cash",
+          "value": "$70 billion ($13.50/ADR)",
+          "note": "Same as base; net cash position is a balance-sheet fact at the valuation date, not a scenario variable. The bear case reduces intrinsic value through lower CAGR, lower margin, and lower exit multiple, not through a different balance sheet."
+        },
+        {
+          "driver": "Implied fair value per ADR",
+          "value": "$235",
+          "note": "Evidence quality: MECHANISM-NOT-YET-FIRING (demand air-pocket) / OBSERVABLE-AND-NEAR (structural overseas dilution)"
+        }
+      ]
+    }
+  },
+  "synthesis_paths": [
+    {
+      "label": "AI supercycle holds; full path",
+      "outcome_range": "$510-$583",
+      "description": "AI capex at hyperscalers and sovereign programs continues compounding through 2029 at or above the 54-56% AI-accelerator CAGR guide. TSMC prices N2/A16 harder (monopoly ASP), CoWoS becomes a multi-billion-dollar packaging annuity, and the stock re-rates toward 29x as duration extends. Our $510 target is within this range; it credits the contracted near-term delivery but does not require the full bull CAGR to materialize.",
+      "evidence_grade": "CONTRACTED (2026 through Q2 2027) / EXTRAPOLATED (out-years)"
+    },
+    {
+      "label": "Base case; guide proves approximately right",
+      "outcome_range": "$430-$466",
+      "description": "Management's 25% USD CAGR guide is met through 2029. TSMC earns into its intrinsic value at a 9.0% compounding rate less dividends. The 12-month roll-forward of $430 is $466. The market re-rates slightly as contracted evidence accumulates but does not apply the full bull premium.",
+      "evidence_grade": "CONTRACTED (near-term) / EXTRAPOLATED (2027-2029)"
+    },
+    {
+      "label": "Demand digestion; bear path",
+      "outcome_range": "$210-$280",
+      "description": "Training capex normalizes in 2027-2028. Inference shifts partly to cheaper silicon. Leading-edge utilization falls below sold-out on a $56 billion capex base. Overseas fab dilution compounds with underutilization. Intel 18A wins an anchor customer and the monopoly multiple de-rates. TSMC's revenue still doubles by 2029 but at 16% instead of 25% CAGR, margin falls to the low 50s, and the multiple compresses to 22-23x.",
+      "evidence_grade": "MECHANISM-NOT-YET-FIRING (demand air-pocket) / OBSERVABLE-AND-NEAR (structural overseas dilution)"
+    }
+  ],
+  "catalysts_to_watch": [
+    {
+      "theme": "Quarterly demand signals",
+      "horizon": "1-4 quarters",
+      "what_to_watch": "Q2 2026 earnings on July 16, 2026: does TSMC beat-AND-raise (full-year guide above 30%)? Or beat-but-no-raise? The former confirms the contracted window; the latter signals the sold-out condition may already be fully priced. Same test for Q3 and Q4.",
+      "why_it_matters": "The crux debate resolves through quarterly evidence accumulation. A beat-and-raise for three consecutive quarters closes off the near-term bear thesis. A beat-but-no-raise is the first visible crack.",
+      "bull_or_bear_tell": "Beat-and-raise = bull tell. Beat-but-no-raise or raised capex with no revenue guide raise = bear tell."
+    },
+    {
+      "theme": "Hyperscaler capex durability",
+      "horizon": "2-6 quarters",
+      "what_to_watch": "Big-4 hyperscaler (Microsoft, Google, Amazon, Meta) capital expenditure guides at their Q3 and Q4 2026 earnings in October and November 2026. Any collective hold or reduction in AI capex growth guidance from this group is the most direct signal of the demand pool contracting.",
+      "why_it_matters": "Approximately 60%+ of TSMC's AI-accelerator revenue originates from these four companies' AI infrastructure spend directly (merchant GPU) or indirectly (custom ASIC programs). Their capex trajectory IS the demand pool for the out-year bear debate.",
+      "bull_or_bear_tell": "Hyperscaler capex raised or held = bull tell. Any two of the four reducing AI capex growth = immediate bear tell for the 2027-2028 CAGR."
+    },
+    {
+      "theme": "CoWoS booking pipeline and Intel 18A win signals",
+      "horizon": "2-8 quarters",
+      "what_to_watch": "Whether CoWoS capacity (scaling to 120,000-130,000 wafers per month by end-2026) stays fully booked beyond Q2 2027; and whether any named hyperscaler or tier-1 fabless company confirms an AI chip design on Intel 18A/14A.",
+      "why_it_matters": "CoWoS being sold out beyond Q2 2027 would close the demand-durability bear debate for another 4-6 quarters. An Intel 18A win from a named customer would immediately trigger the monopoly-narrative de-rate worth approximately $60 per ADR on the base multiple.",
+      "bull_or_bear_tell": "CoWoS booked beyond Q2 2027 at above-$150B HPC revenue-implied volumes = bull tell. Confirmed Intel 18A AI chip win from any named customer = bear tell for the multiple."
+    },
+    {
+      "theme": "Overseas fab gross margin disclosure",
+      "horizon": "4-12 quarters",
+      "what_to_watch": "Management disclosure of Arizona Phase 1 and Japan (Kumamoto) gross margins on a standalone or blended basis; and whether the Q3/Q4 2026 blended gross margin holds above 62% as overseas capacity begins contributing.",
+      "why_it_matters": "The margin debate (Debate 2) resolves through the actual overseas-fab margin data. If Arizona achieves within 1-2 percentage points of Taiwan on a fully-loaded cost basis, the dilution headwind is smaller than the 2-4 percentage point estimate and the bull margin thesis strengthens.",
+      "bull_or_bear_tell": "Arizona gross margin within 1-2pp of Taiwan = bull tell. Arizona gross margin more than 5pp below Taiwan at scale = bear tell that the structural dilution headwind is larger than guided."
+    }
+  ],
+  "conclusion": "TSMC at $432 is priced at its intrinsic fair value on the base case; he stock is neither cheap nor expensive at the management's 25% CAGR guide. The BUY is a 12-month call on intrinsic value compounding toward $466 through earnings growth and toward $510 through the contracted-evidence premium already in the order book. The crux that decides whether this is a $235 stock or a $583 stock is the same in both directions: whether hyperscaler AI capex is a multi-year infrastructure commitment or a cycle that digests in 2027-2028. At MEDIUM conviction, we own the asymmetry; he contracted near-term validates the base; the downside requires all three debates to fire simultaneously; the upside requires only the guide being approximately right.",
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "HIGH on the near-term (2026-Q2 2027) contracted book; MEDIUM on the 2027-2029 extrapolated AI CAGR",
+    "path_confidence": "MEDIUM; the demand air-pocket is a mechanistically valid risk with a documented historical analogy (FY2022-2023 TSMC cycle), even though it has not yet fired",
+    "basis": "The 25% CAGR base rests on a management guide validated by contracted near-term capacity; this would normally push toward HIGH. But the out-year AI CAGR (2027-2029) is extrapolated on hyperscaler capex durability that is genuinely uncertain, and the wide range ($235 bear to $583 bull, a 2.5x ratio) reflects real fundamental uncertainty. The band ratio triggers the wide-band MEDIUM cap per the METHODS.md conviction rules. The call is BUY on the 12-month roll-forward of fundamental value, not on multiple expansion."
+  },
+  "run_manifest": {
+    "engine": "Atlas v3",
+    "run_id": "TSM_2026-06-18",
+    "snapshot_id": "TSM_2026-06-18T0042Z",
+    "pipeline_steps": [
+      "Hermes us.py; data freeze",
+      "Pheme; market facts, analyst tape (parallel with Theia)",
+      "Theia; landscape, competitors, crux (parallel with Pheme)",
+      "Daedalus; SOTP valuation, four levers, bias audit, four numbers",
+      "Boreas; bull key debates (blind, parallel with Cassandra)",
+      "Cassandra; bear key debates (blind, parallel with Boreas)",
+      "Atlas; 8-section synthesis (this file)",
+      "Erinys; numeric audit",
+      "Forseti; contract gate"
+    ],
+    "as_of": "2026-06-18"
+  },
+  "change_log": "First TSM report under Atlas v3. No prior run to diff.",
+  "data_gaps": [
+    "Segment revenue by platform not in structured yfinance data; used TSMC 1Q26 6-K SEC filing for platform mix (HPC 61%, Smartphone 26%, IoT 6%, Auto 4%, DCE+Other 3%). Sources: company-filed tier.",
+    "Bundle enterprise_value_b and net_debt_b fields corrupted by TWD/USD mixing; lagged by Pheme; all EV and net debt figures derived from first-principles USD translation. FY2025 balance sheet net cash approximately $54 billion (TWD 2,767.9B cash less TWD 1,064.6B debt at 31.58). Q1 2026 estimate used in valuation: approximately $70 billion, reflecting reported gross cash of approximately $106 billion (TWD 3,341B at Q1 2026, per TSMC Q1 2026 6-K) less total debt approximately $36 billion.",
+    "Stocktwits social sentiment errored (HTTPError); etail sentiment unverified. Institutional ownership 15.64%, insider 0.04%.",
+    "Nvidia purchase commitment to TSMC ($95 billion figure) cited from secondary aggregation source (unverified). Used for context only; not load-bearing in the valuation.",
+    "Peer segment data not available in bundle; peer valuation derived from publicly reported multiples and news sources."
+  ],
+  "sources": [
+    {
+      "name": "Hermes bundle (yfinance + SEC EDGAR)",
+      "date": "2026-06-18",
+      "use": "Price, multiples, financials (TWD), estimates, recommendation trend"
+    },
+    {
+      "name": "TSMC Q1 2026 6-K SEC filing (a1q26presentatione.htm)",
+      "date": "2026-04",
+      "tier": "company_filed",
+      "use": "Platform mix (HPC 61%), Q1 revenue, GM, AI-accelerator CAGR guide, CoWoS capacity"
+    },
+    {
+      "name": "TSMC Q1 2026 earnings call (Quartr eventId 541404)",
+      "date": "2026-04-16",
+      "tier": "company_filed",
+      "use": "Q2 guidance ($39.0-40.2B revenue, 65.5-67.5% GM), full-year above-30% guide, AI CAGR raised to 54-56%, capex to high end of $52-56B"
+    },
+    {
+      "name": "pr.tsmc.com news 3297",
+      "date": "2026-04-16",
+      "tier": "company_filed",
+      "use": "Q1 2026 EPS NT$22.08 / US$3.49 ADR"
+    },
+    {
+      "name": "TSMC monthly revenue releases / Grafa / Bloomberg / TechTimes",
+      "date": "2026-05 to 2026-06",
+      "use": "May 2026 sales NT$416.98B +30.1% y/y; April +17.5%; YTD Jan-May +30.0%"
+    },
+    {
+      "name": "TrendForce: N2 wafer pricing",
+      "date": "2025-10",
+      "tier": "research_firm",
+      "use": "N2 ~$30k (+10-20% vs N3 ~$25-27k); 3-7nm +single-digit 2026; GM target 56%+"
+    },
+    {
+      "name": "Digitimes: CoWoS capacity",
+      "date": "2026-05",
+      "tier": "research_firm",
+      "use": "CoWoS scaling 35k to 120-130k wpm end-2026; Nvidia secured over 60% of 2026 CoWoS"
+    },
+    {
+      "name": "TrendForce/SammyFans: foundry market share Q1 2026",
+      "date": "2026-06",
+      "tier": "research_firm",
+      "use": "TSMC 72.3%, Samsung 6.5%, SMIC 5.1%, UMC 3.9%, GF 3.3%"
+    },
+    {
+      "name": "Tom's Hardware: TSMC vs rivals 2025 growth",
+      "date": "2026",
+      "tier": "research_firm",
+      "use": "TSMC grew ~4x faster than foundry rivals in 2025"
+    },
+    {
+      "name": "AMD/Trefis: AI accelerator TAM",
+      "date": "2026-06",
+      "tier": "sellside",
+      "use": "Data-center AI accelerator TAM above $500B by 2028, above $1T/yr by 2030 (bull)"
+    },
+    {
+      "name": "WSTS semiconductor forecast",
+      "date": "2025-11",
+      "tier": "research_firm",
+      "use": "Global semis ~$975B in 2026 (+25%+)"
+    },
+    {
+      "name": "SemiWiki: TSMC vs Intel Foundry vs Samsung 2026",
+      "date": "2026",
+      "tier": "research_firm",
+      "use": "Intel 18A in production, yields to industry standard ~2027, IFS deeply unprofitable"
+    },
+    {
+      "name": "DataCenter Dynamics: TSMC 2026 capex",
+      "date": "2026-01",
+      "tier": "company_filed",
+      "use": "FY2026 capex $52-56B; overseas-fab dilution 2-4pp GM"
+    },
+    {
+      "name": "TipRanks / 24-7 Wall St",
+      "date": "2026-04",
+      "use": "Mean target $473-477, Aletheia $600 street-high, 18 analysts, Strong Buy distribution"
+    },
+    {
+      "name": "Zacks: TSM at $426: Bubble Territory or a Buy",
+      "date": "2026-06-17",
+      "use": "Forward P/E ~25x, Zacks Rank #2 Buy; et-bullish framing"
+    },
+    {
+      "name": "GuruFocus GF Value",
+      "date": "2026-06",
+      "use": "43% 'overvalued' flag on trailing P/E; insider net-sell signal"
+    },
+    {
+      "name": "Bank of Taiwan / TradingEconomics",
+      "date": "2026-06-16",
+      "use": "USD/TWD 31.58 exchange rate"
+    },
+    {
+      "name": "Pheme TSM_market_facts.json",
+      "date": "2026-06-18",
+      "use": "Analyst tape, consensus, market lean, runway, capex guidance table"
+    },
+    {
+      "name": "Theia TSM_crux.json / TSM_industry.json",
+      "date": "2026-06-18",
+      "use": "Crux decomposition, segments, competitors, share dynamic, pricing power evidence"
+    },
+    {
+      "name": "Daedalus TSM_valuation.json / TSM_headline.json",
+      "date": "2026-06-18",
+      "use": "SOTP math, four levers, bias audit, four numbers, sensitivity matrix"
+    },
+    {
+      "name": "Boreas TSM_boreas.json",
+      "date": "2026-06-18",
+      "use": "Bull key debates, quantified upside, evidence quality grades"
+    },
+    {
+      "name": "Cassandra TSM_cassandra.json",
+      "date": "2026-06-18",
+      "use": "Bear key debates, quantified downside, forensic checks, evidence quality grades"
+    }
+  ]
+}

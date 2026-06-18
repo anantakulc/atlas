@@ -1,0 +1,172 @@
+{
+  "_meta": {
+    "ticker": "TSM",
+    "agent": "Theia",
+    "as_of": "2026-06-18",
+    "snapshot_id": "TSM_2026-06-18T0042Z",
+    "currency_note": "TSMC reports in TWD. FY2025 revenue TWD 3,809.1B; at the company's reported USD figures FY2025 revenue was ~$122.4B (USD blended ~31.1 TWD/USD). Bundle enterprise_value_b / net_debt_b / ev_ebitda are corrupted (TWD/USD mix) and are IGNORED here. TSMC is NET CASH: cash TWD 2,767.9B vs total debt TWD 1,064.6B = ~TWD 1,703B net cash (~$54B).",
+    "all_figures_basis": "USD unless stated; platform mix from TSMC 1Q26 6-K; financials from frozen bundle (TWD) cross-checked to TSMC USD reporting."
+  },
+
+  "business_overview": {
+    "what_it_is": "The world's largest dedicated semiconductor foundry. TSMC manufactures chips designed by others (fabless firms and IDMs) — it owns no end products and competes with none of its customers, the 'pure-play' model. It sells wafer fabrication at process nodes from mature (>28nm) to leading-edge (N5/N3/N2/A16), plus advanced packaging (CoWoS, SoIC) and test. FY2025 revenue ~$122.4B (+35.9% YoY in USD), gross margin 59.9% FY25 (66.2% in 1Q26), net margin 44.6%, ROE 31.7%, ~$54B net cash.",
+    "economic_model": "A capital-intensity-for-monopoly trade: TSMC spends ~$52-56B/yr capex (2026 guide) to hold a multi-year process lead, then earns monopoly-like pricing and 60%+ gross margins on leading edge because there is no credible second source. Capex is the moat; pricing power is the return on it.",
+    "customers": "Apple (largest, ~22-25% of revenue historically), Nvidia, AMD, Broadcom, MediaTek, Qualcomm, Marvell, plus the hyperscaler custom-silicon programs (Google TPU, Amazon Trainium/Inferentia, Microsoft Maia, Meta MTIA) which are fabbed at TSMC. Customer concentration is high at the top (Apple + Nvidia together likely ~35-40% of revenue) but the leading-edge customer set is widening as every AI accelerator on earth — merchant GPU and custom ASIC alike — is built on TSMC.",
+    "sources": [
+      {"value": "Platform mix 1Q26: HPC 61%, Smartphone 26%, IoT 6%, Automotive 4%, DCE 1%, Other 2%", "source_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm", "tier": "company_filed", "date": "2026-04"},
+      {"value": "FY2025 revenue $122.4B +35.9% YoY; 1Q26 GM 66.2%, OM 58.1%", "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmcs-q1-2026-shows-strong-growth-and-margin-gains-93CH-4617167", "tier": "company_filed", "date": "2026-04"}
+    ]
+  },
+
+  "segments": [
+    {
+      "name": "HPC (High-Performance Computing)",
+      "what": "AI accelerators (Nvidia/AMD GPUs, hyperscaler custom ASICs), CPUs (server/PC), networking, FPGAs. Now the largest platform and the growth engine. Within HPC, the AI-accelerator slice is ~17-19% of TOTAL company revenue in 2025 (~$21-23B) and growing fastest; the rest of HPC is CPU/networking.",
+      "revenue_share_pct": 61,
+      "revenue_usd_b_2025_approx": 70,
+      "growth": "HPC +20% QoQ in 1Q26; AI accelerator revenue roughly doubled in 2025 and guided to a 54-56% CAGR 2024-2029.",
+      "margin_nature": "Highest-value wafers (N3/N2 + CoWoS). Pricing power strongest here.",
+      "nature": "HIGH-GROWTH",
+      "note": "This is the crux segment. The whole TSM call hinges on the durability and size of HPC/AI."
+    },
+    {
+      "name": "Smartphone",
+      "what": "Apple A-series/M-series, MediaTek and Qualcomm SoCs, modems. Anchored by Apple's leading-edge SoC.",
+      "revenue_share_pct": 26,
+      "revenue_usd_b_2025_approx": 30,
+      "growth": "Smartphone -11% QoQ in 1Q26 (seasonal); structurally low-to-mid single digit unit growth, but TSMC's per-unit revenue rises as Apple/flagship SoCs move to N2.",
+      "margin_nature": "High-value at the leading edge (Apple A-series on N3/N2) but seasonal and unit-mature.",
+      "nature": "MATURE-CYCLICAL (with a leading-edge content tailwind)"
+    },
+    {
+      "name": "IoT",
+      "what": "Edge/connectivity silicon, microcontrollers, low-power compute.",
+      "revenue_share_pct": 6,
+      "revenue_usd_b_2025_approx": 7,
+      "growth": "+12% QoQ 1Q26; recovering off a cyclical trough.",
+      "margin_nature": "Mixed nodes, mid-margin.",
+      "nature": "CYCLICAL"
+    },
+    {
+      "name": "Automotive",
+      "what": "ADAS, MCUs, power and compute for autos; increasingly AI-at-the-edge content.",
+      "revenue_share_pct": 4,
+      "revenue_usd_b_2025_approx": 5,
+      "growth": "-7% QoQ 1Q26; soft near term, structural content-per-car tailwind longer term.",
+      "margin_nature": "Mid-margin, long product cycles.",
+      "nature": "CYCLICAL (secular content tailwind)"
+    },
+    {
+      "name": "DCE (Digital Consumer Electronics) + Other",
+      "what": "Consumer SoCs, display, misc.",
+      "revenue_share_pct": 3,
+      "revenue_usd_b_2025_approx": 4,
+      "growth": "Small, lumpy.",
+      "margin_nature": "Lower-value/mature nodes.",
+      "nature": "MATURE-ANNUITY"
+    }
+  ],
+
+  "node_mix": {
+    "comment": "By technology, the value concentrates in leading edge. Advanced nodes (N7 and below) are well over two-thirds of wafer revenue; the <7nm leading edge (N5/N3/N2) is where TSMC has effective monopoly economics. N2 entered high-volume manufacturing in 4Q25 and ramps through 2026; N2 slots are sold out through 2Q27. A16 (with backside power) follows in 2H26/2027.",
+    "sources": [
+      {"value": "N2 entered HVM 4Q25; N2 slots sold out through 2Q27; A16 (backside power) following", "source_url": "https://www.trendforce.com/news/2025/10/08/news-tsmc-2nm-reportedly-up-10-20-far-below-rumored-50-3-7nm-to-rise-single-digit-in-2026/", "tier": "research_firm", "date": "2025-10"}
+    ]
+  },
+
+  "tam_usd_bn": {
+    "global_semiconductor_2026": {"value": 975, "source_url": "https://www.wsts.org/76/Recent-News-Release", "tier": "research_firm", "date": "2025-11", "note": "WSTS forecasts ~$975B in 2026, +25%+ YoY, driven by logic+memory on AI. Gartner separately forecasts $1.3T in 2026."},
+    "global_semiconductor_2030": {"value": 1000, "source_url": "https://counterpointresearch.com/en/insights/global-semiconductor-revenues-forecast", "tier": "research_firm", "date": "2026", "note": "Counterpoint: >$1T by 2030; Gartner sees >$1T crossed by 2028. AI is the swing."},
+    "foundry_market_2025_approx": {"value": 250, "source_url": "https://marklapedus.substack.com/p/tsmc-gains-foundry-share-in-q1-26", "tier": "research_firm", "date": "2026", "note": "Pure-play + Foundry 2.0 logic manufacturing. TSMC ~60% of the classic foundry market, 72.3% of pure-play foundry in 1Q26 (TrendForce)."},
+    "ai_accelerator_datacenter_tam_2028": {"value": 500, "source_url": "https://www.trefis.com/stock/amd/articles/603344/the-real-engine-for-advanced-micro-devices-stock-might-not-be-what-you-think/2026-06-17", "tier": "sellside", "date": "2026-06", "note": "AMD CEO: data-center AI accelerator TAM >$500B by 2028, >60%/yr. Some houses see >$1T/yr AI accelerator TAM by 2030. This is the demand pool feeding TSMC HPC."},
+    "ai_accelerator_datacenter_tam_2030_bull": {"value": 1000, "source_url": "https://northwiseproject.com/ai-accelerator-market-forecast-2030/", "tier": "research_firm", "date": "2026", "note": "Bull-case AI accelerator (GPU+ASIC) TAM >$1T/yr by 2030."}
+  },
+
+  "tam_growth": "Global semis +25%+ in 2026 (WSTS), logic+memory leading. The addressable slice that matters for TSM — leading-edge logic + advanced packaging for AI/HPC — is growing far faster (AI accelerator TAM ~60%/yr per AMD). TSMC's whole-company guide is a 25% USD revenue CAGR 2024-2029; the AI-accelerator sub-engine is guided to 54-56% CAGR over the same window.",
+
+  "addressable_market": {
+    "definition": "TSMC's served market is leading-edge + advanced logic foundry plus advanced packaging — NOT the whole semi TAM (it does not make memory, and most mature/trailing-edge logic is commoditized and contested). The slice it actually addresses and dominates is <7nm logic wafers and CoWoS/SoIC packaging for compute.",
+    "tsmc_share_of_served_market": "TSMC holds ~90%+ of <7nm leading-edge foundry wafers and effectively ~100% of merchant AI-accelerator manufacturing (every Nvidia/AMD GPU and every hyperscaler custom ASIC is built at TSMC). It captures ~72% of the pure-play foundry market overall (1Q26, TrendForce) and gained share QoQ (from 70.4%).",
+    "headroom": "The growth is not about taking foundry share (already ~maxed at the leading edge) — it is about the leading-edge POOL itself expanding with AI capex, TSMC moving customers up the node stack (N3->N2->A16, each at higher ASP), and advanced packaging (CoWoS) becoming a second revenue line. The ceiling is set by AI/data-center capex, not by competitive share.",
+    "sources": [
+      {"value": "TSMC 72.3% pure-play foundry share 1Q26 (up from 70.4%); >90% leading-edge; ~60% total foundry", "source_url": "https://www.sammyfans.com/2026/06/12/samsung-tsmc-chip-foundry-business-trendforce-q1-2026/amp/", "tier": "research_firm", "date": "2026-06"}
+    ]
+  },
+
+  "competitors": [
+    {
+      "name": "Samsung Foundry",
+      "position": "Distant #2. ~6.5% pure-play foundry share 1Q26 (TrendForce) — TSMC is now ~11x larger in foundry. Has SF2 (2nm GAA) in production but yields and customer wins trail; struggles to hold marquee external logic (lost some Qualcomm/Nvidia work to TSMC historically).",
+      "share": "6.5%",
+      "trajectory": "Losing relative share; TSMC grew ~4x faster than rivals in 2025. Samsung's leading-edge yield/credibility gap keeps the biggest AI customers at TSMC."
+    },
+    {
+      "name": "Intel Foundry (IFS)",
+      "position": "The credible technology challenger. 18A in production (sub-2nm class, GAA + backside power), 14A on the roadmap. ~6% of broader 'Foundry 2.0' market; ~$4.5B 4Q25 revenue but deeply unprofitable; 18A yields only expected to reach industry-standard in 2027. Building external customer base.",
+      "share": "~3-6% (definition-dependent)",
+      "trajectory": "The wildcard. If 18A/14A yields and external wins materialize (e.g. a major fabless dual-sourcing), Intel is the only entity that could dent TSMC's leading-edge monopoly — but it is years from volume parity and US-government-supported rather than market-proven."
+    },
+    {
+      "name": "SMIC",
+      "position": "China's national champion. ~5.1% pure-play share 1Q26. Capped at ~7nm by export controls (no EUV), and rationed by Beijing to serve Huawei. Not a leading-edge competitor for the global AI/HPC market.",
+      "share": "5.1%",
+      "trajectory": "Growing within China (domestic substitution) but walled off from <7nm and from TSMC's AI customer base by sanctions. A long-tail threat in mature/China logic, not in leading-edge."
+    },
+    {
+      "name": "UMC",
+      "position": "Mature/specialty foundry (~3.9% share). 22/28nm and above; no leading-edge ambition.",
+      "share": "3.9%",
+      "trajectory": "Stable niche; irrelevant to the leading-edge/AI crux."
+    },
+    {
+      "name": "GlobalFoundries",
+      "position": "Specialty/mature (~3.3% share). Exited the leading-edge race in 2018; focuses on RF, automotive, IoT, differentiated nodes.",
+      "share": "3.3%",
+      "trajectory": "Stable specialty player; not a leading-edge competitor."
+    }
+  ],
+
+  "the_share_dynamic": "The defining fact: at the leading edge there is no meaningful share contest left to win or lose — TSMC already holds 90%+ of <7nm and effectively 100% of merchant AI-accelerator manufacturing. Samsung is ~11x smaller in foundry and gated by yield/credibility; SMIC and the specialty players (UMC, GF) are structurally absent from <7nm. The ONLY entity that could shift leading-edge share is Intel Foundry via 18A/14A, and it is unprofitable, yields-behind (parity not until ~2027), and unproven with external AI customers. So the share dynamic flows TOWARD TSMC, not away: TSMC grew ~4x faster than its foundry rivals in 2025 and gained pure-play share QoQ (70.4%->72.3% in 1Q26). The investment question is therefore NOT 'does TSMC keep its share' (it almost certainly does through the horizon) but 'how big does the leading-edge POOL get and how much can TSMC price it' — i.e. the size of the AI/HPC demand and TSMC's pricing power on a sold-out leading edge. That is the crux.",
+
+  "revenue_drivers": [
+    "Leading-edge POOL growth: AI/data-center capex driving N3/N2/A16 wafer demand (the dominant driver).",
+    "Node migration / ASP: customers moving N5->N3->N2->A16, each step a higher wafer price (N2 ~$30k vs N3 ~$25-27k).",
+    "Advanced packaging (CoWoS/SoIC): a second, capacity-constrained revenue line for AI; CoWoS capacity scaling ~35k wpm (late-2024) to ~120-130k wpm (end-2026).",
+    "Pricing power: 3-7nm +single-digit % in 2026; N2 +10-20% vs N3; leading-edge pricing 'unavoidable' to hold 53%+ GM (management).",
+    "Smartphone leading-edge content (Apple/flagship moving to N2) — a steadier, lower-growth contributor."
+  ],
+
+  "npat_margin_drivers": [
+    "Leading-edge mix and pricing — N2/N3 at premium ASP lifts blended GM (1Q26 GM 66.2%; long-term GM target raised to 56%+ 'and higher').",
+    "Utilization — sold-out leading edge = high utilization = operating leverage.",
+    "OFFSET: overseas fab dilution (Arizona, Japan, Germany) ~2-4 ppt GM headwind during ramp; higher electricity/inflation; N2 ramp start-up costs.",
+    "FX (TWD/USD) — a TWD appreciation is a GM headwind, a depreciation a tailwind.",
+    "Net cash balance sheet (~$54B) means minimal interest drag; high ROE (31.7%)."
+  ],
+
+  "product_differentiation": "Three reinforcing moats: (1) a sustained process-technology LEAD (N2/A16 ahead of all rivals at volume); (2) advanced PACKAGING (CoWoS/SoIC) which is now the binding constraint on AI systems and which TSMC dominates — it controls both the silicon and the package; (3) the PURE-PLAY trust model — TSMC competes with no customer, so Apple, Nvidia, AMD and the hyperscalers can all fab their most valuable IP there without conflict. The combination is why every AI accelerator on earth is built at TSMC.",
+
+  "five_forces": {
+    "rivalry": "LOW at leading edge (effective monopoly); moderate in mature nodes (UMC/GF/SMIC) but that is not where the value is.",
+    "new_entrants": "VERY LOW — a leading-edge fab+ecosystem costs $30B+ and a decade; only Intel (state-backed) is attempting it and is years behind.",
+    "supplier_power": "MODERATE-HIGH — ASML is a single-source for EUV/High-NA litho; TSMC is ASML's largest customer so power is balanced; HBM (SK Hynix/Samsung/Micron) is a co-bottleneck but priced into customers' bills, not TSMC's.",
+    "buyer_power": "LOW-MODERATE — concentration (Apple, Nvidia) gives big buyers some leverage, but with no second source at leading edge, buyers are price-takers; TSMC pushed through 10-20% N2 and single-digit 3-7nm hikes with little pushback.",
+    "substitutes": "LOW — there is no substitute for leading-edge silicon for frontier AI; chiplets/packaging if anything deepen TSMC's role."
+  },
+
+  "moat": "WIDE and, if anything, widening. The process lead, the packaging lock, and the pure-play trust model compound. The only credible threat to the moat is Intel Foundry's 18A/14A reaching volume parity with external AI wins — a multi-year, unproven path. Geopolitical (Taiwan/China) tail risk is the real residual risk, partly mitigated by the Arizona/Japan/Germany diversification.",
+
+  "sources": [
+    {"value": "Platform mix 1Q26 (HPC 61% / Smartphone 26% / IoT 6% / Auto 4% / DCE 1% / Other 2%)", "source_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm", "tier": "company_filed", "date": "2026-04"},
+    {"value": "1Q26 results: rev $35.9B +6.4% QoQ USD, GM 66.2%, OM 58.1%; FY26 rev guide >30% USD; AI accel CAGR 54-56% 2024-29", "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmcs-q1-2026-shows-strong-growth-and-margin-gains-93CH-4617167", "tier": "company_filed", "date": "2026-04"},
+    {"value": "5-yr revenue CAGR raised to 25% USD (from 20%); AI accelerator CAGR raised to mid-to-high 50s% (from mid-40s)", "source_url": "https://www.nasdaq.com/articles/tsmc-expects-ai-chip-revenue-grow-60-cagr-through-2029-stock-buy-2026", "tier": "company_filed", "date": "2026-01"},
+    {"value": "Foundry share 1Q26: TSMC 72.3%, Samsung 6.5%, SMIC 5.1%, UMC 3.9%, GF 3.3% (TrendForce)", "source_url": "https://www.sammyfans.com/2026/06/12/samsung-tsmc-chip-foundry-business-trendforce-q1-2026/amp/", "tier": "research_firm", "date": "2026-06"},
+    {"value": "TSMC grew ~4x faster than foundry rivals in 2025; price hikes + tech lead + vertical integration", "source_url": "https://www.tomshardware.com/tech-industry/why-tsmc-grew-four-times-faster-than-its-foundry-rivals-in-2025", "tier": "research_firm", "date": "2026"},
+    {"value": "N2 ~$30k wafer (+10-20% vs N3 ~$25-27k); 3-7nm +single-digit in 2026; GM target 53%+/56%+", "source_url": "https://www.trendforce.com/news/2025/10/08/news-tsmc-2nm-reportedly-up-10-20-far-below-rumored-50-3-7nm-to-rise-single-digit-in-2026/", "tier": "research_firm", "date": "2025-10"},
+    {"value": "CoWoS capacity ~35k wpm (late-24) -> ~120-130k wpm (end-26); Nvidia secured >60% of 2026 CoWoS", "source_url": "https://www.digitimes.com/news/a20260514PD237/tsmc-cowos-soic-capacity-packaging.html", "tier": "research_firm", "date": "2026-05"},
+    {"value": "FY2026 capex guide $52-56B; ~2-4 ppt GM dilution from overseas fabs + N2 ramp", "source_url": "https://www.datacenterdynamics.com/en/news/tsmc-announces-2026-capex-spend-of-56bn-after-posting-eighth-consecutive-quarter-of-growth/", "tier": "company_filed", "date": "2026-01"},
+    {"value": "WSTS 2026 semis ~$975B (+25%+); Counterpoint >$1T by 2030; Gartner $1.3T 2026", "source_url": "https://www.wsts.org/76/Recent-News-Release", "tier": "research_firm", "date": "2025-11"},
+    {"value": "Data-center AI accelerator TAM >$500B by 2028 (AMD); some houses >$1T/yr by 2030", "source_url": "https://www.trefis.com/stock/amd/articles/603344/the-real-engine-for-advanced-micro-devices-stock-might-not-be-what-you-think/2026-06-17", "tier": "sellside", "date": "2026-06"},
+    {"value": "Intel 18A in production, sub-2nm class GAA+backside power; yields to industry-standard ~2027; IFS unprofitable", "source_url": "https://semiwiki.com/semiconductor-manufacturers/tsmc/366523-tsmc-vs-intel-foundry-vs-samsung-foundry-2026/", "tier": "research_firm", "date": "2026"}
+  ]
+}

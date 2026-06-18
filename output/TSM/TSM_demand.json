@@ -1,0 +1,105 @@
+{
+  "_meta": {
+    "ticker": "TSM",
+    "agent": "Theia",
+    "as_of": "2026-06-18",
+    "snapshot_id": "TSM_2026-06-18T0042Z",
+    "basis": "USD billions. FY2025 actual company revenue ~$122.4B (TWD 3,809.1B). Paths are built as identities in sourced drivers (AI-accelerator CAGR x pool, node-ASP, segment growth), NOT a hand-drawn fade. Normalization year FY2029 (TSMC's guidance window), with a read to ~2030.",
+    "anchor_2025": {
+      "company_revenue_usd_b": 122.4,
+      "platform_mix_2025_approx": {"HPC": 0.55, "Smartphone": 0.27, "IoT": 0.06, "Automotive": 0.05, "DCE_Other": 0.07},
+      "note": "1Q26 mix is HPC 61% / Smartphone 26% as HPC accelerates; full-year 2025 HPC averaged ~55%. AI-accelerator slice ~17-19% of total (~$21-23B)."
+    }
+  },
+
+  "method": "Whole-company is dominated by the HPC/AI growth segment, so the path is driven by the crux variable (AI-accelerator revenue CAGR x its weight) layered on a slower-growing base (non-AI HPC, smartphone, IoT/auto/other). Each path's implied AI-accelerator dollar size at FY2029 is checked against the sourced AI demand-pool ceiling so no path implies an impossible end-market.",
+
+  "segment_paths": [
+    {
+      "segment": "HPC (incl. AI accelerators)",
+      "driver_identity": "HPC revenue = AI-accelerator revenue (pool x TSMC ASP, TSMC makes ~100% of merchant+ASIC) + non-AI HPC (CPU/networking, ~mid-teens % growth). AI-accelerator is the swing term.",
+      "fy2025_usd_b_approx": 67,
+      "base": {
+        "ai_accel_cagr": "52%", "non_ai_hpc_cagr": "12%",
+        "fy2029_usd_b_approx": 215,
+        "note": "AI-accelerator (~$22B 2025) at ~52% CAGR -> ~$120B by 2029; non-AI HPC (~$45B) at ~12% -> ~$70B; plus packaging revenue lift. Implied AI-accelerator pool at TSMC ~$120B sits well inside the >$500B-by-2028 data-center accelerator TAM (TSMC makes the silicon for effectively all of it). PASSES ceiling."
+      },
+      "bull": {
+        "ai_accel_cagr": "60%", "non_ai_hpc_cagr": "15%",
+        "fy2029_usd_b_approx": 270,
+        "note": "AI-accelerator -> ~$145B+ by 2029 on a >$1T-by-2030 pool; still a minority of the sourced bull TAM. PASSES ceiling."
+      },
+      "bear": {
+        "ai_accel_cagr": "35%", "non_ai_hpc_cagr": "8%",
+        "fy2029_usd_b_approx": 150,
+        "note": "Demand digestion after the 2024-27 build; AI-accelerator -> ~$72B by 2029. Comfortably inside any pool. PASSES ceiling."
+      },
+      "nature": "HIGH-GROWTH — the value driver. Value this segment exit-multiple."
+    },
+    {
+      "segment": "Smartphone",
+      "driver_identity": "Units ~flat-to-low-single-digit x rising leading-edge content per phone (Apple/flagship moving to N2 at higher ASP).",
+      "fy2025_usd_b_approx": 33,
+      "base": {"cagr": "6%", "fy2029_usd_b_approx": 42},
+      "bull": {"cagr": "9%", "fy2029_usd_b_approx": 47},
+      "bear": {"cagr": "3%", "fy2029_usd_b_approx": 37},
+      "nature": "MATURE-CYCLICAL with a content tailwind. Value current/near-term earnings x multiple."
+    },
+    {
+      "segment": "IoT + Automotive",
+      "driver_identity": "Cyclical recovery off trough + secular content-per-device (edge AI, ADAS).",
+      "fy2025_usd_b_approx": 12,
+      "base": {"cagr": "10%", "fy2029_usd_b_approx": 18},
+      "bull": {"cagr": "14%", "fy2029_usd_b_approx": 20},
+      "bear": {"cagr": "5%", "fy2029_usd_b_approx": 15},
+      "nature": "CYCLICAL. Value through-cycle."
+    },
+    {
+      "segment": "DCE + Other",
+      "driver_identity": "Mature consumer/misc; low growth.",
+      "fy2025_usd_b_approx": 8,
+      "base": {"cagr": "4%", "fy2029_usd_b_approx": 9},
+      "bull": {"cagr": "6%", "fy2029_usd_b_approx": 10},
+      "bear": {"cagr": "2%", "fy2029_usd_b_approx": 9},
+      "nature": "MATURE-ANNUITY."
+    }
+  ],
+
+  "company_path": {
+    "base": {
+      "fy2029_revenue_usd_b_approx": 284,
+      "implied_company_cagr_2025_29": "~23.5%",
+      "implied_cagr_2024_29": "~25% (aligns with TSMC's own raised 25% USD guide)",
+      "gross_margin": "57-59%",
+      "argument": "Sum of segment paths -> ~$284B FY2029, a ~23-24% CAGR off 2025 (~25% off the 2024 base TSMC guides to). This is management's contracted+extrapolated frame taken at face value: the near term is booked (N2 sold out to 2Q27, FY26 >30%) and the AI slice compounds in the low-50s% on real capacity. The honest most-likely."
+    },
+    "bull": {
+      "fy2029_revenue_usd_b_approx": 347,
+      "implied_company_cagr_2025_29": "~30%",
+      "gross_margin": "59-62%",
+      "argument": "AI proves a durable megatrend (>$1T pool by 2030); TSMC prices harder and CoWoS adds a fat line. 25% guide proves conservative."
+    },
+    "bear": {
+      "fy2029_revenue_usd_b_approx": 211,
+      "implied_company_cagr_2025_29": "~15%",
+      "gross_margin": "52-55%",
+      "argument": "AI digestion + a 2027-28 leading-edge air-pocket + overseas dilution and TWD on margin. Share intact; the pool just grows slower than guided. A demand bear, not a share bear."
+    }
+  },
+
+  "ceiling_check": {
+    "method": "Each path's implied AI-accelerator revenue at TSMC ÷ (TSMC makes ~100% of AI silicon) = the implied AI-accelerator end-pool the path requires. Compared to sourced TAM.",
+    "sourced_ceiling_2028_2029": ">$500B data-center AI accelerator TAM by 2028 (AMD), >$1T/yr by 2030 (bull houses).",
+    "result": "Base AI-accelerator at TSMC ~$120B (2029), bull ~$145B, bear ~$72B — all are a minority slice of the >$500B-$1T accelerator TAM (the TAM is end-product value; TSMC captures the wafer+packaging layer beneath it). NO path implies an impossible end-market. PASS."
+  },
+
+  "handoff_note": "Daedalus: split SOTP into (1) HPC/AI = exit-multiple on the FY2029 normalized earnings (the crux segment, own WACC reflecting concentration + cyclicality), (2) Smartphone = mature multiple on near-term earnings, (3) IoT/Auto = through-cycle, (4) DCE/Other = annuity. The base company path (~$284B FY2029 rev, ~25% CAGR 2024-29, ~57-59% GM) is the honest anchor; bull/bear above are the crux's higher/lower readings, not dialed cones. Net cash ~$54B (TWD ~1,703B) ADDS to equity value — do not subtract debt.",
+
+  "sources": [
+    {"value": "AI accel CAGR 54-56% 2024-29; FY26 rev >30% USD; 1Q26 GM 66.2%", "source_url": "https://www.investing.com/news/transcripts/earnings-call-transcript-tsmcs-q1-2026-shows-strong-growth-and-margin-gains-93CH-4617167", "tier": "company_filed", "date": "2026-04"},
+    {"value": "5-yr revenue CAGR raised to 25% USD (from 20%)", "source_url": "https://www.nasdaq.com/articles/tsmc-expects-ai-chip-revenue-grow-60-cagr-through-2029-stock-buy-2026", "tier": "company_filed", "date": "2026-01"},
+    {"value": "AI accelerator ~17-19% of 2025 revenue (~$21-23B); FY2025 rev $122.4B", "source_url": "https://futurumgroup.com/insights/tsmc-q4-fy-2025-results-and-fy-2026-outlook-signal-ai-led-growth/", "tier": "research_firm", "date": "2026-01"},
+    {"value": "Data-center AI accelerator TAM >$500B by 2028; >$1T/yr by 2030 (bull)", "source_url": "https://www.trefis.com/stock/amd/articles/603344/the-real-engine-for-advanced-micro-devices-stock-might-not-be-what-you-think/2026-06-17", "tier": "sellside", "date": "2026-06"},
+    {"value": "Platform mix 1Q26 HPC 61% / Smartphone 26% / IoT 6% / Auto 4%", "source_url": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000199/a1q26presentatione.htm", "tier": "company_filed", "date": "2026-04"}
+  ]
+}
