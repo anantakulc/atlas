@@ -1,0 +1,169 @@
+{
+  "schema_version": "2.0",
+  "ticker": "NFLX",
+  "currency": "USD",
+  "computed_at": "2026-06-17T16:22:49Z",
+  "basis": "EV/FCF",
+  "metric_label": "NTM FCF (FY2026 guided)",
+  "metric_value": 12.5,
+  "fcf_conversion": 1.0,
+  "roic": 0.35,
+  "fundamental_discount_rate": 0.093,
+  "terminal_growth": 0.04,
+  "horizon_years": 10,
+  "current": {
+    "price": 80.5,
+    "value_b": 348.9,
+    "multiple": 27.9,
+    "implied_growth": 0.0854,
+    "implied_growth_pct": 8.5
+  },
+  "street": {
+    "thesis": "Netflix has built the only scaled, profitable streaming platform; advertising and price hike velocity should drive revenue re-acceleration to 15%+ while margins expand toward 35%+. The 40% drawdown from the June 2025 high is a valuation opportunity, not a fundamental deterioration. FY2026 guidance maintained; FCF compounding from $9.5B to $12.5B+.",
+    "n_analysts": 50,
+    "rating": "moderate_buy",
+    "target_mean": {
+      "price": 114.15,
+      "value_b": 492.6,
+      "multiple": 39.4,
+      "implied_growth": 0.1299,
+      "implied_growth_pct": 13.0
+    },
+    "target_high": {
+      "price": 151.4,
+      "value_b": 651.7,
+      "multiple": 52.1,
+      "implied_growth": 0.1664,
+      "implied_growth_pct": 16.6
+    },
+    "target_low": {
+      "price": 80.0,
+      "value_b": 346.8,
+      "multiple": 27.7,
+      "implied_growth": 0.0846,
+      "implied_growth_pct": 8.5
+    }
+  },
+  "history_context": {
+    "anchor_cagr_5y": 0.18,
+    "note": "Netflix FCF CAGR 2022-2025: from $1.6B (FY2022) to $9.5B (FY2025) = approximately 82%/year absolute growth — driven by margin expansion from 17.8% to 29.5%. This is not a steady-state CAGR; it reflects operating leverage kicking in. On revenue: 16%/year CAGR FY2022-2025. The FCF CAGR is misleading as a forward guide — the right anchor is the FY2026 guided $12.5B growing toward ~$18B by FY2028."
+  },
+  "justified_grid": [
+    {
+      "growth": 0.08,
+      "growth_pct": 8.0,
+      "justified_multiple": 26.8,
+      "value_b": 334.7,
+      "implied_price": 77.17
+    },
+    {
+      "growth": 0.1,
+      "growth_pct": 10.0,
+      "justified_multiple": 31.3,
+      "value_b": 390.9,
+      "implied_price": 90.34
+    },
+    {
+      "growth": 0.12,
+      "growth_pct": 12.0,
+      "justified_multiple": 36.5,
+      "value_b": 456.4,
+      "implied_price": 105.66
+    },
+    {
+      "growth": 0.14,
+      "growth_pct": 14.0,
+      "justified_multiple": 42.6,
+      "value_b": 532.4,
+      "implied_price": 123.47
+    },
+    {
+      "growth": 0.16,
+      "growth_pct": 16.0,
+      "justified_multiple": 49.6,
+      "value_b": 620.6,
+      "implied_price": 144.12
+    },
+    {
+      "growth": 0.18,
+      "growth_pct": 18.0,
+      "justified_multiple": 57.8,
+      "value_b": 722.7,
+      "implied_price": 168.03
+    },
+    {
+      "growth": 0.2,
+      "growth_pct": 20.0,
+      "justified_multiple": 67.3,
+      "value_b": 840.7,
+      "implied_price": 195.66
+    }
+  ],
+  "duality_decomposition": {
+    "note": "single-stage justified forward P/E = (1 - g/ROIC)/(r - g); shows the ROIC/payout lever",
+    "r": 0.093,
+    "roic_columns": [
+      0.15,
+      0.25,
+      0.35,
+      0.5
+    ],
+    "rows": [
+      {
+        "growth": 0.05,
+        "growth_pct": 5.0,
+        "roic_15": 15.5,
+        "roic_25": 18.6,
+        "roic_35": 19.9,
+        "roic_50": 20.9
+      },
+      {
+        "growth": 0.07,
+        "growth_pct": 7.0,
+        "roic_15": 23.2,
+        "roic_25": 31.3,
+        "roic_35": 34.8,
+        "roic_50": 37.4
+      },
+      {
+        "growth": 0.09,
+        "growth_pct": 9.0,
+        "roic_15": 133.3,
+        "roic_25": 213.3,
+        "roic_35": 247.6,
+        "roic_50": 273.3
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "SPOT",
+      "name": "Spotify",
+      "multiple": 55.0,
+      "basis": "EV/FCF NTM",
+      "note": "Audio streaming analog; 20% revenue growth; margin expansion story similar to Netflix 2020-2023. Higher multiple reflects faster growth rate from smaller base."
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney (streaming segments only)",
+      "multiple": 22.0,
+      "basis": "EV/EBITDA NTM",
+      "note": "Not a clean comp (legacy parks/linear); at 4% revenue growth it is a mature conglomerate. Netflix deserves a premium."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon (blended, for Prime Video context)",
+      "multiple": 30.0,
+      "basis": "EV/FCF NTM",
+      "note": "Amazon is growing at 10% total with high-margin AWS. Netflix is not a clean Amazon comp but useful for advertising platform context."
+    }
+  ],
+  "peer_median_multiple": 30.0,
+  "reconstruction": {
+    "currency": "EV/FCF",
+    "what_price_implies": "At 27.9x NTM FCF (FY2026 guided), the current price implies a ~8.5% FCF CAGR for 10y (then 4% terminal) at r=9.3%.",
+    "what_street_implies": "The street mean target implies ~13.0% for 10y.",
+    "history_anchor": "Netflix FCF CAGR 2022-2025: from $1.6B (FY2022) to $9.5B (FY2025) = approximately 82%/year absolute growth — driven by margin expansion from 17.8% to 29.5%. This is not a steady-state CAGR; it reflects operating leverage kicking in. On revenue: 16%/year CAGR FY2022-2025. The FCF CAGR is misleading as a forward guide — the right anchor is the FY2026 guided $12.5B growing toward ~$18B by FY2028.",
+    "contested_lever": "Whether advertising ARPU per ad-tier subscriber scales from ~$15-20/year today toward $40-55/year by 2028-2030 — i.e., can Netflix's in-house ad tech achieve the fill rates and CPMs that justify a 15-18x EBIT multiple on the advertising segment's $6.5B in 2028 earnings contribution, or does Amazon's structural data advantage cap Netflix's ad yield and compress the platform re-rate?"
+  }
+}

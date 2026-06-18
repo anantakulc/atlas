@@ -1,0 +1,66 @@
+{
+  "ticker": "NFLX",
+  "currency": "USD",
+  "current_price": 80.50,
+  "shares_outstanding_b": 4.27,
+  "net_debt_b": 5.2,
+  "_note_net_debt": "Corrected from bundle's $10.3B to $5.2B per Q3 2025 balance sheet (cash $9.3B, debt $14.5B = net debt $5.2B). Post-Q1 2026 cash is likely ~$12B+ after $2.8B WBD fee receipt and Q1 FCF, so net debt may have fallen further. Using $5.2B as conservative (more debt = lower per-share value).",
+  "fundamental_discount_rate": 0.093,
+  "_note_r": "Blended WACC from SOTP: Subscription annuity WACC 9.0%, Advertising growth WACC 10.5%, weighted ~70/30 on value contribution. Rounds to ~9.3% blended. Used for single-company comps reconstruction.",
+  "terminal_growth": 0.04,
+  "horizon_years": 10,
+
+  "anchor": {
+    "type": "EV/FCF",
+    "metric_label": "NTM FCF (FY2026 guided)",
+    "metric_value": 12.5,
+    "_note": "Netflix guided FCF ~$12.5B for FY2026 (Q4 2025 8-K). This is the NTM FCF anchor — the most direct cash-return measure for a subscription business. EV/FCF = ($80.50 x 4.27B + $5.2B) / $12.5B = $348.3B / $12.5B = 27.9x current.",
+    "fcf_conversion": 1.0,
+    "roic": 0.35,
+    "_note_roic": "Netflix FY2026 NOPAT estimated at ~$12.0B (EBIT $16.1B x 75% tax retention). Invested capital is predominantly content assets + working capital (~$35-40B). ROIC = $12B / $37B = ~32-35%. Using 35% as the blended forward ROIC, consistent with high-margin subscription + emerging ad business."
+  },
+
+  "street": {
+    "target_mean": 114.15,
+    "target_high": 151.40,
+    "target_low": 80.00,
+    "n_analysts": 50,
+    "rating": "moderate_buy",
+    "thesis": "Netflix has built the only scaled, profitable streaming platform; advertising and price hike velocity should drive revenue re-acceleration to 15%+ while margins expand toward 35%+. The 40% drawdown from the June 2025 high is a valuation opportunity, not a fundamental deterioration. FY2026 guidance maintained; FCF compounding from $9.5B to $12.5B+."
+  },
+
+  "history": {
+    "anchor_cagr_5y": 0.18,
+    "note": "Netflix FCF CAGR 2022-2025: from $1.6B (FY2022) to $9.5B (FY2025) = approximately 82%/year absolute growth — driven by margin expansion from 17.8% to 29.5%. This is not a steady-state CAGR; it reflects operating leverage kicking in. On revenue: 16%/year CAGR FY2022-2025. The FCF CAGR is misleading as a forward guide — the right anchor is the FY2026 guided $12.5B growing toward ~$18B by FY2028."
+  },
+
+  "peers": [
+    {
+      "ticker": "SPOT",
+      "name": "Spotify",
+      "multiple": 55.0,
+      "basis": "EV/FCF NTM",
+      "note": "Audio streaming analog; 20% revenue growth; margin expansion story similar to Netflix 2020-2023. Higher multiple reflects faster growth rate from smaller base."
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney (streaming segments only)",
+      "multiple": 22.0,
+      "basis": "EV/EBITDA NTM",
+      "note": "Not a clean comp (legacy parks/linear); at 4% revenue growth it is a mature conglomerate. Netflix deserves a premium."
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon (blended, for Prime Video context)",
+      "multiple": 30.0,
+      "basis": "EV/FCF NTM",
+      "note": "Amazon is growing at 10% total with high-margin AWS. Netflix is not a clean Amazon comp but useful for advertising platform context."
+    }
+  ],
+
+  "contested_lever": "Whether advertising ARPU per ad-tier subscriber scales from ~$15-20/year today toward $40-55/year by 2028-2030 — i.e., can Netflix's in-house ad tech achieve the fill rates and CPMs that justify a 15-18x EBIT multiple on the advertising segment's $6.5B in 2028 earnings contribution, or does Amazon's structural data advantage cap Netflix's ad yield and compress the platform re-rate?",
+
+  "justified_g_grid": [0.08, 0.10, 0.12, 0.14, 0.16, 0.18, 0.20],
+  "roic_grid": [0.15, 0.25, 0.35, 0.50],
+  "duality_g_grid": [0.05, 0.07, 0.09]
+}

@@ -36,7 +36,7 @@ def smart_em_dash(text):
         after = m.group(1)
         if after and after[0].isupper():
             return ". " + after
-        return "; "
+        return "; " + after
 
     text = re.sub(r"\s*[—–]\s*([A-Za-z])", repl, text)
     return text.replace("—", ",").replace("–", ",")

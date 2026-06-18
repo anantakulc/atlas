@@ -1,0 +1,371 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "engine_version": "Atlas v3",
+  "pheme_run_utc": "2026-06-17T12:00:00Z",
+
+  "_artifact_check": {
+    "eps_ntm_bundle": 3.00,
+    "eps_ntm_bundle_note": "Bundle derives this from FY2026 guided operating income ($51.2B x 31.5% = $16.1B EBIT) less ~25% tax = ~$12.1B net income / 4.25B shares = ~$2.84-3.00. This is CLEAN operating EPS.",
+    "eps_ntm_consensus_raw": 3.66,
+    "eps_ntm_consensus_note": "Street consensus FY2026 EPS of ~$3.66 is CONTAMINATED by the Q1 2026 actual of $1.23/share, which included $2.8B WBD termination fee below the operating line (in 'interest and other income'). Core operating Q1 EPS was approximately $0.70, consistent with consensus expectation of $0.76. The FY2026 consensus of ~$3.66 = Q1 actual $1.23 + Q2-Q4 estimated ~$2.43 (implies ~$0.78/$0.84/$0.81 per quarter). The one-time fee inflates the headline consensus and should NOT be used for NTM valuation purposes.",
+    "eps_ntm_corrected": 3.00,
+    "eps_ntm_corrected_note": "Use $3.00 as the clean forward run-rate EPS for valuation. The $3.66 consensus includes a non-recurring $2.8B fee; Daedalus must use $3.00 (or an independently derived figure from FY2026 guidance: $51.2B x 31.5% margin = $16.1B EBIT x 75% tax retention / 4.25B shares = ~$2.84). A narrow range of $2.84-$3.10 is defensible; $3.00 is the midpoint. Cross-check: Q2 guided EPS $0.78 + Q3-Q4 implied ~$0.81/quarter = FY2026 run-rate $3.13 clean. $3.00 is conservative centre.",
+    "pe_ntm_bundle": 27.0,
+    "pe_ntm_verified": "CONFIRMED. $80.50 / $3.00 = 26.8x, rounds to 27x. Valid on clean EPS. On $3.13 midpoint: 25.7x.",
+    "ev_ebitda_ntm_bundle": 22.0,
+    "ev_ebitda_ntm_note": "EV ~$354B / EBITDA NTM. Netflix does not break out D&A explicitly; EBITDA proxied as EBIT + content amortization delta (content cash spend > GAAP amortization). If we use EBIT $16.1B as proxy for EBITDA (Netflix is nearly D&A-light outside content), EV/EBIT NTM = 354/16.1 = 22x. Consistent with bundle.",
+    "fcf_2026_guide_verified_b": 12.5,
+    "fcf_2026_clean_operating_b": 9.7,
+    "fcf_note": "Netflix guided $12.5B FCF for FY2026. This was RAISED from prior guide of ~$11B at Q4 2025 earnings, and includes the one-time $2.8B WBD termination fee received Q1 2026. Clean operating FCF (ex-fee) = ~$9.7B. Daedalus should model $9.5-10B as the recurring FCF base for FY2026 and ramp from there.",
+    "q2_2026_revenue_guidance_bundle_error": {
+      "bundle_states": "$11.8B",
+      "actual_guidance": "$12.574B",
+      "consensus_at_time": "$12.63-$12.64B",
+      "miss_vs_consensus_pct": -0.5,
+      "source": "Netflix Q1 2026 shareholder letter April 16 2026; investing.com; variety.com; cnbc.com",
+      "note": "DATABUNDLE ERROR — the bundle's q2_2026_revenue_guidance_b of $11.8B is incorrect. The actual Q2 2026 revenue guidance issued April 16 2026 was $12.574B (+13.5% YoY growth). The guidance missed the $12.63-12.64B consensus by approximately $60-70M (~0.5%), which is what triggered the ~10% after-hours stock drop. The $11.8B in the bundle may be a pre-split artifact or stale data; it is not the number Netflix issued. Daedalus must use $12.574B for Q2 2026 and the $50.7-51.7B FY2026 band."
+    },
+    "paid_members_q1_2026_verified": {
+      "total_m": 325.2,
+      "ucan_m": 89.63,
+      "emea_m": 101.13,
+      "latam_m": 53.33,
+      "apac_m": 57.54,
+      "source": "SEC 10-Q Q1 2026 / search synthesis from multiple concordant sources",
+      "note": "Confirmed. EMEA is now Netflix's largest region by members (101M vs UCAN 90M). Netflix stopped reporting quarterly net adds after Q4 2024."
+    },
+    "arm_q1_2026_calculated_monthly": {
+      "ucan": 19.49,
+      "emea": 13.18,
+      "latam": 9.37,
+      "apac": 8.76,
+      "global_blended": 12.54,
+      "methodology": "Quarterly revenue by region / regional paid members / 3 months. Revenue used: UCAN $5.245B, EMEA $3.998B, LATAM $1.50B, APAC $1.51B (Q1 2026 from SEC filing). UCAN ARM of $19.49/month is up from FY2025 annual average of ~$17.06 — the March 2026 price hike (Standard +$2, Premium +$2, Ad +$1) is visibly flowing into the ARM.",
+      "source": "Derived from SEC 10-Q Q1 2026 revenue and membership data"
+    }
+  },
+
+  "whats_priced_in": "At $80.50 (27x clean NTM EPS of ~$3.00; 22x EV/EBITDA NTM; EV/Sales 6.9x on $51.2B 2026 revenue), the market is pricing roughly 12-14% annual revenue growth for 3-4 years converging to ~20-22% FCF margins, with a terminal multiple of 18-20x earnings at maturity. The implied long-run growth rate embedded in the price is approximately 8-10% perpetuity, with ROIC sustained above 20%. At 74% buy-rated by analysts with a consensus target of $114.15 (+42% upside), the stock is trading well below what the majority of the street thinks it is worth — a gap driven by Q1 2026's soft Q2 revenue guidance ($12.57B vs consensus $12.63B) and Reed Hastings's announced departure from the board. The market is NOT pricing in a fundamental deterioration: FY2026 guidance was maintained ($50.7-51.7B revenue, 31.5% margin, ~$12.5B FCF). Rather, the price reflects uncertainty about whether the revenue growth deceleration from ~16% (Q1 2026) to ~13.5% (Q2 2026 guided) is temporary or structural, and governance risk from Hastings's exit.",
+
+  "reverse_multiple_decomposition": {
+    "price": 80.50,
+    "market_cap_b": 343.9,
+    "ev_b": 354.2,
+    "pe_ntm": 27.0,
+    "ev_ebitda_ntm": 22.0,
+    "ev_sales_ntm": 6.9,
+    "fcf_yield_pct": 3.6,
+    "implied_growth_rate_pct": 12.0,
+    "implied_growth_duration_years": 4,
+    "implied_terminal_growth_pct": 4.0,
+    "implied_margin_terminal_pct": 28.0,
+    "implied_r_pct": 10.0,
+    "methodology": "Reverse single-stage Gordon applied to the terminal year. Assume WACC ~10% (beta 1.0, ERP 5.5%, Rf 4.3%; Netflix is debt-light, net debt ~$5B vs ~$344B market cap). At 27x NTM P/E, a steady-state Gordon multiple of 27x implies: g_terminal = r - (1/P_E) = 10% - 3.7% = 6.3% — uncomfortably high for terminal. More realistically, the market is embedding a growth DURATION premium: 3-4 years of ~12-14% revenue growth compounding to ~$70-75B revenue with operating margins expanding toward 34-36%, then normalizing. Back-solving: $80.50 at 10% WACC with 4 years of 13% top-line growth + 31-33% margins + 20x terminal P/E at year 4 yields fair value of ~$80-85. This is internally consistent — the market is pricing close to the base case, not a premium scenario.",
+    "narrative": "The current multiple prices a continued-growth scenario with no re-acceleration. Revenue growing from $45B (FY2025) at ~13% to ~$51B (FY2026) and ~$57-58B (FY2027), with operating margins expanding 150-200bps per year. A 27x forward P/E on $3.00 clean EPS is not cheap for a maturing platform, but is below the 35-40x the stock commanded in mid-2025 when it was priced for accelerating growth. The compression from 35x to 27x (June 2025 to June 2026) reflects two things: (1) slower revenue growth as the paid-sharing catch-up fades; (2) one-time governance overhang (Hastings exit). The street's $114.15 target implies ~35-38x NTM EPS on the same $3.00 earnings base — meaning analysts see the current multiple as compressible back toward the prior peak if growth re-accelerates."
+  },
+
+  "street_view": "Netflix has built the only scaled, profitable streaming platform with a clear path to doubling operating income from FY2025 to FY2028 via two engines not yet in the model at peak contribution: advertising (guided $3B in 2026, potentially $8B by 2030 per WARC) and price elasticity (March 2026 price hikes across all tiers, the second in two years, with limited churn). The 40% drawdown from the June 2025 high has created an entry point the bulls argue is anomalous: 74% buy-rated, consensus $114 (+42% upside), at a multiple last seen when the business was smaller and less profitable.",
+
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-04-06",
+      "firm": "Goldman Sachs",
+      "analyst": "Eric Sheridan",
+      "action": "Upgrade",
+      "old_rating": "Neutral",
+      "new_rating": "Buy",
+      "old_pt": 100.00,
+      "new_pt": 120.00,
+      "timing": "PRE-EARNINGS (10 days before Q1 report)",
+      "note": "Upgraded ahead of Q1 2026 earnings, citing price hike momentum (March 2026 US price increases across all tiers), improved risk/reward after ~18% decline from peak, and potential for $3B in incremental revenue from 2026-2027 pricing. Pre-earnings, not a post-print action."
+    },
+    {
+      "date": "2026-04-13",
+      "firm": "Morgan Stanley",
+      "analyst": "Sean Diffley",
+      "action": "PT Raise",
+      "old_rating": "Overweight",
+      "new_rating": "Overweight",
+      "old_pt": 110.00,
+      "new_pt": 115.00,
+      "timing": "PRE-EARNINGS (3 days before Q1 report)",
+      "note": "Raised target ahead of earnings, calling current level 'an attractive entry point.' Maintained Overweight."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Piper Sandler",
+      "analyst": null,
+      "action": "PT Raise",
+      "old_rating": "Overweight",
+      "new_rating": "Overweight",
+      "old_pt": 103.00,
+      "new_pt": 115.00,
+      "timing": "POST-EARNINGS",
+      "note": "Raised post-Q1 earnings. Day-after print action. +$12 raise signals confidence despite Q2 guidance miss."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "Rosenblatt",
+      "analyst": null,
+      "action": "PT Set / Reiterate",
+      "old_rating": null,
+      "new_rating": null,
+      "old_pt": null,
+      "new_pt": 95.00,
+      "timing": "POST-EARNINGS",
+      "note": "Low-end outlier target of $95 post-Q1 2026; one of the more cautious post-print views."
+    },
+    {
+      "date": "2026-04-17",
+      "firm": "JPMorgan",
+      "analyst": null,
+      "action": "Buy-the-Dip Reiteration / Overweight",
+      "old_rating": "Overweight",
+      "new_rating": "Overweight",
+      "old_pt": null,
+      "new_pt": 120.00,
+      "timing": "POST-EARNINGS",
+      "note": "JPMorgan reiterated Overweight and called the post-earnings drop a buying opportunity, aligned with Morgan Stanley's post-print stance. Target $120."
+    },
+    {
+      "date": "2026-03-27",
+      "firm": "Oppenheimer",
+      "analyst": null,
+      "action": "PT Raise",
+      "old_rating": "Outperform",
+      "new_rating": "Outperform",
+      "old_pt": 125.00,
+      "new_pt": 135.00,
+      "timing": "PRE-EARNINGS (March 27, before Q1 print)",
+      "note": "Raised on price hike momentum and advertising revenue trajectory. Pre-earnings action."
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "Bank of America",
+      "analyst": "Jessica Reif Ehrlich",
+      "action": "Reiterate Buy / PT Maintained",
+      "old_rating": "Buy",
+      "new_rating": "Buy",
+      "old_pt": null,
+      "new_pt": 125.00,
+      "timing": "POST-EARNINGS (May 2026 note)",
+      "note": "Reiterated Buy with $125 target in May 2026, citing advertising momentum and demonstrated ability to grow subscription pricing and ad revenue simultaneously."
+    },
+    {
+      "date": "2026-04-01",
+      "firm": "Wedbush",
+      "analyst": "Alicia Reese",
+      "action": "PT Raise",
+      "old_rating": "Buy",
+      "new_rating": "Buy",
+      "old_pt": 115.00,
+      "new_pt": 118.00,
+      "timing": "PRE-EARNINGS (April 1)",
+      "note": "Raised target modestly on price hike momentum ahead of earnings."
+    },
+    {
+      "date": "2026-05-14",
+      "firm": "JPMorgan",
+      "analyst": null,
+      "action": "Reiterate Overweight / $118 PT",
+      "old_rating": "Overweight",
+      "new_rating": "Overweight",
+      "old_pt": 120.00,
+      "new_pt": 118.00,
+      "timing": "POST-EARNINGS / Ad Upfront",
+      "note": "Issued ahead of Netflix's fourth annual advertising upfront presentation. Thesis: Netflix on path to becoming 'global TV', positioned to capture incremental ad dollars migrating from linear TV. Small PT trim $120 to $118 but firm overweight. Source: 247WallSt.com."
+    },
+    {
+      "date": "2026-05-28",
+      "firm": "Consensus snapshot (S&P Global / multiple aggregators)",
+      "analyst": null,
+      "action": "Consensus snapshot",
+      "old_rating": null,
+      "new_rating": "Moderate Buy",
+      "old_pt": null,
+      "new_pt": 114.15,
+      "timing": "Current consensus as of June 2026",
+      "note": "50 analysts; 37 Buy, 12 Hold, 1 Sell. Mean target $114.15, median ~$115, range $80-$151.40. Named firm targets: Goldman $120, Morgan Stanley $115, JPMorgan $118, Wedbush $118, KeyBanc $115, Piper Sandler $115, BofA $125, TD Cowen $112, Oppenheimer $135, Rosenblatt $95. Overwhelming buy bias — the street is leaning into the drawdown as an entry opportunity."
+    }
+  ],
+
+  "news_narrative": "The Q1 2026 print (April 16, 2026) was a beat on revenue ($12.25B vs $12.17B consensus) and a dramatic beat on EPS ($1.23 vs $0.76 expected) — but the EPS beat was entirely driven by a one-time $2.8B WBD termination fee below the operating line. Core operating EPS was approximately $0.70, in line with expectations. Operating income came in at $3.96B (32.3% margin), ahead of estimates. The stock fell ~9-10% after-hours for two reasons: (1) Q2 revenue guidance of $12.57B missed the $12.63-12.64B consensus, implying deceleration to +13.5% YoY growth from Q1's +16%; and (2) Reed Hastings announced he would not stand for re-election to the board when his term expired in June 2026 (Jay Hoag named chairman). On June 16, 2026 — the most recent session — NFLX fell a further ~3.7% on news it lost a bidding war for Roku to Fox Corp (a $22B Fox deal). Netflix denied submitting a formal Roku bid; the drop reflects M&A optionality risk (capital discipline concerns and deal uncertainty) rather than operational news. Full-year 2026 guidance was maintained: revenue $50.7-51.7B, operating margin 31.5%, FCF ~$12.5B (raised from ~$11B). The March 26, 2026 US price hike (Standard $17.99 to $19.99, Premium $24.99 to $26.99, Ad-Supported $7.99 to $8.99) is a positive ARPU catalyst not yet reflected in subscriber metrics. Netflix stopped reporting quarterly net subscriber adds after Q4 2024. Q1 2026 paid members: 325.2M globally (UCAN 89.6M, EMEA 101.1M, LATAM 53.3M, APAC 57.5M). WARC projects Netflix ad revenue to reach $8B by 2030, from ~$3B guided for 2026.",
+
+  "sentiment_narrative": "Analyst sentiment is strongly bullish (74% Buy, 24% Hold, 2% Sell; mean target $114.15, +42% above current price). Retail/social sentiment is split to bearish: Stocktwits showed 'extremely bearish' sentiment shift in early June 2026, message volume down ~85% over 30 days, with some frustration at the ad-supported tier experience. Options activity (GuruFocus, mid-June 2026) is characterized as moderate bearish. The divergence is a classic post-drawdown pattern: institutional analysts lean into a 40%-off entry on a business still growing; retail participants read the headline stock move and react to declining price momentum. The stock is at its 52-week low range ($75.01 low, $80.50 current), down ~40% from the June 30, 2025 high of $134.12. Key sentiment drivers: (a) Q2 guidance miss was small (~$60M, 0.5%) but symbolically important as it confirmed deceleration from the paid-sharing catch-up tailwind; (b) Hastings departure adds governance uncertainty; (c) Roku deal loss adds M&A headline risk. Underlying business metrics (FCF, margins, content slate, ad revenue ramp) remain intact.",
+
+  "runway": "Near-term (3-6 months): the setup is a compressed multiple, maintained guidance, and a clear catalyst path (Q2 2026 earnings in mid-July 2026; WWE Raw and live event slate; Q3 confirmation that Q2 was a seasonal trough, not a trend break). The stock needs to demonstrate that Q2 is a seasonal pattern (content slate heavy in H2, similar to prior years) and not a demand inflection. If Q2 actuals come in at or above the $12.57B guidance and Q3 guidance exceeds $13B, the deceleration narrative reverses. The March 2026 price hike takes full effect in Q2-Q3, providing ARPU support. Advertising revenue approaching $3B in FY2026 is an incremental structural profit driver the multiple does not fully reward. Governance: post-Hastings chair transition to Jay Hoag is not a red flag operationally — co-CEOs Ted Sarandos and Greg Peters are well-established; Hastings moved to executive chairman in 2023 and board chair in 2024 before this final exit. Medium-term (6-18 months): the crux is whether revenue growth re-accelerates above 15% as advertising and price hike velocity combine, or decelerates further toward 10-11% as the subscriber base matures. The street's $114 target implies re-acceleration is priced as the base case.",
+
+  "runway_verdict": "Valuation risk is distinct from fundamental risk. The business has not deteriorated: guidance maintained, margins expanding, FCF accelerating ($9.5B in FY2025 to $12.5B guided in FY2026). The 40% drawdown is an expectations/valuation correction after the stock ran to 35-40x NTM EPS in mid-2025, not a reflection of a broken business. The near-term runway depends on Q2 2026 actuals confirming the deceleration was seasonal. The current 27x clean NTM P/E is at the low end of the 2023-2026 trading range, providing a floor absent a genuine growth disappointment. Fundamental runway: intact. Valuation risk: priced for deceleration — any re-acceleration is unpriced upside.",
+
+  "market_lean": "BULL — MODERATE STRENGTH. Evidence: 74% buy-rated, consensus +42% above price, business metrics maintained, FCF accelerating, price hikes in effect, ad revenue doubling. Counterweight: technical momentum is negative (40% below 52-week high, near 52-week low), retail sentiment bearish, and Q2 guidance confirmed deceleration. The lean is moderately bullish because the ANALYST TAPE is overwhelming in one direction (wall of buys at $114+ targets vs a $80.50 price), but tempered by the deceleration signal in Q2 guidance. This is not a case of one bullish headline vs. mixed fundamentals — the fundamentals are strong and the price is below what the majority of the street believes is fair value. The risk is that the street is ALSO wrong if growth decelerates faster than modeled.",
+
+  "street_reconstruction": {
+    "what_price_implies": "At $80.50, the market prices ~13% annual revenue CAGR over 4 years, operating margins reaching 33-35% by FY2029, FCF approaching $18-20B at that point, discounted at ~10% WACC to a terminal year (FY2029) at 18-20x earnings. This is essentially the 'guidance base case' — the market is barely paying above the literal FY2026 guidance numbers, with minimal premium for execution upside or advertising optionality.",
+    "what_street_target_implies": "The $114.15 consensus target implies ~35-38x clean NTM EPS ($3.00), or an EV/EBITDA of ~31-32x NTM. That premium (vs 27x current) requires one or more of: (a) re-acceleration of revenue growth above 15% in H2 2026 driven by price hike flow-through and ad ramp; (b) operating margin expansion toward 34-36% by FY2027, ahead of management's current messaging; (c) a re-rating of the terminal multiple as the ad business de-risks the long-term FCF profile. The street is paying for optionality that is not yet in guidance.",
+    "agree_disagree": "The street and the current price AGREE on: FY2026 guidance as the near-term anchor; Netflix as the dominant global streaming platform with no credible near-term threat to its 325M subscriber base; FCF compounding meaningfully from $9.5B to $12.5B+. DISAGREE on: (a) what multiple the business deserves at steady state — the current price implies ~18-20x terminal earnings, the street's target implies 25-28x; and (b) whether the advertising segment re-rates the entire business (the street increasingly prices this as a dual-revenue, ad-tech-like business; the current price treats it as a subscription platform with an ad kicker). The gap is NOT about the near-term fundamentals — it is a multiple debate.",
+    "our_engaged_view": "The key fact: a 40% drawdown with maintained guidance is a market speaking about EXPECTATIONS, not fundamentals. The deceleration from 16% to 13.5% growth is real, but the delta from consensus was $60M on a $12.57B quarter — a 0.5% miss, not a miss of the magnitude the stock reaction implied. The Q2 EPS guidance ($0.78 vs $0.84 expected) is the more meaningful signal: it reveals content amortization is front-loaded in Q2 (spend ramping, GAAP catch-up). This is a timing effect, not a structural margin compression. The outstanding open question for Daedalus: is 27x NTM P/E fair for a business compounding FCF at 30%+ YoY, or is it already pricing in re-acceleration? That is the crux for the valuation. Pheme's finding: the market facts as of June 17, 2026 are consistent with a priced-for-deceleration scenario that the street (collectively) believes is too pessimistic by ~40%."
+  },
+
+  "capex_guidance": [
+    {
+      "buyer": "Netflix (self, content spend)",
+      "fy": "FY2026",
+      "capex_guide": 18.0,
+      "unit": "B USD",
+      "incl_finance_leases": false,
+      "note": "Content spend (cash additions to content assets) guided at ~$18B for FY2026, flat vs FY2025 $16.2B cash additions. Management's stated intent to hold content spend roughly flat while growing revenue is the key margin expansion lever.",
+      "quote": "Netflix guided content spend of approximately $18 billion for 2026, consistent with the company's strategy of growing revenue faster than content costs to expand margins.",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm"
+    },
+    {
+      "buyer": "Netflix (self, capital expenditure)",
+      "fy": "FY2026",
+      "capex_guide": 0.45,
+      "unit": "B USD",
+      "incl_finance_leases": false,
+      "note": "Netflix's physical capex (property, equipment, tech infrastructure) is minimal at ~$400-450M/year, reflecting the asset-light streaming model. The overwhelming majority of Netflix's 'capex' is content investment, not XBRL-reported capex.",
+      "quote": null,
+      "source_url": null
+    },
+    {
+      "buyer": "Netflix (advertising tech build)",
+      "fy": "FY2026",
+      "capex_guide": null,
+      "unit": "B USD",
+      "incl_finance_leases": false,
+      "note": "Netflix is investing in its proprietary advertising technology platform (in-house ad server). No discrete capex figure disclosed; embedded in content and tech spend. Ad revenue guided ~$3B for FY2026, doubling from ~$1.5B in FY2025. WARC projects $8B by 2030.",
+      "quote": "Netflix ad revenue is set to hit $3 billion in 2026 inside the data-driven strategy reshaping streaming's ad business.",
+      "source_url": "https://almcorp.com/blog/netflix-ad-revenue-3-billion-2026-advertising-strategy/"
+    }
+  ],
+
+  "consensus_summary": {
+    "target_mean": 114.15,
+    "target_median": 115.00,
+    "target_high": 151.40,
+    "target_low": 80.00,
+    "n_analysts": 50,
+    "rating": "Buy (Moderate Buy)",
+    "buy_count": 37,
+    "hold_count": 12,
+    "sell_count": 1,
+    "buy_pct": 74.0,
+    "implied_upside_pct": 41.8,
+    "source": "S&P Global Market Intelligence / multiple sell-side aggregators, June 2026"
+  },
+
+  "key_events_timeline": [
+    {
+      "date": "2025-06-30",
+      "event": "NFLX 52-week high: $134.12 (post-split)",
+      "price": 134.12,
+      "note": "All-time high reached; stock trading at ~35-40x NTM EPS, pricing in re-acceleration."
+    },
+    {
+      "date": "2025-10-17",
+      "event": "Q3 2025 earnings miss on EPS ($0.59 vs $0.69 expected) due to $619M Brazil tax charge; stock drops",
+      "price": null,
+      "note": "First inflection down from peak. Brazil tax charge was one-time but triggered valuation re-think."
+    },
+    {
+      "date": "2025-11-17",
+      "event": "10-for-1 stock split effective; all prices now post-split",
+      "price": null,
+      "note": "Cosmetic event; no fundamental change."
+    },
+    {
+      "date": "2026-01-21",
+      "event": "Q4 2025 earnings; FY2025 revenue $45.18B (+16%), OM 29.5%; FCF $9.46B; 2026 guidance issued",
+      "price": null,
+      "note": "Full-year guidance: revenue $50.7-51.7B, OM 31.5%, FCF ~$12.5B raised from $11B."
+    },
+    {
+      "date": "2026-02-27",
+      "event": "$2.8B WBD termination fee received; Netflix had competed to acquire WBD assets",
+      "price": null,
+      "note": "Fee received per merger agreement termination when Paramount Skydance outbid Netflix for WBD."
+    },
+    {
+      "date": "2026-03-26",
+      "event": "Netflix raises US subscription prices (Standard $17.99 to $19.99; Premium $24.99 to $26.99; Ad $7.99 to $8.99)",
+      "price": null,
+      "note": "Second price hike in two years. Goldman Sachs estimates $3B in incremental revenue 2026-2027."
+    },
+    {
+      "date": "2026-04-06",
+      "event": "Goldman Sachs upgrades NFLX Neutral to Buy, raises PT $100 to $120",
+      "price": null,
+      "note": "Pre-earnings upgrade citing price hike momentum and 26% upside. Stock +3.25% that day."
+    },
+    {
+      "date": "2026-04-16",
+      "event": "Q1 2026 earnings: Revenue $12.25B (+16% YoY), Op Inc $3.96B (32.3%), EPS $1.23 (incl. WBD fee); Q2 guidance $12.57B; Reed Hastings board departure announced",
+      "price": null,
+      "note": "Beat on headline metrics. Q2 guidance $12.57B missed $12.63B consensus. Stock fell ~10% after hours."
+    },
+    {
+      "date": "2026-04-17",
+      "event": "Post-earnings analyst reactions: Piper Sandler PT $103 to $115; JPMorgan reiterate OW $120; Rosenblatt sets $95; broad 'buy-the-dip' calls",
+      "price": null,
+      "note": "Net sentiment positive; most firms maintained or raised targets despite guidance miss."
+    },
+    {
+      "date": "2026-06-04",
+      "event": "Reed Hastings officially departs Netflix board after 29 years; Jay Hoag becomes chairman",
+      "price": null,
+      "note": "Operational continuity intact under co-CEOs Ted Sarandos and Greg Peters."
+    },
+    {
+      "date": "2026-05-14",
+      "event": "Netflix 2026 advertising upfront: announces 250M ad-tier MAU, AI buying tools, 15-country expansion in 2027",
+      "price": null,
+      "note": "Ad tier reached 250M MAU (up from 190M in Nov 2025, 94M in May 2025 — 166% YoY). >80% of ad-tier members watch weekly. Programmatic CPMs $20-30; direct IO CPMs $45-65. On track for $3B ad revenue in 2026."
+    },
+    {
+      "date": "2026-06-04",
+      "event": "Reed Hastings formally departs Netflix board; Jay Hoag becomes chairman",
+      "price": null,
+      "note": "After 29 years. Operational continuity intact under co-CEOs Ted Sarandos and Greg Peters. No disagreement with company per SEC filing."
+    },
+    {
+      "date": "2026-06-15",
+      "event": "Fox Corp announces $22B acquisition of Roku (cash + stock, $160/share); Netflix reported to have bid and lost",
+      "price": null,
+      "note": "Fox-Roku creates third-largest U.S. television player by viewing share. Combines Fox sports/news/Tubi with Roku's CTV platform and 100M+ household relationships. Netflix denied a formal bid; market interpreted as M&A optionality loss and potential distribution competitive risk."
+    },
+    {
+      "date": "2026-06-16",
+      "event": "NFLX -3.5% to ~$80.50 on Fox-Roku news and continued sentiment pressure",
+      "price": 80.50,
+      "note": "Combined with post-Q1 -9.7% drop: NFLX is now 40% off the June 2025 ATH. Near its $75.01 52-week low. Stocktwits sentiment 'extremely bearish'; retail disengaged. Institutional investors actively buying (Marsico Capital, Rothschild, Liberty One increased stakes in Q1 2026)."
+    }
+  ],
+
+  "gaps_and_caveats": [
+    "Post-earnings individual analyst PT changes (old vs new) for the majority of the 50-analyst panel are NOT fully sourced; the most confirmable post-print actions are Piper Sandler ($103 to $115), JPMorgan (OW, $120), Goldman (pre-earnings $100 to $120), and Rosenblatt ($95). The remaining 46 analysts' specific post-print actions were not retrievable from web searches.",
+    "Q2 2026 guidance: bundle states $11.8B — this is WRONG. All secondary sources confirm $12.57B. The $11.8B figure may be a pre-split artifact or a data entry error; flagged for Hermes.",
+    "Social sentiment is directionally bearish (Stocktwits) but unverified for exact percentages; the 78% bearish / 22% bullish ratio from one search result is not confirmed across multiple sources.",
+    "Netflix does not report quarterly net subscriber adds as of Q1 2025 (discontinued). Q1 2026 paid members of 325.2M is confirmed; regional breakdown confirmed (UCAN 89.6M, EMEA 101.1M, LATAM 53.3M, APAC 57.5M).",
+    "Reed Hastings departure: announced April 16, 2026 with Q1 earnings; effective at June 4, 2026 annual meeting. Governance risk is real but operational continuity is not in question.",
+    "Operating EPS for Q2-Q4 2026 implied by guidance: Q2 $0.78 (guided), Q3-Q4 implied ~$0.82-0.85 per quarter to reach FY2026 consensus of ~$3.13 (clean, ex-WBD fee). The $3.00-$3.13 range is the defensible clean forward EPS."
+  ],
+
+  "sources": [
+    "SEC EDGAR 8-K Q1 2026: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm",
+    "Netflix Q1 2026 Shareholder Letter (PDF): https://s22.q4cdn.com/959853165/files/doc_financials/2026/q1/FINAL-Q1-26-Shareholder-Letter.pdf",
+    "SEC EDGAR 10-Q Q1 2026: https://www.sec.gov/Archives/edgar/data/1065280/000106528026000138/nflx-20260331.htm",
+    "CNBC Q1 2026 earnings: https://www.cnbc.com/2026/04/16/netflix-nflx-earnings-q1-2026.html",
+    "247WallSt Morgan Stanley and JPMorgan post-earnings: https://247wallst.com/investing/2026/04/17/morgan-stanley-and-jpmorgan-say-buy-the-netflix-dip-is-wall-street-right-to-ignore-the-q2-guidance-scare/",
+    "Yahoo Finance Netflix Roku: https://finance.yahoo.com/markets/stocks/articles/netflix-shares-drop-report-lost-145718032.html",
+    "Goldman Sachs upgrade April 6: https://www.cnbc.com/2026/04/06/netflix-is-a-buy-as-subscription-price-hikes-drive-gains-says-goldman-sachs.html",
+    "Netflix price hike March 2026: https://www.cnbc.com/2026/03/26/netflix-raises-prices-across-all-streaming-plans.html",
+    "Reed Hastings board exit: https://techcrunch.com/2026/04/16/netflix-co-founder-and-chair-reed-hastings-to-leave-board/",
+    "WARC Netflix ad revenue $8B by 2030: https://thedesk.net/2026/02/warc-netflix-set-to-earn-8-billion-in-ad-revenue-by-2030/",
+    "GuruFocus Netflix bearish sentiment June 2026: https://www.gurufocus.com/news/8914299/netflix-nflx-stock-shows-moderate-bearish-sentiment-amid-steady-options-activity",
+    "Oppenheimer raise March 27: https://finance.yahoo.com/markets/stocks/articles/netflix-price-target-raised-135-114516944.html",
+    "Motley Fool Netflix drawdown context June 2026: https://www.fool.com/investing/2026/06/02/why-did-netflix-stock-fall-despite-biz-growth/",
+    "TIKR Netflix Q1 2026: https://www.tikr.com/blog/netflix-stock-fell-9-7-after-q1-2026-earnings-what-a-191-target-means-for-investors",
+    "MEXC analyst consensus summary: https://www.mexc.com/learn/article/will-netflix-stock-recover-nflx-price-target-analyst-ratings-and-the-2030-forecast/1"
+  ]
+}

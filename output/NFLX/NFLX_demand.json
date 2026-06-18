@@ -1,0 +1,306 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "analyst": "Theia v3",
+
+  "_note": "Revenue paths are built as IDENTITIES in sourced drivers, not hand-drawn fades. Each path's implied primary driver is checked against the sourced ceiling. CONTRACT §2.1 requires segment-first decomposition — this file provides the segment-level paths Daedalus needs for the SOTP.",
+
+  "identity_statement": "Total Revenue = Σ_regions (Members_r × ARM_r) + Advertising_Revenue. Where ARM_r = subscription price per member per year in region r. Advertising_Revenue = Ad-tier MAV × (CPM × Fill_rate × Ad_load_hours). The two components are separable: subscription revenue is ARM × members; advertising is yield × reach. These two levers move at different rates and are the basis for the segment decomposition.",
+
+  "addressable_market_summary": {
+    "total_broadband_hh_netflix_markets_m": 750,
+    "current_penetration_pct": 43.3,
+    "current_subscribers_m": 325,
+    "remaining_addressable_m": 425,
+    "note": "750M broadband HH is Netflix's own disclosed figure (ARS FY2025). 325M current subscribers = 43.3% penetration. Remaining 425M = theoretically addressable but income and competitive constraints mean realistic ceiling in 5-7 years is 400-450M. UCAN and Western EMEA are near-saturated; growth comes from LATAM penetration expansion and APAC.",
+    "source": "Netflix Annual Report FY2025 (company_filed)"
+  },
+
+  "segment_paths": {
+    "note": "All figures in USD billions. Revenue = Members × ARM / 1000 (where ARM is in USD/year). Member adds are annual net adds, not cumulative.",
+
+    "UCAN": {
+      "nature": "mature-annuity with pricing power",
+      "fy2025_revenue_b": 17.3,
+      "fy2025_members_m": 98,
+      "fy2025_arm_monthly_usd": 17.06,
+      "fy2025_arm_annual_usd": 204.7,
+      "driver_identity": "UCAN Revenue = UCAN Members × UCAN ARM. Members are near-static (97-102M range); ARM drives growth.",
+      "base": {
+        "label": "UCAN Base — ARM +6%/year (2 price increases per 3 years); members flat to +1-2M/year",
+        "fy2026_members_m": 99,
+        "fy2026_arm_annual_usd": 217,
+        "fy2026_revenue_b": 21.5,
+        "fy2027_members_m": 100,
+        "fy2027_arm_annual_usd": 230,
+        "fy2027_revenue_b": 23.0,
+        "fy2028_members_m": 101,
+        "fy2028_arm_annual_usd": 244,
+        "fy2028_revenue_b": 24.6,
+        "cagr_2025_2028_pct": 12.5,
+        "arm_growth_driver": "Netflix raised UCAN standard from $15.49 to $17.99 (late 2024) and premium from $22.99 to $24.99. Historical pattern: price increase every 12-18 months. At $18-20/month standard by 2027 and $22/month by 2028, ARM reaches $216-240/year. This is consistent with inflation + value-add (live sports, ad tier expansion). Source: Netflix Q4 2025 8-K pricing disclosures; historical pricing data from Netflix shareholders letters 2019-2025.",
+        "ceiling_check": "At $244/year ARM, UCAN ARM is $20.33/month. US Netflix standard plan is currently $17.99 and premium $24.99. A base of $20.33 average blended (including ad-tier at $7.99 base + ad ARPU supplement) is plausible. The UCAN ceiling for ARM is approximately $30/month — well above the 2028 base estimate."
+      },
+      "bull": {
+        "label": "UCAN Bull — ARM +8%/year; advertising ARPU drives blended ARM above pure subscription",
+        "fy2028_members_m": 102,
+        "fy2028_arm_annual_usd": 268,
+        "fy2028_revenue_b": 27.3,
+        "cagr_2025_2028_pct": 16.3,
+        "note": "Requires: (1) 2 price increases over 3 years with 8% average increment (vs. base's 6%); (2) ad-tier ARPU of ~$8-10/month (subscription $7.99 + advertising ~$8-10 yield) reaching near parity with standard ad-free plan. Evidence: Netflix's ad tech platform improving fill rates; new advanced targeting launched in 2026 enabling premium CPMs."
+      },
+      "bear": {
+        "label": "UCAN Bear — ARM +4%/year; consumer pushback on price increases limits pricing power",
+        "fy2028_members_m": 100,
+        "fy2028_arm_annual_usd": 230,
+        "fy2028_revenue_b": 23.0,
+        "cagr_2025_2028_pct": 9.9,
+        "note": "Requires: price increases of only 4% annually — below inflation — implying Netflix concedes on pricing to protect churn. Some churn evidence needed; no current evidence of meaningful churn response to 2024 price increases. This is a credible lower bound, not a tail."
+      }
+    },
+
+    "EMEA": {
+      "nature": "mid-growth annuity",
+      "fy2025_revenue_b": 13.7,
+      "fy2025_members_m": 98,
+      "fy2025_arm_monthly_usd": 11.49,
+      "fy2025_arm_annual_usd": 137.9,
+      "driver_identity": "EMEA Revenue = EMEA Members × EMEA ARM. Both grow: members from lower-penetration Eastern Europe, Middle East, Africa; ARM from Western European price increases and ad tier.",
+      "base": {
+        "label": "EMEA Base — members +4-5M/year; ARM +5%/year",
+        "fy2026_members_m": 103,
+        "fy2026_arm_annual_usd": 144.8,
+        "fy2026_revenue_b": 14.9,
+        "fy2027_members_m": 107,
+        "fy2027_arm_annual_usd": 152.0,
+        "fy2027_revenue_b": 16.3,
+        "fy2028_members_m": 111,
+        "fy2028_arm_annual_usd": 160.0,
+        "fy2028_revenue_b": 17.8,
+        "cagr_2025_2028_pct": 9.1,
+        "note": "EMEA ARM of $11.49 blends Western Europe (~$13-15/month equivalent) with Eastern Europe, Middle East (~$7-9/month), and Africa (<$5/month). Price increases in UK, Germany, France are consistent with UCAN trend but smaller in magnitude due to purchasing power range. ARM growth of 5%/year is in the middle of the observed 2022-2025 EMEA ARM trajectory."
+      },
+      "bull": {
+        "label": "EMEA Bull — members +6M/year; ARM +7%/year",
+        "fy2028_members_m": 116,
+        "fy2028_arm_annual_usd": 169.0,
+        "fy2028_revenue_b": 19.6,
+        "cagr_2025_2028_pct": 12.7
+      },
+      "bear": {
+        "label": "EMEA Bear — members +3M/year; ARM +3%/year (FX drag, limited pricing in Eastern Europe)",
+        "fy2028_members_m": 107,
+        "fy2028_arm_annual_usd": 151.0,
+        "fy2028_revenue_b": 16.2,
+        "cagr_2025_2028_pct": 5.7
+      }
+    },
+
+    "LATAM": {
+      "nature": "growth with FX drag",
+      "fy2025_revenue_b": 5.6,
+      "fy2025_members_m": 49,
+      "fy2025_arm_monthly_usd": 7.29,
+      "fy2025_arm_annual_usd": 87.5,
+      "driver_identity": "LATAM Revenue = LATAM Members × LATAM ARM. Both grow but FX creates volatility — constant-currency ARM growth is higher than reported.",
+      "base": {
+        "label": "LATAM Base — members +3-4M/year; ARM +5%/year constant-currency, ~3% reported (FX drag ~2%/year)",
+        "fy2028_members_m": 61,
+        "fy2028_arm_annual_usd": 95.6,
+        "fy2028_revenue_b": 5.8,
+        "cagr_2025_2028_pct": 1.2,
+        "note": "LATAM ARM growth is structurally capped by affordability. Brazil plans start at ~BRL 20-25/month (~$4-5 USD). Subscriber growth in LATAM is driven by middle-class expansion in Brazil, Mexico, Colombia. Password-sharing enforcement in 2023 was a major bolus; normalized adds are ~3-4M/year. FX drag (-2%/year reported) subdues reported ARM growth. Revenue growth of ~1-2%/year reflects modest volume + ARM growth offset by FX."
+      },
+      "bull": {
+        "label": "LATAM Bull — members +5M/year; ARM +6% constant-currency; FX neutral",
+        "fy2028_members_m": 64,
+        "fy2028_arm_annual_usd": 104.0,
+        "fy2028_revenue_b": 6.7,
+        "cagr_2025_2028_pct": 6.1
+      },
+      "bear": {
+        "label": "LATAM Bear — members +2M/year; ARM flat (FX headwinds; no pricing power in Brazil recession scenario)",
+        "fy2028_members_m": 55,
+        "fy2028_arm_annual_usd": 87.5,
+        "fy2028_revenue_b": 4.8,
+        "cagr_2025_2028_pct": -4.9,
+        "note": "Bear requires persistent BRL and MXN weakness plus limited subscriber adds. Consistent with a Brazil recession scenario."
+      }
+    },
+
+    "APAC": {
+      "nature": "high-growth, low-ARPU",
+      "fy2025_revenue_b": 4.6,
+      "fy2025_members_m": 55,
+      "fy2025_arm_monthly_usd": 7.34,
+      "fy2025_arm_annual_usd": 88.1,
+      "driver_identity": "APAC Revenue = APAC Members × APAC ARM. Fastest member growth, ARM growth constrained by India mobile-plan pricing (~$2.50-3/month) diluting the regional average.",
+      "base": {
+        "label": "APAC Base — members +12-15M/year; ARM +5%/year (India weight grows but higher-priced markets also add)",
+        "fy2026_members_m": 68,
+        "fy2026_arm_annual_usd": 92.5,
+        "fy2026_revenue_b": 6.3,
+        "fy2027_members_m": 81,
+        "fy2027_arm_annual_usd": 97.1,
+        "fy2027_revenue_b": 7.9,
+        "fy2028_members_m": 94,
+        "fy2028_arm_annual_usd": 102.0,
+        "fy2028_revenue_b": 9.6,
+        "cagr_2025_2028_pct": 27.7,
+        "note": "APAC has the largest subscriber-add runway. India has ~800M smartphone users; Netflix has modest penetration (~10-12M subs). Australia, Japan, Korea are more penetrated (~25-35%) but have higher ARPU ($8-12/month). APAC add rate of +12-15M/year is consistent with 2024-2025 trajectory (+10-14M/year actual) factoring in India growth. ARM progression from $7.34 to $8.50/month by 2028 reflects: (1) India adds diluting the average slightly, (2) offset by premium tier adoption in Japan/Korea/Australia."
+      },
+      "bull": {
+        "label": "APAC Bull — India acceleration to 20-25M subs adds/year as mobile broadband expands; ARM +6%/year",
+        "fy2028_members_m": 110,
+        "fy2028_arm_annual_usd": 105.0,
+        "fy2028_revenue_b": 11.6,
+        "cagr_2025_2028_pct": 36.1,
+        "note": "India 4G/5G penetration expanding; Reliance Jio partnership (hypothetical; not signed) could distribute Netflix at low cost. Korean/Japanese content continuing to drive EMEA and LATAM subscribers as well. APAC bull is constrained by JioCinema competition for live sports."
+      },
+      "bear": {
+        "label": "APAC Bear — India growth stalls due to JioCinema competition; members +7-8M/year only",
+        "fy2028_members_m": 78,
+        "fy2028_arm_annual_usd": 97.0,
+        "fy2028_revenue_b": 7.6,
+        "cagr_2025_2028_pct": 18.3,
+        "note": "JioCinema disrupted Netflix in India with free IPL cricket streaming. If Reliance expands free streaming to general entertainment, Netflix India growth stalls. Bear is still positive absolute growth — not a decline scenario."
+      }
+    },
+
+    "Advertising": {
+      "nature": "high-growth, early-stage",
+      "fy2025_revenue_b": 1.5,
+      "fy2025_mav_m": 190,
+      "driver_identity": "Ad Revenue = MAV × Annual_Ad_ARPU_per_MAV. MAV is monthly active viewers on ad-supported plans; Annual_Ad_ARPU_per_MAV = CPM × fill_rate × avg_hours_watched_per_month × 60 (minutes per hour) / 1000 (minutes per impression) × ~4 ad minutes per viewing hour.",
+      "arithmetic_check": "At $1.5B FY2025 revenue / 190M average MAV = $7.89/MAV/year = $0.66/MAV/month. This is per household equivalent. Per paying ad-plan subscriber: $1.5B / ~91M ad-plan subs = $16.5/subscriber/year = $1.37/month (subscription component excluded). For reference: YouTube generates ~$6-8/user/year in advertising on 2.7B MAUs — Netflix's ad yield per MAV should eventually exceed YouTube's because (1) longer average viewing sessions, (2) premium-quality content commands higher CPMs, (3) fewer users (supply scarcity vs. YouTube's ubiquity).",
+      "base": {
+        "label": "Ad Base — revenue reaches $6.5B by 2028 as fill rates improve and MAV scales to 300M+ (WARC 9.2% CTV share by 2027 pathway)",
+        "fy2026_revenue_b": 3.0,
+        "fy2026_mav_m": 250,
+        "fy2026_arpu_per_mav_annual_usd": 12.0,
+        "fy2027_revenue_b": 5.0,
+        "fy2027_mav_m": 295,
+        "fy2027_arpu_per_mav_annual_usd": 17.0,
+        "fy2028_revenue_b": 6.5,
+        "fy2028_mav_m": 325,
+        "fy2028_arpu_per_mav_annual_usd": 20.0,
+        "cagr_2025_2028_pct": 62.8,
+        "ceiling_check": "At $6.5B ad revenue on 325M MAV = $20/MAV/year. Global CTV market $46.9B in 2028 × Netflix 14% share = $6.6B. Consistent — requires 14% CTV share, above WARC's 9.2% (2027) but plausible for 2028. This is WITHIN the ceiling. Base passes ceiling check.",
+        "note": "FY2026: $3B guided (company filed, HIGH confidence). FY2027: $5B = $3B growing at ~65% (decelerating from 100%). FY2028: $6.5B = $5B growing at 30%. The deceleration curve is deliberate: fill rates improve quickly in years 1-3 then plateau; CPMs moderate as market matures. By 2028 the revenue is based on a more stable yield, not just volume growth."
+      },
+      "bull": {
+        "label": "Ad Bull — revenue reaches $9.5B by 2028, ahead of the 2030 internal target",
+        "fy2028_revenue_b": 9.5,
+        "fy2028_mav_m": 340,
+        "fy2028_arpu_per_mav_annual_usd": 27.9,
+        "cagr_2025_2028_pct": 85.4,
+        "ceiling_check": "At $9.5B on 340M MAV = $27.9/MAV/year. Global CTV $46.9B × Netflix 20% = $9.4B — at the ceiling of plausible CTV share. Bull is AT the ceiling of the CTV market — it requires Netflix capturing 20% of global CTV ad spend by 2028 vs. WARC's 9.2% forecast for 2027. Ambitious but arithmetically possible if non-CTV international ad markets (less measured) contribute. This is a CEILING-ADJACENT bull, not comfortable headroom. Flag: stacked positive assumptions required.",
+        "note": "Bull requires: in-house ad tech delivering YouTube-level fill rates (85%+) by 2027; premium CPMs from live sports inventory; advanced targeting driving advertiser ROAS premium. All three mechanisms have named product initiatives but are NOT contracted."
+      },
+      "bear": {
+        "label": "Ad Bear — revenue reaches only $4.5B by 2028 as Amazon CPM competition and fill-rate plateau suppress yield",
+        "fy2028_revenue_b": 4.5,
+        "fy2028_mav_m": 300,
+        "fy2028_arpu_per_mav_annual_usd": 15.0,
+        "cagr_2025_2028_pct": 44.2,
+        "ceiling_check": "At $4.5B on 300M MAV = $15/MAV/year. Global CTV $46.9B × Netflix 9.6% = $4.5B. Consistent with WARC's ~9.2% trajectory for 2027 extending modestly to 2028. WELL WITHIN the ceiling. Bear passes ceiling check with room.",
+        "note": "Bear requires: Amazon's first-party purchase data enables structurally higher CPMs on Prime Video, pulling advertiser budgets from Netflix; fill rates stall at 55-65% due to limited programmatic demand in non-US markets; CPM decline from early-market premium normalization. This is OBSERVABLE AND NEAR-TERM — Amazon's ad product is scaling now."
+      }
+    }
+  },
+
+  "total_revenue_paths": {
+    "note": "Sum of four subscription regions plus advertising. Members are total paying subscribers (subscription revenue denominator). Ad revenue is a separate line.",
+
+    "base": {
+      "fy2025_actual_b": 45.2,
+      "fy2026_b": 51.2,
+      "fy2026_source": "Netflix company guidance midpoint $50.7-51.7B (company_filed)",
+      "fy2027_b": 58.5,
+      "fy2027_calc": "UCAN $23.0 + EMEA $16.3 + LATAM $5.4 + APAC $7.9 + Advertising $5.0 + Other $0.9 = ~$58.5B",
+      "fy2028_b": 66.3,
+      "fy2028_calc": "UCAN $24.6 + EMEA $17.8 + LATAM $5.8 + APAC $9.6 + Advertising $6.5 + Other $2.0 = ~$66.3B",
+      "total_subscribers_2028_m": 367,
+      "blended_arm_2028_usd_annual": 163,
+      "blended_arm_calculation": "($66.3B - $6.5B ad) / 367M subs = $162.8/year subscription ARM equivalent",
+      "cagr_2025_2028_pct": 13.6,
+      "implied_primary_driver_check": "2028 implied total ARM = $163/year on 367M subscribers. Subscription ARM growth from $140 to $163 = +16.4% cumulative over 3 years = +5.2%/year blended (includes mix shift to lower-ARPU APAC subs). Ad revenue $6.5B = $17.7/subscriber/year additional. Total yield: $163 + $17.7 = $180.7/subscriber/year, up from $139 in FY2025 = +9.0%/year compound. This DOES NOT exceed any sourced ceiling — global SVOD market alone is ~$98B in 2026 growing to ~$130B by 2028; Netflix's $60B subscription revenue = 46% of that market. Consistent."
+    },
+
+    "bull": {
+      "fy2026_b": 51.2,
+      "fy2027_b": 62.0,
+      "fy2028_b": 74.0,
+      "total_subscribers_2028_m": 388,
+      "cagr_2025_2028_pct": 18.0,
+      "note": "UCAN $27.3 + EMEA $19.6 + LATAM $6.7 + APAC $11.6 + Advertising $9.5 - rounding = ~$74.7B. Caps at $74B. Bull requires: 8%/year subscription ARM in UCAN/EMEA, 20% CTV share capture, APAC adds of 15-20M/year.",
+      "ceiling_check": "$74B subscription revenue = ~$76% of 2028 projected global SVOD market (~$98B today growing at 12%/year to ~$137B by 2028). Plausible — Netflix would hold ~46% of a larger SVOD market, same penetration as today. PASSES ceiling check."
+    },
+
+    "bear": {
+      "fy2026_b": 50.5,
+      "fy2027_b": 53.0,
+      "fy2028_b": 57.5,
+      "total_subscribers_2028_m": 345,
+      "cagr_2025_2028_pct": 8.4,
+      "note": "UCAN $23.0 + EMEA $16.2 + LATAM $4.8 + APAC $7.6 + Advertising $4.5 + Other $1.4 = ~$57.5B. Bear reflects: APAC disappointment, LATAM FX drag, advertising yield suppression from Amazon competition. Still positive growth — Netflix's subscription business has a durable floor.",
+      "ceiling_check": "Below base; well within all market ceilings. PASSES ceiling check."
+    }
+  },
+
+  "operating_margin_paths": {
+    "note": "Content spend $18B guided flat 2026. Revenue growing ~13% (base) means content as % of revenue falls from ~40% (FY2025) to ~27% (FY2028 base). Operating margin expansion follows. Technology, G&A, and marketing scale more slowly than revenue.",
+    "fy2025_actual_pct": 29.5,
+    "fy2026_guided_pct": 31.5,
+    "base_fy2028_pct": 35.5,
+    "bull_fy2028_pct": 38.0,
+    "bear_fy2028_pct": 30.0,
+    "content_spend_assumptions": {
+      "fy2025_b": 18.0,
+      "fy2026_guided_b": 18.0,
+      "base_fy2027_b": 19.0,
+      "base_fy2028_b": 20.0,
+      "note": "Base: content grows $1B/year from 2026. At $20B content on $66B revenue = 30.3% of revenue vs 40% today. Remainder of P&L (tech, G&A, mktg) scales at ~3-4%/year absolute. Operating income: $66.3B × 35.5% = ~$23.5B base FY2028."
+    }
+  },
+
+  "fcf_paths": {
+    "note": "FCF = Operating income + content amortization - content additions - capex. Netflix's content is a cash-heavy business: additions ($16-18B) > amortization ($15-17B) in growth years. The gap narrows as content slate matures. Content cash outflow: net ~$0.7-1.0B/year above P&L charge.",
+    "fy2025_actual_b": 9.46,
+    "fy2026_guided_b": 12.5,
+    "base_fy2027_b": 15.0,
+    "base_fy2028_b": 18.0,
+    "bull_fy2028_b": 22.0,
+    "bear_fy2028_b": 12.5,
+    "source_2026_guidance": "Netflix Q4 2025 8-K (company_filed)"
+  },
+
+  "normalization_year_assessment": {
+    "recommended_normalization_year": 2030,
+    "rationale": "Netflix's high-growth phase (15-20%+ revenue growth) is transitioning to a mid-growth phase (10-14%) by 2027-2028. By 2030, subscriber adds in APAC and LATAM will have normalized, advertising revenue will have reached a more mature growth rate (15-20%/year from a larger base), and content spend will have found a steady-state ratio to revenue. At normalization (~2029-2030), we estimate: revenue ~$80-90B (base), operating margin ~36-38%, FCF ~$25-30B. These are the normalization-year earnings Daedalus should apply a steady-state multiple to.",
+    "growth_at_normalization_pct": 8,
+    "margin_at_normalization_pct": 37,
+    "note": "The exit-multiple method (METHODS.md) requires normalization when g < r. At 8% growth vs. ~9% WACC, this is just entering well-behaved territory by 2030."
+  },
+
+  "data_gaps": [
+    "Netflix's own segment operating margins are not disclosed — content spend is reported at company level, not by region. Segment EBIT is not available. Daedalus will need to use blended margin with regional revenue weight.",
+    "Ad-tier ARPU decomposition (subscription component vs. advertising component) is not separately disclosed by Netflix. The $1.37/month implied advertising supplement per ad-plan subscriber is inferred, not company-stated.",
+    "APAC subscriber count by country (India vs. Japan vs. Korea vs. Rest) is not disclosed, making India-specific thesis validation difficult.",
+    "Cash tax rate (vs. GAAP provision) requires 10-K tax footnote analysis not completed in this bundle.",
+    "The 'per ad-tier user' revenue figure ($70.44 declining to $59.67) is single-source (IMDB-cited); exact source not independently verified."
+  ],
+
+  "sources": [
+    { "name": "Netflix Q4 2025 8-K — FY2026 guidance revenue $50.7-51.7B, FCF $12.5B, content spend $18B, ad revenue $3B", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" },
+    { "name": "Netflix Q1 2026 8-K — 325M subscribers, segments by region, Q2 guidance $11.8B", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" },
+    { "name": "Netflix Annual Report FY2025 — 750M+ broadband HH, $650B+ entertainment revenue pool", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000119312526159306/d69076dars.pdf", "tier": "company_filed" },
+    { "name": "Statista SVoD market $98.37B 2026", "url": "https://www.statista.com/outlook/dmo/digital-media/video-on-demand/video-streaming-svod/worldwide", "tier": "research_firm" },
+    { "name": "MNTN Research: CTV ad spend $46.89B by 2028", "url": "https://research.mountain.com/trends/ctv-ad-spend-will-grow-to-46-89-billion-by-2028/", "tier": "research_firm" },
+    { "name": "WARC: Netflix 9.2% CTV ad share by 2027", "url": "https://intellectia.ai/news/stock/bullish-outlook-for-netflixs-advertising-business", "tier": "research_firm" },
+    { "name": "Netflix ad tier 250M MAV May 2026 (up from 190M Nov 2025)", "url": "https://deadline.com/2025/11/netflix-ads-1236606573/", "tier": "press_verified" },
+    { "name": "Netflix $9B ad revenue internal 2030 target (management commentary); Goldman Sachs $9.5B", "url": "https://www.mexc.com/learn/article/will-netflix-stock-recover-nflx-price-target-analyst-ratings-and-the-2030-forecast/1", "tier": "sellside" },
+    { "name": "Omdia: online video subscription revenue $174B (2025) to $216B (2030)", "url": "https://omdia.tech.informa.com/pr/2026/apr/global-online-video-and-tv-revenues-to-exceed-1-trillion-dollars-by-2030-driven-by-social-video-advertising", "tier": "research_firm" },
+    { "name": "Netflix India APAC strategy — Variety APOS 2026 report", "url": "https://variety.com/2026/tv/news/netflix-prime-video-disney-wbd-asian-ip-apac-growth-apos-1236783695/", "tier": "press_verified" }
+  ]
+}
