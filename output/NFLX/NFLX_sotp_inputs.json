@@ -1,0 +1,128 @@
+{
+  "ticker": "NFLX",
+  "currency": "USD",
+  "current_price": 80.50,
+  "shares_outstanding_b": 4.27,
+  "net_debt_b": 5.2,
+  "primary_method": {
+    "name": "SOTP",
+    "reasoning": "Netflix operates two economically distinct segments that trade on different valuation logic: (1) Subscription — a mature-growing annuity with 325M paid subscribers, demonstrated pricing power, and 33% EBIT margins that warrant a recurring-revenue platform multiple; (2) Advertising — a high-growth nascent business ($3B FY2026E, targeting $6-9B by 2030) that is valued by normalizing NOPAT at a steady-state year (T=4, FY2030) and discounting back at a higher WACC to reflect unproven scale. The two segments are economically distinct: subscription is content-cost-burdened but annuity-quality; advertising is capital-light at scale but carries execution and competitive risk from Amazon's data advantage. A blended NTM P/E would obscure this difference and undervalue the advertising option. Segment WACCs differ: 9.0% for subscription (investment grade, recurring revenue), 10.5% for advertising (nascent, Amazon structural competition).",
+    "inputs": {
+      "segments": [
+        {
+          "name": "Subscription (Annuity)",
+          "method": "Multiple",
+          "reasoning": "Mature-growing annuity: 325M paid subscribers, low-single-digit subscriber growth, 4-7% annual ARPU hike in UCAN/EMEA with demonstrated minimal churn. FY2026E subscription EBIT = total EBIT $16.1B less advertising EBIT $0.24B ($3B revenue x 8% margin) = $15.86B. EV/EBIT multiple of 22x anchored against subscription/platform peers: Apple Services ~25x EBIT (higher quality, faster growth), YouTube implied ~20x within Alphabet, Spotify ~28x EBITDA (faster growing but no profitability floor). Netflix at 22x reflects dominant market position and pricing power premium vs pure media (12-15x) discounted by content cost burden vs pure-platform. Own WACC 9.0% — the subscription business has investment-grade cash flows, minimal debt maturity risk.",
+          "net_debt_allocation_b": 0.0,
+          "multiple_inputs": {
+            "multiple_type": "EV/EBIT",
+            "multiple_value": 22,
+            "fy_estimate": 15.86,
+            "reasoning": "22x NTM EBIT for a dominant subscription platform growing EBIT ~15%/year. Three anchors: (1) DCF-equivalent: at 9% WACC, 8% near-term FCF growth, 3% terminal, Gordon P/NOPAT = (1-3%/40%)/(9%-3%) = 0.925/0.06 = 15.4x EBIT, but this understates a growing annuity where the exit multiple argument applies — 22x is a fairer proxy for the (5-year explicit + terminal) value. (2) Peer anchor: Apple Services ~25x, YouTube implied ~20x; 22x is the median. (3) Sanity: 22x $15.86B = $348.9B EV / $12.5B FCF = 27.9x EV/FCF — identical to where the stock trades today, confirming the subscription alone is fairly valued at current price and any upside comes from advertising."
+          }
+        },
+        {
+          "name": "Advertising (High-Growth)",
+          "method": "ExitMultiple",
+          "reasoning": "High-growth, nascent segment: $3B FY2026E, targeting $6-9B by 2030. Cannot be valued reliably by current multiple (margins 8%, deeply invested) or a 10-year DCF (g > r for 5+ years). ExitMultiple normalizes at T=4 (FY2030) when: (1) in-house ad tech is mature (replacing Microsoft intermediary ~2027); (2) international fill rates have stabilized; (3) the CTV ad market trajectory is legible (FIFA Women's World Cup 2027 live ad data). NOPAT_T base: $6.5B FY2030 ad revenue x 38% EBIT margin x 0.78 after-tax = $1.925B. EBIT margin 38% at T: ad platform economics at 250M+ MAV are capital-light (no content allocation at scale) with CPM-driven operating leverage — YouTube's ads business at comparable scale operates at ~40% EBIT margin; 38% reflects Netflix's slightly higher shared-content overhead. Own WACC 10.5%: execution risk (in-house ad tech unproven at global scale), structural competition from Amazon's first-party purchase data, CPM trajectory uncertain. This segment is the CRUX: whether it scales drives 70% of the valuation debate.",
+          "net_debt_allocation_b": 0.0,
+          "exit_inputs": {
+            "nopat_T_b": 1.925,
+            "nopat_path_b": [0.187, 0.421, 0.942, 1.404, 1.925, 2.184, 2.399],
+            "normalize_index": 4,
+            "years_to_T": 4,
+            "g_lt": 0.07,
+            "roic": 0.45,
+            "r": 0.105,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 0.0,
+            "reasoning": "T=4 (FY2030) normalization: path FY2026-FY2032 — $0.19B, $0.42B, $0.94B, $1.40B, $1.93B, $2.18B, $2.40B NOPAT (all = ad revenue x margin x 0.78). Margins ramp from 8% (FY2026, Microsoft intermediary cost, low fill rates) to 20% (FY2027, in-house ad tech pilot), 32% (FY2028, fill rates 75%+), 36% (FY2029), 38% (FY2030, normalized). g_lt=7%: CTV market 7-9% structural CAGR (cord-cutting secular trend; WARC); Netflix at normalized market share of ~10% of CTV grows in-line. ROIC=45%: ad tech platforms are capital-light; incremental ad revenue has near-zero incremental content capex once the tech stack is built. r=10.5%: above subscription WACC to reflect execution and competitive uncertainty — Amazon's data moat is real, not theoretical. interim_fcf_pv_b=0 for T-invariance transparency; FY2027-FY2029 interim NOPAT ($0.42B + $0.94B + $1.40B, PV at 10.5%) adds ~$2.26B to the advertising EV (noted in bias audit, not in the engine output to keep the T-check clean)."
+          }
+        }
+      ]
+    }
+  },
+  "valuation_anchor": {
+    "ev_metric_label": "NTM EBIT",
+    "ev_metric_value": 16.1,
+    "eps_ntm": 3.00
+  },
+  "earnings_bridge": {
+    "eps_ntm": 3.00,
+    "sbc_per_share": 0.06,
+    "content_investment_above_amort_per_share": 0.59,
+    "capex_per_share": 0.12,
+    "fcf_per_share": 1.87,
+    "bridge_note": "EPS $3.00 → FCF/share $1.87: the $1.13 gap is content investment above amortization ($2.5B/4.27B sh = $0.59) + capex ($0.12/sh) + minor WC. This is structural for Netflix — content cash spend ($18B guided FY2026) exceeds amortization ($15.5B) by ~$2.5B annually as content hours ramp. Owner FCF (EPS-based) is ~$2.23/sh; CFO-less-capex FCF is $1.87/sh. The delta is a timing difference: Netflix's content investment strategy is front-loading cash for multi-year value. The EV/EBIT multiple is the right anchor for the subscription segment (it values the recurring EBIT stream without penalizing for content timing). Note: comps.json uses FCF $12.5B (crux.json figure); Pheme cites $8B. Discrepancy flagged — valuation uses EBIT multiples rather than FCF multiples to avoid this uncertainty."
+  },
+  "bias_audit": {
+    "choices": [
+      {"direction": "CONSERVATIVE", "lever": "Subscription EBIT multiple", "choice": "22x vs Apple Services 25x, justified by content cost burden", "defense": "22x is the peer median, not an aggressive assumption"},
+      {"direction": "CONSERVATIVE", "lever": "Ad segment WACC", "choice": "10.5% vs subscription 9.0%", "defense": "Correctly reflects higher execution and competitive risk"},
+      {"direction": "CONSERVATIVE", "lever": "Ad NOPAT FY2030", "choice": "$1.925B on $6.5B revenue (38% EBIT, 78% retention)", "defense": "EBIT margin 38% is below YouTube 40%; revenue $6.5B is at WARC's low range"},
+      {"direction": "CONSERVATIVE", "lever": "Net debt", "choice": "$5.2B from Q3 2025 balance sheet, ignoring $2.8B WBD fee + FCF since", "defense": "Conservative — current net debt likely $0-2B; using $5.2B understates equity by ~$0.75-1.20/sh"},
+      {"direction": "BULLISH", "lever": "Subscription segment isolation", "choice": "Attributed 92% of group EBIT to subscription at 22x", "defense": "Arithmetic: $15.86B / $16.1B = 98.5% of EBIT is subscription; the 22x is the justified peer median, not inflated"},
+      {"direction": "NEUTRAL", "lever": "interim_fcf_pv_b = 0", "choice": "Excluded $2.26B PV of interim ad FCF from the engine output", "defense": "Adds ~$0.53/sh to the advertising EV; noted but excluded for T-invariance transparency. Adding it would raise base to ~$89/sh."}
+    ],
+    "tally": {"CONSERVATIVE": 4, "BULLISH": 1, "NEUTRAL": 1},
+    "stacked_bias_verdict": "NO STACKED BIAS — 4 conservative vs 1 bullish choices. No single direction dominates by 3+. The conservative lean is modest and each is individually defensible. The largest systematic error is the net debt staleness ($5.2B vs likely ~$1-2B current), which if corrected would add ~$0.75/sh to all values.",
+    "honest_base_assessment": "The base case ($87.85/sh) is the HONEST most-likely: subscription is correctly priced at current multiple (22x = where it trades today), and advertising adds modest but real value ($31B EV) reflecting the contracted $3B FY2026 guide extrapolated at the WARC base case ($6.5B by 2030). This is NOT reflexively conservative — the base does not discount the ad business. It is also not optimistic — it does not price the management $9B target or Goldman's $9.5B estimate."
+  },
+  "scenarios": [
+    {
+      "label": "BULL",
+      "reasoning": "Ad tech delivers at scale: $9.5B FY2030 ad revenue (WARC ceiling, Netflix 20% CTV share). In-house ad tech achieves YouTube-like fill rates (85-90%); live sports (FIFA 2027) drives CPM mix upward ($30+ CPM). NOPAT_T = $9.5B x 45% x 0.78 = $3.33B. Market re-rates subscription to 25x EBIT as the advertising second-engine becomes visible in results — the business re-prices from 'subscription with an ad kicker' to 'subscription+ads platform' (Apple Services analogy at 25x). WACC and g_lt improve for advertising (r=10%, g_lt=8%) as execution uncertainty resolves. This is the bull scenario ONLY if contracted (live sports CPM evidence) or extrapolated (fill rate trajectory); not purely hoped-for. Evidence_quality: EXTRAPOLATED — directionality well-supported by Netflix upfront data (250M MAV, 55% of new subs choosing ad tier) but CPM parity with YouTube is not contracted.",
+      "probability": null,
+      "segment_changes": [
+        {
+          "name": "Subscription (Annuity)",
+          "multiple_overrides": {
+            "multiple_value": 25,
+            "fy_estimate": 15.86
+          }
+        },
+        {
+          "name": "Advertising (High-Growth)",
+          "exit_overrides": {
+            "nopat_T_b": 3.33,
+            "g_lt": 0.08,
+            "roic": 0.50,
+            "r": 0.10
+          }
+        }
+      ]
+    },
+    {
+      "label": "BEAR",
+      "reasoning": "Advertising stalls: Amazon's first-party purchase data creates a structural CPM gap that Netflix cannot bridge without comparable purchase-intent signals. Ad revenue reaches $4.5B by FY2030 vs the base $6.5B. NOPAT_T = $4.5B x 30% x 0.78 = $1.053B (margin compressed by ongoing ad-tech investment with poor fill-rate returns). Subscription multiple compresses to 18x as revenue growth decelerates toward 7-8% (APAC adds slow from JioCinema competition; UCAN penetration ceiling approached). This is an OBSERVABLE break mechanism — Amazon's ad business is actively scaling with structural data advantages, not a theoretical future risk. Evidence_quality: OBSERVABLE-AND-NEAR — Amazon Prime Video already carrying ads (Jan 2024 launch), first-party data moat is documented, Netflix CPM gap vs Amazon is a known advertiser concern in agency channel checks.",
+      "probability": null,
+      "segment_changes": [
+        {
+          "name": "Subscription (Annuity)",
+          "multiple_overrides": {
+            "multiple_value": 18,
+            "fy_estimate": 15.86
+          }
+        },
+        {
+          "name": "Advertising (High-Growth)",
+          "exit_overrides": {
+            "nopat_T_b": 1.053,
+            "g_lt": 0.055,
+            "roic": 0.40,
+            "r": 0.115
+          }
+        }
+      ]
+    }
+  ],
+  "cross_check": {
+    "method": "Multiple",
+    "inputs": {
+      "multiple_type": "P/E",
+      "peer_median_multiple": 29,
+      "fy_estimate": 3.00
+    },
+    "reasoning": "P/E cross-check: 29x NTM P/E on $3.00 EPS. Implies $87/sh — consistent with the SOTP base at $87.85. 29x is between the current 27x (market) and the sell-side consensus implied 38x (consensus target $114 / FY2026 EPS $3.00). The SOTP is internally consistent with a 29x NTM P/E view."
+  }
+}

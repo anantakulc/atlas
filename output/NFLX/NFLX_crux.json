@@ -1,0 +1,190 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "analyst": "Theia v3",
+  "_note": "CONTRACT §4 — the crux is the one or two variables that decide the call. Every number is sourced. Single-source figures are flagged. Base = honest most-likely, per CONTRACT §1.2.",
+
+  "crux_statement": "The one variable that decides the NFLX call is whether Netflix's advertising business can scale to $7-9B of annual revenue by 2029-2030, functioning as a structurally durable second revenue engine — not merely an ARPU patch for cheaper-tier subscribers. If advertising compounds at 50%+ CAGR through 2027 and then settles at $7-9B by 2029 ($70-90 per MAV annually), the business re-rates materially because a high-margin, recurring ad revenue stream on 250M+ viewers is worth more than the subscription-only model the current multiple prices. If advertising plateaus well below that — say $4-5B — because CPM fill rates stagnate, advertiser concentration in the US, or the programmatic auction fails to scale internationally, then revenue growth is capped at 10-12% with a maturing sub base, and the 27x NTM multiple is fair rather than cheap. Everything else — subscription ARPU, UCAN pricing power, content spend leverage — is second-order to this contest.",
+
+  "crux_variable": "Netflix annual advertising revenue ($B), and the implied advertising ARM per Monthly Active View (MAV/subscriber)",
+
+  "crux_identity": {
+    "formula": "Ad Revenue = Ad-Tier MAV × Ad ARM per viewer-year",
+    "decomposition": [
+      {
+        "component": "Ad-Tier MAV (Monthly Active Views / ad-supported audience)",
+        "current_level": "250 million MAV as of May 2026",
+        "source": {
+          "name": "Netflix internal disclosure (May 2026 upfront presentation); 190M MAV November 2025 per Deadline/Netflix",
+          "url": "https://deadline.com/2025/11/netflix-ads-1236606573/",
+          "tier": "company_filed",
+          "note": "190M MAV November 2025 per Deadline/Netflix; 250M MAV May 2026 per Netflix upfront. 32% growth in 6 months."
+        },
+        "trajectory": "MAV growing ~5-7% per month at current rate (190M Nov 2025 to 250M May 2026 = +60M in 6 months). This is new-subscriber mix effect (55% of new sign-ups choosing ad plan per Q4 2025 8-K) plus existing subscribers migrating down. MAV ceiling: total paying subscriber base (325M as of Q1 2026) + any free-ad-supported tier expansion. At 55% of new adds choosing ad tier and ~25-30% of existing base already on ad tier, the structural trajectory to 350-400M MAV in 24-36 months is plausible if Netflix offers a free-with-ads tier.",
+        "evidence_quality": "CONTRACTED — Netflix's own disclosed figures from company presentations and filings."
+      },
+      {
+        "component": "Ad ARM per viewer-year (advertising revenue per ad-tier MAV, annualized)",
+        "current_level": "$11-12 per MAV-year implied (FY2025 ad revenue ~$1.5B; FY2026 guide $3B / 250M MAV = $12/viewer/year)",
+        "calculation_note": "FY2025 advertising revenue $1.5B (bundle: 'Advertising' segment $1.5B FY2025, guided $3B FY2026). FY2026 implied: $3B / 250M MAV = $12/viewer/year = $1.00/viewer/month. Industry context: YouTube generates ~$36B from 2.7B monthly viewers = ~$13.3/viewer/year; Hulu ad-supported generated ~$4.5B on ~45M ad subscribers = ~$100/subscriber/year. The $12/viewer/year ($1/month) implies very low fill rates and CPMs in non-US markets. US-focused CPMs are much higher ($20-45 CPM) while Netflix's global average is diluted by low-CPM international inventory. The key arbitrage: eliminating the Microsoft ad-tech intermediary (which captures ~30-40% of CPM) and growing US fill rates from ~60-70% toward 85-90%.",
+        "source": {
+          "name": "Netflix Q4 2025 8-K + Q1 2026 8-K; Alphabet FY2025 10-K (YouTube $36.1B); Hulu/Disney streaming segment; IMDB sourced ad-ARPU report",
+          "tier": "company_filed + research_firm",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm"
+        },
+        "trajectory": "ARM per MAV should rise as: (1) US fill rates improve from ~60-70% toward 90%+ (fill rate = inventory sold / total ad slots); (2) CPMs stabilize at $18-28 CPM (currently ~$20-30 CPM US, below $40-50 premium TV benchmark); (3) international ad markets come online (Netflix only had meaningful programmatic ad tech in UCAN/UK initially); (4) in-house ad tech server replaces Microsoft's intermediary (~30-40% take rate savings when fully in-house by 2027). ARM per viewer is a rising trajectory but the ceiling is structural (Netflix is a lean-back premium environment, capped at ~4-5 mins/hour ad load vs 15-16 mins for linear TV).",
+        "evidence_quality": "EXTRAPOLATED — direction is clear from fill rate dynamics; exact CPM trajectory is not contracted.",
+        "ceiling_note": "Hard ceiling on ad load: Netflix has stated commitment to 4-5 minutes of ads per hour max (vs 15-16 on linear TV). At $20 CPM, 4.5 min/hour, 2 viewing hours/day, 250M MAV: annual ad inventory value = 250M × 2hr × 4.5min/60 × ($20/1000 impressions) × 365 ≈ $27B theoretical maximum. Actual realized revenue is a fraction (fill rate × achieved CPM). At 75% fill rate and $25 CPM: ~$25B theoretical maximum. This ceiling is far above any near-term target — the constraint is demand (ad budget allocation to Netflix) not supply (ad inventory). Netflix's ad revenue is demand-constrained, not supply-constrained."
+      }
+    ]
+  },
+
+  "crux_context": {
+    "why_this_is_the_crux": "Netflix's subscription revenue is well-understood and relatively predictable: 325M paid subs growing at low-to-mid single digits, ARPU growing 4-7%/year in developed markets and 2-3%/year globally (mix drag from low-ARPU international growth), yielding 8-11% subscription revenue growth. At $80.50 (27x NTM P/E), this baseline is priced in — the reverse-multiple decomposition (NFLX_market_facts.json) shows the price implies ~12-13% total revenue CAGR for 4 years with no advertising premium. The question is whether advertising adds $5-9B of incremental, high-margin revenue by 2029 that transforms the earnings trajectory. The current price prices approximately $3-4B of advertising revenue by 2029 (the 2026 guided $3B extrapolated at a declining growth rate). The upside in the stock is essentially: how much of the $8-9B 2030 ad revenue target is achievable?",
+    "second_order_factors": [
+      "Subscription ARPU trajectory (HIGH materiality but less contested — pricing power in UCAN/EMEA is demonstrated; recurring price hikes have not triggered material churn)",
+      "Operating margin expansion (MEDIUM — content spend leverage is guided and modeled; margin debate is whether 35% is achievable vs 33-34%)",
+      "International subscriber adds (LOW-MEDIUM — APAC and LATAM adds are real but lower-ARPU; not the EPS story)",
+      "Content cost escalation from sports rights (MEDIUM RISK — NFL Christmas ~$150M/year and WWE $500M/year are manageable; a full NFL season or FIFA Men's World Cup deal would be a step-change)"
+    ],
+    "contracted_vs_extrapolated": {
+      "contracted": [
+        "$3B advertising revenue guided for FY2026 by Netflix management (Q4 2025 and Q1 2026 shareholder letters — management is on record for this number)",
+        "250M MAV as of May 2026 (company-disclosed at upfront)",
+        "FY2026 revenue guidance $50.7-51.7B, OM 31.5%, FCF $12.5B (all company-filed, Q1 2026 8-K)",
+        "March 2026 price hike: Standard $17.99→$19.99, Premium $24.99→$26.99, Ad $7.99→$8.99 (confirmed, CNBC March 26 2026)",
+        "Content spend guided ~$18B for FY2026 (company-filed)"
+      ],
+      "extrapolated": [
+        "$8B advertising revenue by 2030 (WARC forecast; not a company commitment)",
+        "$9B advertising revenue by 2030 (Netflix internal management commentary, per sellside reports — directionally stated but not a financial commitment)",
+        "$9.5B advertising revenue by 2030 (Goldman Sachs independent model)",
+        "Ad-tier ARM per viewer rising toward $30-40/year by 2029 (requires fill rate improvement, international CPM growth, and in-house ad tech completion — none of which are contractually certain)",
+        "MAV growing to 350-400M (requires continuation of new-sign-up mix trends and potential free-ad-supported tier launch)"
+      ],
+      "hoped_for": [
+        "Free ad-supported tier (FAST) launch that dramatically expands the ad-viewer base beyond current paid subscribers — no confirmed plan as of Q1 2026",
+        "Programmatic CPM recovery to $40-50 premium TV equivalents globally — requires years of audience data maturation and advertiser adoption",
+        "Live sports acquisition (full NFL package, FIFA Men's World Cup) driving live ad inventory at 2-3x premium CPMs — currently contracted only for a limited slate"
+      ]
+    }
+  },
+
+  "scenarios": {
+    "base": {
+      "label": "BASE",
+      "crux_value_fy2029": "Ad revenue $6.5B; ARM per MAV-year ~$22; MAV ~295M",
+      "argument": "The base assumes Netflix executes on its guided $3B in FY2026 and grows advertising at 40-50% YoY through FY2027 (toward $4.5B), then decelerates to 25-30% YoY as fill rates in non-US markets improve more slowly than the US and CPMs stabilize in the $20-28 range. By FY2028 advertising reaches ~$5.5B and by FY2029 ~$6.5B. The driver is MAV (295M by FY2029, from 250M today, growing ~5% per year as new subscribers skew toward the ad tier) times ARM per viewer rising from ~$12/year to ~$22/year. The $22/viewer/year is anchored on WARC's implied CTV monetization rates: Netflix's 9.2% CTV ad share by 2027 applied to eMarketer's $37.95B CTV market = $3.5B in 2027 CTV alone; full-year 2029 global ad revenue of $6.5B is consistent with this trajectory including non-CTV and international. This path requires: in-house ad tech delivering meaningful CPM efficiency gain (launched 2025, operational by 2027); international CPMs improving as data maturity increases; no major churn shock from the March 2026 price hike. The $6.5B figure sits between Netflix's internal $9B target and the WARC $8B figure, discounted by the typical gap between management targets and realized outcomes for early-stage ad businesses.",
+      "evidence_quality": "EXTRAPOLATED",
+      "implied_arm_per_mav_year_usd": 22,
+      "implied_mav_m": 295,
+      "sources": [
+        { "name": "WARC Netflix CTV ad share forecast 3.7% (2025) to 9.2% (2027)", "url": "https://thedesk.net/2026/02/warc-netflix-set-to-earn-8-billion-in-ad-revenue-by-2030/", "tier": "research_firm" },
+        { "name": "eMarketer CTV ad market $37.95B 2026, ~11% CAGR", "url": "https://www.stackadapt.com/resources/blog/connected-tv-stats", "tier": "research_firm" },
+        { "name": "Netflix Q1 2026 8-K: $3B FY2026 guidance", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" }
+      ],
+      "ceiling_check": "Base path implies $6.5B / 295M MAV = $22/viewer/year. Hulu benchmark: ~$100/subscriber/year on 45M ad subs = $4.5B total. Netflix at $22/year is well below Hulu's per-subscriber monetization, consistent with lower ad loads and newer advertiser relationships. Well below the $25B theoretical ceiling. Plausible."
+    },
+    "bull": {
+      "label": "BULL",
+      "crux_value_fy2029": "Ad revenue $9.0B; ARM per MAV-year ~$28; MAV ~320M",
+      "argument": "The bull case is that Netflix's in-house ad tech platform (launched 2025, replacing Microsoft's intermediary) delivers a step-change in monetization efficiency from FY2027 onward. By eliminating the intermediary (which captures ~30-40% of CPM), Netflix's effective CPM jumps from ~$20-25 to $30-35 on the same inventory without requiring higher advertiser budgets. Simultaneously, the March 2026 price hike ($7.99→$8.99 for ad tier) proves durable, and Netflix potentially launches a free-ad-supported tier in its top-20 markets in 2027, growing MAV from 295M to 320M. By FY2027 advertising reaches $5.5B (close to Goldman's model). By FY2029, at $28/viewer/year on 320M MAV, total ad revenue reaches $9.0B — consistent with Goldman's $9.5B model and Netflix's own $9B internal target. The bull case ALSO has a valid ceiling check: $9B / 320M MAV = $28.1/viewer/year, below Hulu at ~$100 and above YouTube at ~$13, because Netflix CPMs are higher (premium video vs UGC) but ad loads are lower than Hulu. CONTRACTED anchor: $3B in FY2026 is committed. The incremental from $3B to $9B by FY2029 is EXTRAPOLATED, with specific mechanisms identified.",
+      "evidence_quality": "EXTRAPOLATED (near-term CONTRACTED)",
+      "implied_arm_per_mav_year_usd": 28,
+      "implied_mav_m": 320,
+      "sources": [
+        { "name": "Goldman Sachs $9.5B ad revenue by 2030 (via sellside reports)", "url": "https://www.mexc.com/learn/article/will-netflix-stock-recover-nflx-price-target-analyst-ratings-and-the-2030-forecast/1", "tier": "sellside" },
+        { "name": "Netflix internal $9B ad target by 2030 (management commentary per multiple sellside)", "url": "https://www.mexc.com/learn/article/will-netflix-stock-recover-nflx-price-target-analyst-ratings-and-the-2030-forecast/1", "tier": "sellside", "flag": "single_source_aggregator" },
+        { "name": "WARC $8B Netflix ad revenue by 2030", "url": "https://thedesk.net/2026/02/warc-netflix-set-to-earn-8-billion-in-ad-revenue-by-2030/", "tier": "research_firm" },
+        { "name": "Netflix in-house ad tech launch 2025 (Q1 2026 8-K)", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" }
+      ],
+      "ceiling_check": "Bull path implies $9.0B / 320M MAV = $28.1/viewer/year. Well below Hulu benchmark (~$100). Consistent with Netflix's own stated target and three independent third-party forecasts ($8-9.5B range). PASSES ceiling test."
+    },
+    "bear": {
+      "label": "BEAR",
+      "crux_value_fy2029": "Ad revenue $3.5B; ARM per MAV-year ~$13; MAV ~270M",
+      "argument": "The bear case is that Netflix's ad business stalls after the initial ramp. The mechanism is specific: (1) Advertiser concentration risk — Netflix's ad revenue in FY2026-2027 is heavily US-and-UK-weighted because those are the only markets with mature programmatic infrastructure. When Netflix pushes to expand ad tech to Brazil, India, and Southeast Asia (the 53M-sub LATAM and 57M-sub APAC markets), CPMs are $2-5 (vs $20-30 in the US) due to lower advertiser competition. The international CPM dilution caps the average ARM per viewer at $13-15 even as MAV grows to 270M. (2) Amazon Prime Video is the named structural threat to Netflix's US ad CPM trajectory. Amazon has 315M ad-supported viewers with first-party purchase data (not just viewing behavior), which commands a structural CPM premium. As Amazon's ad tech matures (entered ads January 2024; $806M in 2025 per TVTechnology), it directly competes for the same premium CTV ad budgets. If Amazon reaches $3-4B in Prime Video ad revenue by 2027 (plausible on the trajectory from $806M in 2025), it absorbs budget that might otherwise migrate to Netflix. (3) Fill rates plateau at 65-70% globally (US fill rates reach 85-90% but international markets remain at 40-50%), capping realized yield. At $13/MAV/year on 270M viewers, ad revenue reaches only $3.5B by FY2029 — barely above the FY2026 $3B guided run-rate adjusted for 2 years of nominal growth. This bear does NOT require a catastrophic event — it requires only that Amazon competition intensifies and international CPM development takes 7-10 years rather than 4-5.",
+      "evidence_quality": "OBSERVABLE-AND-NEAR (Amazon trajectory) + MECHANISM (international CPM dilution is a structural, predictable dynamic)",
+      "implied_arm_per_mav_year_usd": 13,
+      "implied_mav_m": 270,
+      "sources": [
+        { "name": "Amazon Prime Video 315M ad-supported viewers (Nov 2025) — Deadline", "url": "https://deadline.com/2025/11/amazon-prime-video-ad-supported-reach-315-million-viewers-1236613887/", "tier": "press_verified" },
+        { "name": "Amazon Prime Video ad revenue $806M 2025 — TVTechnology forecast", "url": "https://www.tvtechnology.com/news/forecast-amazon-prime-video-advertising-to-hit-usd806-million-in-2025", "tier": "sellside", "flag": "single_source" },
+        { "name": "NFLX APAC ARM $7.34/month vs UCAN $17.06 — NFLX databundle segments", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed", "note": "The ARPU gap between UCAN and APAC/LATAM is the structural basis for the international CPM dilution argument" }
+      ],
+      "ceiling_check": "Bear path implies $3.5B / 270M MAV = $13/viewer/year — essentially the current realized rate with no uplift. No improvement from in-house ad tech, no CPM improvement, modest MAV growth. This is a stagnation scenario, not a collapse. It requires only that execution on international ad tech is slower than management implies."
+    },
+    "floor": {
+      "label": "FLOOR (explicit downside, not the bear scenario)",
+      "crux_value_fy2029": "Ad revenue $2.0B; ARM per MAV-year ~$8; MAV ~250M",
+      "argument": "The floor is a scenario in which ad revenue contracts from the FY2026 $3B guided level by FY2029. This requires an active deterioration: a major advertiser pullback (brand safety incident, subscriber backlash against ad load increases, or a regulatory limit on behavioral targeting in the EU). None of these is in the current evidence. This scenario is LOW probability and is not Theia's bear — it is the extreme downside. At $2B ad revenue by FY2029, the entire advertising thesis has failed. Note: even in this scenario, subscription revenue would still be $48-50B with margins above 30%.",
+      "evidence_quality": "TAIL — not evidenced by current trajectory",
+      "probability_note": "Explicit floor, not the operative bear. Requires a black swan event."
+    },
+    "ceiling": {
+      "label": "CEILING (physical addressable)",
+      "crux_value_fy2029": "Ad revenue $14-15B; ARM ~$45-50/viewer/year; MAV ~320M",
+      "argument": "The theoretical ceiling if Netflix achieved YouTube-equivalent monetization ($13/viewer) scaled up by premium CPM to Hulu-level efficiency (~$40-50/viewer/year) on 320M MAV yields $13-16B. This ceiling is physically addressable but is not in any third-party forecast for 2029 — it represents approximately a 10-year outcome if advertising scales to full linear TV equivalence.",
+      "evidence_quality": "THEORETICAL — boundary condition only"
+    }
+  },
+
+  "crux_summary_table": {
+    "scenario": ["BASE", "BULL", "BEAR", "FLOOR"],
+    "ad_revenue_fy2029_b": [6.5, 9.0, 3.5, 2.0],
+    "mav_m": [295, 320, 270, 250],
+    "arm_per_mav_year_usd": [22, 28, 13, 8],
+    "evidence_quality": ["EXTRAPOLATED", "EXTRAPOLATED (contracted near-term)", "OBSERVABLE-AND-NEAR + MECHANISM", "TAIL"],
+    "what_has_to_be_true": [
+      "In-house ad tech delivers 30-40% CPM efficiency gain; international fill rates reach 60-70%; MAV grows ~5%/year",
+      "In-house ad tech + CPM lift to $30-35; free-ad-supported tier launched 2027; MAV reaches 320M; no material Amazon CPM displacement",
+      "International CPM dilution limits blended ARM; Amazon competition caps US CPM growth; fill rates plateau at 65-70%",
+      "Active advertiser pullback or regulatory action; not in current evidence"
+    ]
+  },
+
+  "subscription_crux_note": "Subscription revenue is the second contributor to the call but less contested. ARPU trajectory in UCAN is well-evidenced: the March 2026 price hike is the second in two years; prior hikes (2022, 2023, 2024) were absorbed with minimal churn. UCAN ARM of $17.06/month growing 5-8%/year toward $21-23/month by FY2029 is the honest base and does not require heroic assumptions. Global ARM growth is slower (~3-4%/year) due to LATAM/APAC mix. Subscriber count is approaching a ceiling in developed markets (UCAN 43% broadband penetration, EMEA 39%) with moderate runway in LATAM (~30%) and APAC (~25%). The honest base for subscription revenue growth is 9-11% CAGR FY2026-FY2029, decelerating to 7-8% as penetration plateaus. This is priced in at the current multiple. It is NOT the crux because: (a) it is lower-variance (pricing power is demonstrated); (b) it is already embedded in the $80.50 price per the reverse-multiple decomposition; (c) the upside from the subscription base alone does not justify materially above the current price.",
+
+  "monitor_variables": [
+    {
+      "variable": "Ad revenue per quarter (to be disclosed as a separate line item from Q3 or Q4 2026)",
+      "why": "Netflix will break out advertising revenue when it reaches 'material' threshold. Watch for the first disclosed quarter vs the $3B annual run-rate guide.",
+      "bull_signal": "Q3 or Q4 2026 ad revenue run-rate implies $3.5B+ annualized — ahead of guidance",
+      "bear_signal": "FY2026 ad revenue comes in below $2.5B, suggesting fill rate or CPM underperformance vs guidance"
+    },
+    {
+      "variable": "MAV growth trajectory (disclosed at upfronts and ad industry events)",
+      "why": "MAV is the volume driver. 250M at May 2026 growing at 30% YoY implies ~325M by May 2027. If MAV stalls below 275M by year-end 2026, the volume component slows.",
+      "bull_signal": "MAV reaches 300M+ by end of 2026",
+      "bear_signal": "MAV stalls at 260-270M by year-end 2026, suggesting saturation of ad-tier conversion"
+    },
+    {
+      "variable": "CPM and fill rate commentary in earnings calls",
+      "why": "In-house ad tech launched 2025 — first quantitative color on CPM improvement should appear in Q3/Q4 2026 earnings calls.",
+      "bull_signal": "Management cites CPM uplift of 20-30%+ from in-house tech; US fill rates above 85%",
+      "bear_signal": "Management avoids CPM commentary; fill rate described as 'improving' without quantification (management language implying below 70%)"
+    },
+    {
+      "variable": "Amazon Prime Video ad revenue trajectory",
+      "why": "Amazon does not separately disclose Prime Video ad revenue, but any disclosure provides the best competitive benchmark for CTV CPM dynamics.",
+      "bull_signal": "Amazon's Prime Video ad revenue grows more slowly than Netflix's, indicating Netflix is gaining CPM share",
+      "bear_signal": "Amazon discloses Prime Video ad revenue at $3-4B in FY2026 (from $806M in 2025) — indicating Amazon absorbs the incremental CTV budget before Netflix can"
+    }
+  ],
+
+  "sources": [
+    { "name": "Netflix Q1 2026 8-K / Shareholder Letter (Apr 2026)", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" },
+    { "name": "Netflix Q4 2025 8-K / Shareholder Letter (Jan 2026)", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" },
+    { "name": "WARC: Netflix ad revenue to reach $8B by 2030", "url": "https://thedesk.net/2026/02/warc-netflix-set-to-earn-8-billion-in-ad-revenue-by-2030/", "tier": "research_firm" },
+    { "name": "Goldman Sachs: $9.5B ad revenue by 2030 (via 247WallSt)", "url": "https://247wallst.com/investing/2026/04/17/morgan-stanley-and-jpmorgan-say-buy-the-netflix-dip-is-wall-street-right-to-ignore-the-q2-guidance-scare/", "tier": "sellside" },
+    { "name": "Netflix internal $9B ad revenue target by 2030 (management commentary via sellside aggregator)", "url": "https://www.mexc.com/learn/article/will-netflix-stock-recover-nflx-price-target-analyst-ratings-and-the-2030-forecast/1", "tier": "sellside", "flag": "single_source_aggregator" },
+    { "name": "WARC Netflix CTV ad share 3.7% (2025) to 9.2% (2027) — Intellectia.ai", "url": "https://intellectia.ai/news/stock/bullish-outlook-for-netflixs-advertising-business", "tier": "research_firm", "flag": "single_source" },
+    { "name": "eMarketer / StackAdapt: CTV ad spend $33.35B 2025, $37.95B 2026", "url": "https://www.stackadapt.com/resources/blog/connected-tv-stats", "tier": "research_firm" },
+    { "name": "Amazon Prime Video 315M ad-supported viewers (Nov 2025) — Deadline", "url": "https://deadline.com/2025/11/amazon-prime-video-ad-supported-reach-315-million-viewers-1236613887/", "tier": "press_verified" },
+    { "name": "Amazon Prime Video ad revenue $806M 2025 — TVTechnology", "url": "https://www.tvtechnology.com/news/forecast-amazon-prime-video-advertising-to-hit-usd806-million-in-2025", "tier": "sellside", "flag": "single_source" },
+    { "name": "Netflix ad tier 190M MAV November 2025 — Deadline", "url": "https://deadline.com/2025/11/netflix-ads-1236606573/", "tier": "press_verified" },
+    { "name": "Netflix 55% of new subscribers choosing ad plan — Q4 2025 8-K", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" },
+    { "name": "Netflix price hike March 26 2026 — CNBC", "url": "https://www.cnbc.com/2026/03/26/netflix-raises-prices-across-all-streaming-plans.html", "tier": "press_verified" },
+    { "name": "Alphabet FY2025 annual report — YouTube $36.1B ad revenue", "url": "https://abc.xyz/investor/", "tier": "company_filed" }
+  ]
+}

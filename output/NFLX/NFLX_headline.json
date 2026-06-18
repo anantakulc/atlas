@@ -1,0 +1,84 @@
+{
+  "valuation_headline": {
+    "current_price": 80.5,
+    "fair_value_today": 87.79,
+    "target_12m": 100.8,
+    "fair_value_12m": 95.69,
+    "band_low": 67.93,
+    "band_high": 114.01,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 87.79,
+      "multiple": 23.6,
+      "multiple_label": "EV/NTM EBIT",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 80.5,
+      "multiple": 21.7,
+      "multiple_label": "EV/NTM EBIT",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 95.69,
+      "basis": "#1 rolled forward at r=9.0% less dividend 0.0",
+      "convergence_return_pct": 18.9
+    },
+    "target_12m": {
+      "value": 100.8,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "P/E",
+        "defensible_multiple": 28.0,
+        "forward_metric_label": "FY2027E EPS",
+        "forward_metric_value": 3.6,
+        "multiple_rationale": "28x P/E on FY2027E $3.60 EPS ($3.00 FY2026E growing 20% as ad EBIT approaches $1B and subscription EBIT margin expands to 33%+). Justified multiple range: subscription alone at 22x EBIT = $87.85/sh base (27x current P/E); advertising at scale adds re-rate potential. 28x is the multiple the market will pay once $3B FY2026 ad revenue is in results and the trajectory toward $5B+ is visible. Peers: Amazon at 45x FY2027E EPS, Apple at 30x — Netflix at 28x is the conservative end of what a subscription+growing-ads platform commands. NOT the consensus 33-35x (implies full $9B ad scenario), NOT the current 27x (prices zero advertising premium). The re-rate from 27x to 28x is minimal and requires only that the $3B FY2026 ad guidance is delivered — contracted by management.",
+        "price": 100.8
+      },
+      "implied_12m_total_return_pct": 25.2
+    }
+  },
+  "street_reconstruction": {
+    "currency": "EV/FCF",
+    "what_price_implies": "At 27.9x NTM FCF (FY2026 guided), the current price implies a ~8.5% FCF CAGR for 10y (then 4% terminal) at r=9.3%.",
+    "what_street_implies": "The street mean target implies ~13.0% for 10y.",
+    "history_anchor": "Netflix FCF CAGR 2022-2025: from $1.6B (FY2022) to $9.5B (FY2025) = approximately 82%/year absolute growth — driven by margin expansion from 17.8% to 29.5%. This is not a steady-state CAGR; it reflects operating leverage kicking in. On revenue: 16%/year CAGR FY2022-2025. The FCF CAGR is misleading as a forward guide — the right anchor is the FY2026 guided $12.5B growing toward ~$18B by FY2028.",
+    "contested_lever": "Whether advertising ARPU per ad-tier subscriber scales from ~$15-20/year today toward $40-55/year by 2028-2030 — i.e., can Netflix's in-house ad tech achieve the fill rates and CPMs that justify a 15-18x EBIT multiple on the advertising segment's $6.5B in 2028 earnings contribution, or does Amazon's structural data advantage cap Netflix's ad yield and compress the platform re-rate?"
+  },
+  "street_target": {
+    "mean": 114.15,
+    "mean_multiple": 39.4,
+    "mean_implied_growth_pct": 13.0,
+    "high": 151.4,
+    "return_pct": 41.8,
+    "n_analysts": 50
+  },
+  "rating": {
+    "action": "BUY",
+    "tone": "positive",
+    "implied_12m_total_return_pct": 25.2,
+    "convergence_return_pct": 18.9,
+    "street_return_pct": 41.8,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CORRECTED",
+    "band_ratio": 0.525,
+    "caps_applied": [],
+    "basis": "action BUY: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {},
+  "bridge_logic": "#1 fair value today 87.79 -> #3 fair value 12m 95.69 (x(1+0.090) - div 0.0); #4 target 12m 100.8 (defensible_multiple); implied return to #4 = 25.2%, to #3 = 18.9%, to street mean 114.15 = 41.8%"
+}

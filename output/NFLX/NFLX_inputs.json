@@ -1,0 +1,34 @@
+{
+  "ticker": "NFLX",
+  "currency": "USD",
+  "current_price": 80.50,
+  "shares_outstanding_b": 4.27,
+  "net_debt_b": 5.2,
+  "dividend_per_share": 0.0,
+  "primary_method": {
+    "name": "SOTP",
+    "inputs": {
+      "wacc": {
+        "value": 0.09,
+        "build": {
+          "risk_free": 0.042,
+          "equity_premium": 0.055,
+          "beta": 1.0,
+          "cost_of_equity": 0.097,
+          "cost_of_debt_aftertax": 0.038,
+          "weight_equity": 0.985,
+          "weight_debt": 0.015,
+          "wacc": 0.09,
+          "note": "Blended group WACC: subscription segment 9.0% (dominant, 91.8% of EV) and advertising segment 10.5% (8.2% of EV) blend to ~9.12%; rounded to 9.0%. Beta 1.0 reflects Netflix's status as a pure-play subscription + ads platform — correlation to tech cycle (high) offset by consumer-defensive streaming subscription quality (low). Risk-free 4.2% (10-yr UST as of Jun 2026). ERP 5.5% (Damodaran estimate)."
+        }
+      }
+    }
+  },
+  "target_12m": {
+    "defensible_multiple": 28.0,
+    "forward_metric_value": 3.60,
+    "forward_metric_label": "FY2027E EPS",
+    "basis": "P/E",
+    "multiple_rationale": "28x P/E on FY2027E $3.60 EPS ($3.00 FY2026E growing 20% as ad EBIT approaches $1B and subscription EBIT margin expands to 33%+). Justified multiple range: subscription alone at 22x EBIT = $87.85/sh base (27x current P/E); advertising at scale adds re-rate potential. 28x is the multiple the market will pay once $3B FY2026 ad revenue is in results and the trajectory toward $5B+ is visible. Peers: Amazon at 45x FY2027E EPS, Apple at 30x — Netflix at 28x is the conservative end of what a subscription+growing-ads platform commands. NOT the consensus 33-35x (implies full $9B ad scenario), NOT the current 27x (prices zero advertising premium). The re-rate from 27x to 28x is minimal and requires only that the $3B FY2026 ad guidance is delivered — contracted by management."
+  }
+}

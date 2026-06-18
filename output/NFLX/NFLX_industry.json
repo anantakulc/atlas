@@ -1,0 +1,306 @@
+{
+  "ticker": "NFLX",
+  "as_of": "2026-06-17",
+  "analyst": "Theia v3",
+
+  "_note": "All numbers sourced and argued per CONTRACT §1.1. Single-source figures are flagged. TAM and share figures carry source tier: company_filed / sellside / research_firm / theia_bottom_up.",
+
+  "business_overview": "Netflix is a pure-play streaming subscription business operating in 190+ countries. Revenue is the product of paying members times the monthly fee (ARM), layered with an advertising stream from members on the lower-priced ad-supported tier. The company produces and licenses content across scripted drama, comedy, unscripted, documentary, film, and animation. There is no hardware, no linear channel, no studio distribution, no theme park. The business is structurally simple: one product (streaming video), two revenue levers (subscription price, advertising load), one cost driver (content), and one moat (the scale of the subscriber base relative to the content dollar spent per subscriber). Netflix's decisive structural advantage is that it is the only pure-play profitable streamer at scale — it generated 29.5% operating margin in FY2025 on $45.2B revenue. All credible rivals either have structurally lower margins (Disney+/Hulu FY2025 streaming margin ~8-9%), are subscale (Peacock, Apple TV+, Paramount+), or are financially distressed (WBD). This competitive positioning defines the strategic opportunity: Netflix is transitioning from a subscriber-growth story to an ARPU-and-advertising monetization story, with the advertising segment as the primary revenue growth engine for the next five years.",
+
+  "business_segments": [
+    {
+      "name": "Subscription (UCAN)",
+      "revenue_fy2025_b": 17.3,
+      "members_m": 98,
+      "arpu_monthly_usd": 17.06,
+      "revenue_growth_est_pct": 13,
+      "margin_pct_note": "Highest-ARPU region. Operating margin not disclosed at segment level; consolidated 29.5% in FY2025. UCAN contributes disproportionately to consolidated margin at ~38% of total revenue and highest ARM.",
+      "nature": "mature-annuity with pricing power",
+      "note": "Penetration ~39% of ~250M US+Canada broadband households. Growth is now entirely ARM-driven (pricing + mix). Password-sharing enforcement in 2023-2024 captured the bulk of the incremental UCAN household cohort. Further subscriber adds are limited; revenue grows 13-15% annually through price increases and ad-tier ARPU uplift. ARM crossed $17/month in FY2025. UCAN is the profit engine that funds global content.",
+      "concentration": "No single-customer concentration. Revenue granular across 98M individual households.",
+      "sources": [
+        { "name": "Netflix Q4 2025 8-K", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" },
+        { "name": "Netflix Q1 2026 8-K", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" }
+      ]
+    },
+    {
+      "name": "Subscription (EMEA)",
+      "revenue_fy2025_b": 13.7,
+      "members_m": 98,
+      "arpu_monthly_usd": 11.49,
+      "revenue_growth_est_pct": 14,
+      "nature": "mid-growth annuity",
+      "note": "Substantial base across Western Europe with lower penetration in Eastern Europe, Middle East, and Africa. Password-sharing enforcement deployed across Europe in 2023-2024 provided a one-time sub-add bolus. Growth now a mix of sub adds in lower-penetration markets and ARM increases in Western Europe. Ad tier live in France, Germany, UK, Spain, and others. EMEA ARM of $11.49 has room to grow toward $13-14 as Western European pricing converges toward US levels.",
+      "sources": [
+        { "name": "Netflix Q4 2025 8-K", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" }
+      ]
+    },
+    {
+      "name": "Subscription (LATAM)",
+      "revenue_fy2025_b": 5.6,
+      "members_m": 49,
+      "arpu_monthly_usd": 7.29,
+      "revenue_growth_est_pct": 12,
+      "nature": "growth with FX drag",
+      "note": "Lower ARPU reflects regional purchasing power and pricing tiers (Brazil plans start ~$4-5/month). Subscriber density is growing. FX volatility (BRL, MXN) is the primary source of ARM variability in USD terms. Password-sharing enforcement drove a large subscriber add cohort in 2023. Revenue growth is predominantly subscriber-driven in this region.",
+      "sources": [
+        { "name": "Netflix Q4 2025 8-K", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" }
+      ]
+    },
+    {
+      "name": "Subscription (APAC)",
+      "revenue_fy2025_b": 4.6,
+      "members_m": 55,
+      "arpu_monthly_usd": 7.34,
+      "revenue_growth_est_pct": 20,
+      "nature": "high-growth, low-ARPU",
+      "note": "Fastest-growing region by subscribers. India mobile-only plan ~$2.50-3/month; Australia and Japan ~$8-12/month — the regional average aggregates to $7.34. APAC is the primary subscriber growth engine. Revenue growth (~20% estimated) outpaces sub growth as India and Southeast Asia markets mature and ARPU drifts up. Local-language content (Korean drama, Japanese anime, Indian originals) is the key competitive differentiator in APAC versus Amazon and local streaming services.",
+      "sources": [
+        { "name": "Netflix Q4 2025 8-K", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" }
+      ]
+    },
+    {
+      "name": "Advertising",
+      "revenue_fy2025_b": 1.5,
+      "revenue_fy2026_guided_b": 3.0,
+      "ad_tier_mav_nov_2025_m": 190,
+      "ad_tier_mav_may_2026_m": 250,
+      "nature": "high-growth, early-stage",
+      "note": "Ad revenue is incremental to subscription revenue: ad-plan members pay ~$6.99-7.99/month in UCAN vs. $15.49/month standard, but Netflix earns advertising revenue on top. FY2025 ad revenue ~$1.5B (company-confirmed in Q4 2025 8-K: 'ad revenue rose more than 2.5x in 2025'). Guided ~$3B in 2026 (company 8-K). Ad tier: 190M monthly active viewers (MAV) November 2025, growing to 250M MAV by May 2026 Upfront — Netflix uses a household-reach methodology where MAV = paying members x estimated household members watching. 55-60% of new sign-ups choosing ad plan (May 2026 Upfront). Fill rate: ~45% in 2025, rising to ~70% in 2026, ~90% in 2027 (MediaPost). CPMs: $25-65 depending on targeting and format, at the premium end of the streaming market (AI Digital / Strategus 2026). Internal management target for ad revenue: $9B by 2030 (multiple sellside; Goldman models $9.5B). Omdia projects $8B by 2030; MoffettNathanson projects $6B by 2027 and $10B by 2030.",
+      "sources": [
+        { "name": "Netflix Q4 2025 8-K — ad revenue >2.5x 2025", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" },
+        { "name": "Netflix Q1 2026 8-K — ad revenue growth continues", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" },
+        { "name": "Netflix 250M MAV May 2026 Upfront — Variety", "url": "https://variety.com/2026/tv/news/netflix-claims-ad-tier-reaches-250-million-viewers-1236746219/", "tier": "press_verified" },
+        { "name": "Netflix 190M MAV November 2025 — Deadline", "url": "https://deadline.com/2025/11/netflix-ads-1236606573/", "tier": "press_verified" },
+        { "name": "Netflix 60% new signups ad plan May 2026 — MediaPlayNews", "url": "https://www.mediaplaynews.com/netflix-250-million-global-monthly-average-users-with-60-of-news-subs-opting-for-ad-supported-tier/", "tier": "press_verified" },
+        { "name": "Netflix fill rate 45%/70%/90% — MediaPost May 2025", "url": "https://www.mediapost.com/publications/article/405920/netflix-slowly-builds-ad-supported-business-fill.html", "tier": "sellside" },
+        { "name": "Netflix CPM $25-65 — AI Digital / Strategus 2026", "url": "https://www.aidigital.com/blog/netflix-advertising", "tier": "sellside" },
+        { "name": "Omdia: Netflix ad revenue $8B by 2030", "url": "https://www.marketingprofs.com/charts/2026/54392/the-rise-of-netflixs-advertising-business", "tier": "research_firm" },
+        { "name": "MoffettNathanson: $6B 2027 / $10B 2030 — MediaPost", "url": "https://www.mediapost.com/publications/article/404240/netflix-to-see-even-faster-ad-growth-to-6b-in-20.html", "tier": "sellside" }
+      ]
+    }
+  ],
+
+  "tam_usd_bn": {
+    "svod_global_2026": {
+      "value": 98.4,
+      "source": "Statista Video Streaming (SVoD) Worldwide market forecast",
+      "url": "https://www.statista.com/outlook/dmo/digital-media/video-on-demand/video-streaming-svod/worldwide",
+      "tier": "research_firm",
+      "note": "SVOD-only; excludes AVOD, CTV advertising, pay-TV. Single-source flag — triangulated: Omdia's $216B online video subscription revenue by 2030 vs ~$174B in 2025 implies a ~4.4% CAGR for the broader category, suggesting Statista's 12% SVOD CAGR reflects platform-level concentration rather than market-wide growth."
+    },
+    "ctv_advertising_us_2026": {
+      "value": 33.35,
+      "source": "eMarketer via StackAdapt CTV statistics 2026",
+      "url": "https://www.stackadapt.com/resources/blog/connected-tv-stats",
+      "tier": "research_firm",
+      "note": "US CTV ad spend only. eMarketer projects ~14% growth in 2026; $46.9B by 2028. Netflix's 2026 ad revenue of ~$3B = ~9% of US CTV ad spend — the addressable pool Netflix is growing into."
+    },
+    "global_entertainment_pool_netflix_markets": {
+      "value": 650,
+      "source": "Netflix Annual Report FY2025 / company disclosure",
+      "tier": "company_filed",
+      "note": "Company-stated addressable pool including pay-TV, streaming, theatrical, gaming. Excludes China, Russia. The correct long-run denominator for Netflix's monetization opportunity."
+    },
+    "global_tv_online_video_total_2030": {
+      "value": 1000,
+      "source": "Omdia Apr 2026",
+      "url": "https://omdia.tech.informa.com/pr/2026/apr/global-online-video-and-tv-revenues-to-exceed-1-trillion-dollars-by-2030-driven-by-social-video-advertising",
+      "tier": "research_firm",
+      "note": "Includes social video, linear TV, streaming subs, CTV advertising. Too broad to be Netflix's TAM directly — included for reference ceiling only."
+    }
+  },
+
+  "tam_growth_pct": {
+    "svod_cagr_2026_2030_pct": 8,
+    "ctv_advertising_cagr_2026_2028_pct": 11,
+    "source_note": "SVOD CAGR of 8% is the honest base estimate — Statista quotes ~12% but this reflects Netflix's own growth rather than the market. Using 8% as the conservative read of actual market-wide SVOD growth (triangulating Statista's high estimate against Omdia's lower implied CAGR). eMarketer US CTV ~11% CAGR through 2028 is independently supported by two sources."
+  },
+
+  "addressable_market": "Netflix's realistic TAM is the intersection of broadband-connected households globally (750M+ excluding China and Russia, per Netflix's own annual report) and households that can afford video subscription services. Netflix's current ~$45B revenue represents ~6.9% of the $650B+ annual entertainment spend in its markets (company disclosure). Within SVOD, Netflix holds ~46% of the ~$98B global SVOD market. The meaningful remaining revenue upside comes from three pools: (1) incremental LATAM and APAC subscriber adds as broadband penetration grows — approximately 40M additional addressable paid households over 5 years; (2) ARM expansion in all regions through price increases and the advertising layer — adding $3-8 of monthly ad ARPU on top of the ad-tier subscription fee per member; (3) the CTV advertising transition, where linear TV advertising is declining from $123B in 2025 to $113B by 2030 (Omdia) and that spend is reallocating to streaming ad tiers. Netflix's CTV ad share growing from 3.7% to 9.2% of global CTV spend by 2027 (WARC) defines the near-term advertising opportunity in concrete terms.",
+
+  "current_penetration": {
+    "broadband_households_netflix_markets_m": 750,
+    "paid_subscribers_q1_2026_m": 325,
+    "penetration_of_broadband_households_pct": 43.3,
+    "note": "325M / 750M = 43.3% penetration. UCAN: 98M / ~250M = ~39%. EMEA: 98M / ~250M = ~39%. LATAM: ~30%. APAC: ~25%. Developed markets near saturation; incremental subscriber growth concentrated in LATAM/APAC.",
+    "source": "Netflix disclosed 750M+ broadband HH in operating markets (2025 Annual Report)"
+  },
+
+  "the_share_dynamic": "Netflix is the dominant SVOD incumbent. The share dynamic has shifted from subscriber-count competition (2019-2022) to ARPU monetization competition (2023 onward). Three dynamics define the current competitive contest. First, subscriber share: Netflix holds ~43% of addressable broadband households and ~46% of global SVOD revenue. This share is not at risk of large-scale erosion. Disney+ stabilized at ~132-135M after its peak-and-restructure cycle; Max/HBO reached 140M in Q1 2026 (Deadline, May 2026); Peacock added only 3M subs in H2 2025 (44M total); Apple TV+ is estimated at ~46M. None is taking meaningful share from Netflix's core subscriber base. Netflix's net adds remain positive and churn is structurally lower than rivals because of catalog depth. Second, advertising share: this is the active battleground. Amazon Prime Video entered ad-supported with 315M monthly ad-supported viewers globally (November 2025, Deadline) — a larger raw number than Netflix's 190M MAV at the same date. However, Amazon's metric inflates because 200M+ Prime members were opted into ads by default. Netflix's 250M MAV by May 2026 (up ~32% in six months) represents faster proportional growth. WARC forecasts Netflix's share of global CTV ad spend rising from 3.7% (2025) to 9.2% (2027) — implying rapid share gain versus YouTube, connected TV, linear TV, and Amazon. YouTube remains dominant in CTV ad revenue (~$36B in FY2025 vs. Netflix's $1.5B) but competes for different inventory (UGC, short-form). The advertising revenue share contest is Netflix's primary competitive contest for 2026-2030. Third, content moat: Netflix spends $18B/year on content vs. Disney ~$25B combined (streaming and linear), Amazon ~$18-20B (Prime Video), and Max/HBO ~$15B. Netflix's per-subscriber content cost is the lowest among the top three because of scale. The streaming rationalization of 2023-2025 — WBD's distress, Paramount's acquisition by Skydance, Peacock losses — reduces the number of well-funded streaming alternatives and improves Netflix's competitive position at the margin.",
+
+  "revenue_drivers": [
+    {
+      "driver": "Subscriber volume",
+      "description": "Paying member count across four geographic segments. Growth concentrated in LATAM and APAC. Password-sharing enforcement in 2023-2024 was a one-time bolus adding ~30M subs globally. Netflix stopped providing subscriber guidance in 2025, reflecting the shift to revenue and profitability metrics.",
+      "trajectory": "Slowing absolute adds. Q1 2026: 325M paid members. Base case: ~360-375M by 2028, ~390-410M by 2030, concentrated in LATAM/APAC low-ARPU markets.",
+      "materiality": "HIGH at the total-revenue level; declining relative importance as ARM growth and advertising overtake subscriber volume"
+    },
+    {
+      "driver": "Average Revenue per Membership (ARM) — subscription pricing",
+      "description": "Price increases on standard and premium tiers plus mix shift toward higher-tier plans. UCAN ARM: ~$17.06/month in FY2025, up from ~$15.47 in FY2023. Annual price increases of 5-8% absorbed well in developed markets.",
+      "trajectory": "Sustainable 5-8% annual ARM growth in UCAN and Western EMEA. Lower in LATAM/APAC due to affordability ceiling. Global blended ARM growth ~5-6% annually through the horizon.",
+      "materiality": "HIGH — the dominant driver of UCAN and EMEA revenue growth"
+    },
+    {
+      "driver": "Advertising revenue (THE CRUX)",
+      "description": "Incremental revenue per ad-tier member from CPM-based advertising. Ad tier had 250M MAV by May 2026, with 55-60% of new subscribers choosing ad plan. Ad revenue: ~$1.5B FY2025, guided $3B FY2026. Fill rates rising from ~45% (2025) to ~70% (2026) to ~90% (2027 target per MediaPost). CPMs: $25-65 range, premium end of streaming market. Internal target $9B by 2030.",
+      "trajectory": "Fastest-growing revenue line. ~100% YoY growth in 2025-2026. Maturation around 2028-2030 as CPMs stabilize, fill rates plateau, and ad-tier member growth decelerates. See NFLX_crux.json for the full sourced argument.",
+      "materiality": "HIGH going forward — the primary swing variable on the valuation"
+    },
+    {
+      "driver": "Content spend leverage",
+      "description": "Content additions guided flat at ~$18B for FY2026 (same as FY2025). Revenue growing at ~13% while content spend holds flat = operating leverage. Content amortization forecast +10% in 2026, first-half weighted (Netflix Q4 2025 8-K). CFO Neumann stated goal to grow content spend slower than revenue.",
+      "trajectory": "Content spend at ~$18-19B through 2027, growing to ~$20-22B by 2030 as ad-revenue scale justifies higher content investment. Content as percent of revenue declining from ~40% in 2025 to ~35-37% by 2028.",
+      "materiality": "HIGH — content spend governs operating margin trajectory"
+    },
+    {
+      "driver": "International expansion and APAC/LATAM ARM progression",
+      "description": "APAC is 55M subs at $7.34 ARM. If ARM grows to $9-10 over 3-5 years as Indian and Southeast Asian markets mature, that is $1-2B of incremental annual revenue from APAC alone without adding subscribers. Local-language originals (Korean, Indian, Japanese) drive both adds and engagement retention.",
+      "trajectory": "Gradual. APAC ARM growing ~5-8% annually from a low base. Material in aggregate over the 5-year horizon but slower-moving than the advertising lever.",
+      "materiality": "MEDIUM"
+    },
+    {
+      "driver": "Live events and sports rights",
+      "description": "NFL Christmas Day games (~$150M/year, 3-year contract), WWE RAW (10-year, $500M/year annual value), FIFA Women's World Cup 2027/2031. Live events drive subscriber spikes and validate a premium for live ad inventory (CPMs 2-3x higher than on-demand). Does not yet materially shift the P&L at current rights spend.",
+      "trajectory": "Strategic option value. Material only if Netflix expands NFL rights significantly. Current total live-event rights spend is below $700M/year, well within content budget.",
+      "materiality": "LOW-MEDIUM at current spend; escalation risk if Netflix competes aggressively for NFL or NBA rights"
+    }
+  ],
+
+  "npat_margin_drivers": [
+    {
+      "driver": "Content amortization vs. content additions wedge",
+      "description": "FY2025: content additions $16.2B vs. amortization $15.3B — a $0.9B cash-over-GAAP wedge. As content additions stabilize, amortization catches up and the cash-GAAP gap closes, improving reported FCF quality.",
+      "direction": "Improving over the horizon"
+    },
+    {
+      "driver": "Advertising incremental margin",
+      "description": "Ad revenue is high-incremental-margin — it sits on top of existing content infrastructure. The marginal cost of additional ad revenue is primarily ad-tech and sales infrastructure. Estimated incremental margin on the advertising layer: ~70-80%.",
+      "direction": "Highly accretive to blended margin as ad revenue scales"
+    },
+    {
+      "driver": "Subscriber growth mix shift toward low-ARPU international markets",
+      "description": "New subscriber additions are increasingly LATAM/APAC at $7-7.5 ARM, diluting blended global ARM. A headwind to blended margin even as regional margins are positive.",
+      "direction": "Slight blended margin headwind"
+    },
+    {
+      "driver": "SBC dilution",
+      "description": "FY2025 SBC was $272.6M on $45.2B revenue = 0.6% of revenue. Minimal relative to peers.",
+      "direction": "Benign; not a material margin headwind"
+    },
+    {
+      "driver": "Tax rate",
+      "description": "Effective tax rate approximately 25-27% going forward. No material Pillar Two impact disclosed. Q1 2026 EPS elevated by the $2.8B WBD termination fee below operating line — core operating income is the cleaner metric.",
+      "direction": "Stable"
+    }
+  ],
+
+  "product_differentiation": "Netflix's differentiation is depth of catalog plus engagement consistency, not a single marquee asset. In any given week, Netflix has more view-hours in the global streaming top-10 charts than all other streamers combined, and nearly 3x the view-hours of its nearest competitor (company disclosure). This breadth — ~17,000+ titles versus Apple TV+'s thin catalog or Peacock's legacy-IP library — means subscribers always have something to watch, suppressing churn. In international markets, local-language originals (Squid Game, Money Heist, Wednesday) create global breakouts that demonstrate Netflix's ability to find culturally resonant content across languages — a capability no other platform has matched at scale. In advertising, Netflix's differentiation is a combination of premium audience demographics (higher income, higher education vs. average TV), low ad load (4-5 minutes/hour vs. 15-20 minutes on linear TV), brand safety, and a single global inventory buy. CPMs of $25-65 compare favorably to Hulu ($20-30) and Disney+ ($20-30) and substantially exceed YouTube ($10-30) for equivalent scripted premium content environments.",
+
+  "five_forces": {
+    "supplier_power": "MEDIUM-LOW overall. Content suppliers have leverage in individual negotiations — top showrunners command $50-100M+ per project — but Netflix has built its own production infrastructure, reducing dependence on third-party studios. Sports rights suppliers have HIGH power: Netflix pays ~$150M/year for NFL Christmas games, $500M/year for WWE RAW, and agreed to FIFA Women's World Cup rights. Sports rights escalation is the primary supplier-power risk to content cost guidance.",
+    "buyer_power": "LOW. 325M individual subscribers each paying $7.99-$22.99/month. Monthly subscription with easy cancellation means churn is the only buyer-power mechanism. Netflix's low churn (~2-2.5%/month) demonstrates pricing is within acceptable range. Password-sharing enforcement in 2023-2024 tested buyer power and Netflix won without a material churn spike.",
+    "new_entrants": "LOW-MEDIUM. The content investment required to reach competitive catalog depth (~$10B+/year over 5+ years) is a formidable barrier. AI-driven content creation could lower the production cost barrier over a 5-10 year horizon but no current evidence of an AI-native studio threatening Netflix at scale. The principal risk is a technology platform that bundles streaming as a feature — Apple TV+ does this modestly.",
+    "substitutes": "MEDIUM. Substitutes include gaming, social video (YouTube, TikTok), and live sports on linear TV. The cord-cutting trend is a tailwind: Netflix gains viewing hours as linear pay-TV declines. Linear TV advertising declining from $123B in 2025 to $113B by 2030 (Omdia) means reallocation to streaming benefits Netflix.",
+    "rivalry": "HIGH among premium SVOD cohort. However, rivalry has shifted from a subscriber land-grab (2019-2022) to a competition for engagement share and advertising revenue. The failure of CNN+, Quibi, and others and the financial distress of WBD and Paramount has reduced the intensity of rivalry at the margin."
+  },
+
+  "moat": "Netflix's moat has three components. First, content scale: $18B/year in content spend on a 325M subscriber base equals ~$55/subscriber/year in content investment. Competitors with 44M subs (Peacock) or 46M subs (Apple TV+) cannot match catalog depth or original production volume. Second, engagement loop: estimated ~2.4 hours/day per account (H2 2025, businesstats.com) creates retention. Monthly churn estimated ~2-2.5%, well below the 5%+ typical for smaller services. Third, data flywheel: 325M paying households generate viewing behavior data Netflix uses for content greenlight and ad targeting. MOAT WEAKNESS: The content moat requires continuous cash reinvestment — unlike software, there is no accumulated intangible that compounds without spend. A sustained pause in content investment would erode the moat within 12-18 months.",
+
+  "competitors": [
+    {
+      "name": "Amazon Prime Video",
+      "parent": "Amazon.com, Inc. (AMZN)",
+      "position": "Second-largest global SVOD by viewing scale; bundled with Prime membership (~200-215M global Prime members)",
+      "subscribers_m": 200,
+      "ad_supported_mav_m": 315,
+      "trajectory": "GROWING. Prime Video introduced ads January 2024, reporting 315M monthly ad-supported viewers globally by November 2025 (Deadline). Investing heavily in NFL Thursday Night Football (~$1B/year), Lord of the Rings tentpole originals, and international content. Prime bundle lock-in structurally reduces churn: cancelling Prime Video requires cancelling full Prime membership.",
+      "threat_level": "HIGH — primary advertising competitor. Structural advantages: Prime bundle lock-in, first-party purchase data for ad targeting, distribution across 200M+ Prime households.",
+      "sources": [{ "name": "Amazon 315M MAV — Deadline Nov 2025", "url": "https://deadline.com/2025/11/amazon-prime-video-ad-supported-reach-315-million-viewers-1236613887/", "tier": "press_verified" }]
+    },
+    {
+      "name": "Disney+ / Hulu / ESPN+",
+      "parent": "Walt Disney Co. (DIS)",
+      "position": "Third-largest global SVOD; Disney+ ~132-135M subs; Hulu ~52M; combined streaming revenue $11.9B FY2025",
+      "subscribers_m": 135,
+      "revenue_b": 11.9,
+      "trajectory": "STABILIZING. Disney streaming combined operating income ~$1.33B in FY2025 (vs. $143M in FY2024). Disney projects ~10% streaming operating margin for FY2026 (~$2.1B income). Hulu is the most direct US advertising competitor to Netflix in audience demographics. Hulu projected at ~$5B US ad revenue in 2026.",
+      "threat_level": "MEDIUM — credible franchise IP but strategically focused on kids/family, complementary to Netflix adult drama. Profitability pivot limits aggressive content spending.",
+      "sources": [
+        { "name": "Disney streaming profit $1.33B FY2025 — IndexBox", "url": "https://www.indexbox.io/blog/disney-streaming-turns-profitable-projects-21b-income-for-fy-2026/", "tier": "press_verified" }
+      ]
+    },
+    {
+      "name": "Max (HBO)",
+      "parent": "Warner Bros. Discovery (WBD)",
+      "position": "Premium SVOD; 140M+ subscribers Q1 2026, targeting 150M end 2026",
+      "subscribers_m": 140,
+      "trajectory": "GROWING internationally. WBD parent is financially distressed (~$40B net debt). HBO premium brand (The Last of Us, White Lotus) maintains engagement but volume is constrained by balance sheet.",
+      "threat_level": "MEDIUM — strongest quality brand after Netflix; WBD balance sheet stress limits content investment.",
+      "sources": [{ "name": "Max 140M subs Q1 2026 — Deadline", "url": "https://deadline.com/2026/05/hbo-max-subscribers-warner-bros-discovery-earnings-1236883609/", "tier": "press_verified" }]
+    },
+    {
+      "name": "YouTube",
+      "parent": "Alphabet Inc. (GOOGL)",
+      "position": "Dominant free-ad-supported platform; 2.7B+ monthly users; $36.1B ad revenue FY2025",
+      "revenue_b": 36.1,
+      "trajectory": "GROWING CTV presence. #1 viewed platform on US TV screens per Nielsen. Not a subscription streaming competitor in content terms but the dominant alternative for unscripted/UGC content. Competes for CTV ad budgets.",
+      "threat_level": "MEDIUM for advertising; LOW for subscription. Cannot compete for premium scripted drama.",
+      "sources": [{ "name": "YouTube ad revenue $36.1B FY2025 — Alphabet 10-K", "tier": "company_filed" }]
+    },
+    {
+      "name": "Peacock",
+      "parent": "NBCUniversal / Comcast (CMCSA)",
+      "position": "US-focused SVOD; 44M subscribers end 2025; declining growth rate",
+      "subscribers_m": 44,
+      "trajectory": "SLOWING. Added only 3M subscribers in H2 2025. No meaningful international presence. Subscriber economics stressed by high sports-rights costs.",
+      "threat_level": "LOW — primarily US domestic; financially constrained; not competitive globally."
+    },
+    {
+      "name": "Apple TV+",
+      "parent": "Apple Inc. (AAPL)",
+      "position": "Premium niche SVOD; estimated ~46M subscribers (Apple does not disclose)",
+      "subscribers_m": 46,
+      "trajectory": "NICHE PREMIUM. Thin catalog but critically acclaimed originals. Competitive advantage is Apple ecosystem bundle, not content breadth. No advertising tier.",
+      "threat_level": "LOW — limited catalog depth makes it a supplement, not a substitute.",
+      "sources": [{ "name": "Apple TV+ ~46M subs estimate — Evoca.tv", "url": "https://evoca.tv/apple-tv-subscribers/", "tier": "theia_estimate", "note": "Apple does not disclose; third-party estimate" }]
+    },
+    {
+      "name": "Paramount+",
+      "parent": "Paramount Global / Skydance Media",
+      "position": "Mid-tier US SVOD; ~79M subscribers; under acquisition by Skydance",
+      "subscribers_m": 79,
+      "trajectory": "DISTRESSED. Streaming losses narrowed to ~$158M Q4 2025 but accumulated billions in aggregate losses. Being acquired by Skydance. Post-merger strategy unclear — likely a content library/licensing asset rather than a direct competitor.",
+      "threat_level": "LOW — strategically uncertain; content investment constrained.",
+      "sources": [{ "name": "Paramount+ 79M subs Q4 2025 — The Wrap", "url": "https://www.thewrap.com/industry-news/business/paramount-earnings-q4-2025/", "tier": "press_verified" }]
+    }
+  ],
+
+  "sources": [
+    { "name": "Netflix Q4 2025 Shareholder Letter (8-K)", "url": "https://www.sec.gov/Archives/edgar/data/0001065280/000106528026000033/ex991_q425.htm", "tier": "company_filed" },
+    { "name": "Netflix Q1 2026 Shareholder Letter (8-K)", "url": "https://www.sec.gov/Archives/edgar/data/1065280/000106528026000137/ex991_q126.htm", "tier": "company_filed" },
+    { "name": "Netflix 250M MAV May 2026 Upfront — Variety", "url": "https://variety.com/2026/tv/news/netflix-claims-ad-tier-reaches-250-million-viewers-1236746219/", "tier": "press_verified" },
+    { "name": "Netflix 190M MAV November 2025 — Deadline", "url": "https://deadline.com/2025/11/netflix-ads-1236606573/", "tier": "press_verified" },
+    { "name": "Netflix fill rate 45%/70%/90% estimates — MediaPost May 2025", "url": "https://www.mediapost.com/publications/article/405920/netflix-slowly-builds-ad-supported-business-fill.html", "tier": "sellside" },
+    { "name": "Netflix CPM $25-65 — AI Digital 2026", "url": "https://www.aidigital.com/blog/netflix-advertising", "tier": "sellside" },
+    { "name": "Netflix ad load 4-5 min/hour — Ignite Visibility 2025", "url": "https://ignitevisibility.com/netflix-advertising/", "tier": "press_verified" },
+    { "name": "Netflix CPM vs. peers — Ad Age", "url": "https://adage.com/article/media/streaming-commercial-prices-netflix-prime-video-disney-hulu-peacock-paramount-max-cpms/2589786/", "tier": "press_verified" },
+    { "name": "Omdia: Netflix ad revenue $8B by 2030", "url": "https://www.marketingprofs.com/charts/2026/54392/the-rise-of-netflixs-advertising-business", "tier": "research_firm" },
+    { "name": "MoffettNathanson: $6B ad revenue 2027 / $10B 2030 — MediaPost", "url": "https://www.mediapost.com/publications/article/404240/netflix-to-see-even-faster-ad-growth-to-6b-in-20.html", "tier": "sellside" },
+    { "name": "eMarketer: CTV ad spend $33.35B 2025, $46.9B by 2028 — StackAdapt", "url": "https://www.stackadapt.com/resources/blog/connected-tv-stats", "tier": "research_firm" },
+    { "name": "WARC: Netflix CTV ad share 3.7% (2025) to 9.2% (2027)", "url": "https://intellectia.ai/news/stock/bullish-outlook-for-netflixs-advertising-business", "tier": "research_firm" },
+    { "name": "Omdia: Global TV and online video to exceed $1T by 2030 — Apr 2026", "url": "https://omdia.tech.informa.com/pr/2026/apr/global-online-video-and-tv-revenues-to-exceed-1-trillion-dollars-by-2030-driven-by-social-video-advertising", "tier": "research_firm" },
+    { "name": "Statista: SVOD Worldwide market forecast", "url": "https://www.statista.com/outlook/dmo/digital-media/video-on-demand/video-streaming-svod/worldwide", "tier": "research_firm" },
+    { "name": "Netflix viewing 2.4 hours/account/day H2 2025", "url": "https://businesstats.com/time-spent-streaming-netflix-per-account/", "tier": "theia_estimate", "note": "Third-party; Netflix does not disclose this metric directly" },
+    { "name": "Netflix 60% new signups on ad plan — MediaPlayNews May 2026", "url": "https://www.mediaplaynews.com/netflix-250-million-global-monthly-average-users-with-60-of-news-subs-opting-for-ad-supported-tier/", "tier": "press_verified" },
+    { "name": "Netflix $9B ad revenue target / Goldman $9.5B model", "url": "https://www.mexc.com/learn/article/will-netflix-stock-recover-nflx-price-target-analyst-ratings-and-the-2030-forecast/1", "tier": "sellside" },
+    { "name": "Netflix eMarketer US ad revenue forecasts", "url": "https://www.emarketer.com/forecasts/6359b427d3496f0694309768/63597ffcd3496f0694309730/", "tier": "research_firm" },
+    { "name": "Disney streaming $1.33B income FY2025 — IndexBox", "url": "https://www.indexbox.io/blog/disney-streaming-turns-profitable-projects-21b-income-for-fy-2026/", "tier": "press_verified" },
+    { "name": "Max 140M subs Q1 2026 — Deadline", "url": "https://deadline.com/2026/05/hbo-max-subscribers-warner-bros-discovery-earnings-1236883609/", "tier": "press_verified" },
+    { "name": "Paramount+ 79M subs Q4 2025 — The Wrap", "url": "https://www.thewrap.com/industry-news/business/paramount-earnings-q4-2025/", "tier": "press_verified" },
+    { "name": "Netflix content amortization +10% in 2026 — StockStory", "url": "https://stockstory.org/us/stocks/nasdaq/nflx/news/earnings-call/nflx-q4-deep-dive-guidance-for-2026-disappoints-despite-strong-revenue-growth", "tier": "press_verified" },
+    { "name": "Netflix WWE $500M/year / NFL $150M — Streamable", "url": "https://thestreamable.com/what-sports-does-netflix-have-boxing-nfl-celebrity-tournaments", "tier": "press_verified" },
+    { "name": "Streaming 47.5% of US TV viewing December 2025 — Nielsen via StackAdapt", "url": "https://www.stackadapt.com/resources/blog/connected-tv-stats", "tier": "research_firm" }
+  ]
+}
