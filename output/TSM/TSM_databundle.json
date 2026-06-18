@@ -1,0 +1,279 @@
+{
+  "_meta": {
+    "ticker": "TSM",
+    "snapshot_id": "TSM_2026-06-18T0042Z",
+    "as_of_utc": "2026-06-18T00:42:36Z",
+    "market": "US",
+    "currency": "USD",
+    "adapter": "hermes/us",
+    "sources": [
+      {
+        "name": "yfinance",
+        "fetched_utc": "2026-06-18T00:42:36Z"
+      },
+      {
+        "name": "SEC EDGAR",
+        "fetched_utc": "2026-06-18T00:42:36Z",
+        "cik": "0001046179"
+      }
+    ],
+    "gaps": [
+      "segment revenue: see filing_excerpts (parse the 10-Q segment note); not in structured yfinance data"
+    ]
+  },
+  "profile": {
+    "name": "Taiwan Semiconductor Manufacturing Company Limited",
+    "listings": "NYQ",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "country": "Taiwan",
+    "description": "Taiwan Semiconductor Manufacturing Company Limited, together with its subsidiaries, manufactures, packages, tests, and sells integrated circuits and other semiconductor devices in Taiwan, China, Europe, the Middle East, Africa, Japan, the United States, and internationally. It provides various wafer fabrication processes, such as processes to manufacture complementary metal- oxide-semiconductor (CMOS) logic, mixed-signal, radio frequency, embedded memory, bipolar CMOS mixed-signal, and others. The company also involved in providing customer and engineering support services; manufacturing of masks; investment in technology start-up companies; research, designing, developing, manufacturing, packaging, testing, and sale of color filters; and investment activities. Its products are used in high performance computing, smartphones, Internet of things, automotive, and digital consumer electronics. Taiwan Semiconductor Manufacturing Company Limited was incorporated in 1987 and is headquartered in Hsinchu City, Taiwan.",
+    "employees": 76907.0,
+    "business_type_hint": "industrial"
+  },
+  "price": {
+    "current": 432.1499938964844,
+    "currency": "USD",
+    "high_52w": 450.1600036621094,
+    "low_52w": 206.1999969482422,
+    "ma50": 401.95059997558593,
+    "ma200": 332.972799987793,
+    "ytd_pct": 35.91,
+    "return_1y_pct": 104.65,
+    "beta": 1.25
+  },
+  "market_stats": {
+    "market_cap_b": 2241.335,
+    "enterprise_value_b": 15420.652,
+    "shares_outstanding_b": 5.186,
+    "net_debt_b": -1703.273,
+    "adtv_usd_m": 5736.3,
+    "dividend_per_share": null,
+    "dividend_yield_pct": null
+  },
+  "valuation_multiples": {
+    "pe_ttm": 37.15821,
+    "pe_ntm": 21.985485,
+    "ev_ebitda_ttm": 5.399,
+    "ev_sales_ttm": 3.758,
+    "pb": 66.10473,
+    "peg": 1.3283
+  },
+  "financials": {
+    "income": [
+      {
+        "fy": "FY2025",
+        "revenue_b": 3809.054,
+        "gross_profit_b": 2281.294,
+        "ebit_b": 1936.096,
+        "ebitda_b": 2742.122,
+        "net_income_b": 1697.604,
+        "eps": 331.25,
+        "shares_b": 5.186
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 2894.308,
+        "gross_profit_b": 1624.354,
+        "ebit_b": 1322.003,
+        "ebitda_b": 2079.132,
+        "net_income_b": 1158.38,
+        "eps": 226.25,
+        "shares_b": 5.186
+      },
+      {
+        "fy": "FY2023",
+        "revenue_b": 2161.736,
+        "gross_profit_b": 1175.111,
+        "ebit_b": 921.43,
+        "ebitda_b": 1523.507,
+        "net_income_b": 851.74,
+        "eps": 161.7,
+        "shares_b": 5.186
+      },
+      {
+        "fy": "FY2022",
+        "revenue_b": 2263.891,
+        "gross_profit_b": 1348.355,
+        "ebit_b": 1121.226,
+        "ebitda_b": 1593.076,
+        "net_income_b": 992.923,
+        "eps": 196.0,
+        "shares_b": 5.186
+      }
+    ],
+    "balance": [
+      {
+        "fy": "FY2025",
+        "cash_b": 2767.856,
+        "total_debt_b": 1064.583,
+        "total_equity_b": 5355.039,
+        "total_assets_b": 7932.842
+      },
+      {
+        "fy": "FY2024",
+        "cash_b": 2127.627,
+        "total_debt_b": 1047.042,
+        "total_equity_b": 4244.266,
+        "total_assets_b": 6691.765
+      },
+      {
+        "fy": "FY2023",
+        "cash_b": 1465.428,
+        "total_debt_b": 956.258,
+        "total_equity_b": 3429.522,
+        "total_assets_b": 5532.197
+      },
+      {
+        "fy": "FY2022",
+        "cash_b": 1342.814,
+        "total_debt_b": 888.174,
+        "total_equity_b": 2903.02,
+        "total_assets_b": 4964.459
+      }
+    ],
+    "cashflow": [
+      {
+        "fy": "FY2025",
+        "cfo_b": 2274.976,
+        "capex_b": 1282.597,
+        "fcf_b": 992.378,
+        "dividends_paid_b": -466.779,
+        "buybacks_b": 0.0
+      },
+      {
+        "fy": "FY2024",
+        "cfo_b": 1826.177,
+        "capex_b": 964.982,
+        "fcf_b": 861.196,
+        "dividends_paid_b": -363.055,
+        "buybacks_b": -3.089
+      },
+      {
+        "fy": "FY2023",
+        "cfo_b": 1241.967,
+        "capex_b": 955.398,
+        "fcf_b": 286.569,
+        "dividends_paid_b": -291.722,
+        "buybacks_b": 0.0
+      },
+      {
+        "fy": "FY2022",
+        "cfo_b": 1610.599,
+        "capex_b": 1089.626,
+        "fcf_b": 520.973,
+        "dividends_paid_b": -285.234,
+        "buybacks_b": -0.872
+      }
+    ]
+  },
+  "estimates": {
+    "eps_ntm": 19.65615,
+    "target_mean": 473.39584,
+    "target_median": 472.5,
+    "num_analysts": 18.0,
+    "rec_mean": 1.47368,
+    "target_high": 700.0,
+    "target_low": 354.0,
+    "recommendation_key": "strong_buy",
+    "eps_ntm_consensus": 19.65615,
+    "eps_ntm_consensus_period": "+1y"
+  },
+  "peers": [],
+  "segments": [],
+  "filings": [],
+  "earnings_date": "2026-07-16",
+  "news": [
+    {
+      "title": "Intel's 18A-P chips are in production and just in time as CPU demand ramps up",
+      "publisher": "Yahoo Finance Video",
+      "url": "https://finance.yahoo.com/video/intels-18a-p-chips-are-in-production-and-just-in-time-as-cpu-demand-ramps-up-145010818.html",
+      "date": "2026-06-17T14:50:10Z"
+    },
+    {
+      "title": "Tech stocks today: Uber and Lucid expanding in Houston,  Intel's latest chip moves",
+      "publisher": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/live/tech-stocks-today-uber-and-lucid-expanding-in-houston-intels-latest-chip-moves-100000021.html",
+      "date": "2026-06-15T10:00:00Z"
+    },
+    {
+      "title": "2 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/17/2-artificial-intelligence-stocks-you-can-buy-and-h/",
+      "date": "2026-06-17T20:50:00Z"
+    },
+    {
+      "title": "TSM at $426: Bubble Territory or a Buy for the Next AI Supercycle?",
+      "publisher": "Zacks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/tsm-426-bubble-territory-buy-190000685.html",
+      "date": "2026-06-17T19:00:00Z"
+    },
+    {
+      "title": "AMD, Intel Rise as TSMC Capacity Tightens",
+      "publisher": "GuruFocus.com",
+      "url": "https://finance.yahoo.com/technology/articles/amd-intel-rise-tsmc-capacity-165503042.html",
+      "date": "2026-06-17T16:55:03Z"
+    },
+    {
+      "title": "Is ASML (ASML) The Best Undervalued AI Stock?",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asml-asml-best-undervalued-ai-152707388.html",
+      "date": "2026-06-17T15:27:07Z"
+    }
+  ],
+  "social_sentiment": {
+    "source": "stocktwits",
+    "error": "HTTPError"
+  },
+  "recommendation_trend": {
+    "strongBuy": 5,
+    "buy": 12,
+    "hold": 2,
+    "sell": 0,
+    "strongSell": 0
+  },
+  "holders": {
+    "insider_pct": 0.04,
+    "institutional_pct": 15.64
+  },
+  "quarterly": [
+    {
+      "period": "2026-03-31",
+      "revenue_b": 1134.103,
+      "net_income_b": 572.48,
+      "eps": 110.4
+    },
+    {
+      "period": "2025-12-31",
+      "revenue_b": 1046.09,
+      "net_income_b": 485.465,
+      "eps": 97.5
+    },
+    {
+      "period": "2025-09-30",
+      "revenue_b": 989.918,
+      "net_income_b": 452.301,
+      "eps": 87.2
+    },
+    {
+      "period": "2025-06-30",
+      "revenue_b": 933.792,
+      "net_income_b": 398.273,
+      "eps": 76.8
+    }
+  ],
+  "ratios": {
+    "gross_margin_pct": 59.9,
+    "ebitda_margin_pct": 72.0,
+    "net_margin_pct": 44.6,
+    "fcf_margin_pct": 26.1,
+    "fcf_conversion": 0.58,
+    "roe_pct": 31.7,
+    "debt_to_equity": 0.2
+  },
+  "edgar": {
+    "by_fy": {},
+    "gaps": []
+  },
+  "filing_excerpts": {}
+}

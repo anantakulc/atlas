@@ -1,0 +1,70 @@
+{
+  "valuation_headline": {
+    "current_price": 432.15,
+    "fair_value_today": 430.02,
+    "target_12m": 509.99,
+    "fair_value_12m": 465.87,
+    "band_low": 235.25,
+    "band_high": 583.34,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 430.02,
+      "multiple": 19.0,
+      "multiple_label": "EV/FY2026e NOPAT (HPC) + NI (Mature)",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 432.15,
+      "multiple": 19.1,
+      "multiple_label": "EV/FY2026e NOPAT (HPC) + NI (Mature)",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 465.87,
+      "basis": "#1 rolled forward at r=9.0% less dividend 2.85",
+      "convergence_return_pct": 8.5
+    },
+    "target_12m": {
+      "value": 509.99,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "P/E",
+        "defensible_multiple": 32.38,
+        "forward_metric_label": "FY2026e EPS (12m forward at base case)",
+        "forward_metric_value": 15.75,
+        "multiple_rationale": "Target $510 = $15.75 FY2026e EPS x 32.38x defensible P/E. The 32.38x is documented as: #3 fair-value-12m $469 / FY2026e EPS $15.75 = 29.8x base intrinsic; adding the gap from $469 to $510 target reflects contracted near-term evidence (N2 sold out through 2Q27, CoWoS locked, FY26 guided >30% already being delivered) supporting the market continuing to pay a premium to pure intrinsic over the next 12 months. The target leans ABOVE the pure roll-forward only by the contracted evidence -- the bulk of upside is intrinsic, not multiple expansion. We do NOT lean toward the full bull ($583) since the out-year AI CAGR is EXTRAPOLATED, not contracted, per Theia's evidence quality classification. The 32.38x defensible multiple sits between the base intrinsic (29.8x on 12m-forward FY2026e) and the current market (27.4x on FY2026e, 22x on FY2027e) -- it does not rely on re-rating above intrinsic.",
+        "price": 509.99
+      },
+      "implied_12m_total_return_pct": 18.7
+    }
+  },
+  "street_reconstruction": {},
+  "street_target": {
+    "mean": 473.4,
+    "mean_multiple": null,
+    "mean_implied_growth_pct": null,
+    "high": null,
+    "return_pct": 9.5,
+    "n_analysts": 18,
+    "note": "Street mean $473 implies ~28% company CAGR -- slightly above management's 25% guide. We take the guide at face value."
+  },
+  "rating": "BUY",
+  "conviction": "MEDIUM",
+  "sensitivity_matrix": {},
+  "bridge_logic": "#1 fair value today 430.02 -> #3 fair value 12m 465.87 (x(1+0.090) - div 2.85); #4 target 12m 509.99 (defensible_multiple); implied return to #4 = 18.7%, to #3 = 8.5%, to street mean None = None%",
+  "ticker": "TSM",
+  "as_of": "2026-06-18",
+  "fair_value_today_usd_adr": 430.02,
+  "price_today_usd_adr": 432.15,
+  "fair_value_12m_usd_adr": 465.87,
+  "target_12m_usd_adr": 510.0,
+  "upside_to_fair_value_pct": -0.5,
+  "upside_to_target_pct": 18.7,
+  "bear_case_per_adr": 235.25,
+  "bull_case_per_adr": 583.34,
+  "crux_one_line": "TSMC keeps essentially all leading-edge foundry share; the only variable that decides the call is how big the AI/HPC wafer pool gets and how hard TSMC can price it -- i.e. whether the 25% USD revenue CAGR guide proves conservative, met, or optimistic.",
+  "thesis_one_para": "TSMC is the essential infrastructure of the AI compute buildout -- it manufactures effectively 100% of merchant AI accelerators and >90% of all leading-edge silicon, a position that is structurally unchallenged through at least 2027. The stock is priced at fair value on the base case (25% USD revenue CAGR, management's own guide) with a $430 intrinsic value essentially matching the $432 price. The BUY comes from the 12-month roll-forward of that fundamental value: as AI-accelerator volumes compound at 54-56% annually (contracted through 2027 in N2 bookings and CoWoS capacity), TSMC earns ~10% on its equity capital and compounds intrinsic value toward $466 in 12 months on pure convergence -- and toward our $510 target when we credit the contracted near-term evidence (N2 sold out through 2Q27, CoWoS locked by Nvidia at >60% of 2026 capacity) for supporting AI-scarcity premium pricing in the near term. The call is on intrinsic value creation, not multiple expansion. The wide range ($235 bear to $583 bull) reflects genuine uncertainty about whether hyperscaler AI capex is durable through 2027-2029 -- that is the crux, and its resolution over the next 12-18 months will determine whether this is a $235 stock or a $583 stock. At $432, the risk/reward is asymmetric to the upside: the contracted near-term is already delivering (Q1 2026 beat-and-raise, May 2026 +30.1% y/y), the downside requires a meaningful AI digestion, and the upside requires only the guide being right."
+}

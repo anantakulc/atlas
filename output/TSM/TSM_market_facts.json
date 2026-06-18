@@ -1,0 +1,202 @@
+{
+  "_meta": {
+    "ticker": "TSM",
+    "agent": "Pheme",
+    "role": "freeze-time market intelligence (facts, not a vote)",
+    "as_of": "2026-06-18",
+    "snapshot_id": "TSM_2026-06-18T0042Z",
+    "price_usd_adr": 432.15,
+    "next_earnings": "2026-07-16",
+    "next_earnings_event": "Q2 2026 (Quartr eventId 541404 was Q1 2026; next is eventId 649922, 2026-07-16)",
+    "fx_rate_used": "USD/TWD 31.58",
+    "fx_source": "Bank of Taiwan / TradingEconomics, USD/TWD 31.58 on 2026-06-16; 2026 YTD avg ~31.64. https://tradingeconomics.com/taiwan/currency",
+    "adr_ratio": "1 ADR = 5 ordinary shares"
+  },
+
+  "data_caveats": {
+    "currency_mixing_corruption": "Bundle financials block is in TWD billions; price is USD. enterprise_value_b ($15,420B), net_debt_b (-$1,703B), ev_ebitda_ttm (5.4x), ev_sales_ttm (3.76x), pb (66.1x) are CORRUPTED by mixing the TWD balance sheet with the USD price. DO NOT USE. market_cap_b $2,241B is approximately correct (USD). shares_outstanding 5.186B is the ADR-equivalent count.",
+    "twd_to_usd_translation": {
+      "fy2025_revenue_twd_b": 3809.054,
+      "fy2025_revenue_usd_b_approx": 120.6,
+      "fy2025_net_income_twd_b": 1697.604,
+      "fy2025_net_income_usd_b_approx": 53.8,
+      "fy2025_capex_twd_b": 1282.597,
+      "fy2025_capex_usd_b_approx": 40.6,
+      "note": "Translated at ~31.58 TWD/USD. Company reports FY2025 USD revenue at ~$118-120B; our 120.6 is consistent."
+    },
+    "usable_usd_adr_fields": "price 432.15, pe_ttm 37.2x, pe_ntm 22.0x, eps_ntm 19.66, target_mean 473.40, target_high 700, target_low 354, 18 analysts, rec strong_buy (5 strongBuy/12 buy/2 hold/0 sell) are USD/ADR and usable, subject to the eps_ntm forward-skew flag below."
+  },
+
+  "estimate_artifact_check": {
+    "field": "estimates.eps_ntm",
+    "bundle_value_usd_adr": 19.66,
+    "implied_pe_at_price": "432.15 / 19.66 = 22.0x (matches bundle pe_ntm 21.99x)",
+    "verdict": "FORWARD-SKEWED, NOT STRICTLY NEXT-TWELVE-MONTHS. Q1 2026 actual EPS was US$3.49/ADR (pr.tsmc.com news 3297, 2026-04-16). Q2 2026 guided revenue $39.0-40.2B (+10% q/q) at 65.5-67.5% GM implies ~$3.8-4.0/ADR. FY2026 ADR EPS therefore tracks ~$15-16. The $19.66 figure (~$4.9/qtr) sits above the current run-rate and is best read as an FY2027 / blended +1y consensus, not a clean NTM number.",
+    "corrected_framing": {
+      "fy2025_gaap_eps_usd_adr_approx": 10.4,
+      "fy2026e_eps_usd_adr_approx": "15.5 to 16.0 (run-rate from Q1 actual + Q2 guide + >30% USD revenue growth)",
+      "fy2027e_eps_usd_adr_approx": "~18 to 20 (consistent with the bundle eps_ntm 19.66 as a +1y forward)",
+      "pe_on_fy2026e": "432.15 / ~15.75 = ~27x (this is the cleaner forward P/E; corroborated by Zacks citing 25.0x forward on a slightly different EPS base)",
+      "pe_on_fy2027e_19.66": "22.0x"
+    },
+    "instruction_to_run": "Value on the corrected ladder: ~27x on FY2026e EPS, ~22x on FY2027e. The 22x NTM headline understates the multiple on the nearest fiscal year. Do not treat 22x as the multiple on current earnings."
+  },
+
+  "consensus_snapshot": {
+    "eps_ntm_usd_adr": 19.66,
+    "eps_ntm_caveat": "forward-skewed toward FY2027; see estimate_artifact_check",
+    "target_mean_usd": 473.39,
+    "target_median_usd": 472.50,
+    "target_high_usd": 700.00,
+    "target_low_usd": 354.00,
+    "n_analysts": 18,
+    "rating": "Strong Buy",
+    "rating_distribution": {"strongBuy": 5, "buy": 12, "hold": 2, "sell": 0, "strongSell": 0},
+    "rec_mean": 1.47,
+    "implied_upside_to_mean_target_pct": 9.5,
+    "source": "yfinance via Hermes bundle (2026-06-18); corroborated by 24/7 Wall St citing a ~$477 mean target late Apr 2026"
+  },
+
+  "whats_priced_in": {
+    "reverse_multiple_intuition": "At $432 the ADR carries ~22x the +1y (FY2027) consensus EPS and ~27x the FY2026e run-rate. Stripping a ~3% terminal growth and an ~11-12% equity cost, a 22x exit-style multiple is consistent with the market underwriting high-20s%/year earnings growth sustained for roughly 4-5 years before fading toward a mature high-teens multiple. That is precisely the AI/HPC durability the company itself guides to: >30% USD revenue growth in 2026 and a 54-56% AI-accelerator revenue CAGR through 2029 (Q1 2026 call). The street is NOT pricing peak-cycle mean-reversion; it is pricing multi-year leading-edge scarcity.",
+    "what_the_mean_target_implies": "The $473 mean target (~+9.5% over 12m) prices continued >30% 2026 growth and a stable-to-rising leading-edge mix, with the multiple roughly held. The $700 high target underwrites the AI-CAGR persisting and 2nm/A16 pricing power lifting gross margin back above 60% structurally; the $354 low target prices an AI-capex digestion and capacity-underutilization scenario.",
+    "key_pattern": "TSM is priced as the structurally-scarce toll on AI compute, not as a cyclical foundry. The risk is therefore EXPECTATIONS/VALUATION (priced-for-continuation), not visible fundamental deterioration — monthly sales and the order book are still accelerating."
+  },
+
+  "street_view": "TSM is the indispensable leading-edge foundry for the AI buildout; supply is tight through 2027, leading-edge (7nm and below) is 74% of wafer revenue and HPC is 61% of total, and management guides >30% USD revenue growth in 2026 with a 54-56% AI-accelerator CAGR to 2029 -- the debate is valuation/duration, not whether demand is real.",
+
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-04",
+      "firm": "Aletheia Capital (Stefan Chang)",
+      "action": "raised PT",
+      "old_pt": "$500",
+      "new_pt": "$600",
+      "rating_change": "Buy reiterated",
+      "note": "Set a new street-high ADR target after Q1 2026; AI/HPC-driven; one of the most bullish on the tape.",
+      "source": "TipRanks / search aggregation, late Apr 2026"
+    },
+    {
+      "date": "2026-04",
+      "firm": "Bank of America (Haas Liu)",
+      "action": "raised PT",
+      "old_pt": "NT$2,360",
+      "new_pt": "NT$2,530",
+      "rating_change": "Buy maintained",
+      "note": "Cited strong HPC/AI chip demand. NT$2,530 ~ US$400/ADR at 31.58 TWD/USD x5 / ADR -- below current price, reflecting a TWD-target lag vs the ADR run.",
+      "source": "search aggregation, post-Q1 2026"
+    },
+    {
+      "date": "2026-04-16",
+      "firm": "Morgan Stanley",
+      "action": "reiterated constructive",
+      "old_pt": null,
+      "new_pt": null,
+      "rating_change": "Overweight",
+      "note": "Flagged Q2 revenue guide of +10% q/q as ahead of the 5-10% consensus expectation.",
+      "source": "Tiger Brokers / itiger, post-Q1 2026"
+    },
+    {
+      "date": "2026-04-16",
+      "firm": "JPMorgan",
+      "action": "raised PT (TWD line) earlier in 2026",
+      "old_pt": "NT$1,700",
+      "new_pt": "NT$2,100",
+      "rating_change": "Overweight",
+      "note": "Forecasts ~30% USD revenue growth in 2026. The early-2026 NT$2,100 target (~US$333/ADR) is now stale vs the $432 ADR run.",
+      "source": "Yahoo Finance / Bloomberg, Jan-Apr 2026"
+    },
+    {
+      "date": "2026-01",
+      "firm": "Goldman Sachs",
+      "action": "raised PT",
+      "old_pt": "NT$1,720",
+      "new_pt": "NT$2,330",
+      "rating_change": "Conviction Buy",
+      "note": "Multi-year AI growth engine thesis; drove a record-high rally in early 2026. NT$ target now lags the ADR.",
+      "source": "Bloomberg / TipRanks, early Jan 2026"
+    },
+    {
+      "date": "2026-04-29",
+      "firm": "Consensus (aggregate)",
+      "action": "mean target tracking ~$473-477",
+      "old_pt": null,
+      "new_pt": "$473-477",
+      "rating_change": "Strong Buy (5/12/2/0/0)",
+      "note": "Post-Q1 mean ADR target; 18 analysts; net upgrade momentum with no sell ratings.",
+      "source": "24/7 Wall St / Hermes bundle"
+    }
+  ],
+  "analyst_tape_note": "The tape is a wall of RAISES with zero sell ratings. Caveat: the Taiwan-listed (NT$) targets from several global banks were set in Jan-Apr 2026 and now translate BELOW the $432 ADR (the ADR has run faster than the TWD-line targets were refreshed). The current USD/ADR-coverage mean is $473 with a $700 street high (Aletheia $600 is the highest verified single-name). This is a bullish but not unanimous-conviction picture: 2 holds and a visible bubble/valuation debate persist.",
+
+  "news_narrative": "The narrative is unambiguously demand-led and supply-constrained. (1) Q1 2026 (reported 2026-04-16) was a clean BEAT AND RAISE, not a beat-but-no-raise: revenue US$35.90B (+40.6% y/y, +6.4% q/q) beat the ~$35.5B consensus, EPS NT$22.08 / US$3.49 ADR beat NT$20.88, gross margin 66.2% (+3.9pp q/q), and management RAISED full-year 2026 USD revenue growth guidance to above 30% (pr.tsmc.com news 3297; Quartr Q1 2026 call). (2) Capex guidance was lifted to the HIGH END of the $52-56B range, signalling confidence, not retrenchment. (3) Recent headlines ('AMD, Intel Rise as TSMC Capacity Tightens', GuruFocus 2026-06-17) confirm leading-edge capacity is sold out, giving TSM pricing power. (4) The counter-narrative is a valuation/bubble debate ('TSM at $426: Bubble Territory or a Buy', Zacks 2026-06-17) -- which resolves net-bullish in the source itself (Zacks Rank #2 Buy, forward P/E ~25x below sector). No fundamental-deterioration story is present in the tape; the only bear thread is capex-digestion/underutilization risk if AI spending normalizes.",
+
+  "sentiment_narrative": "Sentiment is strongly bullish with a vocal valuation-skeptic minority. Bull: analyst community overwhelmingly Buy/Strong Buy with rising targets; AI supercycle framed as multi-year and structural; the stock is +104.7% over 1y and +35.9% YTD, at/near 52-week highs ($432 vs $450 high). Bear/skeptic: GuruFocus GF Value flags the stock ~43% 'overvalued' on a 36.7x trailing P/E vs a 22.8x 5-yr median; one Seeking Alpha piece ('The AI Boom Is Coming To An End') argues capex/fixed-cost risk; insiders net SOLD (~$14M sold vs $1.2M bought over 3 months per GuruFocus) -- a soft negative, though insider ownership is tiny (0.04%) so the signal is weak. The stocktwits social feed in the bundle errored (HTTPError) -- retail social sentiment UNVERIFIED, flag accordingly. Net: the market BELIEVES the demand; the contest is over what multiple it deserves.",
+
+  "runway": {
+    "next_earnings_date": "2026-07-16",
+    "next_earnings_event": "Q2 2026 results + call",
+    "q2_2026_guidance": "Revenue $39.0-40.2B (+10% q/q, +32% y/y at midpoint); gross margin 65.5-67.5%; operating margin 56.5-58.5% (Q1 2026 call, Quartr eventId 541404).",
+    "monthly_sales_trend": {
+      "may_2026_twd_b": 416.98,
+      "may_2026_yoy_pct": 30.1,
+      "may_2026_mom_pct": 1.5,
+      "april_2026_twd_b": 410.73,
+      "april_2026_yoy_pct": 17.5,
+      "ytd_jan_may_2026_twd_b": 1961.80,
+      "ytd_yoy_pct": 30.0,
+      "read": "Monthly sales remain in 30% YoY territory and accelerated sequentially in May; April's softer 17.5% y/y was a tough comp/timing artifact (a Bloomberg piece flagged 'slowest growth in months'), but the 5-month cumulative is +30% y/y, fully consistent with the >30% full-year USD guide. No deceleration signal yet.",
+      "source": "pr.tsmc.com monthly revenue releases; Grafa/Bloomberg/TechTimes, May-Jun 2026"
+    },
+    "capex_trajectory": "FY2025 capex ~$40.6B (TWD 1,282.6B). FY2026 guided to the HIGH END of $52-56B (so ~$55-56B), up ~35% y/y. Q1 2026 capex was US$11.10B. Management states revenue growth will outpace capex growth, holding capital intensity healthy. Rising capex is a confidence signal here, but it also raises the fixed-cost-underutilization stakes if AI demand normalizes (the bear's lever).",
+    "leading_edge_mix": "Advanced nodes (7nm and below) = 74% of wafer revenue (3nm 25%, 5nm 36%, 7nm 13%). HPC platform = 61% of total revenue (+20% q/q). N2 in high-volume manufacturing since Q4 2025; N3 expanding in Taiwan, Arizona, Japan; A14 targeted for 2028 volume. The mix shift toward leading-edge + AI is the structural margin and growth engine.",
+    "balance_sheet": "Cash & marketable securities US$106B at Q1 2026 quarter-end; net cash position. The corrupted bundle net_debt/EV fields must be ignored; TSM is net cash."
+  },
+  "runway_verdict": "FUNDAMENTAL RUNWAY: STRONG and accelerating -- beat-and-raise print, >30% USD growth guide, 54-56% AI-accelerator CAGR to 2029, sold-out leading-edge capacity, monthly sales holding ~30% y/y, capex lifted to the high end on visible demand. VALUATION RISK (called out separately): the stock is +105% in a year, near 52-week highs, at ~27x FY2026e / 22x FY2027e EPS and ~37x trailing -- priced for the demand to CONTINUE. The two are distinct: a strong runway on a priced-for-perfection multiple. The downside is a de-rating on any AI-capex digestion or a Q2 print that merely meets (a 'beat-but-no-raise' would hit the multiple, not the fundamentals), plus margin dilution of 2-3% from the 2nm ramp and overseas fabs in 2026, and Middle East-tension input-cost risk flagged by management.",
+
+  "market_lean": {
+    "direction": "bull",
+    "strength": "strong, but with a real valuation overhang",
+    "rationale": "The live evidence -- beat-and-raise, raised capex, 30% monthly sales, sold-out capacity, a wall of analyst raises with zero sells, $473 mean / $700 high targets -- leans clearly bullish on fundamentals. The single material counterweight is valuation (priced for continuation, +105% in 12m, vocal bubble debate, mild insider selling). This is CONTEXT for the panel, not a vote: the crux for Daedalus/Theia is duration -- how long the AI-accelerator CAGR and leading-edge scarcity persist before fading -- because the multiple already embeds multi-year continuation. The fundamental and valuation risks must be kept separate in the synthesis."
+  },
+
+  "capex_guidance": [
+    {
+      "buyer": "TSMC (own capex, supply-side signal for Theia's demand curve)",
+      "fy": "2026",
+      "capex_guide": "$52-56B, guided to the HIGH END (~$55-56B), up ~35% vs ~$40.6B in FY2025",
+      "incl_finance_leases": "company definition; predominantly purchases of property/plant/equipment per cash-flow statement, finance-lease component not separately broken out in the bundle",
+      "quote": "CapEx for 2026 expected at the high end of the $52-56 billion range, reflecting robust AI and HPC demand; revenue growth expected to outpace capex growth, maintaining healthy capital intensity.",
+      "source_url": "Quartr Q1 2026 earnings call (eventId 541404); corroborated Tom's Hardware / Futurum, 2026-04-16"
+    },
+    {
+      "buyer": "TSMC (AI-accelerator revenue CAGR -- demand-curve anchor)",
+      "fy": "2024-2029",
+      "capex_guide": "AI-accelerator revenue CAGR of 54-56% through 2029 (raised from a prior ~45% framing)",
+      "incl_finance_leases": "n/a -- revenue-growth guidance, not capex",
+      "quote": "Management guides AI accelerator revenue to a mid-to-high-50s percent CAGR through 2029.",
+      "source_url": "Quartr Q1 2026 call (eventId 541404); BigGo Finance / search aggregation, 2026-04-16"
+    },
+    {
+      "buyer": "NVIDIA (key customer purchase obligation to TSMC -- demand floor)",
+      "fy": "2026",
+      "capex_guide": "Disclosed purchase obligations to TSMC exceeding ~$95B as of the most recent filing (per third-party aggregation -- VERIFY against NVDA 10-Q before load-bearing use)",
+      "incl_finance_leases": "n/a -- customer purchase commitment",
+      "quote": "Nvidia's disclosed purchase obligations to TSMC exceed $95 billion as of the most recent filing, alongside multi-customer prepayment arrangements.",
+      "source_url": "quantflowlab / search aggregation, 2026 -- UNVERIFIED secondary source; Theia should confirm from NVDA filings"
+    }
+  ],
+
+  "sources": [
+    {"name": "Hermes bundle (yfinance + SEC EDGAR)", "date": "2026-06-18", "use": "price, multiples, financials (TWD), estimates, recommendation trend"},
+    {"name": "TSMC Q1 2026 earnings call", "ref": "Quartr eventId 541404, reported 2026-04-16", "use": "revenue, EPS, margins, capex guide, AI CAGR, mix, Q2 guide"},
+    {"name": "pr.tsmc.com news 3297", "date": "2026-04-16", "use": "Q1 2026 EPS NT$22.08 / US$3.49 ADR"},
+    {"name": "pr.tsmc.com monthly revenue + Grafa/Bloomberg/TechTimes", "date": "May-Jun 2026", "use": "May 2026 sales NT$416.98B +30.1% y/y; April +17.5%; YTD +30%"},
+    {"name": "Bank of Taiwan / TradingEconomics USD/TWD", "date": "2026-06-16", "use": "FX 31.58"},
+    {"name": "TipRanks / 24-7 Wall St", "date": "Apr 2026", "use": "mean target ~$473-477, Aletheia $500->$600"},
+    {"name": "Bloomberg / Tiger Brokers / Yahoo Finance", "date": "Jan-Apr 2026", "use": "Goldman, JPMorgan, BofA, Morgan Stanley target actions (TWD lines)"},
+    {"name": "Zacks 'TSM at $426: Bubble or Buy'", "date": "2026-06-17", "use": "forward P/E ~25x, net-bullish framing"},
+    {"name": "GuruFocus GF Value", "date": "Jun 2026", "use": "overvaluation flag, insider net-sell signal"},
+    {"name": "stocktwits", "date": "2026-06-18", "use": "FAILED (HTTPError) -- retail social sentiment UNVERIFIED"}
+  ]
+}
