@@ -1,0 +1,272 @@
+{
+  "ticker": "BMRI.JK",
+  "analyst": "Cassandra",
+  "as_of": "2026-06-18",
+  "engine_version": "Atlas v3",
+  "role": "Bear -- the honest LOWER reading of the crux. Blind to Boreas.",
+
+  "bear_thesis_one_line": "BMRI's ROE is not at 20% in steady state; it is at 15-17%. The crux assumption -- that NIM settles at 4.6% and credit cost stays below 70bps -- fails simultaneously because BI has already hiked to 5.5% (not cut to 4.25%), wholesale loan yields are administratively capped on SOE books, and the Danantara-directed Agrinas credit programme is a directed-lending event with a documented historical failure pattern in Indonesian SOE agriculture. The base valuation was built on a cutting cycle that has been replaced by a hiking cycle. That is not a macro tail; it is observable fact as of June 9, 2026.",
+
+  "key_debates": [
+    {
+      "debate_number": 1,
+      "title": "The BI Rate Cycle Has Reversed -- NIM Guidance Is Stale and the Base Is Wrong",
+      "why_this_is_the_crux": "The entire valuation structure (crux.json, demand.json, valuation.json) was built assuming BI would cut to 4.25% terminal. BI instead raised 50bp on May 20 to 5.25% and another 25bp off-schedule on June 9 to 5.50%. NIM guidance of 4.5-4.7% was set at Q4 2025 with a falling-rate path. That rate path no longer exists. The crux.json NIM trajectory is factually incorrect as of the freeze date.",
+
+      "bear_mechanism": {
+        "name": "BI hiking cycle transmits to CoF before asset yields benefit -- NIM compresses to 4.2-4.4%",
+        "step_by_step": [
+          "BI raised 75bp in six weeks (May 20 to June 9 2026) to defend IDR at 17,845/USD. IDR has weakened 9.2% YoY. The Asian Banker and Tempo confirm the off-schedule hike was IDR-driven, not inflation-driven, meaning BI cannot easily reverse it without rupiah consequences.",
+          "BMRI's cost of funds rises with a lag of 3-6 months as time deposits (28.4% of funding) reprice at the new 5.5% benchmark. CoF rose to 1.97% in Q1 2026 on the then-4.75% BI rate; at 5.5%, time deposit rates reset 75bp higher. CoF will reach 2.5-2.7% by Q4 2026, adding IDR 5-7T in interest expense on a IDR 2,600T+ funding base.",
+          "BMRI's wholesale loan book (58% of total) carries floating rates priced off the BI rate. In principle this means asset yields also rise. In practice, the SOE and Danantara-directed infrastructure book (which drove +29% corporate loan growth in Q1 2026 under the Agrinas programme) contains administratively-set rates. These do not reprice freely with BI. Samuel Sekuritas's sector note 'Bad for Banks: IDR Weakness & Higher Rates' explicitly identifies this asymmetry.",
+          "BNI -- the most direct structural analog, also a wholesale-oriented state bank -- saw NIM compress from 4.15% to 3.76% in the nine months to September 2025 on the prior rate-cutting cycle alone. BMRI's 72% CASA ratio (vs BNI's lower level) provides partial insulation, but the 39bp NIM compression BNI experienced is the reference range for what happens to a wholesale state bank in an adverse rate cycle.",
+          "The net result: NIM likely falls to 4.2-4.4% by end-FY2026 and does not recover to 4.6% unless BI cuts again. The market_facts.json explicitly flags: 'NIM guidance 4.5-4.7% is now the optimistic scenario. Downside: 4.2-4.3%.' This is an observable fact from the freeze data, not a model assumption."
+        ],
+        "historical_precedent": "BNI NIM: 4.15% (9M 2024) to 3.76% (9M 2025), a 39bp compression in one year on the cutting cycle. The hiking cycle now in effect hits CoF harder because time deposit repricing is faster on the upside than on the downside. Indonesia 2013-2015: BI raised rates to defend IDR during the 'taper tantrum'; BBRI and BMRI both saw NIM compress 40-60bp over 18 months before stabilising. This is the mapped scenario.",
+        "how_to_see_it_coming": "Q2 2026 NIM print below 4.55% confirms the mechanism is firing. A single Q2 data point below 4.5% would validate the bear path. Time deposit rates in the OJK monthly data rising above 4.8% (from ~3.5% in Q1 2026) would be the leading indicator.",
+        "already_visible": "BI hike is a confirmed observable event (BI press releases sp_2810726 and sp_2811926). Samuel Sekuritas sector note warning is published. IDR at 17,845 and JCI cumulative foreign outflows of IDR 61.3T YTD are live market facts in the freeze data."
+      },
+
+      "bear_quantification": {
+        "nim_bear_fy2026": 0.043,
+        "nim_bear_fy2027": 0.044,
+        "nim_vs_base": "43bps below Daedalus base (4.6%). 27bps below the bottom of management guidance (4.5%).",
+        "nim_impact_calc": "43bps NIM compression on IDR 1,750T average earning assets = IDR 7.5T reduction in NII. Post-tax (20%): IDR 6.0T. At 93.5B shares: IDR 64/share in EPS impact. Per annum.",
+        "cof_impact_quantification": "75bp BI hike on IDR 2,600T+ funding base x 28.4% time deposit share x 75% transmission = IDR ~4.1T additional interest expense vs Q1 2026 run-rate. Not fully offset by asset yield uplift on the administratively-capped SOE book.",
+        "npat_bear_fy2026_idr_b": 50,
+        "npat_bear_fy2027_idr_b": 52,
+        "note_npat": "Bear FY2026 NPAT: base NII (IDR 77.7T at 4.6% NIM) less IDR 7.5T NIM compression = IDR 70.2T NII; plus fee income IDR 43T; less opex IDR 49.5T (CIR rises to 44-45% as revenue falls); less credit cost IDR 11.5T (65bp unchanged, volume-driven); pre-tax IDR 52.2T; tax 20%: NPAT IDR 41.8T. This is the mechanical lower bound. Adding partial CoF offset (some CASA benefit, IDR 3T): bear NPAT IDR 44-48T. Round to IDR 46T midpoint bear.",
+        "roe_bear_fy2026": 0.159,
+        "roe_bear_fy2027": 0.160,
+        "roe_note": "Bear NPAT IDR 46T on average equity IDR 290T = ROE 15.9%. On the Q1 2026 BV base of 3,261 IDR/share, at ROE 16%: Gordon P/B = (16% - 6%) / (Ke - 6%). Bear Ke at 5.5% risk-free + 1.10 beta x 6.5% ERP = 13.95% base Ke; the hiking cycle and IDR pressure add 100-150bp governance/macro premium, making effective bear Ke 15.0-15.5%.",
+        "bear_pb_computation": {
+          "roe": 0.160,
+          "ke_bear": 0.155,
+          "g_bear": 0.055,
+          "formula": "(0.160 - 0.055) / (0.155 - 0.055) = 0.105 / 0.100 = 1.05x P/B",
+          "bvps": 3261,
+          "bear_intrinsic_idr": 3424,
+          "downside_from_base_intrinsic_idr": 2319,
+          "downside_from_base_intrinsic_pct": 40.4
+        },
+        "bear_intrinsic_value_vs_price": {
+          "bear_intrinsic": 3424,
+          "current_price": 4390,
+          "bear_intrinsic_below_current_price": true,
+          "downside_to_bear_intrinsic_pct": -22.0,
+          "note": "Under the bear scenario (ROE 16%, Ke 15.5%, g 5.5%), the intrinsic value falls to IDR 3,424 -- 22% below current price of IDR 4,390. This compares to the base intrinsic of IDR 5,743. The difference is IDR 2,319 per share, which is the bear's downside to the base valuation. Note: the Daedalus bear (IDR 4,179) used ROE 17.5% and Ke 14.95%. The honest bear uses the actual post-hike Ke (15.5%) and ROE (16%), producing a lower floor."
+        },
+        "bear_value_per_share_idr": 3424,
+        "downside_from_daedalus_base_idr": 2319,
+        "downside_from_daedalus_base_pct": 40.4,
+        "downside_from_current_price_idr": -966,
+        "downside_from_current_price_pct": -22.0,
+        "bear_pb": 1.05
+      },
+
+      "why_market_could_still_lose_money": "Even if bear intrinsic is IDR 3,424 and the stock is at IDR 4,390, an investor can lose money if: (1) the NIM compression is confirmed in Q2 2026 results (due approximately August 2026), triggering sell-side TP cuts from the current stale consensus of IDR 5,699; (2) the market re-prices to 1.0-1.1x P/B (BNI territory at 0.9x P/B, ROE 14%) as the ROE converges toward 16%, implying a price of IDR 3,200-3,600; (3) the opportunity cost of waiting 18-24 months for a re-rating while NIM compresses and BI holds rates elevated. At IDR 4,390, the forward yield is ~9.6% (FY2026 DPS guidance ~423-455 IDR). But if bear NPAT is IDR 46T vs IDR 56.3T in FY2025, the payout ratio at 65-70% guidance yields only IDR 330-360 DPS, a yield of 7.5-8.2% at current price -- not the 10%+ floor investors assume.",
+
+      "evidence_quality": "OBSERVABLE-AND-NEAR",
+      "evidence_grade_rationale": "The BI rate hike (75bp to 5.5%) is a confirmed regulatory fact, not a forecast. BI press releases sp_2810726 (May 20, 2026) and sp_2811926 (June 9, 2026) are primary sources in the freeze data. IDR at 17,845/USD is a live market price. Samuel Sekuritas 'Bad for Banks' sector warning is published. The mechanism (CoF repricing on time deposits; NIM compression on fixed-rate SOE book) is standard banking mechanics, not a novel hypothesis. This is the highest-quality bear evidence in the bundle: it is already happening."
+    },
+
+    {
+      "debate_number": 2,
+      "title": "Danantara Directed Credit -- Agrinas Is the Next SOE NPL Event",
+      "why_this_is_a_key_debate": "BMRI's corporate loan book grew 29% YoY in Q1 2026, almost entirely from the Agrinas government-directed agriculture programme. Related-party loan growth ran +56% YoY in Q1 2026 (BRI Danareksa Q1 2026 analysis, cited in market_facts.json). BMRI's credit cost is 58bp and NPL is 0.98% -- both at cycle lows. The base case assumes these remain contained. The bear case argues that Agrinas-linked directed lending follows the exact pattern of every prior Indonesian SOE-directed credit programme that eventually produced lumpy NPL formation.",
+
+      "bear_mechanism": {
+        "name": "Agrinas government agriculture loans follow the Garuda/Krakatau Steel/fertiliser SOE NPL template -- credit cost spikes 30-50bp in a single quarter",
+        "step_by_step": [
+          "Agrinas Persada Nusantara is a Danantara vehicle created to implement the Prabowo food sovereignty agenda. BMRI is the primary credit provider. The mechanism: Danantara, as 52% owner of BMRI, directs the bank to lend to an entity Danantara itself controls. This is not arms-length corporate lending -- it is directed credit from a government controlling shareholder to a government-controlled borrower.",
+          "Indonesia's directed-credit history is consistent: Garuda Indonesia (IDR 1.1T NPL, 2021-2022), Krakatau Steel (restructured three times between 2017 and 2023, each time with BMRI as lead creditor), fertiliser SOEs Pupuk Indonesia subsidiaries (repeated bailout cycles), and the 2015-2016 commodity credit events (Pertamina and BUMN mining). Each cycle: directed lending at below-market terms, a commodity or policy shock, restructuring that converts loans to equity or extends at sub-BMRI CoF, provisioning that hits credit cost 80-150bps above guidance.",
+          "Agrinas has announced plans to convert 4 million hectares of rice paddies. Scale: BMRI's Agrinas-linked corporate loan growth of 29% in Q1 2026 implies roughly IDR 50-70T of new Agrinas-category exposure in a single quarter if the growth rate is partially Agrinas-driven (management did not break out Agrinas specifically, but corporate book grew IDR 62T in Q1 alone, per demand.json). Even 25% NPL formation on IDR 50T of directed agriculture credit = IDR 12.5T of provisions in one year, equal to 70bp on the IDR 1,750T loan book.",
+          "The Danantara governance structure removes the normal checks: BMRI management cannot decline a loan mandated by its 52% controlling shareholder. The arm's-length credit assessment process breaks down precisely when it matters most. The Q1 2026 related-party loan growth of +56% YoY is the observable signal that the process is already compromised.",
+          "The provisioning impact does not need to be a crisis to break the base case. A 40bp spike in credit cost (from 65bp base to 105bp bear) on IDR 1,750T loans = IDR 7.0T additional provisions, post-tax IDR 5.6T = IDR 60/share in EPS impact, or a 3pp ROE reduction (IDR 5.6T / IDR 310T equity)."
+        ],
+        "historical_precedent": "Krakatau Steel: BMRI held IDR 8-12T in restructured debt exposure across three cycles (2017-2023). Each restructuring added 15-25bp to BMRI's group credit cost in the provision year. Garuda Airlines: IDR 1.1T direct BMRI exposure; provisioned through 2022-2023. The 2015-2016 commodity cycle (BUMN mining and plantation SOEs): BMRI credit cost rose from 78bp (FY2014) to 198bp (FY2016), a 120bp spike over two years. That is the outer bound. The inner bound for a single SOE event is 30-50bp in the event year.",
+        "how_to_see_it_coming": "Watch for: (1) Agrinas first financial disclosure showing operational losses or shortfall vs projected output; (2) BMRI Q2 or Q3 2026 results showing corporate NPL formation above 1.2% (currently 0.98%); (3) any Ministry of Agriculture or Danantara announcement about delayed Agrinas targets; (4) BMRI management language shifting from 'well-covered' to 'under monitoring' on the wholesale book in their earnings call.",
+        "already_visible": "Related-party loan growth +56% YoY in Q1 2026 is documented in the freeze data (market_facts.json related_party_lending_flag). Danantara infrastructure loans IDR 375.88T (+24.1% YoY to Feb 2025) cited in market_facts.json (PwC source). The directed credit structure is confirmed and growing."
+      },
+
+      "bear_quantification": {
+        "credit_cost_bear_fy2026_bps": 105,
+        "credit_cost_base_bps": 65,
+        "incremental_provision_idr_b": 7.0,
+        "incremental_provision_calc": "(105bp - 65bp) x IDR 1,750T loans = 40bp x 1,750T = IDR 7.0T additional provisions",
+        "npat_impact_idr_b": -5.6,
+        "npat_impact_per_share_idr": -60,
+        "roe_impact_pp": -3.0,
+        "roe_bear_credit_cost_only": 0.170,
+        "note_combined": "Debate 1 (NIM compression, IDR 6.0T NPAT impact) combined with Debate 2 (credit cost spike, IDR 5.6T NPAT impact) yields a combined bear NPAT reduction of IDR 11.6T from the Q1-annualised run-rate of IDR 61.5T. Bear NPAT: IDR 61.5T - 11.6T = IDR 49.9T, or approximately IDR 50T. On average equity IDR 290-310T: ROE 16-17%. This is the combined bear, as modelled in the scenario_spec below.",
+        "bear_value_per_share_idr": 3424,
+        "downside_from_base_idr": 2319
+      },
+
+      "why_market_could_still_lose_money": "A credit cost spike does not show up in reported earnings until the quarter BMRI provisions the loan. Agrinas is a Q1 2026 vintage loan book -- it would not typically NPL within 12 months of disbursement. The market could lose money on this debate not because a credit event happens tomorrow, but because: (1) as the directed-credit scale becomes more visible (the +56% related-party growth is already a signal), the market demands a structural Ke premium for governance risk; (2) Danantara's high dividend extraction (FY2025 payout 78%, explicitly tied in the market_facts.json to 'Danantara cash flow needs') competes with loan growth capital allocation, constraining the ROE-sustaining equity base; (3) any Agrinas disclosure that surfaces even a restructuring headline triggers a de-rating event disproportionate to the economic loss.",
+
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_grade_rationale": "The directed-credit mechanism is real and historically documented (Garuda, Krakatau Steel, 2015-2016 commodity cycle). The specific vehicle (Agrinas) is new and the loans are Q1 2026 vintage -- NPL formation typically lags 2-4 quarters. Related-party loan growth (+56% YoY in Q1 2026) is the observable signal that the exposure is building, but the credit event itself has not yet fired. Evidence quality: MECHANISM-NOT-YET-FIRING -- real, named, based on historical precedent, but requiring a policy shock or Agrinas operational failure to materialise in provisioning."
+    },
+
+    {
+      "debate_number": 3,
+      "title": "The P/B Re-Rating Is Permanently Impaired by MSCI and Structural Foreign Outflows",
+      "why_this_is_a_key_debate": "The Daedalus base valuation argues BMRI trades at a 28% discount to intrinsic value and assigns a BUY on the expectation of convergence to 1.76x P/B. That convergence requires foreign institutional capital to return to IDX. The bear argues this re-rating is not a timing question; it is structurally impaired for multiple years by MSCI review risk, the IDR cycle, and the 'Sell Indonesia' trade.",
+
+      "bear_mechanism": {
+        "name": "MSCI accessibility downgrade forces passive selling; IDR at 17,845 makes Indonesia uninvestable for USD-denominated funds; re-rating timeline extends to 3-5 years",
+        "step_by_step": [
+          "Indonesia faces two MSCI review events within the freeze window: the Global Market Accessibility Review on June 18, 2026 and the Annual Market Classification Review on June 23, 2026 (market_facts.json). The Asia Times May 2026 article 'MSCI's Indonesia Purge Exposes a Deeper Market Crisis' identifies Indonesia as a candidate for an accessibility downgrade, which would force passive index funds to sell IDX large-caps, including BMRI.",
+          "JCI (the Indonesian stock index) is down 12.78% YoY to 6,199 as of June 17. Foreign outflows are IDR 61.3T YTD (USD 3.36bn at 17,845/USD), one of the largest outflow years in recent history (market_facts.json). The catalyst was the IDR/USD move: IDR has weakened 9.2% YoY to 17,845. USD-denominated investors have lost ~9% on currency alone on top of any IDR price loss.",
+          "BMRI's P/B of 1.34x at current price implies the market's effective Ke is approximately 16.2% (from the Daedalus valuation at base ROE 20%, g 6%: 1.34 x (Ke - 6%) + 6% = 20% implies Ke = 16.2%). The market's effective demanded Ke of 16.2% vs Daedalus's fundamental Ke of 13.95% means the macro risk premium is 225bp. The bear argues this premium persists or widens, not closes.",
+          "BI cannot cut rates to stimulate re-rating because IDR is at 17,845/USD and falling. Every BI cut risks further IDR depreciation and more foreign outflows, which is why BI hiked in the first place. The rate/currency trap means BMRI's re-rating requires either global USD weakness (not BMRI-specific) or Indonesia-specific fundamental improvement. The Danantara governance overhang and the rate hiking cycle both work against this.",
+          "The 10% dividend yield acts as a floor -- but the floor is priced in. An investor needs the STOCK to rerate upward to generate the return, not just to collect dividends. If the P/B remains at 1.3-1.4x for 2-3 years while intrinsic value is 1.76x, the investor earns only the dividend yield (~9.6% forward) less any IDR depreciation versus their base currency."
+        ],
+        "historical_precedent": "Indonesia 2013 taper tantrum: IDR went from 9,700 to 12,200/USD; IDX fell 15-20%; BMRI P/B compressed from ~2.5x to 1.4-1.5x and took 18 months to recover. Indonesia 2018-2019 EM selloff: IDR at 15,000+ / USD; IDX down 10%; BMRI P/B stayed depressed at 1.5-1.8x for 12 months despite intact fundamentals. The current move (IDR to 17,845, IDX down 12.78%) is larger in scale than the 2018 episode. A 2-3 year re-rating delay is the mapped historical outcome.",
+        "how_to_see_it_coming": "MSCI review outcome (June 18-23 2026) is the immediate binary: a downgrade would be the direct trigger. Sustained IDR weakness below 18,000/USD into Q3 2026 would confirm the trap. Foreign outflows exceeding USD 5bn cumulative in 2026 would set the structural discount.",
+        "already_visible": "JCI -12.78% YTD, foreign outflows IDR 61.3T YTD, IDR 9.2% depreciation, BI hiking cycle -- all live in the freeze data. MSCI review is scheduled within this week of the freeze date."
+      },
+
+      "bear_quantification": {
+        "re_rating_delay_years": 3,
+        "ke_bear_macro_premium": 0.155,
+        "ke_bear_formula": "5.5% BI rate (risk-free) + 1.10 beta x 6.5% ERP + 1.5% persistent IDR/governance premium = 15.5%",
+        "bear_pb_at_ke_155_roe_17p5": 1.05,
+        "bear_pb_at_ke_155_roe_20p0": 1.38,
+        "note_pb_at_ke_155_roe_20": "Even at base ROE 20% with elevated Ke of 15.5%: P/B = (20% - 6%) / (15.5% - 6%) = 14% / 9.5% = 1.47x. At 1.47x P/B on BV 3,261: IDR 4,794 -- just 9% above current price. In this scenario, the stock is fairly valued at current price. The re-rating thesis simply does not close the gap.",
+        "opportunity_cost_scenario": {
+          "hold_2_years_at_current_pb": "At 1.34x P/B, collect ~9.6% dividend yield per year = ~19.2% over 2 years in IDR terms. Less IDR depreciation of ~3-5%/year against USD = net USD return of ~9-14% over 2 years. An alternative EM investment with 15% USD return over 2 years is a better risk-adjusted outcome.",
+          "annual_dividend_yield_bear": 0.082,
+          "note_dividend_bear": "Under bear NPAT IDR 46T, payout 65%: DPS = IDR 46T x 65% / 93.5bn shares = IDR 320/share. Yield at IDR 4,390: 7.3%. Below the commonly cited 10% floor."
+        },
+        "bear_value_per_share_idr": 4794,
+        "note_this_debate_standalone": "Debate 3, standing alone, produces a bear value of IDR 4,794 -- barely above current price. It is not the lowest bear value; Debate 1+2 combined produces IDR 3,424. But Debate 3 is the reason the Daedalus BUY thesis can be wrong even if fundamentals are intact: the re-rating simply may not happen in the 12-month investment horizon.",
+        "downside_from_daedalus_base_idr": 949,
+        "downside_from_daedalus_base_pct": 16.5
+      },
+
+      "why_market_could_still_lose_money": "This is not a fundamental bear. It is a re-rating bear. The investor buys at 1.34x P/B expecting to sell at 1.76x P/B in 12 months. The bear says: the macro and governance premium does not compress in 12 months. The investor exits at 1.34x P/B, collects ~7-8% bear dividend yield (lower payout under bear NPAT), and has lost the 12-month opportunity cost. In USD terms, if IDR weakens a further 5% (to 18,700/USD), the USD return is negative. The 33.5% implied return in the Daedalus BUY case requires both (a) the fundamental ROE holding at 20% AND (b) the P/B re-rating from 1.34x to 1.60x within 12 months. The bear argues neither is assured.",
+
+      "evidence_quality": "OBSERVABLE-AND-NEAR",
+      "evidence_grade_rationale": "JCI outflows (IDR 61.3T), IDR/USD (17,845), MSCI review (scheduled June 18-23 2026), and BI hiking cycle (confirmed) are all live observable facts in the freeze data. The mechanism (macro premium persists, re-rating delayed) requires no new events to be valid -- it is already the current state. The MSCI review is the only binary: if Indonesia is not downgraded this week, the immediate trigger fails, but the structural overhang persists."
+    }
+  ],
+
+  "structural_and_forensic_check": {
+    "cash_conversion": {
+      "assessment": "CLEAN for a bank. Dividends are paid from net income, not operating cash flow. FY2025 payout 78% (IDR 43.6T) against NPAT IDR 56.3T is within reported earnings. No free cash flow concern in the FCFF sense -- this is the wrong metric for a bank.",
+      "concern": "The 78% payout in FY2025 was the highest on record. Market_facts.json attributes it to 'Danantara cash flow needs'. This means the controlling shareholder is extracting capital at a rate that constrains equity growth and loan book compounding. BV grew IDR 293.75T to IDR 304.9T (+3.8%) in Q1 2026 annualised -- below the 6% g assumption in the Daedalus justified P/B. If Danantara continues to require above-guidance payout ratios, the BV growth underpinning the terminal g assumption is impaired."
+    },
+    "sbc_and_buyback_quality": {
+      "buyback_idr_b": 1.17,
+      "buyback_purpose": "ESOP only. Not capital return. EPS impact +1.46%. Minimal shareholder value enhancement.",
+      "assessment": "No SBC manipulation concern. The buyback is for ESOP; it is a compensation cost, not buyback discipline. The EPS accretion is cosmetic."
+    },
+    "margin_sustainability": {
+      "key_flag": "NIM sustainability is the core forensic concern. The crux.json NIM path (4.6-4.65%) was constructed on a cutting-rate assumption now proven false. The freeze data (market_facts.json bi_rate_critical_update) explicitly states the prior NIM trajectory is 'factually wrong.' Management's FY2026 NIM guidance of 4.5-4.7% predates the 75bp BI hike. The guidance midpoint is likely to be the ceiling, not the center, in the revised environment.",
+      "receivables_vs_revenue": "Not applicable in the FCFF sense. Loan book growth +16% in Q1 2026 on post-BSI basis. Net NPL 0.41%. No receivables manipulation pattern.",
+      "npl_coverage": "237% NPL coverage is thick and real. However, the directed-credit exposure (Agrinas, +56% related-party loan growth) is not fully reflected in the NPL ratio because the loans are less than two quarters old. Provision coverage is a backward-looking metric on a forward-directed credit programme.",
+      "too_good_flag": "Q1 2026 credit cost of 58bp is below the bottom of FY2026 guidance (60-80bp). The base and bull scenarios both assume credit cost normalises to 65-70bp for the full year. The 58bp print is too-good to extrapolate: it reflects a very thick coverage ratio buffer AND a wholesale book that has not yet reflected any Agrinas-related stress. The Q1 2026 ROE of 22.1% annualised is an artifically clean quarter: low CoC, pre-hike NIM, and the BSI deconsolidation equity reduction not yet fully flowing through fee income. The second half of 2026 is the test."
+    },
+    "danantara_governance_flag": {
+      "summary": "The 78% dividend payout (above guidance), the +56% related-party loan growth, and the BSI deconsolidation (which removed IDR 4-5T of NPAT from the consolidated base while retaining BMRI's equity commitment to BRIS) are three simultaneous capital-allocation decisions that all benefit Danantara at the margin cost of BMRI minority shareholders. The pattern is not fraud -- it is the structural tension in a state bank with a sovereign wealth vehicle as controlling shareholder. It has an established historical parallel in BMRI's own history: the 2015-2016 credit cycle was partly driven by the same directed-lending dynamic under the prior government's infrastructure push. That cycle compressed ROE from 21% (FY2014) to 11.4% (FY2016)."
+    }
+  },
+
+  "scenario_spec": {
+    "label": "bear",
+    "mechanism": "BI hiking cycle compresses NIM to 4.2-4.4%; Agrinas-linked directed credit adds 30-40bp to credit cost by FY2027; macro premium (Ke 15.5%) prevents P/B re-rating",
+    "financials": {
+      "fy2026e": {
+        "loan_book_idr_b": 1728800,
+        "loan_growth_pct": 7.0,
+        "nim_pct": 4.30,
+        "nii_idr_b": 74338,
+        "fee_income_idr_b": 42000,
+        "total_revenue_idr_b": 116338,
+        "cir_pct": 44.5,
+        "opex_idr_b": 51770,
+        "ppop_idr_b": 64568,
+        "credit_cost_pct": 0.0095,
+        "credit_cost_idr_b": 16423,
+        "pretax_idr_b": 48145,
+        "tax_rate_pct": 20.0,
+        "npat_idr_b": 38516,
+        "npat_rounded_idr_b": 46000,
+        "note_npat_rounding": "The DuPont model yields IDR 38.5T from the identity (loan book x NIM + fee - opex - provisions). The Q1-actuals-adjusted bear (starting from Q1 NPAT IDR 15.4T, then adjusting for H2 NIM compression, higher CoC, and higher opex) yields IDR 44-50T. Conservative bear midpoint: IDR 46T. The DuPont is the mechanical floor; IDR 46T is the realistic bear.",
+        "eps_idr": 492,
+        "avg_equity_idr_b": 288000,
+        "roe_pct": 15.97,
+        "roe_label": "~16%"
+      },
+      "fy2027e": {
+        "loan_growth_pct": 6.0,
+        "nim_pct": 4.40,
+        "npat_idr_b": 48000,
+        "eps_idr": 514,
+        "avg_equity_idr_b": 300000,
+        "roe_pct": 16.0
+      },
+      "fy2028e_terminal": {
+        "nim_pct": 4.45,
+        "npat_idr_b": 51000,
+        "eps_idr": 546,
+        "avg_equity_idr_b": 318000,
+        "roe_pct": 16.0,
+        "note": "Terminal year. NIM partially recovers if BI reverses hike cycle in 2027-2028, but Agrinas credit cost settles at 85-90bp structurally, keeping ROE from recovering to base 20%."
+      }
+    },
+    "bear_decade_cagr_npat_pct": 4.5,
+    "bear_g_terminal": 0.055,
+    "bear_ke": 0.155,
+    "bear_roe_terminal": 0.160,
+    "bear_justified_pb": {
+      "formula": "(16.0% - 5.5%) / (15.5% - 5.5%) = 10.5% / 10.0% = 1.05x P/B",
+      "pb": 1.05,
+      "bvps_current": 3261,
+      "value_per_share_idr": 3424
+    },
+    "bear_implied_pe_ntm": 6.97,
+    "bear_net_debt_idr_b": 0,
+    "bear_shares_outstanding_bn": 93.5,
+    "value_per_share_idr": 3424,
+    "downside_to_base_intrinsic_idr": 2319,
+    "downside_to_base_intrinsic_pct": 40.4,
+    "downside_to_current_price_idr": -966,
+    "downside_to_current_price_pct": -22.0,
+    "note_bear_vs_current_price": "The bear intrinsic is IDR 3,424 vs current price IDR 4,390: 22% below today. The market is not already pricing the bear -- it prices something between base and bear on fundamentals but applies an elevated macro Ke. A confirmation of bear fundamentals (Q2 2026 NIM below 4.5%, NPL formation in the corporate book) would cause the market to simultaneously de-rate on ROE expectations AND keep the elevated Ke, compressing the P/B to ~1.0-1.1x territory (BNI analog at 0.9x P/B on 14% ROE). That would imply a price of IDR 3,261-3,588, which is 18-26% below current.",
+    "relative_value_floor": {
+      "method": "Peer through-cycle P/B",
+      "reference": "BNI (BBNI): 0.9x P/B on 14% ROE. BRI (BBRI): 1.1x P/B on 14.1% ROE. If BMRI's ROE falls to 16% (better than BNI/BRI), through-cycle P/B of 1.0-1.2x is the peer-mapped floor.",
+      "floor_price_idr_range": [3261, 3913],
+      "note": "1.0x P/B on BV/share 3,261 = IDR 3,261. 1.2x P/B = IDR 3,913. Current price (IDR 4,390) sits above the through-cycle peer floor even in the bear. This means the stock is not yet pricing the bear. The downside scenario requires both fundamental deterioration and market recognition."
+    }
+  },
+
+  "summary_spread": {
+    "base_intrinsic_daedalus_idr": 5743,
+    "bear_intrinsic_cassandra_idr": 3424,
+    "spread_idr": 2319,
+    "spread_pct_of_base": 40.4,
+    "current_price_idr": 4390,
+    "bear_downside_to_price_pct": -22.0,
+    "bear_pb": 1.05,
+    "base_pb": 1.76,
+    "note": "The spread is 40%. The base requires NIM to hold at 4.6%, BI to stop hiking, and Agrinas to perform. The bear requires only that the observable BI hiking cycle transmits to BMRI's NIM in line with BNI precedent (39bp compression in one year), and that one of the Danantara-directed credit programmes follows the historical SOE provisioning pattern. Neither requires a financial crisis."
+  },
+
+  "sources_cited": [
+    "BMRI_crux.json -- crux variable, bear mechanism, NIM trajectory, credit cost history",
+    "BMRI_valuation.json (Daedalus v3) -- base P/B computation, Ke build, sensitivity matrix, bear scenario",
+    "BMRI_market_facts.json (Pheme v3.1) -- bi_rate_critical_update (BI hike 75bp confirmed); IDR 17,845; JCI outflows IDR 61.3T; Samuel Sekuritas 'Bad for Banks' sector note; related_party_lending_flag +56% Q1 2026; MSCI review risk; consensus staleness warning; BNI NIM 3.76% precedent",
+    "BMRI_industry.json (Theia v3) -- BNI peer analog (NIM 4.15% to 3.76%, 39bp compression); BRI credit cycle (ROE 14.1%, NPL 2.15%); Danantara governance structure; SOE lending concentration",
+    "Bank Indonesia press releases sp_2810726 (May 20, 2026) and sp_2811926 (June 9, 2026) -- BI rate hike confirmations",
+    "Samuel Sekuritas sector note 'Bad for Banks: IDR Weakness & Higher Rates' (samuel.co.id/research-reports/bad-for-banks-idr-weakness-higher-rates/)",
+    "BNI 9M 2025 corporate presentation (bni.co.id) -- NIM 3.76% compression",
+    "Asia Times MSCI Indonesia purge May 2026 (asiatimes.com/2026/05/mscis-indonesia-purge-exposes-a-deeper-market-crisis/)",
+    "PwC Indonesia infrastructure bank lending Feb 2025 -- IDR 375.88T BMRI infrastructure loans",
+    "IDNFinancials BMRI Q1 2026 results -- related-party loan growth signal; corporate +29% Agrinas",
+    "BRI Danareksa Q1 2026 analysis (via market_facts.json) -- related-party loan growth +56% YoY"
+  ]
+}

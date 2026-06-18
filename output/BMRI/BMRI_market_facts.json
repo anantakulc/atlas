@@ -1,0 +1,369 @@
+{
+  "_meta": {
+    "ticker": "BMRI",
+    "exchange": "IDX",
+    "name": "PT Bank Mandiri (Persero) Tbk",
+    "currency": "IDR",
+    "freeze_date": "2026-06-18",
+    "engine_version": "Atlas v3",
+    "pheme_version": "v3.1",
+    "sources_verified": true,
+    "material_update_vs_prior_run": "BI rate has REVERSED from the cut-cycle assumed in prior outputs. BI raised +50bp on 20 May 2026 (to 5.25%) and a further +25bp off-schedule on 9 Jun 2026 (to 5.50%), driven by IDR weakness and Middle East-triggered global turmoil. The crux.json NIM base/bull/bear assumptions all rest on a falling-rate path that is now factually wrong. Daedalus must re-anchor all NIM and CoF assumptions to the new 5.50% BI rate environment. This is the single most important freeze-time fact in this run."
+  },
+
+  "price": {
+    "price_idr": 4390,
+    "price_date": "2026-06-18",
+    "source": "yfinance BMRI.JK databundle snapshot 2026-06-18T06:04Z",
+    "price_note": "Close 18 Jun 2026. Down from ~4,490 at prior freeze (Jun 17), consistent with the off-schedule BI rate hike on Jun 9 and continued foreign outflows."
+  },
+
+  "price_context": {
+    "week52_high_idr": 5375,
+    "week52_low_idr": 3650,
+    "ytd_pct": -3.93,
+    "return_1y_pct": -3.93,
+    "ma50_idr": 4342,
+    "ma200_idr": 4665,
+    "vs_52w_high_pct": -18.3,
+    "note": "Stock sits 18.3% below 52-week high (5,375) and 5.2% above 52-week low (3,650). Trading below its 200-day MA (4,665). Beta near-zero (-0.02 per yfinance), reflecting low correlation to global indices. JCI correlation is material: JCI down 12.78% YoY to 6,199 as of Jun 17 2026. Source: yfinance databundle; Trading Economics."
+  },
+
+  "market_stats": {
+    "market_cap_idr_b": 409733,
+    "market_cap_usd_b": 22.97,
+    "usd_idr_rate": 17845,
+    "usd_idr_date": "2026-06-17",
+    "usd_idr_source": "Trading Economics Jun 17 2026; IDR at weakest since 2020 on Middle East risk and BI FX defence",
+    "shares_outstanding_bn": 93.33,
+    "adtv_idr_bn": 1.456,
+    "adtv_usd_m": 81.6,
+    "adtv_note": "yfinance adtv field is in IDR (thousands): 1,455,789 IDR K = IDR 1.456bn/day = ~USD 81.6m at 17,845. Liquid large-cap.",
+    "dividend": {
+      "dps_fy2025_idr": 466.18,
+      "ex_div_date": "2026-05-11",
+      "pay_date": "2026-05-25",
+      "payout_ratio_fy2025_pct": 78,
+      "total_payout_idr_t": 43.6,
+      "trailing_yield_pct": 10.86,
+      "yield_at_current_price_pct": 10.6,
+      "fy2026_payout_guidance_pct": "65-70",
+      "fy2026_dps_implied_idr": "423-455 at consensus FY2026 EPS ~650 IDR and 65-70% payout",
+      "fy2026_yield_implied_pct": "9.6-10.4 at current price",
+      "note": "FY2025 payout of 78% was the highest on record, partly tied to Danantara cash flow needs. Management guided 65-70% for FY2026. Even at 65%, yield ~9.6% is the highest among Indonesian BUKU IV banks and acts as a near-term price floor. Sources: Yahoo Finance dividends; Q4 2025 earnings call; IndoPremier."
+    }
+  },
+
+  "valuation_multiples": {
+    "pe_ttm": 7.00,
+    "pe_ttm_source": "yfinance databundle (7.003). Cross-check: price 4,390 / EPS TTM ~627 IDR = 7.0x. Consistent.",
+    "pe_ntm_feed": 6.62,
+    "pe_ntm_source": "yfinance databundle (6.617). Implied NTM EPS = 4,390 / 6.62 = ~663 IDR. See artifact check.",
+    "pb_current": 1.34,
+    "pb_source": "yfinance databundle (1.342). Cross-check: equity FY2025 IDR 293.75T / 93.33bn shares = 3,148 IDR/share. Q1 2026 equity IDR 304.9T / 93.33bn = 3,266 IDR/share; P/B = 4,390 / 3,266 = 1.34x. Consistent.",
+    "pb_forward_2026f": 1.34,
+    "div_yield_trailing_pct": 10.86,
+    "roe_pct": 19.2,
+    "roe_source": "yfinance ratios field. Cross-check: Q1 2026 annualised bank-only ROE 22.1% per IDNFinancials; FY2025 consolidated ROE 20.3%. The 19.2% reflects trailing TTM blend across the BRIS deconsolidation. Forward consensus ROE ~19-21%.",
+    "gordon_pb_check": {
+      "formula": "P/B = (ROE - g) / (Ke - g)",
+      "at_current_price_implied_roe": "At 1.34x P/B, Ke 13% (updated for 5.5% BI rate), g 8%: implied ROE = 1.34 x (13%-8%) + 8% = 14.7%. Market prices in ROE erosion to 14.7% vs the 20%+ currently delivered. The gap is a ~6pp macro/governance discount.",
+      "at_base_roe_19pct": "P/B = (19%-8%) / (13%-8%) = 2.2x. The market at 1.34x prices in either a much higher Ke (risk premium) or much lower sustainable ROE than the base.",
+      "ke_note": "Ke updated to 13% using BI rate 5.5% + 1.0x ERP 6% + 1.5% Indonesia premium = 13%. Prior crux.json used a falling-rate Ke of ~12%; the rate hike shifts this up by ~75bp."
+    }
+  },
+
+  "eps_artifact_check": {
+    "verdict": "PASS WITH MATERIAL ADJUSTMENT FLAG",
+    "feed_ntm_eps_idr": 663.48,
+    "feed_ntm_eps_consensus_idr": 659.53,
+    "feed_ntm_period": "+1y",
+    "cross_checks": [
+      {"method": "Q1 2026 actual EPS 160.81 IDR annualised", "result_idr": "643-644"},
+      {"method": "Samuel Sekuritas Buy TP 5,700 at 1.7x FY2026F P/B", "result_idr": "~670 implied"},
+      {"method": "NH Korindo TP 5,600 at 1.4x FY2026F P/B", "result_idr": "~615-640"},
+      {"method": "Phintraco FY2026F net profit IDR 55.6T / 93.33bn shares", "result_idr": "595"},
+      {"method": "Q1 2026 net profit IDR 15.4T x 4 (annualised)", "result_idr": "~660 (upper bound; Q1 CoC was low)"}
+    ],
+    "cross_check_range_idr": "595-670",
+    "assessment": "yfinance NTM EPS of 663 IDR sits at the upper end. It has not been updated for: (1) BRIS deconsolidation removing ~IDR 5-7T of annual consolidated net income from the base, and (2) the BI rate hike cycle (May-June 2026) which will pressure NIM and CoF in H2 2026. The Q1 2026 annualised run-rate (~643 IDR) is the most reliable mechanical anchor. The Phintraco FY2026F estimate of 595 IDR is the most conservative named source and already assumes BRIS decon and some NIM pressure, but was issued pre-rate-hike.",
+    "recommended_forward_eps_idr": 630,
+    "recommended_forward_eps_rationale": "Midpoint of 595 (Phintraco, pre-hike) and 663 (yfinance upper). Reflects: Q1 2026 actuals discounted modestly for H2 NIM pressure from the 75bp BI rate hike, in line with the NH Korindo / Phintraco lower end of the range. The yfinance 663 IDR is plausible only if COF falls in H2 — that is now a bull assumption, not a base.",
+    "pe_ntm_at_recommended_eps": 6.97,
+    "gaap_contamination": "None detected. All income figures are operating bank net income. No extraordinary items.",
+    "bris_decon_treatment": "Confirmed: all FY2026 analyst estimates exclude BRIS. FY2025 reported figures include BRIS for the full year. Correct comparison is Q1 2026 bank-only vs Q1 2025 bank-only: +16.6% YoY, the clean read. Source: IDNFinancials 63207.",
+    "recommended_forward_pe": 7.0,
+    "source": "yfinance databundle; Samuel/NH Korindo/Phintraco analyst notes; IDNFinancials Q1 2026"
+  },
+
+  "bi_rate_critical_update": {
+    "flag": "MATERIAL CHANGE — BI RATE CYCLE REVERSED",
+    "prior_assumption_in_crux_json": "BI-Rate 4.75% held; 2 more cuts expected in 2026; terminal ~4.25%",
+    "current_fact": "BI raised +50bp on 20 May 2026 to 5.25%, then +25bp off-schedule on 9 Jun 2026 to 5.50%. Total 2026 hiking: +75bp. First rate hike cycle since April 2024. Rationale: IDR weakness (17,845/USD, down 9.2% YoY), Middle East war-triggered global turmoil, FX reserve depletion (lowest since ~2024), pre-emptive inflation defence. Source: BI press releases sp_2810726 and sp_2811926; Tempo; The Asian Banker.",
+    "nim_impact": "BMRI's NIM guidance 4.5-4.7% was set at Q4 2025 assuming a CUTTING cycle. With BI now at 5.5% and hiking, cost of funds will re-inflate as time deposits reprice. Asset yields on floating-rate wholesale loans partially benefit, but BMRI's SOE/infrastructure book has administratively-set rates that do not fully reprice. Net effect: NIM risk is skewed to the downside vs. guidance. Samuel Sekuritas sector note 'Bad for Banks: IDR Weakness & Higher Rates' explicitly flags this mechanism.",
+    "valuation_impact": "Higher BI rate raises Ke (cost of equity) in the DDM/Gordon P/B framework. Ke estimate rises from ~12% (pre-hike, using 4.75% risk-free) to ~13% (post-hike, using 5.5% risk-free). This alone reduces justified P/B by ~0.2-0.3x on the Gordon formula, partially explaining the stock's continued weakness.",
+    "daedalus_instruction": "Re-anchor NIM base to 4.4-4.5% (lower end of management guidance, given rate hike), bear to 4.2-4.3%. Ke should use 5.5% as risk-free rate. Do not use the crux.json NIM trajectory or the falling-rate terminal BI rate assumption. Also update loan growth to the lower end (7%) of guidance given rate-driven demand headwinds.",
+    "source_urls": [
+      "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2810726.aspx",
+      "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2811926.aspx",
+      "https://en.tempo.co/read/2107599/bank-indonesia-unexpectedly-raises-interest-rate-to-5-5",
+      "https://www.theasianbanker.com/press-releases/bank-indonesia-raises-bi-rate-to-5-50-to-stabilise-rupiah-amid-global-turmoil",
+      "https://samuel.co.id/research-reports/bad-for-banks-idr-weakness-higher-rates/"
+    ]
+  },
+
+  "macro_context": {
+    "bi_rate_current_pct": 5.50,
+    "bi_rate_date": "2026-06-09",
+    "bi_rate_path_2026": "BI was at 4.75% from mid-2025. Raised 50bp in May 2026 to 5.25%; then 25bp off-schedule Jun 9 to 5.50%. Rationale: IDR defence, Middle East turmoil, FX reserve protection.",
+    "idr_usd": 17845,
+    "idr_usd_change_yoy_pct": -9.23,
+    "idr_source": "Trading Economics Jun 17 2026",
+    "jci_ihsg": 6199,
+    "jci_change_yoy_pct": -12.78,
+    "jci_source": "Trading Economics Jun 17 2026",
+    "foreign_outflows_ytd_idr_t": 61.3,
+    "foreign_outflows_usd_bn": 3.36,
+    "foreign_outflows_note": "Cumulative 2026 YTD net foreign selling from IDX through mid-June 2026. One of the largest outflow years in recent history. Driven by global risk-off, IDR depreciation, BI rate hike uncertainty, and MSCI review concerns. Source: Jakarta Globe; IDNFinancials.",
+    "msci_review_risk": "Indonesia faces MSCI Global Market Accessibility Review on Jun 18 2026 and Annual Market Classification Review on Jun 23 2026. An MSCI accessibility downgrade would force passive selling across IDX large-caps including BMRI. Near-term tail risk, not a fundamental event. Source: Asia Times May 2026.",
+    "indonesia_gdp_growth_2026f": "4.7-5.0% (BI forecast; below prior 5.5% estimate given global headwinds)",
+    "system_credit_growth_dec2025": "9.7% YoY (OJK); expected 8-10% for FY2026, possibly at low end given rate hike"
+  },
+
+  "consensus": {
+    "target_mean_idr": 5699,
+    "target_median_idr": 5900,
+    "target_high_idr": 7950,
+    "target_low_idr": 3600,
+    "n_analysts": 23,
+    "n_buy_strong_buy": 17,
+    "n_hold": 5,
+    "n_sell_strong_sell": 1,
+    "rating": "Buy",
+    "rec_mean": 1.79,
+    "implied_upside_pct": 29.8,
+    "upside_note": "From price 4,390 to mean TP 5,699 = 29.8% upside. CRITICAL CAVEAT: No post-rate-hike TP revisions confirmed in available sources. Consensus was formed at BI rate 4.75%. It is likely stale and will be revised down once sell-side updates their models for the 5.5% rate environment.",
+    "source": "yfinance databundle; TradingView; Investing.com; MSN Money",
+    "named_firm_targets": [
+      {"firm": "Samuel Sekuritas",            "target_idr": 5700, "rating": "Buy",              "basis": "1.7x FY2026F P/B; stable NIM 4.7%; post-Q1 2026 note Apr 28 2026"},
+      {"firm": "NH Korindo Sekuritas",         "target_idr": 5600, "rating": "Buy",              "basis": "1.4x FY2026F P/B; solid earnings delivery; confirmed in Jun 2026 search"},
+      {"firm": "Phintraco Sekuritas",          "target_idr": 5700, "rating": "Buy",              "basis": "DDM + relative valuation; FY2026F net profit IDR 55.6T"},
+      {"firm": "BRI Danareksa Sekuritas",      "target_idr": 5900, "rating": "Buy",              "basis": "Confirmed per IndoPremier headline; strong fundamentals. Note: prior run cited 6,200 — 5,900 is the most recently confirmed figure"},
+      {"firm": "KB Valbury Sekuritas",         "target_idr": 5660, "rating": "Buy",              "basis": "2026F P/B basis; sector overweight"},
+      {"firm": "CGS International Sekuritas",  "target_idr": 6700, "rating": "Buy",              "basis": "Strong performance prospects"},
+      {"firm": "MNC Sekuritas",                "target_idr": 6050, "rating": "Buy",              "basis": "Buy recommendation"},
+      {"firm": "Victor Galliano (Smartkarma)", "target_idr": null,  "rating": "Buy (upgraded Q2 2026)", "basis": "Credit quality beat; attractive valuations; policy signals"},
+      {"firm": "Angus Mackintosh (Smartkarma)","target_idr": null,  "rating": "Buy",              "basis": "Growth engine; strong loan growth; attractive valuations"}
+    ]
+  },
+
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-04-28",
+      "trigger": "Q1 2026 results: net profit IDR 15.4T (+16.6% YoY); EPS 160.81 IDR vs est ~156 IDR (+2.9% beat)",
+      "firm": "Samuel Sekuritas",
+      "action": "Maintained Buy",
+      "old_pt": null,
+      "new_pt": 5700,
+      "rating_change": "No change",
+      "note": "Stable NIM 4.7%; BRIS decon absorbed; NII +11.3% YoY; CoF 1.97%; loan growth 16.2% post-decon.",
+      "source": "https://samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf"
+    },
+    {
+      "date": "2026-04-28",
+      "trigger": "Q1 2026 results",
+      "firm": "NH Korindo Sekuritas",
+      "action": "Maintained Buy",
+      "old_pt": null,
+      "new_pt": 5600,
+      "rating_change": "No change",
+      "note": "Report: 'Solid Earnings Delivery Amid Stable NIM Environment'. TP 5,600 confirmed (1.4x FY2026F P/B).",
+      "source": "https://www.nhis.co.id/bmri-1q26/"
+    },
+    {
+      "date": "2026-Q2",
+      "trigger": "Post-Q1 2026 results and valuation assessment",
+      "firm": "Victor Galliano (Smartkarma)",
+      "action": "Upgraded to Buy",
+      "old_pt": null,
+      "new_pt": null,
+      "rating_change": "Upgrade to Buy",
+      "note": "Better-than-expected credit quality; attractive valuations ~1.3x P/B; more market-friendly government policies.",
+      "source": "https://www.smartkarma.com/home/newswire/earnings-alerts/bank-mandiri-persero-bmri-earnings-1q-net-income-surges-to-15-4t-rupiah-up-17-y-y/"
+    },
+    {
+      "date": "2026-02",
+      "trigger": "FY2025 results: net profit IDR 56.3T (+0.9% YoY); Q4 2025 IDR 18.6T (+35% YoY)",
+      "firm": "Phintraco Sekuritas",
+      "action": "Raised price target",
+      "old_pt": 5600,
+      "new_pt": 5700,
+      "rating_change": "Maintained Buy",
+      "note": "FY2025 loan growth 13.4% exceeded 10-12% guidance. Q4 2025 standout performance. FY2026F net profit IDR 55.6T.",
+      "source": "InvestorTrust analyst TP compilation"
+    },
+    {
+      "date": "2026-Q1/Q2",
+      "trigger": "Q1 2026 results plus BRIS deconsolidation clarity",
+      "firm": "BRI Danareksa Sekuritas",
+      "action": "Maintained Buy",
+      "old_pt": null,
+      "new_pt": 5900,
+      "rating_change": "No change",
+      "note": "Strong fundamentals; solid credit quality. TP 5,900 confirmed per IndoPremier headline. Prior run cited 6,200 — cannot confirm if this was a TP cut or different note.",
+      "source": "https://www.indopremier.com/ipotnews/newsDetail.php?jdl=Target+Price+BMRI,+PT+BRI+Danareksa+Sekuritas+Rp+5.900+:+Buy&news_id=473983"
+    },
+    {
+      "date": "2026-post-rate-hike",
+      "trigger": "BI rate hike +75bp (May-June 2026)",
+      "firm": "Samuel Sekuritas (sector note)",
+      "action": "Sector warning issued; no confirmed BMRI TP revision",
+      "old_pt": null,
+      "new_pt": null,
+      "rating_change": "No confirmed change",
+      "note": "Samuel Sekuritas published 'Bad for Banks: IDR Weakness & Higher Rates' flagging NIM risk and asset quality concerns. No specific BMRI TP cut confirmed in available sources. The consensus TP is likely stale relative to the rate environment.",
+      "source": "https://samuel.co.id/research-reports/bad-for-banks-idr-weakness-higher-rates/"
+    }
+  ],
+
+  "post_earnings_summary": "Q1 2026 results (released Apr 20-28, 2026) were a positive beat: net profit IDR 15.4T (+16.6% YoY), ROE 22.1%, NIM 4.7% in-line with guidance, NPL 0.98%, CoC 58bp (low end of 60-80bp guidance). Analyst reaction was uniformly positive — Buy maintained or upgraded, no cuts. TPs range 5,600-6,700. CRITICAL CAVEAT: The BI rate hike cycle (75bp total May-June 2026) post-dates all Q1 2026 analyst notes. The consensus TP of ~5,699 was formed at BI rate 4.75%; it is likely stale. The 'bad for banks' sector warning is on record but no specific BMRI TP revision has been confirmed.",
+
+  "street_thesis": "BMRI is Indonesia's largest bank by assets post-BSI deconsolidation, growing loans at 2x system average, running a ~20-22% ROE, and paying a ~10% dividend yield, at a ~1.34x forward P/B — a deep discount to BCA's 3.5x P/B — driven by the market's macro risk premium (IDR weakness, BI rate uncertainty, foreign outflows) rather than fundamental deterioration. The discount closes as macro headwinds ease. The bear is a NIM compression and re-rating-delay thesis, not a fundamental deterioration story.",
+
+  "related_party_lending_flag": {
+    "note": "BRI Danareksa Q1 2026 analysis flagged that BMRI's related-party loan growth ran +56% YoY in Q1 2026 while retail loans remained weak. This reflects directed credit to Danantara-affiliated SOEs and state infrastructure programmes. Positive for volume (bull loan growth thesis) but adds governance and credit concentration risk. Not yet reflected in NPL (0.98% gross) but is the source of tail credit risk in the bear case.",
+    "source": "Investing.com BMRI Q1 2026 analysis summary"
+  },
+
+  "buyback_programme": {
+    "amount_idr_t": 1.17,
+    "approval_date": "2026-03-25",
+    "start_date": "2026-04-01",
+    "end_date": "2027-04-29",
+    "purpose": "ESOP and executive stock ownership programme allocation",
+    "eps_impact_pct": 1.46,
+    "governance_note": "Buyback is for ESOP purposes, not capital return to shareholders. Minimal shareholder value enhancement vs. the dividend.",
+    "source": "IDNFinancials 62278; Digivestasi; VOI.id"
+  },
+
+  "insider_institutional": {
+    "government_state_control": "Republic of Indonesia: 1 Dwiwarna (golden) share. Effective ~52% economic control via Danantara (BP BUMN), transferred Mar 22 2025.",
+    "danantara_pct_approx": 52,
+    "institutional_pct": 27.78,
+    "insider_pct": 54.69,
+    "insider_note": "The 54.69% yfinance 'insider' figure is the Danantara/state holding, not traditional insider ownership. True free float ~45-48%. Source: yfinance databundle.",
+    "governance_consideration": "Danantara's infrastructure mandate creates directed-credit risk. FY2025 infrastructure loans reached IDR 375.88T (+24.1% YoY to Feb 2025) per PwC. Related-party loan growth +56% in Q1 2026 reinforces this dynamic."
+  },
+
+  "short_interest": {
+    "data": "Not available in databundle or searches. IDX short-selling rules are restrictive; short interest not publicly reported in a comparable format.",
+    "note": "No material short-seller thesis identified. Price weakness attributed to foreign outflows and institutional selling."
+  },
+
+  "loan_growth_guidance": {
+    "fy2026_guidance_pct": "7-9 (management guidance set Feb 2026, pre-BI rate hike; lower end now more likely given rate hike pressuring retail/SME demand)",
+    "fy2025_actual_pct": 13.4,
+    "q1_2026_post_decon_pct": 16.2,
+    "bi_rate_impact": "75bp hike in May-June 2026 will dampen retail and SME credit demand. Wholesale/SOE lending (Danantara infrastructure) is less rate-sensitive. Base case: 7% FY2026 loan growth at the low end of guidance.",
+    "source": "Q4 2025 earnings call; Q1 2026 results; BI press releases"
+  },
+
+  "nim_trend": {
+    "fy2023_pct": 5.0,
+    "fy2024_pct": 4.9,
+    "fy2025_pct": 4.89,
+    "q1_2026_pct": 4.70,
+    "fy2026_guidance_pct": "4.5-4.7 (management guidance, PRE-rate-hike cycle; now at risk of being too optimistic)",
+    "bi_rate_hike_impact": "BI has now hiked 75bp (to 5.5%) since guidance was set. Cost of funds will re-inflate as time deposits reprice at higher rates. Asset yields on floating-rate wholesale loans partially benefit but SOE/infrastructure book rates are often administratively set. Net NIM effect: negative vs. guidance. Guidance range 4.5-4.7% is now the optimistic scenario. Downside: 4.2-4.3%.",
+    "casa_ratio_q1_2026_pct": 71.6,
+    "cof_q1_2026_pct": 1.97,
+    "source": "Q4 2025 earnings call; Q1 2026 results; Samuel Sekuritas sector note"
+  },
+
+  "npl_asset_quality": {
+    "gross_npl_fy2025_pct": 0.96,
+    "gross_npl_q1_2026_pct": 0.98,
+    "net_npl_q1_2026_pct": 0.41,
+    "coc_q1_2026_pct": 0.58,
+    "coc_guidance_fy2026_pct": "60-80",
+    "provision_coverage_pct": "271-304 (one of highest in Indonesian banking system)",
+    "system_gross_npl_dec2024_pct": 2.20,
+    "higher_rate_risk": "Elevated BI rates increase credit stress for SME and retail borrowers. BMRI's wholesale dominance provides insulation, but a rate-driven NPL cycle in consumer/micro segments would affect subsidiaries.",
+    "source": "Q1 2026 results; IDNFinancials 63207; OJK Dec 2024 banking update"
+  },
+
+  "capex_guidance": [],
+  "capex_guidance_note": "Not applicable to a bank in the industrial-capex sense. Loan growth guidance (7-9% FY2026, biased to low end given BI rate hike) is the demand variable for Theia's analysis.",
+
+  "key_datapoints_for_valuation": {
+    "total_assets_fy2025_idr_t": 2829.95,
+    "total_assets_q1_2026_estimate_idr_t": 2615,
+    "total_loans_fy2025_idr_t": 1895,
+    "total_equity_q1_2026_idr_t": 304.9,
+    "bvps_fy2025_idr": 3148,
+    "bvps_q1_2026_idr": 3266,
+    "casa_ratio_q1_2026_pct": 71.6,
+    "cost_of_funds_q1_2026_pct": 1.97,
+    "roe_fy2025_pct": 20.3,
+    "roe_q1_2026_annualised_pct": 22.1,
+    "roa_fy2025_pct": 2.14,
+    "ldr_fy2025_pct": 88.9,
+    "ldr_guidance_fy2026_pct": "92-93",
+    "tier1_capital_q1_2026_pct": 19.7,
+    "infrastructure_loans_feb2025_idr_t": 375.88,
+    "infrastructure_loan_growth_yoy_pct": 24.1,
+    "digital_tx_share_pct": 98,
+    "livin_users_mn": 30.7,
+    "kopra_tx_value_fy2024_idr_t": 19000,
+    "bris_deconsolidation_note": "BRIS deconsolidated Jan 1 2026 effective (formally Apr 2 2026). Asset base reduced ~IDR 214T. BMRI retains 51.47% economic ownership as equity investment. All FY2026F analyst estimates are standalone BMRI ex-BRIS.",
+    "government_ownership": "Republic of Indonesia: Dwiwarna share + effective ~52% economic control via Danantara (BP BUMN), transferred Mar 22 2025."
+  },
+
+  "market_view": {
+    "whats_priced_in": "At IDR 4,390 (1.34x P/B, ~7.0x NTM P/E at 630 IDR recommended EPS), the market prices approximately: ROE sustaining at 18-19% (below the 22.1% Q1 2026 print), NIM compressing to 4.4-4.5%, loan growth 7-8%, and an elevated macro risk premium for IDR weakness (17,845/USD) and BI rate uncertainty (5.5% and hiking). No credit for the digital franchise premium (Livin/Kopra) or a re-rating on macro stabilisation. Reverse-Gordon check: 1.34x P/B at Ke 13%, g 8% implies market-priced ROE of 14.7% — a ~6pp gap below the actual 20%+. This gap is the macro risk premium. It is large but not irrational given the active rate hike cycle.",
+    "street_view": "Sell-side: firmly bullish — 17 Buy / 5 Hold / 1 Sell among ~23 analysts; mean TP 5,699 (+30% upside). Bull argument: (1) deep P/B discount vs. history and vs. BCA; (2) 10% dividend yield floor; (3) Q1 2026 re-acceleration demonstrates post-BRIS narrative absorbed; (4) Danantara infrastructure mandate. CRITICAL: consensus was formed at BI rate 4.75%. The 75bp rate hike since late May has not been reflected in confirmed TP revisions. The consensus may be stale by 500-800 IDR per share on updated models.",
+    "post_earnings_analyst_actions": [
+      {"date": "2026-04-28", "firm": "Samuel Sekuritas",              "action": "Maintained Buy", "old_pt": null, "new_pt": 5700, "note": "Q1 2026 beat; stable NIM 4.7%"},
+      {"date": "2026-04-28", "firm": "NH Korindo Sekuritas",          "action": "Maintained Buy", "old_pt": null, "new_pt": 5600, "note": "Solid earnings; TP 5,600 confirmed"},
+      {"date": "2026-Q2",    "firm": "Victor Galliano (Smartkarma)",  "action": "Upgraded to Buy", "old_pt": null, "new_pt": null, "note": "Credit quality; valuation; policy signals"},
+      {"date": "2026-02",    "firm": "Phintraco Sekuritas",           "action": "TP raised",       "old_pt": 5600, "new_pt": 5700, "note": "FY2025 loan growth beat; Q4 2025 standout"},
+      {"date": "2026-Q1/Q2", "firm": "BRI Danareksa Sekuritas",       "action": "Maintained Buy",  "old_pt": null, "new_pt": 5900, "note": "Strong fundamentals; confirmed TP 5,900"},
+      {"date": "2026-Q2",    "firm": "CGS International Sekuritas",   "action": "Maintained Buy",  "old_pt": null, "new_pt": 6700, "note": "Strong performance prospects"},
+      {"date": "2026-Q2",    "firm": "KB Valbury Sekuritas",          "action": "Maintained Buy",  "old_pt": null, "new_pt": 5660, "note": "Sector overweight; P/B basis"},
+      {"date": "2026-post-hike", "firm": "Samuel Sekuritas (sector)", "action": "Sector warning issued", "old_pt": null, "new_pt": null, "note": "'Bad for Banks: IDR Weakness & Higher Rates'; no confirmed BMRI TP cut"}
+    ],
+    "news_narrative": "Six events dominate since prior freeze: (1) BRIS deconsolidation (Jan/Apr 2026): absorbed without negative rating actions. (2) FY2025 results (Feb 2026): net profit IDR 56.3T (+0.9% YoY); near-flat full year but Q4 2025 standout at +35% YoY; Phintraco raised TP. (3) Q1 2026 results (Apr 2026): re-acceleration — net profit IDR 15.4T (+16.6% YoY), ROE 22.1%, NIM 4.7%, NPL 0.98%. Beat estimates ~2.9%. Analysts uniformly maintained Buy or upgraded. (4) Buyback programme IDR 1.17T approved Mar 25 2026 for ESOP. (5) BI rate reversal (May-June 2026): +75bp total to 5.5% — the most material new fact in this freeze. IDR at 17,845/USD. JCI down 12.78% YoY. Foreign outflows IDR 61.3T YTD. MSCI accessibility review Jun 18/23 — passive selling risk. (6) Related-party loan growth +56% in Q1 2026: directed credit to SOE/Danantara affiliates accelerating faster than retail — governance/concentration signal.",
+    "sentiment_narrative": "Institutional/sell-side: firmly positive (17 Buy / 23 analysts). No confirmed downgrades or TP cuts post the BI rate hike. Retail/Indonesian investor sentiment: BMRI is widely held as a yield stock; 10% dividend anchors investors through the correction. The 'Sell Indonesia' macro narrative (IDR weakness, JCI outflows, BI rate hike) has weighed on all IDX financials. Fundamental confidence vs. macro caution characterises current sentiment. The rate hike cycle is the new overhang: until BI signals a pause, the re-rating thesis is on hold.",
+    "runway": "At 1.34x P/B vs. a Gordon-implied ~2.0-2.2x at base ROE, the stock has clear re-rating potential — but the re-rating catalyst requires either (a) BI pausing/reversing the hike cycle, (b) IDR stabilising, or (c) Q2/Q3 2026 results demonstrating NIM held above 4.4% despite rate hikes. The 10% dividend yield (~9.6% forward) partially compensates during the wait. The core valuation question has shifted: the prior crux (NIM compression from a cutting cycle) is now compounded by the NIM pressure from a hiking cycle. Daedalus must sensitise across both the floor NIM (4.2% bear) and the optimistic base (4.5%) more carefully than the crux.json did.",
+    "runway_verdict": "Fundamental runway intact: loan growth, asset quality (0.98% gross NPL, 271% coverage), digital franchise, and capital adequacy (Tier 1 19.7%) remain positive. The primary risk has shifted from 'slow re-rating' to 'active NIM headwind' given the BI rate hike cycle. This is a valuation risk plus a near-term earnings risk, not a franchise risk. Risk of a prolonged wait is real and higher than in the prior run.",
+    "market_lean": "bull / moderate. Evidence basis: 17/23 analysts Buy, mean TP 30% above price, Q1 2026 beat, 10% yield. Counter-weight: BI rate hike cycle (not priced by the street yet), IDR weakness, JCI outflows, MSCI review risk. Reconciliation: the bearish macro (BI rate hike) is not yet reflected in sell-side TPs and will suppress the re-rating until the hike cycle pauses. Fundamental lean remains bullish at 1.34x P/B on 20%+ ROE; the macro/rate risk dampens to 'moderate' rather than 'strong'."
+  },
+
+  "sources": [
+    {"label": "yfinance databundle BMRI.JK",                           "url": "local: output/BMRI/BMRI_databundle.json"},
+    {"label": "Yahoo Finance BMRI.JK price and analysis",              "url": "https://finance.yahoo.com/quote/BMRI.JK/"},
+    {"label": "Smartkarma Q1 2026 BMRI earnings alert",                "url": "https://www.smartkarma.com/home/newswire/earnings-alerts/bank-mandiri-persero-bmri-earnings-1q-net-income-surges-to-15-4t-rupiah-up-17-y-y/"},
+    {"label": "IDNFinancials Q1 2026 BMRI results",                    "url": "https://www.idnfinancials.com/news/63207/mandiri-profit-rises-16-6-in-q1-after-bris-deconsolidation"},
+    {"label": "Samuel Sekuritas BMRI 1Q26 note PDF",                   "url": "https://samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf"},
+    {"label": "NH Korindo BMRI 1Q26 update",                           "url": "https://www.nhis.co.id/bmri-1q26/"},
+    {"label": "IndoPremier BMRI Q1 2026 beat note",                    "url": "https://indopremier.com/ipotnews/newsDetail.php?group_news=IPOTNEWS&jdl=BMRI___1Q26_results__beat_from_strong_NII_PPOP_and_lower_CoC&name=&news_id=216689"},
+    {"label": "BRI Danareksa TP 5900 Buy headline IndoPremier",        "url": "https://www.indopremier.com/ipotnews/newsDetail.php?jdl=Target+Price+BMRI,+PT+BRI+Danareksa+Sekuritas+Rp+5.900+:+Buy&news_id=473983"},
+    {"label": "InvestorTrust analyst TP compilation",                  "url": "https://investortrust.id/market/101015/laba-lampaui-estimasi-saham-bank-mandiri-bmri-diganjar-dengan-target-harga-ini"},
+    {"label": "BI rate hike 50bp May 2026 press release",              "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2810726.aspx"},
+    {"label": "BI rate hike 25bp June 9 2026 press release (ID)",      "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2811926.aspx"},
+    {"label": "The Asian Banker BI rate 5.50%",                        "url": "https://www.theasianbanker.com/press-releases/bank-indonesia-raises-bi-rate-to-5-50-to-stabilise-rupiah-amid-global-turmoil"},
+    {"label": "Samuel Sekuritas sector note Bad for Banks",            "url": "https://samuel.co.id/research-reports/bad-for-banks-idr-weakness-higher-rates/"},
+    {"label": "Tempo Bank Indonesia raises rate to 5.5%",              "url": "https://en.tempo.co/read/2107599/bank-indonesia-unexpectedly-raises-interest-rate-to-5-5"},
+    {"label": "Trading Economics Indonesia interest rate",              "url": "https://tradingeconomics.com/indonesia/interest-rate"},
+    {"label": "Jakarta Globe Sell Indonesia foreign outflows",         "url": "https://jakartaglobe.id/business/sell-indonesia-sentiment-pushes-foreign-outflows-past-33-billion"},
+    {"label": "IDNFinancials JCI foreign flows update",                "url": "https://www.idnfinancials.com/news/64753/jci-rises-7-38-but-foreign-still-recorded-idr-5-98-trillion-outflow"},
+    {"label": "Asia Times MSCI Indonesia purge May 2026",              "url": "https://asiatimes.com/2026/05/mscis-indonesia-purge-exposes-a-deeper-market-crisis/"},
+    {"label": "Smartkarma FY2025 BMRI earnings alert",                 "url": "https://www.smartkarma.com/home/newswire/earnings-alerts/bank-mandiri-persero-bmri-earnings-fy-net-income-aligns-with-estimates-at-55-78-trillion-rupiah/"},
+    {"label": "Jakarta Globe FY2025 BMRI profit article",              "url": "https://jakartaglobe.id/business/bank-mandiri-books-3-billion-profit-in-2025"},
+    {"label": "IDNFinancials BMRI buyback IDR 1.17T",                  "url": "https://www.idnfinancials.com/news/62278/bmri-plans-idr-1-17-trillion-share-buyback-on-april-2026"},
+    {"label": "IDNFinancials Danantara BMRI shares transfer",          "url": "https://www.idnfinancials.com/news/53384/danantara-operational-holding-receives-52-of-bmri-shares"},
+    {"label": "PwC Indonesia infrastructure bank lending Feb 2025",    "url": "https://www.pwc.com/id/en/media-centre/infrastructure-news/april-2025/bank-lending-to-the-infrastructure-sector-continues-to-flow-at-the-beginning-of-2025.html"},
+    {"label": "BBRI Q1 2026 results Investing.com",                    "url": "https://www.investing.com/news/company-news/bank-rakyat-indonesia-q1-2026-slides-profit-jumps-14-nim-beats-guidance-93CH-4655098"},
+    {"label": "TradingView BMRI forecast",                             "url": "https://www.tradingview.com/symbols/IDX-BMRI/forecast/"}
+  ]
+}

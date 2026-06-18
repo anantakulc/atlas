@@ -1,0 +1,151 @@
+{
+  "ticker": "BMRI.JK",
+  "as_of": "2026-06-18",
+  "crux_variable": "ROE trajectory under NIM compression versus credit quality at cycle lows",
+  "one_line": "BMRI's ROE is being squeezed between two forces moving in opposite directions: NIM compresses as Bank Indonesia cuts rates and the wholesale-heavy loan book reprices fast, while credit cost sits near a structural low at 58-68bps; the call is whether low credit cost durability plus improving CIR and digital fee growth can absorb the remaining ~25-35bps of NIM compression, leaving ROE in the 19-20% range, or whether a macro shock or SOE credit event drives it toward 16-17%.",
+  "decomposition": {
+    "identity": "ROE = [NIM x Earning Assets + Fee Income - (CIR x Total Revenue) - (Credit Cost x Loans)] x (1 - tax) / Average Equity. Post-BSI deconsolidation (effective Jan 2026), average equity falls ~IDR 30-35T and the consolidated loan base falls ~IDR 275T, mechanically supporting ROE on a cleaner standalone base.",
+    "drivers": [
+      {
+        "driver": "NIM (net interest margin: the spread between lending yield and deposit cost)",
+        "current_level": "4.70% in Q1 2026 (FY2025: 4.89%; FY2024: 5.15%)",
+        "trajectory": "Compressing. Bank Indonesia cut its benchmark BI7DRR by 100bps during 2025 to 4.75% and signals a further 50bps possible in 2026, targeting ~4.25% terminal. BMRI guided NIM at 4.5-4.7% for FY2026 (revised down from 4.6-4.8% after BSI deconsolidation removed higher-yielding sharia assets). The wholesale loan book (58% of loans) reprices at floating rates closely tied to BI-Rate, so asset yields fall quickly after each cut. Deposit repricing is slower, but CASA (current and savings accounts, the low-cost deposit base) grew 12.6% in FY2025, which partially offsets the funding cost disadvantage. The system-wide NIM was 4.45% in May 2025 (OJK), which is below BMRI's current NIM, confirming BMRI still runs above the sector average. The key unknown is whether a pause in BI rate cuts in H2 2026 allows NIM to stabilise near the 4.6-4.7% level.",
+        "source": "BMRI Q4 2025 earnings call (investing.com/news/transcripts/earnings-call-transcript-bank-mandiri-q4-2025-shows-robust-growth-93CH-4486999); IDNFinancials BSI deconsolidation article (idnfinancials.com/news/63207); Bank Indonesia BI rate cut press release (bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2721925.aspx); OJK Banking Sector Update May 2025 (iru.ojk.go.id/iru/dataandstatistics/detaildataandstatistics/13898)",
+        "evidence_type": "company_guidance + regulator_published"
+      },
+      {
+        "driver": "Credit cost (provisions / average gross loans)",
+        "current_level": "58bps FY2025 actuals; 58bps annualized in Q1 2026. NPL gross 0.98%, NPL net 0.41%, coverage 237%.",
+        "trajectory": "Near-cycle lows. Management guides 60-80bps for FY2026, unchanged post-deconsolidation. The FY2024 credit cost was 79bps, declining from 85bps in FY2023. The wholesale-dominated book (corporate + commercial = 58% of loans) has structurally lower NPL formation than retail or MSME. Peer BRI, which pushed aggressively into MSME/government-linked retail credit, saw NPL rise to 2.15% and ROE collapse to 14.1% in FY2025. BMRI's coverage ratio of 237-304% provides a significant buffer against sudden deterioration. Key downside risk: the Agrinas government-directed agriculture programme drove corporate loan growth of 29% YoY in Q1 2026; if this policy-directed lending segment faces restructuring, credit cost could spike 30-40bps in a single quarter. A broader SOE stress event (Garuda, Krakatau Steel, or similar) is the historical precedent for lumpy provisioning.",
+        "source": "BMRI Q4 2025 earnings call; IDNFinancials Q1 2026 results (idnfinancials.com/news/63207); BBRI FY2025 results (idnfinancials.com/news/61682); Samuel Sekuritas 1Q26 report (samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf)",
+        "evidence_type": "company_filed + sellside_cited"
+      },
+      {
+        "driver": "Loan growth (volume scaling of NII)",
+        "current_level": "13.4% YoY consolidated FY2025; +16% YoY Q1 2026 post-BSI (corporate +29% YoY led by Agrinas, commercial +13%). Industry grew 9.7% in FY2025 and 7.77% in Jun 2025 (OJK).",
+        "trajectory": "Decelerating to guidance. BMRI guides 7-9% for FY2026 (vs 13.4% in FY2025). Bank Indonesia forecasts system credit growth of 8-12% in 2026 and GDP of 5.33-5.4%. Q1 2026 at +16% is above guidance, boosted by Agrinas-linked lending which may not persist. BMRI's LDR guidance drops to 92-93% from 95%, signalling intentional loan-to-deposit discipline. Consumer/retail loans were flat (+1.4% in FY2025), and unless retail accelerates, the loan mix remains wholesale-heavy at structurally lower yields.",
+        "source": "BMRI Q4 2025 earnings call; IDNFinancials Q1 2026; OJK credit growth Jun 2025 (iru.ojk.go.id/iru/dataandstatistics/detaildataandstatistics/13898); TradingEconomics Indonesia loan growth (tradingeconomics.com/indonesia/loan-growth); Bank Indonesia GDP forecast (tradingeconomics.com/indonesia/news/news/501213)",
+        "evidence_type": "company_guidance + macro_consensus"
+      },
+      {
+        "driver": "Cost efficiency (CIR, cost-to-income ratio)",
+        "current_level": "43.5% FY2025. CIR spiked through 2025 on one-off personnel and G&A charges (~10-12% of opex in audit-related items) before moderating in Q4 2025 to ~43.5%.",
+        "trajectory": "Improving structurally. Management targets CIR of 40% for FY2026 post-BSI deconsolidation (improved from 42-43% pre-deconsolidation). BSI's removal reduces consolidated opex more than proportional revenue, because BSI's retail sharia operations had higher unit costs. Digital channels (Livin' by Mandiri: +19.8% YoY fee income in FY2025; Kopra wholesale: 19,000T+ transaction value) provide scale-efficient fee growth. Opex growth guided at mid-to-low-single-digit in FY2026 versus 15% in FY2025. Fee income grew 14.5% YoY in FY2025 to IDR 48.5T (31% of operating income), which is the structural lever offsetting NIM compression.",
+        "source": "BMRI Q4 2025 earnings call; IDNFinancials BSI deconsolidation article; BMRI digital fee income press (neraca.co.id/article/228418); Samuel Sekuritas 1Q26 report",
+        "evidence_type": "company_guidance + company_filed"
+      }
+    ]
+  },
+  "base": {
+    "crux_value": "ROE 19-20% through FY2027 on the post-BSI consolidated basis",
+    "argument": "The honest most-likely outcome is ROE in the 19-20% band. BMRI entered 2026 printing 22.1% ROE in Q1 2026, driven by low credit cost (58bps) and the equity denominator reduction from BSI deconsolidation. The base assumes this partial mean-reverts over the full year as: (a) credit cost normalizes toward 65-70bps within the 60-80bps guidance, and (b) NIM drifts from Q1 2026's 4.7% to the FY2026 midpoint of ~4.6%, as further BI rate cuts in H2 2026 compress asset yields. The offset factors are real and sourced: CIR improves to ~41% from 43.5% as digital channels scale and BSI opex disappears; fee income grows ~8-9% annually driven by Livin' and Kopra; loan growth of 8% adds volume to NII. Annualizing Q1 2026 NPAT of IDR 15.4T gives IDR 61.6T, already above the FY2025 IDR 56.3T. Base FY2026 NPAT of ~IDR 61-63T on average equity of ~IDR 310T yields ROE of ~19.5-20%. By FY2027, as rates stabilise and NIM settles near 4.65%, NPAT grows ~8% to IDR 66-68T on ~IDR 335T equity, giving ROE ~19.5-20%. This is not optimistic: it requires credit cost to stay within guidance, which is supported by 237% NPL coverage and a wholesale-dominant portfolio historically below 1% NPL.",
+    "key_assumptions": [
+      "NIM compresses to ~4.55-4.65% by end-FY2026, then stabilises as BI rate cuts slow",
+      "Credit cost 65-70bps FY2026, 65bps FY2027; NPL gross stays below 1.1%",
+      "Loan growth 8-9% FY2026-2027, within management guidance and system forecast",
+      "CIR improves to 41-40% by FY2026-2027 on digital operating leverage and BSI removal",
+      "Fee income grows 8-9% YoY driven by digital and transactional channels",
+      "Indonesia GDP 5.0-5.3%; no major macro shock or SOE credit event"
+    ]
+  },
+  "bull": {
+    "crux_value": "ROE expanding toward 21-22.5% by FY2027",
+    "argument": "The bull requires two sourced developments to materialise simultaneously. First, NIM stabilises at 4.7-4.8% rather than falling to 4.5-4.6%: this is possible if Bank Indonesia pauses after one more cut (rate floors at 4.25-4.50%) and BMRI's CASA ratio improves as Livin' and Kopra onboard more transactional deposits. CASA grew 12.6% in FY2025; at 82-83% CASA ratio (from current ~72%), the marginal funding cost advantage over term deposits widens the net spread. Second, digital fee income accelerates beyond the base: Livin' had 30.7M users as of Q1 2025 growing at 23% YoY; Kopra transaction value of IDR 19-26T YoY is growing at 17-22%. Even a modest improvement in fee monetization rate (from sub-0.05% to 0.06% of Kopra transaction value) adds IDR 10-12T annually in fee income. Under bull assumptions, FY2026 NPAT reaches IDR 67T and FY2027 reaches IDR 75-77T on average equity of ~IDR 335T, implying ROE of 22-22.5%. Infrastructure-linked corporate lending (Prabowo government IKN development programme, referenced in BI Jan 2026 Republic of Indonesia Presentation Book) provides an additional identified pipeline for BMRI as the government's primary wholesale bank. Q1 2026 already demonstrated 16% loan growth with 29% corporate growth, showing the infrastructure pipeline is real and actively booked.",
+    "key_assumptions": [
+      "NIM stabilises at 4.7-4.8% as BI pauses after 1-2 more cuts and CASA improvement accelerates",
+      "Credit cost 55-60bps; no SOE credit events; partial reversal from over-reserved accounts",
+      "Loan growth 10-12% YoY led by wholesale infrastructure and IKN-related programmes",
+      "Digital fee income grows 13-15% YoY; Livin' reaches 40M+ users with higher ARPU",
+      "CIR falls to 39-40% by FY2027 on digital scale",
+      "BSI deconsolidation is clean with no contingent liabilities flowing back to BMRI"
+    ]
+  },
+  "bear": {
+    "crux_value": "ROE compressing to 15-17% by FY2027",
+    "argument": "The bear has two independent mechanisms, each sufficient on its own. Mechanism 1: sharper NIM trough. If BI cuts more aggressively (100bps in 2026 to 3.75%, prompted by a sharp rupiah appreciation or growth shortfall), floating-rate wholesale loan yields fall almost immediately while deposit repricing lags by 3-6 months. BMRI's wholesale-heavy book (~65% of loans at floating rates) means NIM could fall to 4.2-4.3%. BNI, a comparably wholesale-oriented state bank but with weaker CASA, already saw NIM fall from 4.15% to 3.76% in 9M 2025. If BMRI follows a similar path one to two years later, NIM at 4.2-4.3% compresses NPAT materially: 30bps of NIM on IDR 1.75T earning assets = approximately IDR 5.25T of revenue loss. Mechanism 2: SOE credit event. BMRI's corporate book is concentrated in state-linked enterprises. Agrinas-driven +29% corporate loan growth in Q1 2026 is government-directed agriculture lending. Historically, directed credit programmes in Indonesia (Garuda Airlines, Krakatau Steel, fertiliser SOEs) have resulted in periodic large-ticket NPL formation. A single SOE credit event adding 30-40bps to credit costs in one year would push total credit cost to 100-120bps. Under the bear, FY2026 NPAT falls to IDR 50-52T and FY2027 to IDR 52-54T. On average equity of ~IDR 330T, ROE is 16-17%. The bear is not a crisis scenario; the 2015-2016 commodity downcycle saw BMRI ROE fall to approximately 18%. The COVID-2020 year is the floor reference: NPAT ~IDR 28T, ROE ~13%.",
+    "key_assumptions": [
+      "NIM falls to 4.2-4.3% by FY2026 as BI cuts 100bps and wholesale yields compress faster than CoF",
+      "Credit cost rises to 100-120bps from a single large SOE event; NPL gross rises above 1.5%",
+      "Loan growth slows to 4-6% as private credit demand weakens amid IDR depreciation and global uncertainty",
+      "CIR deteriorates to 44-46% if revenue disappoints and opex is sticky on digital investment",
+      "Agrinas government loans face restructuring or accelerated NPL formation"
+    ]
+  },
+  "ceiling": "ROE above 22-23% is structurally difficult. BCA (BBCA), with its uniquely low-cost CASA franchise (CASA ratio 85%+), industry-leading CIR of 32%, and NIM of 5.8%, runs at 24.1% ROE. BMRI's CASA ratio is ~72-73% (lower because its retail deposit base is smaller relative to its wholesale lending scale), NIM is structurally 90-130bps below BCA, and its CIR benchmark is 40-43%. The ceiling for BMRI without a structural franchise transformation is approximately 22-23% ROE. The earning asset base is physically bounded by the Indonesian banking system's loan pool: system loans are IDR 8,060T (OJK Jun 2025), of which BMRI holds approximately 21-24%. BMRI is already the system's largest single lender; share-taking is marginal.",
+  "floor": "The FY2021 COVID floor: NPAT ~IDR 28T on equity ~IDR 210T, ROE ~13%. In the current (post-pandemic, post-BSI) structure, the floor is higher because the capital base is larger and the provisioning buffer is thicker (237% coverage vs. lower in 2020). Under a 2020-equivalent stress, a plausible floor is ROE ~14-15%: NPAT ~IDR 43-46T on equity ~IDR 310T. This is not forecast; it is the boundary of the loss function.",
+  "contracted_vs_extrapolated": "CONTRACTED (high confidence): Q1 2026 NPAT IDR 15.4T is reported. BSI deconsolidation is legally complete (Jan 23, 2026). FY2026 guidance for NIM 4.5-4.7%, credit cost 60-80bps, loan growth 7-9%, CIR 40% is management-published and on the record. Agrinas corporate loans are government-directed with policy support. EXTRAPOLATED (medium confidence): FY2026-2027 loan growth at 8-9% requires continued government-linked corporate and commercial ecosystem lending, extrapolated from Q1 2026 trajectory within system-level forecasts (BI: 8-12%). NIM stabilising at 4.6-4.65% by FY2027 requires BI to pause cuts after 2026, consistent with the central bank's stated inflation-targeting framework. HOPED-FOR (lower confidence): Digital fee income displacing NIM dependency at 13-15% growth requires Livin' and Kopra to monetize at rates not yet demonstrated in fee-per-transaction terms. CIR reaching 38-39% (BCA-direction) requires multi-year investment without revenue volatility.",
+  "sources": [
+    {
+      "name": "BMRI Q4 2025 earnings call transcript",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-bank-mandiri-q4-2025-shows-robust-growth-93CH-4486999",
+      "tier": "company_filed",
+      "key_data": "FY2025 NIM 4.89%, credit cost 58bps, NPL gross 0.96%, loan growth 13.4%, ROE 20.3%, NII IDR 106.2T, non-interest income IDR 48.5T (+14.5% YoY), CIR 43.5%; FY2026 guidance: NIM 4.5-4.7%, credit cost 60-80bps, loan growth 7-9%, CIR 40%"
+    },
+    {
+      "name": "IDNFinancials: BMRI profit rises 16.6% in Q1 after BRIS deconsolidation",
+      "url": "https://www.idnfinancials.com/news/63207/mandiri-profit-rises-16-6-in-q1-after-bris-deconsolidation",
+      "tier": "company_filed",
+      "key_data": "Q1 2026 NPAT IDR 15.4T (+16.6% YoY), NIM 4.7%, loan growth +16% YoY (corporate +29% Agrinas, commercial +13%), credit cost 58bps, NPL gross 0.98%, NPL net 0.41%, coverage 237%; revised FY2026 guidance: NIM 4.5-4.7%, LDR 92-93%, CIR 40%"
+    },
+    {
+      "name": "Samuel Sekuritas BMRI 1Q26 Results Report",
+      "url": "https://samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf",
+      "tier": "sellside",
+      "key_data": "Beat on NII/PPOP; credit cost 58bps at lower end of 60-80bps guidance; stable NIM environment post-BSI"
+    },
+    {
+      "name": "Bank Indonesia BI-Rate lowered to 4.75%, Sep 2025",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2721925.aspx",
+      "tier": "regulator_published",
+      "key_data": "BI7DRR cut 25bps to 4.75% Sep 2025; Deposit Facility cut 50bps to 3.75%; 100bps total 2025 cuts"
+    },
+    {
+      "name": "IDNFinancials: Bank Indonesia signals rate cuts in 2026",
+      "url": "https://www.idnfinancials.com/news/59695/bank-indonesia-signals-rate-cuts-in-2026",
+      "tier": "news_cited",
+      "key_data": "BI signals further cuts in 2026; analysts expect 50bps cumulative to ~4.25%"
+    },
+    {
+      "name": "OJK Banking Sector Update May 2025",
+      "url": "https://iru.ojk.go.id/iru/dataandstatistics/detaildataandstatistics/13898/banking-sector-update-may-2025",
+      "tier": "regulator_published",
+      "key_data": "System NIM 4.45% May 2025; system loan growth 7.77% YoY to IDR 8,060T Jun 2025; ROA 2.51%"
+    },
+    {
+      "name": "BBRI FY2025 annual results",
+      "url": "https://www.idnfinancials.com/news/61682/bbri-posted-net-profit-idr57-13-trillion-throughout-2025",
+      "tier": "company_filed",
+      "key_data": "BRI NIM 6.89%, ROE 14.1%, NPL 2.15%, net profit IDR 57.1T (-5.3%); peer reference for credit cycle divergence"
+    },
+    {
+      "name": "Bank Mandiri FY2025 results summary",
+      "url": "https://jakartaglobe.id/business/bank-mandiri-books-3-billion-profit-in-2025",
+      "tier": "company_filed",
+      "key_data": "FY2025 net profit IDR 56.3T (+0.9%), NIM 4.89% (-26bps YoY), NII IDR 106.2T, non-NII IDR 48.5T, loan growth 13.4%"
+    },
+    {
+      "name": "Bank Mandiri BMRI digital fee income (neraca.co.id)",
+      "url": "https://www.neraca.co.id/article/228418/bank-mandiri-catat-fee-based-income-dari-layanan-digital-capai-rp548-triliun",
+      "tier": "company_filed",
+      "key_data": "Digital fee income IDR 5.48T through 9M 2025 (+13.3% YoY); Livin' fees +19.8% YoY; subsidiary contributions +24.5% YoY; total digital fee FY2025 IDR 7.47T"
+    },
+    {
+      "name": "Indonesia 2026 economic outlook (business-indonesia.org)",
+      "url": "https://business-indonesia.org/news/indonesia-s-economic-outlook-2026-resilient-but-acceleration-elusive",
+      "tier": "research_firm",
+      "key_data": "Indonesia GDP forecast 5.0-5.3% for 2026; credit growth 8-12% BI target; BI terminal rate 4.25%"
+    },
+    {
+      "name": "BNI 9M 2025 NIM data",
+      "url": "https://www.bni.co.id/Portals/1/BNI/Perusahaan/HubunganInvestor/Docs/2025/BNI-Corporate-Presentation-3Q2025.pdf",
+      "tier": "company_filed",
+      "key_data": "BNI NIM 3.76% 9M 2025 (down from 4.15% YoY); ROE 14.11%; illustrates wholesale state-bank NIM compression risk"
+    },
+    {
+      "name": "BMRI FY2024 metrics (Brights/Samuel research)",
+      "url": "https://link.brights.id/brids/storage/37418/20250207-BMRI.pdf",
+      "tier": "sellside",
+      "key_data": "FY2024: NIM 5.15%, ROE 21.2-21.4%, credit cost 0.79%, loan growth 19.5%"
+    }
+  ]
+}
