@@ -1,0 +1,397 @@
+{
+  "ticker": "BMRI.JK",
+  "as_of": "2026-06-18",
+  "currency": "IDR",
+  "business_overview": {
+    "description": "Bank Mandiri is Indonesia's largest bank by total assets (IDR 2,830T consolidated as of Dec 2025, including Bank Syariah Indonesia; ~IDR 2,615T standalone post-BSI deconsolidation in April 2026). It is a state-owned commercial bank with a full-service financial conglomerate structure spanning wholesale banking (the dominant segment), retail and consumer banking, SME lending, treasury and markets, investment banking, insurance, and asset management. The Government of Indonesia (via Danantara/BP BUMN) holds effective control through a 52% Series B stake (transferred March 22, 2025) plus a golden Series A Dwiwarna share.",
+    "founding": "1998, via merger of four state banks (Bank Bumi Daya, Bank Dagang Negara, Bank Ekspor Impor, Bank Pembangunan Indonesia) during the Asian financial crisis recapitalisation",
+    "headquarters": "Jakarta, Indonesia",
+    "employees_approx": 38777,
+    "business_type": "bank",
+    "ownership": {
+      "danantara_bp_bumn_pct": 52.0,
+      "series_a_dwiwarna": "Republic of Indonesia (1 special share with veto rights)",
+      "public_float_pct": 48.0,
+      "institutional_pct": 27.78,
+      "note": "52% transferred to Danantara (BP BUMN) effective March 22, 2025. Danantara is Indonesia's new sovereign investment vehicle tasked with channelling SOE dividends and capital into infrastructure investment. No change to BUMN status; Danantara's infrastructure mandate creates directed lending pipeline through BMRI."
+    },
+    "digital_platforms": {
+      "livin_by_mandiri": "Retail super-app; 30.7M registered users as of Q1 2025, growing ~23% YoY. Handles 98% of retail transactions digitally. Fee income from Livin' +19.8% YoY in FY2025.",
+      "kopra_by_mandiri": "Wholesale and corporate digital platform. IDR 19,000-26,000T in transaction value processed annually (growing 17-22% YoY). Serves 500,000+ corporate distributors and suppliers.",
+      "digital_fee_income_fy2025_idr_b": 7470,
+      "source": "neraca.co.id/article/228418; BMRI Q4 2025 earnings call"
+    },
+    "key_financials_fy2025": {
+      "revenue_idr_b": 140173,
+      "nii_idr_b": 106760,
+      "non_interest_income_idr_b": 48500,
+      "npat_idr_b": 56295,
+      "total_assets_idr_b": 2829948,
+      "total_loans_idr_b": 1895000,
+      "total_equity_idr_b": 293751,
+      "nim_pct": 4.89,
+      "roe_pct": 20.3,
+      "roa_pct": 2.14,
+      "npl_gross_pct": 0.96,
+      "credit_cost_bps": 58,
+      "cir_pct": 43.5,
+      "loan_growth_pct": 13.4,
+      "source": "BMRI Q4 2025 earnings call (investing.com/news/transcripts/earnings-call-transcript-bank-mandiri-q4-2025-shows-robust-growth-93CH-4486999); Jakarta Globe (jakartaglobe.id/business/bank-mandiri-books-3-billion-profit-in-2025)"
+    },
+    "key_financials_q1_2026": {
+      "npat_idr_b": 15384,
+      "npat_growth_yoy_pct": 16.6,
+      "nim_pct": 4.70,
+      "roe_pct": 22.1,
+      "npl_gross_pct": 0.98,
+      "npl_net_pct": 0.41,
+      "npl_coverage_pct": 237,
+      "credit_cost_bps": 58,
+      "loan_growth_pct": 16.0,
+      "basis": "Post-BSI deconsolidation",
+      "source": "IDNFinancials (idnfinancials.com/news/63207); Samuel Sekuritas 1Q26 report (samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf)"
+    }
+  },
+  "segments": [
+    {
+      "name": "Wholesale Banking (Corporate and Commercial)",
+      "description": "Largest segment by loans and revenue contribution. Serves large corporates, SOEs, infrastructure borrowers, multinationals, and government entities. Products: term loans, project finance, working capital facilities, trade finance, cash management (Kopra), FX, syndicated loans, and structured products.",
+      "loan_share_approx_pct": 58,
+      "loan_growth_fy2025": "Corporate +26.7% YoY (IDR 620T); commercial +23.0% YoY (IDR 293T)",
+      "nature": "Growth-oriented / high-volume / lower-NIM per unit than retail but dominant by size",
+      "margin_characteristics": "Lower unit NIM than retail (typically 3-4% on large corporate vs 6-8% on SME/consumer) but generates the bulk of fee income via trade finance, FX, and cash management. Non-interest fee income materially cross-subsidises the NIM gap.",
+      "customer_concentration": "Concentrated in SOEs and large Indonesian conglomerates. BMRI is the primary banker for a substantial share of Indonesian SOEs. Top-5 customer concentration not disclosed but corporate book Agrinas-driven growth (+29% YoY Q1 2026) demonstrates single-programme sensitivity.",
+      "key_risk": "SOE credit events (lumpy large-ticket NPLs), directed lending at below-market rates under Danantara mandate",
+      "competitive_position": "Market leader in Indonesia for large-ticket wholesale and infrastructure lending",
+      "source": "Samuel Sekuritas BMRI 1Q26 Results; BMRI Q4 2025 earnings call; search results MatrixBCG competitive landscape"
+    },
+    {
+      "name": "Retail Banking (Consumer and Mass Market)",
+      "description": "Deposit mobilisation, consumer loans (mortgage, auto, personal loans), credit cards, and payroll banking. Livin' by Mandiri is the primary digital interface. CASA ratio 71.6% in Q1 2026.",
+      "loan_share_approx_pct": 17,
+      "loan_growth_fy2025": "Consumer lending flat at +1.4% YoY in FY2025, well below the wholesale-driven total",
+      "nature": "Mature annuity / strategic CASA gathering",
+      "margin_characteristics": "Higher NIM loans (personal, auto) than wholesale, but total volume is smaller. Payroll banking for government employees and SOE workers provides sticky CASA deposits, the bank's most valuable funding base.",
+      "competitive_position": "Strong but structurally behind BCA in premium retail and wealth management. BMRI sits between BCA (quality) and BRI (mass market) in the retail segment.",
+      "source": "BMRI Q4 2025 earnings call; search results compilation"
+    },
+    {
+      "name": "SME and Micro Banking",
+      "description": "Lending to small and medium enterprises. Historically smaller for BMRI than BRI (BRI dominates micro via the KUR government programme). BMRI is expanding this segment via Livin' Merchant and Kopra supply chain finance, linking large corporate clients downstream to their SME suppliers.",
+      "loan_share_approx_pct": 20,
+      "nature": "Growth-oriented / higher-yield / higher credit risk",
+      "margin_characteristics": "Higher NIM (typically 5-8%) than wholesale but carries higher NPL risk. Industry SME NPL average is 3-4% (OJK).",
+      "competitive_position": "Challenger. Behind BRI in micro and KUR. Differentiated by the corporate-to-SME ecosystem (Kopra to Livin' Merchant supply chain)",
+      "source": "OJK Banking Sector Update May 2025; search results"
+    },
+    {
+      "name": "Treasury and Markets",
+      "description": "ALM (asset-liability management), FX trading, bond trading, liquidity management, and government bond portfolio management. BMRI is Indonesia's largest domestic government bond investor via its ALM book.",
+      "nature": "Mature / rate-sensitive / volatile",
+      "revenue_characteristics": "Revenue sensitive to interest rate and FX movements. IDR/USD ~17,200 in 2026 creates two-way FX trading and revaluation risk.",
+      "competitive_position": "Top 2-3 in domestic bond trading and FX. Primary competition from BCA (transaction banking treasury).",
+      "source": "BMRI annual report; industry knowledge"
+    },
+    {
+      "name": "Subsidiaries (excluding BSI, now equity investment)",
+      "description": "Post-BSI deconsolidation (effective January 2026, officially April 2026), remaining key consolidated subsidiaries include: Mandiri Sekuritas (investment banking and brokerage), AXA Mandiri (life insurance JV, assets IDR 40.7T), Mandiri InHealth, Bank Mandiri Taspen (pension banking), Mandiri Tunas Finance (auto finance, assets IDR 34.4T), Mandiri Utama Finance (assets IDR 15T), Bank Mandiri Europe (London), and overseas branches (Singapore, Malaysia, Hong Kong, Timor-Leste, Shanghai, Cayman Islands). Subsidiary net income contribution grew +24.5% YoY in FY2025.",
+      "nature": "Diversified / complementary to core banking",
+      "note": "Bank Syariah Indonesia (BRIS) deconsolidated effective Jan 23, 2026. BMRI retains 51.47% economic ownership, recorded as equity investment. BSI contributed IDR 4-5T in NPAT to the consolidated FY2025 figures.",
+      "source": "BMRI subsidiary list (bankmandiri.co.id/documents/38268824/40334665/); IDNFinancials BSI deconsolidation (idnfinancials.com/news/63207); neraca.co.id fee income article"
+    }
+  ],
+  "industry": {
+    "market_overview": "Indonesian banking sector: approximately IDR 11,370T in total assets for listed bank issuers on IDX as of H1 2025 (Databoks/Katadata). System-wide commercial bank loans reached IDR 8,060T in June 2025 (+7.77% YoY, OJK). Banking sector NIM at 4.45% system-average (OJK May 2025), ROA 2.51%. BMRI holds the largest single-bank asset share at ~22% of listed bank issuer assets (H1 2025) and approximately 21-24% of system loans on a post-BSI basis. Total system assets including all commercial and rural banks is approximately IDR 12,500T. Indonesia's banking credit-to-GDP ratio is ~40-45%, well below regional peers (Thailand 140%, Malaysia 130%), implying long structural runway.",
+    "tam_usd_bn": 503,
+    "tam_idr_t": 8060,
+    "tam_growth_pct": 7.77,
+    "tam_growth_note": "System loan growth of 7.77% YoY in June 2025 (OJK); Bank Indonesia targets 8-12% credit growth for 2026. Investment credit growing at 22% YoY (Jan 2026), the fastest sub-segment. Long-run structural CAGR: ~10-12% consistent with Indonesia GDP growth of 5% plus financial deepening.",
+    "tam_source": "OJK Banking Sector Update May 2025 (iru.ojk.go.id/iru/dataandstatistics/detaildataandstatistics/13898); Bank Indonesia Jan 2026 loan growth data (tradingeconomics.com/indonesia/loan-growth); Databoks Top 10 Bank Issuers by Assets H1 2025 (databoks.katadata.co.id/en/market/statistics/68f713b24d07c)",
+    "sub_markets": [
+      {
+        "name": "Corporate and Infrastructure Lending",
+        "description": "Large-ticket sovereign and SOE-linked loans. Prabowo government infrastructure agenda and Danantara investment mandate provide structural pipeline.",
+        "bmri_share": "Market leader; estimated 25-30% of large corporate loan origination",
+        "growth": "Corporate loans grew 15.81% system-wide YoY in Jun 2025 (OJK)"
+      },
+      {
+        "name": "SME and Micro Lending",
+        "description": "65M+ Indonesian MSMEs. Government KUR subsidised credit programme drives volumes. BRI dominates micro.",
+        "bmri_share": "Challenger; growing via supply-chain ecosystem",
+        "growth": "MSME loans grew 2.88% system-wide YoY in Jun 2025 (OJK) -- lagging corporate"
+      },
+      {
+        "name": "Consumer Lending (Mortgage, Auto, Personal)",
+        "description": "Mortgage penetration ~3% of GDP vs 20%+ in developed markets. Structural runway as incomes rise.",
+        "bmri_share": "Significant but behind BCA in premium mortgage",
+        "growth": "Consumer credit grew 6.58% YoY Jan 2026 (Bank Indonesia)"
+      },
+      {
+        "name": "Transaction Banking and Digital Payments",
+        "description": "Fastest-growing non-NIM revenue driver. BMRI Kopra and Livin' compete with BCA myBCA and fintech challengers.",
+        "bmri_share": "~30% of Indonesia's digital transaction volume across Kopra and Livin'",
+        "growth": "Digital fee income +13-20% YoY"
+      }
+    ],
+    "competitors": [
+      {
+        "name": "Bank Central Asia",
+        "ticker": "BBCA.JK",
+        "listed_exchange": "IDX",
+        "ownership": "Private (Djarum/Hartono family majority)",
+        "total_assets_idr_t": 1586.82,
+        "asset_share_listed_banks_pct": 13,
+        "net_profit_fy2025_idr_t": 58.0,
+        "roe_pct": 24.1,
+        "nim_pct": 5.8,
+        "pb_approx": 3.4,
+        "pe_ntm_approx": 19.0,
+        "npl_gross_pct": 1.8,
+        "cir_pct": 32,
+        "loan_growth_fy2025_pct": 12.0,
+        "casa_ratio_pct": 85,
+        "position": "Premium franchise; highest ROE and NIM in the Big Four. BCA generates nearly equal net profit to BMRI (IDR 58T vs 56.3T in FY2025) on 56% of BMRI's assets -- demonstrating a 3.2%+ ROA vs BMRI's 2.14%. BCA's structural advantage is its ultra-low-cost CASA franchise (CASA ratio 85%+) built over decades of dominant position in retail transaction banking. BCA's NIM of 5.8% in 9M 2025 is 90bps above BMRI's 4.89% -- driven purely by lower cost of funds, not higher loan yields. CIR of 32% vs BMRI's 43% illustrates franchise efficiency.",
+        "trajectory": "Stable/slightly strengthening. BCA surpassed BMRI in absolute net profit in FY2025 for the first time since 2022. Its asset-light model widens the ROA advantage as BMRI absorbs BSI deconsolidation. Private ownership free from Danantara directed lending is a governance quality premium.",
+        "why_premium_pb": "BCA's P/B premium (3.4x vs BMRI 1.4x) reflects four compounding advantages: (1) CASA ratio 85%+ vs BMRI ~72%, giving 150-200bps lower effective cost of funds that compounds permanently; (2) CIR 32% vs 43%, creating structural superior efficiency; (3) lowest NPL in the sector; (4) private-sector governance premium vs SOE political risk. Every 1pp of ROE advantage justifies approximately 0.20x P/B premium at standard Indonesian bank cost of equity assumptions (~14%).",
+        "source": "BCA 9M 2025 results (kbvalbury.com/cfind/source/files/bbca-9m25-results-211025.pdf); BCA FY2025 estimated results (search results: net profit IDR 58T, ROE 24.1%, NIM 5.8%)"
+      },
+      {
+        "name": "Bank Rakyat Indonesia",
+        "ticker": "BBRI.JK",
+        "listed_exchange": "IDX",
+        "ownership": "State-owned (Danantara/BP BUMN majority)",
+        "total_assets_idr_t": 2135.37,
+        "asset_share_listed_banks_pct": 19,
+        "net_profit_fy2025_idr_t": 57.13,
+        "roe_pct": 14.1,
+        "nim_pct": 6.89,
+        "pb_approx": 1.4,
+        "pe_ntm_approx": 7.6,
+        "npl_gross_pct": 2.15,
+        "loan_growth_fy2025_pct": 12.67,
+        "casa_ratio_pct": 60,
+        "position": "Micro and agri lending specialist. Indonesia's largest bank by customer count and rural branch network. Dominates KUR (government subsidised micro credit) and ultra-micro lending. Highest NIM of the Big Four (6.89%) reflects the high-yield micro loan portfolio. However, ROE compressed sharply in FY2025 to 14.1% (from 16.8% in FY2022) as micro/MSME NPLs rose (NPL gross to 2.15% from 1.91% in FY2024) and net profit fell 5.3% YoY to IDR 57.1T. BRI's FY2025 result is the most important bear analog for BMRI: directed government credit programmes and rapid MSME expansion created NPL normalisation that compressed ROE by 250bps in two years.",
+        "trajectory": "Under pressure near-term (NPL normalisation in micro book), but positive structural story (Indonesia's financial inclusion leader). Trades at 1.4x P/B vs 10-year average of 2.3x -- historically deep discount.",
+        "threat_to_bmri": "Competes with BMRI in SME/commercial as both banks scale supply-chain finance. BRI's KUR subsidised funding is a government-guaranteed advantage BMRI cannot replicate.",
+        "source": "IDNFinancials BBRI FY2025 (idnfinancials.com/news/61682); BRI 2025 annual report (bri.co.id/documents/20123/56786/Annual%20Report%20BRI%20Tahun%202025_English%20Version.pdf)"
+      },
+      {
+        "name": "Bank Negara Indonesia",
+        "ticker": "BBNI.JK",
+        "listed_exchange": "IDX",
+        "ownership": "State-owned (Danantara/BP BUMN majority)",
+        "total_assets_idr_t": 1362.05,
+        "asset_share_listed_banks_pct": 12,
+        "net_profit_fy2025_idr_t": 20.04,
+        "net_profit_change_yoy_pct": -6.8,
+        "roe_pct": 14.0,
+        "nim_pct": 3.76,
+        "pb_approx": 0.9,
+        "pe_ntm_approx": 5.8,
+        "npl_gross_pct": 2.1,
+        "loan_growth_fy2025_pct": 8.0,
+        "position": "Fourth-largest by assets. Historically strong in SOE lending (government project finance) and international trade finance. BNI's 9M 2025 NIM of 3.76% (down from 4.15% YoY) is the most important data point for the BMRI bear scenario: a comparably wholesale-oriented state bank saw NIM compress 39bps in one year. BNI net profit fell 6.8% in FY2025 to IDR 20.04T. ROE compressed to ~14%. Trades at 0.9x P/B, deeply discounted, reflecting lower franchise quality than both BMRI and BCA.",
+        "trajectory": "Lagging peers on profitability; transformation underway. New management focused on CASA improvement and cost reduction. Key risk: competes with BMRI for the same SOE mandate lending pipeline.",
+        "bear_analog": "BNI's NIM compression trajectory (4.15% to 3.76% in one year) is the most direct bear analog for BMRI's wholesale book. BMRI's stronger CASA ratio (72% vs BNI's lower level) provides some insulation but not complete protection.",
+        "source": "BNI 9M 2025 corporate presentation (bni.co.id/Portals/1/BNI/Perusahaan/HubunganInvestor/Docs/2025/BNI-Corporate-Presentation-3Q2025.pdf); BNI FY2025 annual report (idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202602/abffc70437_3bc60fece6.pdf)"
+      },
+      {
+        "name": "CIMB Niaga",
+        "ticker": "BNGA.JK",
+        "listed_exchange": "IDX",
+        "ownership": "CIMB Group Malaysia ~91%",
+        "total_assets_idr_t_approx": 375,
+        "net_profit_fy2025_idr_t_approx": 6.5,
+        "roe_pct_approx": 13.0,
+        "nim_pct_approx": 4.8,
+        "pb_approx": 0.55,
+        "position": "Largest foreign-majority owned bank in Indonesia. Strong in corporate banking, auto finance (CIMB Niaga Finance), consumer, and SME. CIMB Group's ASEAN network provides cross-border advantage for multinationals. Competes mainly on pricing and product sophistication in midcap corporate, auto, and mortgage segments.",
+        "trajectory": "Stable. Does not have SOE mandate advantages. Marginal competitive threat to BMRI in midcap corporate.",
+        "source": "Sector research compilation; search results"
+      }
+    ],
+    "the_share_dynamic": "Indonesia's banking market is a structured oligopoly: the Big Four (BMRI, BBCA, BBRI, BBNI) control approximately 65-70% of total banking assets. BMRI holds the largest single-bank asset share (~22% of listed bank assets) but trails BCA on per-asset profitability (BMRI ROA 2.14% vs BCA implied ~3.2%). The competitive dynamics operate on three axes: (1) BMRI vs BCA in transaction banking, payroll, and consumer: BCA wins structurally because its CASA moat (85%+ ratio) gives it permanently lower cost of funds (estimated 150-200bps lower effective CoF). Each year BCA grows at similar loan growth rates to BMRI, it compounds the COF advantage. This is the primary driver of BCA's 3.4x P/B vs BMRI's 1.4x. (2) BMRI vs BRI in SME and supply-chain commercial: BRI dominates micro via KUR; BMRI is building upstream in commercial SME via Kopra supply chains. BRI's FY2025 NPL stress (NPL rose to 2.15%) shows the credit risk of MSME expansion; BMRI's wholesale focus is deliberately avoiding this risk for now. (3) BMRI vs BNI in SOE/government mandate lending: the most direct overlap and the segment where Danantara's dual ownership of both could create mandate rationalisation (positive for BMRI if it results in sharper division of corporate vs. project finance) or margin pressure (negative if Danantara directs below-market rate lending). BMRI is gaining absolute asset share (FY2025 asset growth +16.6% vs BCA +9.5%, BRI +7.2%, BNI +20.5%) but the quality of that growth (lower-NIM wholesale) is what keeps the ROE below BCA's. BMRI's share-taking path to re-rating runs through digital fee monetization and CASA ratio expansion, not through outgrowing BCA on loan volume.",
+    "addressable_market": "Indonesia's total system loan market is IDR 8,060T (Jun 2025). BMRI holds approximately IDR 1,620-1,750T in post-BSI loans, equivalent to ~20-22% system share. The incremental addressable market for BMRI is: (a) IDR 1-2T+ annually in new infrastructure loans from the Prabowo government's capital spending programme (BMRI is the primary conduit); (b) SME ecosystem lending growth of IDR 50-80T annually as Kopra supply-chain finance scales; (c) Consumer and mortgage market where BMRI currently holds sub-20% share of the ~IDR 1,600T system consumer loan book. The structural ceiling on BMRI's share-taking is regulatory (single borrower limits, sectoral concentration limits) and competitive (BCA's CASA advantage in retail deposits prevents BMRI from underpricing to capture share without margin destruction).",
+    "revenue_drivers": [
+      "Net Interest Income (NII): primary driver, ~65-68% of total operating income. NII = Loan Book x NIM. FY2025: NII IDR 106.8T on loans IDR 1,895T = NIM 4.89%. FY2026E on post-BSI basis: NII ~IDR 80-85T on loans ~IDR 1,750T = NIM 4.6-4.7%.",
+      "Fee income (non-interest income): 31-32% of total operating income. Non-NII grew 14.5% YoY in FY2025 to IDR 48.5T. Driven by: trade finance commissions, FX and derivatives, cash management fees (Kopra), bancassurance, digital fees (Livin' +19.8% YoY), subsidiary contributions (+24.5% YoY). This is the structural offset to NIM compression.",
+      "Loan growth volume: 8-9% guidance for FY2026. Each 1% of loan growth on a IDR 1,700T base adds ~IDR 17T in earning assets x NIM ~4.6% = ~IDR 0.78T in additional NII.",
+      "Provisioning discipline: credit cost 58bps in FY2025 (vs guidance 80-100bps) generated an implied IDR 7-9T of PPOP uplift vs full-guidance provision. FY2026 guidance 60-80bps."
+    ],
+    "npat_margin_drivers": [
+      "NIM trajectory (the crux): every 10bps of NIM compression on IDR 1,750T loans = IDR 1.75T reduction in NII pre-tax = IDR 1.4T post-tax = ~IDR 1.5 per share in EPS impact. The FY2025-to-FY2026 NIM compression from 4.89% to 4.60% is ~29bps = approximately IDR 5.1T post-tax impact, partially offset by loan growth of 8% (IDR 136T additional loans x 4.60% NIM = IDR 6.3T in incremental NII).",
+      "Credit cost normalisation: moving from 58bps (FY2025 actuals) to 65-70bps (FY2026 guidance midpoint) costs approximately IDR 1.2-2T in additional provisions on a IDR 1,700T loan base. Moving to bear-case 90bps would cost IDR 5.4T vs the base.",
+      "CIR improvement: each 1pp improvement in CIR from 43.5% to 40% saves approximately IDR 1.3T at the FY2026 revenue base. Target CIR of 40% by end-FY2026 represents ~IDR 4T of opex savings vs FY2025 run-rate on a post-BSI basis.",
+      "Tax rate: effective rate ~20%. No material guided changes.",
+      "Dividend payout / capital efficiency: FY2025 payout ratio was 78% (IDR 43.5T paid). FY2026 guided 65-70%. High payout constrains equity growth, which mechanically supports ROE but limits loan growth capacity. Tension between Danantara's income needs and balance sheet discipline."
+    ],
+    "product_differentiation": "BMRI's primary differentiation is its wholesale banking franchise built on the Indonesian government relationship. As the state's primary transaction bank, BMRI handles the payroll of ~4.4 million government employees and processes the bulk of state enterprise cash flows. Kopra (wholesale digital) and Livin' (retail digital) represent the digital layer on top of this relationship-driven franchise. The key differentiation from BCA is that BMRI competes on relationship depth and government mandate rather than on deposit cost; from BRI it competes on credit quality (wholesale book NPL <1% vs BRI's micro book NPL 2.15%). BMRI's product advantage relative to BNI is scale (2.1x asset base) and digital infrastructure (Kopra/Livin' lead BNI's equivalent platforms on transaction volumes).",
+    "moat": "Three reinforcing sources: (1) Government mandate and SOE franchise: BMRI is the primary state bank for infrastructure and corporate clients. The Danantara infrastructure pipeline provides a captive lending mandate that private banks cannot access. This moat is durable as long as the Indonesian government remains the dominant driver of fixed investment (projected to continue under Prabowo's agenda). (2) Scale and digital infrastructure: Kopra and Livin' together process approximately 30% of Indonesia's digital transaction volume. The data and relationship network creates switching costs for corporate treasury clients. (3) CASA funding base: a 71.6% CASA ratio (Q1 2026), primarily from government and corporate current accounts, provides structurally low cost of funds. Limitation: BCA's CASA moat is deeper (80%+ ratio with superior retail stickiness), giving it 150-200bps lower effective CoF that BMRI cannot close without fundamental franchise transformation. The moat protects BMRI from disruptive competition but does not provide a path to BCA-equivalent franchise quality without multi-decade investment.",
+    "five_forces": {
+      "threat_of_new_entrants": "LOW. Indonesian banking requires BUKU IV capital (>IDR 70T core capital) for the services BMRI offers. The OJK licensing process and capital requirements create near-insurmountable barriers at scale. Digital challengers (OVO, GoPay, SeaBank) can enter payments and micro-lending but cannot compete in corporate banking, treasury, or infrastructure finance.",
+      "bargaining_power_of_customers": "MEDIUM. Large SOE and corporate clients have significant bargaining power in loan pricing (they can shop terms). Government entities are captive to state banks but politically negotiate preferential terms. Retail and mass-market customers have LOW bargaining power individually but collectively determine CASA stickiness.",
+      "bargaining_power_of_suppliers": "LOW. Suppliers of capital are depositors. Indonesia's 275M population and growing financial inclusion provide abundant deposit supply. Cost of deposits is set by competitive dynamics among the Big Four and BI rate. Government deposits are administratively set.",
+      "threat_of_substitutes": "MEDIUM and rising. Capital market alternatives (bonds, commercial paper) for large corporates reduce loan demand at the margin. Fintech and neobanks substitute for retail payments and micro-lending. But substitutes for large-ticket project finance, government payroll banking, and wholesale trade finance are limited.",
+      "competitive_rivalry": "HIGH within the Big Four. Price competition is intense for large corporate loans, where BNI, BRI, and foreign banks all compete. Less intense in the government mandate segment where BMRI has preferred access. Rivalry is principally on NIM and fee income rather than product innovation."
+    }
+  },
+  "peer_valuation": [
+    {
+      "ticker": "BBCA.JK",
+      "name": "Bank Central Asia (BCA)",
+      "pb": 3.4,
+      "pe_ntm": 19.0,
+      "roe_pct": 24.1,
+      "nim_pct": 5.8,
+      "npl_gross_pct": 1.8,
+      "cir_pct": 32,
+      "net_profit_fy2025_idr_t": 58.0,
+      "loan_growth_fy2025_pct": 12.0,
+      "highlight": "Premium franchise; highest ROE, lowest CIR, strongest CASA in Indonesian banking. P/B premium justified by 150-200bps funding cost advantage (CASA 85%) and structural ROE of 24%. Private ownership adds governance premium vs SOE peers.",
+      "source": "Samuel Sekuritas BBCA 3Q25 (samuel.co.id/wp-content/uploads/2025/10/BBCA-3Q25-Results.pdf); search results BCA 9M 2025 analysis"
+    },
+    {
+      "ticker": "BBRI.JK",
+      "name": "Bank Rakyat Indonesia (BRI)",
+      "pb": 1.4,
+      "pe_ntm": 7.6,
+      "roe_pct": 14.1,
+      "nim_pct": 6.89,
+      "npl_gross_pct": 2.15,
+      "cir_pct": 43,
+      "net_profit_fy2025_idr_t": 57.13,
+      "loan_growth_fy2025_pct": 12.67,
+      "highlight": "Micro and agri lending specialist with highest NIM (6.89%) in Big Four but ROE compressed to 14.1% as MSME NPLs normalised. P/B discount to BMRI reflects NPL overhang and ROE compression. Key bear analog for BMRI: what happens when directed credit programmes stress asset quality.",
+      "source": "IDNFinancials BBRI FY2025 (idnfinancials.com/news/61682); BRI 2025 annual report"
+    },
+    {
+      "ticker": "BBNI.JK",
+      "name": "Bank Negara Indonesia (BNI)",
+      "pb": 0.9,
+      "pe_ntm": 5.8,
+      "roe_pct": 14.0,
+      "nim_pct": 3.76,
+      "npl_gross_pct": 2.1,
+      "net_profit_fy2025_idr_t": 20.04,
+      "loan_growth_fy2025_pct": 8.0,
+      "highlight": "Largest discount in Big Four (0.9x P/B). NIM compressed from 4.15% to 3.76% in 9M 2025 -- most important single data point for BMRI NIM bear scenario. ROE ~14% represents the SOE wholesale-bank outcome without BCA franchise quality or BMRI scale advantages.",
+      "source": "BNI 9M 2025 corporate presentation; BNI FY2025 annual report (idx.co.id)"
+    },
+    {
+      "ticker": "BMRI.JK",
+      "name": "Bank Mandiri (BMRI) -- reference",
+      "pb": 1.4,
+      "pe_ntm": 6.6,
+      "roe_pct": 20.3,
+      "nim_pct": 4.89,
+      "npl_gross_pct": 0.96,
+      "cir_pct": 43.5,
+      "net_profit_fy2025_idr_t": 56.30,
+      "loan_growth_fy2025_pct": 13.4,
+      "highlight": "Largest bank by assets. Best asset quality (NPL 0.96%) and highest loan growth (13.4%) in Big Four for FY2025. ROE 20.3% is above BRI and BNI but below BCA. P/B discount to BCA reflects lower CASA ratio, higher CIR, and SOE governance premium gap. Discount to book is NOT justified by credit quality -- it is a franchise efficiency and governance risk premium.",
+      "source": "BMRI Q4 2025 earnings call; databundle FY2025"
+    }
+  ],
+  "why_bmri_trades_at_discount_to_bca": {
+    "summary": "BMRI trades at 1.4x P/B vs BCA's 3.4x because three structural factors justify the gap, and one cyclical factor exaggerates it.",
+    "structural_factors": [
+      "CASA ratio gap: BCA 85% vs BMRI 72%. In Gordon P/B = (ROE-g)/(Ke-g), this gap is entirely via lower NIM (BMRI 4.89% vs BCA 5.80% in FY2025) flowing through to lower ROE (20.3% vs 24.1%). At Ke = 14% and g = 8%, every 1pp ROE difference = approximately 0.17x P/B differential. The 3.8pp ROE gap mechanically justifies ~0.64x P/B differential.",
+      "CIR gap: BCA 32% vs BMRI 43.5%. This is the operating efficiency dimension. BCA processes the same banking services at 11.5pp lower cost ratio. This flows into the ROE gap.",
+      "Governance premium: BCA is privately-owned (Hartono family), free from directed lending mandates. BMRI's Danantara ownership creates directed credit risk, which discounts the quality of BMRI's ROE."
+    ],
+    "cyclical_factor": "IDX foreign outflows (~IDR 235.7B specific BMRI outflows documented in 2026) and rupiah depreciation (IDR/USD ~17,200) have compressed P/B for all SOE banks below fundamental fair value. BMRI's current 1.4x P/B is below the theoretical justified P/B of ~1.8-2.0x at a 19-20% ROE assumption, implying approximately 30-40% of the BCA-BMRI P/B gap is macro/sentiment rather than structural.",
+    "what_closes_gap": "A re-rating toward BCA requires BMRI to either (a) improve CASA ratio structurally toward 80%+ via Livin' retail deposit growth and payroll banking expansion, narrowing the NIM gap; or (b) reduce CIR toward 35-38% via continued digital scale and opex discipline; or (c) demonstrate that Danantara's directed lending improves rather than impairs returns (infrastructure loans performing well with state-backed credit quality). None of these is near-term. The gap is unlikely to close substantially within a 12-24 month horizon."
+  },
+  "sources": [
+    {
+      "name": "Top 5 Indonesian banks by assets 2025 (Databoks)",
+      "url": "https://databoks.katadata.co.id/en/finance/statistics/69a091c2d6907/top-5-indonesian-banks-by-total-assets-in-2025-mandiri-leads-the-pack",
+      "tier": "regulator_published",
+      "key_data": "BMRI IDR 2,830T, BRI IDR 2,135T, BCA IDR 1,587T, BNI IDR 1,362T as of Dec 2025; H1 2025 listed bank total assets IDR 11,370T"
+    },
+    {
+      "name": "OJK Banking Sector Update May 2025",
+      "url": "https://iru.ojk.go.id/iru/dataandstatistics/detaildataandstatistics/13898/banking-sector-update-may-2025",
+      "tier": "regulator_published",
+      "key_data": "System NIM 4.45%; system loan growth 7.77% YoY to IDR 8,060T; ROA 2.51%; corporate loans +15.81% YoY; MSME loans +2.88% YoY"
+    },
+    {
+      "name": "BMRI Q4 2025 earnings call transcript",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-bank-mandiri-q4-2025-shows-robust-growth-93CH-4486999",
+      "tier": "company_filed",
+      "key_data": "FY2025 NIM 4.89%, NPAT IDR 56.3T, NII IDR 106.8T, non-NII IDR 48.5T, CIR 43.5%, loan growth 13.4%, credit cost 58bps"
+    },
+    {
+      "name": "IDNFinancials: BMRI profit Q1 2026 after BSI deconsolidation",
+      "url": "https://www.idnfinancials.com/news/63207/mandiri-profit-rises-16-6-in-q1-after-bris-deconsolidation",
+      "tier": "company_filed",
+      "key_data": "Q1 2026: NPAT IDR 15.4T +16.6% YoY, ROE 22.1%, NIM 4.7%, credit cost 58bps, NPL 0.98%, loan growth +16%"
+    },
+    {
+      "name": "BBRI FY2025 annual results",
+      "url": "https://www.idnfinancials.com/news/61682/bbri-posted-net-profit-idr57-13-trillion-throughout-2025",
+      "tier": "company_filed",
+      "key_data": "BRI NIM 6.89%, ROE 14.1%, NPL 2.15%, net profit IDR 57.1T (-5.3% YoY), loan growth 12.67%"
+    },
+    {
+      "name": "BCA (BBCA) 9M 2025 results (Samuel Sekuritas)",
+      "url": "https://samuel.co.id/wp-content/uploads/2025/10/BBCA-3Q25-Results.pdf",
+      "tier": "sellside",
+      "key_data": "BCA NIM 5.8%, ROE 24.1% 9M 2025; FY2025 estimated net profit IDR 57-58T"
+    },
+    {
+      "name": "BNI 9M 2025 corporate presentation",
+      "url": "https://www.bni.co.id/Portals/1/BNI/Perusahaan/HubunganInvestor/Docs/2025/BNI-Corporate-Presentation-3Q2025.pdf",
+      "tier": "company_filed",
+      "key_data": "BNI NIM 3.76% 9M 2025 (from 4.15% YoY); ROE 14.11%; net profit FY2025 IDR 20.04T (-6.8%)"
+    },
+    {
+      "name": "BNI FY2025 annual report (IDX filing)",
+      "url": "https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202602/abffc70437_3bc60fece6.pdf",
+      "tier": "company_filed",
+      "key_data": "BNI FY2025 net profit IDR 20.04T, full year 2025 results"
+    },
+    {
+      "name": "Bank Indonesia BI-Rate lowered to 4.75%, Sep 2025",
+      "url": "https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2721925.aspx",
+      "tier": "regulator_published",
+      "key_data": "BI7DRR cut to 4.75%; 100bps total cuts in 2025; further 50bps possible in 2026 toward 4.25%"
+    },
+    {
+      "name": "IDNFinancials: Bank Indonesia signals rate cuts in 2026",
+      "url": "https://www.idnfinancials.com/news/59695/bank-indonesia-signals-rate-cuts-in-2026",
+      "tier": "news_cited",
+      "key_data": "BI signals further cuts in 2026; analysts expect 50bps cumulative to 4.25%"
+    },
+    {
+      "name": "Indonesia loan growth (TradingEconomics)",
+      "url": "https://tradingeconomics.com/indonesia/loan-growth",
+      "tier": "macro_consensus",
+      "key_data": "Indonesia loan growth 9.96% YoY Jan 2026; BI target 8-12% for 2026"
+    },
+    {
+      "name": "Indonesia GDP growth forecast 2026 (Bank Indonesia, TradingEconomics)",
+      "url": "https://tradingeconomics.com/indonesia/news/news/501213",
+      "tier": "macro_consensus",
+      "key_data": "BI forecasts GDP 5.33-5.4% in 2026; World Bank 5.0% for 2026-2027"
+    },
+    {
+      "name": "Bank Mandiri digital fee income (neraca.co.id)",
+      "url": "https://www.neraca.co.id/article/228418/bank-mandiri-catat-fee-based-income-dari-layanan-digital-capai-rp548-triliun",
+      "tier": "company_filed",
+      "key_data": "Digital fee income IDR 7.47T FY2025; Livin' fees +19.8% YoY; subsidiary contributions +24.5% YoY"
+    },
+    {
+      "name": "BMRI segment loan composition and growth (compiled from search)",
+      "url": "https://www.investing.com/news/company-news/bank-mandiri-q4-2025-slides-loan-growth-exceeds-guidance-amid-digital-transformation-93CH-4487091",
+      "tier": "company_filed",
+      "key_data": "Corporate loans IDR 620T +26.7% YoY; commercial IDR 293T +23% YoY; corporate + commercial = ~58% of total; retail ~17%; consumer flat +1.4%"
+    },
+    {
+      "name": "Databoks Top 10 bank issuers by assets H1 2025",
+      "url": "https://databoks.katadata.co.id/en/market/statistics/68f713b24d07c/top-10-bank-issuers-by-assets-in-indonesia-in-h1-2025",
+      "tier": "regulator_published",
+      "key_data": "BMRI H1 2025 assets IDR 2,514T = 22% of listed bank issuer assets; BRI 19%; BCA 13%"
+    }
+  ]
+}

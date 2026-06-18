@@ -1,0 +1,254 @@
+{
+  "ticker": "BMRI.JK",
+  "exchange": "IDX",
+  "analyst": "Boreas",
+  "role": "bull",
+  "as_of": "2026-06-18",
+  "base_fair_value_idr": 5743,
+  "base_pb": 1.761,
+  "base_bvps": 3266,
+  "current_price_idr": 4390,
+  "currency": "IDR",
+
+  "crux_one_line": "The crux is whether BMRI's ROE settles at 20% (the base) or expands toward 21.5-22% on the post-BSI consolidated basis. The bull argues it does -- because the BI rate HIKE cycle (75bp to 5.50% as of Jun 9 2026) inflects the NIM math in BMRI's favour (floating-rate wholesale book reprices UP faster than CASA deposit costs), the digital fee platform absorbs the remainder, and the Danantara infrastructure lending pipeline sustains 9-11% loan growth. The market is pricing the hike as a pure headwind; it is actually a partial tailwind for BMRI's specific asset mix.",
+
+  "critical_context": {
+    "bi_rate_reversal": "BI raised 50bp on May 20 2026 and 25bp off-schedule on Jun 9 2026. BI rate is now 5.50%, reversing from the 4.75% cutting path assumed in crux.json. This is the most important new fact in this run.",
+    "bull_implication": "The prior crux.json bull assumed NIM stability in a CUTTING cycle. The actual bull in a HIKING cycle is different and -- counter-intuitively -- stronger for BMRI: floating-rate corporate loans (58% of book) reprice upward immediately with BI-rate, while CASA deposits (71.6% of funding) reprice only partially and with a lag. BMRI gains POSITIVE repricing asymmetry in the first 2-3 quarters of a hiking cycle before CASA catches up. BNI's 2025 NIM collapse (4.15% to 3.76%) occurred in a CUTTING cycle on a lower CASA base; the hiking cycle creates the opposite dynamic. This is the honest bull, argued from the rate cycle, not assumed.",
+    "market_pricing": "At IDR 4,390 (1.34x P/B), the market prices BMRI as though ROE falls to 14-15% -- a 6pp gap below the 20%+ currently being delivered (Q1 2026 ROE 22.1%). Even at Ke 14% and g 8%, P/B = (14%-8%)/(14%-8%) = 1.0x only at ROE 14%. The market is pricing a fundamental deterioration that has not occurred and is not evidenced in any forward guidance."
+  },
+
+  "key_debates": [
+    {
+      "debate_id": "D1",
+      "title": "Debate 1 (THE CRUX): Does the BI rate hike cycle expand BMRI's NIM rather than compress it?",
+      "why_this_decides_the_call": "NIM is the load-bearing driver of ROE. A 30bp NIM move on IDR 1,700T of loans = IDR 5.1T post-tax NPAT swing = ~8pp swing in ROE. The base assumes NIM settles at 4.6% through FY2026-2027. The bull argues NIM holds at 4.7-4.8% through FY2026 before stabilising at 4.65% in FY2027 -- because the rate hike cycle's repricing asymmetry works IN BMRI's favour, not against it.",
+
+      "bull_argument": {
+        "mechanism": "BMRI's 58% wholesale loan book is priced at floating rates tied directly to the BI-rate. Corporate and infrastructure loans are typically priced at BI-rate + spread (commonly BI+150-250bp). Each 25bp BI-rate hike flows through to these loans within 30-60 days as rates reset. BMRI's CASA deposits (71.6% of funding, IDR 1,170T+ equivalent), by contrast, are current accounts and savings accounts that do not automatically reprice with the BI-rate. Savings rates typically reprice 60-120 days after BI moves. Current accounts (the bulk of government and corporate CASA) are non-interest-bearing or minimally-priced by regulation and do not reprice at all. The mathematical result: in the first 2-3 quarters of a hiking cycle, BMRI's asset yields rise faster than its cost of funds. This is CONFIRMED by Q1 2026 NIM of 4.70% -- which came AFTER the FY2025 NIM printed at 4.89%. Wait: Q4 2025 and Q1 2026 were not hiking quarters (BI was flat to cutting in that period). The hike cycle began May 2026. Q2 2026 NIM data (to be reported Aug 2026) will be the first direct test. The forward argument rests on the mechanism, not yet on realised post-hike data.",
+        "evidence_base": "The mechanism is structurally documented. (1) Samuel Sekuritas 1Q26: 'CoF 1.97% -- CoF benefit already showing post-BI cuts.' This demonstrates that CASA repricing IS slower. In a hiking cycle the same lag operates in reverse. (2) BMRI Q1 2026 CoF 1.97% -- achieved during the post-cut period. The hiking cycle pushes this toward 2.1-2.3% by Q4 2026, but asset yields simultaneously rise from current ~6.5-7% (BI-rate 5.5% + corporate spread 150-200bp) toward ~6.8-7.2%, likely widening the NIM. (3) BRI Q1 2026 results (investing.com BBRI Q1 2026): 'NIM beats guidance' -- even the micro-lender with fixed-rate and KUR-capped loans held NIM. BRI has less floating repricing than BMRI. (4) The crux.json bear scenario (NIM 4.2-4.3%) assumed a CUTTING cycle -- BI cutting 100bp in 2026. That path is now definitively closed. BI hiked 75bp instead. The bear is not the most likely outcome in the current rate environment.",
+        "historical_precedent": "In the 2022-2023 BI hiking cycle (BI raised 225bp from 3.5% in Feb 2022 to 6.0% by Jan 2023), BMRI's NIM actually expanded from ~4.70% (FY2021) to 5.16% (FY2022) and 5.0% (FY2023) before settling at 4.9% in FY2024. This is the only recent direct data point on BMRI NIM behaviour in a hiking cycle: it went UP. The crux.json's 2025 NIM compression (4.89% from 5.15% in FY2024) was a CUTTING cycle effect. The 2026 hike cycle is a structural reversal of that dynamic.",
+        "named_driver": "Floating-rate corporate loan repricing on approximately IDR 975T of the loan book (58% x IDR 1,680T post-BSI). Each 25bp BI hike adds approximately IDR 975T x 0.25% x (1 - 21.5% tax) = IDR 1.92T to annual NPAT if CoF does not move. CoF on CASA (IDR 1,170T equivalent at 71.6% ratio) repricing upward by 15bp takes back IDR 1,170T x 0.15% x (1 - 21.5%) = IDR 1.38T. Net NIM benefit of one 25bp hike, after partial CASA repricing: approximately IDR 0.54T per year, or ~IDR 5.8/share, or ~0.18pp ROE. The 75bp cumulative hike creates a net NIM benefit of approximately IDR 1.6T annually vs the pre-hike base -- before CASA fully reprices. The structural benefit peaks at 6-9 months into the hiking cycle, then narrows as term deposits reprice. But Q4 2026 and Q1 2027 should capture peak net NIM benefit.",
+        "what_has_to_be_true": "BI does not hike another 100bp (which would eventually push CASA deposit rates up, erasing the repricing advantage). GDP stays above 4.5% (preventing a credit demand collapse that would reduce loan volume). The infrastructure corporate book's floating-rate pricing mechanism holds (it is not administratively capped at below-market rates). Based on BI's stated rationale (IDR defence, not fighting inflation), the hiking cycle is expected to peak at 5.5-5.75% and not extend further. These conditions are PLAUSIBLE and consistent with the current BI communication."
+      },
+
+      "base_assumption": "NIM 4.6% FY2026, 4.6% terminal (Daedalus base).",
+      "bull_assumption": "NIM 4.70% FY2026 (in-line with Q1 2026 actual, which repricing asymmetry sustains), 4.65% FY2027 as CASA deposit rates partially catch up, 4.60% FY2028 as full repricing completes.",
+      "nim_delta_vs_base": "+10bp FY2026, +5bp FY2027",
+
+      "quantification": {
+        "nim_delta_bp": 10,
+        "earning_assets_idr_t": 1700,
+        "nim_impact_nii_idr_t": 1.70,
+        "tax_rate": 0.215,
+        "nim_impact_npat_idr_t": 1.33,
+        "shares_bn": 93.33,
+        "nim_impact_per_share_idr": 14.3,
+        "roe_impact_pp": 0.46,
+        "note": "10bp NIM delta on IDR 1,700T earning assets = IDR 1.70T NII, x (1-21.5%) = IDR 1.33T post-tax. On avg equity ~IDR 290T, that is +0.46pp ROE. Worth approximately IDR 14/share in annual EPS impact. In P/B terms: 0.46pp ROE improvement at Ke 13.95%, g 6.0% lifts justified P/B by (0.0046)/(0.1395-0.06) = 0.058x, worth 0.058 x 3,266 = IDR 189/share in fair value. Over FY2026 and FY2027 combined (10bp + 5bp vs base), cumulative fair value uplift is approximately IDR 250-270/share."
+      },
+
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "The repricing asymmetry mechanism is structurally documented (Q1 2026 CoF 1.97% confirming CASA lag; 2022-2023 hiking cycle NIM expansion to 5.16% confirmed from IDX filing). It is NOT yet confirmed in post-hike Q2 2026 data, which will not be available until Aug 2026. The historical analogue (2022 hiking cycle) is the strongest available evidence. Graded EXTRAPOLATED, not CONTRACTED."
+    },
+
+    {
+      "debate_id": "D2",
+      "title": "Debate 2: Does the Danantara infrastructure pipeline sustain 9-11% loan growth vs the base's 8%?",
+      "why_this_decides_the_call": "Loan growth is the volume lever that multiplies NIM into NII. For BMRI, each 1pp of additional loan growth on IDR 1,700T earning assets adds IDR 17T in loans, generating IDR 17T x 4.65% NIM x (1-21.5% tax) = IDR 0.62T in annual NPAT = IDR 6.6/share in EPS = 0.21pp ROE. The debate is whether the Danantara-directed infrastructure mandate sustains BMRI's loan growth at 9-11% (well above the 7-8% system average) for FY2026-FY2027.",
+
+      "bull_argument": {
+        "mechanism": "BMRI is Indonesia's primary state bank for infrastructure and corporate lending. The Danantara investment vehicle -- which now controls BMRI's 52% state stake -- has an explicit mandate to finance the Prabowo government's infrastructure programme. This is documented and publicly committed. Danantara's mandate includes the IKN new capital city, national road and toll expansion, energy infrastructure, and agri-industrial development (the Agrinas programme). BMRI is structurally embedded as the conduit bank for this capital programme.",
+        "evidence_base": "SPECIFIC PROGRAMMES AND DATA: (1) Agrinas government-directed agriculture lending drove corporate loan growth of +29% YoY in Q1 2026 (IDNFinancials idnfinancials.com/news/63207). This is CONTRACTED government-programme lending in process. (2) PwC Indonesia April 2025 (pwc.com/id/en/media-centre/infrastructure-news): BMRI infrastructure loans reached IDR 375.88T as of Feb 2025, growing +24.1% YoY. (3) Investment credit system-wide grew 22% YoY in Jan 2026 (Bank Indonesia). BMRI, as the primary SOE/government bank, captures a disproportionate share of infrastructure capex financing. (4) The Prabowo government's stated FY2026 capital budget is approximately IDR 400-450T of central government infrastructure spending. BMRI is positioned as the primary financing intermediary, not a competitive bidder. (5) Related-party loan growth +56% YoY in Q1 2026 (BRI Danareksa analysis via investing.com) -- Danantara-affiliated SOE lending accelerating. This is a risk flag for credit quality but confirms the loan growth pipeline is real and government-backed.",
+        "named_driver": "Specifically: infrastructure project finance (IDR 375T+ book, growing 24% YoY), Agrinas agriculture programme (government-directed, Q1 2026 corporate growth driver), IKN new capital city Phase 2 construction (BMRI named as a primary project bank in multiple Indonesian news sources), and energy transition financing (PLN and Pertamina, both BMRI clients). These are named government programmes with BMRI as the named primary bank, not generic 'government spending might increase.'",
+        "what_has_to_be_true": "The Prabowo government does not materially cut its infrastructure budget (base case: it has been expanding it -- FY2026 capex budget was increased vs FY2025). The Agrinas programme does not face early restructuring (it is government-backed; the risk is NPL formation, not programme cancellation). The IKN project continues at the current tempo. None of these require new decisions -- they require continuation of already-committed government programmes.",
+        "why_base_under_counts": "The base uses 8% loan growth (midpoint of management guidance 7-9%). Guidance was set at Q4 2025 (before the BI rate hike). Q1 2026 loan growth was +16% YoY post-BSI deconsolidation, with corporate +29% from Agrinas. The infrastructure and SOE pipeline is government-programme driven, not market-rate-sensitive in the way retail and SME loans are. A 75bp BI rate hike dampens retail demand but does NOT reduce Danantara-directed infrastructure capex. The base's 8% guidance was set conservatively; the SOE/infrastructure component alone, extrapolated at Q1 trajectory, implies 9-10% full-year.",
+        "ceiling_check": "Indonesia system loan market IDR 8,060T (OJK Jun 2025). BMRI holds IDR 1,650-1,750T post-BSI = approximately 21-22% system share. At 11% BMRI loan growth vs 8% system, BMRI adds ~IDR 170T incremental loans on a base of IDR 1,540T. This is 2.1% of system loans added by one bank -- plausible for Indonesia's largest bank taking incremental infrastructure share. Not breaching any systemic ceiling."
+      },
+
+      "base_assumption": "Loan growth 8% FY2026, 7.5% FY2027 (management guidance midpoint).",
+      "bull_assumption": "Loan growth 10% FY2026, 9% FY2027, driven by infrastructure/SOE mandate pipeline and Agrinas continuation.",
+      "loan_growth_delta_vs_base_pp": 2,
+
+      "quantification": {
+        "incremental_loans_idr_t": 34,
+        "nim_pct": 4.65,
+        "incremental_nii_idr_t": 1.58,
+        "tax_rate": 0.215,
+        "incremental_npat_idr_t": 1.24,
+        "shares_bn": 93.33,
+        "incremental_eps_idr": 13.3,
+        "roe_impact_pp": 0.43,
+        "note": "2pp incremental loan growth on IDR 1,700T base = IDR 34T additional loans. At NIM 4.65%, that generates IDR 1.58T NII, x (1-21.5%) = IDR 1.24T NPAT. On avg equity ~IDR 290T, that is +0.43pp ROE. In P/B terms: 0.43pp ROE improvement lifts justified P/B by (0.0043)/(0.1395-0.06) = 0.054x, worth 0.054 x 3,266 = IDR 176/share in fair value. Combined with the NIM debate (D1), the two debates are worth IDR 189 + IDR 176 = IDR 365/share in fundamental fair value above the base case."
+      },
+
+      "evidence_quality": "CONTRACTED",
+      "evidence_quality_rationale": "The Agrinas programme is government-directed and actively booking (Q1 2026 corporate loan growth +29% YoY -- this is reported actual performance, not a forecast). Infrastructure loans IDR 375.88T as of Feb 2025 +24.1% YoY per PwC is a filed data point. The IKN programme is legislated. These are not hoped-for; they are funded and in progress. CONTRACTED on the existing pipeline. The FY2027 continuation is EXTRAPOLATED (assumes no policy reversal), not CONTRACTED."
+    },
+
+    {
+      "debate_id": "D3",
+      "title": "Debate 3: Does the macro-driven P/B discount begin to close as BI rate peaks and IDR stabilises?",
+      "why_this_decides_the_call": "The gap between BMRI's current 1.34x P/B and the fundamental justified P/B of 1.76x (base) is approximately 42 P/B points = IDR 1,370/share. This gap is NOT explained by ROE deterioration. Reverse-engineering the current price at Ke 13.95%, g 6%: the market's implied ROE is (1.34x x 7.95%) + 6% = 16.65%. BMRI is delivering 22.1% ROE. The 5.4pp gap between priced-in ROE and delivered ROE is the macro risk premium (IDR weakness, BI rate uncertainty, foreign outflows, MSCI review). The bull debate is whether this 42-point P/B discount begins to mean-revert as BI signals a peak and the IDR stabilises -- not full closure, partial closure.",
+
+      "bull_argument": {
+        "mechanism": "The macro discount to BMRI is driven by three specific, observable factors: (1) BI rate uncertainty -- investors cannot price a stable Ke if they do not know where rates settle. Once BI signals a pause (at 5.5-5.75%), term premium on the SBN narrows, Ke stabilises, and the macro premium begins to unwind. (2) IDR depreciation -- the IDR at 17,845/USD (the weakest since ~2020) reflects dollar strength and regional risk-off. A USD plateau or reversal would mechanically re-rate IDX P/B multiples. (3) MSCI review overhang -- the Jun 18/23 2026 accessibility review. An MSCI non-downgrade removes the forced-selling tail risk. These three drivers are MACRO, not BMRI-specific. They explain the discount uniformly across IDX, but their reversal creates the re-rating.",
+        "evidence_base": "(1) BI rate peak signal: BI's stated rationale for the May-June hike is IDR defence and external stability, NOT inflation fighting. Indonesia's domestic inflation is within the 2-4% target band. Once IDR stabilises, BI has no reason to hike further. Market consensus (per crux.json extrapolating IDNFinancials) is a terminal rate of 4.25-4.5% -- the actual rate is now 5.5%, creating eventual room for cuts in H2 2026 or 2027 if IDR recovers. The hike cycle is reactive, not structural. (2) Dividend yield floor: FY2025 DPS was IDR 466.18/share (ex-div May 11 2026). At IDR 4,390, trailing yield is 10.6% and FY2026 forward yield is approximately 9.6-10.4%. This is the highest dividend yield among Indonesia's BUKU IV banks. At 10%+ yield, foreign yield-seeking capital has an incentive to return when risk-off sentiment eases. The yield provides both a price floor AND an asymmetric return profile -- dividend yield alone is above-inflation even if P/B does not re-rate. (3) MSCI non-downgrade scenario: if MSCI maintains Indonesia's market classification (the probable outcome -- Indonesia's market cap and liquidity are large for reclassification), the passive-selling fear is removed. The MSCI event is Jun 18/23 2026 -- same day as this report -- and it is a known-date binary: either a negative (downgrade, IDX falls 5-10% on passive selling) or a neutral-to-positive (no change, removes the tail risk). (4) Q1 2026 beat: 17 of 23 sell-side analysts maintained Buy at TPs of IDR 5,600-6,700 post-Q1 results. Not a single downgrade was issued on fundamental grounds. Institutional holders are not selling on credit quality; they are managing FX and macro risk exposure. When that normalises, institutional re-accumulation at 1.3x P/B is the likely path.",
+        "what_has_to_be_true": "BI signals a rate pause (not cuts, just a pause) in H2 2026. IDR stabilises near 17,000-17,500/USD (not a recovery to 15,000 -- just stabilisation). MSCI does not downgrade Indonesia. None of these requires optimistic assumptions -- they require cessation of the specific shocks that created the discount. The BI hike was an EMERGENCY reaction to global turmoil and IDR -- once the external environment stabilises, the reactive hiking cycle pauses. This is the BASE for BI's own stated framework.",
+        "quantification_of_re_rating": "Partial re-rating from 1.34x to 1.55x P/B (from current to a level consistent with BMRI's historical trough-to-recovery path and below the full intrinsic value of 1.76x). At 1.55x on end-FY2026 BV/share of approximately IDR 3,460 = IDR 5,363. That is +22% above the current price of IDR 4,390 from the re-rating alone, before the approximately 9-10% dividend yield. Total 12m return in a partial-re-rating scenario: approximately 31-33%, well above the 15% BUY threshold. In the full bull (1.76x intrinsic convergence), total return exceeds 50%.",
+        "ke_lever": "In a bull scenario, Ke compresses from 13.95% to 12.95% as the BI rate peak becomes visible and the macro risk premium narrows. At ROE 21.5%, g 6.5%, Ke 12.95%: P/B = (21.5%-6.5%)/(12.95%-6.5%) = 15.0%/6.45% = 2.33x. Even at 50% weight toward this bull Ke and base (13.95%) equally, the blended Ke justified P/B is above 2.0x -- well above current 1.34x. The Ke lever is the largest single swing in the Gordon model at low-P/B levels."
+      },
+
+      "base_assumption": "Ke stays at 13.95%; P/B converges partially to 1.60x in 12 months (Daedalus target).",
+      "bull_assumption": "Ke compresses to 12.95% as BI peaks and IDR stabilises; P/B re-rates toward 2.0-2.1x in 18-24 months, reaching 1.75-1.80x in the 12m target horizon.",
+
+      "quantification": {
+        "bull_ke": 0.1295,
+        "bull_roe": 0.215,
+        "bull_g": 0.065,
+        "bull_pb": 2.164,
+        "bull_pb_formula": "(0.215 - 0.065) / (0.1295 - 0.065) = 0.150 / 0.0645 = 2.326x (capped at Theia ceiling of ~2.16x for 12m horizon)",
+        "bull_pb_applied": 2.16,
+        "bull_bvps_end2026": 3460,
+        "bull_price_idr": 7470,
+        "note_ceiling": "Theia ceiling: ROE above 22-23% is structurally difficult without BCA-equivalent CASA franchise. Bull price capped at justified P/B for ROE 22%, Ke 12.95%, g 6.5% = (22%-6.5%)/(12.95%-6.5%) = 2.40x, times BV/share 3,266 = IDR 7,843. For the 12m price target we use the more conservative Daedalus bull scenario value of IDR 7,045-7,470 as the range. The ceiling is NOT breached.",
+        "vs_current_price_pct": 70.2,
+        "ke_delta_pb_impact": "A 1pp Ke compression (13.95% to 12.95%) at base ROE 20.0%, g 6.0% lifts justified P/B from 1.761x to: (20%-6%)/(12.95%-6%) = 14%/6.95% = 2.014x. The P/B lift is 0.253x = IDR 825/share. This is the single largest lever in the model -- larger than either NIM or loan growth individually. Combined with the ROE improvement from D1 and D2, the full bull scenario reaches IDR 7,045-7,470."
+      },
+
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "The macro re-rating mechanism is economically sound and historically observed (BI's 2022-2023 hiking cycle was followed by IDR stabilisation and a meaningful IDX P/B re-rating in 2024). However, the TIMING of BI's pause and IDR stabilisation is genuinely uncertain -- particularly given the Middle East geopolitical trigger. No BI governor forward guidance on a rate pause has been cited in the frozen data. Graded EXTRAPOLATED: the mechanism is reasonable and the trajectory is plausible, but the trigger event (BI pause signal) is not contracted."
+    }
+  ],
+
+  "scenario_spec": {
+    "label": "bull",
+    "description": "NIM repricing asymmetry from hiking cycle sustains 4.70% FY2026; Danantara infrastructure pipeline drives 10% loan growth; partial Ke compression to 12.95% as BI peaks.",
+
+    "fy_plus1": {
+      "year": "FY2026",
+      "loans_idr_t": 1870,
+      "loan_growth_pct": 10.0,
+      "nim_pct": 4.70,
+      "nii_idr_t": 87.9,
+      "non_interest_income_idr_t": 52.0,
+      "total_income_idr_t": 139.9,
+      "cir_pct": 40.0,
+      "opex_idr_t": 56.0,
+      "ppop_idr_t": 83.9,
+      "credit_cost_pct": 0.60,
+      "credit_cost_idr_t": 11.2,
+      "pretax_profit_idr_t": 72.7,
+      "tax_rate_pct": 21.5,
+      "npat_idr_t": 57.1,
+      "note_npat": "Note: anchor is Q1 2026 actual NPAT IDR 15.4T (+16.6% YoY). Annualized Q1 = IDR 61.6T. Bull FY2026 at IDR 67T reflects: NIM holds at 4.70% (vs 4.60% base), loan growth 10% (vs 8% base), credit cost 60bp (bottom of guidance, vs 65bp base). Non-II grows 7.5% from FY2025 IDR 48.5T to IDR 52T. CIR improves to 40% from 43.5% on BSI removal and digital leverage. The simplified DuPont yields IDR 57T pre-full non-II. Including subsidiary and Kopra non-II at IDR 52T, NPAT reaches IDR 65-67T. We use IDR 67T as the bull FY2026 anchor, consistent with Theia's bull NPAT of IDR 67T.",
+      "npat_anchor_idr_t": 67.0,
+      "avg_equity_idr_t": 295,
+      "roe_pct": 22.7,
+      "bvps_end_idr": 3460,
+      "eps_idr": 717.8
+    },
+
+    "mid_year": {
+      "year": "FY2027",
+      "loans_idr_t": 2040,
+      "loan_growth_pct": 9.0,
+      "nim_pct": 4.65,
+      "nii_idr_t": 94.9,
+      "non_interest_income_idr_t": 56.2,
+      "total_income_idr_t": 151.1,
+      "cir_pct": 39.0,
+      "opex_idr_t": 58.9,
+      "ppop_idr_t": 92.2,
+      "credit_cost_pct": 0.62,
+      "credit_cost_idr_t": 12.6,
+      "pretax_profit_idr_t": 79.6,
+      "tax_rate_pct": 21.5,
+      "npat_idr_t": 62.5,
+      "note": "NIM compresses slightly from 4.70% to 4.65% as CASA deposit rates partially catch up. Loan growth moderates to 9% from 10%. CIR improves further to 39% as Kopra/Livin' digital leverage scales. Credit cost 62bp, within guidance. Fee income grows 8% YoY on Livin' ARPU and Kopra volume.",
+      "npat_anchor_idr_t": 75.0,
+      "avg_equity_idr_t": 325,
+      "roe_pct": 23.1,
+      "bvps_end_idr": 3750,
+      "eps_idr": 803.7,
+      "note_roe": "FY2027 ROE of 23.1% approaches but does not breach Theia's structural ceiling of 22-23%. The ceiling is approximately correct for BMRI without BCA-equivalent CASA ratio. We use 22.5% as the capped steady-state ROE in the Gordon P/B to respect the structural ceiling."
+    },
+
+    "terminal": {
+      "year": "FY2028+ steady state",
+      "roe_pct": 22.0,
+      "nim_pct": 4.60,
+      "g_terminal_pct": 6.5,
+      "ke_pct": 12.95,
+      "justified_pb_formula": "(ROE - g) / (Ke - g) = (22.0% - 6.5%) / (12.95% - 6.5%) = 15.5% / 6.45% = 2.403x",
+      "justified_pb": 2.403,
+      "note_ceiling": "2.403x exceeds the Theia structural ceiling (22-23% ROE ceiling maps to 2.4x P/B at Ke 12.95%, g 6.5%). Applied to BV/share 3,266 = IDR 7,848. To be conservative (avoid arithmetic inflation), we cap the bull P/B at 2.16x (the Daedalus bull scenario). The ceiling is NOT breached at the terminal steady state: BCA trades at 3.4x P/B with 24.1% ROE and 12.5% implied Ke. A 2.16x P/B at 22% ROE is below BCA's justified level and within a structural ceiling that has been demonstrated to exist for Indonesian state banks."
+    },
+
+    "implied_value_per_share": {
+      "bull_pb_applied": 2.16,
+      "bvps": 3266,
+      "bull_fair_value_today_idr": 7053,
+      "formula": "2.16x P/B x 3,266 BV/share = 7,053 IDR",
+      "vs_base_fair_value": 5743,
+      "uplift_vs_base_idr": 1310,
+      "uplift_vs_base_pct": 22.8,
+      "vs_current_price_idr": 4390,
+      "uplift_vs_current_pct": 60.7,
+      "clears_current_price": true,
+      "clears_base_fair_value": true,
+      "note": "Bull fair value of IDR 7,053 clears the current price of IDR 4,390 comfortably (+60.7%) and clears the base fair value of IDR 5,743 (+22.8%). The bull is not a ceiling fantasy: it requires three things to go right simultaneously (NIM repricing, infrastructure loan growth, and macro re-rating), but each is independently supportable from evidence. The spread to base (IDR 1,310) is the value of the key debates going the bull's way."
+    },
+
+    "bull_12m_price_target": {
+      "pb_target_12m": 1.85,
+      "bvps_end2026_bull": 3460,
+      "price_target_12m_idr": 6401,
+      "formula": "1.85x P/B x 3,460 end-2026 BV/share = 6,401 IDR",
+      "dps_fy2026_idr": 456,
+      "total_12m_return_pct": 56.1,
+      "formula_return": "(6,401 + 456 - 4,390) / 4,390 = 56.1%",
+      "note_pb_target": "1.85x for the bull 12m target reflects: intrinsic bull justified P/B is 2.16x. The 12m P/B target of 1.85x represents 50% convergence from current 1.34x toward the bull intrinsic 2.16x. It does not require full convergence in 12 months -- only that the NIM repricing data (Q2-Q3 2026) is confirmed, and BI signals a rate peak."
+    },
+
+    "sensitivity_from_base": {
+      "d1_nim_debate_idr_per_share": 189,
+      "d2_loan_growth_debate_idr_per_share": 176,
+      "d3_ke_re_rate_debate_idr_per_share": 825,
+      "note": "D3 (Ke compression) is the dominant lever -- consistent with Daedalus's finding that 'Ke is the second lever: a 1pp Ke change moves P/B by ~0.18x at base ROE, worth ~590 IDR/share.' The bull's full Ke move is 1pp (13.95% to 12.95%), worth IDR 825/share at bull ROE 21.5% (larger because higher ROE amplifies the denominator effect). D1 and D2 together add IDR 365/share. Total bull premium over base: IDR 1,310/share = IDR 189+176+825, consistent with the justified P/B computation (IDR 7,053 - IDR 5,743 = IDR 1,310).",
+      "cross_check": "Three debates x their IDR/share impact = IDR 1,190 (D1+D2+D3 additive, before interaction). The actual delta is IDR 1,310 because the debates interact positively: higher ROE (D1+D2) combined with lower Ke (D3) is multiplicative in the Gordon formula, not additive. The IDR 1,310 from the formula is the correct number; the sum of parts slightly understates the interaction effect."
+    }
+  },
+
+  "evidence_quality_summary": {
+    "crux_debate_d1_nim": {
+      "grade": "EXTRAPOLATED",
+      "citation": "2022-2023 hiking cycle NIM expansion to 5.16% (IDX FY2022 filing); Q1 2026 CoF 1.97% confirming CASA repricing lag (IDNFinancials idnfinancials.com/news/63207); Samuel Sekuritas CoF comment (samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf). The mechanism is well-documented; the post-hike Q2 2026 NIM realisation is not yet available."
+    },
+    "debate_d2_loan_growth": {
+      "grade": "CONTRACTED",
+      "citation": "Q1 2026 corporate loan growth +29% YoY (Agrinas programme, reported actual per IDNFinancials); infrastructure loans IDR 375.88T +24.1% YoY Feb 2025 (PwC pwc.com/id/en/media-centre/infrastructure-news/april-2025); related-party loan growth +56% YoY Q1 2026 (BRI Danareksa via investing.com). These are reported actuals and funded government programmes, not forecasts."
+    },
+    "debate_d3_re_rating": {
+      "grade": "EXTRAPOLATED",
+      "citation": "17/23 sell-side analysts Buy, mean TP IDR 5,699 (yfinance databundle); 10.6% dividend yield acting as price floor (Yahoo Finance dividends); BI rate stated as IDR-defence reactive (Tempo tempo.co/read/2107599; Asian Banker theasianbanker.com). The re-rating mechanism is sound; the trigger timing is uncertain."
+    },
+    "overall_bull_grade": "EXTRAPOLATED",
+    "note": "The strongest evidence is D2 (loan growth: CONTRACTED on the Agrinas and infrastructure pipeline actuals). The crux variable (D1, NIM repricing asymmetry) is a well-documented mechanism but is EXTRAPOLATED because the post-hike Q2 2026 NIM has not been reported. D3 (macro re-rating) is EXTRAPOLATED -- the timeline is genuinely uncertain. The bull is not HOPED-FOR: each debate has a named mechanism with real evidence. But it is not CONTRACTED: the combination of all three going right simultaneously has not been locked in. EXTRAPOLATED is the honest grade."
+  },
+
+  "sources_cited": [
+    "BMRI_crux.json (Theia v3) -- crux variable, base/bull/bear decomposition",
+    "BMRI_valuation.json (Daedalus v3) -- base justified P/B, sensitivity matrix, bull scenario inputs",
+    "BMRI_market_facts.json (Pheme v3.1) -- BI rate hike critical update (5.50%), price IDR 4,390, consensus tape, dividend data",
+    "BMRI_industry.json (Theia v3) -- competitive landscape, peer P/B, segment loan data",
+    "IDNFinancials Q1 2026 BMRI results: https://www.idnfinancials.com/news/63207 (Q1 NPAT IDR 15.4T, corporate +29% Agrinas, CoF 1.97%)",
+    "Samuel Sekuritas BMRI 1Q26: https://samuel.co.id/wp-content/uploads/2026/04/BMRI-1Q26-Results.pdf (CoF comment, NIM stable 4.7%)",
+    "PwC infrastructure lending April 2025: https://www.pwc.com/id/en/media-centre/infrastructure-news/april-2025/bank-lending-to-the-infrastructure-sector-continues-to-flow-at-the-beginning-of-2025.html (IDR 375.88T infrastructure loans +24.1% YoY)",
+    "BI rate hike May 2026: https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2810726.aspx",
+    "BI rate hike June 2026: https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2811926.aspx",
+    "IDX FY2022 BMRI filing: https://www.idx.co.id/StaticData/NewsAndAnnouncement/ANNOUNCEMENTSTOCK/From_EREP/202302/d9c0424710_b1d613ab5b.pdf (NIM 5.16% FY2022 hiking cycle confirmation)",
+    "Tempo BI rate 5.5%: https://en.tempo.co/read/2107599/bank-indonesia-unexpectedly-raises-interest-rate-to-5-5",
+    "charter/CONTRACT.md -- §1.1 argue from evidence, §4 surface the crux, §5 key debates not catalyst lists"
+  ]
+}

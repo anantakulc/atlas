@@ -1,0 +1,176 @@
+{
+  "valuation_headline": {
+    "current_price": 4490,
+    "fair_value_today": 5743,
+    "target_12m": 6259.87,
+    "fair_value_12m": 6259.87,
+    "band_low": 4179,
+    "band_high": 7045,
+    "method_primary": "JustifiedPB",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 5743,
+      "multiple": 8.71,
+      "multiple_label": "P/E 659",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 4490,
+      "multiple": 6.62,
+      "multiple_label": "P/E 659",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 6259.87,
+      "basis": "#1 rolled forward at r=9.0% less dividend 0.0",
+      "convergence_return_pct": 39.4
+    },
+    "target_12m": {
+      "value": 6259.87,
+      "basis": "intrinsic_convergence (no separate traded-multiple view authored)",
+      "detail": null,
+      "implied_12m_total_return_pct": 39.4
+    }
+  },
+  "street_reconstruction": {},
+  "street_target": {
+    "mean": null,
+    "mean_multiple": null,
+    "mean_implied_growth_pct": null,
+    "high": null,
+    "return_pct": null,
+    "n_analysts": null
+  },
+  "rating": {
+    "action": "BUY",
+    "tone": "positive",
+    "implied_12m_total_return_pct": 39.4,
+    "convergence_return_pct": 39.4,
+    "street_return_pct": null,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": 0.499,
+    "caps_applied": [],
+    "basis": "action BUY: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {
+    "description": "Justified P/B implied price (IDR) at varying ROE (the crux variable) and Ke (the risk lever). Terminal g = 6.0%, BV/share Q1 2026 = 3,261 IDR. This is the mandatory sensitivity over the two levers the call hinges on per CONTRACT §3.",
+    "dominant_lever": "ROE -- a 1pp ROE change moves the justified P/B by ~0.13x, worth ~425 IDR/share (13% of current price). Ke is the second lever: a 1pp Ke change moves P/B by ~0.18x at base ROE, worth ~590 IDR/share. Both are material -- neither is second-order at these low-multiple valuations.",
+    "ke_range_pct": [
+      12.95,
+      13.45,
+      13.95,
+      14.45,
+      14.95
+    ],
+    "roe_range_pct": [
+      17.5,
+      18.5,
+      19.5,
+      20.0,
+      21.0,
+      22.0
+    ],
+    "g_terminal_pct": 6.0,
+    "bvps": 3261,
+    "matrix_idr": {
+      "ke_12p95_pct": {
+        "roe_17p5": 5396,
+        "roe_18p5": 5865,
+        "roe_19p5": 6334,
+        "roe_20p0": 6569,
+        "roe_21p0": 7038,
+        "roe_22p0": 7507
+      },
+      "ke_13p45_pct": {
+        "roe_17p5": 5034,
+        "roe_18p5": 5471,
+        "roe_19p5": 5909,
+        "roe_20p0": 6128,
+        "roe_21p0": 6566,
+        "roe_22p0": 7003
+      },
+      "ke_13p95_pct": {
+        "roe_17p5": 4717,
+        "roe_18p5": 5127,
+        "roe_19p5": 5538,
+        "roe_20p0": 5743,
+        "roe_21p0": 6153,
+        "roe_22p0": 6563
+      },
+      "ke_14p45_pct": {
+        "roe_17p5": 4438,
+        "roe_18p5": 4824,
+        "roe_19p5": 5210,
+        "roe_20p0": 5403,
+        "roe_21p0": 5789,
+        "roe_22p0": 6175
+      },
+      "ke_14p95_pct": {
+        "roe_17p5": 4190,
+        "roe_18p5": 4554,
+        "roe_19p5": 4919,
+        "roe_20p0": 5101,
+        "roe_21p0": 5465,
+        "roe_22p0": 5830
+      }
+    },
+    "matrix_pb": {
+      "ke_12p95_pct": {
+        "roe_17p5": 1.65,
+        "roe_18p5": 1.8,
+        "roe_19p5": 1.94,
+        "roe_20p0": 2.01,
+        "roe_21p0": 2.16,
+        "roe_22p0": 2.3
+      },
+      "ke_13p45_pct": {
+        "roe_17p5": 1.54,
+        "roe_18p5": 1.68,
+        "roe_19p5": 1.81,
+        "roe_20p0": 1.88,
+        "roe_21p0": 2.01,
+        "roe_22p0": 2.15
+      },
+      "ke_13p95_pct": {
+        "roe_17p5": 1.45,
+        "roe_18p5": 1.57,
+        "roe_19p5": 1.7,
+        "roe_20p0": 1.76,
+        "roe_21p0": 1.89,
+        "roe_22p0": 2.01
+      },
+      "ke_14p45_pct": {
+        "roe_17p5": 1.36,
+        "roe_18p5": 1.48,
+        "roe_19p5": 1.6,
+        "roe_20p0": 1.66,
+        "roe_21p0": 1.78,
+        "roe_22p0": 1.89
+      },
+      "ke_14p95_pct": {
+        "roe_17p5": 1.28,
+        "roe_18p5": 1.4,
+        "roe_19p5": 1.51,
+        "roe_20p0": 1.56,
+        "roe_21p0": 1.68,
+        "roe_22p0": 1.79
+      }
+    },
+    "key_observation": "Even in the bear scenario (ROE=17.5%, Ke=13.95%), the justified price is 4,717 IDR -- ABOVE the current price of 4,490 IDR. The stock would need BOTH bear ROE AND elevated Ke (14.95%+) to be at intrinsic fair value at the current price. This is the structural BUY case: at current price, the market has priced worse than the bear on fundamentals, or is demanding a 200+ bp governance/macro premium above our fundamental Ke."
+  },
+  "bridge_logic": "#1 fair value today 5743 -> #3 fair value 12m 6259.87 (x(1+0.090) - div 0.0); #4 target 12m 6259.87 (intrinsic_convergence (no separate traded-multiple view authored)); implied return to #4 = 39.4%, to #3 = 39.4%, to street mean None = None%"
+}
