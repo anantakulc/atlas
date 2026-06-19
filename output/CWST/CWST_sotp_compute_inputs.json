@@ -1,0 +1,120 @@
+{
+  "ticker": "CWST",
+  "currency": "USD",
+  "current_price": 86.98,
+  "shares_outstanding_b": 0.0637,
+  "net_debt_b": 1.115,
+
+  "primary_method": {
+    "name": "SOTP",
+    "reasoning": "Solid Waste (ExitMultiple, r=7.5%) + Resource Solutions (Multiple EV/EBITDA 9.5x, r=9.5%). Each segment its own WACC per CONTRACT §2.3.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "Solid Waste (Eastern + Western + Mid-Atlantic)",
+          "method": "ExitMultiple",
+          "weight_pct": 85,
+          "reasoning": "Northeast regulated-infrastructure franchise with pricing power. ExitMultiple on NOPAT path to FY2030 normalization year (T=4). Exit EV/NOPAT override of 23.87x corresponds to 15x EV/EBITDA at maturity — justified by Northeast landfill scarcity premium vs Gordon lower bound of 10.5x EV/EBITDA. Includes interim FCF PV of $350M.",
+          "exit_inputs": {
+            "ticker": "CWST",
+            "nopat_path_b": [0.258, 0.305, 0.343, 0.373, 0.410, 0.420, 0.431],
+            "normalize_index": 4,
+            "years_to_T": 4,
+            "g_lt": 0.025,
+            "roic": 0.15,
+            "r": 0.075,
+            "exit_multiple_override": 23.87,
+            "interim_fcf_pv_b": 0.35,
+            "reasoning": "NOPAT = (SW EBITDA - maint capex at 5% of SW rev) x (1 - 0.25 tax). FY2030 NOPAT $410M at 27% blended margin (SW ~30.8%). Exit EV/NOPAT 23.87x = 15x EV/EBITDA reconciled to peers. g_lt 2.5%, ROIC 15% (Gordon check = 16.7x NOPAT = 10.5x EBITDA lower bound). Franchise scarcity premium justified: CWST 5-yr median 14.8x EV/EBITDA at lower margins."
+          },
+          "net_debt_allocation_b": 0.0
+        },
+        {
+          "name": "Resource Solutions (recycling and organics)",
+          "method": "Multiple",
+          "weight_pct": 15,
+          "reasoning": "Commodity-linked annuity. Current-year EBITDA x 9.5x. Below SW franchise value; above GFL-level distressed multiple. National accounts fee floor + organics mandate growth offset commodity exposure.",
+          "multiple_inputs": {
+            "multiple_type": "EV/EBITDA",
+            "multiple_value": 9.5,
+            "fy_estimate": 0.0534,
+            "reasoning": "RS FY2026E EBITDA: $445M x 12% margin = $53.4M. 9.5x vs GFL 12x (30% margin) — discount for RS lower margin (12%) and commodity exposure."
+          },
+          "net_debt_allocation_b": 0.0,
+          "segment_owner_fcf0_b": 0.025
+        }
+      ]
+    }
+  },
+
+  "valuation_anchor": {
+    "ev_metric_label": "FY2026E Adj EBITDA",
+    "ev_metric_value": 0.479
+  },
+
+  "earnings_bridge": {
+    "reported_eps": 0.12,
+    "one_offs_per_share": 0.0,
+    "sbc_per_share": 0.0,
+    "normalized_eps": 0.12,
+    "owner_earnings_per_share": 3.22,
+    "fcf_per_share": 3.22,
+    "notes": "GAAP EPS near-zero due to acquisition intangible amortization. Adj-FCF $205M / 63.7M shares = $3.22. Primary metric EV/EBITDA. SBC immaterial for CWST."
+  },
+
+  "scenarios": [
+    {
+      "label": "Bear",
+      "probability": 0.25,
+      "probability_reasoning": "Highland delay + Ontario disruption + commodity weakness — three observable mechanisms, each with 30-50% standalone probability. Conditional on all three materializing simultaneously: ~25%.",
+      "reasoning": "Margin stagnation at 23% blended by FY2030. Highland permit delayed past 2027. M&A treadmill perpetuates dilution. Exit multiple de-rates to 13x EV/EBITDA.",
+      "segment_changes": [
+        {
+          "name": "Solid Waste (Eastern + Western + Mid-Atlantic)",
+          "exit_overrides": {
+            "nopat_T_b": 0.256,
+            "exit_multiple_override": 22.14,
+            "interim_fcf_pv_b": 0.15
+          }
+        },
+        {
+          "name": "Resource Solutions (recycling and organics)",
+          "multiple_overrides": {
+            "multiple_value": 8.0,
+            "fy_estimate": 0.040
+          }
+        }
+      ]
+    },
+    {
+      "label": "Base",
+      "probability": 0.50,
+      "probability_reasoning": "Honest most-likely: G&A savings realizing (contracted), Highland Q1 2027 as guided (no delay yet), Ontario neutral as managed. $100M M&A below recent $150M pace.",
+      "reasoning": "Base: 27% blended EBITDA margin FY2030, 15x SW exit EV/EBITDA. Theia crux base estimate.",
+      "segment_changes": []
+    },
+    {
+      "label": "Bull",
+      "probability": 0.25,
+      "probability_reasoning": "All three bull conditions require simultaneous success: full G&A savings (probable), Highland on time (Q1 2027 is management's guided date with no 2026 delays), and tipping fee continuation (structural). Three items each with 50-70% probability concurrent -> ~25% joint bull.",
+      "reasoning": "Bull: 29% SW EBITDA margin FY2030 on $2.35B SW revenue. Highland doubling 460k to 1M tons. 16x SW exit EV/EBITDA. RS re-rates to 11x on margin improvement.",
+      "segment_changes": [
+        {
+          "name": "Solid Waste (Eastern + Western + Mid-Atlantic)",
+          "exit_overrides": {
+            "nopat_T_b": 0.423,
+            "exit_multiple_override": 25.38,
+            "interim_fcf_pv_b": 0.50
+          }
+        },
+        {
+          "name": "Resource Solutions (recycling and organics)",
+          "multiple_overrides": {
+            "multiple_value": 11.0,
+            "fy_estimate": 0.065
+          }
+        }
+      ]
+    }
+  ]
+}

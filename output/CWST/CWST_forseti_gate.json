@@ -1,0 +1,186 @@
+{
+  "ticker": "CWST",
+  "agent": "Forseti",
+  "version": "v3.0",
+  "gate_utc": "2026-06-19",
+  "recheck_note": "Re-check run after four hard failures (MECH-01, MECH-02, PROSE-01, BULL-INCONSISTENCY-01) were corrected. One additional fix applied during re-check: two em-dashes introduced by the PROSE-01 fix in bias_audit.verdict and thesis[1].detail were replaced with plain hyphens so the no_em_dashes mechanical gate passes.",
+  "verdict": "SHIP",
+
+  "mechanical_gate": {
+    "numbers_vs_narrative": "PASS",
+    "band_matches_scenarios": "PASS",
+    "business_type_valid": "PASS",
+    "low_conviction_buy_needs_mode": "PASS",
+    "no_em_dashes": "PASS",
+    "overall": "PASS"
+  },
+
+  "recheck_fixes_verified": {
+    "MECH-01_valuation_headline": {
+      "status": "RESOLVED",
+      "evidence": "CWST.json valuation_headline.band_low = 56.5, band_high = 127.77. band_matches_scenarios PASS confirmed by score.py."
+    },
+    "MECH-02_business_type": {
+      "status": "RESOLVED",
+      "evidence": "CWST.json business_type = 'industrial'. sector_hint = 'solid_waste_northeast_regulated'. business_type_valid PASS confirmed by score.py."
+    },
+    "PROSE-01_bias_audit_text": {
+      "status": "RESOLVED",
+      "evidence": "thesis[1].detail now reads 'three slightly conservative (exit EV/EBITDA, RS margin, M&A pace), zero aggressive, five centered - individually immaterial...' Confirmed by string search."
+    },
+    "BULL-INCONSISTENCY-01_panel_value_note": {
+      "status": "RESOLVED",
+      "evidence": "scenario_assumptions.bull.panel_value_note present: 'Boreas (CWST_bull.json) derived $135/share using FY2028 as the normalization year (27.5% margin, discounted 2 years at 8% WACC). Daedalus uses FY2030...' The normalization-date and margin-assumption difference is documented inline."
+    },
+    "NOTE-01_headline_basis": {
+      "status": "RESOLVED",
+      "evidence": "CWST_headline.json four_numbers.fair_value_today.basis = 'Daedalus v3.0 SOTP argued base...'. Note: file contains em-dashes itself but that file is not checked by score.py's no_em_dashes gate (only CWST.json is scanned). No action required for the gate."
+    },
+    "NOTE-03_bear_exit_multiple": {
+      "status": "RESOLVED",
+      "evidence": "inputs.json scenarios[0] (Bear).segment_changes[0].exit_overrides.exit_multiple_override = 22.14. Matches valuation.json."
+    },
+    "EM-DASH-RESIDUAL": {
+      "status": "FIXED IN THIS RECHECK",
+      "evidence": "Two em-dashes introduced by the PROSE-01 fix in CWST.json (bias_audit.verdict and thesis[1].detail) replaced with plain hyphens. score.py no_em_dashes now PASS."
+    }
+  },
+
+  "contract_checks": {
+    "s1_argue_not_assert": "PASS",
+    "s2_method_fits": "PASS",
+    "s3_four_levers_sensitivity": "PASS",
+    "s4_crux_surfaced": "PASS",
+    "s5_debates_not_lists": "PASS",
+    "s6_story_arc": "PASS"
+  },
+
+  "contract_check_detail": {
+    "s1_argue_not_assert": {
+      "verdict": "PASS",
+      "notes": [
+        "Every material number has a named, sourced argument. The 5% organic pricing floor traces to CWST Q1 2026 (+5.1% confirmed), NEWMOA 2024 tipping fee data ($84.44/ton, +$8.52/ton YoY), and structural closure dynamics.",
+        "The $27M Highland EBITDA contribution is derived: 540k incremental tons x ~$50/ton net margin = $27M annually. Sourced to CWST investor presentation March 2026.",
+        "G&A savings: $5M of $15M target in hand (Q1 2026 earnings call, CFO disclosure). Goldman Sachs conviction list add June 8 cited synergy realization as central value driver.",
+        "The 15x exit multiple is argued against Gordon formula lower bound (10.5x EV/EBITDA), CWST 5-year median (14.8x), and peer range (WM 18.5x, RSG 17.8x) with an explicit 2-3x discount for scale and concentration. Not asserted.",
+        "WACC argued via CAPM build shown in full (Ke = 4.5% + 0.776 x 5.5% = 8.77%; blended 8.06%; SW segment 7.5% with argued de-risking from CPI contracts and regulated-like asset base)."
+      ]
+    },
+    "s2_method_fits": {
+      "verdict": "PASS",
+      "notes": [
+        "SOTP structure is correct for CWST's two economically distinct segments. Solid Waste (85% revenue) uses ExitMultiple per CONTRACT §2.2. Resource Solutions (15% revenue, commodity-linked annuity) uses current-year EBITDA multiple.",
+        "T-invariance confirmed by Erinys: T=2 $116.72, T=3 $118.01, T=4 $120.54 -- spread of 3.3%, acceptable.",
+        "P/E explicitly rejected with argument: GAAP net income $4-10M FY2026E against $205M adj FCF -- a 10x structural gap from acquisition intangible amortization.",
+        "Per-segment WACC: SW 7.5% (argued from CPI contracts, regulated-like asset, irreplaceable landfill franchise); RS 9.5% (commodity exposure, competitive MRF market, higher beta). Each its own rate per CONTRACT §2.3."
+      ]
+    },
+    "s3_four_levers_sensitivity": {
+      "verdict": "PASS",
+      "notes": [
+        "All four levers argued: growth rate and duration (7.7% CAGR to FY2030); economics (margin re-rate from 23.1% to 27%, three sourced mechanisms); WACC (7.5% SW / 9.5% RS, CAPM shown); exit multiple (15x, argued against Gordon floor, historical median, and peers).",
+        "Sensitivity matrix present: SW EBITDA margin at FY2030 (22-28%) x Exit EV/EBITDA (13x-19x). 16 cells computed by engine, all verified by Erinys.",
+        "Dominant lever correctly identified: exit multiple dominates per-unit but margin is the crux because it is the more uncertain lever."
+      ]
+    },
+    "s4_crux_surfaced": {
+      "verdict": "PASS",
+      "notes": [
+        "Crux named in §1 (our_view) and crux field: 'EBITDA margin expansion from 23% toward 27% by FY2030.'",
+        "One-line crux: 'The market prices CWST as if EBITDA margins stay flat at 23% forever; the base case says they reach 27% by FY2030, making the current 13.9x EV/EBITDA a 4-turn discount to justified value at maturity.'",
+        "Crux resolved in key_debates[1] ('Is the M&A flywheel eventually accreting...'): is_crux = true.",
+        "Single observable event named: 'The Highland permit approval is the single event that removes the largest uncertainty in the thesis.'"
+      ]
+    },
+    "s5_debates_not_lists": {
+      "verdict": "PASS",
+      "notes": [
+        "Three key debates, each argued both ways with a verdict, quantified in $/share. Not a laundry list.",
+        "Quantifications: Debate 1 (pricing durability) = $20/share; Debate 2 (M&A flywheel vs. treadmill, the crux) = $46/share; Debate 3 (Ontario/Highland transition) = $6/share.",
+        "what_would_change_our_mind present for each debate with specific, observable triggers.",
+        "Bull scenario clears price: $127.77 (Daedalus) and $135 (Boreas) both well above $86.98."
+      ]
+    },
+    "s6_story_arc": {
+      "verdict": "PASS",
+      "notes": [
+        "8-section arc present and populated in order. Opening our_view is conclusion-first: BUY, MEDIUM conviction, thesis, four numbers, crux in one sentence.",
+        "Prose is readable and specific with named sources. Historicals interpreted as a trend, not transcribed.",
+        "Valuation controls the narrative; narrative does not engineer the numbers."
+      ]
+    }
+  },
+
+  "bias_audit_certification": {
+    "tally": {"lean_conservative": 3, "lean_aggressive": 0, "centered": 5},
+    "status": "AT THRESHOLD",
+    "certification": "Erinys certified that the three slightly-conservative leans (exit EV/EBITDA 15x, RS margin 12%, M&A pace $100M/yr) are individually small and collectively immaterial (~$3-5/share aggregate re-centering impact). None changes the BUY call. Forseti accepts the certification. The CONTRACT §1.3 threshold is met exactly (count = 3) and the required disclosure is present. The leans are on different model levers (multiple, segment margin, growth), not the same lever compounding. Stacked bias is not present.",
+    "forseti_finding": "The base is not reflexively conservative or stacked. Each of the three slightly-conservative items has an individually argued reason. Leans do not compound on the same lever."
+  },
+
+  "target_12m_check": {
+    "fair_value_today": 110.99,
+    "fair_value_12m": 119.94,
+    "target_12m": 108.60,
+    "target_vs_fair_12m_gap": -10.5,
+    "target_is_below_fair_value_12m": true,
+    "target_gamed_up": false,
+    "verdict": "PASS. The 12m target ($108.60) is below the intrinsic 12m convergence value ($119.94). Target set at a defensible traded multiple (14.5x FY2027E EBITDA) below the full intrinsic multiple (15x at normalization). Gap is named and explained. No quiet inflation."
+  },
+
+  "street_reconstruction_check": {
+    "present": true,
+    "decomposed": "Price implies ~9.6% FCF CAGR at r=8.0% (13.9x EV/EBITDA = permanent stagnation or GFL de-rate); street mean $112 implies ~12.4% FCF CAGR (17.3x EV/EBITDA = partial re-rate).",
+    "agree_disagree_stated": "AGREE with direction (undervalued at 13.9x); DISAGREE with street's implied immediate full re-rate to 17.3x (our base is 15x at normalization, more conservative on pace).",
+    "verdict": "PASS"
+  },
+
+  "numerator_bridge_check": {
+    "primary_metric": "EV/EBITDA",
+    "bridge_present": true,
+    "ties_to_year1": false,
+    "why_not_tied": "GAAP EPS is not the relevant metric for a serial acquirer with acquisition D&A suppressing GAAP net income to near-zero ($0.12 EPS vs $3.22 adj-FCF per share). The bridge correctly explains the GAAP vs adj-FCF gap ($121M structural difference from amortization) and justifies EV/EBITDA as the primary metric. Appropriate metric substitution for a serial acquirer in the waste sector.",
+    "verdict": "PASS WITH NOTE - bridge explains the substitution; ties_to_year1 = false is acceptable given the metric substitution."
+  },
+
+  "completeness_check": {
+    "snapshot_metric_count": 21,
+    "snapshot_minimum": 15,
+    "snapshot_pass": true,
+    "business_overview_segments": 4,
+    "bundle_segments_supported": 4,
+    "segments_pass": true,
+    "historicals_interpreted": true,
+    "industry_position_moat": true,
+    "industry_position_competitors": 5,
+    "industry_position_share_dynamic": true,
+    "key_debates_count": 3,
+    "key_debates_minimum": 2,
+    "debates_pass": true,
+    "assumptions_sourced": true,
+    "verdict": "PASS - all completeness gates clear"
+  },
+
+  "minor_notes_carried_forward": [
+    {
+      "id": "NOTE-01",
+      "section": "CWST_valuation.json earnings_bridge",
+      "description": "earnings_bridge.ties_to_year1 = false. Primary metric is EV/EBITDA, not P/E, for a serial waste acquirer with near-zero GAAP net income. The bridge explains the metric substitution. Not an arithmetic error.",
+      "note": "Minor documentation gap. No valuation impact."
+    },
+    {
+      "id": "NOTE-02",
+      "section": "CWST_valuation.json sensitivity_matrix base_cell",
+      "description": "Sensitivity grid margin rows (22-28%) refer to SW-segment margin while base_cell label 'margin_pct: 27' refers to blended margin. Labeling inconsistency. Base cell value $105.60 is arithmetically correct.",
+      "note": "Label clarification only. No arithmetic error."
+    },
+    {
+      "id": "NOTE-EM-DASHES-OTHER-FILES",
+      "section": "CWST_headline.json, CWST_inputs.json, CWST_valuation.json, CWST_bull.json, CWST_crux.json, CWST_industry.json, CWST_demand.json, CWST_erinys_audit.json",
+      "description": "These supporting files contain em-dashes. The score.py no_em_dashes check scans only CWST.json (the final report). Supporting files are not gated by the mechanical check. No action required for the gate to pass.",
+      "note": "Not a gate item. Voice_clean passes on the primary report file."
+    }
+  ],
+
+  "issues": []
+}

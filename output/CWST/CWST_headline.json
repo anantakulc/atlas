@@ -1,0 +1,127 @@
+{
+  "valuation_headline": {
+    "current_price": 86.98,
+    "fair_value_today": 110.99,
+    "target_12m": 108.6,
+    "fair_value_12m": 119.94,
+    "band_low": 56.5,
+    "band_high": 127.77,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 110.99,
+      "multiple": 17.1,
+      "multiple_label": "EV/FY2026E Adj EBITDA",
+      "basis": "Daedalus v3.0 SOTP argued base — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 86.98,
+      "multiple": 13.9,
+      "multiple_label": "EV/FY2026E Adj EBITDA",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 119.94,
+      "basis": "#1 rolled forward at r=8.1% less dividend 0.0",
+      "convergence_return_pct": 37.9
+    },
+    "target_12m": {
+      "value": 108.6,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "EV/EBITDA",
+        "defensible_multiple": 14.5,
+        "forward_metric_label": "FY2027E Adj EBITDA",
+        "forward_metric_value": 0.554,
+        "multiple_rationale": "14.5x FY2027E EBITDA ($554M) as the defensible 12-month traded multiple. Rationale: (1) LEAN TOWARD BULL on G&A synergies — $10M of $15M Mid-Atlantic G&A savings is CONTRACTED (Stifel post-investor-summit June 10 confirmed 'thesis intact'; Goldman Sachs conviction buy list add June 8 citing 'synergy realization as central value driver' — these are observable, near-term, and program-specific, not hoped-for); (2) LEAN AGAINST FULL MULTIPLE CONVERGENCE in 12 months — 14.5x is still 4.5x below RSG (17x) and 1.5x above current 13.0x, reflecting that Highland permit (Q1 2027) has not yet been in hand and the full integration story requires 18-24 months to play through, meaning the market will not fully re-rate to 15x+ in one year; (3) Cross-reference: CWST's own 5-year median EV/EBITDA is 14.8x, achieved at lower (20-23%) margins — with 24.2% FY2027E margins, 14.5x is below historical average, leaving upside. The gap between #3 (intrinsic convergence, $114.11) and #4 (traded price target, $108.60) represents the portion of the call that rests on the market keeping the 15x exit premium — this is explicitly named as the market risk, not assumed away.",
+        "price": 108.6
+      },
+      "implied_12m_total_return_pct": 24.9
+    }
+  },
+  "street_reconstruction": {
+    "currency": "EV/EBITDA",
+    "what_price_implies": "At 14.0x FY2026E Adj. EBITDA ($B), the current price implies a ~9.6% FCF CAGR for 10y (then 2% terminal) at r=8.0%.",
+    "what_street_implies": "The street mean target implies ~12.4% for 10y.",
+    "history_anchor": "CWST 5-year median EV/EBITDA ~14.8x; peaked at 19-20x in 2021-2022 on M&A optionality premium; compressed to 13-14x in 2025-2026 on rate sensitivity and acquisition dilution",
+    "contested_lever": "EBITDA margin re-rate: whether CWST closes the 7-10pp gap to large-cap peers (WM/RSG 28-32%) through M&A integration synergies ($15M G&A target) and Highland/Hakes permit-enabled internalization, or whether the perpetual acquisition pace permanently suppresses blended margins below 26% and caps the multiple re-rating the bull thesis requires"
+  },
+  "street_target": {
+    "mean": 112.0,
+    "mean_multiple": 17.3,
+    "mean_implied_growth_pct": 12.4,
+    "high": 130.0,
+    "return_pct": 28.8,
+    "n_analysts": 10
+  },
+  "rating": {
+    "action": "BUY",
+    "tone": "positive",
+    "implied_12m_total_return_pct": 24.9,
+    "convergence_return_pct": 37.9,
+    "street_return_pct": 28.8,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "LOW",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": 0.642,
+    "caps_applied": [],
+    "basis": "action BUY: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {
+    "lever_1_name": "SW EBITDA margin at FY2030 normalization (the crux lever)",
+    "lever_2_name": "Exit EV/EBITDA multiple for Solid Waste at maturity",
+    "note": "RS EV held at $507M (9.5x $53.4M). Net debt $1.115B. Shares 63.7M. Interim FCF PV $350M included in SW EV. SW revenue $2.12B at FY2030 (base path). Each cell is the implied stock price in USD.",
+    "dominant_lever": "EXIT MULTIPLE dominates per unit (each 2x step = ~$12-13/share); MARGIN is the crux because it is the MORE UNCERTAIN lever. At base 15x multiple, moving margin from 24% to 26% = $7.50/share. At base 27% margin, moving multiple from 15x to 17x = $13/share. The call hinges on MARGIN (the crux) because the multiple range has a defensible anchor (historical median 14.8x); the margin range is genuinely contested.",
+    "cells": [
+      {
+        "margin_pct": 22,
+        "exit_13x": 61.73,
+        "exit_15x": 72.69,
+        "exit_17x": 83.66,
+        "exit_19x": 94.62
+      },
+      {
+        "margin_pct": 24,
+        "exit_13x": 68.21,
+        "exit_15x": 80.17,
+        "exit_17x": 92.13,
+        "exit_19x": 104.09
+      },
+      {
+        "margin_pct": 26,
+        "exit_13x": 74.69,
+        "exit_15x": 87.65,
+        "exit_17x": 100.61,
+        "exit_19x": 113.56
+      },
+      {
+        "margin_pct": 28,
+        "exit_13x": 81.17,
+        "exit_15x": 95.12,
+        "exit_17x": 109.08,
+        "exit_19x": 123.03
+      }
+    ],
+    "base_cell": {
+      "margin_pct": 27,
+      "exit_multiple": 15,
+      "implied_px": 105.6,
+      "note": "Manual calc without interim FCF PV; engine base with $350M interim FCF PV = $110.99"
+    },
+    "current_price_implied_zone": "At $86.98, the market prices either 22-24% FY2030 margin at 15x, or 24-26% margin at 13x — both reflecting no margin re-rate thesis and/or GFL-style integration-discount multiple. Our base (27% margin, 15x) produces $105.60 ex-interim-FCF or $110.99 with it.",
+    "fragility_finding": "The call is NOT fragile to the exit multiple at 13x-15x (stock is already cheap relative to our base at both levels). The call IS fragile to margin: if margin stagnates at 22-24% (bear case), the stock is fairly valued at $61-80 at the base multiple (13-15x). If margin reaches 26-28% (above base but below bull), the stock is worth $75-109 even at a conservative 13x, and $100-123 at 17x. The bull case is WELL above current price; the bear case at $56.50 is below. This is an asymmetric setup skewed bullish, consistent with the BUY rating."
+  },
+  "bridge_logic": "#1 fair value today 110.99 -> #3 fair value 12m 119.94 (x(1+0.081) - div 0.0); #4 target 12m 108.6 (defensible_multiple); implied return to #4 = 24.9%, to #3 = 37.9%, to street mean 112.0 = 28.8%"
+}

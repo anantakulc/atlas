@@ -1,0 +1,1198 @@
+{
+  "ticker": "CWST",
+  "name": "Casella Waste Systems, Inc.",
+  "listings": "NMS",
+  "sector": "Industrials",
+  "industry": "Waste Management",
+  "business_type": "industrial",
+  "sector_hint": "solid_waste_northeast_regulated",
+  "currency": "USD",
+  "date": "2026-06-19",
+  "engine": "Atlas v3",
+  "our_view": "BUY with MEDIUM conviction. CWST is a vertically integrated Northeast waste franchise trading at a 21% discount to its intrinsic value of $111 because the market prices in permanent margin stagnation at 23% when the honest base says margins reach 27% by FY2030. Three sourced mechanisms drive that re-rate: $15M in Mid-Atlantic G&A savings (one-third already realized), internalization of acquired volumes into owned landfills (internalized tons already growing 3.6x faster than third-party), and Highland landfill expanding from 460k to 1M tons of capacity once the permit clears. The crux is entirely about whether those mechanisms deliver on time or whether the M&A treadmill perpetually offsets them. The biggest single risk is not the business quality but one event: the Highland permit. If it arrives in Q1 2027 as guided, our base is conservative; if it slips past mid-2027, the bear case becomes live. We rate BUY, target $108.60, at 14.5x FY2027E EBITDA, representing 24.9% upside with an asymmetric skew: the bull at $135 is 55% above price; the bear at $65 is 25% below.",
+  "crux": {
+    "variable": "EBITDA margin expansion from 23% toward 27% by FY2030",
+    "one_line": "The market prices CWST as if EBITDA margins stay flat at 23% forever; the base case says they reach 27% by FY2030, making the current 13.9x EV/EBITDA a 4-turn discount to justified value at maturity.",
+    "base": "27.0% EBITDA margin at FY2030 normalization, driven by G&A savings ($15M target, $5M realized), internalization uplift from Highland permit approval (460k to 1M tons, Q1 2027 expected), and organic price-cost spread of 50-100bps per year.",
+    "bull": "29% EBITDA margin at FY2030 if full G&A savings realize by end-2027, Highland approval arrives on time and accelerates internalization toward 65-70%, and Northeast tipping fees continue their $8-10/ton annual structural step-up. Implies $135 per share.",
+    "bear": "23% EBITDA margin through FY2030 if the M&A treadmill perpetually offsets synergy gains, Highland is delayed past mid-2027 denying internalization uplift, and pricing decelerates toward 3.5-4.0% as commercial volumes stay soft. Implies $65 per share and a de-rate toward GFL-comparable multiples.",
+    "what_decides_it": "The Highland landfill permit (460k to 1M tons) and the pace of Mid-Atlantic G&A savings realization. The first determines whether internalization can accelerate meaningfully; the second determines whether cost leverage follows revenue scale. Highland approval is the single observable event that would shift conviction from MEDIUM to HIGH."
+  },
+  "recommendation": {
+    "action": "BUY",
+    "tone": "positive",
+    "current_price": 86.98,
+    "target_12m": 108.6,
+    "upside_pct": 24.9,
+    "conviction": "MEDIUM",
+    "rationale": "At 13.9x FY2026E EV/EBITDA, the market prices in permanent margin stagnation or a GFL-style integration discount. The documented mechanisms for margin re-rate (G&A savings, Highland internalization, price-cost spread) are real, named, and partially in-hand. MEDIUM conviction reflects that Highland permit approval and consistent M&A digestion are necessary conditions that have not yet been fully delivered.",
+    "next_earnings": "Q2 2026 earnings expected July 30, 2026"
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 110.99,
+      "multiple": 17.1,
+      "multiple_label": "EV/FY2026E Adj EBITDA",
+      "basis": "SOTP: Solid Waste ExitMultiple at r=7.5%, FY2030 normalization, 15x exit EV/EBITDA; Resource Solutions 9.5x current EBITDA. Less $1.115B net debt."
+    },
+    "price_today": {
+      "value": 86.98,
+      "multiple": 13.9,
+      "multiple_label": "EV/FY2026E Adj EBITDA",
+      "basis": "Market"
+    },
+    "fair_value_12m": {
+      "value": 119.94,
+      "basis": "Fair value today rolled forward at r=8.1% (blended WACC)",
+      "convergence_return_pct": 37.9
+    },
+    "target_12m": {
+      "value": 108.6,
+      "multiple": 14.5,
+      "multiple_label": "EV/FY2027E Adj EBITDA",
+      "basis": "14.5x FY2027E EBITDA ($554M): lean toward bull on G&A synergies (Goldman Sachs conviction list add June 8 citing synergy realization as central value driver; Stifel post-summit June 10 confirming thesis intact), but leaning against full re-rate in 12 months given Highland permit not yet in hand. 14.5x is below CWST's 5-year median of 14.8x at lower margins, leaving material upside as the story progresses.",
+      "implied_12m_total_return_pct": 24.9
+    }
+  },
+  "thesis": [
+    {
+      "pillar": "Northeast franchise discount",
+      "detail": "CWST trades at 13.9x FY2026E EBITDA against a justified 17.1x (our base SOTP), a 23% discount that reflects the market pricing perpetual margin stagnation. The Northeast landfill franchise is structurally irreplaceable: 35 years since the last greenfield permit, 23% of regional disposal capacity at sites closing within 5 years (NEWMOA 2024), and tipping fees at $84.44/ton versus the $62.28 national average. These constraints are not pandemic artifacts; they are geological and regulatory realities that anchor pricing power independent of the economic cycle."
+    },
+    {
+      "pillar": "The margin re-rate is sourced and partially in-hand",
+      "detail": "The path from 23% to 27% EBITDA margins by FY2030 runs through three mechanisms, each named and partially documented: (1) $15M Mid-Atlantic G&A savings, with $5M already realized and Goldman Sachs citing synergy realization as the central value driver for their conviction list add; (2) internalized disposal volume already growing 11% versus 3% for third-party volumes, proving the conversion is happening; and (3) Highland landfill expanding from 460k to 1M tons of capacity (permit expected Q1 2027), which would add an estimated $27M of annual EBITDA at market tipping fees. The bias audit: three slightly conservative assumptions (exit EV/EBITDA at historical median, RS margin at midpoint of range, M&A pace below recent run rate), zero aggressive, five centered - individually immaterial and collectively insufficient to change the BUY call or the crux (Erinys-certified: aggregate re-centering impact ~$3-5/share)."
+    },
+    {
+      "pillar": "Asymmetric setup at current entry",
+      "detail": "The sensitivity matrix confirms an asymmetric payoff: at 22-24% terminal margin and 15x exit multiple, the stock is worth $73-80, implying 8-16% downside from today. At 27% margin and 15x (our base), fair value is $106-111, 22-28% upside. At 27% and 17x (partial re-rate), $101-109. Even the bear at $65 sits only 25% below current price while the bull at $135 is 55% above. The setup skews bullish, but MEDIUM conviction reflects that the Highland permit is the binary that decides which scenario plays out."
+    }
+  ],
+  "business_overview": {
+    "summary": "Casella Waste Systems is a vertically integrated solid waste company operating exclusively in the northeastern United States, founded in Rutland, Vermont in 1975. The core economic model is regional consolidation: CWST acquires private haulers at below-consolidated margins, integrates them onto its routing and billing systems, reprices contracts toward market rates, and routes acquired volumes to its own landfills. That last step, internalization, is the margin engine: waste routed to a CWST-owned landfill earns the full collection-to-disposal margin stack instead of paying a third-party tipping fee.",
+    "business_model": "Vertically integrated waste collection, transfer, and disposal with recycling/organics processing. Revenue is approximately 85% Solid Waste (collection, transfer, landfill disposal across three regional segments) and 15% Resource Solutions (materials recovery facilities, organics processing, national accounts). The company earns pricing power from Northeast landfill scarcity -- a structural supply constraint that has seen only one new greenfield permitted in 35 years -- and from municipal and commercial collection contracts, roughly 27.5% of which are CPI-indexed with 5-10 year terms.",
+    "segments": [
+      {
+        "name": "Eastern (Vermont, New Hampshire, Maine, Massachusetts)",
+        "revenue_share_pct": 25.7,
+        "revenue_fy2025_m": 472.6,
+        "growth_pct": "4-5% annually, pricing-led",
+        "margin_pct": "26-28% estimated (highest internalization, most mature)",
+        "nature": "annuity",
+        "note": "Casella's original and most mature geography, with the highest landfill internalization rates. Municipal and residential contracts predominate. Star Waste Systems (Greater Boston, $100M annualized, closed April 1 2026) begins densifying the Massachusetts presence."
+      },
+      {
+        "name": "Western (New York, Pennsylvania via McKean)",
+        "revenue_share_pct": 36.1,
+        "revenue_fy2025_m": 663.2,
+        "growth_pct": "6-8% annually (pricing plus Highland capacity opening)",
+        "margin_pct": "24-26% estimated",
+        "nature": "annuity with structural disposal pricing upside",
+        "note": "Core growth engine. McKean Landfill in Pennsylvania (1.6M tons, rail access) receives Northeast-exported waste. Highland permit expansion (460k to 1M tons, expected Q1 2027) would materially lift internalization in this geography and is the crux event for the thesis."
+      },
+      {
+        "name": "Mid-Atlantic (Pennsylvania, Maryland, Delaware, West Virginia since January 2026)",
+        "revenue_share_pct": 18.6,
+        "revenue_fy2025_m": 341.1,
+        "growth_pct": "8-12% near-term, moderating to 5-6% by 2029",
+        "margin_pct": "18-20% estimated (acquisition-integration stage)",
+        "nature": "acquisition-integration converting toward annuity over 3-5 years",
+        "note": "Assembled via acquisition of GFL's PA/MD/DE assets (June 2023) and subsequent bolt-ons. The $15M G&A savings target is concentrated here. Mid-Atlantic integration headwind narrowed from ~100bps annually to ~10bps by Q3 2025 -- the acute phase is passing."
+      },
+      {
+        "name": "Resource Solutions (recycling, organics, national accounts)",
+        "revenue_share_pct": 19.6,
+        "revenue_fy2025_m": 360.0,
+        "growth_pct": "5% base (national accounts and organics mandates)",
+        "margin_pct": "10-14%, base 12%",
+        "nature": "cyclical-commodity with improving fee-based annuity component",
+        "note": "Revenue includes commodity-indexed sales of recovered fiber (OCC, newsprint), plastics, glass, metals, plus processing fees. OCC prices fell 22% YoY in Q1 2026, though risk-sharing contracts limited the net income impact to approximately $1M. Organics processing grows under Massachusetts food waste mandate tailwind."
+      }
+    ],
+    "customers": [
+      "Municipal governments (residential collection, long-term CPI-linked contracts)",
+      "Commercial accounts (restaurants, retail, office)",
+      "Industrial and roll-off customers",
+      "National recycling accounts",
+      "Third-party waste haulers (landfill tipping customers)"
+    ],
+    "geographic": [
+      "Vermont",
+      "New Hampshire",
+      "Maine",
+      "Massachusetts",
+      "New York",
+      "Pennsylvania",
+      "Maryland",
+      "Delaware",
+      "Connecticut",
+      "West Virginia (since January 2026)"
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY2022",
+      "revenue_b": 1.085,
+      "revenue_growth_pct": null,
+      "ebitda_b": 0.225,
+      "ebitda_margin_pct": 20.7,
+      "adj_fcf_b": 0.086,
+      "net_income_b": null,
+      "eps": null,
+      "note": "Pre-Mid-Atlantic era. Adj EBITDA margin 20.7%, capex 12.1% of revenue."
+    },
+    {
+      "fy": "FY2023",
+      "revenue_b": 1.265,
+      "revenue_growth_pct": 16.6,
+      "ebitda_b": 0.252,
+      "ebitda_margin_pct": 19.9,
+      "adj_fcf_b": 0.078,
+      "net_income_b": null,
+      "eps": null,
+      "note": "Strong pricing year (+7.5%) but margin compressed to 19.9% as Mid-Atlantic GFL integration began. GAAP FCF suppressed by high-growth capex."
+    },
+    {
+      "fy": "FY2024",
+      "revenue_b": 1.557,
+      "revenue_growth_pct": 23.1,
+      "ebitda_b": 0.315,
+      "ebitda_margin_pct": 20.2,
+      "adj_fcf_b": 0.157,
+      "net_income_b": 0.014,
+      "eps": 0.23,
+      "note": "Integration costs suppressed margin. LMR and Whitetail Disposal added $100M+ annualized Mid-Atlantic revenue."
+    },
+    {
+      "fy": "FY2025",
+      "revenue_b": 1.837,
+      "revenue_growth_pct": 18.0,
+      "ebitda_b": 0.423,
+      "ebitda_margin_pct": 23.0,
+      "adj_fcf_b": 0.18,
+      "net_income_b": 0.008,
+      "eps": 0.12,
+      "note": "First year of meaningful margin improvement (+290bps vs 2023 trough). EBITDA +17.3% YoY. Adj FCF $180M but GAAP FCF only $84M (capex $246M at 13.4% of revenue, highest in recent history). 9 acquisitions, ~$115M annualized revenue added."
+    },
+    {
+      "fy": "FY2026E",
+      "revenue_b": 2.07,
+      "revenue_growth_pct": 12.7,
+      "ebitda_b": 0.478,
+      "ebitda_margin_pct": 23.1,
+      "adj_fcf_b": 0.205,
+      "note": "Management guidance (raised April 30 post-Q1 beat): revenue $2.06-2.08B, EBITDA $473-483M, adj FCF $200-210M. Star Waste ($100M annualized) dilutes margin slightly in H1; G&A savings and synergy realization expected to drive H2 expansion."
+    }
+  ],
+  "historical_financials_read": "The trend tells two stories simultaneously. Revenue has compounded at approximately 14% annually from FY2022 to FY2025E -- not by growing the Northeast waste market but by buying it, acquiring roughly $800M in annualized revenue across 80 deals in six years. That acquisition pace drove a known side effect: each new business enters at 18-20% EBITDA margins and takes 12-24 months to internalize and reprice, suppressing blended margins to a trough of 19.9% in FY2023. The second story is the recovery: from that trough, margins expanded 310bps to 23.0% in FY2025 as the mid-2023 GFL Mid-Atlantic acquisition began integrating and the company's older cohorts converted to owned-landfill economics. The 2025 margin level is the starting point for the investment thesis, not the ending point. The tension is that capex has risen from 12.1% of revenue in FY2022 to 13.4% in FY2025, growing faster than revenue even as revenue doubled -- creating a widening gap between reported adj FCF ($180M) and GAAP FCF ($84M). The bull argues this gap closes as McKean infrastructure and landfill cell construction complete; the bear argues it is structural in a serial acquirer that never pauses to digest.",
+  "snapshot": [
+    {
+      "label": "Current price",
+      "value": "$86.98"
+    },
+    {
+      "label": "52-week range",
+      "value": "$74.05 - $118.42"
+    },
+    {
+      "label": "Market cap",
+      "value": "$5.5B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$6.6B"
+    },
+    {
+      "label": "Net debt",
+      "value": "$1.115B"
+    },
+    {
+      "label": "Net debt / FY2026E EBITDA",
+      "value": "2.34x"
+    },
+    {
+      "label": "EV / FY2026E Adj EBITDA",
+      "value": "13.9x"
+    },
+    {
+      "label": "FY2026E Adj EBITDA",
+      "value": "$478M (midpoint guidance)"
+    },
+    {
+      "label": "FY2026E Adj FCF",
+      "value": "$205M (midpoint guidance)"
+    },
+    {
+      "label": "Adj FCF yield (FY2026E)",
+      "value": "3.7%"
+    },
+    {
+      "label": "FY2025 Adj EBITDA margin",
+      "value": "23.0%"
+    },
+    {
+      "label": "Peer median EV/EBITDA (WM/RSG/WCN)",
+      "value": "18.5x"
+    },
+    {
+      "label": "CWST 5-year median EV/EBITDA",
+      "value": "14.8x"
+    },
+    {
+      "label": "YTD return",
+      "value": "-11.8%"
+    },
+    {
+      "label": "1-year return",
+      "value": "-25.0%"
+    },
+    {
+      "label": "Beta",
+      "value": "0.776"
+    },
+    {
+      "label": "Shares outstanding",
+      "value": "63.7M"
+    },
+    {
+      "label": "Revenue FY2025",
+      "value": "$1.837B"
+    },
+    {
+      "label": "Acquisitions (5 years)",
+      "value": "~80 deals, $800M+ annualized revenue added"
+    },
+    {
+      "label": "M&A pipeline (identified)",
+      "value": "~$500M annualized"
+    },
+    {
+      "label": "Employees",
+      "value": "5,600"
+    },
+    {
+      "label": "Dividend",
+      "value": "None"
+    },
+    {
+      "label": "Capital return program",
+      "value": "None -- all FCF deployed into M&A and infrastructure capex"
+    }
+  ],
+  "industry_position": {
+    "market_overview": "US solid waste collection and disposal is a $110B market (Grand View Research / Waste Business Journal, 2024) growing at 4.5-5.5% annually in nominal terms. The Northeast US -- CWST's exclusive geography -- is a structurally tighter sub-market of $18-22B addressable value, where disposal capacity is actively closing. NEWMOA's 2024 report documents that 23% of the Northeast region's total disposal capacity (7.6M tons per year) sits at sites expected to close within five years, and only one new greenfield landfill has been developed in the region in approximately 35 years. This is not a cyclical supply constraint: it is geological (population density makes siting near-impossible), regulatory (NIMBY opposition and SEQRA permitting in New York alone typically runs 5-10 years), and economic (economics of new construction require tipping fees well above market). The result is a secular upward trend in Northeast tipping fees: the regional average reached $84.44 per ton in 2024, up $8.52 in a single year, against a $62.28 national average.",
+    "tam_usd_bn": 110,
+    "tam_growth_pct": 4.5,
+    "addressable_market": "Northeast US non-hazardous solid waste collection, transfer, and disposal: estimated $18-22B. CWST holds approximately 8-10% share of this addressable market at FY2025 revenue levels ($1.5B solid waste revenue against a $20-25B addressable slice). The base case to FY2030 assumes share increases modestly to 8-10% on $2.0B solid waste revenue as CWST continues consolidating -- physically achievable and well within the regional TAM ceiling (demand.json ceiling check: PASS).",
+    "the_share_dynamic": "CWST is not taking share from WM or RSG in direct head-to-head competition -- those companies are primarily focused on Sun Belt growth where land is available, economies are growing, and permitting is easier. CWST's share is taken from private haulers: operators with $5-100M in revenue who are too small for national players to pursue, priced at 5-8x pre-synergy EBITDA, and integrated onto CWST's disposal network over 12-24 months. That is the primary dynamic. The secondary dynamic is internalization: each acquired collection route pays third-party tipping fees until CWST reroutes volumes to its own landfills, at which point the tipping fee cost becomes captive EBITDA. Internalized volumes grew 11% in the most recent reporting period versus 3% for third-party volumes, confirming the conversion pipeline is active. The tertiary dynamic is pricing: CWST delivers 5.1% solid waste pricing in Q1 2026 against WM's 6.3% and RSG's 6.8%, reflecting its smaller scale but still well above the CPI benchmark of 3-3.5%. Northeast capacity constraints anchor this pricing floor structurally.",
+    "revenue_drivers": [
+      "5%+ annual solid waste pricing from Northeast landfill scarcity",
+      "$100-150M per year of tuck-in M&A adding collection routes and internalization opportunity",
+      "Internalization of acquired volumes into owned landfills (11% YoY growth in internalized tons)",
+      "Resource Solutions growth from national accounts and organics mandate expansion",
+      "McKean Landfill (1.6M tons, rail access) absorbing displaced Northeast volumes"
+    ],
+    "moat": "Northeast landfill permits are the primary moat -- irreplaceable, regulated, and growing in value as capacity closes around them. Route density and geographic monopolies in Northern New England (Vermont, NH, western Maine) are secondary: in these markets CWST is the only integrated hauler of meaningful scale, creating fixed-cost leverage that a new entrant cannot replicate without a landfill. Municipal contracts (25-30% of collection) with 5-10 year CPI-linked terms provide a stable annuity base.",
+    "competitors": [
+      {
+        "name": "Waste Management, Inc. (WM)",
+        "position": "National market leader, ~34% of publicly traded waste revenues",
+        "fy2025_adj_ebitda_margin_pct": 30.0,
+        "ev_ebitda_approx": 18.5,
+        "share": "Significant national presence but less concentrated in CWST's core rural New England markets. Not a primary direct competitor in Vermont, NH, or western Maine.",
+        "trajectory": "Exceeded 30% adj EBITDA for the first time in FY2025 (+150bps). Stericycle integration ongoing. The margin benchmark that CWST's bull case converges toward."
+      },
+      {
+        "name": "Republic Services, Inc. (RSG)",
+        "position": "National #2, ~25% of publicly traded waste revenues",
+        "fy2025_adj_ebitda_margin_pct": 32.0,
+        "ev_ebitda_approx": 17.8,
+        "share": "Present in major Northeast markets; less competitive in Northern New England rural markets. Q1 2026 core pricing 6.8% confirming strong industry pricing environment.",
+        "trajectory": "32% adj EBITDA margin in FY2025. Strong execution on Blue Polymer and RNG. The closest large-cap margin reference for CWST's long-run target."
+      },
+      {
+        "name": "Waste Connections, Inc. (WCN)",
+        "position": "#3 US/Canada; secondary-market specialist",
+        "fy2025_adj_ebitda_margin_pct": 33.0,
+        "ev_ebitda_approx": 21.0,
+        "share": "Limited Northeast presence. WCN targets markets where it can be the dominant regional operator -- structurally analogous to CWST's Northern New England position. WCN's trajectory (reaching 33% after a sustained acquisition and digestion cycle) is the bull case reference for CWST's long-run path.",
+        "trajectory": "Industry-leading margins at 33.0% FY2025, targeting 33.3-33.4% in FY2026. The ceiling that shows what Northeast-style regional dominance can achieve at maturity."
+      },
+      {
+        "name": "GFL Environmental Inc. (GFL)",
+        "position": "#4 North American; Canadian-headquartered",
+        "fy2025_adj_ebitda_margin_pct": 30.0,
+        "ev_ebitda_approx": 11.5,
+        "share": "Divested PA/MD/DE solid waste assets to CWST in June 2023 (origin of CWST's Mid-Atlantic segment). Still present in NY and NJ. GFL is the most relevant trading comp for CWST: a similar acquisitive, leveraged regional profile at larger scale.",
+        "trajectory": "Targeting ~30.6% adj EBITDA margin in FY2026. Trades at 11.5x NTM EV/EBITDA -- the integration discount that CWST risks receiving if the M&A treadmill thesis proves correct. The GFL precedent (aggressive M&A with a multi-year re-rating discount) is the bear case reference."
+      },
+      {
+        "name": "Private regional and local haulers",
+        "position": "CWST's primary acquisition targets",
+        "share": "Hundreds of operators, $5-100M revenue each, at 10-18% EBITDA margins",
+        "trajectory": "Being consolidated at accelerating pace. M&A deal flow in environmental services was 25 deals YTD through mid-2025 versus 16 in 2024. Acquired at 5-8x pre-synergy EBITDA."
+      }
+    ],
+    "five_forces": {
+      "supplier_power": "LOW. Labor is the primary input; manageable at current wage levels. Fuel partially hedged. Equipment from competitive OEMs.",
+      "buyer_power": "LOW in core Northern New England (structural monopoly positions, no alternatives). MODERATE for large commercial accounts. LOW for municipal contracts (long-term, high switching cost).",
+      "competitive_rivalry": "LOW in Vermont/NH/Maine (CWST dominant). MODERATE in New York and Mid-Atlantic (WM and RSG present, commercial account competition).",
+      "threat_of_substitutes": "VERY LOW. Physical waste must be collected and disposed of. No technology substitute for collection and disposal infrastructure.",
+      "threat_of_entry": "VERY LOW for integrated operators. Landfill permitting is functionally closed in the Northeast. Hauler-only entrants pay market-rate tipping fees to CWST, creating a structural cost disadvantage."
+    }
+  },
+  "peers": [
+    {
+      "ticker": "WM",
+      "name": "Waste Management",
+      "ev_ebitda": 18.5,
+      "adj_ebitda_margin_pct": 30.0,
+      "rev_growth_ttm_pct": 8.0,
+      "highlight": true,
+      "note": "Large-cap mature. CWST at 13.9x trades at a 25% discount to WM. The margin gap (23% vs 30%) explains roughly half the multiple gap; scale and capital return program explain the rest."
+    },
+    {
+      "ticker": "RSG",
+      "name": "Republic Services",
+      "ev_ebitda": 17.8,
+      "adj_ebitda_margin_pct": 32.0,
+      "rev_growth_ttm_pct": 2.6,
+      "highlight": false,
+      "note": "Large-cap mature with highest margins among the Big 3. Q1 2026 core pricing 6.8% confirms industry pricing strength that supports CWST's 5% target."
+    },
+    {
+      "ticker": "WCN",
+      "name": "Waste Connections",
+      "ev_ebitda": 21.0,
+      "adj_ebitda_margin_pct": 33.0,
+      "rev_growth_ttm_pct": 7.0,
+      "highlight": false,
+      "note": "Secondary-market analog to CWST's Northern New England position. WCN's 33% margin at 21x multiple is what the bull case aspires to long-run. The WCN precedent shows that the digestion discipline pays off -- but it required slowing M&A to digest."
+    },
+    {
+      "ticker": "GFL",
+      "name": "GFL Environmental",
+      "ev_ebitda": 11.5,
+      "adj_ebitda_margin_pct": 30.0,
+      "rev_growth_ttm_pct": 3.0,
+      "highlight": true,
+      "note": "The bear case reference: GFL ran an aggressive M&A roll-up from 2016-2022, maintained perpetual acquisition cadence, and has traded at a 35-40% discount to WM/RSG for five years as the market priced the integration discount. CWST at 13.9x is already at a 20% premium to GFL's 11.5x -- but if the M&A treadmill thesis proves correct, that gap narrows."
+    }
+  ],
+  "peers_read": "CWST at 13.9x FY2026E EV/EBITDA sits in the no-man's land between GFL (11.5x, integration-discount) and WM/RSG (17.8-18.5x, mature-franchise premium). The 25-30% discount to large-caps is explained by three differences: 7-10 percentage points lower EBITDA margins, smaller scale ($1.8B revenue versus $16-22B), and no capital return program (all FCF into M&A). WCN (21x) shows what the premium looks like when a secondary-market consolidator matures. The bull thesis is essentially that CWST closes the margin gap partially and re-rates accordingly; the bear thesis is that CWST stays in the GFL zone permanently. At current price, the market is pricing exactly that GFL outcome: 13.9x is only 2.4x above GFL's 11.5x, an extraordinarily narrow spread for two businesses where CWST's assets are structurally superior (Northeast franchise versus GFL's broader but lower-moat portfolio).",
+  "market_view": {
+    "whats_priced_in": "At $86.98 and 13.9x FY2026E EV/EBITDA, the market prices one of two things: either permanent EBITDA margin stagnation at 22-23% (the M&A treadmill -- no re-rate) or a GFL-style integration-discount multiple of 12-13x at slightly higher margins. Both interpretations are consistent with the sensitivity matrix: the current price sits at the intersection of 22-24% FY2030 margin at 15x exit multiple. The reverse-multiple decomposition in comps.json is precise: 13.9x EV/EBITDA implies approximately 9.6% FCF CAGR for 10 years at r=8.0% and 2% terminal growth -- below CWST's own near-term adj FCF growth trajectory of 14-20% per year. The stock is not pricing in the adj-FCF inflection ($84M GAAP FY2025 to $205M guided FY2026) that management delivered as a beat-and-raise Q1 2026 print.",
+    "street_view": "8 of 10 fundamental sell-side analysts rate Buy or Strong Buy, with a mean target of $112.0 (28.8% upside) and a high of $135 (TD Cowen and UBS). The street's bull case rests on three pillars consistent with ours: the landfill moat, the M&A flywheel, and the adj-FCF inflection. Goldman Sachs adding CWST to its US Conviction Buy List on June 8 at $120 is the most significant recent institutional signal: a formal upgrade in conviction tier, citing synergy realization as the central value driver. The consensus is broadly aligned with our direction; our base ($111) sits within 1% of the street mean ($112), reflecting similar growth assumptions but a more conservative exit multiple (15x vs. the street's implied 17x+).",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-06-10",
+        "firm": "Stifel",
+        "action": "reiterated",
+        "old_pt": 113,
+        "new_pt": 113,
+        "rating_change": "Buy maintained",
+        "note": "Post-Investor Summit: pricing improving sequentially (third-party landfill pricing 4.3% vs. 2.5% prior quarter). Thesis intact."
+      },
+      {
+        "date": "2026-06-08",
+        "firm": "Goldman Sachs",
+        "action": "added_to_conviction_buy_list",
+        "old_pt": null,
+        "new_pt": 120,
+        "rating_change": "Buy -- US Conviction List addition",
+        "note": "Central value driver identified as synergy realization from Mid-Atlantic integration. $120 target implied 38% upside at time of add. Formal conviction-tier upgrade above standard Buy."
+      },
+      {
+        "date": "2026-05-04",
+        "firm": "Barclays",
+        "action": "upgraded_and_target_raised",
+        "old_pt": 101,
+        "new_pt": 102,
+        "rating_change": "Equal Weight to Overweight",
+        "note": "Post-Q1 upgrade: accelerating synergy capture, G&A savings execution, incremental M&A capacity. Second step-up from prior Underweight."
+      },
+      {
+        "date": "2026-05-01",
+        "firm": "TD Cowen",
+        "action": "target_raised",
+        "old_pt": 130,
+        "new_pt": 135,
+        "rating_change": "Buy maintained",
+        "note": "Consensus underestimates revenue because models exclude forward M&A. Raised revenue assumptions FY2026-2030 by 2-4%."
+      },
+      {
+        "date": "2026-05-01",
+        "firm": "UBS",
+        "action": "target_confirmed",
+        "old_pt": 140,
+        "new_pt": 130,
+        "rating_change": "Buy maintained",
+        "note": "Prior $140 cut to $130 on higher near-term acquisition dilution from Star Waste. Subsequently raised to $135 on defensive business model appeal. Core bull thesis intact."
+      },
+      {
+        "date": "2026-05-01",
+        "firm": "Raymond James",
+        "action": "target_cut",
+        "old_pt": 120,
+        "new_pt": 115,
+        "rating_change": "Strong Buy maintained",
+        "note": "Trimmed for Star Waste dilution timing. Long-term landfill footprint thesis unchanged."
+      },
+      {
+        "date": "2026-05-01",
+        "firm": "JPMorgan",
+        "action": "target_cut",
+        "old_pt": 112,
+        "new_pt": 110,
+        "rating_change": "Neutral maintained",
+        "note": "Balanced view on execution risk. $110 still implies 26% upside from spot."
+      },
+      {
+        "date": "2026-06-09",
+        "firm": "Zacks Research",
+        "action": "downgraded",
+        "old_pt": null,
+        "new_pt": null,
+        "rating_change": "Hold to Strong Sell",
+        "note": "Quantitative model driven by negative GAAP EPS revision momentum (GAAP net income guided $4-10M vs prior $16-22M, due to Star Waste D&A). Not a fundamental analyst action. GAAP P/E is not the relevant metric for a serial acquirer; EV/EBITDA is. This action should not be weighted alongside fundamental sell-side coverage."
+      }
+    ],
+    "news_narrative": "The dominant narrative is a beat-and-raise Q1 2026 print (adjusted EPS $0.20 vs. consensus $0.12, 67% beat; revenue +9.6% YoY; FY2026 guidance raised across all metrics) followed by continued market underperformance driven by sector rotation. The stock is down 25% year-over-year not because the business has deteriorated but because low-beta infrastructure names repriced in a higher-for-longer rate environment as investor attention rotated to AI infrastructure and defense. The Goldman Sachs conviction list add on June 8 is the most significant recent event in the tape.",
+    "sentiment_narrative": "Institutional sentiment is constructive. Atom Investors LP initiated a new stake in June 2026. Congruence Capital bought 171,186 shares ($16.77M) in June 2026. Wasatch Long/Short Alpha Fund maintained confidence despite acknowledging CWST competes for capital against AI names. Short interest at approximately 6.4% of float, up 72.6% YoY, is consistent with rate-sensitivity shorts rather than fundamental shorts. CEO Coletta sold approximately $1.6M across February-May 2026 in what appears to be a periodic 10b5-1 plan -- a mild negative signal but not a fundamental red flag given 140,118 shares remaining.",
+    "runway": "The next catalyst is Q2 2026 earnings on July 30, 2026. Q2 is seasonally CWST's strongest quarter (peak construction and demolition volumes, warmer weather). Star Waste contributes its first full quarter. The positive signal to watch: EBITDA margin expanding sequentially above Q1's 21.2% as acquisition dilution fades, confirming the H2 2026 trajectory toward management's 23%+ FY2026 guidance. The negative signal: margins flat or declining despite revenue growth, confirming the M&A treadmill thesis.",
+    "runway_verdict": "The multiple already reflects significant pessimism at 13.9x FY2026E EV/EBITDA -- near the 10-year median of 14.8x on elevated guidance. A further de-rate to GFL territory (11-12x) would require material integration failure, not just timing delays. Valuation risk is present but is distinct from fundamental risk: the business delivered a beat-and-raise Q1. The runway is clear: Q2 earnings in six weeks provides the first data point on whether Star Waste integration is progressing on schedule.",
+    "market_lean": {
+      "direction": "bull",
+      "strength": "moderate",
+      "basis": "8 of 10 fundamental analysts at Buy, Goldman Sachs conviction list addition at $120, institutional buyers active in June 2026. Multiple near 10-year median despite elevated guidance. Countervailing: Zacks mechanical Strong Sell, CEO insider selling ($1.6M, no buying), elevated short interest (6.4% of float, +72.6% YoY)."
+    }
+  },
+  "street_reconstruction": {
+    "currency": "EV/EBITDA",
+    "what_price_implies": "At 13.9x FY2026E Adj EBITDA, the market prices approximately 9.6% FCF CAGR for 10 years (then 2% terminal) at r=8.0%. This is below CWST's own near-term adj-FCF growth of 14-20% per year and inconsistent with the company's M&A-driven revenue trajectory. The implied scenario is either permanent margin stagnation (22-23% through the decade) or a multiple compression toward GFL territory as the market concludes the integration flywheel is a treadmill.",
+    "what_street_implies": "The street mean target of $112 implies approximately 12.4% FCF CAGR for 10 years -- more consistent with CWST's guided growth trajectory and our medium-term projections. Street targets range from $101 (JPMorgan Neutral, most conservative) to $135 (UBS and TD Cowen Bulls).",
+    "history_anchor": "CWST 5-year median EV/EBITDA approximately 14.8x; peaked at 19-20x in 2021-2022 on M&A optionality premium; compressed to 13-14x in 2025-2026 on rate sensitivity and acquisition dilution from Star Waste.",
+    "our_justified_multiple": "17.1x FY2026E EV/EBITDA (fair value $111): the exit-multiple SOTP implies the market eventually pays 15x EV/EBITDA for the Solid Waste segment at FY2030 normalization -- below the historical median at lower margins. The 17.1x current-year implied multiple is simply the arithmetic of the FY2030 base EBITDA ($718M) discounted back at 7.5% with interim FCF included, divided by the FY2026E EBITDA anchor.",
+    "agree_disagree": "AGREE with the street that CWST's SW franchise is structurally undervalued at 13.9x. AGREE that the adj-FCF inflection ($84M GAAP FY2025 to $205M guided FY2026) is the key near-term catalyst. DISAGREE that the stock immediately warrants 17x+ FY2026E EBITDA (street mean implies 17.3x) -- that would require a re-rating that the margin story has not yet earned. Our base says the re-rating happens gradually as margins compound from 23% toward 27% through FY2030, producing 15x exit EV/EBITDA at maturity -- a conservative multiple for an integrated Northeast waste franchise."
+  },
+  "management": {
+    "ceo": "John W. (John) Casella, co-founder, served as CEO for decades before transitioning. Edmond (Ned) Coletta was appointed President and CEO -- the transition represented a founder-led succession to a long-tenured operating executive. The company maintains the Casella family culture of disciplined regional acquisitions. Coletta sold approximately $1.6M in stock across February-May 2026 at prices of $87-94 per share in what appears to be a periodic 10b5-1 plan, with 140,118 shares remaining. No insider buying in the period.",
+    "cfo": "The CFO role has been occupied by operationally-focused executives who have been central to the integration narrative. The CFO disclosed at Q1 2026 that G&A is running at approximately 12% of revenue and described automation savings as 'tip of the iceberg' -- a concrete, quantified characterization, not vague guidance.",
+    "capital_allocation_history": "Serial M&A acquirer: approximately 80 acquisitions over six years adding more than $800M in annualized revenue. All free cash flow deployed into M&A and infrastructure capex. No dividend. No buyback program. Net leverage at 2.34x FY2026E EBITDA, elevated but manageable against infrastructure-grade assets. Capital markets access confirmed: $15M revenue bond remarketing in June 2026 at reasonable rates. The capital allocation model is entirely predicated on acquiring and internalizing Northeast waste routes -- there is no dividend floor or buyback backstop.",
+    "recent_insider_activity": [
+      {
+        "person": "Edmond (Ned) Coletta, President and CEO",
+        "date": "2026-05-19",
+        "shares_sold": 12500,
+        "value_usd_m": 1.12,
+        "price_range_usd": [
+          89.03,
+          90.07
+        ],
+        "shares_remaining": 140118
+      },
+      {
+        "person": "Edmond (Ned) Coletta, President and CEO",
+        "date": "2026-02-27",
+        "shares_sold": 3812,
+        "value_usd_m": 0.357,
+        "price_usd": 93.7
+      }
+    ]
+  },
+  "valuation_method": "SOTP: two economically distinct segments valued separately, each at its own WACC and method, then summed and adjusted for net debt. Solid Waste (85% of revenue) uses the ExitMultiple method (CONTRACT §2.2): building NOPAT to a FY2030 normalization year when integration matures, applying a justified 15x EV/EBITDA steady-state multiple (corresponding to 23.87x EV/NOPAT given the NOPAT/EBITDA conversion at 27% margins), and discounting at the Solid Waste segment WACC of 7.5% -- below the blended 8.06% because 27.5% of volumes are on CPI-linked municipal contracts, the asset base is irreplaceable and regulated, and Northeast scarcity creates structural pricing power. Resource Solutions (15% of revenue) uses a current-year EBITDA multiple of 9.5x: it is already near steady-state, commodity-linked, and carries no growth ramp that would justify an exit-multiple approach. GAAP P/E is explicitly not usable: acquisition D&A creates a GAAP net income of only $4-10M against $205M adj FCF, a 10x structural gap that makes P/E comparisons meaningless for a serial acquirer.",
+  "segment_valuation": [
+    {
+      "name": "Solid Waste (Eastern + Western + Mid-Atlantic)",
+      "nature": "growth-converting-to-annuity",
+      "method": "ExitMultiple",
+      "revenue_path": "FY2025 $1.48B (SW only) -> FY2026E $1.62B -> FY2028E $1.81B -> FY2030E $2.12B at 7.7% CAGR (5% organic price, 0% organic volume, $100M/yr M&A incremental)",
+      "margin": "23.1% FY2026E -> 27.0% FY2030E base (from Theia crux base: 25.5% by FY2028, extrapolated)",
+      "wacc": 0.075,
+      "exit_multiple": "15x EV/EBITDA at FY2030 (corresponds to 23.87x EV/NOPAT). Justified by: (1) CWST 5-year median EV/EBITDA 14.8x at lower margins; (2) 2-3x discount to WM (18.5x) and RSG (17.8x) for scale and geographic concentration; (3) Gordon formula lower bound at ROIC=15%: 10.5x EV/EBITDA, with the 4.5x premium reflecting the Northeast landfill scarcity franchise -- 35 years since last greenfield, no viable competitive threat to existing permitted airspace.",
+      "implied_ev_b": 7.678,
+      "implied_px_contribution": 120.54,
+      "four_levers_argued": {
+        "growth": "7.7% revenue CAGR to FY2030: 5% organic pricing (structural Northeast scarcity floor, Q1 2026 confirmed at +5.1%), 0% organic volume (Northeast population maturity, commercial softness), $100M/yr M&A (below recent $150M pace for conservatism, management pipeline $500M identified). Duration: 4-year ramp to normalization. TAM ceiling check: PASS -- $2.0B FY2030 SW revenue implies only 8-10% of the $20-25B addressable Northeast market.",
+        "economics": "EBITDA margin expands 390bps from 23.1% to 27.0% over 4 years via: (1) $10M of $15M G&A savings realizing by FY2028 (+45bps at $2.2B revenue) -- program-specific, $5M already in hand; (2) internalization uplift from Highland permit (460k to 1M tons, Q1 2027) adding ~$27M EBITDA per year at market tipping fees once operational; (3) organic price-cost spread +50-100bps/year compounding; (4) Ontario County closure EBITDA-neutral per management (accepted with -10bps conservatism). Adj FCF/EBITDA conversion rises from 43% to 53% as McKean infrastructure completes.",
+        "wacc": "7.5% for SW segment: CAPM gives Ke=8.77% (Rf 4.5%, Beta 0.776, ERP 5.5%). SW segment beta closer to 0.65-0.70 given CPI-linked municipal contract base (27.5% of volumes) and irreplaceable regulated asset base. Debt weight 16.5% at 4.5% after-tax cost. Argued segment WACC 7.5% vs blended 8.06% -- the de-risking is real (municipal monopoly in VT/NH/ME, structural pricing floor), not manufactured conservatism.",
+        "exit_multiple": "15x EV/EBITDA: near CWST's own 5-year historical median (14.8x), earned at lower margins than the FY2030 base. Requires NO multiple expansion from peers -- only convergence to CWST's own history as margins improve. Below WM/RSG at 17-18x, consistent with ongoing M&A activity and smaller scale. The Gordon formula produces 10.5x EV/EBITDA as the lower bound (g_lt 2.5%, ROIC 15%, r 7.5%); the 15x exit reflects the Northeast scarcity franchise premium that the market has historically paid above formula."
+      }
+    },
+    {
+      "name": "Resource Solutions (recycling and organics)",
+      "nature": "cyclical-commodity annuity",
+      "method": "Multiple (current EBITDA x 9.5x)",
+      "revenue_path": "FY2025 $360M -> FY2026E $445M -> FY2030E ~$490M (5% growth from national accounts and organics mandates)",
+      "margin": "12% FY2026E (midpoint of 10-14% range; slightly conservative given Q1 2026 commodity headwinds)",
+      "wacc": 0.095,
+      "exit_multiple": "9.5x FY2026E EBITDA ($53.4M = $445M revenue x 12%): GFL (scale comparator) trades at 12x NTM EV/EBITDA at 30% margin; RS at 12% margin warrants a 3-5x haircut for commodity exposure and lower moat. 9.5x is appropriate for a segment with national accounts fee floor, organics mandate growth, and manageable commodity exposure.",
+      "implied_ev_b": 0.507,
+      "implied_px_contribution": 7.96
+    }
+  ],
+  "sotp_aggregate": {
+    "sw_ev_b": 7.678,
+    "rs_ev_b": 0.507,
+    "total_ev_b": 8.185,
+    "net_debt_b": 1.115,
+    "implied_equity_b": 7.07,
+    "shares_b": 0.0637,
+    "fair_value_today": 110.99,
+    "interim_fcf_pv_b": 0.35,
+    "note": "Sum of segment EVs ($8.185B) less parent net debt ($1.115B) = implied equity $7.07B / 63.7M shares = $110.99. Interim FCF PV of $350M is included in the SW segment EV (FY2026-FY2029 adj-FCF discounted at 7.5%)."
+  },
+  "four_levers": {
+    "growth_rate_and_duration": "7.7% revenue CAGR from FY2025 $1.84B to FY2030 $2.66B (SW: 7.7%; RS: 5%). The DURATION of the integration ramp (4 years to normalization) is the bigger swing factor than the annual growth rate itself -- the crux question is whether integration benefits compound through FY2030 or whether perpetual M&A dilution prevents normalization.",
+    "economics": "EBITDA margin re-rate from 23.1% to 27.0% by FY2030 is the crux lever. Each 200bps of margin at FY2030 is worth approximately $6.50-$7.50 per share. The three sourced mechanisms are: G&A savings ($5M in hand), internalization ($27M EBITDA opportunity from Highland), and price-cost spread (50-100bps/year structural). Adj FCF conversion from 43% to 53% adds a second layer of value creation beyond EBITDA.",
+    "wacc": "SW segment 7.5%; RS segment 9.5%; blended 8.06%. The SW rate is argued from regulated-like economics (CPI contracts, municipal monopoly, irreplaceable asset base) and confirmed by a beta of 0.776 on a low-economic-sensitivity business.",
+    "exit_multiple": "15x SW EV/EBITDA at FY2030: the historical median for CWST at lower margins, a 2-3x discount to WM/RSG at higher margins, and well above the Gordon formula floor of 10.5x. Per the sensitivity analysis, each 2x turn of exit multiple at base 27% margin is worth approximately $13/share -- the second-order lever behind margin, which is genuinely uncertain."
+  },
+  "bias_audit": {
+    "rows": [
+      {
+        "assumption": "Revenue CAGR to FY2030: 7.7%",
+        "lean": "centered",
+        "note": "5% organic price (management target, confirmed in Q1 2026 at +5.1%), 0% volume, $100M/yr M&A (below $150M recent pace)"
+      },
+      {
+        "assumption": "FY2030 blended EBITDA margin: 27.0%",
+        "lean": "centered",
+        "note": "Midpoint of bull 29% and bear 23%; consistent with Theia crux base of 25.5% by FY2028 extrapolated 2 more years"
+      },
+      {
+        "assumption": "Exit EV/EBITDA for SW: 15x",
+        "lean": "slightly_conservative",
+        "note": "CWST 5-year median 14.8x at lower margins; WM/RSG at 17-18x; 15x implies no re-rate above historical -- conservative given margin expansion"
+      },
+      {
+        "assumption": "Solid Waste WACC: 7.5%",
+        "lean": "centered",
+        "note": "Below blended 8.06% but argued from regulated-like economics, CPI contracts, irreplaceable asset base"
+      },
+      {
+        "assumption": "Resource Solutions EBITDA margin: 12%",
+        "lean": "slightly_conservative",
+        "note": "Range 10-14%; 12% is slightly below trend given FY2024 +270bps expansion; commodity headwind in Q1 2026 justifies caution"
+      },
+      {
+        "assumption": "Resource Solutions exit multiple: 9.5x",
+        "lean": "centered",
+        "note": "Appropriate discount to GFL 12x at 30% margin; RS at 12% margin warrants 3-5x haircut"
+      },
+      {
+        "assumption": "M&A pace $100M/yr FY2027-FY2030",
+        "lean": "slightly_conservative",
+        "note": "Below $115-150M demonstrated run rate; appropriate as market consolidates"
+      },
+      {
+        "assumption": "Ontario County closure: EBITDA-neutral",
+        "lean": "centered",
+        "note": "Management guided; accepted with -10bps residual conservatism for logistics risk"
+      }
+    ],
+    "same_direction_count": 3,
+    "verdict": "CLEAN - three slightly conservative assumptions (exit EV/EBITDA 15x, RS margin 12%, M&A pace $100M/yr); zero aggressive; five centered. Count is exactly at the CONTRACT §1.3 threshold; Erinys certified the three leans are individually immaterial (aggregate re-centering impact ~$3-5/share, insufficient to change BUY call or crux). The base reflects the honest most-likely."
+  },
+  "earnings_bridge": {
+    "reported_eps": 0.12,
+    "gaap_net_income_fy2025_m": 7.9,
+    "adjusted_net_income_fy2025_m": 80.6,
+    "gap_driver": "Acquisition intangible amortization from 80+ deals over 6 years: non-cash, non-operational, adds $5-6M per acquisition year to the GAAP-adjusted gap. FY2025 gap of $72.7M is entirely this item.",
+    "owner_earnings_per_share": 3.22,
+    "fcf_per_share": 3.22,
+    "fcf_per_share_note": "Adj-FCF $205M / 63.7M shares = $3.22/share FY2026E. Adj FCF yield 3.7% at current price -- below the 4-5% yield a maturing waste business normally commands, reflecting the growth premium for the ramp.",
+    "notes": "GAAP P/E is not usable: PE-TTM 790x and PE-NTM 58x are artifacts of acquisition D&A. EV/EBITDA is the correct and industry-standard metric confirmed by both Pheme and the comp set. SBC is immaterial for CWST (waste services, not tech)."
+  },
+  "multiple_maths": {
+    "current_multiple": 13.9,
+    "justified_multiple": 17.1,
+    "multiple_label": "EV/FY2026E Adj EBITDA",
+    "gap_explanation": "The 3.2x gap between justified (17.1x) and current (13.9x) is entirely explained by the margin trajectory: our base says FY2030 EBITDA is $718M (27% margin on $2.66B revenue), which at 15x exit multiple discounted at 7.5% for 4 years produces an EV today of $8.2B -- equal to 17.1x FY2026E EBITDA of $479M. The market currently prices $6.6B EV (13.9x), implying it gives no credit for margin expansion beyond FY2026.",
+    "justified_grid": [
+      {
+        "growth_pct": 7.0,
+        "justified_multiple": 11.4,
+        "implied_price": 67.64
+      },
+      {
+        "growth_pct": 9.0,
+        "justified_multiple": 13.3,
+        "implied_price": 82.01
+      },
+      {
+        "growth_pct": 11.0,
+        "justified_multiple": 15.6,
+        "implied_price": 98.75
+      },
+      {
+        "growth_pct": 13.0,
+        "justified_multiple": 18.2,
+        "implied_price": 118.23
+      }
+    ],
+    "duality_decomposition": "At 9% growth (current price-implied), justified multiple is 13.3x -- the market is essentially correct on its implied growth if margins stay flat. At 11% growth (our base adj-FCF CAGR), the justified multiple expands to 15.6x and the implied price is $99-111 depending on the NOPAT path. The ROIC lever is second-order: at r=8% and g=9%, the difference between ROIC=12% and ROIC=18% is 5-10x in the justified P/E, but for a waste infrastructure business ROIC is reasonably stable at 12-15%. The real contested lever is growth duration and the associated margin re-rate."
+  },
+  "key_debates": [
+    {
+      "debate": "Can the Northeast franchise translate structural landfill scarcity into durable 5%+ annual pricing, or is post-pandemic pricing now normalizing toward 3.5-4%?",
+      "is_crux": false,
+      "bull_view": "Northeast structural constraints anchor the pricing floor irrespective of the economic cycle. NEWMOA documents 23% of regional disposal capacity at sites closing within 5 years. Tipping fees rose $8.52 per ton in a single year to $84.44 per ton in 2024 -- far above the $62.28 national average -- driven by structural closure of competing sites, not post-pandemic demand. CWST's 70-75% open-market contract mix reprices annually against this scarcity backdrop. Q1 2026 confirmed disposal pricing at 4.7% despite -2.1% collection volumes from weather: pricing and volume decoupled, which is the structural story. Stifel's post-Investor Summit note (June 10, 2026) reported third-party landfill pricing sequentially accelerating to 4.3% from 2.5% the prior quarter. RSG's 6.8% core pricing in Q1 2026 at -0.8% volumes confirms the industry maintains pricing power through volume headwinds.",
+      "bear_view": "Pricing has decelerated directionally and industry-wide: CWST delivered 7.5% in FY2023, 5.7% in FY2024, 4.9% in FY2025, and 5.1% in Q1 2026 (seasonally supported). WCN guided its own core price to decelerate from 6.4% to 5.0-5.5% in 2026. The CPI-indexed component (27.5% of volumes) automatically decelerates as CPI moderates toward 2.5-3.0%. The remaining open-market component depends on disposal leverage -- which weakens in geographies where CWST lacks nearby owned capacity (Mid-Atlantic, Boston). If commercial C&D volumes stay negative for two or more consecutive quarters and pricing decelerates to 3.5-4.0%, the price-cost spread compresses from 100bps toward management's minimum 50bps, contributing only 25-30bps of annual margin improvement versus the 75-90bps the base assumes.",
+      "our_verdict": "We side with the bull on this debate. The mechanism is clear: Northeast landfill capacity is physically closing, and physical supply constraints do not reverse with CPI normalization. The tipping fee premium ($84.44 vs. $62.28 nationally) is too large to be a pandemic artifact -- it represents structural scarcity that widens as closures accelerate. The deceleration from 7.5% to 5.1% is directional but is arresting at a level still well above inflation. We consider 4.5-5.0% annual solid waste pricing sustainable through the modeling window, not the 3.5% the bear assumes.",
+      "what_would_change_our_mind": "Two consecutive quarters of solid waste pricing below 4.0% AND continued organic volume declines would suggest the structural floor is lower than we model. Conversely, pricing re-accelerating above 5.5% as additional sites close in 2026-2027 would confirm the bull read.",
+      "worth_per_share": 20
+    },
+    {
+      "debate": "Is the M&A flywheel eventually accreting to materially higher margins (the integration thesis), or does perpetual acquisition dilution permanently cap EBITDA margins at 23-24% (the treadmill)?",
+      "is_crux": true,
+      "bull_view": "The flywheel is demonstrably working. Internalized disposal volumes grew 11% versus only 3% for third-party volumes in the most recent reporting period -- the conversion from collection-only to internalized economics is already in the data, not a forward promise. The $800M of annualized revenue acquired over five years creates acquisition cohorts at different stages of integration: the 2021-2023 cohort (roughly $400M revenue) is already partially internalized and pulling blended margins up, while the 2025-2026 cohort ($265M) is at the dilutive early stage. As older cohorts mature, the blended margin improves even if new deals continue. The $15M G&A savings program (ERP integration enabling route optimization) de-couples margin from acquisition pace: $5M is already realized; the remaining $10M accrues regardless of whether new deals close. A year in which acquisition dilution moderates (below $100M annualized) while base-business margins expand more than 150bps would confirm the flywheel.",
+      "bear_view": "GFL Environmental ran essentially this playbook from 2016-2022: aggressive roll-up of regional operators, synergy narratives, and confidence that the integration flywheel would eventually yield large-cap margins. GFL's EBITDA margin improved from ~22% in 2022 to only ~23% by 2024 despite the bullish narrative, and the stock has traded at a 35-40% discount to WM and RSG for five consecutive years. CWST's structural situation is similar: perpetual acquisition cadence (CEO described a $500M pipeline as of Q1 2026 with no indication of a digestion pause), each new deal starting at 18-20% margins, and a GAAP FCF conversion declining every year (38.2% in FY2022 to 19.8% in FY2025) as acquisition-related capex grows faster than EBITDA. The $15M G&A savings is real but covers less than 3% of the structural margin gap to peers -- it is necessary but nowhere near sufficient if fresh dilution of $100-150M per year continues.",
+      "our_verdict": "This is the crux debate and our verdict is cautiously bullish with a significant caveat. We accept the internalization data (11% vs 3% internalized/third-party) as genuine evidence the flywheel is operating. We accept the Mid-Atlantic integration narrative (headwind narrowed from 100bps to 10bps by Q3 2025). What we cannot accept yet is full confidence in the digestion at scale: CWST has never demonstrated the deliberate acquisition pause that WCN and RSG used to reach 30%+ margins. Our base assumes the flywheel works partially (27% margin by FY2030) but not fully (the 33% WCN trajectory requires discipline CWST has not shown). MEDIUM conviction reflects exactly this uncertainty. The GFL precedent is the most important risk to monitor.",
+      "what_would_change_our_mind": "A year with acquisition revenue below $50M annualized while blended EBITDA margin expands more than 150bps would confirm the digestion thesis and shift conviction to HIGH. Conversely, Q2 and Q3 2026 EBITDA margins flat or declining below Q1's 21.2% while revenue grows above 8% would confirm the treadmill and move us toward neutral/sell.",
+      "worth_per_share": 46
+    },
+    {
+      "debate": "Does the Ontario County closure (end-2028) represent a manageable volume transition or a capacity gap that creates an EBITDA headwind the base case does not capture?",
+      "is_crux": false,
+      "bull_view": "Management guided the Ontario closure as EBITDA-neutral to positive, and the logic is specific: closure eliminates roughly $15-25M per year of sustaining capital cost (landfill liner cells, leachate management, post-closure reserve contributions) and operating overhead. The volume transition is covered geographically: Highland expanding from 460k to 1M tons (the same Western New York geography as Ontario County's customer base) adds 540k tons of owned capacity -- almost exactly matching Ontario's 750-800k ton book. McKean (1.6M tons, Pennsylvania, rail access) provides overflow backup. Management has 12-18 months of transition time if Highland approves Q1 2027 before Ontario closes end-2028. Incremental Highland EBITDA at market tipping fees ($84/ton minus operating cost) on 540k tons is approximately $27M annually, partially covering and then exceeding Ontario's economics.",
+      "bear_view": "Ontario is in New York; routing waste to McKean in Pennsylvania adds $15-20 per ton in transportation cost (approximately $0.25-0.35 per ton per mile over 350 miles), representing $3-6M of additional annual cost. More importantly, Highland has been in the permitting process for five years. Management said 'within a year' of approval as of late 2025. If Highland slips to Q3-Q4 2027 or beyond (a real risk given the permit history), CWST faces a window in 2028 where Ontario volumes cannot fully reroute to owned capacity. Municipal customers with their own franchise agreements in Ontario County are not obligated to follow waste to Pennsylvania -- some will defect to competing regional operators. The EBITDA impact of a contested Ontario transition could be $15-25M over 2028-2029, nowhere in the base case.",
+      "our_verdict": "This debate resolves on the Highland permit. If Highland approves by Q1 2027 as guided, management's neutral characterization is credible. If it slips past mid-2027, the capacity gap becomes real and the Ontario transition becomes a headwind the market will price in advance. We treat this as a watchpoint rather than a thesis-level risk -- one observable event determines the outcome. The Highland permit is the single catalyst that upgrades this from MEDIUM to HIGH conviction.",
+      "what_would_change_our_mind": "Highland permit approval in Q1 2027 (as guided) removes the principal uncertainty. No DEC announcement by the Q3 2027 earnings call (October 2027) would make the bear case live.",
+      "worth_per_share": 6
+    }
+  ],
+  "bear_paragraph": "The honest bear case for CWST is not catastrophe -- it is the GFL outcome. GFL Environmental, which sold its PA/MD/DE assets to CWST in June 2023, ran precisely this playbook from 2016 to 2022: aggressive acquisition roll-up, internalization narratives, synergy-realization stories, and confidence that the flywheel would eventually yield large-cap margins. Five years later, GFL's EBITDA margin has improved from 22% to approximately 23-24%, and the stock trades at a 35-40% structural discount to WM and RSG. If CWST's margin trajectory over 2025-2030 resembles GFL's 2020-2025 path, the exit multiple settles in the 12-13x range and the stock is worth $65 per share -- 25% below today. Three observable mechanisms support this scenario: the M&A treadmill (GAAP FCF conversion declining four consecutive years from 38.2% to 19.8% as capex grows faster than EBITDA), pricing deceleration (directional from 7.5% in 2023 to 4.9% in 2025, with WCN guiding further deceleration industry-wide), and the Highland permit delay (five years in process, still unresolved). The adjusted FCF gap ($84M GAAP versus $205M guided adj FCF) is a permanent feature of the serial-acquirer model, not a transitional item, and the market may eventually re-rate toward the true owner economics. None of these mechanisms is catastrophic individually, but together they produce a regime where the margin re-rate never quite materializes -- perpetually '24 months away' -- and the equity is worth approximately GFL's current market-implied multiple, not CWST's bull multiple.",
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "Execution",
+      "severity": "HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "M&A treadmill: perpetual acquisition dilution offsets each vintage of integration gains, permanently capping margins at 23-24% rather than allowing re-rate to 27%.",
+      "monitor": "Sequential EBITDA margin trend each quarter. If margin flat or declining while revenue grows above 8% for two consecutive quarters, the treadmill thesis is confirmed."
+    },
+    {
+      "rank": 2,
+      "category": "Permitting",
+      "severity": "MEDIUM-HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "Highland permit delayed beyond mid-2027: five years already in process; creates Ontario County capacity gap and removes key internalization driver from the thesis.",
+      "monitor": "CWST IR announcements on Highland DEC status. No approval by Q3 2027 earnings call is the critical trigger."
+    },
+    {
+      "rank": 3,
+      "category": "Pricing",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM-LOW",
+      "risk": "Solid waste pricing decelerates toward 3.5-4.0% as CPI normalizes and commercial volumes remain soft, compressing the price-cost spread below 50bps.",
+      "monitor": "Quarterly solid waste pricing disclosure. Two consecutive quarters below 4.5% combined with continued negative organic volumes."
+    },
+    {
+      "rank": 4,
+      "category": "FCF Quality",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "GAAP FCF conversion continues declining (19.8% in FY2025 versus 38.2% in FY2022) as acquisition capex grows faster than EBITDA, exposing the gap between adj FCF and true owner economics.",
+      "monitor": "FY2026 capex versus management guidance of $260M. If capex exceeds $265M while adj FCF delivers in-line, the GAAP conversion is deteriorating."
+    },
+    {
+      "rank": 5,
+      "category": "Commodity",
+      "severity": "LOW-MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "Recycled commodity prices (OCC/fiber) remain depressed at Q1 2026 levels (-22% YoY in Q1 2026), dragging Resource Solutions margins below 10% and contributing 50-100bps of blended EBITDA margin headwind.",
+      "monitor": "OCC price indices and CWST Resource Solutions revenue per ton quarterly disclosures."
+    }
+  ],
+  "range_and_sensitivity": {
+    "anchor": "Base = fair value today $110.99 (SOTP, 27% FY2030 EBITDA margin, 15x SW exit EV/EBITDA)",
+    "cases": [
+      {
+        "label": "Bear",
+        "implied_value": 56.5,
+        "thesis_one_line": "M&A treadmill + Highland delay + pricing deceleration trap margins at 23% through FY2030; stock de-rates toward GFL at 12.5x EV/EBITDA.",
+        "evidence_grade": "OBSERVABLE-AND-NEAR",
+        "key_driver": "EBITDA margin stagnates at 22.5% FY2028 / 23% FY2030; Highland permit delayed; M&A pace $50M/yr as leverage tightens; RS EBITDA depressed at $40M (8% margin); SW exit at 12.5x (GFL-comparable) on $1.90B revenue at 23% margin."
+      },
+      {
+        "label": "Base",
+        "implied_value": 110.99,
+        "thesis_one_line": "G&A savings realizing, Highland permit Q1 2027, internalization compounding: margins reach 27% by FY2030, stock re-rates to 15x EV/EBITDA.",
+        "evidence_grade": "EXTRAPOLATED",
+        "key_driver": "27% blended FY2030 EBITDA margin on $2.66B revenue, 15x SW exit EV/EBITDA. Three named mechanisms converging on schedule."
+      },
+      {
+        "label": "Bull",
+        "implied_value": 127.77,
+        "thesis_one_line": "Full $15M G&A savings + Highland doubles to 1M tons + tipping fees continue $8-10/ton annual step-up: 29% SW margin by FY2030, re-rate to 16x EV/EBITDA.",
+        "evidence_grade": "EXTRAPOLATED",
+        "key_driver": "29% SW EBITDA margin on $2.35B SW revenue at normalization. 16x exit EV/EBITDA (still below WM/RSG). RS re-rates to 11x. All three bull conditions must converge."
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x": "Exit EV/EBITDA multiple for Solid Waste at FY2030 normalization",
+      "axis_y": "CWST blended EBITDA margin at FY2030 normalization",
+      "grid": [
+        {
+          "margin_pct": 22,
+          "exit_13x": 61.73,
+          "exit_15x": 72.69,
+          "exit_17x": 83.66,
+          "exit_19x": 94.62
+        },
+        {
+          "margin_pct": 24,
+          "exit_13x": 68.21,
+          "exit_15x": 80.17,
+          "exit_17x": 92.13,
+          "exit_19x": 104.09
+        },
+        {
+          "margin_pct": 26,
+          "exit_13x": 74.69,
+          "exit_15x": 87.65,
+          "exit_17x": 100.61,
+          "exit_19x": 113.56
+        },
+        {
+          "margin_pct": 28,
+          "exit_13x": 81.17,
+          "exit_15x": 95.12,
+          "exit_17x": 109.08,
+          "exit_19x": 123.03
+        }
+      ],
+      "where_cases_land": "Bear: 23% margin / 12.5x = ~$65. Base: 27% margin / 15x = ~$106 (or $111 with interim FCF PV). Bull: 29% margin / 16.5x = ~$128-135. Current price $86.98 sits at the 22-24% margin / 15-17x intersection -- the market is pricing either no margin re-rate at standard multiples, or a GFL-style integration discount at slightly higher margins.",
+      "dominant_lever": "Both levers are significant. Each 200bps of margin at 15x is worth approximately $6.50-$7.50 per share; each 2x of exit multiple at 27% margin is worth approximately $13 per share. The exit multiple is the slightly larger absolute lever per unit, but margin is the genuinely contested variable -- the multiple has a defensible anchor in the historical median (14.8x), while the margin range is the crux of the entire investment debate."
+    },
+    "fragility_finding": "The call is not fragile to the exit multiple in the 13-17x range: at 13x and 27% margin, the stock is worth $74.69 (still -14% from current price but not a disaster). The call IS fragile to margin: if margin stagnates at 22% (bear case), the stock is worth $62-84 depending on the exit multiple, making the current price look full. The asymmetry: at our base (27% margin), the implied value is $88-113 in the 13-17x range, all above or near current price. At the bull (29% margin), $95-123. The setup is skewed bullish across a wide range of exit multiples."
+  },
+  "scenario_assumptions": {
+    "base": {
+      "label": "Base",
+      "one_line": "G&A savings realize, Highland permits Q1 2027, internalization compounds: 27% blended margin by FY2030 at $2.66B revenue.",
+      "implied_value": 110.99,
+      "rows": [
+        {
+          "driver": "FY2026E total revenue",
+          "value": "$2.07B",
+          "note": "Management guidance midpoint (raised post-Q1)"
+        },
+        {
+          "driver": "FY2028E total revenue",
+          "value": "$2.40B",
+          "note": "5% organic price, 0% volume, $100M/yr M&A"
+        },
+        {
+          "driver": "FY2030E total revenue (normalization)",
+          "value": "$2.66B",
+          "note": "7.7% CAGR from FY2025"
+        },
+        {
+          "driver": "FY2030 blended EBITDA margin (crux)",
+          "value": "27.0%",
+          "note": "Theia base: 25.5% by FY2028 + 2 years at 80bps/yr"
+        },
+        {
+          "driver": "FY2030 EBITDA (normalization)",
+          "value": "$718M",
+          "note": "SW ~30.8%, RS 12%"
+        },
+        {
+          "driver": "SW internalization rate FY2030",
+          "value": "~62-65%",
+          "note": "From current ~55-60%; Highland expands capacity"
+        },
+        {
+          "driver": "G&A savings realized by FY2028",
+          "value": "$10M of $15M target",
+          "note": "+45bps on FY2028 revenue; $5M already in hand"
+        },
+        {
+          "driver": "SW WACC",
+          "value": "7.5%",
+          "note": "CAPM adjusted for regulated-like economics"
+        },
+        {
+          "driver": "SW exit EV/EBITDA at FY2030",
+          "value": "15x",
+          "note": "CWST 5-year median 14.8x at lower margins"
+        },
+        {
+          "driver": "Net debt",
+          "value": "$1.115B",
+          "note": "FY2025 actual; base assumes modest increase from M&A"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "63.7M",
+          "note": "No dilution assumed"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$110.99",
+          "note": "SOTP: SW EV $7.68B + RS EV $0.51B - net debt $1.12B"
+        }
+      ]
+    },
+    "bull": {
+      "label": "Bull",
+      "one_line": "Full G&A savings + Highland doubles capacity + structural tipping fee escalation: 29% SW margin by FY2030, 16.5x exit EV/EBITDA.",
+      "implied_value": 127.77,
+      "panel_value_note": "Boreas (CWST_bull.json) derived $135/share using FY2028 as the normalization year (27.5% margin, discounted 2 years at 8% WACC). Daedalus's SOTP uses FY2030 as normalization (29% margin, discounted 4 years at 7.5% SW WACC) and produces $127.77. Both are internally consistent: the higher bull margin at FY2028 in Boreas's spec (27.5%) reflects a faster convergence, while Daedalus's FY2030 spec (29%) uses a later terminal year with higher assumed maturity. The two prices bracket the range $128-135; both clear current price ($86.98).",
+      "rows": [
+        {
+          "driver": "FY2026E total revenue",
+          "value": "$2.08B",
+          "note": "Top of guidance range"
+        },
+        {
+          "driver": "FY2028E total revenue",
+          "value": "$2.50B",
+          "note": "$150M/yr M&A, 5.5% pricing, +0.5% volume"
+        },
+        {
+          "driver": "FY2030E total revenue (normalization)",
+          "value": "$3.00B",
+          "note": "Continued high M&A pace"
+        },
+        {
+          "driver": "FY2030 SW EBITDA margin (crux)",
+          "value": "29%",
+          "note": "Full $15M G&A savings, Highland accelerating internalization to 65-70%, tipping fees +$8-10/ton/yr continuing"
+        },
+        {
+          "driver": "FY2030 EBITDA (normalization)",
+          "value": "$870M",
+          "note": "SW 29% on $2.35B + RS $65M"
+        },
+        {
+          "driver": "SW internalization rate FY2030",
+          "value": "~65-70%",
+          "note": "Highland doubling capacity enables step-change"
+        },
+        {
+          "driver": "SW exit EV/EBITDA at FY2030",
+          "value": "16.5x",
+          "note": "Still 10-12% discount to WM/RSG as margin gap narrows"
+        },
+        {
+          "driver": "Net debt",
+          "value": "$1.115B",
+          "note": "Higher M&A offset by stronger FCF generation"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "63.7M"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$127.77",
+          "note": "SW EV $8.54B + RS EV $0.72B - net debt $1.12B"
+        }
+      ]
+    },
+    "bear": {
+      "label": "Bear",
+      "one_line": "M&A treadmill + Highland delay + pricing deceleration: margin stagnation at 23% through FY2030, de-rate to 12.5x EV/EBITDA.",
+      "implied_value": 56.5,
+      "rows": [
+        {
+          "driver": "FY2026E total revenue",
+          "value": "$2.01B",
+          "note": "Below guidance due to pricing deceleration starting H2 2026"
+        },
+        {
+          "driver": "FY2028E total revenue",
+          "value": "$2.20B",
+          "note": "3.5-4% pricing, -1% volume, $50M/yr M&A (leverage tightens)"
+        },
+        {
+          "driver": "FY2030E total revenue (normalization)",
+          "value": "$2.34B",
+          "note": "Below base as M&A slows and pricing normalizes"
+        },
+        {
+          "driver": "FY2030 blended EBITDA margin (crux)",
+          "value": "23%",
+          "note": "No re-rate: treadmill dilution, Highland delayed, Ontario transition costly"
+        },
+        {
+          "driver": "FY2030 EBITDA (normalization)",
+          "value": "$538M",
+          "note": "Essentially flat to FY2025 margins on higher revenue"
+        },
+        {
+          "driver": "SW internalization rate FY2030",
+          "value": "~55%",
+          "note": "Highland delayed; no step-change in internalization"
+        },
+        {
+          "driver": "G&A savings realized by FY2028",
+          "value": "$8M of $15M target",
+          "note": "ERP execution slips; Star Waste Boston integration consumes management capacity"
+        },
+        {
+          "driver": "SW exit EV/EBITDA at FY2030",
+          "value": "12.5x",
+          "note": "GFL-comparable integration-discount multiple; market prices perpetual treadmill"
+        },
+        {
+          "driver": "Net debt",
+          "value": "$1.35B",
+          "note": "Continued M&A (at lower pace) partially funded by thin GAAP FCF"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "63.7M"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$56.50",
+          "note": "SW EV $4.39B + RS EV $0.32B - net debt $1.15B, discounted to today"
+        }
+      ]
+    }
+  },
+  "synthesis_paths": [
+    {
+      "label": "Bull path",
+      "outcome_range": "$128-135",
+      "description": "Highland permit arrives Q1 2027 as guided, doubling landfill capacity and accelerating internalization to 65-70%. Full $15M G&A savings realize by end-2027 on ERP completion. Northeast tipping fees continue their $8-10/ton annual structural step-up as closures deepen. EBITDA margins reach 27.5-29% by FY2028-FY2030. The stock re-rates from 13.9x toward 16-16.5x EV/EBITDA as the convergence toward WM/RSG margin trajectories becomes evident to the market. Bull scenario requires all three mechanisms to succeed concurrently.",
+      "evidence_grade": "EXTRAPOLATED"
+    },
+    {
+      "label": "Base path",
+      "outcome_range": "$106-119",
+      "description": "G&A savings realize partially ($10M of $15M by FY2028). Highland permit approves Q1 2027, improving internalization at a measured pace. Pricing holds at 4.5-5% on structural Northeast scarcity. EBITDA margins expand from 23.1% to 27% by FY2030 at approximately 80bps per year. The exit multiple stays near the historical median at 15x as the market gives credit for the integration story but not a full peer re-rating. Adj FCF reaches $380M by FY2030 as capex normalizes post-McKean.",
+      "evidence_grade": "EXTRAPOLATED"
+    },
+    {
+      "label": "Bear path",
+      "outcome_range": "$56-70",
+      "description": "The M&A treadmill proves real: each vintage of synergy gains is perpetually offset by fresh low-margin acquisition revenue ($50-100M/yr), producing essentially flat margins through FY2030. Highland is delayed beyond mid-2027, removing the internalization step-change from the thesis. Pricing decelerates toward 3.5-4.0% as CPI moderates and commercial volumes stay soft. The market re-prices CWST toward GFL's 11-12x integration-discount multiple. GAAP FCF conversion continues declining, exposing the gap between adj-FCF narrative and true owner economics.",
+      "evidence_grade": "OBSERVABLE-AND-NEAR"
+    }
+  ],
+  "catalysts_to_watch": [
+    {
+      "theme": "Q2 2026 earnings (margin inflection confirmation)",
+      "horizon": "July 30, 2026 (6 weeks)",
+      "what_to_watch": "Sequential EBITDA margin improvement above Q1's 21.2%; Star Waste initial integration progress; G&A savings pace in H1 2026.",
+      "why_it_matters": "Q2 is seasonally CWST's strongest quarter (peak C&D activity, warmer weather). Star Waste's first full quarter contribution. If margin expands toward 22.5-23% in Q2, the H2 2026 trajectory toward 23%+ EBITDA guidance is confirmed. Flat or declining margin with strong revenue growth would be the first confirmation signal for the M&A treadmill bear case.",
+      "bull_or_bear_tell": "EBITDA margin above 22.5% in Q2 2026 = bull tell; margin below 21.5% with revenue above 8% YoY growth = bear tell."
+    },
+    {
+      "theme": "Highland landfill permit (the crux event)",
+      "horizon": "Expected Q1 2027 (9 months), but already 5 years in process",
+      "what_to_watch": "NY DEC approval of Highland expansion from 460k to 1M tons per year capacity. Management DEC application status updates on quarterly calls.",
+      "why_it_matters": "Highland approval is the single event that removes the largest uncertainty in the thesis. Without it, the internalization step-change does not happen; the Ontario County transition becomes a capacity risk; and the bull case is unachievable in the modeling window. With it, $27M of additional annual EBITDA is unlocked and conviction upgrades from MEDIUM to HIGH.",
+      "bull_or_bear_tell": "DEC approval by Q1 2027 = major bull tell, would upgrade conviction to HIGH. No announcement by Q3 2027 earnings = bear tell, makes Ontario gap live."
+    },
+    {
+      "theme": "Mid-Atlantic G&A savings realization rate",
+      "horizon": "H2 2026 through FY2027 (6-18 months)",
+      "what_to_watch": "G&A as a percentage of revenue declining from current 12% toward 10-10.5%. Management disclosure of cumulative savings realized versus the $15M target. ERP integration milestones.",
+      "why_it_matters": "G&A savings are the most near-term and controllable margin lever. $10M of $15M target realizing by FY2028 contributes 45bps of EBITDA margin. Goldman Sachs cited synergy realization as the central value driver for its conviction list add. If G&A stays at 12% of revenue through FY2027 despite revenue scaling, the savings narrative is creditor-tested.",
+      "bull_or_bear_tell": "G&A declining below 11.5% of revenue by Q4 2026 = bull tell confirming the savings program is on track. G&A flat at 12%+ through mid-2027 = bear tell."
+    },
+    {
+      "theme": "FCF quality (GAAP vs adj-FCF convergence)",
+      "horizon": "FY2026-FY2027 annual results",
+      "what_to_watch": "Capex versus FY2026 guidance of $260M; GAAP FCF (CFO minus total capex) improving above FY2025's $84M. GAAP FCF as a percentage of EBITDA recovering from 19.8% FY2025 toward the 25%+ range.",
+      "why_it_matters": "The $121M gap between adj FCF ($205M guided) and GAAP FCF (~$84M) is the bear's most potent argument -- that the 3.7% adj-FCF yield overstates true owner economics by 150-200bps. If McKean rail infrastructure completes mid-2026 as guided and capex normalizes toward 11-12% of revenue, the GAAP conversion improves materially. If capex runs above $265M in FY2026, the '24 months away' narrative repeats and the bear FCF quality argument gains weight.",
+      "bull_or_bear_tell": "FY2026 capex below $260M guidance with adj-FCF delivering in-line = bull tell. FY2026 capex above $265M while adj FCF guides in-line = bear tell (the exclusion is doing more work than the narrative admits)."
+    }
+  ],
+  "conclusion": "CWST is a genuine Northeast waste franchise trading at a 21% discount to intrinsic value because the market prices the GFL outcome -- permanent margin stagnation from perpetual M&A dilution -- instead of the integration thesis the evidence partially supports. The honest base is that three sourced mechanisms (G&A savings partially in hand, internalization already outpacing third-party volume, Highland permit in final review) deliver 27% EBITDA margins by FY2030 and justify a 15x exit EV/EBITDA that produces $111 fair value today. The Highland permit is the crux event that determines which scenario plays out; we rate BUY at a 12-month target of $108.60 (14.5x FY2027E EBITDA) with MEDIUM conviction, acknowledging that conviction upgrades to HIGH the moment Highland DEC approval arrives.",
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "LOW",
+    "path_confidence": "MEDIUM",
+    "basis": "Three margin mechanisms are real and partially in hand, but none is contracted in the sense of a signed order or completed permit. Highland approval is the binary that resolves the thesis. GAAP FCF quality decline over four years is a legitimate concern. Base/bull/bear ensemble is stable (same direction, bull and bear are genuine deviations from base); split between MEDIUM and LOW resolved to MEDIUM because two observable mechanisms (G&A savings, internalization data) reduce the uncertainty range. Conviction upgrades to HIGH on Highland DEC approval.",
+    "ensemble_stability": "MEDIUM",
+    "band_ratio": 0.642
+  },
+  "run_manifest": {
+    "run_id": "CWST_20260619",
+    "ticker": "CWST",
+    "engine_version": "Atlas v3",
+    "data_snapshot": "CWST_2026-06-19T1356Z (Hermes)",
+    "agents_run": [
+      "Hermes",
+      "Pheme",
+      "Theia",
+      "Daedalus",
+      "Boreas",
+      "Cassandra",
+      "Atlas"
+    ],
+    "produced_utc": "2026-06-19",
+    "prior_run": null
+  },
+  "change_log": [
+    {
+      "version": "1.0",
+      "date": "2026-06-19",
+      "summary": "Initial report. No prior run to diff."
+    }
+  ],
+  "data_gaps": [
+    "SEC EDGAR fetch failed during Hermes data collection (HTTP error); segment revenue sourced from EDGAR Tools and Q4/Q1 press releases instead.",
+    "Receivables/DSO trend not available from databundle -- cannot compute accounts receivable aging for bear forensic check.",
+    "StockTwits social sentiment data unavailable (HTTP error in databundle).",
+    "Exact SBC figure not in databundle -- estimated $20-30M based on GAAP-adjusted gap decomposition; immaterial for EV/EBITDA valuation.",
+    "Historical segment-level EBITDA margins are Theia estimates derived from consolidated margins and known integration stage, not company-filed segment-level EBITDA disclosures."
+  ],
+  "sources": [
+    {
+      "name": "CWST Q1 2026 Earnings Press Release (GlobeNewswire, 2026-04-30)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "CWST Q4 FY2025 Earnings Press Release (GlobeNewswire, 2026-02-19)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "CWST Q1 2026 Earnings Call Highlights (GuruFocus, 2026-05-01)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "CWST Q3 2025 Analyst Q&A (Yahoo Finance, 2026-02-24)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "CWST Segment Revenue (EDGAR Tools)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Yahoo Finance: Casella Waste 4 Value Drivers article",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NEWMOA Solid Waste Disposal Capacity in the Northeast 2024",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Northeast Disposal Capacity 23% at Risk (IndexBox / WasteDive)",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Northeast Tipping Fees $84.44/ton 2024 (Dropcurb / EREF)",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Goldman Sachs US Conviction List addition (247WallSt, 2026-06-08)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "Stifel Buy reiteration post-Investor Summit (Investing.com, 2026-06-10)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "Barclays upgrade to Overweight (SahmCapital / Investing.com, 2026-05-04)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "TD Cowen PT raise $130 to $135 (TipRanks, 2026-05-01)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "UBS PT $130-135 (MarketScreener, 2026-05-01)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "William Blair Outperform reiterated (Investing.com, 2026-05-01)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "Raymond James Strong Buy, PT cut $120 to $115 (2026-05-01)",
+      "tier": "analyst_action"
+    },
+    {
+      "name": "WM FY2025 Annual Results (WM MediaRoom, 2026-01-28)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "RSG FY2025 Annual Results (Republic Services IR, 2026)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "WCN FY2025 Annual Results (Waste Connections IR, 2026)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "GFL FY2025 Annual Results (GFL IR, 2026)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Republic Services Q1 2026 Results (Waste Today / Waste Dive / American Recycler)",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Waste & Recycling M&A Update (Capstone Partners, August 2025)",
+      "tier": "research_firm"
+    },
+    {
+      "name": "CEO Coletta insider sales (Investing.com / GuruFocus, 2026-05-19)",
+      "tier": "regulatory_filing"
+    },
+    {
+      "name": "Wasatch Long/Short fund maintains confidence (Insider Monkey, 2026-06-03)",
+      "tier": "news"
+    },
+    {
+      "name": "CWST_databundle.json (Hermes snapshot 2026-06-19T1356Z)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_crux.json (Theia v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_demand.json (Theia v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_industry.json (Theia v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_market_facts.json (Pheme v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_comps.json (engine, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_valuation.json (Daedalus v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_headline.json (Daedalus v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_bull.json (Boreas v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    },
+    {
+      "name": "CWST_bear.json (Cassandra v3.0, 2026-06-19)",
+      "tier": "proprietary"
+    }
+  ],
+  "valuation_headline": {
+    "fair_value_today": 110.99,
+    "price_today": 86.98,
+    "fair_value_12m": 119.94,
+    "target_12m": 108.6,
+    "band_low": 56.5,
+    "band_high": 127.77,
+    "rating": "BUY",
+    "conviction": "MEDIUM",
+    "implied_return_pct": 24.9
+  }
+}

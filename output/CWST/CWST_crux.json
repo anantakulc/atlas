@@ -1,0 +1,122 @@
+{
+  "_meta": {
+    "ticker": "CWST",
+    "agent": "Theia",
+    "version": "v3.0",
+    "produced_utc": "2026-06-19T15:00:00Z",
+    "sources_primary": [
+      "CWST_databundle.json (Hermes snapshot 2026-06-19)",
+      "CWST Q4 FY2025 earnings press release (GlobeNewswire, 2026-02-19)",
+      "CWST Q1 2026 earnings press release (GlobeNewswire, 2026-04-30)",
+      "CWST Q4 2025 earnings call transcript (Motley Fool / Globe and Mail, 2026-02-24)",
+      "CWST Q1 2026 earnings call highlights (GuruFocus, 2026-05-01)",
+      "Yahoo Finance: Casella details 4 value drivers, 2026 pricing target and M&A pipeline",
+      "NEWMOA Solid Waste Disposal Capacity Report 2024 (IndexBox summary, WasteDive)",
+      "CWST investor presentation March 2026 (MarketScreener summary)",
+      "WasteDive: CWST Q4 2025 landfill/internalization commentary (2026-02)",
+      "WasteDive: CWST Q1 2026 Star Waste acquisitions (2026-05)",
+      "WasteOptima / EREF: Northeast tipping fees 2024 report",
+      "StockStory CWST Q3 2025 deep dive",
+      "Waste360 February 2026 Business Report"
+    ]
+  },
+
+  "crux_variable": "EBITDA margin expansion: whether CWST closes the 7-10 percentage-point gap to large-cap waste peers through organic price/cost discipline and acquisition integration, or whether incremental dilution from tuck-ins and landfill closure headwinds suppress the margin re-rate",
+
+  "crux_thesis": "The investment call on CWST hinges on a single question: can the company translate its Northeast franchise advantage — regulated landfill scarcity, 5% annual pricing power, a $500M M&A pipeline, and $15M in targeted G&A savings — into a sustained multi-year EBITDA margin re-rate from ~23% today toward the 28-30% range that WM, RSG and WCN demonstrate is achievable in this industry, or will ongoing acquisition dilution, the Ontario County landfill closure (750-800k tons, end-2028), and a persistently elevated capex envelope keep the margin structurally trapped below peers and cap the multiple re-rating the stock needs to justify current buy-side expectations?",
+
+  "crux_decomposition": {
+    "identity": "EBITDA margin = (Organic price growth - Cost inflation spread) + (Acquisition synergy realization rate / Revenue) + (G&A savings / Revenue) - (Landfill closure EBITDA headwind / Revenue)",
+    "driver_1": {
+      "name": "Price-cost spread (organic)",
+      "current_level": "Approx. +50 to +100 bps annually; 2025 solid waste price +4.9%, cost inflation est. 3.5-4.0%; Q1 2026 price +5.1%",
+      "trajectory": "Management targets minimum 50bps spread; industry benchmarks: WCN targets 150bps, RSG targets 100bps",
+      "source": "CWST Q4 2025 and Q1 2026 earnings releases; Waste360 Feb 2026 industry report; Yahoo Finance 4-value-drivers article"
+    },
+    "driver_2": {
+      "name": "Acquisition synergy realization (Mid-Atlantic integration)",
+      "current_level": "$5M realized of $15M Mid-Atlantic synergy target as of early 2026; G&A at ~12% of revenue (CFO stated)",
+      "trajectory": "Management guided above-trend margin improvement 2026-2028, weighted to H2 2026 and 2027; $15M total G&A savings target described as 'tip of the iceberg' with automation upside",
+      "source": "CWST Q1 2026 earnings call (GuruFocus highlights, investing.com search result); Yahoo Finance 4-value-drivers article"
+    },
+    "driver_3": {
+      "name": "Landfill closure headwind (Ontario County, NY)",
+      "current_level": "Ontario County landfill: ~750,000-800,000 tons/year; closure expected end-2028; management guided EBITDA impact 'dollar-for-dollar neutral or better' via FCF release from reduced capex",
+      "trajectory": "Hakes (NY) permit expansion: 460k to 540k tons capacity, permit expected Q3 2026; Highland (NY): 460k to 1M tons, permit expected Q1 2027; Hyland and McKean (PA, 1.6M tons, rail access) as receiving capacity",
+      "source": "WasteDive Ontario closure article (2025); CWST IR: Hakes permit release; Yahoo Finance 4-value-drivers article; Simply Wall St valuation post March 2026"
+    },
+    "driver_4": {
+      "name": "Revenue scale from M&A (acquisition dilution vs. synergized margin accretion)",
+      "current_level": "9 acquisitions in 2025 (~$115M annualized revenue); 4 in Q1 2026 (~$150M annualized, including Star Waste at $100M); pipeline ~$500M annualized revenue; leverage 2.34x (Dec 2025)",
+      "trajectory": "Newly acquired revenue typically runs at lower initial margin (collection-only), then internalizes over 12-24 months. CWST's historical internalization ramp: internalized volumes +11% vs third-party +3% in most recent disclosure",
+      "source": "CWST Q1 2026 and Q4 2025 earnings releases; Yahoo Finance 4-value-drivers article; StockStory Q3 2025 deep dive"
+    }
+  },
+
+  "ceiling": "EBITDA margin ceiling: WM ~30%, RSG ~32%, WCN ~33% — these operators run more mature, less acquisition-diluted portfolios in markets without CWST's level of recent integration overhead. CWST's Northeast franchise advantage (regulated scarcity of landfill airspace, rising tipping fees averaging $84.44/ton in 2024 vs. $62.28 national average) should structurally support above-industry margins at maturity. A realistic ceiling for CWST at scale is 27-29% (below WCN given higher acquisition pace and Northeast regulatory complexity).",
+  "floor": "EBITDA margin floor: 21-22% (current trajectory in acquisition-heavy periods, e.g. Q1 2026 at 21.2%). A floor scenario involves persistent acquisition dilution without synergy realization, Ontario closure volumes lost to third parties beyond management guidance, and recycling commodity headwinds (Q1 2026 recycled commodity revenue per ton -22% YoY) crimping Resource Solutions.",
+
+  "contracted_vs_extrapolated": {
+    "contracted_near_term": "2026 guidance (raised after Q1): revenue $2.06-2.08B, EBITDA $473-483M (23.1-23.2% margin), adj. FCF $200-210M. This includes ~$120M of already-closed acquisition revenue (Star Waste and three others) and management-disclosed synergy targets. Near-term pricing is guided at ~5% with CPI/WPI escalators on an estimated 25-30% of volumes; the remaining 70-75% are open-market contracts repriced annually.",
+    "extrapolated_medium_term": "2027-2028 margin expansion toward 25-26%: contingent on (a) Mid-Atlantic $15M G&A savings realizing, (b) Hakes and Highland permits approved on schedule, (c) Ontario County transition being EBITDA-neutral as guided, and (d) continued 5%+ pricing with positive price-cost spread.",
+    "hoped_for_long_term": "28-29% EBITDA margin by 2029-2030: requires a full maturation of the acquisition integration pipeline, meaningful internalization uplift from new NY landfill capacity, and G&A leverage as revenue scales toward $2.5B+."
+  },
+
+  "base_estimate": {
+    "value": "25.5",
+    "unit": "% adjusted EBITDA margin by FY2028 (normalization year)",
+    "rationale": "Base is the honest most-likely. From 23.1% in 2026E, CWST achieves roughly 60-80bps of margin expansion per year through 2028 via: (1) the Mid-Atlantic integration realizing the bulk of the $15M G&A savings target (call it $10M of $15M by 2028, adding ~50bps on ~$2.2B revenue), (2) internalization improving disposal mix as new collection routes from acquisitions route waste to owned landfills (+30-40bps), (3) organic price-cost spread contribution of +50bps annually. Ontario County headwind is guided as EBITDA-neutral; base accepts management's characterization but assumes some residual third-party volume loss offsets other gains (net -10bps). This lands at 25-26% margin in 2028 — a meaningful re-rate from today but still well below WM/RSG/WCN, reflecting CWST's earlier stage of integration and higher ongoing acquisition pace diluting margin in any given year. Revenue base estimate: ~$2.35B in FY2028 (organic growth ~5%, plus ~$100-150M/year of acquired revenue).",
+    "evidence_quality": "MEDIUM",
+    "source_reference": "CWST Q4 2025 press release; Q1 2026 earnings; Yahoo Finance 4-value-drivers article (management targets); Waste360 Feb 2026 industry report (peer benchmarks); CWST databundle financials (FY2022-FY2025 EBITDA margin trend)"
+  },
+
+  "bull_estimate": {
+    "value": "27.5",
+    "unit": "% adjusted EBITDA margin by FY2028",
+    "rationale": "Bull requires three things to go right simultaneously: (1) The full $15M G&A savings realize by end-2027 (+70bps on 2028 revenue) — credible if automation and ERP investments deliver as described; (2) Highland permit approves Q1 2027 as guided, doubling capacity from 460k to 1M tons and accelerating internalization to 65-70% (vs. current implied ~55-60%), which adds 150-200bps to disposal-segment margins as third-party disposal costs collapse for own waste; (3) Northeast tipping fees continue their 10% annual step (from $84 to $93/ton by 2027), mechanically lifting disposal revenue per ton for all externally received volumes. Under these conditions EBITDA margin reaches 27-28% by 2028, compressing the peer gap substantially and re-rating the EV/EBITDA multiple toward RSG/WCN levels of 15-17x NTM. This is a CONTRACTED bull: Highland permit progress is real and acknowledged by management; G&A savings are program-specific, not vague; tipping fee trajectory is sourced from NEWMOA/EREF data.",
+    "evidence_quality": "MEDIUM",
+    "source_reference": "Yahoo Finance 4-value-drivers article (Highland 1M ton target, $15M G&A); NEWMOA/EREF Northeast tipping fee data ($84.44/ton 2024, +$8.52 YoY); CWST permit expansion announcements (WasteUSA, North Country, Hakes); William Blair analyst commentary (2026)"
+  },
+
+  "bear_estimate": {
+    "value": "22.5",
+    "unit": "% adjusted EBITDA margin by FY2028",
+    "rationale": "Bear case: margin stagnates near current levels. Three mechanisms, each independently observable: (1) Ontario County closure produces more than management's 'neutral' impact — if 200-300k tons of the 750-800k ton book migrates to third-party disposal (because Hyland/McKean are not proximate enough for all customers), this depresses collection-segment margins by 30-50bps; (2) Highland permit approval is delayed beyond Q1 2027 (it has been in process five years already — management expected it 'within a year' as of late 2025), leaving CWST without the internalization uplift in the modeling window; (3) recycling commodity prices remain depressed — Q1 2026 saw a 22% YoY decline in average recycled commodity revenue per ton, and the Resource Solutions segment (~$360M in FY2025) carries unhedged commodity exposure despite risk-management programs. If commodities remain at Q1 2026 levels, Resource Solutions margin stays compressed, dragging blended EBITDA margin. Combined, these three produce ~23% margin through 2028 — essentially no margin re-rate, and the stock de-rates from 16x EV/EBITDA toward 13-14x as margin expansion thesis dissolves.",
+    "evidence_quality": "MEDIUM",
+    "source_reference": "CWST Q4 2025 Ontario closure commentary (WasteDive 2025); Highland permit history (5 years in process, CWST IR); CWST Q1 2026 recycling revenue per ton -22% YoY (earnings call highlights, GuruFocus); CWST R&S segment exposure (FY2025 press release: $360M Resource Solutions)"
+  },
+
+  "key_debates": [
+    {
+      "debate": "Can the Northeast franchise scarcity advantage translate into durable 5%+ pricing power, or is post-pandemic pricing now normalizing?",
+      "bull_read": "Northeast is structurally supply-constrained: NEWMOA reports 23% of the region's disposal volumes go to sites closing within 5 years, tipping fees hit $84.44/ton in 2024 (up $8.52/ton in a single year, against a $62.28 national average), and no greenfield landfill has been permitted in the Northeast in approximately 35 years. These structural constraints — not the inflation cycle — anchor the pricing floor. CWST's 70-75% of volumes on open-market (non-CPI-capped) contracts means pricing resetting annually against this scarcity backdrop. The industry-wide price growth of 5-7% (2022-2025) was not purely inflationary; it is transitioning to a new structural floor as capacity closes. Durable 4-5% annual pricing is supported even as CPI moderates.",
+      "bear_read": "Pricing grew 7.5% in 2023 and 5.7% in 2024 on pandemic-era demand surge; it is already decelerating to 4.9% in FY2025 and 5.1% in Q1 2026. WCN is guiding price to decelerate from 6.4% Q4 2025 to 5.0-5.5% in 2026. If the broader economy softens and commercial construction/industrial volumes fall, the volume component (currently flat-to-slightly-negative) could turn meaningfully negative, offsetting price gains in revenue and margin. CWST has no volume growth buffer — FY2025 volumes were up ~0% organically, and Q1 2026 collection volumes fell 2.1% due to weather.",
+      "what_would_change": "Volume turning sustained positive (+1-2% organically, implying genuine economic pickup in Northeast markets) would confirm the structural floor thesis. Volume remaining flat-to-negative for two or more consecutive years would confirm normalization."
+    },
+    {
+      "debate": "Will tuck-in M&A continue to drive revenue growth AND eventually accrete to margin, or is it a permanent margin dilutant that caps the re-rating?",
+      "bull_read": "CWST has executed nearly 80 acquisitions in six years, adding $800M+ of annualized revenue — a demonstrably repeatable capability with a proven integration playbook. Each tuck-in brings collection-only routes at lower margins that internalize into owned landfills within 12-24 months, mechanically lifting disposal-to-collection mix and margin. The $500M pipeline is real and priced. The 2.34x net leverage provides headroom to continue without equity dilution. The internalization proof is already in the data: internalized volumes grew 11% vs. third-party volumes at only 3% in the most recent disclosure, confirming the conversion is happening.",
+      "bear_read": "CWST is perpetually running at 'acquisition pace', which by design holds margins lower than steady-state. Every quarter adds fresh low-margin revenue: $150M annualized in Q1 2026 alone, including Star Waste. The G&A savings ($15M target) and Mid-Atlantic synergies ($5M realized of $15M target) are real but modest against a company growing acquisition revenue at $100-200M/year. If each new acquisition takes 24 months to fully internalize, CWST is in a perpetual treadmill where fresh dilution always offsets the integration gains from prior vintages, permanently suppressing margin. WCN and RSG achieved their higher margins by slowing M&A and digesting — CWST may not have the appetite to do this.",
+      "what_would_change": "A year in which acquisition revenue contribution falls below $50M while blended EBITDA margin expands more than 150bps would confirm the digestion thesis. Continued 100-150M/year acquisition run rate with margin flat or down through 2027 would confirm the treadmill."
+    },
+    {
+      "debate": "Does the Ontario County landfill closure (2028) represent a manageable volume transition or a structural disposal capacity loss that crimps the Northeast network?",
+      "bull_read": "Management guided the Ontario closure as EBITDA-neutral to positive: closure eliminates ~$800k/year of capital cost per unit and operating overhead, and the 750-800k tons can be rerouted to McKean (1.6M ton capacity, PA, rail access), Hyland (NY, expansion underway), or to newly permitted Hakes and Highland capacity. The Ontario closure creates a near-term internalization problem that management describes as solved by the portfolio. Highland alone going from 460k to 1M tons adds 540k tons of headroom — almost exactly covering Ontario.",
+      "bear_read": "Ontario County is in New York; routing waste to McKean in Pennsylvania adds transportation cost (an economic and environmental cost that some municipal customers may resist), and Hyland/Highland permits are not yet in hand. If Highland is delayed beyond Q1 2027 (a real risk given five years of permitting already), CWST faces a gap year in 2028 where it cannot fully replace Ontario's disposal economics. The site produced meaningful EBITDA — management guided the impact at 'dollar-for-dollar neutral or better', but this assumes smooth volume transitions that waste logistics rarely deliver cleanly.",
+      "what_would_change": "Highland permit approval (expected Q1 2027) removes the principal uncertainty. Continued delay past mid-2027 would make the bear case live."
+    },
+    {
+      "debate": "Is CWST's EBITDA-to-FCF conversion structurally constrained by capex intensity, or is the 43% conversion an improving trend toward 50%+ as growth capex normalizes?",
+      "bull_read": "CWST's adj. FCF was $179.9M on $422.8M EBITDA (42.6% conversion) in FY2025, rising to guided $200-210M on $473-483M EBITDA (43-44%) in 2026. As McKean rail infrastructure project completes (within two months of Q1 2026 call, so mid-2026), the incremental growth capex that has suppressed conversion should moderate. Long-run maintenance capex in waste is roughly 5-7% of revenue, well below CWST's current 13% total capex intensity — the gap is almost entirely growth/integration capex that earns its return via higher disposal volumes. FCF conversion should trend toward 48-52% as the acquisition pace normalizes.",
+      "bear_read": "CWST's capex has risen from $131M (FY2022, 12.1% of revenue) to $246M (FY2025, 13.4% of revenue), running above the revenue growth rate as the company builds out transfer stations, MRF upgrades, landfill liner cells, and fleet automation. Reported FCF of $84M (per databundle, which uses total capex minus CFO — higher than the 'adjusted' FCF metric management uses) shows the GAAP-level cash generation is quite thin. The 'adjusted' FCF metric excludes acquisition-related capex, which is permanent not one-time in a serial acquirer. The true owner FCF is likely structurally below the adjusted figure.",
+      "what_would_change": "GAAP FCF as a percentage of EBITDA rising above 25% (from current ~20%) would confirm organic FCF improvement. A decline in total capex intensity below 11% of revenue would confirm the growth-phase narrative."
+    }
+  ],
+
+  "second_order_factors": [
+    "Recycling commodity prices (Resource Solutions ~$360M revenue): a structural negative but partially hedged via risk-sharing contracts; not the crux but a 50-100bps margin swing",
+    "West Virginia expansion (Mountain State Waste, acquired Jan 2026): a new geography with collection-only economics, near-term margin dilutive but a long-term internalization opportunity if CWST builds or acquires disposal capacity in WV",
+    "RNG / energy revenue from landfill gas: early-stage, not yet material; a potential upside optionality if Highland and Hyland expansions include gas extraction",
+    "Interest cost: net debt $1.115B at year-end FY2025, rising with Star Waste financing; 2026 guidance implies higher interest costs that reduce net income even as EBITDA grows; EV/EBITDA the appropriate metric, not P/E"
+  ]
+}
