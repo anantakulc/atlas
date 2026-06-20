@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "ticker": "CWST",
+    "agent": "Theia",
+    "version": "v3.0",
+    "produced_utc": "2026-06-19T15:00:00Z",
+    "normalization_year": "FY2030",
+    "revenue_identity": "Total Revenue = Solid Waste Revenue × (1 + price% + volume% + mix%) + Acquisition Revenue + Resource Solutions Revenue",
+    "sources": [
+      "CWST Q4 FY2025 earnings press release (GlobeNewswire 2026-02-19): revenue $1.837B, EBITDA $422.8M, adj. FCF $179.9M",
+      "CWST Q1 2026 earnings press release (GlobeNewswire 2026-04-30): revenue $457.3M Q1, guidance raised to $2.06-2.08B FY2026",
+      "CWST FY2025 segment data: Eastern $472.6M, Western $663.2M, Mid-Atlantic $341.1M, Resource Solutions $360.0M",
+      "Pricing history: FY2023 +7.5%, FY2024 +5.7%, FY2025 +4.9%, Q1 2026 +5.1% (all solid waste, collection + disposal)",
+      "M&A: 9 deals in FY2025 (~$115M annualized), 4 in Q1 2026 (~$150M annualized incl. Star Waste $100M), $500M pipeline",
+      "2026 guidance: revenue $2.06-2.08B, EBITDA $473-483M, adj. FCF $200-210M, capex ~$260M",
+      "CWST 4-value-drivers article (Yahoo Finance): $150-200M near-term M&A pipeline, 70-75% volumes on open-market contracts",
+      "NEWMOA 2024 disposal capacity report: 33.56MT Northeast, 23% at sites closing in under 5 years; tipping fees $84.44/ton",
+      "Waste360 Feb 2026 industry report: pricing deceleration trends for WCN, GFL; CWST price-cost spread target 50-100bps",
+      "CWST databundle: FY2022-FY2025 financials (revenue, EBITDA, capex, FCF, balance sheet)"
+    ]
+  },
+
+  "historical_anchor": {
+    "FY2022": {
+      "revenue_b": 1.085,
+      "ebitda_b": 0.225,
+      "ebitda_margin_pct": 20.7,
+      "adj_fcf_b": 0.086,
+      "solid_waste_pricing_pct": 5.6,
+      "solid_waste_volume_pct": 0.5,
+      "acquisition_contribution_b": "est. 0.05-0.08",
+      "note": "Pre-Mid-Atlantic expansion era"
+    },
+    "FY2023": {
+      "revenue_b": 1.265,
+      "ebitda_b": 0.252,
+      "ebitda_margin_pct": 19.9,
+      "adj_fcf_b": 0.078,
+      "solid_waste_pricing_pct": 7.5,
+      "solid_waste_volume_pct": 0.5,
+      "acquisition_contribution_b": "est. 0.12-0.15",
+      "note": "Strong pricing year; GAAP FCF suppressed by high-growth capex"
+    },
+    "FY2024": {
+      "revenue_b": 1.557,
+      "ebitda_b": 0.315,
+      "ebitda_margin_pct": 20.2,
+      "adj_fcf_b": "est. 0.157 (management-defined adjusted)",
+      "solid_waste_pricing_pct": 5.7,
+      "solid_waste_volume_pct": -0.5,
+      "acquisition_contribution_b": "est. 0.17-0.20 (Mid-Atlantic deals)",
+      "note": "Margin suppressed by Mid-Atlantic integration costs"
+    },
+    "FY2025": {
+      "revenue_b": 1.837,
+      "ebitda_b": 0.423,
+      "ebitda_margin_pct": 23.0,
+      "adj_fcf_b": 0.180,
+      "solid_waste_pricing_pct": 4.9,
+      "solid_waste_volume_pct": "~0 to +0.5 (organic, ex-acquisition)",
+      "acquisition_contribution_b": 0.023,
+      "note": "First year of meaningful margin improvement; EBITDA +170bps vs 2024"
+    },
+    "Q1_2026_annualized": {
+      "revenue_run_rate_b": 1.829,
+      "ebitda_margin_pct": 21.2,
+      "solid_waste_pricing_pct": 5.1,
+      "solid_waste_volume_pct": -2.1,
+      "note": "Q1 seasonally weakest quarter; weather impact (-10% snowfall vs 10y avg); Q1 run-rate understates full-year"
+    }
+  },
+
+  "revenue_drivers": {
+    "driver_1_organic_price": {
+      "description": "Solid waste pricing: blend of open-market (70-75% of volumes, repriced annually vs. market tipping fees) and CPI/WPI-indexed contracts (25-30%). The open-market component prices against Northeast tipping fee scarcity, which is structural not cyclical.",
+      "historical_range_pct": "4.9% to 7.5% (FY2022-FY2025)",
+      "forward_assumption_base_pct": 5.0,
+      "forward_assumption_bull_pct": 5.5,
+      "forward_assumption_bear_pct": 4.0,
+      "rationale": "Base: Northeast capacity constraints maintain 5%+ disposal pricing; collection pricing tracks at similar level; management 2026 target explicitly 5%. Bull: tipping fees continue +$8-10/ton/year trajectory from Northeast closures (NEWMOA data), lifting disposal pricing to 6%+ and blending to 5.5%. Bear: economic softness and commercial volume decline force pricing discipline back toward CPI (now ~3-3.5%), pulling blended price growth to 4%.",
+      "source": "CWST Q4 2025 and Q1 2026 press releases; Yahoo Finance 4-value-drivers; NEWMOA/EREF tipping fee data"
+    },
+    "driver_2_organic_volume": {
+      "description": "Organic volume (ex-acquisition) — residential and commercial collection route density, industrial/roll-off special waste. Flat-to-slightly-negative in recent quarters due to soft commercial construction.",
+      "historical_range_pct": "-1.0% to +0.5% (FY2023-FY2026)",
+      "forward_assumption_base_pct": 0.0,
+      "forward_assumption_bull_pct": 1.0,
+      "forward_assumption_bear_pct": -1.5,
+      "rationale": "Base: Northeast residential volumes stable (GDP-correlated, ~0% organic over time for mature markets); commercial volumes recover modestly in 2027-2028 as interest rates normalize; special waste (C&D) remains soft. Bull: Northeast housing/construction recovery drives +1% route density uplift. Bear: recession-induced commercial volume decline of -1.5% offsets pricing gains.",
+      "source": "CWST FY2023-Q1 2026 earnings disclosures; Q1 2026 volume -2.1% (weather/economic); industry trend (RSG -1% volume Q1 2026)"
+    },
+    "driver_3_acquisition_revenue": {
+      "description": "M&A-driven revenue addition: CWST targets $100-200M of acquired annualized revenue per year from a $500M identified pipeline. Acquisitions are typically collection-only haulers in existing Northeast/Mid-Atlantic markets, priced at 7-9x pre-synergy EBITDA.",
+      "FY2025_actual_b": 0.023,
+      "forward_assumption_base_b_per_year": 0.100,
+      "forward_assumption_bull_b_per_year": 0.150,
+      "forward_assumption_bear_b_per_year": 0.050,
+      "cumulative_acquisition_revenue_by_2030_base_b": "0.40 (on top of 2026 base)",
+      "rationale": "Base: $100M/year of closed acquisitions continues through 2028 (below the $150M 2026 pace which included the large Star Waste deal), tapering as the Northeast/Mid-Atlantic market consolidates. Pipeline is real — management cites $500M identified — but assumes deal flow moderates as the easiest targets get absorbed. Bull: $150M/year maintained through 2028, pipeline replenished by WV and adjacent market expansion (Mountain State Waste opened WV). Bear: capital markets tighten, leverage approaches 3x, management pauses M&A; $50M/year minimum driven by small bolt-ons.",
+      "source": "CWST Q4 2025 press release (9 deals, $115M); Q1 2026 ($150M annualized, Star Waste $100M); Yahoo Finance 4-value-drivers ($500M pipeline); GlobeNewswire Q1 2026 guidance update"
+    },
+    "driver_4_internalization_lift": {
+      "description": "As acquired collection routes route waste to CWST-owned landfills instead of paying third-party tipping fees, both revenue (disposal) and margin improve. Internalized volumes grew 11% vs 3% for third-party in most recent disclosure — confirming the conversion pipeline.",
+      "current_implied_internalization_pct": "est. 55-60% of solid waste collection volumes",
+      "target_internalization_pct": "65-70% (consistent with WM/RSG large-cap levels)",
+      "margin_impact": "Each 500bps of internalization improvement worth est. 50-75bps of blended EBITDA margin over 2-3 years",
+      "constraint": "Constrained by Highland/Hakes permit approvals and Ontario County closure transition through 2028",
+      "source": "Yahoo Finance 4-value-drivers article (internalized volumes +11%); CWST permit announcements (Highland, Hakes); CWST highland 460k to 1M ton expansion"
+    },
+    "driver_5_resource_solutions": {
+      "description": "Resource Solutions (~$360M in FY2025, ~20% of total revenue): recycling processing, organics (composting, anaerobic digestion), national accounts. Revenue driven by processing fees + commodity sales. Commodity exposure partially mitigated by risk-sharing contracts.",
+      "FY2025_revenue_b": 0.360,
+      "growth_outlook": "5-7% annually: national accounts growth is the driver; recycling volumes expand with regulatory mandates for material diversion; commodity pricing a wildcard (Q1 2026: -22% per ton YoY)",
+      "margin_profile": "Lower margin than solid waste; processing fees provide floor; commodity revenue volatile. Risk management programs share downside with customers.",
+      "forward_assumption_base_growth_pct": 5.0,
+      "forward_assumption_bull_growth_pct": 8.0,
+      "forward_assumption_bear_growth_pct": 2.0,
+      "source": "CWST FY2025 segment data; Q1 2026 earnings: RS revenue $88.8M (+%), commodity per ton -22% YoY"
+    }
+  },
+
+  "revenue_projections": {
+    "methodology": "Total revenue = Solid Waste Revenue × (1 + price + volume) + Acquisition Revenue Cumulative + Resource Solutions × (1 + growth). Solid Waste Revenue is the sum of Eastern + Western + Mid-Atlantic regional segments. FY2025 solid waste revenue: $1.837B - $0.360B RS = ~$1.477B.",
+
+    "FY2026": {
+      "solid_waste_revenue_b_base": 1.620,
+      "resource_solutions_b_base": 0.445,
+      "total_revenue_b_base": 2.070,
+      "total_revenue_b_bull": 2.080,
+      "total_revenue_b_bear": 2.010,
+      "ebitda_margin_pct_base": 23.1,
+      "ebitda_b_base": 0.479,
+      "assumption_note": "Base anchored to management guidance (raised): $2.06-2.08B revenue, $473-483M EBITDA. Solid waste pricing +5%, volume flat-to-slightly-negative ex-weather, $120M acquisition revenue already closed. Resource Solutions +5% from national accounts.",
+      "assumption_sources": "CWST Q1 2026 guidance raise (GlobeNewswire Apr 2026); Star Waste $100M annualized (closed Apr 1 2026)"
+    },
+
+    "FY2027": {
+      "solid_waste_revenue_b_base": 1.720,
+      "resource_solutions_b_base": 0.467,
+      "acquisition_incremental_b_base": 0.100,
+      "total_revenue_b_base": 2.287,
+      "total_revenue_b_bull": 2.400,
+      "total_revenue_b_bear": 2.150,
+      "ebitda_margin_pct_base": 24.2,
+      "ebitda_b_base": 0.554,
+      "assumption_note": "Base: solid waste pricing +5%, volume 0%, $100M additional acquisitions closed in 2027. Mid-Atlantic integration G&A savings realizing ($8-10M of $15M target). Highland permit expected Q1 2027 — internalization begins improving in H2 2027. EBITDA margin +110bps from 2026 as synergies accrue and SG&A deleverages on higher revenue base.",
+      "assumption_sources": "Management 2027 synergy commentary (above-trend margin improvement weighted to H2 2026 and 2027); Highland permit Q1 2027 expected; G&A at 12% of revenue target (CFO Q1 2026 call)"
+    },
+
+    "FY2028": {
+      "solid_waste_revenue_b_base": 1.810,
+      "resource_solutions_b_base": 0.490,
+      "acquisition_incremental_b_base": 0.100,
+      "total_revenue_b_base": 2.400,
+      "total_revenue_b_bull": 2.580,
+      "total_revenue_b_bear": 2.200,
+      "ebitda_margin_pct_base": 25.5,
+      "ebitda_b_base": 0.612,
+      "ebitda_b_bull": 0.710,
+      "ebitda_b_bear": 0.495,
+      "assumption_note": "Base: Ontario County closes end-2028 (EBITDA-neutral per guidance); Highland operating at expanded capacity (460k to 1M tons), improving internalization to ~62-65%. Full $15M G&A savings realizing. Pricing moderates to +4.5% as CPI eases but Northeast structural scarcity maintains floor. Revenue ceiling check: $2.4B / ~$1.48B solid waste base in 2025 implies a 4.5-year CAGR of ~7-8% total, plausible given $100-150M/year acquisitions plus organic 4-5%.",
+      "implied_driver_check": "Requires Northeast solid waste market to grow at ~3% annually (volume+price-mix in the $30-35B regional market) and CWST to hold ~7-8% share — entirely within reach given current $1.5B solid waste revenue and ~$20-25B addressable Northeast market",
+      "assumption_sources": "CWST crux.json base estimate; management Ontario guidance; Highland 1M ton capacity expansion; NEWMOA Northeast market size; EBITDA margin floor/ceiling in crux.json"
+    },
+
+    "FY2029": {
+      "total_revenue_b_base": 2.520,
+      "total_revenue_b_bull": 2.780,
+      "total_revenue_b_bear": 2.270,
+      "ebitda_margin_pct_base": 26.2,
+      "ebitda_b_base": 0.660,
+      "assumption_note": "Base: acquisition pace normalizes to $75-100M/year as pipeline consolidates. Organic solid waste pricing +4% (CPI moderation in late-cycle but Northeast scarcity floor). Resource Solutions grows 5% from organics mandates.",
+      "assumption_sources": "Extrapolation from base drivers; acquisition pipeline moderation as Northeast market consolidates"
+    },
+
+    "FY2030_normalization": {
+      "total_revenue_b_base": 2.660,
+      "total_revenue_b_bull": 3.000,
+      "total_revenue_b_bear": 2.340,
+      "ebitda_margin_pct_base": 27.0,
+      "ebitda_margin_pct_bull": 29.0,
+      "ebitda_margin_pct_bear": 23.0,
+      "ebitda_b_base": 0.718,
+      "ebitda_b_bull": 0.870,
+      "ebitda_b_bear": 0.538,
+      "normalization_rationale": "By 2030, CWST is in a steady-state: acquisition cadence drops to $50-75M/year (market consolidated), integration costs behind it, Highland/Hakes/McKean providing sufficient owned disposal, Ontario memory recedes. Margin at 27% base reflects CWST's trajectory toward but not yet at WCN/RSG levels, given ongoing M&A activity. This is the normalization year for exit-multiple calculation.",
+      "assumption_sources": "Crux.json base estimate 25.5% by 2028 extrapolated two more years of 80-90bps annual improvement; ceiling set by WCN 33%, RSG 32% with CWST discount for higher acquisition pace; floor set by current 23% plus minimum $1-2/year margin improvement"
+    }
+  },
+
+  "implied_driver_ceiling_check": {
+    "check_name": "Northeast solid waste TAM vs. CWST revenue path",
+    "northeast_tam_estimate_b": "30-35 (estimated; 33.56M tons at $84-90/ton average blended + transfer/collection layers = ~$30-35B gross waste services market value)",
+    "cwst_addressable_share_current_pct": "5-7 (CWST ~$1.5B solid waste revenue against ~$20-25B slice of the Northeast market that is addressable for a regional operator with CWST's footprint)",
+    "cwst_implied_share_2030_base_pct": "8-10 (CWST ~$2.7B total, solid waste ~$2.0B, against a ~$22-25B addressable market growing at ~3-4%/year)",
+    "verdict": "PASS — CWST's 2030 base revenue does not imply an impossible market share. Even the bull at $3.0B implies ~11-12% share of the addressable Northeast/Mid-Atlantic market, still well within the range of a dominant regional operator. No ceiling breach.",
+    "source": "NEWMOA 33.56MT Northeast disposal volumes; tipping fee $84.44/ton (EREF 2024); CWST FY2025 segment geography; North America waste market $118B (Mordor Intelligence, 2026)"
+  },
+
+  "adj_fcf_path": {
+    "note": "Adjusted FCF (management definition excludes acquisition capex) vs. GAAP FCF diverge meaningfully. For valuation, GAAP FCF is the conservative measure; adjusted FCF is the management KPI. Both shown below.",
+    "FY2025_actual": {"adj_fcf_b": 0.180, "gaap_fcf_b": 0.084, "ebitda_to_adj_fcf_conversion_pct": 42.6},
+    "FY2026E": {"adj_fcf_b": 0.205, "gaap_fcf_b": "est. 0.080-0.100 (capex $260M incl. McKean completion)", "ebitda_to_adj_fcf_conversion_pct": 43.5},
+    "FY2028E_base": {"adj_fcf_b": 0.295, "gaap_fcf_b": "est. 0.150-0.180 (capex normalizes to ~$200M as growth projects complete)", "ebitda_to_adj_fcf_conversion_pct": 48},
+    "FY2030E_base": {"adj_fcf_b": 0.380, "gaap_fcf_b": "est. 0.230-0.260", "ebitda_to_adj_fcf_conversion_pct": 53},
+    "capex_intensity_trend": "Capex of 13.4% of revenue in FY2025 (including McKean rail, landfill cell construction). Expected to normalize toward 11-12% by 2028 as growth infrastructure projects complete, supporting improving conversion.",
+    "source": "CWST databundle: CFO $330M, capex $246M, FCF $84M in FY2025; adj. FCF $179.9M per Q4 2025 press release; 2026 capex guided ~$260M"
+  },
+
+  "segment_narrative": {
+    "Eastern": {
+      "FY2025_revenue_b": 0.473,
+      "nature": "Mature annuity — Vermont, New Hampshire, Maine legacy markets. Highest internalization rate, oldest routes, lowest growth. Pricing +4-5%/year. Volume flat to slightly positive.",
+      "growth_2026_2030": "4-5% annual (pricing-led); minimal acquisition contribution (market largely consolidated); contribution to margin improvement via high internalization of disposal",
+      "source": "CWST FY2025 segment release"
+    },
+    "Western": {
+      "FY2025_revenue_b": 0.663,
+      "nature": "Core growth engine — New York upstate, northern Pennsylvania. Benefits most from landfill expansion (Highland, Hakes, Hyland all in this geography). Highest disposal revenue concentration.",
+      "growth_2026_2030": "6-8% annual base (pricing + acquisition fill + Highland capacity opening); margin expands most sharply here as Highland goes from 460k to 1M tons",
+      "source": "CWST FY2025 segment release; CWST permit announcements (Highland NY, Hakes NY)"
+    },
+    "Mid_Atlantic": {
+      "FY2025_revenue_b": 0.341,
+      "nature": "High growth, integration phase — Maryland, Pennsylvania (lower), New Jersey, Virginia. Acquisitions drove >15% revenue growth in FY2024. Integration of customer migrations into CWST systems is key; $15M G&A savings mainly concentrated here.",
+      "growth_2026_2030": "8-12% near-term (integration plus acquisitions); moderates to 5-6% by 2029 as market matures; margin improves from 2026-2028 as G&A savings and internalization kick in; McKean (1.6M tons) serves this region",
+      "source": "CWST FY2025 segment release; StockStory Q3 2025 Mid-Atlantic commentary; Yahoo Finance 4-value-drivers G&A savings"
+    },
+    "Resource_Solutions": {
+      "FY2025_revenue_b": 0.360,
+      "nature": "Lower-margin, commodity-exposed — recycling MRFs, organics processing, national accounts. Revenue volatile with commodity cycles but processing fees provide a floor.",
+      "growth_2026_2030": "5% base (national accounts growth + organics mandates offset commodity headwinds); Q1 2026 -22% commodity per ton is a near-term headwind; risk-sharing contracts limit downside",
+      "source": "CWST FY2025 and Q1 2026 earnings; GuruFocus Q1 2026 highlights"
+    }
+  }
+}

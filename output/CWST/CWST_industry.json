@@ -1,0 +1,327 @@
+{
+  "_meta": {
+    "ticker": "CWST",
+    "as_of_date": "2026-06-19",
+    "produced_by": "Theia (T) — supersedes Pheme draft; Pheme draft backed up to CWST_industry_pheme_backup.json",
+    "atlas_version": "v3.0",
+    "note": "Competitive landscape and addressable market for Daedalus. Every number is sourced and cited."
+  },
+
+  "company": {
+    "name": "Casella Waste Systems, Inc.",
+    "founded": 1975,
+    "hq": "Rutland, Vermont",
+    "employees": 5600,
+    "description": "Vertically integrated solid waste services company operating exclusively in the northeastern United States. Provides collection (residential, commercial, roll-off), transfer, landfill disposal, recycling, and organics processing. The 'vertically integrated' label is the core economic claim: CWST owns both front-end collection and back-end disposal infrastructure, closing the margin loop internally. Its business model is that of a regional consolidator: it acquires private haulers at below-consolidated margins, integrates them onto its routing and billing systems, raises prices to market rates, and routes acquired volumes to its own landfills ('internalization') to capture the full collection-to-disposal margin stack. Five consecutive years of double-digit revenue, adjusted EBITDA, and adjusted free cash flow growth through FY2025.",
+    "geography": "Vermont, New Hampshire, Maine, Massachusetts, New York, Pennsylvania, Maryland, Delaware, Connecticut, West Virginia (since January 2026)",
+    "business_type": "industrial_services_regulated",
+    "method_hint": "EBITDA-multiple SOTP; four operating segments. Solid Waste (Eastern + Western + Mid-Atlantic) is the annuity with pricing-driven organic growth and acquisition-driven inorganic growth. Resource Solutions is commodity-sensitive and smaller. Each segment gets its own method and WACC."
+  },
+
+  "economic_segments": [
+    {
+      "segment_name": "Eastern (solid waste)",
+      "description": "Collection and disposal in Vermont, New Hampshire, Maine, and Massachusetts. Casella's original and most mature geography. Highest landfill internalization rates — Casella's owned Vermont and NH landfills serve this geography. Municipal and residential contracts predominate; pricing power is highest here because CWST has durable market position with very limited competition from national players.",
+      "fy2025_revenue_m": 472.6,
+      "revenue_share_pct": 25.7,
+      "estimated_adj_ebitda_margin_pct_range": "26-28",
+      "margin_basis": "Theia estimate: mature operations, highest internalization, lowest integration drag. Company discloses Mid-Atlantic entered at sub-consolidated margins (~18-20%); consolidated is ~23%; Eastern as the mature, highest-internalization segment must be above 23% to produce the consolidated average.",
+      "nature": "mature-annuity",
+      "growth_profile": "Low-to-mid single digit organic (pricing ~5% offset by ~-1% volume); modest bolt-on M&A",
+      "key_driver": "CPI-plus pricing yield and route density",
+      "source": {
+        "value": "$472.6M FY2025",
+        "source_url": "https://app.edgar.tools/companies/CWST/disclosures/segments",
+        "tier": "company_filed"
+      }
+    },
+    {
+      "segment_name": "Western (solid waste)",
+      "description": "Collection, transfer, and disposal in New York State (Hudson Valley, Catskills, Western NY) and western Vermont. Includes the McKean Landfill in Pennsylvania — a rail-served facility accepting Northeast-exported waste from capacity-constrained markets. The Royal Carting and Welsh Sanitation acquisitions (New York and Connecticut, 2025) added collection volume being routed to CWST's NY landfills, driving 11.7% YoY landfill volume growth in Q3 2025.",
+      "fy2025_revenue_m": 663.2,
+      "revenue_share_pct": 36.1,
+      "estimated_adj_ebitda_margin_pct_range": "24-26",
+      "margin_basis": "Theia estimate: McKean rail-served third-party tons are incremental high-margin. Above consolidated average but below Eastern given newer NY acquisitions still integrating.",
+      "nature": "mature-annuity with structural disposal pricing upside",
+      "growth_profile": "Mid-single digit organic pricing; landfill volume growth from Northeast capacity displacement and internalization of acquired NY/CT collection volumes",
+      "key_driver": "McKean Landfill third-party ton intake; internalization of Royal Carting/Welsh Sanitation volumes; disposal pricing in NY",
+      "source": {
+        "value": "$663.2M FY2025",
+        "source_url": "https://app.edgar.tools/companies/CWST/disclosures/segments",
+        "tier": "company_filed"
+      }
+    },
+    {
+      "segment_name": "Mid-Atlantic (solid waste)",
+      "description": "Operations in Pennsylvania, Maryland, Delaware, and (since January 2026) West Virginia. Assembled via acquisition of GFL's PA/MD/DE assets (June 2023), LMR Disposal and Whitetail Disposal (2024, combined >$100M annualized revenue), and subsequent bolt-ons. This is Casella's newest and lowest-margin segment — billing system migration and route optimization still in progress. The margin headwind from Mid-Atlantic integration narrowed from ~100bps annually to ~10bps by Q3 2025. Star Waste Systems (closed April 1, 2026; ~$100M annualized revenue, Greater Boston) is the newest large addition.",
+      "fy2025_revenue_m": 341.1,
+      "revenue_share_pct": 18.6,
+      "estimated_adj_ebitda_margin_pct_range": "18-20",
+      "margin_basis": "Company-disclosed: acquired businesses enter at ~20% adj EBITDA margins. Mid-Atlantic is the integration-stage segment. Q1 2026 acquisitions diluted consolidated margin by 15bps — consistent with 20% entry margins.",
+      "nature": "acquisition-integration converting toward annuity over 3-5 years",
+      "growth_profile": "High revenue growth from M&A; margin catch-up is the primary value driver",
+      "key_driver": "Integration execution: unified billing, route optimization, pricing normalization; $30M targeted G&A and synergy savings",
+      "sources": [
+        {
+          "value": "$341.1M FY2025",
+          "source_url": "https://app.edgar.tools/companies/CWST/disclosures/segments",
+          "tier": "company_filed"
+        },
+        {
+          "value": "Mid-Atlantic headwind narrowed from 100bps annually to 10bps by Q3 2025",
+          "source_url": "https://finance.yahoo.com/news/casella-waste-systems-inc-cwst-210227735.html",
+          "tier": "company_filed"
+        },
+        {
+          "value": "Acquired businesses enter at ~20% adj EBITDA margins; Q1 2026 acquisitions diluted 15bps consolidated",
+          "source_url": "https://finance.yahoo.com/markets/stocks/articles/casella-waste-systems-inc-q1-123000425.html",
+          "tier": "company_filed"
+        }
+      ]
+    },
+    {
+      "segment_name": "Resource Solutions (recycling and organics)",
+      "description": "Materials recovery facilities (MRFs), organics processing, and commodity marketing. Revenue includes commodity-indexed sales of recovered fiber (OCC, newsprint, SMP), plastics, glass, and metals, plus processing/tipping fees. Commodity-price sensitive: OCC prices fell ~22% in Q1 2026, though contract evolution toward fee-for-service structures limited the net income impact to ~$1M. The Boston MRF is the flagship facility. Organics processing is growing under Massachusetts food waste mandate tailwind.",
+      "fy2025_revenue_m": 360.0,
+      "fy2025_revenue_growth_pct": 9.1,
+      "revenue_share_pct": 19.6,
+      "estimated_adj_ebitda_margin_pct_range": "10-14",
+      "margin_basis": "Company disclosed 270bps expansion in 2024. Below consolidated average. Commodity price exposure is the primary volatility source.",
+      "nature": "cyclical-commodity with improving fee-based annuity component",
+      "growth_profile": "Revenue sensitive to OCC/fiber prices; underlying fee-based volume growing 3-5% as municipal recycling contracts expand",
+      "key_driver": "OCC / SMP commodity prices; processing fee rate; Boston MRF utilization",
+      "sources": [
+        {
+          "value": "$360.0M FY2025, up 9.1% YoY; 270bps margin expansion in 2024",
+          "source_url": "https://ir.casella.com/news-releases/news-release-details/casella-waste-systems-inc-announces-fourth-quarter-and-fiscal-17",
+          "tier": "company_filed"
+        }
+      ]
+    }
+  ],
+
+  "consolidated_financials": {
+    "note_on_gaap_vs_adjusted": "Databundle reports GAAP EBITDA of $379M for FY2025 (margin 20.6%). Company's adjusted EBITDA of $422.8M adds back stock-based compensation and certain non-cash items. The 23.0% adjusted margin is the industry-standard benchmark for peer comparisons. All margin comparisons herein use adjusted EBITDA.",
+    "history": [
+      {"fy": "FY2022", "revenue_m": 1085, "adj_ebitda_m": 225, "adj_ebitda_margin_pct": 20.7},
+      {"fy": "FY2023", "revenue_m": 1265, "adj_ebitda_m": 253, "adj_ebitda_margin_pct": 20.0},
+      {"fy": "FY2024", "revenue_m": 1557, "adj_ebitda_m": 360.6, "adj_ebitda_margin_pct": 23.2},
+      {"fy": "FY2025", "revenue_m": 1837, "adj_ebitda_m": 422.8, "adj_ebitda_margin_pct": 23.0, "adj_ebitda_growth_pct": 17.3}
+    ],
+    "q1_2026": {
+      "revenue_m": 457.3,
+      "adj_ebitda_m": 97.1,
+      "adj_ebitda_margin_pct": 21.2,
+      "adj_ebitda_margin_yoy_delta_bps": 50,
+      "base_business_margin_expansion_bps": 65,
+      "acquisition_dilution_bps": -15,
+      "note": "The 65bps base-business expansion vs. 15bps acquisition dilution decomposition shows the underlying organic margin improvement rate is solid."
+    },
+    "fy2026_guidance_updated_april_30_2026": {
+      "revenue_range_m": [2060, 2080],
+      "revenue_midpoint_m": 2070,
+      "adj_ebitda_range_m": [473, 483],
+      "adj_ebitda_midpoint_m": 478,
+      "adj_ebitda_margin_midpoint_pct": 23.1,
+      "adj_fcf_range_m": [200, 210],
+      "note": "Raised from Feb 2026 initial guidance ($1.97-1.99B revenue, $455-465M adj EBITDA) following Star Waste acquisition and Q1 outperformance."
+    },
+    "sources": [
+      {"value": "FY2025 adj EBITDA $422.8M", "source_url": "https://finance.yahoo.com/news/casella-waste-systems-inc-announces-210500420.html", "tier": "company_filed"},
+      {"value": "Q1 2026 results; FY2026 guidance raised", "source_url": "https://www.globenewswire.com/news-release/2026/04/30/3285417/8693/en/Casella-Waste-Systems-Inc-Announces-First-Quarter-2026-Results-Updates-Fiscal-Year-2026-Guidance.html", "tier": "company_filed"}
+    ]
+  },
+
+  "tam_and_addressable_market": {
+    "us_solid_waste_tam_usd_bn": {
+      "value": 110,
+      "range": "80-160 depending on scope definition",
+      "basis": "Waste Dive / Waste Business Journal document US waste industry revenue crossing $100B in 2024. Grand View Research ($156B, 2024) includes hazardous and specialized services at wider scope. Anythingresearch 'Solid Waste Collection' alone ~$85B. Theia uses $110B as midpoint for US non-hazardous solid waste collection, transfer, and disposal — the market CWST addresses.",
+      "source_url": "https://www.wastedive.com/news/us-recycling-waste-market-100-billion-revenue-milestone-waste-business-journal/743163/",
+      "tier": "research_firm",
+      "triangulation_note": "Single-range estimate; sources span $85-156B depending on scope. $110B is Theia's midpoint for comparable-scope addressable market.",
+      "tam_cagr_pct_nominal": "4.5-5.5"
+    },
+    "northeast_addressable_market": {
+      "geography": "CT, ME, MA, NH, NJ, NY, PA, RI, VT (NEWMOA 8-state) plus DE and WV (CWST recent entries)",
+      "total_disposal_volume_tons_2024_m": 33.56,
+      "estimated_market_size_usd_bn_range": "18-22",
+      "basis": "NEWMOA: 33.56M tons disposed in 8-state region in 2024. At Northeast average tipping fee of $84.44/ton (EREF 2024) plus collection economics (roughly 2x disposal revenue at blended rates), Theia estimates total Northeast solid waste market at ~$18-22B.",
+      "cwst_revenue_share_pct": "~8-10",
+      "cwst_calculation": "CWST FY2025 revenue $1.84B / $18-22B Northeast market",
+      "growth_driver": "Disposal pricing rising faster than national average as Northeast capacity tightens. Average Northeast tipping fee up $8.52/ton in 2024 alone to $84.44/ton — highest US region.",
+      "sources": [
+        {"value": "33.56M tons disposed Northeast 2024; 23% at risk within 5 years", "source_url": "https://www.indexbox.io/blog/northeast-waste-disposal-report-23-of-landfill-capacity-could-close-within-five-years/", "tier": "research_firm"},
+        {"value": "Northeast avg tipping fee $84.44/ton 2024, up $8.52/ton YoY — highest US region", "source_url": "https://dropcurb.com/blog/landfill-tipping-fees-by-state", "tier": "research_firm"}
+      ]
+    }
+  },
+
+  "competitors": [
+    {
+      "name": "Waste Management, Inc. (WM)",
+      "ticker": "WM",
+      "position": "National market leader",
+      "fy2025_revenue_b": 22.1,
+      "fy2025_adj_ebitda_b": 7.17,
+      "fy2025_adj_ebitda_margin_pct": 30.0,
+      "national_market_share_pct": "~34% of publicly traded waste revenues",
+      "northeast_presence": "Significant but less concentrated than CWST in Vermont, NH, western Maine",
+      "trajectory": "Exceeded 30% adj EBITDA for first time in FY2025 (+150bps). Stericycle integration ongoing. Not a primary direct competitor to CWST's core rural New England markets.",
+      "ev_ebitda_approx": 17,
+      "source": {"value": "WM FY2025 adj EBITDA >30%; $7.17B EBITDA", "source_url": "https://mediaroom.wm.com/2026-01-28-WM-Announces-Fourth-Quarter-and-Full-Year-2025-Earnings", "tier": "company_filed"}
+    },
+    {
+      "name": "Republic Services, Inc. (RSG)",
+      "ticker": "RSG",
+      "position": "National #2",
+      "fy2025_revenue_b": 16.6,
+      "fy2025_adj_ebitda_margin_pct": 32.0,
+      "national_market_share_pct": "~25% of publicly traded waste revenues",
+      "northeast_presence": "Present in major Northeast markets; less competitive with CWST in Northern New England rural markets. RSG's 2026 pricing yield guidance (3.2-3.7% total; 4.0-4.5% core) is below CWST's realized 5.1% in Q1 2026.",
+      "trajectory": "32% adj EBITDA in FY2025 (+90bps). Strong execution on Blue Polymer and RNG. The margin benchmark CWST is converging toward.",
+      "ev_ebitda_approx": 17,
+      "source": {"value": "RSG FY2025 adj EBITDA 32%; 2026 yield guidance 3.2-3.7%", "source_url": "https://investor.republicservices.com/news-releases/news-release-details/republic-services-inc-reports-fourth-quarter-and-full-year-2025", "tier": "company_filed"}
+    },
+    {
+      "name": "Waste Connections, Inc. (WCN)",
+      "ticker": "WCN",
+      "position": "#3 US/Canada; secondary-market specialist",
+      "fy2025_revenue_b": 8.5,
+      "fy2025_adj_ebitda_margin_pct": 33.0,
+      "national_market_share_pct": "~13% of publicly traded waste revenues",
+      "northeast_presence": "Limited. WCN targets markets where it can be dominant regional operator with limited WM/RSG competition — not a Northeast focus.",
+      "trajectory": "Industry-leading margins (33.0% FY2025, +100bps YoY; targeting 33.3-33.4% in FY2026). WCN's secondary-market model is the closest structural analog to CWST's Northern New England position. WCN's margin trajectory is CWST's long-run ceiling reference.",
+      "ev_ebitda_approx": 19,
+      "source": {"value": "WCN FY2025 adj EBITDA 33.0% +100bps; FY2026 target 33.3-33.4%", "source_url": "https://investors.wasteconnections.com/news/news-details/2026/Waste-Connections-Reports-Fourth-Quarter-2025-Results-and-Provides-2026-Outlook/default.aspx", "tier": "company_filed"}
+    },
+    {
+      "name": "GFL Environmental Inc. (GFL)",
+      "ticker": "GFL",
+      "position": "#4 North American; Canadian-headquartered",
+      "fy2025_revenue_b": 7.0,
+      "fy2025_adj_ebitda_margin_pct": 30.0,
+      "northeast_presence": "Divested PA/MD/DE solid waste assets to CWST in June 2023 (origin of CWST's Mid-Atlantic segment). Still present in NY and NJ.",
+      "trajectory": "Targeting ~30.6% adj EBITDA in FY2026 (from 30.0% in 2025, 28.7% in 2024). Most relevant trading comp for CWST given similar acquisitive/leveraged profile at larger scale.",
+      "ev_ebitda_approx": 12,
+      "source": {"value": "GFL FY2025 margin 30.0%; FY2026 target ~30.6%", "source_url": "https://investors.gflenv.com/English/news/news-details/2026/GFL-Environmental-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Provides-Full-Year-2026-Guidance/default.aspx", "tier": "company_filed"}
+    },
+    {
+      "name": "Private regional and local haulers (hundreds, Northeast US)",
+      "position": "CWST's primary acquisition targets",
+      "revenue_range_per_company_m": "5-100",
+      "adj_ebitda_margin_typical_pct": "10-18",
+      "trajectory": "Being consolidated at accelerating pace. M&A deal flow in environmental services was 25 deals YTD through mid-2025 vs. 16 in 2024.",
+      "acquisition_multiple_ev_ebitda_pre_synergy": "5-8x",
+      "source": {"value": "PE bolt-on acquisitions at 5-6x; route density integration expands margins 14% to 28%", "source_url": "https://www.capstonepartners.com/insights/article-waste-and-recycling-ma-update/", "tier": "research_firm"}
+    }
+  ],
+
+  "margin_gap_peer_table": {
+    "fy2025_adj_ebitda_margins_pct": {
+      "CWST": 23.0,
+      "WM": 30.0,
+      "RSG": 32.0,
+      "WCN": 33.0,
+      "GFL": 30.0
+    },
+    "cwst_gap_to_wm_pct": 7.0,
+    "cwst_gap_to_rsg_pct": 9.0,
+    "cwst_gap_to_wcn_pct": 10.0,
+    "structural_reasons_for_gap": [
+      "High-pace acquisition mode: new businesses enter at ~20% adj EBITDA margins, diluting the consolidated figure. Q1 2026 base business expanded 65bps while new acquisitions added 15bps dilution, netting to +50bps. Underlying organic margin improvement rate is ~65bps/quarter.",
+      "Mid-Atlantic integration still underway — the largest integration project in CWST history, narrowed from 100bps headwind to 10bps by Q3 2025.",
+      "G&A overhead proportionally higher in growth mode: $30M targeted savings represent ~145bps of margin at FY2026E revenue scale.",
+      "Landfill internalization still in progress — as Mid-Atlantic and NY/CT acquired volumes route to CWST landfills, 50-75% incremental margin per ton flows through."
+    ],
+    "convergence_rate_evidence": "Q1 2026 base business organic: +65bps/quarter (~200-260bps/year). Mid-Atlantic headwind near zero. G&A: $30M targeted = ~145bps. Internalization: each 1% point of additional internalization adds ~50-75bps. A reasonable 3-year accumulation puts CWST at 25-27% by FY2028-FY2029. Reaching WCN's 33% requires either much longer integration (8-10+ years) or a structural step-change management has not guided toward.",
+    "ceiling_reference": "WCN at 33.0% is the best-in-class secondary-market analog. GFL at 30.0% is the closest acquired-and-integrated analog. RSG at 32.0% is the national-scale peer. A realistic long-run CWST ceiling is 28-30% assuming continued acquisitions and successful integration — not 33%.",
+    "sources_for_peer_margins": [
+      {"name": "WCN FY2025", "url": "https://investors.wasteconnections.com/news/news-details/2026/Waste-Connections-Reports-Fourth-Quarter-2025-Results-and-Provides-2026-Outlook/default.aspx", "tier": "company_filed"},
+      {"name": "RSG FY2025", "url": "https://investor.republicservices.com/news-releases/news-release-details/republic-services-inc-reports-fourth-quarter-and-full-year-2025", "tier": "company_filed"},
+      {"name": "WM FY2025", "url": "https://mediaroom.wm.com/2026-01-28-WM-Announces-Fourth-Quarter-and-Full-Year-2025-Earnings", "tier": "company_filed"},
+      {"name": "GFL FY2025", "url": "https://investors.gflenv.com/English/news/news-details/2026/GFL-Environmental-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Provides-Full-Year-2026-Guidance/default.aspx", "tier": "company_filed"}
+    ]
+  },
+
+  "the_share_dynamic": {
+    "summary": "The defining share dynamic in US solid waste is consolidation. CWST is not taking share from WM or RSG in head-to-head competition — it is acquiring private haulers that are too small for national players to pursue (<$50-100M revenue each) and integrating them onto its disposal network. The secondary dynamic is landfill internalization: as CWST acquires a collection business, it reroutes volumes to its own landfills, converting third-party tipping fee cost into captive margin.",
+    "organic_volume_trend": "Negative to flat in mature markets. Q4 2025 organic solid waste volume was -0.9% YoY. Northeast population growth is near zero; organic MSW volume growth is structurally 0-1% for the region. Pricing, not volume, is the organic growth engine.",
+    "pricing_trend": "CWST delivering 4.9-5.1% solid waste pricing vs. WM/RSG 3.2-4.5% core pricing yield. CWST's premium reflects concentrated market positions in tight-capacity Northeast markets.",
+    "acquisition_pace": {
+      "five_year_annualized_revenue_acquired_m": 800,
+      "fy2024_count": 8,
+      "fy2024_annualized_m": ">200",
+      "fy2025_count": 9,
+      "fy2025_annualized_m": 115,
+      "q1_2026_count": 4,
+      "q1_2026_annualized_m": 150,
+      "source": {"value": ">$800M annualized revenue acquired over 5 years", "source_url": "https://finance.yahoo.com/news/casella-waste-systems-inc-announces-210500420.html", "tier": "company_filed"}
+    },
+    "landfill_capacity_advantage": {
+      "summary": "Northeast landfill capacity is in structural decline. NEWMOA 2024: 30% capacity loss since 2015; 23% of remaining in-region capacity (7.6M tons/year) at risk of closure within 5 years. Even with approved expansions (Juniper Ridge, Seneca Meadows), 5.2M tons/year will need a new destination before end of decade. CWST's McKean (rail-served, PA), Vermont, and New York landfills are positioned as receiving sites for this displaced volume.",
+      "tipping_fee_context": "Northeast average $84.44/ton in 2024 (up $8.52/ton from 2023) — highest US region and accelerating. Sullivan County NY raised C&D tipping fees to $150/ton in January 2026.",
+      "sources": [
+        {"value": "30% capacity loss since 2015; 23% at risk within 5 years; 5.2M tons still needing destination even with approved expansions", "source_url": "https://www.indexbox.io/blog/northeast-waste-disposal-report-23-of-landfill-capacity-could-close-within-five-years/", "tier": "research_firm"},
+        {"value": "NEWMOA original report 2024", "source_url": "https://www.newmoa.org/wp-content/uploads/2025/02/Solid-Waste-Disposal-Capacity-in-the-Northeast-2024.pdf", "tier": "research_firm"}
+      ]
+    }
+  },
+
+  "moat": {
+    "primary": "Landfill permits in the Northeast. Constructing a new landfill near Northeast population centers is effectively impossible — documented by 30% capacity loss since 2015 (NEWMOA 2024). CWST's permitted landfill positions in Vermont, New York, Pennsylvania, and Maine are irreplaceable assets conferring captive disposal, third-party volume intake capacity, and structural pricing leverage as the region's capacity tightens.",
+    "secondary": "Route density and geographic monopolies in Northern New England. In Vermont, NH, and western Maine, CWST is the only integrated hauler of meaningful scale. Route density creates a fixed-cost advantage — the marginal cost of adding a stop on an existing route is very low.",
+    "tertiary": "Municipal contracts. Long-term (5-10 year) residential collection contracts with CPI-linked escalators provide an annuity base with high switching costs for municipalities.",
+    "moat_strength": {
+      "disposal_landfill": "STRONG — structural supply constraint, irreplaceable assets",
+      "collection_mature_markets": "MODERATE-STRONG — route density, municipal contracts, switching costs in VT/NH/ME",
+      "collection_mid_atlantic": "MODERATE — newer market, building density, WM/RSG present",
+      "resource_solutions": "WEAK — commodity exposure, multiple competitors for recycling contracts"
+    }
+  },
+
+  "five_forces": {
+    "supplier_power": "LOW. Labor is the key input; manageable at current wage levels. Fuel is partially hedged. Equipment from competitive OEMs.",
+    "buyer_power": "LOW in core New England markets (structural monopoly positions, limited alternatives). MODERATE for large commercial accounts. LOW for municipal contracts (long-term, sticky).",
+    "competitive_rivalry": "LOW in Vermont, NH, Maine (CWST dominant). MODERATE in New York and Mid-Atlantic (WM/RSG present, commercial account competition).",
+    "threat_of_substitutes": "VERY LOW. Waste must be collected and disposed of. No technology substitutes for physical collection and disposal.",
+    "threat_of_entry": "VERY LOW for integrated operators. Landfill permitting is functionally closed in the Northeast. New hauler-only entrants lack captive disposal — paying market-rate tipping fees to CWST creates a structural cost disadvantage."
+  },
+
+  "acquisition_strategy_detail": {
+    "named_acquisitions_recent": [
+      {"name": "GFL Environmental PA/MD/DE assets", "close": "June 2023", "annualized_revenue_m": "~200+", "significance": "Created Mid-Atlantic segment; largest deal in CWST history"},
+      {"name": "LMR Disposal LLC + Whitetail Disposal Inc (PA/MD)", "close": "July-August 2024", "annualized_revenue_m": ">100 combined", "significance": "Deepens Mid-Atlantic route density"},
+      {"name": "Royal Carting / Welsh Sanitation (NY/CT)", "close": "2025", "significance": "NY/CT market; volumes routed to CWST NY landfills for internalization benefit"},
+      {"name": "Mountain State Waste (WV)", "close": "January 1 2026", "annualized_revenue_m": 30, "significance": "West Virginia market entry"},
+      {"name": "Star Waste Systems (Greater Boston, MA)", "close": "April 1 2026", "annualized_revenue_m": 100, "significance": "Largest recent acquisition. Boston is the highest-pricing MSA in the Northeast. First major Greater Boston presence for CWST."}
+    ],
+    "acquisition_entry_economics": {
+      "typical_entry_adj_ebitda_margin_pct": "18-20",
+      "post_integration_target_margin_pct": "23+",
+      "stated_integration_improvement_bps": "500-1000 over 3-5 years",
+      "integration_improvement_source": {"value": "CFO Helgeson Q3 2025 earnings call", "source_url": "https://finance.yahoo.com/news/5-insightful-analyst-questions-casella-053923585.html", "tier": "company_filed"},
+      "typical_ev_ebitda_multiple_pre_synergy": "5-8x",
+      "multiple_source": {"value": "PE bolt-on 5-6x; mid-scale platforms 7-9x", "source_url": "https://www.capstonepartners.com/insights/article-waste-and-recycling-ma-update/", "tier": "research_firm"}
+    }
+  },
+
+  "sources": [
+    {"name": "Casella Waste FY2025 Q4 Earnings Release", "url": "https://finance.yahoo.com/news/casella-waste-systems-inc-announces-210500420.html", "tier": "company_filed"},
+    {"name": "Casella Q1 2026 Earnings and Updated Guidance", "url": "https://www.globenewswire.com/news-release/2026/04/30/3285417/8693/en/Casella-Waste-Systems-Inc-Announces-First-Quarter-2026-Results-Updates-Fiscal-Year-2026-Guidance.html", "tier": "company_filed"},
+    {"name": "Casella Q3 2025 Earnings Highlights", "url": "https://finance.yahoo.com/news/casella-waste-systems-inc-cwst-210227735.html", "tier": "company_filed"},
+    {"name": "Casella Q1 2026 Earnings Call Summary", "url": "https://finance.yahoo.com/markets/stocks/articles/casella-waste-systems-inc-q1-123000425.html", "tier": "company_filed"},
+    {"name": "Casella Q3 2025 Analyst Q&A", "url": "https://finance.yahoo.com/news/5-insightful-analyst-questions-casella-053923585.html", "tier": "company_filed"},
+    {"name": "CWST Segment Revenue (EDGAR Tools)", "url": "https://app.edgar.tools/companies/CWST/disclosures/segments", "tier": "company_filed"},
+    {"name": "NEWMOA 2024 Solid Waste Disposal Capacity in the Northeast", "url": "https://www.newmoa.org/wp-content/uploads/2025/02/Solid-Waste-Disposal-Capacity-in-the-Northeast-2024.pdf", "tier": "research_firm"},
+    {"name": "Northeast Disposal Capacity 23% at Risk — IndexBox", "url": "https://www.indexbox.io/blog/northeast-waste-disposal-report-23-of-landfill-capacity-could-close-within-five-years/", "tier": "research_firm"},
+    {"name": "NEWMOA 2026 Capacity Warning — Waste Dive", "url": "https://www.wastedive.com/news/newmoa-significant-waste-disposal-capacity-loss-northeast/820326/", "tier": "research_firm"},
+    {"name": "WCN FY2025 Annual Results", "url": "https://investors.wasteconnections.com/news/news-details/2026/Waste-Connections-Reports-Fourth-Quarter-2025-Results-and-Provides-2026-Outlook/default.aspx", "tier": "company_filed"},
+    {"name": "GFL FY2025 Annual Results", "url": "https://investors.gflenv.com/English/news/news-details/2026/GFL-Environmental-Reports-Fourth-Quarter-and-Full-Year-2025-Results-Provides-Full-Year-2026-Guidance/default.aspx", "tier": "company_filed"},
+    {"name": "RSG FY2025 Annual Results", "url": "https://investor.republicservices.com/news-releases/news-release-details/republic-services-inc-reports-fourth-quarter-and-full-year-2025", "tier": "company_filed"},
+    {"name": "WM FY2025 Annual Results", "url": "https://mediaroom.wm.com/2026-01-28-WM-Announces-Fourth-Quarter-and-Full-Year-2025-Earnings", "tier": "company_filed"},
+    {"name": "Waste & Recycling M&A Update — Capstone Partners Aug 2025", "url": "https://www.capstonepartners.com/insights/article-waste-and-recycling-ma-update/", "tier": "research_firm"},
+    {"name": "Landfill Tipping Fees by State 2024 — Dropcurb", "url": "https://dropcurb.com/blog/landfill-tipping-fees-by-state", "tier": "research_firm"},
+    {"name": "US Waste Market $100B Milestone — Waste Dive / Waste Business Journal", "url": "https://www.wastedive.com/news/us-recycling-waste-market-100-billion-revenue-milestone-waste-business-journal/743163/", "tier": "research_firm"}
+  ]
+}

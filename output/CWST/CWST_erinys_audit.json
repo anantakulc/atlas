@@ -1,0 +1,263 @@
+{
+  "ticker": "CWST",
+  "auditor": "Erinys",
+  "version": "v3.0",
+  "audit_utc": "2026-06-19T00:00:00Z",
+  "verdict": "PASS WITH NOTES",
+
+  "summary": "All material valuation figures verify arithmetically. The four numbers, SOTP math, Gordon lower bound, WACC build, price bridge, sensitivity grid (all 16 cells), bull $135 and bear $65 are recomputed and confirmed. Three issues require annotation before synthesis: (1) the bias_audit tally undercounts conservative leans by 1 (says 2, actual 3, triggering the CONTRACT §1.3 threshold); (2) the bear exit_multiple_override conflicts between inputs.json (20.11x) and valuation.json (22.14x) — the 22.14x is correct and the $56.50 price is correct; (3) the t_invariance table labels its NOPAT values as SW-segment implied prices, not all-in equity, and the label 'nopat_T_b' is confusing — the actual prices are correct when understood correctly.",
+
+  "issues": [
+    {
+      "id": "BIAS-TALLY-01",
+      "severity": "MATERIAL",
+      "description": "The bias_audit tally states {lean_conservative: 2, centered: 6} in both valuation.json and inputs.json. Recount from the listed assumption directions: three items are labeled 'slightly_conservative' (Exit EV/EBITDA 15x, RS EBITDA margin 12%, M&A pace $100M/yr). The correct tally is {lean_conservative: 3, centered: 5}. This puts the count at exactly the CONTRACT §1.3 threshold of 3+, which requires either (a) re-centering at least one assumption or (b) explicit disclosure that the three leans are individually immaterial and do not compound into a systematic bias.",
+      "location": "valuation.json and inputs.json, bias_audit.tally",
+      "stated": "lean_conservative: 2, centered: 6",
+      "recomputed": "lean_conservative: 3, centered: 5",
+      "materiality_note": "The three slightly-conservative leans are individually minor. RS margin at 12% is 'very slightly' conservative (impact ~$2-3/share), exit 15x is at CWST's own historical median (essentially centered), M&A pace $100M is below recent run rate. Together they may reduce the base by $3-5/share — not enough to change the BUY call. But the tally error means the bias audit's 'CLEAN' verdict was based on a wrong count and the CONTRACT §1.3 check was not correctly run.",
+      "action_required": "Correct tally to 3/0/5. Add explicit disclosure that the three slightly-conservative leans are individually immaterial and do not constitute a systematic bias under CONTRACT §1.3. OR re-center the M&A pace to $115M (the most arguable lean) and reduce the tally to 2."
+    },
+    {
+      "id": "BEAR-OVERRIDE-02",
+      "severity": "MINOR",
+      "description": "The bear scenario uses different exit_multiple_override values in inputs.json (20.11x) vs valuation.json (22.14x). The derivation in inputs.json shows the correct math (13x EV/EBITDA at 23% margin -> NOPAT conv 0.587 -> EV/NOPAT = 22.15x) but then uses 20.11 without explanation. The valuation.json uses 22.14x, which is arithmetically consistent with the bear's $56.50 implied price (confirmed: $4.394B SW EV + $0.320B RS EV - $1.115B net debt = $3.599B equity / 63.7M shares = $56.50). The 20.11 in inputs.json is an inconsistent draft artifact.",
+      "location": "inputs.json scenarios[0] (Bear) exit_multiple_override vs valuation.json scenarios[0] key_changes SW exit_multiple_override",
+      "stated_inputs": "20.11 (inputs.json)",
+      "stated_valuation": "22.14 (valuation.json)",
+      "correct_value": "~22.15 (derived from 13x EV/EBITDA at 23% margin, NOPAT conv 0.587)",
+      "final_price": "$56.50 is arithmetically correct using 22.14x",
+      "action_required": "Correct inputs.json bear exit_multiple_override from 20.11 to 22.14 (or 22.15) to be consistent with valuation.json and the derivation."
+    },
+    {
+      "id": "TINV-LABEL-03",
+      "severity": "MINOR",
+      "description": "The t_invariance table in valuation.json reports SW-segment implied per-share prices, not all-in equity prices (i.e., before subtracting RS EV and net debt). The 'nopat_T_b' column correctly stores the NOPAT values from the path array that produce those SW prices. All five prices are arithmetically correct (recomputed and confirmed). However, the label 'nopat_T_b: 0.30' at T=2 could be confused with the path's FY2028 NOPAT (0.343): the engine reads the path correctly and uses 0.343 at T=2, which with exit 23.87x and the $350M interim FCF gives the stated $116.72 SW price. The note in t_invariance_note claims the T=2-T=4 spread is 3.3% ($116.72 to $120.54); this is verified correct. The SW segment value is robust to normalization year choice within T=2 to T=4.",
+      "location": "valuation.json, primary_method.outputs.segments[0].outputs.t_invariance",
+      "verdict": "Prices verified correct. Label ambiguity only.",
+      "action_required": "Clarify that t_invariance prices are SW-segment EV per share (before RS, net debt). Label already confirmed consistent with the path values."
+    },
+    {
+      "id": "SENSITIVITY-BASE-CELL-04",
+      "severity": "NOTE",
+      "description": "The sensitivity matrix base_cell states margin_pct=27 and exit_multiple=15 with implied_px=$105.60 and notes 'Manual calc without interim FCF PV'. The 16 grid cells all use SW EBITDA margin on SW revenue $2.12B, exclude interim FCF, and verify exactly. The base_cell margin of '27%' refers to the BLENDED FY2030 EBITDA margin target, not the SW-specific margin (~30.8%). The SW-specific margin at the engine base (30.8% on $2.12B) produces $105.59 without interim FCF and $111.08 with it — consistent with the engine's $110.99 (rounding). The grid's 'margin_pct' rows (22-28%) represent SW-segment margin on $2.12B SW revenue. The base_cell '27% margin' is therefore the BLENDED margin label applied to an SW-specific computation, creating a labeling inconsistency. No arithmetic error: the $105.60 base_cell is correct as 'engine base minus interim FCF'. The grid cells are not directly comparable to the base_cell (different margin definitions).",
+      "location": "valuation.json and inputs.json sensitivity_matrix base_cell",
+      "action_required": "Clarify that base_cell margin_pct=27 refers to blended margin (not SW segment margin) and that the grid rows (22-28%) refer to SW segment margin on $2.12B SW revenue. Not an arithmetic error."
+    },
+    {
+      "id": "EV-EBITDA-TTM-05",
+      "severity": "NOTE",
+      "description": "The databundle ev_ebitda_ttm = 16.312x cannot be reconciled from databundle's own FY2025 GAAP EBITDA ($0.379B: gives 17.48x) or reported adj EBITDA ($0.423B: gives 15.66x). It likely uses a rolling LTM period (Q2 2025 through Q1 2026) with adjusted EBITDA, which is not directly computable from the quarterly table in the databundle (net income shown, not EBITDA). The forward multiples (13.9-14.0x on FY2026E $0.478-0.479B) are used throughout the valuation and are correctly computed. The TTM figure is NOT used in the SOTP or headline numbers and creates no downstream error.",
+      "location": "databundle.json valuation_multiples.ev_ebitda_ttm",
+      "action_required": "Flag as an unverified databundle figure. No downstream impact on valuation."
+    }
+  ],
+
+  "verified_claims": [
+    {
+      "claim": "EV from market cap + net debt",
+      "stated": "$5.533B + $1.115B = $6.648B",
+      "recomputed": "$6.648B",
+      "yfinance_ev": "$6.625B",
+      "status": "PASS",
+      "note": "yfinance reports $6.625B (23M lower, immaterial). Valuation uses $6.625B from yfinance consistently."
+    },
+    {
+      "claim": "SW SOTP EV_at_T: NOPAT_T $0.41B x exit_multiple 23.87x",
+      "stated": "9.787B",
+      "recomputed": "9.787B",
+      "status": "PASS"
+    },
+    {
+      "claim": "Discount factor (1.075)^4",
+      "stated": "1.3355",
+      "recomputed": "1.3355",
+      "status": "PASS"
+    },
+    {
+      "claim": "SW implied EV (PV of exit + $350M interim FCF)",
+      "stated": "$7.678B",
+      "recomputed": "$7.678B",
+      "status": "PASS"
+    },
+    {
+      "claim": "RS implied EV: 9.5x × $0.0534B",
+      "stated": "$0.507B",
+      "recomputed": "$0.507B",
+      "status": "PASS"
+    },
+    {
+      "claim": "SOTP aggregate: sum of segment EVs",
+      "stated": "$8.185B",
+      "recomputed": "$8.186B",
+      "status": "PASS",
+      "note": "$0.001B rounding"
+    },
+    {
+      "claim": "Implied equity: $8.185B - $1.115B net debt",
+      "stated": "$7.07B",
+      "recomputed": "$7.071B",
+      "status": "PASS"
+    },
+    {
+      "claim": "Fair value today (#1): $7.07B / 63.7M shares",
+      "stated": "$110.99",
+      "recomputed": "$111.00",
+      "status": "PASS",
+      "note": "$0.01 rounding"
+    },
+    {
+      "claim": "Gordon lower bound EV/NOPAT: (1-g/ROIC)/(r-g) = (1-0.025/0.15)/(0.075-0.025)",
+      "stated": "16.67x",
+      "recomputed": "16.67x",
+      "status": "PASS"
+    },
+    {
+      "claim": "Gordon lower bound EV/EBITDA: 16.67x × NOPAT/EBITDA ratio 0.628",
+      "stated": "10.5x",
+      "recomputed": "10.47x",
+      "status": "PASS",
+      "note": "0.03x rounding"
+    },
+    {
+      "claim": "Exit EV/EBITDA implicit in 23.87x EV/NOPAT override (NOPAT $0.41B, EBITDA $0.653B)",
+      "stated": "15.0x",
+      "recomputed": "14.99x",
+      "status": "PASS"
+    },
+    {
+      "claim": "WACC Ke: 4.5% + 0.776 × 5.5%",
+      "stated": "8.77%",
+      "recomputed": "8.77%",
+      "status": "PASS"
+    },
+    {
+      "claim": "WACC Kd (after tax): 6.0% × (1-0.25)",
+      "stated": "4.5%",
+      "recomputed": "4.50%",
+      "status": "PASS"
+    },
+    {
+      "claim": "Blended WACC: 83.5% × 8.77% + 16.5% × 4.5%",
+      "stated": "8.06%",
+      "recomputed": "8.06%",
+      "status": "PASS"
+    },
+    {
+      "claim": "Price bridge #3: $110.99 × (1+0.081)",
+      "stated": "$119.94",
+      "recomputed": "$119.98",
+      "status": "PASS",
+      "note": "$0.04 rounding"
+    },
+    {
+      "claim": "Target 12m (#4): 14.5x × $0.554B FY2027E EBITDA - $1.115B net debt / 63.7M shares",
+      "stated": "$108.60",
+      "recomputed": "$108.60",
+      "status": "PASS"
+    },
+    {
+      "claim": "Implied 12m total return to #4: (108.60-86.98)/86.98",
+      "stated": "24.9%",
+      "recomputed": "24.86%",
+      "status": "PASS",
+      "note": "Rounds to 24.9%"
+    },
+    {
+      "claim": "BUY rating threshold: return ≥ 15%",
+      "stated": "BUY (24.9%)",
+      "recomputed": "24.9% > 15% threshold",
+      "status": "PASS"
+    },
+    {
+      "claim": "Fair value multiple (#1): EV at $110.99 / FY2026E EBITDA $0.479B",
+      "stated": "17.1x",
+      "recomputed": "17.09x",
+      "status": "PASS"
+    },
+    {
+      "claim": "Price multiple (#2): EV at $86.98 / FY2026E EBITDA $0.479B",
+      "stated": "13.9x",
+      "recomputed": "13.89x",
+      "status": "PASS"
+    },
+    {
+      "claim": "All 16 sensitivity matrix cells (4 margins × 4 exit multiples)",
+      "stated": "See valuation.json sensitivity_matrix.cells",
+      "recomputed": "All 16 cells match within $0.01 using SW margin on $2.12B SW rev, 7.5% discount, T=4, RS EV $0.507B, net debt $1.115B, shares 63.7M, no interim FCF",
+      "status": "PASS"
+    },
+    {
+      "claim": "Bull scenario: $0.688B EBITDA × 16.5x = $11.34B EV at 2028, discounted 2yr at 8% = $9.73B, equity $8.62B / 63.7M = $135",
+      "stated": "$135",
+      "recomputed": "$135.28",
+      "status": "PASS",
+      "note": "$0.28 rounding"
+    },
+    {
+      "claim": "Bear scenario: $0.495B EBITDA × 12.5x = $6.19B EV at 2028, less $1.35B net debt, $4.84B equity undiscounted = $75.9/share, discounted 2yr at 8% = $65",
+      "stated": "$65",
+      "recomputed": "$65.1",
+      "status": "PASS",
+      "note": "$0.1 rounding"
+    },
+    {
+      "claim": "T-invariance SW prices: T=2 $116.72, T=3 $118.01, T=4 $120.54, T=5 $115.12, T=6 $110.14",
+      "stated": "T=2→T=4 spread 3.3%",
+      "recomputed": "All 5 prices verified using path NOPAT values and SW-segment convention (before RS and net debt). T=2→T=4 spread = 3.3%. CONFIRMED.",
+      "status": "PASS",
+      "note": "Prices are SW-segment EV per share, confirmed consistent with path array."
+    },
+    {
+      "claim": "FY2026 NOPAT: (SW EBITDA $426M - maint capex $81M) × 0.75",
+      "stated": "$0.258B",
+      "recomputed": "$0.258B",
+      "status": "PASS"
+    },
+    {
+      "claim": "Crux variable consistent across all files (EBITDA margin expansion)",
+      "stated": "crux.json, valuation.json, bull.json, bear.json all anchor on EBITDA margin",
+      "recomputed": "All files confirmed: crux = EBITDA margin re-rate from 23% to target",
+      "status": "PASS"
+    },
+    {
+      "claim": "Headline.json matches valuation.json: fair_value_today, target_12m, band_low, band_high",
+      "stated": "$110.99 / $108.60 / $56.50 / $127.77",
+      "recomputed": "All four match exactly",
+      "status": "PASS"
+    },
+    {
+      "claim": "Bear SOTP implied price from stated segment EVs ($4.394B SW + $0.320B RS - $1.115B net debt) / 63.7M",
+      "stated": "$56.50",
+      "recomputed": "$56.50",
+      "status": "PASS"
+    },
+    {
+      "claim": "Bull SOTP: SW EV $8.539B + RS EV $0.715B - $1.115B net debt / 63.7M shares",
+      "stated": "$127.77",
+      "recomputed": "$127.77",
+      "status": "PASS"
+    },
+    {
+      "claim": "Bias audit: tally correctly identifies 3+ same-direction leans?",
+      "stated": "lean_conservative: 2 — CLEAN",
+      "recomputed": "3 items labeled 'slightly_conservative' in assumption list",
+      "status": "FAIL",
+      "note": "See issue BIAS-TALLY-01. Tally undercounts by 1. The bias_audit verdict 'CLEAN' was certified on an incorrect count."
+    },
+    {
+      "claim": "Bear exit_multiple_override consistent between inputs.json and valuation.json",
+      "stated": "inputs.json: 20.11x; valuation.json: 22.14x",
+      "recomputed": "22.15x (from 13x EV/EBITDA at 23% margin, NOPAT conv 0.587). inputs.json value 20.11 is wrong.",
+      "status": "FAIL",
+      "note": "See issue BEAR-OVERRIDE-02. The final $56.50 bear price is correct; the inconsistency is in the inputs.json draft value."
+    }
+  ],
+
+  "not_used_in_valuation": [
+    {
+      "item": "databundle.ev_ebitda_ttm = 16.312x",
+      "note": "Cannot be reproduced from databundle FY2025 GAAP or adj EBITDA. Likely uses rolling LTM adj EBITDA. Not used in the SOTP or headline. No downstream impact."
+    }
+  ]
+}

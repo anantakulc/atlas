@@ -1,0 +1,341 @@
+{
+  "_meta": {
+    "ticker": "CWST",
+    "as_of_date": "2026-06-19",
+    "produced_by": "Pheme (G)",
+    "atlas_version": "v3.0",
+    "sources": [
+      "CWST_databundle.json (Hermes, 2026-06-19T13:56Z)",
+      "GlobeNewswire Q1 2026 press release (2026-04-30) -- primary earnings source",
+      "StockTitan Q1 2026 revenue +9.6% press release summary (2026-04-30)",
+      "IndexBox Q1 2026 beat and guidance raise summary",
+      "StockStory Q1 CY2026 sales beat analysis",
+      "Yahoo Finance 'Why CWST Stock Soaring Today' (2026-05-03) -- stock +8.2% and earnings beat context",
+      "Yahoo Finance analyst narrative 'Investment Story Shifting After Target Revisions' (2026-05-17) -- Raymond James / UBS / Barclays / JPMorgan PT actions",
+      "Yahoo Finance Casella Waste 4 value drivers article -- $150-200M M&A pipeline, 5% pricing target",
+      "247WallSt.com Goldman Sachs US Conviction List (2026-06-08)",
+      "GuruFocus Goldman Sachs CWST Buy rating / conviction add (2026-06-01 action, article 2026-06-08)",
+      "Investing.com Goldman Sachs adds CWST / Tyson / Block / TPG to conviction list (2026-06-08)",
+      "SahmCapital Barclays upgrade to Overweight $102 (2026-05-04)",
+      "Investing.com Barclays upgrade rationale -- synergy momentum, G&A savings, M&A capacity",
+      "TipRanks/The Fly: UBS raised $130->$135, Barclays upgraded from Underweight -> Equal Weight (historical)",
+      "MarketScreener UBS target $140->$135 confirmation",
+      "GuruFocus UBS target cut $140->$130 (2026-03-10)",
+      "GuruFocus Stifel Buy reiteration $113 (2026-06-10)",
+      "Investing.com Stifel Buy reiterate pricing gains (2026-05-01)",
+      "Investing.com Stifel Buy reiterate $113 target (2026-06-10)",
+      "Investing.com William Blair landfill outlook reassuring post-Q1 (2026-05-01)",
+      "TipRanks TD Cowen raised $130->$135 Buy (post-Q1)",
+      "MarketBeat Zacks Strong Sell downgrade (2026-06-09/11)",
+      "Investing.com CEO Coletta insider sale $1.12M (2026-05-19)",
+      "Daily Political / GuruFocus Coletta insider sales Feb-May 2026",
+      "Vermont Business Magazine FY2025 results and FY2026 guidance (2026-02-20)",
+      "Search results: FY2025 adjusted net income $80.6M, adjusted EPS $1.27",
+      "Search results: FY2026 adj-FCF guidance $200-210M; capex budget $260M",
+      "Search results: MSW market $128B in 2026, 4.2% CAGR to 2030",
+      "Republic Services Q1 2026 results -- industry pricing context (Waste Today / Waste Dive / American Recycler)",
+      "Waste Dive Q1 2026 landfill and Star Waste coverage",
+      "Insider Monkey Wasatch Long/Short fund maintains confidence (2026-06-03)",
+      "Yahoo Finance CWST declined amid market overlook (2026-06-19)"
+    ]
+  },
+
+  "price_snapshot": {
+    "current": 86.98,
+    "currency": "USD",
+    "high_52w": 118.42,
+    "low_52w": 74.05,
+    "ma50": 84.58,
+    "ma200": 91.32,
+    "ytd_pct": -11.83,
+    "return_1y_pct": -25.01,
+    "beta": 0.776,
+    "note": "Stock is 26.5% below 52-week high and 7.9% below the 200-day MA. The low-beta (0.776) profile reflects regulated-infrastructure characteristics. Low-beta names repriced down across 2025-2026 in a higher-for-longer rate environment, compressing terminal-value multiples on infrastructure-type compounders."
+  },
+
+  "market_stats": {
+    "market_cap_b": 5.533,
+    "enterprise_value_b": 6.625,
+    "shares_outstanding_b": 0.064,
+    "net_debt_b": 1.115,
+    "adtv_usd_m": 55.8,
+    "institutional_pct_reported": 123.16,
+    "institutional_note": "Reported 123% reflects heavy short interest being double-counted in 13F filings (short shares appear in both the lender's and borrower's holdings). Net long institutional ownership is materially above 100% of float.",
+    "dividend_yield_pct": null,
+    "buybacks": null,
+    "capital_return_note": "No dividend. No buybacks reported. All FCF deployed into M&A and infrastructure capex. This is a capital-deployment business at this stage of its growth cycle."
+  },
+
+  "consensus": {
+    "target_mean": 112.0,
+    "target_median": 111.5,
+    "target_high": 130.0,
+    "target_low": 84.0,
+    "n_analysts": 10,
+    "rating": "buy",
+    "rec_mean": 1.727,
+    "breakdown": {
+      "strong_buy": 1,
+      "buy": 7,
+      "hold": 2,
+      "sell": 0,
+      "strong_sell": 1
+    },
+    "upside_to_mean_pct": 28.8,
+    "note": "The strong_sell in the distribution is Zacks Research (quantitative ranking system, downgraded June 9 2026 on negative GAAP EPS revision momentum). This is not a fundamental sell-side analyst. Excluding Zacks, the fundamental sell-side is 8 buys (including 1 strong buy) and 2 holds, zero fundamental sells. The $84 low target is the Neutral-rated firm at or below spot. Target range has narrowed from a prior high of $140 (UBS, before acquisition dilution revised down) to the current $101-$135 range across active coverage."
+  },
+
+  "post_announcement_analyst_actions": [
+    {
+      "date": "2026-06-10",
+      "firm": "Stifel",
+      "action": "reiterated",
+      "old_pt": 113,
+      "new_pt": 113,
+      "rating_change": "Buy maintained",
+      "note": "Analyst Shlomo Rosenbaum reiterated Buy / $113 after hosting CWST management at the 14th annual Stifel/Waste360 Investor Summit on June 10 2026. Rationale: pricing improving sequentially (third-party landfill pricing 4.3% vs. 2.5% prior quarter), landfill permit extension potential reduces capacity risk. Thesis intact post-Q1."
+    },
+    {
+      "date": "2026-06-08",
+      "firm": "Goldman Sachs",
+      "action": "added_to_conviction_buy_list",
+      "old_pt": null,
+      "new_pt": 120,
+      "rating_change": "Buy -- US Conviction List addition",
+      "note": "Added CWST to US Conviction Buy List alongside Block, TPG, and Tyson Foods in June monthly reshuffling (removed Ares Management, Wynn Resorts, Kontoor Brands). Investment thesis: consistent mid-single-digit annual EBITDA growth from pricing discipline and M&A synergy capture; GFL Mid-Atlantic integration challenges past the acute phase; synergy realization is now the central value driver. Price target $120 implied 38% upside from spot at time of add (~$87). This is a formal upgrade in conviction tier above a standard Buy rating."
+    },
+    {
+      "date": "2026-06-09",
+      "firm": "Zacks Research",
+      "action": "downgraded",
+      "old_pt": null,
+      "new_pt": null,
+      "rating_change": "Hold -> Strong Sell",
+      "note": "Quantitative model downgrade driven by negative GAAP EPS revision momentum. Zacks is a factor-based ranking system that reacts to direction of consensus EPS revisions, not to business quality or cash flow metrics. The GAAP net income guidance for FY2026 was reduced from $16-22M to $4-10M (post-Star Waste D&A impact), which the Zacks model registers as a negative. This is not a fundamental analyst action and should not be weighted alongside sell-side PT actions."
+    },
+    {
+      "date": "2026-05-04",
+      "firm": "Barclays",
+      "action": "upgraded_and_target_raised",
+      "old_pt": 101,
+      "new_pt": 102,
+      "rating_change": "Equal Weight -> Overweight",
+      "note": "Analyst William Grippin upgraded to Overweight from Equal Weight on May 4 2026, one trading day after the Q1 2026 print. Rationale: accelerating momentum on synergy capture from prior Mid-Atlantic acquisitions, execution on G&A cost savings, and incremental M&A capacity. Stated that these dynamics support upward estimate bias through H2 2026 and 2027. At time of upgrade (stock ~$86.83), the $102 target implied roughly 17% upside. Note: Barclays had previously upgraded from Underweight to Equal Weight earlier; this is the second step up."
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "Raymond James",
+      "action": "target_cut",
+      "old_pt": 120,
+      "new_pt": 115,
+      "rating_change": "Strong Buy maintained",
+      "note": "Post-Q1 2026 model update. Target trimmed to $115 from $120 reflecting near-term dilution from Star Waste timing (higher D&A and integration costs in Q1-Q2 2026). Strong Buy maintained citing landfill footprint as long-term organic growth and margin expansion driver."
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "UBS",
+      "action": "target_cut",
+      "old_pt": 140,
+      "new_pt": 130,
+      "rating_change": "Buy maintained",
+      "note": "Post-Q1 model update by analyst Jon Windham. Target cut from $140 to $130 on higher near-term acquisition dilution from Star Waste. UBS holds the highest or near-highest target at $130. Core bull thesis intact. Note: UBS initially cut from $140 to $130 in March 2026 (pre-Q1), and the $130 target was then confirmed post-Q1. A subsequent report then raised the UBS target to $135, citing defensive business model appeal in an uncertain rate environment."
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "TD Cowen",
+      "action": "target_raised",
+      "old_pt": 130,
+      "new_pt": 135,
+      "rating_change": "Buy maintained",
+      "note": "Raised PT from $130 to $135 post-Q1. Firm views CWST growth as underappreciated because consensus revenue estimates typically exclude future M&A, making forward multiples appear artificially high. Raised revenue assumptions for FY2026-2030 by 2-4%."
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "William Blair",
+      "action": "reiterated",
+      "old_pt": null,
+      "new_pt": null,
+      "rating_change": "Outperform maintained",
+      "note": "Analyst Trevor Romeo reiterated Outperform post-Q1. Described landfill outlook as reassuring: third-party and internalized disposal tons both grew, including 13% C&D volume growth. Pricing in the 4-5% range expected for next several years, improving under new chief revenue officer."
+    },
+    {
+      "date": "2026-05-01",
+      "firm": "JPMorgan",
+      "action": "target_cut",
+      "old_pt": 112,
+      "new_pt": 110,
+      "rating_change": "Neutral maintained",
+      "note": "Minor model update post-Q1 2026. Balanced view on upside versus execution risk on Star Waste integration and ongoing GAAP net income compression. JPMorgan initiated at Neutral / $112 in December 2025. $110 target still implies 26% upside from current spot."
+    }
+  ],
+
+  "insider_activity": {
+    "recent_sales": [
+      {
+        "person": "Edmond (Ned) Coletta, President and CEO",
+        "date": "2026-05-19",
+        "shares_sold": 12500,
+        "value_usd_m": 1.12,
+        "price_range_usd": [89.03, 90.07],
+        "shares_remaining": 140118,
+        "source": "Investing.com / GuruFocus / Daily Political"
+      },
+      {
+        "person": "Edmond (Ned) Coletta, President and CEO",
+        "date": "2026-02-27",
+        "shares_sold": 3812,
+        "value_usd_m": 0.357,
+        "price_usd": 93.70,
+        "source": "Markets Daily"
+      },
+      {
+        "person": "Edmond (Ned) Coletta, President and CEO",
+        "date_range": "2026-03-12 to 2026-03-16",
+        "shares_sold": "approximately 1350",
+        "value_usd_k": 120.6,
+        "price_range_usd": [87.81, 89.80],
+        "source": "Investing.com"
+      }
+    ],
+    "summary": "CEO Coletta has sold approximately $1.6M in stock across Feb/Mar/May 2026 with zero insider buying. Total shares sold over the past year approximately 24,677. The selling pattern is consistent and periodic, not a single large block, which is typical of a pre-planned 10b5-1 trading program. The absence of insider buying at a -25% YTD stock is a mild negative signal but is not unusual for a founder-adjacent CEO who has reduced his position over time. Insider ownership is low at 0.59% of shares outstanding."
+  },
+
+  "street_thesis": "CWST is a vertically integrated Northeast waste platform that compounds EBITDA at double-digit rates via serial acquisition plus 5% annual organic pricing, underpinned by landfill ownership that creates durable pricing power. The bull case rests on: (1) owned landfill capacity in markets where no new permits have been issued in 35 years -- a structurally irreplaceable asset base; (2) the M&A flywheel ($800M+ annualized revenue acquired over five years) that densifies routes, reduces cost per stop, and enables each deal to improve the unit economics of the next; (3) the adj-FCF inflection to $205M in FY2026 from $84M in FY2025, representing the point at which prior acquisition investments convert to cash. The street values CWST on EV/EBITDA and adj-FCF yield, not GAAP EPS.",
+
+  "capex_guidance": [],
+
+  "industry_demand_datapoints": {
+    "description": "Datapoints relevant to Theia's landscape and Daedalus's growth lever. For a waste services business, the crux drivers are pricing power (landfill scarcity, contract type, price-over-CPI), volume (MSW generation growth, construction activity), and M&A opportunity (industry fragmentation, tuck-in pipeline).",
+    "waste_industry_pricing_q1_2026": {
+      "wm_core_price_pct": 6.3,
+      "rsg_core_price_open_market_pct": 8.4,
+      "rsg_core_price_restricted_pct": 4.4,
+      "rsg_core_price_total_pct": 6.8,
+      "cwst_solid_waste_price_q1_pct": 5.1,
+      "cwst_collection_price_pct": 5.3,
+      "cwst_disposal_price_pct": 4.7,
+      "context": "Industry-wide price realization was robust in Q1 2026. All major operators maintained 5-7% core pricing despite negative organic volumes. CWST's 5.1% solid waste pricing is in-line with peers. CPI-escalator contracts rolling to higher levels and market-rate tipping-fee repricing drove the industry's ability to push price above volume headwinds.",
+      "source": "Republic Services Q1 2026 (American Recycler, Waste Today, Waste Dive); CWST Q1 2026 press release via GlobeNewswire"
+    },
+    "waste_industry_volume_q1_2026": {
+      "rsg_organic_volume_pct": -0.8,
+      "cwst_collection_volume_pct": -2.1,
+      "cwst_cd_volume_pct": 13.0,
+      "context": "Organic volumes were negative industry-wide in Q1 2026, primarily driven by unusually severe winter weather and soft industrial/commercial activity. CWST collection volume declined 2.1% YoY on weather headwinds. Construction and demolition volumes surged 13% YoY, reflecting ongoing NE US infrastructure and residential construction activity. Sequential recovery expected Q2-Q4 2026.",
+      "source": "Republic Services Q1 2026 earnings; CWST Q1 2026 release (GlobeNewswire)"
+    },
+    "landfill_scarcity_northeast": {
+      "new_greenfield_permits_past_35y": 1,
+      "context": "Only one new greenfield landfill has been developed in the Northeast US in approximately 35 years. New landfill permits near major population centers face near-insurmountable NIMBY opposition and regulatory hurdles. Existing permitted airspace is effectively irreplaceable. This structural scarcity creates durable pricing power for existing operators and is the primary source of CWST's landfill tipping fee premiums.",
+      "cwst_landfill_expansions": "Pursuing Highland landfill permit expansion (460K to 1M tons per year annual capacity doubling); McKean PA landfill with rail linkage as backup; 15-year expansion at Hakes C&D landfill. Ontario landfill reaching end of life; management expects minimal EBITDA headwind from transition.",
+      "source": "Yahoo Finance Casella 4 value drivers; Q1 2026 earnings call; company conference presentations"
+    },
+    "cwst_pricing_strategy": {
+      "target_price_increase_fy2026_pct": 5.0,
+      "open_market_collection_pct_of_business": 72.5,
+      "cpi_linked_contracts_pct": 27.5,
+      "context": "70-75% of CWST's collection business is open-market pricing, enabling flexibility above CPI. CPI-linked municipal contracts are approximately 25-30% of collection. The company targets a minimum 50 basis-point price-cost spread to maintain real margin expansion. Pricing translates supply-demand imbalance (landfill scarcity) into EBITDA margin expansion over time.",
+      "source": "Yahoo Finance Casella pricing target article; search results on NE landfill dynamics"
+    },
+    "msw_market_growth": {
+      "global_msw_market_2026_usd_b": 128.05,
+      "cagr_2026_2030_pct": 4.2,
+      "us_disposal_segment_cagr_2026_2033_pct": 6.0,
+      "context": "Long-run secular MSW volume growth of 4-6% annually globally, driven by urbanization and consumption growth. The US disposal segment (landfill tipping) is projected to grow at 6% CAGR through 2033, supported by infrastructure construction and regulatory push toward more controlled disposal. Theia should note this as the volume backdrop for CWST's landfill utilization; pricing power is structural and independent of volume growth.",
+      "source": "Research and Markets Municipal Solid Waste Management Market Report 2026; Grand View Research US Solid Waste Management Market Report"
+    },
+    "cwst_ma_pipeline": {
+      "fy2026_target_annualized_revenue_m_low": 150,
+      "fy2026_target_annualized_revenue_m_high": 200,
+      "fy2026_ytd_closed_annualized_revenue_m": 150,
+      "five_year_cumulative_acquired_annualized_revenue_m": 800,
+      "context": "Management targets converting $150-200M in annualized revenue from near-term acquisition pipeline in FY2026. $150M has already closed by Q1 2026 (Star Waste $100M, Mountain State $30M, two others). The pipeline is the primary revenue upside lever for estimates: TD Cowen noted consensus models typically exclude forward M&A, making multiples appear artificially high vs. eventual delivered revenue. M&A is concentrated in CWST's existing NE markets and adjacent geographies (West Virginia entry in 2026), prioritizing route density over geographic diversification.",
+      "source": "Yahoo Finance Casella 4 value drivers / JP Morgan conference article; Q1 2026 earnings call; TD Cowen note"
+    },
+    "peer_pricing_context_rsg_q1_2026": {
+      "rsg_revenue_b": 4.11,
+      "rsg_revenue_growth_pct": 2.6,
+      "rsg_organic_growth_pct": 2.8,
+      "rsg_adj_ebitda_margin_change_bps": 50,
+      "rsg_muni_volume_growth_pct": 1.4,
+      "rsg_specialty_volume_growth_pct": 9.9,
+      "rsg_cd_volume_growth_pct": 5.3,
+      "context": "Republic Services (the second-largest US waste company) delivered solid Q1 2026: 6.8% core price, -0.8% organic volume, 50bps adj-EBITDA margin expansion, adj-FCF surged 35%. Strong industry-level pricing environment confirms CWST's pricing assumptions are achievable.",
+      "source": "American Recycler / Waste Today / Waste Dive Q1 2026 coverage of RSG"
+    }
+  },
+
+  "estimate_artifact_check": {
+    "eps_ntm_feed": 1.50043,
+    "pe_ntm_feed": 57.97,
+    "pe_ttm_feed": 790.73,
+    "verdict": "FLAGGED: eps_ntm OF $1.50 IS ADJUSTED (NON-GAAP), NOT GAAP. P/E IS NOT THE PRIMARY VALUATION METRIC FOR CWST. USE EV/EBITDA AND ADJ-FCF YIELD.",
+    "detail": "The databundle eps_ntm of $1.50 is the adjusted (non-GAAP) consensus EPS for the next twelve months (approximately H2 FY2026 through H1 FY2027). It excludes: (1) amortization of acquired customer relationships, covenants not-to-compete, and trade names -- all non-cash, arising from CWST's serial acquisition strategy; (2) acquisition-related transaction and integration costs; (3) other adjustments. The GAAP-to-adjusted gap is large and structural. FY2025: GAAP net income $7.9M ($0.12/share) vs. adjusted net income $80.6M ($1.27/share) -- a 10x difference. FY2026: GAAP net income guided at $4-10M ($0.06-0.16/share) while adj-FCF is guided at $200-210M. This divergence will persist for years as long as CWST continues acquiring at its current pace, because each new deal adds D&A on acquired intangibles.",
+    "gaap_vs_adjusted_bridge": {
+      "fy2025_gaap_net_income_m": 7.9,
+      "fy2025_gaap_eps": 0.12,
+      "fy2025_adjusted_net_income_m": 80.6,
+      "fy2025_adjusted_eps": 1.27,
+      "gap_m": 72.7,
+      "implied_da_from_ebitda_ebit_gap_m": 290,
+      "primary_reconciling_items": [
+        "Amortization of acquired intangibles (customer relationships, covenants not-to-compete, trade names) -- non-cash, increases $5-6M per acquisition year",
+        "Acquisition transaction costs (legal, advisory, diligence) -- cash but episodic",
+        "Integration and restructuring charges"
+      ],
+      "q1_2026_gaap_eps": -0.09,
+      "q1_2026_adjusted_eps": 0.20,
+      "q1_2026_da_increase_yoy_m": 6.5,
+      "q1_2026_da_increase_acquisition_related_m": 5.0
+    },
+    "ntm_eps_assessment": {
+      "feed_value": 1.50,
+      "status": "ADJUSTED CONSENSUS NTM -- VALID AS ADJ EPS BUT NOT GAAP-COMPARABLE",
+      "fy2026_adjusted_eps_consensus_estimate": 1.28,
+      "ntm_window_explanation": "The NTM period (approximately July 2026 through June 2027) blends the seasonally stronger H2 FY2026 (warmer weather, higher volumes, Star Waste synergies compounding) with Q1-Q2 FY2027 (when prior-year acquisition integration is more mature). Given Q1 2026 adj EPS was $0.20, the FY2026 consensus adjusted EPS is approximately $1.28, and the NTM $1.50 figure implies a progression toward $1.50-$1.60 in FY2027 adjusted EPS as synergies compound further. This trajectory is plausible given management's 20%+ EBITDA CAGR target and M&A pipeline.",
+      "is_gaap": false,
+      "pe_ntm_usability": "NOT USABLE as primary valuation metric or cross-peer comparator. The 57.97x NTM P/E on $1.50 adjusted EPS is arithmetically correct but compares a non-GAAP adjusted numerator to a market cap, creating an apples-to-oranges result if compared to GAAP-based P/E peers. The adjusted P/E of ~68x on $1.28 FY2026 adjusted EPS is high but entirely explained by M&A amortization drag that does not impair cash generation."
+    },
+    "corrected_forward_metrics": {
+      "primary_metric": "EV/EBITDA",
+      "ev_b": 6.625,
+      "fy2026e_ebitda_m_midpoint": 478,
+      "ev_ebitda_fy2026e": 13.9,
+      "secondary_metric": "Adjusted FCF yield",
+      "fy2026e_adj_fcf_m": 205,
+      "market_cap_b": 5.533,
+      "adj_fcf_yield_pct": 3.7,
+      "peer_context": {
+        "WM_ev_ebitda_approx": 18.0,
+        "RSG_ev_ebitda_approx": 17.0,
+        "WCN_ev_ebitda_approx": 19.0,
+        "GFL_ev_ebitda_approx": 11.0,
+        "CWST_ev_ebitda_current": 13.9,
+        "note": "CWST at 13.9x FY2026E EBITDA trades 25-30% below WM/RSG/WCN and at a modest premium to GFL (the closest comparator on scale and strategy). The discount to large-caps reflects CWST's smaller scale, higher leverage (2.3x EBITDA vs. ~2.0x for RSG), no capital return program, and NE geographic concentration. The 13.9x entry point is near CWST's 10-year EV/EBITDA median of approximately 14.8x, suggesting the stock is priced around historical average on elevated forward guidance -- not demanding."
+      }
+    },
+    "recommendation_to_daedalus": "Value CWST on EV/EBITDA (primary) and adj-FCF yield (secondary). Use FY2026E EBITDA of $478M (management guidance midpoint, post-Q1 raise) and adj-FCF of $205M midpoint. Adjusted EPS of $1.28 FY2026E can cross-check adj P/E but must not be the primary metric. Do not attempt a standard GAAP P/E valuation using the databundle pe_ntm field."
+  },
+
+  "market_view": {
+    "whats_priced_in": "At $86.98 (EV $6.6B, 13.9x FY2026E EBITDA of $478M), the market prices in continued mid-single-digit organic EBITDA growth plus M&A execution at current pace, with limited incremental credit for Star Waste synergies or the adj-FCF inflection. The 26.5% decline from the 52-week high of $118.42 is primarily a multiple compression event (from approximately 17-18x to 13.9x EV/EBITDA), not a deterioration in business fundamentals. The business delivered a beat-and-raise Q1 2026 and raised all FY2026 guidance metrics. The stock is cheapening into an acquisition-synergy cycle: at 3.7% adj-FCF yield on FY2026E guidance, the market is not giving credit to the adj-FCF ramp (2.4x FY2025 actual).",
+
+    "street_view": "8 of 10 fundamental sell-side analysts rate Buy or Strong Buy with a mean target of $112.0, implying 28.8% upside. The street's bull case is threefold: (1) landfill ownership is a structural moat -- no new NE greenfield permitted in 35 years, creating pricing power that is independent of economic cycles; (2) the M&A flywheel in Northeast waste markets is repeatable and proven ($800M annualized revenue acquired over five years, each deal following an established integration playbook); (3) the adj-FCF ramp to $205M in FY2026 is the inflection point that demonstrates prior acquisition capex converting to cash. Goldman Sachs adding CWST to its US Conviction Buy List on June 8 at $120 (38% above spot) is the highest-conviction institutional signal in the recent tape.",
+
+    "post_earnings_analyst_actions": "Q1 2026 results (reported April 30, 2026): adjusted EPS $0.20 vs. consensus $0.12 (67% beat); revenue $457.3M (9.6% YoY growth) vs. consensus ~$455M; adjusted EBITDA $97.1M (21.2% margin, +12.3% YoY); FY2026 guidance raised across all metrics (revenue to $2.06-2.08B from $1.97-1.99B; EBITDA to $473-483M; adj-FCF to $200-210M from $195-205M). Stock surged 8.2% on May 3 2026. Post-print analyst actions: Barclays upgraded to Overweight from Equal Weight, raised PT $101 to $102 (May 4, synergy momentum and G&A savings); TD Cowen raised PT $130 to $135 (Buy, M&A-adjusted growth underappreciated); UBS confirmed $130 target (Buy, acquisition dilution timing). Raymond James trimmed PT $120 to $115 (Strong Buy, acquisition timing). JPMorgan trimmed PT $112 to $110 (Neutral, execution caution). William Blair reiterated Outperform (landfill outlook reassuring). Subsequently: Goldman Sachs added CWST to US Conviction Buy List June 8 at $120 (six weeks post-Q1, a deliberate re-rating signal). Stifel reiterated Buy at $113 June 10 post-Investor Summit. Net scorecard: 1 upgrade (Barclays), 1 conviction upgrade (Goldman), 0 fundamental downgrades; targets cut at 2 firms on dilution timing only. Zacks mechanical model downgrade to Strong Sell (June 9) is driven by GAAP EPS revision direction, not business quality.",
+
+    "news_narrative": "The dominant recent narrative is a beat-and-raise Q1 2026 print followed by continued market underperformance driven by sector rotation. The Insider Monkey article from June 19 2026 explicitly frames the CWST decline as being 'overlooked by the market, which was more focused on AI infrastructure and defense stocks' -- a valuation discount arising from investor attention allocation rather than business deterioration. The Q1 2026 report was unambiguously strong on adjusted metrics. The Goldman Sachs conviction list addition on June 8 is the most significant recent event: it signals a top-tier house taking a high-conviction position on CWST when the stock was down approximately 27% from its prior-year high. The $1.12M CEO insider sale on May 19 is the only material negative in the tape; it is modest relative to Coletta's remaining 140K shares and is consistent with his periodic selling pattern.",
+
+    "sentiment_narrative": "Social sentiment data from StockTwits was unavailable in the databundle (HTTP error). Institutional sentiment is constructive: recent buy-side activity includes Atom Investors LP initiating a new stake in June 2026, Congruence Capital buying 171,186 shares ($16.77M) in June 2026, and Wasatch Long/Short Alpha Fund maintaining confidence (Insider Monkey, June 3 2026). The Wasatch fund acknowledges CWST competes for capital against AI names but retains the position on thesis. Short interest is elevated at approximately 6.4% of float and has grown approximately 72.6% YoY, consistent with rate-sensitive shorts rather than fundamental shorts. Institutional ownership is reported at 123%, reflecting double-counting from short-seller borrowing rather than actual over-100% long ownership. Insider ownership is low at 0.59%, typical for an acquisitive compounder where equity has been issued as deal currency.",
+
+    "runway": "The next scheduled catalyst is Q2 2026 earnings on July 30 2026 (approximately 6 weeks out). Q2 is seasonally CWST's strongest organic quarter (warmer weather, higher collection volumes, peak C&D activity). Star Waste ($100M annualized revenue, Boston market) contributes its first full quarter in Q2 2026 (closed April 1). The positive catalyst condition: adjusted EBITDA margin expanding past the Q1 acquisition-dilution headwind of approximately 15bps, confirming the H2 2026 trajectory toward 23%+ implied EBITDA margin in FY2026 guidance. The negative catalyst condition: Star Waste integration headwinds or G&A savings delays cause Q2 EBITDA to miss the implied seasonal trajectory, undermining the adj-FCF guide. The $30M G&A savings target represents approximately 1.5% of revenue and is the clearest near-term margin lever.",
+
+    "runway_verdict": "Valuation risk is present but is distinct from fundamental risk. At 13.9x FY2026E EBITDA, CWST is priced for modest execution, not perfection. The stock already reflects a 25-30% discount to large-cap peers (WM, RSG) and trades near its own 10-year EBITDA multiple median. The multiple would need to contract further (to 11-12x, GFL territory) to inflict significant additional downside at current EBITDA guidance. That scenario requires material integration failure, not just timing delays. The actual risk is execution: Star Waste is the largest single acquisition in CWST's recent history; Boston is a new market; four simultaneous integrations in 2026 is a heavy operating load. If adj-FCF delivers near $205M in FY2026, the re-rating toward 16-17x EBITDA (still a discount to WM/RSG) implies $100-$113 fair value. If execution slips materially, the 13.9x multiple is not a floor. Net leverage at 2.3x FY2026E EBITDA is elevated but manageable against infrastructure-grade assets; $15M revenue bond remarketing in June 2026 (per SEC filing) suggests CWST retains capital markets access at reasonable rates.",
+
+    "market_lean": {
+      "direction": "bull",
+      "strength": "moderate",
+      "basis": "8 of 10 fundamental analysts at Buy, Goldman Sachs conviction list add at $120 (38% above spot at time of add), beat-and-raise Q1 2026, institutional buyers active in June 2026. Multiple already compressed to near 10-year median (13.9x FY2026E EBITDA). The 25% YTD decline in the stock has not been accompanied by fundamental deterioration -- it is a rate-sensitivity and sector-rotation discount. Countervailing signals: Zacks Strong Sell (quantitative GAAP EPS model, not fundamental); CEO insider selling ($1.6M across Feb-May 2026, no buying); elevated short interest (6.4% of float, up 72.6% YoY). On balance the live evidence leans bullish with moderate conviction, tempered by execution risk on rapid M&A integration and leverage limiting strategic optionality."
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "ticker": "CWST",
+  "currency": "USD",
+  "current_price": 86.98,
+  "shares_outstanding_b": 0.064,
+  "net_debt_b": 1.115,
+  "fundamental_discount_rate": 0.08,
+  "terminal_growth": 0.025,
+  "horizon_years": 10,
+  "anchor": {
+    "type": "EV/EBITDA",
+    "metric_label": "FY2026E Adj. EBITDA ($B)",
+    "metric_value": 0.478,
+    "fcf_conversion": 0.43,
+    "roic": 0.12
+  },
+  "street": {
+    "thesis": "CWST owns irreplaceable Northeast landfill franchises with monopoly-like pricing power; the adj-FCF ramp to $200-210M in FY2026 (from $85M in FY2025) marks the inflection from M&A assembly to steady-state cash generation. Bull thesis: franchise moat + integration synergies re-rate EV/EBITDA toward RSG/WCN levels (17-21x) as margin expands from 23% toward 28%+.",
+    "n_analysts": 10,
+    "rating": "Buy",
+    "target_mean": 112.0,
+    "target_high": 130.0,
+    "target_low": 84.0
+  },
+  "justified_g_grid": [0.03, 0.05, 0.07, 0.09, 0.11, 0.13, 0.15, 0.18],
+  "roic_grid": [0.08, 0.12, 0.18, 0.25],
+  "duality_g_grid": [0.03, 0.05, 0.07],
+  "peers": [
+    {"name": "WM",  "multiple": 18.5, "note": "Waste Management, NTM EV/EBITDA; 29% EBITDA margin; large-cap mature"},
+    {"name": "RSG",  "multiple": 17.8, "note": "Republic Services, NTM EV/EBITDA; 32% EBITDA margin; large-cap mature"},
+    {"name": "WCN",  "multiple": 21.0, "note": "Waste Connections, NTM EV/EBITDA; 33% EBITDA margin; growth premium"},
+    {"name": "GFL",  "multiple": 11.5, "note": "GFL Environmental, NTM EV/EBITDA; ~22% EBITDA margin; integration discount"}
+  ],
+  "history": {
+    "note": "CWST 5-year median EV/EBITDA ~14.8x; peaked at 19-20x in 2021-2022 on M&A optionality premium; compressed to 13-14x in 2025-2026 on rate sensitivity and acquisition dilution",
+    "peak_multiple": 20.0,
+    "trough_multiple": 11.0,
+    "median_multiple": 14.8
+  },
+  "contested_lever": "EBITDA margin re-rate: whether CWST closes the 7-10pp gap to large-cap peers (WM/RSG 28-32%) through M&A integration synergies ($15M G&A target) and Highland/Hakes permit-enabled internalization, or whether the perpetual acquisition pace permanently suppresses blended margins below 26% and caps the multiple re-rating the bull thesis requires"
+}

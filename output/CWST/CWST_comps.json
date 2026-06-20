@@ -1,0 +1,177 @@
+{
+  "schema_version": "2.0",
+  "ticker": "CWST",
+  "currency": "USD",
+  "computed_at": "2026-06-19T22:09:03Z",
+  "basis": "EV/EBITDA",
+  "metric_label": "FY2026E Adj. EBITDA ($B)",
+  "metric_value": 0.478,
+  "fcf_conversion": 0.43,
+  "roic": 0.12,
+  "fundamental_discount_rate": 0.08,
+  "terminal_growth": 0.025,
+  "horizon_years": 10,
+  "current": {
+    "price": 86.98,
+    "value_b": 6.7,
+    "multiple": 14.0,
+    "implied_growth": 0.0963,
+    "implied_growth_pct": 9.6
+  },
+  "street": {
+    "thesis": "CWST owns irreplaceable Northeast landfill franchises with monopoly-like pricing power; the adj-FCF ramp to $200-210M in FY2026 (from $85M in FY2025) marks the inflection from M&A assembly to steady-state cash generation. Bull thesis: franchise moat + integration synergies re-rate EV/EBITDA toward RSG/WCN levels (17-21x) as margin expands from 23% toward 28%+.",
+    "n_analysts": 10,
+    "rating": "Buy",
+    "target_mean": {
+      "price": 112.0,
+      "value_b": 8.3,
+      "multiple": 17.3,
+      "implied_growth": 0.1239,
+      "implied_growth_pct": 12.4
+    },
+    "target_high": {
+      "price": 130.0,
+      "value_b": 9.4,
+      "multiple": 19.7,
+      "implied_growth": 0.1408,
+      "implied_growth_pct": 14.1
+    },
+    "target_low": {
+      "price": 84.0,
+      "value_b": 6.5,
+      "multiple": 13.6,
+      "implied_growth": 0.0925,
+      "implied_growth_pct": 9.2
+    }
+  },
+  "history_context": {
+    "note": "CWST 5-year median EV/EBITDA ~14.8x; peaked at 19-20x in 2021-2022 on M&A optionality premium; compressed to 13-14x in 2025-2026 on rate sensitivity and acquisition dilution",
+    "peak_multiple": 20.0,
+    "trough_multiple": 11.0,
+    "median_multiple": 14.8
+  },
+  "justified_grid": [
+    {
+      "growth": 0.03,
+      "growth_pct": 3.0,
+      "justified_multiple": 8.3,
+      "value_b": 4.0,
+      "implied_price": 44.81
+    },
+    {
+      "growth": 0.05,
+      "growth_pct": 5.0,
+      "justified_multiple": 9.7,
+      "value_b": 4.7,
+      "implied_price": 55.33
+    },
+    {
+      "growth": 0.07,
+      "growth_pct": 7.0,
+      "justified_multiple": 11.4,
+      "value_b": 5.4,
+      "implied_price": 67.64
+    },
+    {
+      "growth": 0.09,
+      "growth_pct": 9.0,
+      "justified_multiple": 13.3,
+      "value_b": 6.4,
+      "implied_price": 82.01
+    },
+    {
+      "growth": 0.11,
+      "growth_pct": 11.0,
+      "justified_multiple": 15.6,
+      "value_b": 7.4,
+      "implied_price": 98.75
+    },
+    {
+      "growth": 0.13,
+      "growth_pct": 13.0,
+      "justified_multiple": 18.2,
+      "value_b": 8.7,
+      "implied_price": 118.23
+    },
+    {
+      "growth": 0.15,
+      "growth_pct": 15.0,
+      "justified_multiple": 21.2,
+      "value_b": 10.1,
+      "implied_price": 140.84
+    },
+    {
+      "growth": 0.18,
+      "growth_pct": 18.0,
+      "justified_multiple": 26.7,
+      "value_b": 12.7,
+      "implied_price": 181.65
+    }
+  ],
+  "duality_decomposition": {
+    "note": "single-stage justified forward P/E = (1 - g/ROIC)/(r - g); shows the ROIC/payout lever",
+    "r": 0.08,
+    "roic_columns": [
+      0.08,
+      0.12,
+      0.18,
+      0.25
+    ],
+    "rows": [
+      {
+        "growth": 0.03,
+        "growth_pct": 3.0,
+        "roic_8": 12.5,
+        "roic_12": 15.0,
+        "roic_18": 16.7,
+        "roic_25": 17.6
+      },
+      {
+        "growth": 0.05,
+        "growth_pct": 5.0,
+        "roic_8": 12.5,
+        "roic_12": 19.4,
+        "roic_18": 24.1,
+        "roic_25": 26.7
+      },
+      {
+        "growth": 0.07,
+        "growth_pct": 7.0,
+        "roic_8": 12.5,
+        "roic_12": 41.7,
+        "roic_18": 61.1,
+        "roic_25": 72.0
+      }
+    ]
+  },
+  "peers": [
+    {
+      "name": "WM",
+      "multiple": 18.5,
+      "note": "Waste Management, NTM EV/EBITDA; 29% EBITDA margin; large-cap mature"
+    },
+    {
+      "name": "RSG",
+      "multiple": 17.8,
+      "note": "Republic Services, NTM EV/EBITDA; 32% EBITDA margin; large-cap mature"
+    },
+    {
+      "name": "WCN",
+      "multiple": 21.0,
+      "note": "Waste Connections, NTM EV/EBITDA; 33% EBITDA margin; growth premium"
+    },
+    {
+      "name": "GFL",
+      "multiple": 11.5,
+      "note": "GFL Environmental, NTM EV/EBITDA; ~22% EBITDA margin; integration discount"
+    }
+  ],
+  "peer_median_multiple": 18.5,
+  "reconstruction": {
+    "currency": "EV/EBITDA",
+    "what_price_implies": "At 14.0x FY2026E Adj. EBITDA ($B), the current price implies a ~9.6% FCF CAGR for 10y (then 2% terminal) at r=8.0%.",
+    "what_street_implies": "The street mean target implies ~12.4% for 10y.",
+    "history_anchor": "CWST 5-year median EV/EBITDA ~14.8x; peaked at 19-20x in 2021-2022 on M&A optionality premium; compressed to 13-14x in 2025-2026 on rate sensitivity and acquisition dilution",
+    "contested_lever": "EBITDA margin re-rate: whether CWST closes the 7-10pp gap to large-cap peers (WM/RSG 28-32%) through M&A integration synergies ($15M G&A target) and Highland/Hakes permit-enabled internalization, or whether the perpetual acquisition pace permanently suppresses blended margins below 26% and caps the multiple re-rating the bull thesis requires"
+  }
+}
