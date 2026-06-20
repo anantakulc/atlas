@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "ticker": "STM",
+    "agent": "Theia",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "contract_version": "3.0",
+    "note": "Revenue demand model by segment — sourced growth paths for each segment feeding Daedalus's SOTP. Not a dialed cone; each number is argued from a named driver."
+  },
+
+  "segment_demand": {
+    "PD_power_discrete": {
+      "name": "Power and Discrete (P&D incl. SiC)",
+      "fy2025_revenue_m": 1685,
+      "fy2026_estimate_m": 2000,
+      "fy2027_estimate_m": 2400,
+      "fy2028_estimate_m": 2700,
+      "growth_drivers": [
+        "800V EV architecture adoption: SiC is mandatory for 800V inverters (silicon can't handle thermal/switching losses). 800V EV models projected to grow from ~6M units in 2025 to ~15M in 2028 (Yole). At 6-8 SiC MOSFETs per inverter at $8-12 ASP each, the TAM grows ~2x by 2028.",
+        "STM's Sanan JV: joint venture with Sanan Optoelectronics for Chinese SiC market; provides local-for-local supply to BYD/CATL EV customers that will not use Western-supply-chain-only chips. Expected to add $300-500M revenue by 2027.",
+        "200mm SiC wafer transition: STM converting Catania fab to 200mm wafers in 2025-2027. 200mm SiC yields ~30% more die per wafer vs. 150mm and lowers cost per die by ~20-25%. This restores STM's cost competitiveness vs. Onsemi and Chinese suppliers."
+      ],
+      "growth_constraints": [
+        "STM SiC market share declining: 37% (2022) -> 29% (2024). Not expected to reverse quickly given Onsemi's captive wafer supply and Chinese domestic preference. Base assumes stabilization at 22-24% by 2028.",
+        "Tesla structural headwind: Tesla's 75% SiC content reduction (Next Gen platform) structurally reduces STM's largest historical volume. Not recoverable even if broader market grows.",
+        "SiC industry overcapacity: Yole (Dec 2025) says utilization 50-70% and recovery takes until 2027-2028. Pricing pressure persists through at least 2026."
+      ],
+      "base_cagr_2025_2028_pct": 17,
+      "bull_scenario_m": {"2026": 2300, "2027": 2900, "2028": 3500},
+      "bear_scenario_m": {"2026": 1800, "2027": 1900, "2028": 2000},
+      "sources": [
+        "Yole Power SiC Dec 2025 — SiC market $10.3B by 2030, overcapacity status",
+        "Yole Aug 2025 — automotive semi market share rankings",
+        "STM Q4/FY2025 — P&D revenue $1,685M FY2025",
+        "PGC Consultancy — Tesla 75% SiC reduction analysis"
+      ]
+    },
+
+    "EMP_embedded_processing": {
+      "name": "Embedded Processing (STM32 MCU + automotive MCU + custom processing)",
+      "fy2025_revenue_m": 3580,
+      "fy2026_estimate_m": 4100,
+      "fy2027_estimate_m": 4700,
+      "fy2028_estimate_m": 5200,
+      "growth_drivers": [
+        "STM32 restocking: industrial customers finished destocking by Q3 2025. Q1 2026 EMP grew +31% YoY, the strongest segment recovery. MCU content per industrial machine growing with IoT and edge AI trends.",
+        "Automotive MCU content growth: zone ECU architecture in EVs adds 3-5 automotive MCU units per vehicle vs 1-2 in legacy architecture. STM32 automotive variants benefit from EV platform ramp at BYD, Stellantis, BMW.",
+        "AI at the edge: STM32 devices with neural processing are seeing design-in acceleration for industrial AI inference applications. The STM32 ecosystem (800+ variants, STM32CubeIDE) is sticky — ecosystem switching costs are high."
+      ],
+      "growth_constraints": [
+        "Chinese MCU competition: GigaDevice and Geehy offer STM32-compatible pinout MCUs at 10-20% price discount in cost-sensitive segments. This limits STM32's pricing power in commodity industrial applications.",
+        "Inventory overhang legacy: the 2023-2025 MCU destocking cycle was severe and some distributors may still have excess inventory in lower-velocity SKUs."
+      ],
+      "base_cagr_2025_2028_pct": 13,
+      "bull_scenario_m": {"2026": 4300, "2027": 5100, "2028": 5900},
+      "bear_scenario_m": {"2026": 3900, "2027": 4200, "2028": 4500},
+      "sources": [
+        "STM Q1 2026 — EMP +31.3% YoY, strongest segment",
+        "Digitimes Mar 2026 — auto chipmakers exiting inventory reset",
+        "STM Q4/FY2025 — EMP $3,580M FY2025"
+      ]
+    },
+
+    "AMS_analog_mems_sensors": {
+      "name": "Analog, MEMS and Sensors (AM&S)",
+      "fy2025_revenue_m": 4675,
+      "fy2026_estimate_m": 5300,
+      "fy2027_estimate_m": 5800,
+      "fy2028_estimate_m": 6200,
+      "growth_drivers": [
+        "NXP MEMS acquisition ($950M, closed Jul 2025): adds ~$300M annual automotive MEMS revenue, strengthens STM's automotive sensor position to compete with Bosch Sensortec and TDK/InvenSense. Management guides 'substantially accretive' gross margins.",
+        "Apple MEMS relationship: STM has supplied iPhone MEMS since ~2009. Apple iPhone installed base growing (>1.3B active iPhones). New Apple LiDAR iPhone 18 win (reported by Morgan Stanley, 2025) would add incremental revenue. Apple was 12.3% of STM total revenue in FY2023.",
+        "Industrial MEMS: MEMS sensors for industrial IoT and robotics growing 10-12% annually. STM's inertial MEMS leadership (accelerometers, gyroscopes) serves this market."
+      ],
+      "growth_constraints": [
+        "Apple concentration risk: Apple is still the largest single MEMS customer. Any loss of iPhone MEMS socket or significant volume reduction would be material. Apple has historically dual-sourced from Bosch Sensortec.",
+        "Personal electronics cyclicality: smartphone unit growth is low-single digits. AM&S revenue was -1.9% FY2025 and only +23% YoY in Q1 2026 (partly NXP contribution)."
+      ],
+      "base_cagr_2025_2028_pct": 10,
+      "bull_scenario_m": {"2026": 5500, "2027": 6100, "2028": 6700},
+      "bear_scenario_m": {"2026": 5000, "2027": 5300, "2028": 5600},
+      "sources": [
+        "STM Q4/FY2025 — AM&S $4,675M FY2025, -1.9% YoY",
+        "STM Q1 2026 — AM&S +23.2% YoY (NXP MEMS contribution)",
+        "STM press release Jul 2025 — NXP MEMS acquisition $950M, ~$300M annual revenue"
+      ]
+    },
+
+    "RFOC_rf_optical": {
+      "name": "RF and Optical Communications (RF&OC — satellite + data center optical)",
+      "fy2025_revenue_m": 1436,
+      "fy2026_estimate_m": 2400,
+      "fy2027_estimate_m": 3500,
+      "fy2028_estimate_m": 4400,
+      "growth_drivers": [
+        "SpaceX Starlink sole-source: STM holds ~90% market share in LEO satellite chip supply to Starlink. Management targeting $3B+ cumulative satellite revenue 2026-2028. UBS projects $1.3B satellite revenue by 2028. This is the most contracted/visible revenue stream in the group.",
+        "AWS data center engagement: February 2026 multi-billion multi-year strategic agreement for high-bandwidth connectivity (silicon photonics), mixed-signal processing, MCUs for infrastructure management, and power ICs for hyperscale. STM targeting $1B in 2026 and $2B in 2027. This segment is the swing variable.",
+        "Amazon Kuiper: Secondary LEO constellation satellite opportunity. STM is positioned as a natural supplier given Starlink expertise.",
+        "AI data center interconnect: silicon photonics / optical engines for 800G and 1.6T AI server interconnect is a $5B+ TAM growing at 30%+ per year."
+      ],
+      "growth_constraints": [
+        "Data center ramp is unproven: AWS agreement is announced but revenue delivery is contingent on qualification, ramp, and sustained demand. From near-zero to $2B in 2 years would be one of the fastest semiconductor segment ramps in history.",
+        "SpaceX in-sourcing risk: SpaceX has been known to in-source components over time. Any decision to develop custom satellite semiconductors in-house would reduce STM's Starlink dependence.",
+        "Competition in silicon photonics: Coherent, II-VI/Finisar, and hyperscaler in-house teams are STM's competitors in optical interconnect. STM is a late entrant."
+      ],
+      "base_case_breakdown_fy2026": {
+        "satellite_m": 850,
+        "data_center_m": 800,
+        "other_rf_m": 750,
+        "total_m": 2400
+      },
+      "base_case_breakdown_fy2027": {
+        "satellite_m": 1000,
+        "data_center_m": 1500,
+        "other_rf_m": 1000,
+        "total_m": 3500
+      },
+      "base_cagr_2025_2028_pct": 45,
+      "bull_scenario_m": {"2026": 2900, "2027": 4500, "2028": 5800},
+      "bear_scenario_m": {"2026": 1900, "2027": 2400, "2028": 2800},
+      "sources": [
+        "Via Satellite May 2026 — STM $3B+ cumulative satellite revenue target 2026-2028",
+        "STM newsroom June 2026 — data center target raised to $1B 2026, $2B 2027",
+        "Mizuho May 2026 note — satellite >$3B cumulative, AI server content >$230M/GW",
+        "UBS June 2026 note — satellite $1.3B by 2028, data center $2.9B by 2028"
+      ]
+    }
+  },
+
+  "company_total_revenue_scenarios": {
+    "base": {
+      "fy2026_m": 13800,
+      "fy2027_m": 16400,
+      "fy2028_m": 18500,
+      "note": "Sum of segment bases: PD $2,000 + EMP $4,100 + AMS $5,300 + RFOC $2,400 = $13,800M for 2026. STM street consensus for FY2026 is ~$13.3B — our base is slightly above consensus given the data center guidance raise is recent. 2027-2028 extrapolates segment growth.",
+      "reconciliation_to_street": "Street FY2026 consensus $13.3B vs our base $13.8B — we sit 4% above consensus because we include the post-June-2 data center revision that most analyst models predate. This is not aggressive; UBS models $14.7B for 2026."
+    },
+    "bull": {
+      "fy2026_m": 15000,
+      "fy2027_m": 19000,
+      "fy2028_m": 22000,
+      "note": "All segments fire: PD restocking beats, data center hits $1B in 2026 and $2B+ in 2027, satellite hits $1.3B by 2027. Requires BofA-level execution."
+    },
+    "bear": {
+      "fy2026_m": 12600,
+      "fy2027_m": 13500,
+      "fy2028_m": 14500,
+      "note": "Auto/industrial recovery stalls H2 2026, data center ramps slowly, SiC weakness persists. Revenue stays below 2024's $13.3B through 2028."
+    }
+  }
+}

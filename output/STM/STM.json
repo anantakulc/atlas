@@ -1,0 +1,984 @@
+{
+  "_meta": {
+    "ticker": "STM",
+    "engine": "Atlas v3",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "contract_version": "3.0",
+    "agents_run": [
+      "Hermes",
+      "Pheme",
+      "Theia",
+      "Daedalus",
+      "Boreas",
+      "Cassandra",
+      "Atlas"
+    ],
+    "audited_by": [
+      "Erinys",
+      "Forseti"
+    ],
+    "forseti_verdict": "SHIP"
+  },
+  "ticker": "STM",
+  "name": "STMicroelectronics N.V.",
+  "listings": [
+    "NYSE:STM",
+    "Euronext Paris:STM",
+    "Euronext Milan:STM"
+  ],
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "business_type": "conglomerate",
+  "currency": "USD",
+  "date": "2026-06-20",
+  "engine": "Atlas v3",
+  "s1_call": {
+    "our_view": "HOLD at MEDIUM conviction. STM has executed a textbook cycle turn; automotive/industrial recovering, Starlink a durable moat, and an AWS data center partnership that transforms the narrative from 'IDM in decline' to 'multi-engine growth platform.' All three engines are real. The problem is price: at $78.39, the stock already discounts BofA's most-bullish 2028 scenario ($4.63 EPS x 17x). Our SOTP fair value is $62, and our 12-month target on the argued base is $77. There is no margin of safety, and the crux variable; whether the data center ramp achieves $1.5B+ by 2027; is genuinely unresolved. Sit tight if you own it. Add on a dip below $65.",
+    "crux": {
+      "variable": "The pace and completeness of STM's earnings recovery: whether the data center segment ramps to $1.5B+ in 2027 (base) or $2B+ (bull); and whether the automotive/industrial gross margin trajectory confirms 200bps/half expansion; is the single variable that decides the call at current prices.",
+      "one_line": "STM is priced as if it delivers $4.5 to 5.0 EPS by 2028 (BofA's bull); our base implies $3.50. The spread, $14/share; is entirely a function of whether data center delivers $1.5B (base) or $2B (bull) in 2027 and whether gross margin re-rates to 42 to 44% (base) or 45 to 47% (bull).",
+      "base": "Data center reaches $800M in 2026 and $1.5B in 2027 (below management's $2B target). Satellite $1B by 2027. Auto/industrial recovery at moderate pace; P&D back to $2.7B by 2028. FY2028 revenue $16.5B; gross margin 42-44%; EPS ~$3.50. Fair value today $62.",
+      "bull": "Data center hits $1B+ in 2026 and $2B in 2027 as AWS volumes ramp faster. 800V EV inflects harder; P&D to $3.5B. Gross margin to 45-47%. FY2028 EPS $4.60-4.80. Fair value $90-100.",
+      "bear": "Data center stalls at $700M in 2026 (AWS qualification delays). Auto OEM EV slowdown resurfaces. P&D stuck at $1.8-2.0B. FY2028 gross margin reaches only 37-39%; EPS $2.20. Fair value $35-40.",
+      "what_decides_it": "Watch Q2 2026 earnings (July 23, 2026): (1) Q2 revenue vs. $3.45B guide; (2) data center revenue pacing at $230-250M in Q2 (on-track for $1B annual); (3) gross margin guide for Q3; needs to confirm the 200bps/half expansion path toward 40%+ by year-end. If all three confirm, the base is tracking and the stock is fairly valued. If data center or margin disappoint, the current 32x NTM is indefensible."
+    },
+    "recommendation": {
+      "action": "HOLD",
+      "tone": "neutral",
+      "current_price": 78.39,
+      "target_12m": 77.0,
+      "upside_pct": -1.8,
+      "conviction": "MEDIUM",
+      "rationale": "SOTP fair value $62 (20% below price) vs. 12-month target $77 based on 22x FY2027E EPS of $3.50. The target reflects the argued base; the $15 gap between intrinsic value and target is the structural premium for a transformation that is in progress but unproved at scale. At -1.8% implied total return (including $0.36 dividend), there is nothing to do at $78. The risk/reward improves substantially on a move to $65-68 (fair value + one standard deviation), at which point the data center option is nearly free.",
+      "next_earnings": "July 23, 2026 (Q2 2026; the crux checkpoint)"
+    },
+    "four_numbers": {
+      "fair_value_today": {
+        "value": 62.18,
+        "multiple": 4.0,
+        "multiple_label": "EV/NTM Revenue",
+        "basis": "SOTP intrinsic value: P&D $7.46 + EMP $16.14 + AM&S $17.89 + RF&OC $21.00 = $62.49; less net debt per share $0.30 = $62.18"
+      },
+      "price_today": {
+        "value": 78.39,
+        "multiple": 5.1,
+        "multiple_label": "EV/NTM Revenue",
+        "basis": "market"
+      },
+      "fair_value_12m": {
+        "value": 67.42,
+        "basis": "$62.18 rolled forward at 9% WACC less $0.36 dividend",
+        "convergence_return_pct": -13.5
+      },
+      "target_12m": {
+        "value": 77.0,
+        "basis": "22x FY2027E EPS $3.50; anchored to STM's through-cycle P/E of 15 to 18x plus a structural premium for the data center/satellite transformation. 22x is the midpoint of where UBS (30x FY2027E) and the bears (15x) disagree. The target assumes the base case is tracking at Q2 results.",
+        "implied_12m_total_return_pct": -1.3
+      }
+    },
+    "thesis": [
+      {
+        "pillar": "Three real engines, but all already priced in",
+        "detail": "STM's transformation is genuine: Starlink sole-source (~90% LEO chip share, $3B+ cumulative 2026-2028), an AWS multi-year partnership for silicon photonics and mixed-signal ICs, and an automotive/industrial recovery where YoY revenue returned to +23% in Q1 2026. The problem is that the stock has already repriced these; from $21 to $78 (+271%) in 12 months. A 32x NTM P/E prices in BofA's most-aggressive 2028 scenario. Upside requires beating consensus, not matching it."
+      },
+      {
+        "pillar": "Data center credibility is the crux, $800M vs. $2B in 2027",
+        "detail": "Management raised its 2027 data center target to $2B (from 'well above $1B') on June 2. From a $0-200M FY2024 base, $2B in 2027 requires AWS to move from MOU to commercial volumes within 18 months and hyperscaler demand for STM's silicon photonics to absorb that capacity. The base case is $1.5B, which values RF&OC at $21/share via exit-multiple. If the target is met, the bull value is $25-30/share for RF&OC alone. If it stalls at $700M, the segment is worth $12-14/share."
+      },
+      {
+        "pillar": "SOTP is $62, not $78; the gap is a transformation premium the market has already awarded",
+        "detail": "Segment-by-segment: P&D (cyclical SiC power) $7.46/share at 8.5x mid-cycle EV/EBITDA; EMP (STM32 MCU franchise) $16.14 at 3.5x EV/Sales; AM&S (analog + MEMS) $17.89 at 3.0x EV/Sales; RF&OC (satellite + data center) $21.00 via Gordon exit-multiple (27.8x NOPAT at normalization). The $62 fair value represents what STM is worth TODAY if each segment delivers its argued base-case mid-cycle trajectory. The current price of $78 is a $16 bet on acceleration; which is the market's prerogative, but not our risk/reward at MEDIUM conviction."
+      }
+    ]
+  },
+  "s2_business": {
+    "business_overview": {
+      "summary": "STMicroelectronics is a vertically-integrated European semiconductor IDM (integrated device manufacturer) that designs, manufactures, and sells analog, power, sensor, and embedded-processing semiconductors. Headquartered in Geneva (registered in the Netherlands), it serves automotive electrification, industrial automation, consumer electronics, satellite communications, and AI data-center interconnect. It owns wafer fabs in Crolles (France, 300mm silicon) and Agrate (Italy, 300mm silicon) plus SiC substrate and device fabs in Catania (Italy), giving it cost control but also amplified margin swings with volume.",
+      "business_model": "IDM; sells to OEMs (Stellantis, BMW, BYD, Bosch), Apple (MEMS), SpaceX (Starlink), AWS (data center). Revenue is design-win-driven with 18 to 24 month design cycles for automotive, 6 to 12 months for consumer, and multi-year for satellite. The IDM model provides supply assurance and custom integration but requires sustained capex ($1.5 to 2.5B/year) and yields high operating leverage; each $1 of incremental revenue contributes ~60-70% to EBITDA once utilization exceeds ~75%.",
+      "segments": [
+        {
+          "name": "P&D. Power and Discrete",
+          "revenue_share_pct": 14,
+          "fy_revenue_b": 1.685,
+          "fy": "FY2025",
+          "growth_pct": -46.1,
+          "nature": "cyclical",
+          "note": "SiC MOSFETs, silicon MOSFETs, IGBTs, gate drivers. Hit hardest by the Tesla SiC volume reduction (structural) and EV demand deceleration (cyclical). SiC industry overcapacity persists through 2027-2028 per Yole. STM's 200mm SiC transition via the Sanan JV (China) is the cost-reduction lever. Q1 2026: -1.8% YoY; stabilizing but not recovering."
+        },
+        {
+          "name": "EMP. Embedded Processing",
+          "revenue_share_pct": 30,
+          "fy_revenue_b": 3.58,
+          "fy": "FY2025",
+          "growth_pct": 3.3,
+          "nature": "annuity",
+          "note": "STM32 32-bit MCU (800+ device variants, #1 or #2 globally), automotive MCUs, custom processing. The STM32 ecosystem; millions of active developers, cube software libraries, breadboard community; creates deep lock-in. Q1 2026: +31.3% YoY, the strongest segment recovery."
+        },
+        {
+          "name": "AM&S. Analog, MEMS and Sensors",
+          "revenue_share_pct": 40,
+          "fy_revenue_b": 4.675,
+          "fy": "FY2025",
+          "growth_pct": -1.9,
+          "nature": "annuity",
+          "note": "MEMS accelerometers and gyroscopes (iPhone, wearables, AR/VR), analog ICs, power management. Apple was 12.3% of total company revenue in FY2023. NXP MEMS acquisition (closed Q1 2026, $895M) adds automotive IMU and MEMS scale. Q1 2026: +23.2% YoY."
+        },
+        {
+          "name": "RF&OC. RF and Optical Communications",
+          "revenue_share_pct": 12,
+          "fy_revenue_b": 1.436,
+          "fy": "FY2025",
+          "growth_pct": -24.3,
+          "nature": "growth",
+          "note": "RF ICs for LEO satellite (Starlink ~90% share), silicon photonics / optical engines for AI data centers (AWS multi-year deal Feb 2026), MCUs for network infrastructure. Fastest-growing segment from 2026 onward; management guides $1B data center in 2026 and $2B in 2027; $3B+ cumulative satellite revenue 2026-2028. Q1 2026: +33.9% YoY."
+        }
+      ],
+      "customers": [
+        "SpaceX/Starlink",
+        "Apple",
+        "AWS (Amazon)",
+        "Stellantis",
+        "BMW",
+        "BYD",
+        "Geely",
+        "Volkswagen",
+        "Bosch",
+        "Continental"
+      ],
+      "geographic": [
+        {
+          "region": "Europe",
+          "share_pct": 41
+        },
+        {
+          "region": "Americas",
+          "share_pct": 27
+        },
+        {
+          "region": "Asia Pacific",
+          "share_pct": 32
+        }
+      ]
+    },
+    "historical_financials": [
+      {
+        "fy": 2021,
+        "revenue_b": 12.76,
+        "revenue_growth_pct": 24.9,
+        "gross_margin_pct": 37.7,
+        "ebitda_b": 3.5,
+        "ebitda_margin_pct": 27.4,
+        "net_income_b": 2.0,
+        "fcf_b": 0.7,
+        "eps": 2.22
+      },
+      {
+        "fy": 2022,
+        "revenue_b": 16.13,
+        "revenue_growth_pct": 26.5,
+        "gross_margin_pct": 47.0,
+        "ebitda_b": 5.7,
+        "ebitda_margin_pct": 35.3,
+        "net_income_b": 3.96,
+        "fcf_b": 0.4,
+        "eps": 4.3
+      },
+      {
+        "fy": 2023,
+        "revenue_b": 17.29,
+        "revenue_growth_pct": 7.2,
+        "gross_margin_pct": 47.5,
+        "ebitda_b": 6.0,
+        "ebitda_margin_pct": 34.7,
+        "net_income_b": 4.21,
+        "fcf_b": 0.9,
+        "eps": 4.73
+      },
+      {
+        "fy": 2024,
+        "revenue_b": 13.27,
+        "revenue_growth_pct": -23.3,
+        "gross_margin_pct": 39.3,
+        "ebitda_b": 3.1,
+        "ebitda_margin_pct": 23.4,
+        "net_income_b": 1.56,
+        "fcf_b": -1.3,
+        "eps": 1.72
+      },
+      {
+        "fy": 2025,
+        "revenue_b": 11.8,
+        "revenue_growth_pct": -11.1,
+        "gross_margin_pct": 33.9,
+        "ebitda_b": 1.9,
+        "ebitda_margin_pct": 16.1,
+        "net_income_b": 0.166,
+        "fcf_b": -0.8,
+        "eps": 0.18
+      }
+    ],
+    "historical_financials_read": "The financials tell a clean cycle story: STM peaked in FY2023 at $17.3B revenue with 47.5% gross margins; the 'SiC supercycle' and STM32 industrial demand coinciding. Then the collapse: FY2024 -23%, FY2025 -11% further, with gross margins crashing from 47.5% to 33.9% and net income from $4.2B to $166M. This is a fixed-cost IDM at trough utilization. Every percentage point of gross margin below ~45% is the fab carrying costs of un-utilized capacity. The recovery that began Q4 2025 is the inverse of that mechanism. The question is not whether margins will recover; they will; but at what speed and to what level.",
+    "snapshot": [
+      {
+        "label": "Price (Jun 20, 2026)",
+        "value": "$78.39"
+      },
+      {
+        "label": "Market Cap",
+        "value": "$69.7B"
+      },
+      {
+        "label": "Enterprise Value",
+        "value": "$70.0B"
+      },
+      {
+        "label": "NTM Revenue (est.)",
+        "value": "$13.8B"
+      },
+      {
+        "label": "NTM P/E",
+        "value": "31.9x"
+      },
+      {
+        "label": "EV/NTM Revenue",
+        "value": "5.1x"
+      },
+      {
+        "label": "EV/NTM EBITDA (est.)",
+        "value": "~25x"
+      },
+      {
+        "label": "FY2025 Gross Margin",
+        "value": "33.9%"
+      },
+      {
+        "label": "FY2025 Net Income",
+        "value": "$166M"
+      },
+      {
+        "label": "FY2025 GAAP EPS",
+        "value": "$0.18"
+      },
+      {
+        "label": "NTM EPS Consensus",
+        "value": "$2.46"
+      },
+      {
+        "label": "FCF/Share NTM (est.)",
+        "value": "$1.80"
+      },
+      {
+        "label": "Net Debt",
+        "value": "$0.27B (post June 2026 convertible)"
+      },
+      {
+        "label": "Dividend/Share",
+        "value": "$0.36"
+      },
+      {
+        "label": "52-week Range",
+        "value": "$21.11 to $78.39"
+      },
+      {
+        "label": "YTD Return",
+        "value": "+187%"
+      },
+      {
+        "label": "Employees",
+        "value": "~48,000"
+      },
+      {
+        "label": "CEO",
+        "value": "Jean-Marc Chery (since 2018)"
+      },
+      {
+        "label": "Headquarters",
+        "value": "Geneva, Switzerland"
+      },
+      {
+        "label": "Primary Listing",
+        "value": "NYSE:STM / Euronext Paris:STM"
+      }
+    ]
+  },
+  "s3_landscape": {
+    "industry_position": {
+      "market_overview": "STM competes in three overlapping semiconductor markets: (1) automotive semiconductors ($57B TAM in 2025, 8.4% CAGR to 2030, with EV electrification driving SiC power and MCU content-per-vehicle); (2) industrial/analog semiconductors ($70B+ TAM, cyclical, inventory-correcting 2023-2025); (3) satellite/communications chips ($2-3B addressable for LEO, dominated by STM's Starlink position) and AI data center interconnect (silicon photonics, a nascent but fast-growing market).",
+      "tam_usd_bn": 57,
+      "tam_growth_pct": 8.4,
+      "addressable_market": "Auto semi $57B growing to ~$100B+ by 2030 as EV content/vehicle increases from ~$400 (ICE) to $1,000+ (EV). STM's reachable share is $12-15B in a full recovery. LEO satellite chips: ~$2.5B and growing 30%+ CAGR as SpaceX and Amazon Kuiper build out. AI data center interconnect (silicon photonics): nascent but $5-10B by 2030.",
+      "the_share_dynamic": "STM is #3 in automotive semiconductors at 9% share in 2024, down from 10% in 2023, behind Infineon (#1, 13.5%) and NXP (#2, 10%). The near-term share loss is structural. Tesla's 75% SiC content reduction per inverter is a design-win loss, not a pricing war. The bull recovery thesis is that 800V EV architecture adoption (requires SiC at higher voltages) and Chinese EV OEM wins (BYD, Geely via Sanan JV) offset the Tesla headwind. The bear thesis is that Chinese SiC competitors (SICC, Sanan's own internal chip) erode STM's position in its new Chinese customer base even as Tesla volumes decline. STM's global SiC share fell from ~29% (2024) to ~22-24% (estimated 2025). The question is whether it stabilizes here or continues south.",
+      "revenue_drivers": [
+        "800V EV adoption driving SiC demand: BYD, Volkswagen, GM 2025-2028 EV platform launches; ~15M 800V vehicles by 2028 in base case",
+        "STM32 MCU content growth in industrial IoT, edge AI: each new industrial MCU application adds $1-5 of STM content vs. $0 for the prior generation",
+        "AWS silicon photonics: hyperscale datacenter AI build requires high-bandwidth optical transceivers; STM's silicon photonics is capacity-primed and near-sole-sourced to AWS",
+        "Starlink second-generation satellite deployment: Starlink v2.0 satellites require 4x more RF ICs per satellite; STM holds ~90% share",
+        "Operating leverage: fixed-cost IDM structure means each $1B of incremental revenue from ~$12B contributes ~$600-700M to EBITDA at mid-utilization levels"
+      ],
+      "five_forces": {
+        "buyer_power": "MODERATE; automotive OEMs have some leverage via dual-sourcing but face high switching costs once a design win is embedded; Apple has high power over MEMS pricing; AWS is a large-customer risk for the data center segment",
+        "supplier_power": "LOW to MODERATE. IDM controls fab supply; silicon wafer suppliers (Shin-Etsu, Sumco) have some leverage but STM is a top-10 customer globally; SiC substrate from Wolfspeed and SICC creates some risk",
+        "competitive_rivalry": "HIGH in SiC (Infineon, Onsemi, Chinese entrants); MODERATE in MCU (NXP, Renesas, Microchip); LOW in satellite chips (near-monopoly Starlink position)",
+        "threat_of_entry": "LOW in automotive semi (18-24 month qualification cycles, $500M+ capex thresholds); MODERATE in data center (Intel, Coherent, II-VI are alternatives to AWS)",
+        "substitutes": "MODERATE; silicon MOSFETs substitute for SiC at lower voltage/performance; ARM Cortex-M ecosystem creates some MCU substitution; InP photonics vs. silicon photonics in data center"
+      },
+      "moat": "STM's durable competitive advantages are: (1) STM32 developer ecosystem, 14M+ developers, 800+ device variants, cube software libraries; extremely high switching cost once a design is committed; (2) Starlink sole-source position. SpaceX chose STM in 2015 and has shipped 5B+ ICs through 2026; a new supplier would require 18-24 months of qualification on a moving-target satellite design; (3) European IDM positioning. CHIPS Act equivalents in the EU (IPCEI ME/CT funding) benefit European fabs, and automotive OEM preference for European supply chain is defensive; (4) SiC process node depth. STM has 15+ years of SiC process development at Catania; the 200mm transition is a cost moat that Chinese competitors are still chasing.",
+      "competitors": [
+        {
+          "name": "Infineon Technologies",
+          "position": "#1 automotive semi globally; #2 in SiC",
+          "share": "13.5% auto semi (2024)",
+          "trajectory": "gaining_share",
+          "highlight": "Completed 200mm SiC production 2025; acquired Marvell auto Ethernet Aug 2025; stronger power module integration than STM"
+        },
+        {
+          "name": "NXP Semiconductors",
+          "position": "#2 automotive semi; strong in MCU and in-vehicle networking",
+          "share": "10% auto semi (2024)",
+          "trajectory": "stable"
+        },
+        {
+          "name": "Onsemi",
+          "position": "Primary SiC pure-play; aggressive capacity build",
+          "share": "~15% SiC market (2024)",
+          "trajectory": "gaining_share",
+          "highlight": "Long-term supply agreements with BMW and other Tier 1s; 200mm SiC earlier to volume than STM"
+        },
+        {
+          "name": "Renesas Electronics",
+          "position": "#4 auto semi; strong in body-control and ADAS MCU",
+          "trajectory": "stable"
+        },
+        {
+          "name": "Texas Instruments",
+          "position": "Analog leader; indirect competitor in industrial and auto analog",
+          "trajectory": "stable",
+          "highlight": "TI's 12-inch fab expansion provides long-term cost advantage in analog"
+        },
+        {
+          "name": "Coherent / II-VI",
+          "position": "Alternative silicon photonics provider for data center",
+          "trajectory": "gaining_share",
+          "highlight": "Coherent is AWS's other optical interconnect supplier alongside STM; concentration risk is two-sided"
+        }
+      ]
+    },
+    "peers": [
+      {
+        "ticker": "IFX.DE",
+        "name": "Infineon Technologies",
+        "pe_ntm": 22.0,
+        "ev_ebitda": 14.5,
+        "rev_growth_ttm": -8.3,
+        "highlight": "Closest automotive semi comp; better diversified, higher quality SiC franchise"
+      },
+      {
+        "ticker": "NXPI",
+        "name": "NXP Semiconductors",
+        "pe_ntm": 20.5,
+        "ev_ebitda": 13.8,
+        "rev_growth_ttm": -2.1,
+        "highlight": "MCU and auto networking; more stable revenue profile than STM"
+      },
+      {
+        "ticker": "ON",
+        "name": "Onsemi",
+        "pe_ntm": 24.0,
+        "ev_ebitda": 16.0,
+        "rev_growth_ttm": -22.5,
+        "highlight": "SiC peer; also in cycle trough; traded at 30-40x NTM at the peak"
+      },
+      {
+        "ticker": "MCHP",
+        "name": "Microchip Technology",
+        "pe_ntm": 19.5,
+        "ev_ebitda": 17.0,
+        "rev_growth_ttm": -25.0,
+        "highlight": "MCU/analog comp; deeper trough, lower SOTP quality vs. STM"
+      },
+      {
+        "ticker": "OLED",
+        "name": "MACOM Technology",
+        "pe_ntm": 35.0,
+        "ev_ebitda": 25.0,
+        "rev_growth_ttm": 12.0,
+        "highlight": "RF/photonics comp for RF&OC segment; premium multiple reflects growth"
+      }
+    ],
+    "peers_read": "STM at 31.9x NTM P/E trades at a significant premium to all auto/industrial semi peers: Infineon 22x, NXP 20x, Onsemi 24x. The premium is the data center and satellite option. This is defensible if RF&OC ramps as guided; it is not defensible on the core auto/industrial business alone, which at STM's historical through-cycle P/E of 15-18x would be worth $35-45/share (the street's lowball targets). The peer read confirms the market is paying a genuine transformation premium; the question is whether that transformation delivers."
+  },
+  "s4_market": {
+    "market_view": {
+      "whats_priced_in": "At $78.39 and 31.9x NTM P/E, the market is pricing: (1) full recovery to BofA's 2028E EPS of $4.63 (~43% above street consensus) at a 17x through-cycle P/E; a standard industrial semi multiple that assumes no further multiple compression; OR (2) at street consensus 2028E of ~$3.50 EPS, the implied through-cycle multiple is 22x; already premium for an industrial IDM. The Gordon model cannot reconcile 31.9x at any reasonable steady-state assumption (8% terminal growth AND 25% ROIC is required; heroic for industrial semi). The market is explicitly pricing a ramp, not a steady-state.",
+      "street_view": "13 analysts; 7 Buy, 7 Hold, 0 Sell. Mean price target $64.36 to 17.9% BELOW current price. This is the most telling market fact: the aggregate street consensus says the stock is overvalued, yet it is at a 52-week high. The resolution: most targets were set BEFORE the June 2 data center guidance raise and June 16 convertible bond announcement, which catalyzed a 15-20% rally. A wave of target revisions is expected at Q2 2026 earnings (July 23). BofA is the most aggressive at $100 (Buy); bulls cluster at $68-100; unchanged holds at $32-63.",
+      "post_earnings_analyst_actions": [
+        {
+          "date": "2026-04-23",
+          "firm": "Craig-Hallum",
+          "action": "Upgrade to Buy",
+          "old_pt": 28,
+          "new_pt": 58,
+          "note": "Post-Q1; AI, satellite, MCU pricing strength"
+        },
+        {
+          "date": "2026-04-24",
+          "firm": "UBS",
+          "action": "PT Raise (Buy)",
+          "old_pt": 31,
+          "new_pt": 49,
+          "note": "Post-Q1; 'largest earnings beat in three years'; AI data center + LEO satellites as new secular drivers"
+        },
+        {
+          "date": "2026-05-19",
+          "firm": "Mizuho",
+          "action": "PT Raise (Outperform)",
+          "old_pt": 56,
+          "new_pt": 68,
+          "note": "30x FY2027E; near-90% Starlink share; $3B+ satellite cumulative 2026-2028"
+        },
+        {
+          "date": "2026-06-02",
+          "firm": "BofA Securities",
+          "action": "PT Raise (Neutral→$83)",
+          "old_pt": 73,
+          "new_pt": 83,
+          "note": "Data center $1B 2026 ambition; revised estimates +3-5%"
+        },
+        {
+          "date": "2026-06-10",
+          "firm": "BofA Securities",
+          "action": "Upgrade to Buy, $100 PT",
+          "old_pt": 83,
+          "new_pt": 100,
+          "note": "Street-high; $1.57/$3.53/$4.63 EPS 2026/2027/2028 to 30-43% above consensus; 'market underestimates STM earnings power'"
+        }
+      ],
+      "news_narrative": "The narrative has flipped from 'cyclical IDM in managed decline' to 'multi-engine AI infrastructure play' in six months. The catalysts: Q1 2026 beat (+23% YoY), Q2 guide +25% YoY, AWS deal Feb 2026, data center target doubling June 2, $1.5B convertible bond June 16. Each incremental data point validated the transformation thesis and the stock repriced continuously upward.",
+      "sentiment_narrative": "Bullish momentum. Stock +271% from 52-week low; +187% YTD. Zero sell ratings. No institutional seller visible in the tape. The risk is that the easy money has been made; the cycle turn was obvious by Q4 2025; early movers have doubled or tripled. Late arrivals are buying the story, not the evidence.",
+      "runway": "STM has a credible 3-year runway if the three engines deliver: auto/industrial recovery generates $6-8B incremental annual revenue vs. trough; data center adds $1.5-2B; satellite adds $1B. The compound effect on a fixed-cost IDM base is substantial; each dollar of incremental revenue above ~$12B contributes ~$0.65-0.70 to gross profit. The runway is real, but it is already substantially priced in.",
+      "runway_verdict": "Priced for perfection at $78; attractive below $65",
+      "market_lean": "BULLISH TREND. FULLY PRICED"
+    },
+    "street_reconstruction": {
+      "what_price_implies": "At $78.39, the price implies BofA-level recovery ($4.63 EPS in 2028) at a 17x through-cycle multiple. OR; street consensus recovery ($3.50 EPS in 2028) at 22x, which is premium for industrial semi.",
+      "what_street_implies": "Street consensus 2028E EPS ~$3.50; at the current $78.39 price, the implied through-cycle multiple is 22x; already pricing a structurally superior company vs. historical 15-18x.",
+      "our_justified_multiple": "22x FY2027E EPS of $3.50 = $77 12-month target. We agree with the market on the multiple but think the earnings recovery base is more likely $3.50 than $4.63.",
+      "agree_disagree": "We disagree with BofA's $4.63 EPS scenario as the BASE case (it requires data center hitting $2B AND auto/industrial hitting 45%+ gross margins simultaneously; both high-conviction bullish readings). We agree with the market that the transformation is real, warranting a structural premium to the IDM comp set. Our disagreement is on the MAGNITUDE of the transformation by 2028."
+    }
+  },
+  "s5_management": {
+    "management": {
+      "ceo": "Jean-Marc Chery (CEO since May 2018). Former STMicroelectronics CTO, COO, and EVP. Has presided over the SiC supercycle, the subsequent down-cycle, and the strategic pivot to data center and satellite. Credibility on satellite: the Starlink relationship predates his tenure (2015) but he has deepened it. Data center: he personally announced the AWS deal in February 2026 as a 'transformational multi-year partnership.'",
+      "cfo": "Lorenzo Grandi (CFO). Finance background within STM. Oversaw the NXP MEMS acquisition ($895M, Q1 2026) and the June 2026 $1.5B dual-tranche convertible bond (0% coupon 2031, 0.625% coupon 2033, conversion prices $120/$122 to 55-57% premium to market, signaling management confidence in continued equity appreciation).",
+      "capital_allocation_history": "Historically: significant capex through the cycle ($1.5-3.6B/year 2020-2022; the SiC fab buildout). Dividend: $0.36/share annually. Buybacks: modest vs. peers ($500M authorization in FY2024, paused during down-cycle). The June 2026 convertible bond is the most interesting capital allocation signal: raising $1.5B at zero coupon with a $120 conversion price implies management expects the stock to be above $120 within 5 years; that is the embedded bull case. Uses: refinance $750M convertible due 2027 + fund the data center capacity ramp.",
+      "recent_insider_activity": [
+        {
+          "type": "CEO guidance language",
+          "date": "2026-04-23",
+          "note": "Chery: 'unconstrained demand for AI-related products is well above current projections'; the most bullish public statement from STM management in the company's history"
+        }
+      ]
+    }
+  },
+  "s6_valuation": {
+    "valuation_method": "SOTP (Sum of Parts). STM's four segments have fundamentally different growth profiles, risk characteristics, and the correct valuation method for each is different. Blending them into a single-multiple or single-DCF would obscure the most important analytical question: how much is the RF&OC (data center + satellite) transformation worth? SOTP also prevents the common error of letting a high-multiple growth segment set the multiple for a mature cyclical business, or vice versa. CONTRACT §2.1: decompose into real economic segments, value each on its own terms, with its own WACC.",
+    "segment_valuation": [
+      {
+        "name": "P&D. Power and Discrete (SiC + silicon power)",
+        "nature": "cyclical",
+        "method": "Multiple (through-cycle EV/EBITDA)",
+        "revenue_path": "$1.7B (FY2025 trough) → $2.7B (FY2028 mid-cycle base); SiC share stabilizes at 22-24% as 800V EV grows; silicon MOSFET holds",
+        "margin": "29% EBITDA at mid-cycle (Infineon auto/power segment reference); implies $783M mid-cycle EBITDA",
+        "wacc": "10.1% (β 1.35; cyclical, SiC concentration, Chinese competition)",
+        "implied_ev_b": 6.63,
+        "implied_px": 7.46,
+        "multiple_used": "8.5x EV/EBITDA (Infineon 9x, Onsemi 8x. STM's higher China risk warrants slight discount)"
+      },
+      {
+        "name": "EMP. Embedded Processing (STM32 + auto MCU)",
+        "nature": "annuity",
+        "method": "Multiple (NTM EV/Sales)",
+        "revenue_path": "$3.6B (FY2025) → $4.1B (FY2026E NTM, +15% recovery); STM32 ecosystem growing at industrial IoT and edge AI",
+        "margin": "Stable high-margin franchise; 20%+ EBIT margin at mid-cycle",
+        "wacc": "9.5% (β 1.15; stable ecosystem franchise)",
+        "implied_ev_b": 14.35,
+        "implied_px": 16.14,
+        "multiple_used": "3.5x EV/Sales (NXP auto/MCU 3.0-4.0x; STM32 ecosystem stickiness justifies upper end)"
+      },
+      {
+        "name": "AM&S. Analog, MEMS and Sensors",
+        "nature": "annuity",
+        "method": "Multiple (NTM EV/Sales)",
+        "revenue_path": "$4.7B (FY2025) → $5.3B (FY2026E NTM, +13%: NXP MEMS acquisition + Apple recovery)",
+        "margin": "Mature segment; gross margin 38-40%; EBIT 12-15%",
+        "wacc": "9.3% (β 1.10. Apple relationship relatively stable; MEMS defensible position)",
+        "implied_ev_b": 15.9,
+        "implied_px": 17.89,
+        "multiple_used": "3.0x EV/Sales (TI analog 7x, discounted for Apple concentration; above commodity analog 2x)"
+      },
+      {
+        "name": "RF&OC. RF and Optical Communications (Satellite + Data Center)",
+        "nature": "growth",
+        "method": "Exit Multiple (Gordon steady-state, discounted at segment WACC)",
+        "revenue_path": "$1.4B (FY2025) → $4.4B (FY2028 base: $1.5B data center + $1.3B satellite + $1.6B RF)",
+        "margin": "20% NOPAT at 2028 normalization (below mature optical comps 25-30%; ramp-phase conservatism appropriate)",
+        "wacc": "9.7% (β 1.20; contracted Starlink, unproven AWS; slightly above group for segment risk)",
+        "g_lt": "7% (satellite + AI interconnect secular growth; above industrial semi avg 4-5% but below current ramp)",
+        "roic": "28% (capital-light; uses existing fab capacity)",
+        "exit_multiple_gordon": "27.8x NOPAT = (1 - 0.07/0.28) / (0.097 - 0.07) = 0.75/0.027",
+        "implied_ev_b": 18.67,
+        "implied_px": 21.0,
+        "t_invariance_range": "$10.71 (T=1) to $22.61 (T=4); wide range reflects data center ramp uncertainty; T=3 is argued base"
+      }
+    ],
+    "four_levers": {
+      "growth_rate_and_duration": "Group revenue: $11.8B (FY2025 trough) → $16.5B (FY2028 base, 12% CAGR). Drivers: auto/industrial recovery ($4-5B incremental), data center emergence ($1.5B incremental), satellite build-out ($0.7B incremental). Duration: 3-year explicit ramp; then 7-8% long-run growth for RF&OC, 4-5% for EMP/AM&S, 3% for P&D. Sources: STM Q1 2026 earnings, STM data center guidance June 2026, Yole SiC forecasts, Via Satellite LEO market data.",
+      "economics": "Gross margin: 33.9% (FY2025 trough) → 42-44% (FY2028 base). The expansion is purely utilization recovery on the fixed IDM cost base. Each 100bps of gross margin = ~$145M EBIT (NTM revenue basis). ROIC: trough ~5% → mid-cycle ~18-22% (FY2022 peak was ~30%). EMP and RF&OC are the ROIC engines; P&D is the drag. Source: STM FY2021-2025 financials; Infineon peer benchmarking.",
+      "wacc": "Group WACC ~9.5-10.1% (value-weighted result of segment WACCs: P&D 10.1%, EMP 9.5%, AM&S 9.3%, RF&OC 9.7%). Ke at β 1.25 fundamental: 4.5% Rf + 1.25 × 4.5% ERP = 10.1%. Slight net debt ($0.27B post-convertible) barely reduces WACC. Regression β 1.57 (from bundle: 52-week price rally inflated); we use fundamental β 1.25 anchored to IDM business characteristics, consistent with Infineon/NXP.",
+      "exit_multiple": "RF&OC exit multiple: 27.8x NOPAT derived from Gordon equation (1 - g/ROIC)/(r - g); sanity-check: Coherent/MACOM trade at 20-25x EV/EBITDA; 27.8x EV/NOPAT is modestly above on NOPAT (vs. EBITDA) basis, reflecting the Starlink moat. The multiple is T-invariant to within ±30% across T=2 to T=4; acceptable for MEDIUM conviction."
+    },
+    "bias_audit": {
+      "rows": [
+        {
+          "assumption": "P&D mid-cycle revenue ($2.7B)",
+          "lean": "NEUTRAL; below 2024 peak ($3.1B); acknowledges SiC share loss; above 2025 trough ($1.7B)"
+        },
+        {
+          "assumption": "EMP EV/Sales 3.5x",
+          "lean": "SLIGHT BULL; high end of MCU peer range; justified by STM32 ecosystem stickiness vs. commodity MCU makers"
+        },
+        {
+          "assumption": "AM&S EV/Sales 3.0x",
+          "lean": "NEUTRAL; below TI analog (7x) reflecting Apple concentration; above commodity analog (2x)"
+        },
+        {
+          "assumption": "RF&OC NOPAT margin at T (20%)",
+          "lean": "NEUTRAL; below mature optical peers (25-30%); appropriate for ramp phase; not sandbagged"
+        },
+        {
+          "assumption": "RF&OC g_lt (7%)",
+          "lean": "SLIGHT BULL; above industrial semi avg (4-5%); plausible for satellite + AI interconnect secular demand"
+        },
+        {
+          "assumption": "RF&OC WACC (9.7%)",
+          "lean": "SLIGHT BEAR; slightly above group average for a partially contracted revenue stream; 9.0-9.5% could be argued for the Starlink tranche"
+        },
+        {
+          "assumption": "P&D through-cycle multiple (8.5x EV/EBITDA)",
+          "lean": "NEUTRAL; calibrated to Infineon (9x) and Onsemi (8x); STM discount for higher China SiC risk is argued"
+        }
+      ],
+      "same_direction_count_bull": 2,
+      "same_direction_count_bear": 1,
+      "verdict": "PASS, 2 slight bull leans (EMP multiple, RF&OC g_lt) vs. 1 slight bear lean (RF&OC WACC). No 3+ same-direction stacking. CONTRACT §1.3 satisfied."
+    },
+    "earnings_bridge": {
+      "reported_eps_ntm": 2.46,
+      "gaap_to_nongaap_adj": 0.25,
+      "normalized_eps_ntm": 2.71,
+      "sbc_net_dilution_per_share": -0.15,
+      "owner_earnings_per_share": 2.56,
+      "fcf_per_share": 1.8,
+      "bridge_note": "NTM EPS $2.46 (street consensus) + $0.25 D&A excess at low utilization = $2.71 normalized. SBC net dilution $0.15 (convertible bonds add minimal dilution at $120/$122 conversion price, well above market). FCF $1.80/share: suppressed by ongoing 200mm SiC conversion capex; normalizes to $3.00+ by 2028 as the capex cycle completes."
+    }
+  },
+  "s7_debates": {
+    "key_debates": [
+      {
+        "debate": "Does the data center segment deliver $1.5B+ in 2027? This is the crux.",
+        "is_crux": true,
+        "bull_view": "AWS announced a 'multi-billion, multi-year' commercial engagement in February 2026 designating STM as strategic supplier for silicon photonics (high-bandwidth interconnect) and mixed-signal ICs. Management has already raised the 2026 target from 'nicely above $500M' to $1B, and the 2027 target from 'well above $1B' to $2B; two upward revisions in six months. CEO Chery said 'unconstrained demand for AI products is well above current projections.' Silicon photonics for AI data centers is a $5-10B market by 2030; STM is positioned as near-sole-source for AWS. The contracted nature of the engagement (vs. spot) limits downside. A $2B 2027 run-rate would make RF&OC worth $25-30/share, adding $5-10 to the stock.",
+        "bear_view": "The AWS deal is a framework agreement, not a take-or-pay contract with disclosed volumes. STM is ramping from near-zero ($0-200M FY2024) to $1B in 2026 and $2B in 2027. This requires AWS to absorb volumes that exceed any hyperscaler's ramp with a new supplier in semiconductor history by 3-4x. Coherent (the other key AWS optical interconnect supplier) and in-house development at hyperscalers (Google TPU optical, Meta's own photonics) are alternatives. Hyperscaler procurement timelines slip 6-12 months routinely. If data center reaches $700M in 2026 (not $1B), the $2B 2027 target is mathematically off the table. RF&OC would be worth $12-14/share instead of $21.",
+        "our_verdict": "Base case $800M in 2026 (below target), $1.5B in 2027 (below the $2B guide). The upward revisions are credible; management has a track record of under-promising on Starlink (which also exceeded early targets). But AWS is a different challenge: hyperscaler qualification cycles are long and subject to re-design risk. We give 40% probability to the $2B scenario and 60% probability to $1.5B or below. The RF&OC exit-multiple value in our SOTP ($21/share) uses T=3 at $1.5B-implied NOPAT. The $5-10 upside to bull is option value at current price; it is not in our target.",
+        "what_would_change_our_mind": "Q2 2026 data center revenue of $250M+ (annualizing $1B+). Any disclosure of take-or-pay contract volumes with AWS. A second hyperscaler win beyond AWS.",
+        "worth_per_share": "$10 to 15 difference between bull ($25-30/share for RF&OC) and bear ($12-14/share)"
+      },
+      {
+        "debate": "Does gross margin confirm the 200bps/half expansion path, or does utilization recovery stall?",
+        "is_crux": false,
+        "bull_view": "Q1 2026 gross margin was 33.8%; Q2 guide is 34.8% (+100bps sequential). If data center and auto/industrial demand continue accelerating, Q3 and Q4 2026 should deliver 100-200bps sequential improvement each, reaching 37-38% by year-end and 40%+ by mid-2027. The fixed-cost leverage is mechanical: STM's unused capacity charge was ~100bps in Q2 guide; each quarter of higher utilization drops that charge directly to gross margin.",
+        "bear_view": "Gross margin was 33.9% for ALL of FY2025 despite Q4 recovering to $3.33B revenue. The recovery is slower than the market expects because: (1) the new SiC production costs on 200mm are higher than expected during the ramp transition; (2) unused capacity charges persist through at least Q3 2026 per management commentary; (3) data center margins are initially lower as silicon photonics production learns. A gross margin plateau at 35-36% for 2H 2026 would invalidate the EPS recovery thesis for 2027.",
+        "our_verdict": "The expansion path is real but lumpy. We model 200-250bps per half-year through 2026-2027. The Q2 guide of 34.8% is the first data point; Q3 guide at Q2 earnings is the true test. A Q3 guide of 36%+ would be a strong bull signal; flat would be a material disappointment.",
+        "what_would_change_our_mind": "Q3 2026 gross margin guide below 35.5% would prompt a downgrade to SELL given the multiple.",
+        "worth_per_share": "$8-12 difference between 42% gross margin scenario (SOTP base) and 38% scenario (bear case materially lowers EMP and AM&S franchise value)"
+      },
+      {
+        "debate": "Does SiC stabilize at 22-24% share, or does Chinese competition drive further loss?",
+        "is_crux": false,
+        "bull_view": "The Sanan JV (STM + Sanan Optoelectronics, 200mm SiC, China) gives STM a cost-competitive local-supply solution for Chinese OEMs. BYD and Geely have already placed orders; the 2024 automotive partner program expansion added 5+ OEM relationships. 200mm SiC lowers wafer cost 30-40% vs. 150mm. STM's Catania transition plus the Sanan JV give it cost parity with Chinese entrants by 2027. SiC share can stabilize at 22-24% with higher revenue as the volume pie grows (800V EV market x3 by 2028).",
+        "bear_view": "SICC and Sanan's own internal chip division are building 200mm SiC with Chinese government subsidies. Chinese OEMs (BYD, Geely, SAIC) face political pressure to source domestically. Tesla's SiC reduction from STM is structural; no matter how well 800V EV volume grows, Tesla is STM's largest lost share. Onsemi has LTA contracts with BMW and is gaining in European OEM platforms STM historically owned. SiC share could fall to 15-18% by 2028.",
+        "our_verdict": "We model 22-24% share stabilization (base); this is argued from the Sanan JV economics and 800V EV volume growth rather than an assertion. The tail risk of 15-18% share is real but requires Chinese OEM political procurement (which has been slower to materialize than feared in 2022-2023) and Onsemi out-executing its LTA ramp simultaneously.",
+        "what_would_change_our_mind": "P&D segment revenue declining sequentially in Q3 2026 (vs. the expected recovery) would suggest SiC is not stabilizing.",
+        "worth_per_share": "$3-6 between stabilized SiC (base: P&D $7.46/share at $2.7B mid-cycle) and continued loss (bear: P&D $4-5/share)"
+      }
+    ],
+    "bear_paragraph": "The bear case for STM is not complex: it is simply that the market has already priced in what bulls are arguing. The stock has moved from $21 to $78 in 12 months; the cycle turn was obvious, the data center announcement was obvious, the Starlink position was documented. Buying at $78 requires being MORE bullish than the market on the pace of earnings recovery. The three specific mechanisms that break the thesis: (1) AWS qualification of STM's silicon photonics takes 18-24 months longer than the $2B 2027 guide implies, leaving RF&OC at $700-800M instead of $2B; this alone is a $5-10/share hit. (2) European OEM EV delays resurface in H2 2026 as trade tariff uncertainty and consumer EV demand plateau coincide; stalling P&D's recovery and keeping gross margins below 36% through 2026. (3) The Chinese SiC competitive dynamic worsens faster than the Sanan JV can offset. Geely and BYD shift to SICC's domestic supply. The combination of all three tips EPS recovery to $2.20 by 2028 (not $3.50) and a multiple compression from 22x to 15x = fair value of $33-35. At $78, the downside in the bear is 55%.",
+    "key_risks": [
+      {
+        "rank": 1,
+        "category": "Execution risk; data center ramp",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM",
+        "risk": "AWS volumes ramp slower than $2B 2027 target (qualification delays, hyperscaler re-design)",
+        "monitor": "Q2 2026 data center revenue (July 23); any AWS procurement news"
+      },
+      {
+        "rank": 2,
+        "category": "Cycle re-weakening",
+        "severity": "HIGH",
+        "likelihood": "LOW-MEDIUM",
+        "risk": "Automotive OEM EV demand plateau or trade tariff disruption stalls the recovery in H2 2026",
+        "monitor": "Book-to-bill ratio; European OEM EV production data; STM Q3 2026 guidance"
+      },
+      {
+        "rank": 3,
+        "category": "SiC competitive erosion",
+        "severity": "MEDIUM",
+        "likelihood": "MEDIUM",
+        "risk": "Chinese SiC entrants (SICC, Sanan internal) erode STM's position in Chinese OEM platforms faster than Sanan JV ramps",
+        "monitor": "P&D segment YoY growth; China auto-semi import data; Onsemi LTA execution"
+      },
+      {
+        "rank": 4,
+        "category": "Multiple compression",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM",
+        "risk": "At 32x NTM P/E, any miss or guidance cut compresses the multiple sharply (semi names de-rate 25-40% on a miss)",
+        "monitor": "Q2 2026 earnings vs. $3.45B guide; gross margin vs. 34.8% guide"
+      },
+      {
+        "rank": 5,
+        "category": "SpaceX concentration",
+        "severity": "MEDIUM",
+        "likelihood": "LOW",
+        "risk": "SpaceX delays Starlink v2.0 deployment or internalizes chip production (already in progress for some Starlink ICs)",
+        "monitor": "SpaceX Starlink launch cadence; any STM disclosure of Starlink share movement"
+      }
+    ]
+  },
+  "s8_conclusion": {
+    "range_and_sensitivity": {
+      "anchor": "Base = $62.18 fair value today (SOTP intrinsic, argued base case)",
+      "cases": [
+        {
+          "label": "Bear",
+          "implied_value": 37.0,
+          "thesis_one_line": "Data center stalls at $700M in 2026; auto recovery re-weakens; gross margin plateaus at 36-37%.",
+          "evidence_grade": "MECHANISM",
+          "key_driver": "AWS qualification delay + P&D share loss to Chinese SiC"
+        },
+        {
+          "label": "Base",
+          "implied_value": 62.18,
+          "thesis_one_line": "Data center $800M 2026 / $1.5B 2027; auto recovery at moderate pace; gross margin 42-44% by 2028.",
+          "evidence_grade": "ARGUED",
+          "key_driver": "Utilization recovery + data center below guide but credible"
+        },
+        {
+          "label": "Bull",
+          "implied_value": 97.0,
+          "thesis_one_line": "Data center $1B+ 2026 / $2B+ 2027; 800V EV inflects hard; gross margin 45-47%; FY2028 EPS $4.60+.",
+          "evidence_grade": "EXTRAPOLATED",
+          "key_driver": "AWS exceeds guide; Sanan JV accelerates; P&D to $3.5B by 2028"
+        }
+      ],
+      "sensitivity_matrix": {
+        "axis_x": "Data center 2027 revenue ($B)",
+        "axis_y": "FY2028 gross margin (%)",
+        "grid": [
+          [
+            null,
+            "0.7",
+            "1.0",
+            "1.5",
+            "2.0",
+            "2.5"
+          ],
+          [
+            "37%",
+            "30",
+            "35",
+            "41",
+            "46",
+            "52"
+          ],
+          [
+            "40%",
+            "38",
+            "43",
+            "50",
+            "56",
+            "63"
+          ],
+          [
+            "42%",
+            "44",
+            "50",
+            "58",
+            "64",
+            "71"
+          ],
+          [
+            "44%",
+            "52",
+            "58",
+            "66",
+            "73",
+            "80"
+          ],
+          [
+            "47%",
+            "64",
+            "72",
+            "81",
+            "90",
+            "100"
+          ]
+        ],
+        "where_cases_land": "Bear: $0.7B DC / 37% GM = ~$30-37. Base: $1.5B DC / 42% GM = $62. Bull: $2.0B+ DC / 45-47% GM = $90-100. Current price $78 sits between base and bull."
+      },
+      "vs_price_pct": -20.7
+    },
+    "scenario_assumptions": {
+      "base": {
+        "label": "Base. Measured recovery",
+        "one_line": "Three engines fire but at below-management-guidance pace; fair value $62.",
+        "implied_value": 62.18,
+        "rows": [
+          {
+            "driver": "FY2026 Revenue",
+            "value": "$13.5B",
+            "note": "Q1 $3.1B + Q2 guide $3.45B + H2 recovery"
+          },
+          {
+            "driver": "FY2027E Revenue",
+            "value": "$15.5B",
+            "note": "Data center ramp + auto/industrial recovery"
+          },
+          {
+            "driver": "FY2028E Revenue",
+            "value": "$16.5B",
+            "note": "Below prior peak ($17.3B); different mix (more RF&OC)"
+          },
+          {
+            "driver": "Revenue CAGR 2025-2028",
+            "value": "12%",
+            "note": "Recovery from trough, not super-cycle continuation"
+          },
+          {
+            "driver": "Data center 2026/2027",
+            "value": "$800M / $1.5B",
+            "note": "Below management guide; credible with qualification lag"
+          },
+          {
+            "driver": "Gross margin 2028",
+            "value": "42-44%",
+            "note": "200bps/half recovery; below FY2022-23 peak (47%)"
+          },
+          {
+            "driver": "FY2028E EPS",
+            "value": "~$3.50",
+            "note": "$16.5B x 42% GM; OPEX $3.4B; tax 18%; 0.87B shares"
+          },
+          {
+            "driver": "SOTP fair value today",
+            "value": "$62.18",
+            "note": "P&D $7.46 + EMP $16.14 + AM&S $17.89 + RF&OC $21.00"
+          },
+          {
+            "driver": "12m Target (22x FY2027E)",
+            "value": "$77",
+            "note": "22x FY2027E EPS $3.50; structural premium to 15-18x IDM avg"
+          }
+        ]
+      },
+      "bull": {
+        "label": "Bull. Three engines fire simultaneously",
+        "one_line": "AWS accelerates, 800V EV inflects harder, Sanan JV wins; fair value $95-100.",
+        "implied_value": 97.0,
+        "rows": [
+          {
+            "driver": "FY2026 Revenue",
+            "value": "$14.5B",
+            "note": "Data center $1B+ in 2026; auto/industrial above trend"
+          },
+          {
+            "driver": "FY2027E Revenue",
+            "value": "$17.5B",
+            "note": "Data center $2B; satellite $1.3B; P&D $3B+"
+          },
+          {
+            "driver": "FY2028E Revenue",
+            "value": "$18.5B+",
+            "note": "Above prior peak; structurally different mix"
+          },
+          {
+            "driver": "Revenue CAGR 2025-2028",
+            "value": "16%",
+            "note": "Super-cycle equivalent with new engines"
+          },
+          {
+            "driver": "Data center 2026/2027",
+            "value": "$1.0B+ / $2.0B+",
+            "note": "Meets or exceeds management targets"
+          },
+          {
+            "driver": "Gross margin 2028",
+            "value": "45-47%",
+            "note": "Full utilization recovery + favorable mix shift to RF&OC"
+          },
+          {
+            "driver": "FY2028E EPS",
+            "value": "~$4.60-4.80",
+            "note": "BofA scenario; requires all three engines in sync"
+          },
+          {
+            "driver": "SOTP fair value today (bull)",
+            "value": "$95-100",
+            "note": "RF&OC re-rated to $30+/share at $2B DC + $1.3B sat"
+          },
+          {
+            "driver": "12m Target (25x FY2027E)",
+            "value": "$95-105",
+            "note": "25x FY2027E EPS $4.00; premium warranted at full evidence"
+          }
+        ]
+      },
+      "bear": {
+        "label": "Bear. Data center stalls, auto re-weakens",
+        "one_line": "AWS volumes slip, European OEM EV demand plateaus, SiC share erodes further; fair value $35-40.",
+        "implied_value": 37.0,
+        "rows": [
+          {
+            "driver": "FY2026 Revenue",
+            "value": "$12.5B",
+            "note": "Recovery stalls; data center only $500-700M"
+          },
+          {
+            "driver": "FY2027E Revenue",
+            "value": "$13.5B",
+            "note": "DC at $1B only; auto/industrial flat-to-down"
+          },
+          {
+            "driver": "FY2028E Revenue",
+            "value": "$14.0B",
+            "note": "Below Q1 2026 annualized run-rate trajectory"
+          },
+          {
+            "driver": "Revenue CAGR 2025-2028",
+            "value": "6%",
+            "note": "Below-consensus slow recovery"
+          },
+          {
+            "driver": "Data center 2026/2027",
+            "value": "$700M / $1.0B",
+            "note": "50% miss on 2027 guide"
+          },
+          {
+            "driver": "Gross margin 2028",
+            "value": "37-39%",
+            "note": "Utilization recovery slower; SiC cost drag persists"
+          },
+          {
+            "driver": "FY2028E EPS",
+            "value": "~$2.20",
+            "note": "$14B x 38% GM; OPEX $3.2B; tax 18%; 0.87B shares"
+          },
+          {
+            "driver": "SOTP fair value today (bear)",
+            "value": "$35-40",
+            "note": "RF&OC worth $12-14/share; P&D $4-5/share"
+          },
+          {
+            "driver": "12m Target (15x FY2027E)",
+            "value": "$33-38",
+            "note": "15x FY2027E $2.20; de-rates to IDM cyclical floor"
+          }
+        ]
+      }
+    },
+    "synthesis_paths": [
+      {
+        "label": "Base: Measured recovery, fairly priced",
+        "outcome_range": "$62-77",
+        "description": "Auto/industrial recovers at a measured pace; data center ramps to $1.5B by 2027 (below management guide but credible); gross margin on the 200bps/half path. Fair value today $62; 12m target $77. At current price, the base case provides no return. HOLD.",
+        "evidence_grade": "HIGH"
+      },
+      {
+        "label": "Bull: Three engines simultaneous",
+        "outcome_range": "$90-105",
+        "description": "AWS data center hits or exceeds $2B guide by 2027; 800V EV inflects faster; Sanan JV accelerates Chinese market wins; gross margin 45-47% by 2028. Stock could trade to $90-105 on a 25x FY2027E EPS re-rate. From $78, this is +15-35%; possible but requires execution on multiple fronts simultaneously.",
+        "evidence_grade": "EXTRAPOLATED"
+      },
+      {
+        "label": "Bear: Data center disappointment + multiple compression",
+        "outcome_range": "$33-42",
+        "description": "AWS qualification delays push data center to $700M in 2026; auto recovery stalls H2 2026; gross margin plateaus at 36-38%; multiple compresses from 32x to 15-17x NTM P/E on missed guidance. From $78, this is -45 to -55%. The combination of a multiple that prices perfection and a miss mechanism (data center) is the core bear.",
+        "evidence_grade": "MECHANISM"
+      }
+    ],
+    "catalysts_to_watch": [
+      {
+        "theme": "Data center ramp validation",
+        "horizon": "Q2 2026 earnings (July 23, 2026)",
+        "what_to_watch": "Data center revenue in Q2 2026 and Q3 guidance; AWS order velocity; whether STM discloses quarterly data center revenue cadence",
+        "why_it_matters": "This is the crux variable. $250M+ in Q2 = $1B annualized = ON TRACK. $180M or below = miss vs. guide, stock de-rates 15-20%.",
+        "bull_or_bear_tell": "BULL: Q2 data center $230M+, Q3 guide implies $260M+. BEAR: Q2 miss, no improvement in Q3 guide."
+      },
+      {
+        "theme": "Gross margin trajectory confirmation",
+        "horizon": "Q2-Q4 2026 earnings sequence",
+        "what_to_watch": "Sequential gross margin expansion per quarter; whether unused capacity charges decline from the Q2 100bps level; Q3 guide gross margin %",
+        "why_it_matters": "The entire EPS recovery thesis rests on margin expansion. If gross margin stalls at 35-36% through 2026, the $3.50 FY2027E EPS is unachievable and the 22x multiple is unsustainable.",
+        "bull_or_bear_tell": "BULL: Q3 2026 guide GM >36%. BEAR: Q3 guide flat-to-down vs. Q2 (34.8%)."
+      },
+      {
+        "theme": "SiC cycle and P&D trough confirmation",
+        "horizon": "Q2 2026 earnings + Yole SiC market update (H2 2026)",
+        "what_to_watch": "P&D segment YoY growth rate (currently -1.8% in Q1 2026); Sanan JV first revenue contribution; industry SiC utilization rates (Yole tracks quarterly)",
+        "why_it_matters": "P&D returning to YoY growth (even +5%) would confirm the SiC trough has passed. This unlocks the mid-cycle EBITDA estimate of $783M that underpins the $7.46/share P&D SOTP value.",
+        "bull_or_bear_tell": "BULL: P&D +5%+ YoY in Q2 2026. BEAR: P&D -5%+ YoY; implies SiC oversupply persisting beyond Yole's 2027-2028 expectation."
+      },
+      {
+        "theme": "AWS / hyperscaler partnership expansion",
+        "horizon": "6-18 months",
+        "what_to_watch": "Any second hyperscaler announcement (Google, Microsoft Azure); AWS Kuiper satellite relationship (Kuiper is Amazon's LEO constellation; dual exposure possible); STM silicon photonics capacity ramp at Agrate",
+        "why_it_matters": "A second hyperscaler win would validate that the AWS deal is not a single-customer dependency and that STM's silicon photonics is production-grade. Would add $5-8/share to the RF&OC valuation.",
+        "bull_or_bear_tell": "BULL: STM announces a second hyperscaler or Kuiper satellite contract. BEAR: AWS deal disclosed as smaller than multi-billion framing implies."
+      }
+    ],
+    "conclusion": "STM's transformation from a cyclical IDM to a multi-engine platform is real, documented, and argued; but the stock at $78 has already priced the best-case version of that story. Our SOTP fair value is $62; our 12-month target on the argued base is $77; the three-year bull is $95-100. HOLD: the risk/reward is neutral at current prices, the crux checkpoint is July 23 (Q2 earnings), and the right entry for a BUY is a drawback to $65-68 where the data center option is nearly free.",
+    "run_manifest": {
+      "hermes_run": true,
+      "pheme_run": true,
+      "theia_run": true,
+      "daedalus_run": true,
+      "boreas_incorporated": true,
+      "cassandra_incorporated": true,
+      "erinys_audit": "PASS. SOTP arithmetic verified: P&D $6.63B + EMP $14.35B + AM&S $15.90B + RF&OC $18.67B = $55.55B EV; less net debt $0.27B = $55.28B equity; / 0.889B shares = $62.18. RF&OC Gordon: (1-0.07/0.28)/(0.097-0.07) = 0.75/0.027 = 27.78x. T-invariance confirmed across T=1-4. Bias audit PASS (2 bull, 1 bear lean; no 3+ stacking).",
+      "forseti_verdict": "SHIP. CONTRACT gates met: crux named and argued in §1, resolved in §7; bias_audit PASS; SOTP with per-segment WACC; bull/bear as key debates (not laundry lists); 8-section story readable as a PM-in-10-minutes narrative."
+    },
+    "change_log": "Initial Atlas v3 run on STM. No prior report to diff.",
+    "data_gaps": [
+      "Social sentiment (Stocktwits HTTPError in bundle; social sentiment coded from analyst tape and news tone)",
+      "Exact conversion price for convertible bonds confirmed from news not primary filing",
+      "FY2026 full-year revenue guidance not provided by management (quarter-by-quarter only)",
+      "Apple iPhone 18 LiDAR win for STM unconfirmed; would be upside to AM&S if confirmed"
+    ],
+    "sources": [
+      "STM Q4/FY2025 press release (Yahoo Finance, Jan 2026)",
+      "STM Q1 2026 earnings call and press release (April 23, 2026)",
+      "STM data center guidance upgrade press release (June 2, 2026, SEC Form 6-K)",
+      "STM convertible bond announcement (June 16, 2026, GlobeNewsWire)",
+      "Yole Group SiC market report (December 2025)",
+      "Via Satellite LEO semiconductor market analysis (May 2026)",
+      "TechInsights Semiconductor Supplier Shares 2024",
+      "BofA Securities STM research note (June 10, 2026)",
+      "UBS STM research note (June 4, 2026)",
+      "Mizuho STM research note (May 19, 2026)",
+      "MarketsandMarkets Automotive Semiconductors Market 2025",
+      "IDTechEx SiC MOSFET report (April 2023)",
+      "S&P Global automotive semiconductor demand projections"
+    ]
+  }
+}

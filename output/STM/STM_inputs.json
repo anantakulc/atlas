@@ -1,0 +1,139 @@
+{
+  "_meta": {
+    "ticker": "STM",
+    "agent": "Daedalus",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "contract_version": "3.0",
+    "method": "SOTP",
+    "method_why": "STM has four economically distinct segments with different growth profiles, risk, and the appropriate multiple for each: P&D (cyclical SiC power) uses through-cycle normalized earnings; EMP (STM32 MCU ecosystem) is a moderate-growth annuity with defensible market position; AM&S (MEMS + analog) is a mature franchise; RF&OC (satellite + data center optical) is high-growth from a contracted base and warrants the exit-multiple method. A blended company multiple would blend a high-growth satellite segment with a cyclically-depressed power segment, which is exactly the distortion CONTRACT §2.1 prohibits."
+  },
+
+  "ticker": "STM",
+  "currency": "USD",
+  "current_price": 78.39,
+  "shares_outstanding_b": 0.889,
+  "net_debt_b": 0.27,
+
+  "dividend_per_share": 0.36,
+
+  "wacc_group": {
+    "note": "Group WACC is the value-weighted result of segment WACCs — never an input. Shown for reference only.",
+    "rf_pct": 4.5,
+    "erp_pct": 4.5,
+    "group_fundamental_beta": 1.25,
+    "implied_group_wacc_pct": 10.1
+  },
+
+  "primary_method": {
+    "name": "SOTP",
+    "reasoning": "Four segments with distinct growth, margin, risk, and correct valuation method. CONTRACT §2.1: decompose into real economic segments, value each on its own terms.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "P&D — Power and Discrete (SiC MOSFET, silicon power)",
+          "method": "Multiple",
+          "reasoning": "Cyclical segment near the trough. METHOD: normalized mid-cycle EBITDA × through-cycle EV/EBITDA multiple. The exit-multiple method would reward the trough-to-normalized climb which is already largely priced in by the market. The through-cycle multiple on mid-cycle earnings is the CONTRACT §2.2 'cyclical' prescription. Peers Infineon and Onsemi trade at 8-11x EV/EBITDA through the cycle; STM's P&D is lower-quality (more commodity SiC, less diversification) so apply 8.5x. WACC: β 1.35 (cyclical, high SiC concentration, Chinese competition exposure) → Ke 10.6% → WACC 10.1% (modest net cash in segment allocation).",
+          "multiple_inputs": {
+            "multiple_type": "EV/EBITDA",
+            "multiple_value": 8.5,
+            "fy_estimate": 0.78,
+            "multiple_rationale": "Mid-cycle EBITDA estimate for P&D: $2.7B mid-cycle revenue x 29% EBITDA margin (Infineon auto/power segment reference) = $783M. Through-cycle EV/EBITDA of 8.5x anchored to Infineon (9x) and Onsemi (8x) at similar cycle positions; 8.5x reflects STM's lower diversification and higher China SiC competition risk. Net debt allocation: zero (group level). WACC: 10.1%.",
+            "segment_wacc_pct": 10.1,
+            "segment_beta": 1.35,
+            "argument": "Mid-cycle P&D revenue ~$2.7B (below prior peak $3.1B in 2024; STM has lost SiC share). EBITDA margin 29% = $783M. 8.5x EV/EBITDA = $6.7B EV. This is a conservative-but-not-pessimistic mid-cycle multiple; Infineon's auto segment trades at 9-10x. The bear on SiC (2-3 years of overcapacity) is already reflected in the below-peak mid-cycle revenue assumption."
+          },
+          "segment_owner_fcf0_b": 0.28
+        },
+        {
+          "name": "EMP — Embedded Processing (STM32 + automotive MCU)",
+          "method": "Multiple",
+          "reasoning": "STM32 is a mature-but-growing franchise with strong ecosystem stickiness. The MCU market grows at ~5% CAGR per IHS Markit. STM32 grows faster due to industrial IoT and edge AI content growth. Method: NTM revenue × EV/sales multiple (correct for a semiconductor franchise where sales are the stable anchor; EV/EBITDA would amplify the trough distortion). EV/sales of 3.5x anchored to NXP's EMP-comparable segments and Microchip Technology (3-4x). WACC: β 1.15 (stable franchise, lower cyclicality than SiC) → Ke 9.7% → WACC 9.5%.",
+          "multiple_inputs": {
+            "multiple_type": "EV/SALES",
+            "multiple_value": 3.5,
+            "fy_estimate": 4.10,
+            "multiple_rationale": "NTM EMP revenue: $4.1B (FY2026 estimate; EMP grew +31% YoY in Q1 2026 and we project +15% for FY2026 on the industrial restocking cycle). EV/Sales 3.5x: comparable to NXP auto/MCU segments (3.0-4.0x) and Microchip Technology (3.5-4.0x). STM32 ecosystem stickiness and 800+ device variants justify the upper end of the range vs. commodity MCU makers. WACC: 9.5%.",
+            "segment_wacc_pct": 9.5,
+            "segment_beta": 1.15,
+            "argument": "EMP is the most defensible segment — STM32 ecosystem lock-in, automotive MCU design wins, and industrial IoT tailwind. $4.1B NTM revenue at 3.5x EV/Sales = $14.35B EV. Revenue growing at 13-15% through recovery; 3.5x is not aggressive for a franchise-quality MCU platform."
+          },
+          "segment_owner_fcf0_b": 0.85
+        },
+        {
+          "name": "AM&S — Analog, MEMS and Sensors",
+          "method": "Multiple",
+          "reasoning": "Mature franchise with modest growth (10% CAGR driven mainly by NXP MEMS acquisition contribution). Method: EV/sales multiple. Apple MEMS relationship is durable but not fast-growing. MEMS sensor leadership in inertial sensors is defensible. EV/Sales 3.0x: below TI analog (7-8x) reflecting STM's higher cyclicality and Apple concentration; above a pure commodity analog (2x). WACC: β 1.10 (lower than P&D; Apple relationship is relatively stable; NXP MEMS adds automotive diversification) → Ke 9.5% → WACC 9.3%.",
+          "multiple_inputs": {
+            "multiple_type": "EV/SALES",
+            "multiple_value": 3.0,
+            "fy_estimate": 5.30,
+            "multiple_rationale": "NTM AM&S revenue: $5.3B (FY2026 estimate; NXP MEMS contribution + Apple recovery). EV/Sales 3.0x: conservative relative to TI analog (7x) but TI has a far more diversified customer base. STM's Apple concentration (12.3% of company revenue) and cyclical personal electronics exposure warrant a discount. WACC: 9.3%.",
+            "segment_wacc_pct": 9.3,
+            "segment_beta": 1.10,
+            "argument": "AM&S: $5.3B NTM revenue at 3.0x EV/Sales = $15.9B EV. The NXP MEMS acquisition adds scale and margin accretion. Apple iPhone 18 LiDAR win (unconfirmed) would be upside. 3.0x is calibrated to STM's customer concentration and semi-cyclical nature."
+          },
+          "segment_owner_fcf0_b": 0.65
+        },
+        {
+          "name": "RF&OC — RF and Optical Communications (Satellite + Data Center)",
+          "method": "ExitMultiple",
+          "reasoning": "RF&OC is the fastest-growing segment — from $1.4B in FY2025 to an implied $4.4B by 2028. It is driven by two structurally contracted or near-contracted revenue streams: Starlink (~90% share, ongoing production orders) and the AWS multi-year agreement. The exit-multiple method is correct for a high-growth segment per CONTRACT §2.2: build NOPAT to a normalization year (2028) when growth matures, apply the Gordon steady-state multiple, discount at segment WACC. WACC: β 1.20 (higher than group average — new, unproven segment revenue from AWS; satellite has some SpaceX concentration risk; but partially offset by the contracted nature of Starlink) → Ke 9.9% → WACC 9.7%.",
+          "exit_inputs": {
+            "nopat_T_b": 0.88,
+            "nopat_path_b": [0.21, 0.37, 0.62, 0.88, 1.04],
+            "normalize_index": 3,
+            "years_to_T": 3,
+            "g_lt": 0.07,
+            "roic": 0.28,
+            "r": 0.097,
+            "interim_fcf_pv_b": 0.15,
+            "reasoning": "NOPAT at normalization year 2028 (T=3): RF&OC revenue $4.4B (base) x 20% NOPAT margin = $880M. NOPAT margin of 20%: satellite chips are high-margin (Starlink is captive, high-ASP RF ICs); data center silicon photonics is early and margin expansion is in progress. 20% NOPAT margin is below mature analog comps (25-30%) but appropriate for a ramp phase. G_lt = 7%: long-term growth of satellite + AI interconnect is higher than industrial semi but below current ramp; 7% captures the mature run-rate after the initial Kuiper + AI build-out (2028-2032). ROIC = 28%: capital-light relative to IDM peers (RF&OC uses existing fab capacity; no dedicated new fab required). r = 9.7%: WACC for this segment. Exit multiple (Gordon): (1-0.07/0.28)/(0.097-0.07) = (1-0.25)/0.027 = 0.75/0.027 = 27.8x. Discounted to today: $880M x 27.8x / (1.097)^3 = $24.4B / 1.32 = $18.5B. Plus interim FCF PV $150M = ~$18.7B EV for RF&OC.",
+            "exit_multiple_derivation": "Gordon: (1 - g/ROIC)/(r - g) = (1 - 0.07/0.28) / (0.097 - 0.07) = 0.75 / 0.027 = 27.8x. Sanity check: mature optical/satellite component peers (Coherent, MACOM) trade at 20-25x EBITDA; 27.8x EV/NOPAT is slightly above on a NOPAT basis, reflecting the satellite moat. If ROIC = 25% (more conservative), exit multiple = (1-0.07/0.25)/(0.097-0.07) = 0.72/0.027 = 26.7x — minimal sensitivity.",
+            "t_invariance_note": "If normalization year is 2029 (T=4) with NOPAT ~$1.04B: $1.04B x 27.8x / (1.097)^4 = $28.9B / 1.45 = $19.9B. If 2027 (T=2) with NOPAT ~$0.62B: $0.62B x 27.8x / (1.097)^2 = $17.2B / 1.20 = $14.4B. The T-invariance range $14.4B to $19.9B is wide — this reflects genuine uncertainty in the data center ramp path. Base case uses T=3 ($18.7B EV). This is moderate-to-wide T-sensitivity, consistent with MEDIUM conviction on this segment."
+          },
+          "segment_owner_fcf0_b": 0.0
+        }
+      ]
+    }
+  },
+
+  "valuation_anchor": {
+    "eps_ntm": 2.46,
+    "ev_metric_label": "NTM Revenue",
+    "ev_metric_value": 13.8
+  },
+
+  "target_12m": {
+    "basis": "P/E",
+    "defensible_multiple": 22.0,
+    "forward_metric_label": "FY2027E EPS (12m forward)",
+    "forward_metric_value": 3.50,
+    "multiple_rationale": "22x FY2027E EPS ($3.50): anchored to STM's historic through-cycle P/E of 15-18x (2019-2022) with a structural premium for the data center/satellite transformation. The premium is justified if the RF&OC segment generates a sustained 40%+ revenue CAGR through 2027 (already confirmed by the AWS deal and Starlink sole-source). 22x is the middle of where UBS (30x FY2027E) and the bears (15x) disagree. If the base case is tracking (data center $250M/Q by Q4 2026), 22x FY2027E = $77 — roughly price; if data center beats ($2B in 2027), 25x is defensible. The target takes the mid-point."
+  },
+
+  "earnings_bridge": {
+    "reported_eps_ntm": 2.46,
+    "gaap_to_nongaap_adj": 0.25,
+    "normalized_eps_ntm": 2.71,
+    "sbc_net_dilution_per_share": -0.15,
+    "owner_earnings_per_share": 2.56,
+    "fcf_per_share": 1.80,
+    "bridge_note": "NTM EPS $2.46 (street consensus, non-GAAP influenced) + $0.25 for excess D&A vs. capex at current low-utilization (capex normalizing down from FY2022's $3.6B). SBC net dilution haircut $0.15 (STM has modest SBC program; convertible bonds add minimal dilution at current price). Owner FCF/share $1.80 reflects capex is still elevated as 200mm SiC conversion continues — FCF suppressed in 2026-2027 but normalizes to $3.00+ by 2028 as the capex cycle completes."
+  },
+
+  "bias_audit": {
+    "rows": [
+      {"assumption": "P&D mid-cycle revenue ($2.7B)", "lean": "NEUTRAL — below 2024 peak ($3.1B) acknowledging SiC share loss; above 2025 trough ($1.7B). Centered."},
+      {"assumption": "EMP EV/Sales multiple (3.5x)", "lean": "SLIGHT BULL — 3.5x is at the high end of MCU peers. Justified by STM32 ecosystem stickiness. Not aggressive vs. NXP at 3.0-4.0x."},
+      {"assumption": "AM&S EV/Sales multiple (3.0x)", "lean": "NEUTRAL — below TI analog (7x) appropriately; consistent with STM's customer concentration."},
+      {"assumption": "RF&OC NOPAT margin at T (20%)", "lean": "NEUTRAL — 20% is below mature optical peers (25-30%) reflecting ramp phase; not sandbagged."},
+      {"assumption": "RF&OC g_lt (7%)", "lean": "SLIGHT BULL — 7% long-run growth is above industrial semi average (4-5%) but plausible for satellite + AI interconnect secular demand."},
+      {"assumption": "RF&OC WACC (9.7%)", "lean": "SLIGHT BEAR — 9.7% is slightly above the group average for a contracted revenue stream. Could argue 9.0-9.5% for the Starlink component."},
+      {"assumption": "P&D through-cycle multiple (8.5x EV/EBITDA)", "lean": "NEUTRAL — calibrated to Infineon/Onsemi comps; if SiC normalizes faster, 9-10x is reasonable."},
+      {"assumption": "Net debt post-convertible ($0.27B)", "lean": "NEUTRAL — uses announced structure; $1.5B new bonds minus $0.75B 2027 redemption plus $483M net cash = $0.27B net debt."}
+    ],
+    "same_direction_count_bull": 2,
+    "same_direction_count_bear": 1,
+    "verdict": "PASS — 2 slight bull leans vs. 1 slight bear lean. No 3+ same-direction stacking. The base case is not systematically biased. The EMP multiple (3.5x) and RF&OC g_lt (7%) both lean slightly bullish, which is offset by the RF&OC WACC being slightly conservative. Net bias: minimal. CONTRACT §1.3 passes."
+  }
+}

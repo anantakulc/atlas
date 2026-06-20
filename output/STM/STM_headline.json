@@ -1,0 +1,78 @@
+{
+  "valuation_headline": {
+    "current_price": 78.39,
+    "fair_value_today": 62.18,
+    "target_12m": 77.0,
+    "fair_value_12m": 67.42,
+    "band_low": null,
+    "band_high": null,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 62.18,
+      "multiple": 4.0,
+      "multiple_label": "EV/NTM Revenue",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 78.39,
+      "multiple": 5.1,
+      "multiple_label": "EV/NTM Revenue",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 67.42,
+      "basis": "#1 rolled forward at r=9.0% less dividend 0.36",
+      "convergence_return_pct": -13.5
+    },
+    "target_12m": {
+      "value": 77.0,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "P/E",
+        "defensible_multiple": 22.0,
+        "forward_metric_label": "FY2027E EPS (12m forward)",
+        "forward_metric_value": 3.5,
+        "multiple_rationale": "22x FY2027E EPS ($3.50): anchored to STM's historic through-cycle P/E of 15-18x (2019-2022) with a structural premium for the data center/satellite transformation. The premium is justified if the RF&OC segment generates a sustained 40%+ revenue CAGR through 2027 (already confirmed by the AWS deal and Starlink sole-source). 22x is the middle of where UBS (30x FY2027E) and the bears (15x) disagree. If the base case is tracking (data center $250M/Q by Q4 2026), 22x FY2027E = $77 — roughly price; if data center beats ($2B in 2027), 25x is defensible. The target takes the mid-point.",
+        "price": 77.0
+      },
+      "implied_12m_total_return_pct": -1.3
+    }
+  },
+  "street_reconstruction": {},
+  "street_target": {
+    "mean": null,
+    "mean_multiple": null,
+    "mean_implied_growth_pct": null,
+    "high": null,
+    "return_pct": null,
+    "n_analysts": null
+  },
+  "rating": {
+    "action": "HOLD",
+    "tone": "neutral",
+    "implied_12m_total_return_pct": -1.3,
+    "convergence_return_pct": -13.5,
+    "street_return_pct": null,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "LOW",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": null,
+    "caps_applied": [],
+    "basis": "action HOLD: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {},
+  "bridge_logic": "#1 fair value today 62.18 -> #3 fair value 12m 67.42 (x(1+0.090) - div 0.36); #4 target 12m 77.0 (defensible_multiple); implied return to #4 = -1.3%, to #3 = -13.5%, to street mean None = None%"
+}
