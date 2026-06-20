@@ -1,0 +1,414 @@
+{
+  "_meta": {
+    "ticker": "STM",
+    "agent": "Theia",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "contract_version": "3.0",
+    "sources_note": "All market-share and TAM figures are sourced from named third parties or company filings as cited. Single-source numbers are flagged."
+  },
+
+  "business_description": {
+    "summary": "STMicroelectronics is a vertically-integrated European semiconductor IDM (integrated device manufacturer) that designs, manufactures, and sells a broad portfolio of analog, power, sensor, and embedded-processing semiconductors. Its products are used in automotive electrification (EV power inverters via SiC MOSFETs, automotive MCUs), industrial automation and energy (motor drives, solar inverters, power management), consumer electronics (MEMS motion sensors in smartphones), satellite communication (RF and digital ICs for LEO constellations), and now AI data-center interconnect (silicon photonics / optical engines). Operationally headquartered in Geneva; listed NYSE (STM) and Euronext Paris.",
+    "hq": "Geneva (operational), Schiphol NL (registered)",
+    "employees_2025": 48000,
+    "manufacturing_model": "IDM - owns 300mm silicon fabs (Crolles, France; Agrate, Italy) and 150mm/200mm SiC fabs (Catania, Italy). Key structural cost advantage and disadvantage: fixed-fab cost base amplifies margin swings with volume."
+  },
+
+  "segments": {
+    "note": "STM changed segment reporting twice. FY2023 used ADG/AMS/MDG. FY2024 split to AM&S/P&D/MCU/D&RF. FY2025 merged to AM&S/P&D/EMP/RF&OC. Cross-period comparison requires bridging. Numbers below are as-reported by period.",
+
+    "fy2023_old_structure": {
+      "ADG": {
+        "name": "Automotive & Discrete Group",
+        "revenue_b": 7.78,
+        "revenue_pct_total": 45,
+        "yoy_growth_pct": 21.5,
+        "description": "Automotive MCUs, SiC MOSFETs for EV powertrains, gate drivers, IPMs. Tesla was key SiC customer. Automotive = ~75% of ADG, discrete power = ~25%.",
+        "note": "Revenue derived from 45% of $17.286B total. Growth rate stated in company filings.",
+        "source": "STM FY2023 press release, GlobeNewswire Jan 2024"
+      },
+      "MDG": {
+        "name": "Microcontrollers & Digital ICs Group",
+        "revenue_b": 5.53,
+        "revenue_pct_total": 32,
+        "yoy_growth_pct": -11.5,
+        "description": "STM32 general-purpose and automotive MCUs. STM32 is the flagship 32-bit MCU family for industrial IoT, consumer, and automotive. Digital ICs includes ADAS chips, infotainment, RF.",
+        "source": "STM FY2023 press release"
+      },
+      "AMS": {
+        "name": "Analog, MEMS & Sensors Group",
+        "revenue_b": 3.98,
+        "revenue_pct_total": 23,
+        "yoy_growth_pct": -25.8,
+        "description": "MEMS motion sensors (accelerometers, gyroscopes for Apple iPhone, wearables), analog ICs, power management. Apple was historically ~50% of MEMS revenue; by 2023 Apple was ~12-13% of total company revenue (down from 16.8% in 2022). Personal electronics = 52% of AMS segment revenues in 2023.",
+        "source": "STM FY2023 press release; BofA note cited in Investing.com"
+      }
+    },
+
+    "fy2024_new_structure": {
+      "note": "Structure changed Jan 1 2024. AM&S = old AMS analytics + some discrete products. P&D = power and discrete including SiC. MCU = general-purpose and automotive MCUs. D&RF = digital ICs, ADAS, RF.",
+      "total_revenue_b": 13.27,
+      "AM_S": {
+        "name": "Analog products, MEMS and Sensors",
+        "revenue_m": 4764,
+        "revenue_pct_total": 35.9,
+        "source": "STM Q4/FY2024 press release, Yahoo Finance Jan 2025"
+      },
+      "PD": {
+        "name": "Power and Discrete products (includes SiC)",
+        "revenue_m": 3126,
+        "revenue_pct_total": 23.6,
+        "sic_within_PD_m": 1100,
+        "sic_pct_of_PD": 35,
+        "note": "SiC revenue of $1.1B in FY2024 is company-confirmed per Q4 2024 earnings call. P&D also includes silicon MOSFETs, IGBTs, thyristors, and intelligent power switches.",
+        "source": "STM Q4 2024 earnings call; STM Q4/FY2024 press release"
+      },
+      "MCU": {
+        "name": "Microcontrollers (STM32 + automotive MCU)",
+        "revenue_m": 3466,
+        "revenue_pct_total": 26.1,
+        "source": "STM Q4/FY2024 press release"
+      },
+      "DRF": {
+        "name": "Digital ICs and RF Products (ADAS, infotainment, RF)",
+        "revenue_m": 1898,
+        "revenue_pct_total": 14.3,
+        "source": "STM Q4/FY2024 press release"
+      },
+      "gross_margin_pct": 39.3,
+      "operating_margin_pct": 12.6
+    },
+
+    "fy2025_current_structure": {
+      "note": "Structure changed again Jan 1 2025. EMP = former MCU + custom processing. RF&OC = former D&RF + optical comms. P&D (SiC) became its own standalone.",
+      "total_revenue_b": 11.80,
+      "AM_S": {
+        "name": "Analog products, MEMS and Sensors",
+        "revenue_m": 4675,
+        "yoy_pct": -1.9,
+        "note": "Relatively stable; includes NXP MEMS acquisition contribution from Q4 2025 (acquired Jul 2025, ~$300M annual revenue at acquisition). Personal electronics (Apple MEMS, wearables) cushioned industrial weakness.",
+        "source": "STM Q4/FY2025 press release, Yahoo Finance Jan 2026"
+      },
+      "PD": {
+        "name": "Power and Discrete products (includes SiC)",
+        "revenue_m": 1685,
+        "yoy_pct": -46.1,
+        "sic_within_PD_estimate_m": 650,
+        "sic_estimate_basis": "P&D declined 46% from $3,126M; SiC was ~35% of P&D in 2024 at $1.1B; applying similar decline gives ~$600-700M. Single-source; estimate flagged.",
+        "note": "CRITICAL: This is the most-damaged segment. P&D houses SiC -- the Tesla concentration unwinding, EV demand deceleration, and SiC industry overcapacity all hit simultaneously.",
+        "source": "STM Q4/FY2025 press release; SiC estimate Theia bottom-up from P&D segment data"
+      },
+      "EMP": {
+        "name": "Embedded Processing (STM32 MCU + automotive MCU + custom processing)",
+        "revenue_m": 3580,
+        "yoy_pct": 3.3,
+        "note": "Most resilient segment. STM32 held well despite industrial inventory correction; automotive MCU portion supported by EV platform design-wins.",
+        "source": "STM Q4/FY2025 press release"
+      },
+      "RFOC": {
+        "name": "RF and Optical Communications",
+        "revenue_m": 1436,
+        "yoy_pct": -24.3,
+        "note": "Declined in early 2025 due to RF cycle; HOWEVER now the fastest-growing segment driven by SpaceX Starlink sole-source position and AWS optical interconnect. LEO revenue ~$600M in FY2025, ramping to ~$1B in FY2026.",
+        "satellite_revenue_fy2025_estimate_m": 600,
+        "satellite_revenue_fy2026_guidance_m": 1000,
+        "source": "Via Satellite May 2026; Advanced Television May 2026; STM management commentary"
+      },
+      "gross_margin_pct": 33.9,
+      "operating_margin_pct": 1.5
+    },
+
+    "q1_2026_current": {
+      "total_revenue_m": 3095,
+      "yoy_pct": 23.0,
+      "AM_S_m": 1300,
+      "AM_S_yoy_pct": 23.2,
+      "PD_m": 400,
+      "PD_yoy_pct": -1.8,
+      "EMP_m": 1000,
+      "EMP_yoy_pct": 31.3,
+      "RFOC_m": 400,
+      "RFOC_yoy_pct": 33.9,
+      "gross_margin_pct": 33.8,
+      "q2_2026_guidance_revenue_m": 3450,
+      "q2_2026_guidance_gross_margin_pct": 34.8,
+      "note": "P&D flattening suggests SiC trough near. AM&S, EMP, RFOC all growing strongly YoY, indicating the non-SiC businesses are already in recovery.",
+      "source": "STM Q1 2026 press release, GlobeNewswire April 2026; segment dollar estimates from Tickeron/IndexBox reporting of Q1 2026 results"
+    }
+  },
+
+  "end_markets": {
+    "automotive": {
+      "revenue_share_2023_pct": 45,
+      "revenue_share_2024_pct_estimate": 40,
+      "products": "SiC MOSFETs (EV powertrain inverters), automotive MCUs (body control, ADAS), gate drivers, motor drivers, power management",
+      "key_customers_named": ["Tesla (SiC, was top customer 2018-2022)", "BYD (SiC, new wins 2024-2025)", "Geely (SiC wins 2024)", "Stellantis", "BMW", "Volkswagen"],
+      "tesla_note": "Tesla was the first major SiC adopter (Model 3 2018, 24-48 SiC MOSFETs per inverter). Tesla announced a 75% SiC content reduction in Next Gen (Cybertruck platform) in 2023 Investor Day, citing new packaging design that extracts 2x heat. This created a structural revenue headwind for STM. However, STM confirmed it retained Tesla as a customer and is not fully exited -- the volume reduction, not full loss.",
+      "tesla_source": "IDTechEx Apr 2023; eenews Europe; pgcconsultancy.com"
+    },
+    "industrial": {
+      "revenue_share_2023_pct_estimate": 25,
+      "products": "Motor drives, solar inverters, EV charging infrastructure, factory automation, power supplies",
+      "cycle_status": "Inventory correction ran 2023-2025; restocking began H2 2025; S&P Global projects 16.5% YoY growth in auto semi 2026 which draws industrial analog/MCU demand along"
+    },
+    "personal_electronics": {
+      "revenue_share_2023_pct_estimate": 18,
+      "products": "MEMS accelerometers / gyroscopes for iPhone, wearables, AR/VR headsets; power management ICs",
+      "apple_concentration_pct_2023": 12.3,
+      "apple_note": "Apple LiDAR sensor win for iPhone 18 discussed (Morgan Stanley note 2025); would be incremental if confirmed. Apple accounted for 12.3% of STM total revenue in FY2023, down from 16.8% in FY2022.",
+      "source": "BofA note cited Investing.com; CNBC 2021 UBS analysis updated"
+    },
+    "communications_and_data_center": {
+      "revenue_share_2025_pct_estimate": 12,
+      "products": "RF ICs for LEO satellite, silicon photonics / optical engines for AI data centers (AWS), microcontrollers for network infrastructure",
+      "starlink_position": "Sole-source supplier; shipped 5+ billion ICs to Starlink to date; management targeting cumulative $3B+ space revenue 2026-2028",
+      "aws_deal": "Multi-billion USD multi-year commercial engagement announced Feb 2026; covers high-bandwidth connectivity, mixed-signal processing, MCU for infrastructure, power ICs for hyperscale",
+      "data_center_revenue_2026_target_m": 1000,
+      "data_center_revenue_2027_target_m": 2000,
+      "source": "Via Satellite May 2026; STM newsroom June 2026; STM Q1 2026 press release"
+    }
+  },
+
+  "industry_structure": {
+    "automotive_semi_market": {
+      "tam_2024_usd_b": 52,
+      "tam_2025_usd_b": 57,
+      "tam_2030_usd_b_range": "79-132",
+      "tam_cagr_2025_2030_pct": 8.4,
+      "note": "Range reflects Yole ($132B by end of decade for addressable market) vs. MarketsandMarkets/GM Insights ($79-117B by 2030 for device market). Yole likely wider scope. MarketsandMarkets more comparable to device revenue.",
+      "sources": [
+        {"source": "MarketsandMarkets auto semi report 2025", "value_b": 79.7, "year": 2025, "tier": "research_firm"},
+        {"source": "Yole Group, cited by Edge AI Vision Aug 2025", "value_b": 132, "year": "end-of-decade", "tier": "research_firm"},
+        {"source": "GM Insights", "cagr_pct": 8.4, "tier": "research_firm"}
+      ],
+      "stm_position": {
+        "market_share_2023_pct": 10,
+        "market_share_2024_pct": 9,
+        "rank": 3,
+        "revenue_2024_estimate_b": 4.7,
+        "note": "STM fell from #3 with 10% share to #3 with 9% share in 2024 as total revenue declined while Infineon grew. Infineon #1 at 13.5%, NXP #2 at 10%.",
+        "source": "TechInsights Semiconductor Supplier Shares 2024; Yole Group Aug 2025"
+      },
+      "competitors": [
+        {
+          "name": "Infineon Technologies",
+          "rank": 1,
+          "auto_revenue_2024_b": 8.0,
+          "auto_share_2024_pct": 13.5,
+          "trajectory": "gaining_share",
+          "strengths": "Si/SiC power modules, SiC MOSFET (AURIX MCU), in-vehicle networking; completed Marvell auto Ethernet acquisition Aug 2025",
+          "sic_position": "Top 3 in SiC devices; entered 200mm SiC production 2025"
+        },
+        {
+          "name": "NXP Semiconductors",
+          "rank": 2,
+          "auto_revenue_2024_b": 6.0,
+          "auto_share_2024_pct": 10,
+          "trajectory": "stable",
+          "strengths": "In-vehicle networking MCUs, S32 compute platform, radar; acquired TTTech Auto safety middleware June 2025"
+        },
+        {
+          "name": "STMicroelectronics",
+          "rank": 3,
+          "auto_revenue_2024_b": 4.7,
+          "auto_share_2024_pct": 9,
+          "trajectory": "losing_share_near_term",
+          "strengths": "SiC discretes, STM32 auto MCU, MEMS",
+          "weakness": "Tesla SiC volume reduction; European OEM weakness"
+        },
+        {
+          "name": "Renesas Electronics",
+          "rank": 4,
+          "trajectory": "stable",
+          "strengths": "Body-control and ADAS MCUs, Japanese OEM relationships"
+        },
+        {
+          "name": "Texas Instruments",
+          "rank": 5,
+          "trajectory": "stable",
+          "strengths": "Analog, motor drives, broad portfolio"
+        }
+      ]
+    },
+
+    "sic_power_semiconductor_market": {
+      "description": "SiC MOSFETs and diodes are used in EV powertrain inverters, on-board chargers, and industrial drives. 800V EV architectures require SiC (can't use silicon). Market collapsed 2024-2025 on EV slowdown and inventory glut, but long-term demand is structural.",
+      "market_size_2024_usd_b": 3.2,
+      "market_size_2025_usd_b_estimate": 3.0,
+      "market_size_2030_forecast_usd_b": {
+        "yole": 10.3,
+        "marketsandmarkets": 12.03,
+        "theia_base": 9.5,
+        "note": "Yole and MnM differ on scope. Using Yole's $10.3B as primary reference for device-level SiC market; MarketsandMarkets includes substrates/epitaxy."
+      },
+      "overcapacity_status": "CRITICAL FINDING: Yole Dec 2025 report states SiC overcapacity downturn persists until 2027-2028. Utilization rates fell to ~50% upstream, ~70% device lines in 2025. Recovery requires ~2-3 years of demand absorption. This is the single most important structural constraint on STM's P&D segment margin normalization.",
+      "overcapacity_source": "Yole Group Power SiC report, Dec 2025, cited Semiconductor Today and Signal Integrity Journal",
+
+      "competitors_sic": [
+        {
+          "name": "STMicroelectronics",
+          "share_2022_pct": 36.5,
+          "share_2023_pct": 32.6,
+          "share_2024_pct_estimate": 29,
+          "revenue_2023_m": 1140,
+          "revenue_2024_m": 1100,
+          "revenue_2025_estimate_m": 650,
+          "trajectory": "losing_share",
+          "note": "STM held #1 SiC device share through 2024 but has been losing share as Onsemi, Infineon, and Chinese suppliers scale. Tesla SiC volume reduction was a specific headwind. 8-inch (200mm) SiC wafer transition underway at Catania fab.",
+          "share_sources": [
+            {"source": "TrendForce Jun 2024", "share_2023_pct": 32.6, "tier": "research_firm"},
+            {"source": "Nanalyze Nov 2025 citing Yole data", "share_2024_pct": 29, "tier": "research_firm"}
+          ]
+        },
+        {
+          "name": "Onsemi",
+          "share_2022_pct": 11.6,
+          "share_2023_pct": 22,
+          "share_2024_pct_estimate": 22,
+          "trajectory": "gaining_share_aggressively",
+          "note": "Fastest share gainer 2022-2024 via EliteSiC platform and captive substrate supply (Wolfspeed wafer agreement). Gained from 4th place (2022) to 2nd place (2023-2024). However, also hit by EV slowdown in 2025.",
+          "source": "TrendForce; Yole; Nanalyze Nov 2025"
+        },
+        {
+          "name": "Infineon Technologies",
+          "share_2022_pct": 17.9,
+          "share_2024_pct_estimate": 15,
+          "trajectory": "gaining_share",
+          "note": "Strong in 200mm SiC via Villach fab expansion; benefits from European OEM relationships. Entered 200mm production 2025."
+        },
+        {
+          "name": "Wolfspeed",
+          "share_2022_pct": 16.3,
+          "share_2024_pct_estimate": 10,
+          "trajectory": "losing_share",
+          "note": "Wafer/substrate leader but device-level share eroding. Financial distress from heavy capex; filed Chapter 11 2025.",
+          "source": "Semiconductor Today Dec 2025"
+        },
+        {
+          "name": "ROHM",
+          "share_2022_pct": 8.1,
+          "share_2024_pct_estimate": 8,
+          "trajectory": "stable"
+        },
+        {
+          "name": "Chinese suppliers (BYD Semiconductor, SICC, San'an, TankeBlue)",
+          "trajectory": "gaining_rapidly",
+          "note": "China SiC substrate prices fell 30% in 2024 vs. 5% discount previously. Chinese players could take 20-30% of domestic Chinese EV SiC demand by 2027. Major threat to STM's China EV customer base (BYD now dual-sources). BYD Semiconductor targeting 20k wpm in 5 years.",
+          "source": "AllPCB.com; PowerElectronicsNews.com; digitimes.com"
+        }
+      ],
+
+      "sic_share_dynamic": "STM is LOSING SiC device share and this trend is likely structural. From ~37% in 2022 to ~29% in 2024. Three forces: (1) Onsemi's aggressive scaling and captive substrate; (2) Chinese domestic suppliers targeting Chinese EV market with 30% price discount; (3) Tesla's 75% SiC content reduction removing STM's largest historical anchor customer volume. HOWEVER: STM is pursuing counter-measures: Sanan JV for China market access, 200mm SiC conversion (cost reduction), new design wins with BYD and Geely. The net share trajectory is likely stabilization at ~20-25% by 2028 rather than continued free-fall."
+    },
+
+    "mcu_market": {
+      "total_mcu_market_size_2024_usd_b": 19.1,
+      "cagr_2024_2032_pct": 5.2,
+      "general_purpose_32bit_mcu_2024_usd_b": 8.9,
+      "stm32_position": {
+        "description": "STM32 is the dominant 32-bit ARM Cortex-M MCU family for industrial IoT, consumer, and embedded applications. It is arguably the most widely-deployed general-purpose MCU platform globally by design-in count.",
+        "estimated_share_pct": 25,
+        "note": "No single authoritative market share number found; multiple sources cite STM32 alongside Renesas, NXP, Microchip as top-5 players. STM32's breadth (800+ device variants, extensive ecosystem, STM32CubeIDE) gives it stickiness via ecosystem lock-in.",
+        "tier": "theia_bottom_up"
+      },
+      "competitors_mcu": [
+        {"name": "Renesas Electronics", "note": "Strong in automotive MCU via RH850/R-Car; announced strategic collaboration with STM on secure MCU ecosystem"},
+        {"name": "NXP Semiconductors", "note": "S32K for automotive, LPC/i.MX for industrial; strong in vehicle networking"},
+        {"name": "Microchip Technology", "note": "PIC/AVR/SAM32 for industrial; breadth play similar to STM"},
+        {"name": "Texas Instruments", "note": "MSP430/Hercules for ultra-low-power and safety-critical"},
+        {"name": "Infineon", "note": "PSoC/TRAVEO for automotive; AURIX for safety-critical"}
+      ],
+      "mcu_cycle_status": "MCU segment held up better than SiC in the downcycle. EMP revenue only -3.3% FY2025 vs. -46% for P&D. Recovery is underway: EMP grew +31.3% YoY in Q1 2026."
+    },
+
+    "mems_market": {
+      "description": "STM is the global leader in MEMS motion sensors (accelerometers, gyroscopes) for consumer electronics, having supplied Apple iPhone since ~2009. The NXP MEMS acquisition (closed 2025, $950M) added automotive MEMS.",
+      "stm_position": "World's largest MEMS sensor maker by volume. Leadership in inertial MEMS.",
+      "key_risk": "Apple is the largest single MEMS customer. Apple iPhone 18 LiDAR win (reported) would be material upside; any loss of iPhone MEMS socket would be material downside.",
+      "nxp_mems_acquisition": {
+        "price_usd_m": 950,
+        "nxp_mems_revenue_2024_m": 300,
+        "margin_accretion": "Gross and operating margins described as 'substantially accretive' to STM",
+        "source": "STM press release Jul 2025; Power Electronics News"
+      }
+    }
+  },
+
+  "five_forces": {
+    "supplier_power": "MODERATE. SiC substrates were tight (Wolfspeed, SICC supply chain) but Wolfspeed's Chapter 11 and Chinese substrate price collapse (-30%) reduce supplier power. STM owns Catania SiC fab so is partially self-sufficient.",
+    "buyer_power": "HIGH IN SIC. Large EV OEMs (Tesla, BYD) have negotiating leverage and are investing in in-house SiC capability. Tesla demonstrated this with its 75% SiC reduction. China OEMs dual-source with domestic Chinese chips.",
+    "competitive_intensity": "HIGH AND RISING. Five large IDMs plus rising Chinese entrants. Overcapacity in SiC (Yole: utilization ~50-70%). Price competition in MCUs from Chinese suppliers (GigaDevice, Geehy). STM has premium-brand moat in STM32 ecosystem but faces erosion at the commodity end.",
+    "threat_of_substitution": "LOW-TO-MODERATE. SiC cannot be substituted in 800V EV inverters by silicon (thermal/efficiency constraint). STM32 has some substitution risk from Chinese MCU clones in cost-sensitive applications. MEMS has little substitution threat due to miniaturization and cost advantages.",
+    "threat_of_entry": "MODERATE-HIGH FROM CHINA. Mainland Chinese SiC players (BYD Semiconductor, SICC) and MCU players (GigaDevice, Geehy) are competing at 10-30% price discounts. Non-Chinese entry into IDM model at scale is effectively blocked by capex requirements (~$5-10B for a full fab)."
+  },
+
+  "moat": {
+    "summary": "NARROW-TO-MEDIUM moat. Sources: (1) STM32 ecosystem lock-in -- switching costs from toolchain, libraries, and 800+ device variants create real stickiness for industrial developers; (2) MEMS technology leadership in inertial sensors -- Apple partnership requires years of co-development and custom qualification; (3) Starlink sole-source position -- space-qualified supply chains have extreme qualification barriers. Against these: (4) No durable moat in SiC -- technology is commoditizing, Chinese competition is intensifying, and largest customer (Tesla) reduced dependency. (5) Automotive MCU is competitive; Infineon and Renesas have comparable depth.",
+    "moat_rating": "NARROW",
+    "strongest_source": "STM32 ecosystem (EMP segment) + MEMS leadership (AM&S segment)",
+    "most_contested": "SiC power devices (P&D segment)"
+  },
+
+  "revenue_drivers": [
+    "EV powertrain electrification -- SiC MOSFET content per vehicle rises with 800V adoption; total addressable SiC device market grows from ~$3B (2024) to ~$10B (2030) per Yole",
+    "AI data center infrastructure -- optical interconnect for hyperscalers (AWS multi-year deal); STM targeting $1B DC revenue 2026, $2B+ 2027",
+    "LEO satellite constellation build-out -- Starlink sole-source; Amazon Kuiper ramping; STM targets $3B+ cumulative space revenue 2026-2028",
+    "Automotive MCU content growth -- ADAS, zone ECU, EV battery management add MCU content per vehicle",
+    "Industrial automation restocking -- STM32 customers restocking after 18-month inventory correction; industrial semi cycle recovery expected 2026",
+    "Apple MEMS + new iPhone content -- existing MEMS socket plus potential LiDAR iPhone 18 win"
+  ],
+
+  "npat_margin_drivers": [
+    "Fab utilization recovery -- from 50-70% utilization trough, each point of revenue growth drops through at ~60-70% incremental margin due to fixed-cost leverage",
+    "200mm SiC wafer transition at Catania -- lower cost per die vs. 150mm; target $300-360M annual cost savings by 2027",
+    "SiC mix shift to higher-margin modules from commoditizing discretes",
+    "AWS/satellite revenue is higher-margin product mix vs. commodity automotive semi",
+    "Unused capacity charges rolling off -- Q2 2026 includes ~100bp unused capacity charge; expected to fall through 2027 as utilization recovers",
+    "Gross margin normalization target: 33.9% FY2025 -> 34.8% Q2 2026 guidance -> 44-46% at 2027-2028 normalization model"
+  ],
+
+  "peer_valuations": {
+    "note": "Peer multiples at time of freeze (June 2026). STM current price $78.39; significant YTD rally (+187%). STM trading at premium to prior trough as market anticipates recovery.",
+    "stm_current": {
+      "price": 78.39,
+      "ev_sales_ttm": 5.24,
+      "pe_ntm": 31.9,
+      "market_cap_b": 69.7
+    },
+    "peers_context": [
+      {
+        "name": "Infineon Technologies",
+        "note": "Closest comp in automotive/industrial semi. Trades at ~3-4x EV/Sales on automotive cycle; less exposed to SiC trough than STM"
+      },
+      {
+        "name": "Onsemi",
+        "note": "Direct SiC competitor; also in downcycle; trades at similar cycle multiples"
+      },
+      {
+        "name": "NXP Semiconductors",
+        "note": "Automotive MCU + analog; more stable mix; historically 4-5x EV/Sales at trough"
+      },
+      {
+        "name": "Texas Instruments",
+        "note": "Analog and embedded, diversified; premium valuation 7-8x EV/Sales reflects franchise quality"
+      }
+    ]
+  },
+
+  "sources": [
+    {"url": "https://finance.yahoo.com/news/stmicroelectronics-reports-q4-fy-2025-060000880.html", "description": "STM Q4/FY2025 press release - segment revenues"},
+    {"url": "https://finance.yahoo.com/news/stmicroelectronics-reports-q4-fy-2024-060000367.html", "description": "STM Q4/FY2024 press release - FY2024 segment revenues"},
+    {"url": "https://www.globenewswire.com/news-release/2024/11/20/2984135/0/en/STMicroelectronics-Outlines-2027-2028-Financial-Model-and-Path-Towards-2030-Ambition.html", "description": "STM 2027-2028 financial model - revenue and margin targets"},
+    {"url": "https://www.semiconductor-today.com/news_items/2025/dec/yole-181225.shtml", "description": "Yole Group Power SiC Dec 2025 - overcapacity, market size, utilization rates"},
+    {"url": "https://www.semiconductor-today.com/news_items/2024/jun/trendforce-200624.shtml", "description": "TrendForce Jun 2024 - STM 32.6% SiC market share"},
+    {"url": "https://www.nanalyze.com/2025/11/is-infineon-still-the-best-sic-stock/", "description": "Nanalyze Nov 2025 citing Yole - STM 29% SiC share 2024"},
+    {"url": "https://www.marketsandmarkets.com/PressReleases/silicon-carbide.asp", "description": "MarketsandMarkets - SiC market $12.03B by 2030"},
+    {"url": "https://www.yolegroup.com/press-release/from-ev-to-ar-vr-sics-expanding-reach-powers-new-tech-waves/", "description": "Yole - SiC device market $10.3B by 2030, 20% CAGR"},
+    {"url": "https://www.satellitetoday.com/technology/2026/05/04/stmicroelectronics-expects-its-space-business-to-reach-more-than-3b-over-three-years/", "description": "Via Satellite May 2026 - STM space business $3B+ target"},
+    {"url": "https://newsroom.st.com/media-center/press-item.html/c3396.html", "description": "STM newsroom Jun 2026 - data center revenue raised to $1B 2026"},
+    {"url": "https://www.pgcconsultancy.com/post/examining-tesla-s-75-sic-reduction", "description": "PGC Consultancy - Tesla 75% SiC reduction analysis"},
+    {"url": "https://www.idtechex.com/en/research-article/ev-sic-adoption-advances-as-tesla-announces-75-reduction/29602", "description": "IDTechEx - Tesla SiC reduction announcement context"},
+    {"url": "https://www.yolegroup.com/press-release/infineon-technologies-nxp-and-stmicroelectronics-face-rising-competition-in-132-billion-automotive-semiconductor-race/", "description": "Yole Aug 2025 - automotive semi $132B, market share rankings"},
+    {"url": "https://www.digitimes.com/news/a20260317PD229/sdv-automotive-supply-chain-inventory-growth.html", "description": "Digitimes Mar 2026 - automotive chipmakers exiting inventory reset"}
+  ]
+}

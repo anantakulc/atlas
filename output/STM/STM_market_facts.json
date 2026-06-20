@@ -1,0 +1,368 @@
+{
+  "_meta": {
+    "ticker": "STM",
+    "agent": "Pheme",
+    "frozen_at": "2026-06-20",
+    "price_as_of": "2026-06-20",
+    "price": 78.39,
+    "sources": [
+      "STM Q1 2026 Earnings Call (April 23, 2026) — Yahoo Finance transcript via finance.yahoo.com",
+      "STM data center guidance upgrade press release, June 2, 2026 — SEC Form 6-K",
+      "STM convertible bond announcement, June 16, 2026 — GlobeNewsWire / Manila Times",
+      "Analyst actions: Investing.com, Yahoo Finance, TipRanks, MarketBeat, GuruFocus, StreetInsider"
+    ],
+    "gaps": [
+      "FY2026 full-year revenue guidance: not provided by management (quarter-by-quarter only)",
+      "Exact consensus revenue NTM from a live provider: derived from Q-by-Q ramp below",
+      "Social sentiment: Stocktwits HTTPError in bundle; sentiment coded from analyst tape and news tone",
+      "Exact conversion price for convertible bonds in USD per share confirmed from search results, not from primary filing fetch"
+    ]
+  },
+
+  "latest_results": {
+    "period": "Q1 2026 (January–March 2026)",
+    "earnings_date": "April 23, 2026",
+    "revenue_b": 3.095,
+    "revenue_yoy_pct": 23.0,
+    "revenue_vs_guide": "Beat: exceeded midpoint of company guidance",
+    "revenue_vs_consensus": "Beat: consensus was approximately $3.05B",
+    "gross_margin_gaap_pct": 33.8,
+    "gross_margin_non_gaap_pct": 34.1,
+    "gross_margin_note": "Non-GAAP excludes $40M NXP MEMS acquisition impact (~30bps dilution)",
+    "eps_gaap": 0.04,
+    "eps_non_gaap": 0.30,
+    "eps_vs_consensus": "GAAP EPS beat (consensus ~$0.13 GAAP); non-GAAP beat; some sources characterize as 'miss' vs $0.18-0.19 non-GAAP street, likely due to analyst model differences",
+    "free_cash_flow_b": -0.72,
+    "fcf_note": "FCF suppressed by $895M cash outlay for NXP MEMS acquisition in Q1 2026; underlying capex-FCF ex-acquisition less negative",
+    "segment_performance": {
+      "automotive": {"sequential_pct": -10, "yoy_pct": 15},
+      "industrial": {"sequential_pct": -1, "yoy_pct": 26},
+      "personal_electronics": {"sequential_pct": -14, "yoy_pct": 21},
+      "comms_computer": {"sequential_pct": 3, "yoy_pct": 41}
+    },
+    "strategic_acquisitions": "Completed acquisition of NXP Semiconductors' MEMS sensor business in Q1 2026, adding ~$40M quarterly revenue run-rate and strengthening automotive sensor capabilities",
+    "aws_partnership": "Announced strategic multi-year, multi-billion-dollar engagement with Amazon Web Services on February 9, 2026; STM designated strategic supplier for high-bandwidth connectivity, mixed-signal processing, MCUs for infrastructure management, and power ICs for hyperscale energy efficiency",
+    "guidance_q2": {
+      "revenue_midpoint_b": 3.45,
+      "revenue_range": "±$350M (i.e. $3.10B–$3.80B)",
+      "sequential_growth_pct": 11.6,
+      "yoy_growth_pct": 24.9,
+      "gross_margin_gaap_pct": 34.8,
+      "gross_margin_range": "±200bps",
+      "unused_capacity_charge_bps": 100,
+      "note": "Guidance excludes potential changes from global trade tariff conditions"
+    },
+    "guidance_fy": {
+      "provided": false,
+      "note": "Management has NOT provided full-year 2026 revenue or gross margin guidance. Data center sub-segment only.",
+      "data_center_2026": "approximately $1 billion (raised June 2, 2026 from prior 'nicely above $500M')",
+      "data_center_2027": "approximately $2 billion (raised from prior 'well above $1B')",
+      "data_center_guidance_source": "Separate press release June 2, 2026 — SEC Form 6-K"
+    },
+    "key_messages": [
+      "Bookings remain strong; 85–90% of Q1 bookings are billable in the quarter, indicating a loaded 2026 pipeline",
+      "CEO Jean-Marc Chery stated 'unconstrained demand for AI-related products is well above current projections' and capacity is being ramped accordingly",
+      "Automotive returned to YoY growth (+15%) after a deep down-cycle; industrial bookings improving (+26% YoY) with normalized distributor inventories",
+      "Data center segment emerging as a new growth engine alongside the core auto/industrial recovery",
+      "SpaceX/Starlink supply relationship: STM holds near-90% market share in LEO satellite chips; satellite revenues projected >$3B cumulatively 2026–2028",
+      "Recovery narrative: the cycle trough appears to have been Q2–Q3 2025 (revenue $2.77B–$3.19B); Q4 2025 ($3.33B) and Q1 2026 ($3.10B, with NXP contribution) confirm the upturn"
+    ],
+    "stock_reaction": "Stock surged on Q1 earnings, hit new 52-week high of ~$65 in late April/early May 2026; then again to ~$76 in early June on the data center guidance raise and AWS deal; now trading at $78.39 (as of June 20, 2026)"
+  },
+
+  "estimate_verification": {
+    "ntm_eps_bundle": 2.45794,
+    "ntm_eps_consensus_bundle": 2.49461,
+    "ntm_eps_used": 2.46,
+    "ntm_pe_bundle": 31.89,
+    "arithmetic_check": {
+      "price_div_ntm_eps": 78.39,
+      "ntm_eps": 2.46,
+      "implied_pe": 31.9,
+      "matches_bundle_pe": true,
+      "check_note": "$78.39 / $2.46 = 31.86x, rounds to 31.9x — arithmetic is clean"
+    },
+    "artifact_assessment": {
+      "trailing_pe_ttm": 489.9,
+      "trailing_pe_distortion": "FY2025 GAAP net income was $166M ($0.18 EPS) on $11.8B revenue due to deep cycle trough; TTM P/E is meaningless as a valuation metric",
+      "ntm_eps_quality": "NTM EPS of $2.46 is a FORWARD, non-GAAP-influenced street consensus that embeds the cyclical recovery. It is NOT contaminated by a one-off; it is the genuine street estimate for the NTM period (roughly Q3 2026 through Q2 2027)",
+      "non_gaap_vs_gaap_gap": "Non-GAAP EPS materially higher than GAAP in a trough year (FY2025 non-GAAP likely ~$0.80-1.00 vs $0.18 GAAP due to restructuring, unused capacity charges). NTM EPS consensus likely blends GAAP and non-GAAP depending on source; flag for Daedalus.",
+      "verdict": "NTM P/E of 31.9x and NTM EPS of $2.46 are internally consistent. The figure is a forward estimate reflecting recovery to mid-cycle, not a trailing artifact. CLEAN for valuation use."
+    },
+    "ntm_revenue_estimate": {
+      "method": "Bottom-up from reported and guided quarters",
+      "q2_2026_guide_b": 3.45,
+      "q3_2026_estimate_b": "~3.6–3.8 (seasonal + data center ramp; management indicated 'usual H2 seasonality')",
+      "q4_2026_estimate_b": "~3.7–3.9",
+      "q1_2027_estimate_b": "~3.8–4.0 (data center $2B run-rate commencing)",
+      "ntm_revenue_implied_b": "~14.3–15.2, central ~14.7B",
+      "street_fy2026_consensus_b": 13.3,
+      "note": "FY2026 consensus of $13.3B is a FULL-YEAR estimate and is consistent with the bottom-up quarterly build (H1 $6.55B + H2 ~$7.3-7.6B = ~$13.85–14.15B). The NTM window from June 2026 spans ~Q3 2026 through Q2 2027 and implies ~$14.5B, slightly above the FY2026 consensus because it captures early 2027 data center ramp."
+    },
+    "net_margin_required": {
+      "ntm_eps": 2.46,
+      "shares_b": 0.889,
+      "implied_ntm_net_income_b": 2.19,
+      "ntm_revenue_assumption_b": 14.5,
+      "implied_net_margin_pct": 15.1,
+      "context": "FY2025 net margin was 1.4% ($166M on $11.8B). FY2024 net margin was 11.7% ($1.56B on $13.3B). FY2023 was 24.4% ($4.2B on $17.3B at peak cycle. The street's $2.46 NTM EPS implies ~15% net margin on ~$14.5B revenue — this is a mid-cycle, not peak, recovery assumption. Achievable if gross margin recovers to 37-38% with operating leverage on fixed cost base. BofA models $1.57 EPS in FY2026 and $3.53 in FY2027, suggesting the NTM $2.46 spans a blend of late 2026 ($1.57 EPS pace) and early 2027 ($3.53 EPS pace). The estimate is credible but requires margin expansion execution."
+    }
+  },
+
+  "reverse_multiple": {
+    "price": 78.39,
+    "ntm_eps": 2.46,
+    "implied_pe": 31.9,
+    "wacc_assumption": {
+      "rf": 4.5,
+      "erp": 4.5,
+      "fundamental_beta": 1.25,
+      "note": "Regression beta from bundle is 1.565 — rally-inflated from $21 to $78. Fundamental beta for an industrial semiconductor company (auto/industrial exposure, European fab-heavy, cyclical) more likely 1.1–1.4. Using 1.25 as central estimate.",
+      "implied_cost_of_equity_pct": 10.1,
+      "wacc_assumed_pct": 9.5,
+      "wacc_note": "Net cash position ($483M) lowers WACC slightly below Ke; using 9.5% as practical WACC"
+    },
+    "gordon_growth_decomposition": {
+      "equation": "P/E = (1 - g/ROIC) / (r - g)",
+      "r_pct": 9.5,
+      "scenario_matrix": [
+        {"g_pct": 6.0, "roic_pct": 18, "implied_pe": 11.4, "note": "Trough — does not explain current price"},
+        {"g_pct": 6.0, "roic_pct": 25, "implied_pe": 16.0, "note": "Below current"},
+        {"g_pct": 7.0, "roic_pct": 20, "implied_pe": 18.6, "note": "Still below"},
+        {"g_pct": 7.5, "roic_pct": 22, "implied_pe": 24.5, "note": "Approaching"},
+        {"g_pct": 8.0, "roic_pct": 25, "implied_pe": 33.3, "note": "Near current multiple"},
+        {"g_pct": 8.5, "roic_pct": 22, "implied_pe": 63.0, "note": "Overshoots"}
+      ],
+      "implied_g_pct": 8.0,
+      "implied_roic_pct": 25,
+      "implied_r_pct": 9.5,
+      "interpretation": "A steady-state Gordon model at 31.9x NTM P/E requires ~8% terminal growth and ~25% ROIC at a 9.5% discount rate. For an industrial semiconductor company, 8% terminal growth is aggressive (implies outpacing global industrial GDP indefinitely) and 25% ROIC is above STM's historical mid-cycle ROIC of ~18-22% (2022–2023 peak). The Gordon model alone cannot reconcile 31.9x.",
+      "better_framing": "The market is NOT paying 32x for a steady-state Gordon multiple. It is paying for a RECOVERY RAMP. The correct read: at BofA's 2028E of $4.63 EPS, a through-cycle multiple of 17x (reasonable for an industrial semi) = $78.71 — which matches the current price. The price embeds: (1) full recovery to 2028 earnings power, (2) a through-cycle multiple that requires 25% ROIC and persistent competitive position."
+    },
+    "recovery_ramp_implied": {
+      "bofa_2026e_eps": 1.57,
+      "bofa_2027e_eps": 3.53,
+      "bofa_2028e_eps": 4.63,
+      "implied_2028_pe_at_current_price": 16.9,
+      "note": "BofA is 30–43% above consensus — they are the most aggressive bull. Even so, $4.63 × 17x = $78.7 barely justifies the current price, with NO margin of safety. At street consensus (~$3.50–3.70 for 2028E), the through-cycle valuation implies 21–22x, which is already premium for industrial semi",
+      "priced_for_perfection_flag": true
+    },
+    "street_thesis_one_line": "The market prices STM as if it delivers $4.5–5.0 of EPS by 2028 (BofA-level recovery + data center ramp) at a 17x through-cycle multiple, leaving zero margin of safety versus the street consensus and substantial downside if the auto/industrial recovery or data center ramp disappoints."
+  },
+
+  "analyst_tape": {
+    "consensus_as_of": "2026-06-20",
+    "n_analysts": 13,
+    "rec_mean": 2.0,
+    "recommendation_key": "buy",
+    "breakdown": {"buy": 7, "hold": 7, "sell": 0},
+    "target_mean_usd": 64.36,
+    "target_median_usd": 63.00,
+    "target_high_usd": 100.00,
+    "target_low_usd": 32.80,
+    "gap_to_mean_pct": -17.9,
+    "gap_interpretation": "The analyst mean target of $64.36 is 17.9% BELOW the current price of $78.39. This is the most important market fact: the aggregate street consensus says the stock is overvalued at current levels, yet 7 of 13 analysts rate it Buy. This apparent contradiction resolves when you see the TIMING of the targets — most targets were set BEFORE the June 2 data center guidance raise and the June 16 convertible bond, which catalyzed a further ~15-20% rally. The buy-side has re-rated faster than sell-side target updates. A second wave of target raises is likely at Q2 2026 earnings (July 23) if the $3.45B Q2 guide is met.",
+    "post_announcement_actions": [
+      {
+        "date": "2026-04-23",
+        "firm": "Craig-Hallum",
+        "action": "Upgrade",
+        "rating_from": "Hold",
+        "rating_to": "Buy",
+        "old_pt_usd": 28,
+        "new_pt_usd": 58,
+        "note": "Post-Q1 earnings upgrade citing AI, satellite, and MCU pricing strength; MCU seen as 30-35% of revenue with 30-50% YoY growth potential"
+      },
+      {
+        "date": "2026-04-24",
+        "firm": "UBS",
+        "action": "PT Raise",
+        "rating_from": "Buy",
+        "rating_to": "Buy",
+        "old_pt_eur": 31,
+        "new_pt_eur": 49,
+        "note": "Post-Q1 earnings PT raise; cited 'largest earnings beat in almost three years'; early stages of multi-quarter upgrade cycle; AI data center and LEO satellites as new secular drivers"
+      },
+      {
+        "date": "2026-04-25",
+        "firm": "Mizuho",
+        "action": "PT Raise",
+        "rating_from": "Outperform",
+        "rating_to": "Outperform",
+        "old_pt_usd": null,
+        "new_pt_usd": 48,
+        "note": "Post-Q1 upgrade; cited AI server content and satellite opportunity"
+      },
+      {
+        "date": "2026-05-19",
+        "firm": "Mizuho",
+        "action": "PT Raise",
+        "rating_from": "Outperform",
+        "rating_to": "Outperform",
+        "old_pt_usd": 56,
+        "new_pt_usd": 68,
+        "note": "Set at 30x FY2027E EPS (up from 25x); AI server content >$230M/GW; satellite >$3B cumulative 2026-2028; near-90% Starlink market share"
+      },
+      {
+        "date": "~2026-06-02",
+        "firm": "BofA Securities",
+        "action": "PT Raise",
+        "rating_from": "Neutral",
+        "rating_to": "Neutral",
+        "old_pt_usd": 73,
+        "new_pt_usd": 83,
+        "note": "Raised on data center revenue ambition upgrade to ~$1B for 2026; revised revenue estimates +3-5% across 2026-2028; lifted gross margin assumptions 126-200bps; described outlook as 'ambitious, but delivery still needed'"
+      },
+      {
+        "date": "~2026-06-04",
+        "firm": "UBS",
+        "action": "PT Raise",
+        "rating_from": "Buy",
+        "rating_to": "Buy",
+        "old_pt_eur": 49,
+        "new_pt_eur": 80,
+        "note": "Second raise after data center guidance upgrade; AI power and silicon photonics to $2.9B by 2028; LEO satellite revenues to $1.3B by 2028; core business 10% CAGR 2026-2028; gross margin >45% by 2028"
+      },
+      {
+        "date": "~2026-06-04",
+        "firm": "Oddo BHF",
+        "action": "PT Raise",
+        "rating_from": "Outperform",
+        "rating_to": "Outperform",
+        "old_pt_eur": 58,
+        "new_pt_eur": 70,
+        "note": "Raised on data center guidance upgrade and AWS deal momentum"
+      },
+      {
+        "date": "~2026-06-10",
+        "firm": "BofA Securities",
+        "action": "Upgrade + PT Raise",
+        "rating_from": "Neutral",
+        "rating_to": "Buy",
+        "old_pt_usd": 83,
+        "new_pt_usd": 100,
+        "pt_eur": 86,
+        "note": "Upgraded to Buy with street-high $100 target; cited optical interconnects for data centers, LEO satellite exposure, nascent auto/industrial recovery, and substantial operating leverage from spare capacity; BofA models $1.57/$3.53/$4.63 EPS for 2026/2027/2028 — 30-43% above consensus; 'market underestimates STM's earnings power over next 2-3 years'"
+      }
+    ],
+    "notable_analyst_views": {
+      "bull_case_firms": ["BofA (Buy, $100)", "UBS (Buy, EUR 80)", "Mizuho (Outperform, $68)", "Craig-Hallum (Buy, $58)", "Oddo BHF (Outperform, EUR 70)"],
+      "hold_firms_context": "7 Hold-rated analysts likely have targets in the $32–$64 range set before the June rally; most not yet updated post the data center guidance raise",
+      "sell_rated": 0,
+      "post_earnings_pattern": "Wall of raises from April 23 Q1 print through June 10: 7-8 positive actions in 7 weeks. Zero cuts. Pattern is unambiguously bullish. Target range has bifurcated: bulls at $68-$100, unchanged holds at $32-$63. A convergence wave is likely at Q2 2026 results."
+    }
+  },
+
+  "sentiment": {
+    "social_data_available": false,
+    "social_note": "Stocktwits returned HTTPError in Hermes bundle; social sentiment not available from structured feed",
+    "buy_sell_ratio_analyst": "7 buy / 7 hold / 0 sell (50% positive, 50% neutral among 13 analysts)",
+    "price_action_signal": "Stock has rallied from $21.11 (52-week low) to $78.39 (+271%) in one year; +187% YTD. This is one of the strongest rallies in the semiconductor sector. The momentum itself is a sentiment fact: price action is deeply bullish.",
+    "key_themes": [
+      "Cycle inflection: auto/industrial semi trough passed in mid-2025; recovery underway with bookings strengthening and distributor inventories normalized",
+      "Data center emergence: STM has pivoted from a pure auto/industrial name to an AI infrastructure play; the AWS deal and $1B 2026 data center target are re-rating catalysts",
+      "Satellite moat: near-90% Starlink chip share; >$3B cumulative satellite revenue 2026-2028; durable and largely contracted",
+      "Operating leverage: STM carries significant fixed cost and unused capacity charges (~100bps in Q2 guide); as utilization recovers toward 80%+, margins should expand rapidly",
+      "NXP MEMS acquisition: strengthens automotive sensor position; adds scale to compete with Bosch Sensortec and TDK/InvenSense"
+    ],
+    "cycle_view": {
+      "current_phase": "Early-to-mid recovery",
+      "trough_timing": "Q2-Q3 2025 (~$2.77-3.19B quarterly revenue)",
+      "recovery_pace": "Q1 2026 +23% YoY; Q2 guide +25% YoY; recovery is accelerating",
+      "bull_view_on_cycle": "Auto re-stocking + industrial normalization + data center step-up = super-cycle recovery; STM to regain $17B+ revenue by 2027-2028",
+      "bear_view_on_cycle": "Auto OEM EV slowdown could re-weaken demand; trade tariffs create uncertainty; unused capacity charges signal demand is not yet strong enough to absorb full fixed cost base",
+      "key_watch": "Book-to-bill remaining above 1.0 through Q2/Q3 2026 is the most important lead indicator; any guidance cut at July 23 earnings would be a sharp negative catalyst at these multiples"
+    }
+  },
+
+  "convertible_bond": {
+    "announcement_date": "2026-06-16",
+    "total_size_b": 1.5,
+    "structure": "Dual-tranche",
+    "tranche_1": {
+      "size_b": 0.75,
+      "maturity": "June 23, 2031",
+      "coupon_pct": 0.0,
+      "issue_price": 100,
+      "redemption_price": 100,
+      "conversion_price_usd": 119.9813,
+      "conversion_premium_pct": 55.0,
+      "premium_basis": "55% above VWAP on Euronext Milan at pricing"
+    },
+    "tranche_2": {
+      "size_b": 0.75,
+      "maturity": "June 23, 2033",
+      "coupon_pct": 0.625,
+      "issue_price": 100,
+      "redemption_price": 100,
+      "conversion_price_usd": 121.9165,
+      "conversion_premium_pct": 57.5,
+      "premium_basis": "57.5% above VWAP on Euronext Milan at pricing"
+    },
+    "settlement_date": "June 23, 2026",
+    "stated_use_of_proceeds": "General corporate purposes, including the early redemption of the outstanding $750M Zero Coupon Convertible Bonds due 2027 (to be redeemed July 16, 2026 at par)",
+    "dilution_analysis": {
+      "total_potential_shares_if_converted": "~12.5M shares (750M / 119.98 + 750M / 121.92 = 6.25M + 6.15M = ~12.4M)",
+      "current_shares_outstanding_b": 0.889,
+      "dilution_pct_if_fully_converted": 1.4,
+      "dilution_nature": "Minimal. At $120 conversion price vs $78 current price, conversion is deeply out of the money (requires +53-55% stock appreciation from current levels). These bonds are effectively long-dated refinancing instruments, not near-term dilution.",
+      "net_new_capital_raised": "~$750M net new proceeds after redeeming the existing $750M 2027 bond",
+      "debt_impact": "Total debt rises from $2.354B to ~$3.1B (adding $1.5B new bonds, retiring $0.75B 2027 bonds = net +$0.75B); net debt turns slightly positive at ~$270M depending on cash use"
+    },
+    "management_signal": {
+      "interpretation": "This is primarily liability management, NOT a dilutive equity raise. By timing the issue immediately after a 200%+ stock rally, management locks in a 55-57.5% conversion premium — meaning the bonds only convert to equity if STM trades at $120-$122, implying a market cap of ~$110B vs current $69.7B. The structure sends two signals: (1) management does NOT believe the stock at $78 is fair value for equity issuance (they chose convertible with a 55% premium rather than a straight equity raise), and (2) they needed capital for either balance sheet flexibility (future M&A/capex) beyond the 2027 redemption, given the ongoing capex-heavy recovery cycle. The zero coupon on the 5-year tranche confirms the market's demand for STM equity optionality is high — investors accepted zero yield in exchange for the call option.",
+      "capex_context": "STM is in a heavy capex cycle: FY2022 capex was $3.6B; FY2025 and FY2024 show negative FCF despite $2B+ CFO. The $750M net new proceeds likely extend the balance sheet runway as capex normalizes. This is DEFENSIVE financing, not a growth equity raise.",
+      "net_signal": "Slightly negative for equity holders (modest dilution if stock rallies 55%+, net debt increases) but manageable. More importantly, it tells us management views current capex needs and the 2027 debt wall as requiring action — they are not sitting on excess cash despite $2.8B on balance sheet."
+    }
+  },
+
+  "capex_guidance": [
+    {
+      "buyer": "Amazon Web Services (AWS)",
+      "fy": "2026–2028",
+      "capex_guide": "Multi-year, multi-billion-dollar strategic supplier agreement",
+      "incl_finance_leases": null,
+      "quote": "STM announced 'a strategic engagement with Amazon Web Services to enable new high-performance compute infrastructure' — a multi-year, multi-billion dollar commercial agreement announced February 9, 2026",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/stmicroelectronics-nv-stm-q1-2026-070233392.html",
+      "note_for_theia": "AWS deal context: STM is a strategic supplier for high-bandwidth connectivity, mixed-signal processing, MCUs for infrastructure management, and power/analog ICs for hyperscale energy efficiency. STM's data center revenue: ~$1B in 2026, ~$2B in 2027. This is from a low base (~$0-200M in 2024). The AWS deal is the primary demand driver for the new data center segment."
+    },
+    {
+      "buyer": "SpaceX (Starlink)",
+      "fy": "2026–2028",
+      "capex_guide": "Ongoing LEO satellite production; STM has ~90% share of Starlink chip supply",
+      "incl_finance_leases": null,
+      "quote": "STM projected 'more than $3 billion in total revenue from its semiconductor space division between 2026 and 2028' driven by LEO satellite demand. UBS forecasts $1.3B in LEO satellite revenue by 2028.",
+      "source_url": "https://finance.yahoo.com/markets/stocks/articles/mizuho-raises-price-target-stmicroelectronics-082014721.html",
+      "note_for_theia": "Satellite is a differentiated, contracted, high-share segment. However, it is dependent on SpaceX's continued Starlink build-out pace and STM maintaining its supplier position against potential in-sourcing or competition from MACOM, Wolfspeed, or in-house SpaceX design."
+    }
+  ],
+
+  "market_view": {
+    "whats_priced_in": "At $78.39 and 31.9x NTM EPS of $2.46, the market prices STM for a complete and fast cyclical recovery ($13–14B revenue by H2 2026), simultaneous emergence as an AI infrastructure supplier ($1B data center revenue in 2026, $2B in 2027), and sustained satellite dominance — all executing together. The BofA bull thesis ($4.63 EPS in 2028 at 17x = $78 price) is the closest arithmetic reconciliation of the current price, meaning the stock needs the most optimistic analyst on the street to be right just to break even. The Gordon model at 32x NTM requires 8% terminal growth and 25% ROIC — above STM's historical mid-cycle ROIC. Zero margin of safety at current price.",
+    "street_view": "The bull case (BofA, UBS, Mizuho) argues STM is a structural re-rating story, not just a cyclical recovery: the AWS data center engagement de-risks the growth beyond the auto/industrial cycle, the Starlink monopoly supplies recurring contracted revenue, and operating leverage from current 34% gross margins back toward 40%+ drives EPS to $4–5 by 2028. Bears (7 Holds at $32–$64 targets) say the data center ramp is unproven, the auto cycle recovery is already largely discounted, and 32x NTM for an industrial semi with no full-year guidance is pricing perfection in a tariff-uncertain macro. The 7/7 buy/hold split with mean target 18% below price is the most honest summary of the street: even the bulls are in price-discovery mode.",
+    "post_earnings_analyst_actions": "The Q1 2026 print (April 23) triggered a wall of upgrades: Craig-Hallum (Hold to Buy), UBS (EUR 31 to EUR 49), Mizuho (to $48). A second wave followed the June 2 data center guidance raise: BofA (raised to $83, then upgraded to Buy at $100), UBS (EUR 49 to EUR 80), Mizuho (raised to $68), Oddo BHF (EUR 58 to EUR 70). Total: 7–8 bullish analyst actions in 7 weeks. Zero cuts. This is an unusually strong post-earnings analyst consensus shift.",
+    "news_narrative": "The Q1 2026 print on April 23 confirmed the cycle inflection: revenue beat on +23% YoY, automotive returned to growth (+15% YoY), industrial normalizing (+26% YoY). Stock hit new 52-week highs. The data center reveal (June 2) was the second catalyst: STM raised 2026 data center target from 'nicely above $500M' to ~$1B, citing AWS deal and AI infrastructure demand. This is a beat-and-raise, not a beat-and-no-raise, which is crucial — management is issuing forward guidance that RISES, not just meeting existing expectations. The convertible bond (June 16) is a neutral-to-slightly-negative event: necessary liability management but reveals the balance sheet needs the cash.",
+    "sentiment_narrative": "Analyst sentiment has shifted sharply bullish since April 2026: from 7 buy / 7 hold / 0 sell to likely 9+ buy / 3-4 hold / 0 sell once hold-rated analysts update targets to reflect the data center pivot. Price action is confirming (+187% YTD, +271% from lows). Social sentiment unavailable from structured feed. The primary risk to bullish sentiment is a guidance miss or cut at July 23 Q2 earnings; the Q2 midpoint of $3.45B must be met.",
+    "runway": "The structural re-rating catalyst (data center) is real and credible (AWS deal, Starlink moat), but at 32x NTM the valuation runway is short. The stock needs continuous positive revision to stay at this level. If Q2 revenue misses the $3.45B guide or gross margin disappoints (currently burdened by 100bps unused capacity), the de-rating could be sharp at this multiple. Next catalyst: Q2 2026 earnings July 23, 2026.",
+    "runway_verdict": "PRICED FOR PERFECTION. Fundamental recovery is genuine and underway. Valuation risk is HIGH: the stock prices the BofA best-case (30-43% above consensus) with no margin of safety. A hold-rated analyst who sets a target today at 20x NTM (reasonable for an industrial semi) gets to $49. The disconnect between the 7 buy / 7 hold split and the mean target being 18% below price is the clearest signal the market has run ahead of fundamental consensus.",
+    "market_lean": {
+      "direction": "BULL",
+      "strength": "STRONG — in price action and in analyst upgrade tape",
+      "reconciliation": "Price action (+271% from lows) and the wave of analyst upgrades (7-8 actions, zero cuts) are unambiguously bullish. However, the analyst MEAN TARGET is 18% below the current price, making this a case where the buy-side is MORE bullish than the sell-side models. The distinction matters: the market is ALREADY pricing the bull case — which is not the same as the bull case being right. The valuation risk (priced for perfection) is separate from and does not negate the fundamental recovery, which is confirmed.",
+      "key_risk_to_lean": "A miss or guidance cut at July 23 Q2 earnings would likely trigger a 20-30% de-rating given the stretched multiple; the auto recovery slowing or tariff impacts on EU-manufactured chips are the named tail risks"
+    }
+  },
+
+  "runs_log_entry": {
+    "ticker": "STM",
+    "date": "2026-06-20",
+    "phase": "cycle_recovery",
+    "sub_sector": "industrial_auto_semiconductor",
+    "new_growth_driver": "AI_datacenter",
+    "satellite_moat": true,
+    "valuation_flag": "priced_for_perfection",
+    "analyst_tape_direction": "bullish_wave",
+    "estimate_artifact": "clean",
+    "key_structural_fact": "analyst_mean_target_18pct_below_price"
+  }
+}

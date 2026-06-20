@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "ticker": "STM",
+    "agent": "Theia",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "contract_version": "3.0",
+    "note": "The crux — the one variable that decides the STM call — sourced and argued from evidence per CONTRACT §4."
+  },
+
+  "crux": {
+    "variable": "Speed and completeness of STM's transition from a cyclically-depressed automotive/industrial IDM to a multi-engine growth platform (auto/industrial recovery + data center ramp + satellite moat), and what earnings power that transition delivers by 2028.",
+    "one_line": "The call on STM is entirely about whether the 2028 earnings recovery reaches $4–5/share (the bull: auto restocking + $2B data center + $1.3B satellite) or stalls at $2.50–3.00/share (the bear: auto OEM EV weakness resurfaces, data center ramp is slow, SiC share losses deepen).",
+    "why_this_variable": "STM is a fixed-cost-heavy IDM in early recovery from the deepest cycle trough since 2016. At 33.9% gross margins, it operates near breakeven on operating profit ($166M net income FY2025 on $11.8B revenue). Every incremental revenue dollar drops through at ~60-70% incremental margin once utilization crosses ~75%. The 2028 EPS implied by the current price ($78.39 at 17x 2028E P/E) is $4.63 — the BofA bull case, 30-43% above consensus. The crux is whether that earnings power is achievable. Two sub-variables drive it: (1) the PACE of automotive/industrial restocking and SiC recovery, which determines utilization and the denominator of fixed-cost leverage, and (2) the CREDIBILITY of the $2B data center target for 2027, which is a new segment from near-zero two years ago.",
+    "sources": [
+      "Pheme market_facts: reverse_multiple decomposition — price needs $4.63 EPS at 17x to break even",
+      "STM Q4/FY2025: FY2025 gross margin 33.9%, operating margin 1.5% — confirms near-trough economics",
+      "Yole Dec 2025: SiC overcapacity persists until 2027-2028, utilization 50-70%",
+      "STM press release June 2, 2026: data center revenue target raised to $1B (2026) and $2B (2027)",
+      "STM Q1 2026 earnings April 23: Q1 revenue $3.095B +23% YoY; Q2 guide $3.45B +25% YoY — recovery confirmed"
+    ],
+    "crux_components": {
+      "component_1": {
+        "name": "Automotive/industrial recovery pace and SiC share stabilization",
+        "why_contested": "Auto returned to +15% YoY in Q1 2026 but SiC segment (P&D) is still -1.8% YoY and SiC industry overcapacity persists per Yole until 2027-2028. Tesla SiC volume reduction is structural. Chinese SiC competitors are gaining. The question is whether STM's new BYD/Geely wins and the broader 800V adoption wave offset the Tesla headwind and Chinese competition fast enough to drive P&D back to $3B+ by 2027-2028.",
+        "base_estimate": "P&D segment reaches ~$2.7B by FY2028 (recovering from $1.685B FY2025 trough), as 800V EV adoption grows but STM stabilizes SiC share at ~22-24% (down from 29% in 2024). Auto/industrial together drive ~$9B of FY2028 revenue.",
+        "bull_estimate": "P&D reaches $3.5B by FY2028 as Sanan JV accelerates Chinese market penetration, 200mm SiC transition drives cost competitiveness, and 800V EV adoption is faster than consensus (20M 800V vehicles by 2028 vs. base 15M). Total auto/industrial $10B+ FY2028.",
+        "bear_estimate": "P&D remains depressed at $1.8-2.0B through 2028 as Chinese SiC competition intensifies, European OEM EV delays persist, and Tesla's SiC reduction cascades into new platforms. Auto/industrial ~$7.5B FY2028."
+      },
+      "component_2": {
+        "name": "Data center / satellite segment emergence ($2B DC target for 2027)",
+        "why_contested": "The AWS engagement is announced but NOT contracted revenue — STM has not disclosed a take-or-pay arrangement. The $1B 2026 and $2B 2027 data center targets are management projections from a near-zero base ($0-200M in FY2024). Silicon photonics and optical interconnect for AI data centers is a real growth market, but STM is competing against Coherent, II-VI, and in-house development by hyperscalers. The satellite segment ($3B cumulative 2026-2028) is more contracted — Starlink ~90% share and ongoing production orders — but depends on SpaceX's Starlink build-out pace.",
+        "base_estimate": "Data center reaches $800M in 2026 (slightly below the $1B target) and $1.5B in 2027 (below the $2B target). Satellite delivers $400M in 2026 and $600M in 2027. Together: ~$2.1B incremental revenue by 2027 vs. the FY2024 base.",
+        "bull_estimate": "Data center hits $1B in 2026 and $2B+ in 2027 as AWS agreement pulls in volume faster than expected and silicon photonics demand for AI server interconnect accelerates. Satellite: $600M in 2026, $800M in 2027. Together: $2.8B incremental by 2027.",
+        "bear_estimate": "Data center ramp stalls at $500M in 2026 as AWS agreement takes longer to translate to volume production and hyperscaler qualification cycles extend. Satellite flat at $300-400M as SpaceX Starlink build pace slows. Together: $800M incremental by 2027 — a non-event for the valuation."
+      }
+    },
+    "base": {
+      "description": "Auto/industrial recovery proceeds at a measured pace (P&D back to ~$2.7B by 2028, EMP +10% CAGR, AM&S stable). Data center ramp reaches $800M in 2026 and $1.5B in 2027 — credible but below management's $2B 2027 target. Satellite delivers $1B by 2027. FY2028 revenue reaches ~$16.5B (slightly below the 2023 peak of $17.3B but with very different mix). Gross margin recovers to 42-44% by 2028 from utilization recovery and SiC cost improvement.",
+      "implied_eps_2028": 3.50,
+      "implied_eps_basis": "FY2028 revenue $16.5B x gross margin 42% = $6.9B gross profit; OPEX ~$3.4B (D&R + SGA); EBIT ~$3.5B; after interest/tax at 18%: ~$2.8B net income; / 0.87B diluted shares = ~$3.50 EPS",
+      "what_achieves_this": "Book-to-bill stays above 1.0 through Q3 2026; Q2 2026 revenue meets the $3.45B guide; data center revenue paces at $200-250M/quarter by Q4 2026; gross margin trajectory confirms 200-300bps expansion per half year."
+    },
+    "bull": {
+      "description": "STM's three engines fire simultaneously: auto/industrial restocking beats expectations (800V EV inflects faster, Chinese BYD/Geely volumes ramp via Sanan JV), data center reaches $2B+ in 2027 as AWS demands accelerate AI infrastructure build-out, satellite $1.3B by 2028. FY2028 revenue $18-19B, gross margin 45-47%.",
+      "implied_eps_2028": 4.80,
+      "implied_eps_basis": "$18.5B revenue x 46% gross margin = $8.5B gross profit; OPEX $3.6B; EBIT $4.9B; after tax 18%: ~$4.0B net; / 0.87B shares = $4.60 EPS. Plus buybacks/share reduction push to ~$4.80.",
+      "what_achieves_this": "Data center $250M+/quarter by Q4 2026 (on-track for $2B 2027). P&D recovering to $2.5B+ by end-2027 on 800V EV adoption acceleration. Gross margin exceeds 45% by Q3 2027."
+    },
+    "bear": {
+      "description": "The auto OEM EV slowdown resurfaces in H2 2026 (tariff uncertainty, consumer EV demand plateau), P&D remains stuck at $1.8-2.0B through 2028. Data center ramp stalls at $700-900M due to AWS qualification delays. Satellite holds but doesn't grow beyond $500M/year. FY2028 revenue $13.5-14.5B, gross margin recovers only to 37-39% (utilization recovery slower).",
+      "implied_eps_2028": 2.20,
+      "implied_eps_basis": "$14B revenue x 38% gross margin = $5.3B gross profit; OPEX $3.2B; EBIT $2.1B; after tax 18%: ~$1.7B net; / 0.87B shares = ~$2.00 GAAP. Non-GAAP (ex-restructuring) ~$2.20.",
+      "what_achieves_this": "Auto sequential revenue growth stalls after Q2 2026. Data center revenue misses Q4 2026 target. Gross margin guide for Q3 2026 is flat-to-down."
+    },
+    "what_decides_it": "Watch three leading indicators at Q2 2026 earnings (July 23, 2026): (1) whether Q2 revenue meets the $3.45B midpoint and Q3 guidance continues sequential growth, (2) whether data center revenue paces at $230-250M in Q2 (on track for $1B annual), and (3) whether gross margin is on a confirmed 200bps/half trajectory toward 40%+ by year-end. If all three confirm, the base case is tracking. If data center disappoints or gross margin stalls, the bull case is invalidated and the current price at 32x NTM is hard to defend."
+  }
+}
