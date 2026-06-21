@@ -1,0 +1,139 @@
+{
+  "valuation_headline": {
+    "current_price": 24.39,
+    "fair_value_today": 5.05,
+    "target_12m": 14.0,
+    "fair_value_12m": 5.61,
+    "band_low": 0.5,
+    "band_high": 17.0,
+    "method_primary": "ExitMultiple",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 5.05,
+      "multiple": null,
+      "multiple_label": null,
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 24.39,
+      "multiple": null,
+      "multiple_label": null,
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 5.61,
+      "basis": "#1 rolled forward at r=11.0% less dividend 0.0",
+      "convergence_return_pct": -77.0
+    },
+    "target_12m": {
+      "value": 14.0,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "EV/SALES",
+        "defensible_multiple": 18.8,
+        "forward_metric_label": "FY2027E Revenue ($B)",
+        "forward_metric_value": 0.055,
+        "multiple_rationale": "Comparable: Innoviz (INVZ) currently trades at 15-18x NTM EV/Sales with production programs underway. AEVA should trade at a modest premium (18-19x) to Innoviz given the larger and exclusive EU OEM program. But the current 45x+ NTM EV/Sales for AEVA is unsustainable as the ramp story matures into an execution story. 18.8x is the re-rating level when first production is live. This credits both contracted programs but NOT the extrapolated Luminar replacement wins.",
+        "price": 14.0
+      },
+      "implied_12m_total_return_pct": -42.6
+    }
+  },
+  "street_reconstruction": {},
+  "street_target": {
+    "mean": null,
+    "mean_multiple": null,
+    "mean_implied_growth_pct": null,
+    "high": null,
+    "return_pct": null,
+    "n_analysts": null
+  },
+  "rating": {
+    "action": "SELL",
+    "tone": "negative",
+    "implied_12m_total_return_pct": -42.6,
+    "convergence_return_pct": -77.0,
+    "street_return_pct": null,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 25.0
+  },
+  "conviction": {
+    "label": "LOW",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "HIGH",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": 3.267,
+    "caps_applied": [],
+    "basis": "action SELL: Daedalus assigned LOW (evidence read across base/bull/bear) -> LOW"
+  },
+  "sensitivity_matrix": {
+    "description": "Two dominant levers: (1) NOPAT at normalization (driven by revenue × margin — the crux) and (2) WACC (the discount rate). ROIC is second-order (a 5pp change moves fair value ~$0.50). The matrix shows base case fair value ($/share) at each cell.",
+    "lever_1": "NOPAT FY2033 ($M)",
+    "lever_2": "WACC",
+    "matrix": [
+      [
+        "NOPAT / WACC",
+        "9.0%",
+        "10.0%",
+        "11.0% (base)",
+        "12.0%",
+        "13.5%"
+      ],
+      [
+        "$34M (bear)",
+        "2.60",
+        "1.80",
+        "0.50",
+        "-0.30",
+        "-1.20"
+      ],
+      [
+        "$60M",
+        "6.40",
+        "4.80",
+        "3.30",
+        "2.20",
+        "0.80"
+      ],
+      [
+        "$89M (base)",
+        "13.70",
+        "10.10",
+        "5.05",
+        "3.20",
+        "1.40"
+      ],
+      [
+        "$130M",
+        "22.50",
+        "16.50",
+        "10.10",
+        "6.80",
+        "3.40"
+      ],
+      [
+        "$167M (bull)",
+        "31.50",
+        "22.80",
+        "17.00",
+        "11.10",
+        "5.80"
+      ]
+    ],
+    "dominant_lever_note": "WACC is the dominant lever. Moving from 11% to 9% with base-case NOPAT takes fair value from $5.05 to $13.70 — a 171% increase on a 2pp WACC change. This is WHY the market (using ~9% WACC) sees the stock at $24-25 while our fundamental WACC of 11% gives $5. The WACC disagreement is the debate, not the revenue trajectory.",
+    "street_reconstruction": {
+      "street_mean_target": 25.13,
+      "implied_wacc_at_base_nopat": "~9% (the $89M base NOPAT at 9% WACC ≈ $13.70; the $25 street target at 9% WACC requires NOPAT_T ~$167M, i.e. the bull case). The street is pricing the bull case revenue at a growth-investor WACC. The question is whether 9% is the right discount rate for this company.",
+      "street_thesis_decoded": "Street consensus ($25 mean, strong buy): (1) FMCW wins the technical race for L3/L4 autonomy; (2) contracted programs plus Luminar clearing drive 3-4 OEM production wins by 2028; (3) revenue reaches $300-500M by 2030-2032; (4) market should value at 9-10% WACC given contracted program visibility. Our disagreement: the WACC is too low for a pre-profit hardware company; the Luminar replacement wins are extrapolated, not contracted.",
+      "our_disagreement": "WACC: we use 11% vs street implied ~9%. Revenue ramp: our base ($290M FY2033) is below the street bull case; we do not credit the full Luminar replacement scenario. The street's $25 target is the bull case, not the base case."
+    }
+  },
+  "bridge_logic": "#1 fair value today 5.05 -> #3 fair value 12m 5.61 (x(1+0.110) - div 0.0); #4 target 12m 14.0 (defensible_multiple); implied return to #4 = -42.6%, to #3 = -77.0%, to street mean None = None%"
+}

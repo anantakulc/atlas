@@ -1,0 +1,139 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "as_of_date": "2026-06-20",
+    "produced_by": "Pheme (G) — constructed from databundle + Theia industry.json research",
+    "atlas_version": "v3.0",
+    "sources": [
+      "AEVA_databundle.json (Hermes, 2026-06-20T02:57Z)",
+      "Aeva Q1 2026 earnings release (BusinessWire, 2026-05-06) — primary earnings source",
+      "Aeva European OEM exclusive contract press release (BusinessWire, Dec 3 2025)",
+      "Aeva Apollo $100M convertible note 8-K (Nov 5 2025)",
+      "Aeva NVIDIA DRIVE Hyperion reference sensor announcement (investors.aeva.com, Jan 5 2026)",
+      "Aeva Nikon production agreement (aeva.com/press, April 2026)",
+      "Aeva Georgia DOT CityOS deployment (aeva.com/press, March 31 2026)",
+      "Aeva Fortune 500 strategic investment $50M (BusinessWire, May 2025)",
+      "Aeva Daimler Truck scaled production collaboration (investors.aeva.com, July 16 2025)",
+      "Innoviz FY2025 results — $55.1M revenue (PRNewswire, 2026)",
+      "Luminar Chapter 11 bankruptcy (ManufacturingDive, Dec 2025)",
+      "Yole Group automotive LiDAR market quadruples to $3.6B by 2030 (July 2025)"
+    ]
+  },
+
+  "price_snapshot": {
+    "current": 24.39,
+    "currency": "USD",
+    "high_52w": 38.80,
+    "low_52w": 8.83,
+    "ma50": 19.82,
+    "ma200": 15.93,
+    "ytd_pct": 91.3,
+    "return_1y_pct": -2.94,
+    "beta": 2.41,
+    "note": "Stock is up 91% YTD through June 20, 2026, driven by the European OEM exclusive contract (Dec 2025), Apollo $100M financing (Nov 2025), NVIDIA Hyperion reference win (Jan 2026), and Nikon industrial agreement (April 2026). Stock is still 37% below 52-week high of $38.80, suggesting the post-news euphoria has partially deflated. The 50-day MA ($19.82) has crossed above the 200-day MA ($15.93) — a structural bullish signal for trend followers. High beta (2.41) reflects pre-revenue tech hardware category risk."
+  },
+
+  "market_stats": {
+    "market_cap_b": 1.647,
+    "enterprise_value_b": 1.511,
+    "shares_outstanding_b": 0.0675,
+    "net_debt_b": 0.031,
+    "adtv_usd_m": 54.3,
+    "note": "Net debt reflects Apollo $100M convertible note partially offset by $99.5M cash (Q1 2026). Shares outstanding reflects post-conversion dilution potential: Apollo notes at $15.86 conversion price (current $24.39 = 54% in the money) could add ~6.3M shares on conversion."
+  },
+
+  "consensus": {
+    "target_mean": 25.13,
+    "target_median": 24.50,
+    "target_high": 33.00,
+    "target_low": 18.50,
+    "n_analysts": 4,
+    "rating": "strong_buy",
+    "rec_mean": 1.5,
+    "breakdown": {
+      "note": "Only 4 analysts; very thin coverage for a $1.6B company. Thin coverage understates the information environment — retail investors and specialist tech funds are primary price setters."
+    }
+  },
+
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-05-06",
+      "event": "Q1 2026 earnings: Revenue $6.3M (+90% YoY), operating cash burn $25.8M, total liquidity $224.5M ($99.5M cash + $125M undrawn facility)",
+      "note": "Q1 2026 revenue beat implied guidance trajectory. Liquidity surprise: the undrawn $125M facility substantially extended runway beyond what balance sheet cash alone implied."
+    },
+    {
+      "date": "2025-12-03",
+      "event": "European passenger OEM exclusive production contract awarded. Multi-year program into mid-2030s. Global platform, Level 3, ICE/hybrid/EV.",
+      "note": "The most significant catalyst of the past 12 months. An exclusive contract with a top-10 global OEM on a multi-vehicle global platform is the strongest design-win evidence in the FMCW LiDAR category to date."
+    },
+    {
+      "date": "2025-11-05",
+      "event": "Apollo $100M convertible note investment at $15.86 conversion price",
+      "note": "Apollo is a sophisticated credit investor; their investment at $15.86 (vs. stock then ~$12-15) implied meaningful upside confidence. Current stock at $24.39 makes conversion likely."
+    },
+    {
+      "date": "2026-01-05",
+      "event": "NVIDIA DRIVE Hyperion reference sensor designation",
+      "note": "Reference sensor status with NVIDIA's AV platform means any OEM adopting NVIDIA's stack defaults to Aeva as the LiDAR component. Structural demand pull."
+    },
+    {
+      "date": "2026-04-01",
+      "event": "Nikon Metrology multi-year production agreement for APDIS MV5X Laser Radar",
+      "note": "First non-automotive, non-government production revenue. Validates industrial FMCW use case."
+    }
+  ],
+
+  "street_thesis": "Aeva is the only Western-headquartered FMCW LiDAR supplier with automotive-grade qualifications and contracted production agreements. The bull case: FMCW's native velocity measurement is technically superior for L3/L4 autonomy; the Daimler Truck and European OEM contracts validate the thesis; NVIDIA Hyperion pull-through and the Luminar gap create a 2026-2027 window for additional design wins; the $224.5M liquidity runway bridges to first production revenues. Current price implies the market is pricing in approximately $80-100M peak revenue at modest multiple — below what a successful dual-OEM ramp would imply.",
+
+  "estimate_artifact_check": {
+    "eps_ntm_bundle": -1.54,
+    "eps_ntm_corrected": -1.54,
+    "artifact_flag": false,
+    "note": "EPS NTM -$1.54 is consistent with FY2025 run-rate operating loss of ~$128M and ~68M shares outstanding. No artifact detected. The negative PE and negative EV/EBITDA in the bundle are mechanical artifacts of pre-profitability and do not require correction — use EV/Revenue ($72x) and the path to normalization for valuation.",
+    "forward_revenue_consensus": {
+      "fy2026E_guidance": "30-36M (management guidance)",
+      "fy2026E_consensus": 33.0,
+      "note": "4-analyst consensus; management guided $30-36M. Use midpoint $33M."
+    }
+  },
+
+  "capex_guidance": [],
+
+  "whats_priced_in": {
+    "implied_revenue_at_current_price": {
+      "ev_sales_ttm": 72.1,
+      "note": "At $1.511B EV and $18.1M TTM revenue, the market is paying 72x sales — pricing in a steep ramp. Reverse-engineering: at a 5x EV/Sales exit multiple (typical for a scaled hardware-software company), the market is pricing ~$300M in peak revenue. At 3x EV/Sales, ~$500M peak. Both are beyond the base case FY2033 revenue of $270M, meaning the market is pricing in bull-case revenue with a relatively modest multiple — or is using a growth-discount framework that values option value."
+    },
+    "implied_call_option_value": {
+      "note": "AEVA at $24.39 with $3.33/share in net cash is essentially priced as a call option on the production ramp materializing. The intrinsic (breakup/liquidation) value is near zero. The option value is the probability × payoff of the bull case. This is the correct mental model for a pre-production pre-profitability hardware company."
+    },
+    "market_lean": "BULL — the stock's 91% YTD move and strong-buy consensus reflect the market pricing the contract wins and the Luminar clearing event as a positive turning point. However, only 4 analysts cover the stock, and the thin coverage leaves the option-value pricing less arbitraged than it would be in a larger-cap."
+  },
+
+  "sentiment_narrative": {
+    "social_sentiment": "Positive — retail investors have latched onto FMCW differentiation, the NVIDIA win, and the autonomous truck narrative. Stock has momentum followers after the YTD surge.",
+    "institutional": "Limited institutional data in the bundle. Apollo's convertible note and the unnamed Fortune 500's $50M strategic investment (6% stake) are the two visible institutional anchors.",
+    "short_interest": "Not available in bundle; likely material given the pre-profitability profile but no specific data."
+  },
+
+  "runway": {
+    "total_liquidity_q1_2026_usd_m": 224.5,
+    "quarterly_burn_q1_2026_usd_m": 25.8,
+    "annualized_burn_usd_m": 103,
+    "runway_years": 2.18,
+    "runway_verdict": "ADEQUATE BUT TIGHT. Runway extends to approximately Q3-Q4 2028 before capital is needed at current burn rates — coinciding roughly with the expected SOPs for both contracted programs. If revenue ramp begins on schedule (Daimler late-2027, EU OEM 2028), the cash bridge closes without a highly dilutive raise. The $125M undrawn facility provides a cushion but its terms (covenants, drawdown conditions) are not fully disclosed. The bear risk is not imminent default but rather the needing-to-raise-capital-from-a-weak-position scenario that destroys per-share value.",
+    "dilution_risk": "Apollo convertible at $15.86 conversion (current $24.39) adds ~6.3M shares on conversion — 9% dilution, already in the money. Additional equity raise of $100-150M for runway would add ~4-6M shares at current prices — further 6-9% dilution. Total potential dilution ~15-18% from these sources."
+  },
+
+  "market_lean": {
+    "direction": "bull",
+    "strength": "MODERATE",
+    "rationale": "The market has re-rated the stock sharply on concrete contract wins. The lean is bullish on the technology's commercial validation but tempered by the pre-production timeline risk and the capital overhang. At 72x EV/Sales, the valuation is not pricing a HOLD scenario — it is pricing the bull case with moderate conviction."
+  },
+
+  "news_narrative": {
+    "summary": "AEVA's news flow since Q3 2025 has been categorically positive: a major automotive win (EU OEM exclusive Dec 2025), a sophisticated $100M capital raise (Apollo, Nov 2025), a structural platform partnership (NVIDIA Hyperion, Jan 2026), and two commercial production agreements (Nikon April 2026; Georgia DOT CityOS March 2026). Set against this, the fundamental backdrop remains pre-production: FY2025 revenue was $18M against $128M operating losses. The 'story' and the 'financials' are maximally divergent — a classic early-stage hardware situation.",
+    "key_risk_from_news": "No specific negative news in the last 6 months. The main undisclosed risk is the identity of the unnamed European OEM — if revealed as a lower-volume brand (vs a mass-market manufacturer), the program size assumptions may be too high.",
+    "beat_raise_pattern": "Q1 2026 was a revenue beat and a liquidity positive surprise (the $125M undrawn facility was not well-known before the print). No explicit guidance raise in revenue terms but liquidity reassurance had the effect of a raise."
+  }
+}

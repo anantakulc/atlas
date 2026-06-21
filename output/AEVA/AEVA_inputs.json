@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "produced_by": "Daedalus (D) — Atlas v3.0"
+  },
+  "ticker": "AEVA",
+  "currency": "USD",
+  "current_price": 24.39,
+  "shares_outstanding_b": 0.0738,
+  "net_debt_b": 0.0005,
+  "dividend_per_share": 0.0,
+  "business_type": "highgrowth_preprofit",
+
+  "primary_method": {
+    "name": "ExitMultiple",
+    "inputs": {
+      "wacc": {
+        "value": 0.110,
+        "components": {
+          "rf": 0.045,
+          "beta": 1.30,
+          "erp": 0.055,
+          "debt_weight": 0.065,
+          "cost_of_debt_after_tax": 0.04375
+        },
+        "reasoning": "Fundamental beta 1.30. Ke = 11.65%. Blended WACC 11.0%. Segment WACC = blended WACC (single segment)."
+      }
+    }
+  },
+
+  "target_12m": {
+    "basis": "EV/SALES",
+    "defensible_multiple": 18.8,
+    "forward_metric_label": "FY2027E Revenue ($B)",
+    "forward_metric_value": 0.055,
+    "forward_metric_description": "FY2027E revenue $55M — first year Daimler Truck SOP deliveries begin. 18.8x FY2027E EV/Sales represents the re-rating level as first production arrives and speculation gives way to execution monitoring. Target EV = 18.8 × $55M = $1.034B → equity $1.034B / 73.8M shares = $14.00.",
+    "multiple_rationale": "Comparable: Innoviz (INVZ) currently trades at 15-18x NTM EV/Sales with production programs underway. AEVA should trade at a modest premium (18-19x) to Innoviz given the larger and exclusive EU OEM program. But the current 45x+ NTM EV/Sales for AEVA is unsustainable as the ramp story matures into an execution story. 18.8x is the re-rating level when first production is live. This credits both contracted programs but NOT the extrapolated Luminar replacement wins.",
+    "judgment_note": "Target $14.00 = partial bull credit. The contracted programs are real (CONTRACTED evidence quality) and anchor a floor above pure intrinsic value. The gap between the target ($14.00) and current price ($24.39) is 43% downside — a clear SELL. This target is higher than pure intrinsic convergence ($5.61) because the market will not reprice to fundamental fair value in 12 months; it will re-rate toward a delivery-phase multiple as first production commences."
+  }
+}

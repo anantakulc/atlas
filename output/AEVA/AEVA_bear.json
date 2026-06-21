@@ -1,0 +1,66 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "produced_by": "Cassandra (C) — Atlas v3.0",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "blind": true,
+    "crux_anchor": "Automotive production ramp — hardware ramp delays are the norm; the contracted programs are milestones, not take-or-pay cash flows; pre-production companies die in the valley between contract and production"
+  },
+
+  "bear_thesis_sentence": "Aeva is at the most dangerous moment in a hardware company's life — past the design-win celebration, not yet at production revenue — and the stock is priced as if the ramp is already running, when it is not. The history of LiDAR companies is a graveyard of companies that had signed contracts and still ran out of cash.",
+
+  "key_debates": [
+    {
+      "debate_id": 1,
+      "title": "Ramp delay is the base case for automotive hardware, not an edge case",
+      "bear_argument": "Luminar Technologies signed a supply agreement with Volvo for SOP 2022. It filed Chapter 11 in December 2025 — three years after the promised SOP. Quanergy went bankrupt in 2022. IndiEV folded after $1.4B in fundraising. Velodyne merged with Ouster in a distressed transaction. The pattern is not random: automotive OEM programs are subject to constant re-scoping, re-timing, and re-specification, and small pre-revenue suppliers have no negotiating leverage when OEMs push timelines. Aeva's Daimler Truck program is for SAE L4 autonomous trucks (TORC Robotics). The autonomous trucking sector has repeatedly missed its adoption timelines — TuSimple went bankrupt in 2024, Aurora is burning $180M/year and has not achieved profitable operations. If TORC's deployment schedule slips (which is the industry norm), Aeva's Q4 2027 SOP slips with it. The EU OEM program is even more opaque: no OEM name, no volume, no SOP date range beyond '2028.' A slip of 12-18 months on either program, or a volume that starts at 1,000-2,000 units rather than 15,000-25,000 units, changes the revenue ramp from the expected $55M FY2027 to $30-35M FY2027 — with no margin improvement. The bear case is not a low-probability tail — it is what usually happens in automotive supply chains.",
+      "bull_counter": "Daimler Truck is not speculative — TORC trucks are physically driving on Texas roads today (Q1 2026). The European OEM exclusive contract has ongoing milestone payments and production qualification work. These are not LOIs; they are production supply agreements.",
+      "our_verdict": "The bear makes the most important point in the report: hardware automotive ramp delays are the NORM, not the exception. The Luminar precedent is directly applicable — signed contracts, years of NRE, eventual failure when production economics did not materialize at scale. The CONTRACTED vs EXTRAPOLATED distinction matters, but a production supply agreement is not a take-or-pay cash flow guarantee. We give this debate HIGH weight in the bear case.",
+      "break_mechanism": "TORC Robotics announces a 12-month SOP delay on the Freightliner Cascadia program (or reduces L4 volume targets from the road-testing phase). This would push Daimler program cash flows to 2029+ and shorten AEVA's liquidity runway. Observable signal: absence of Q4 2027 first-delivery announcement.",
+      "what_changes_our_mind": "Daimler Truck announces first commercial L4 unit deliveries in Q4 2027 as scheduled. OR: EU OEM confirms production milestone payment in 2026 (evidence of qualification progress).",
+      "value_at_stake_per_share": "$4-5 per SOP year of delay (from sensitivity matrix: T=6 vs T=7 moves fair value by $1.14; two-program delay compounds to $3-5)",
+      "evidence_quality": "OBSERVABLE-AND-NEAR — autonomous trucking SOP delays are observable from industry history; AV sector is 3-5 years behind all pre-2020 timelines"
+    },
+    {
+      "debate_id": 2,
+      "title": "The stock is priced for the bull case at a growth-investor WACC — there is no margin of safety",
+      "bear_argument": "At $24.39, AEVA trades at 72x EV/Sales (TTM) and 45x FY2026E EV/Sales ($33M guidance). The only path to fair value at this price is the bull case ($17) at a 9% WACC — or even more optimistic assumptions ($24 requires either 9% WACC + bull revenue OR extreme revenue growth beyond our bull case). This is a stock with NO MARGIN OF SAFETY. For a pre-profit hardware company burning $100M/year, with a 2.41 observed beta, priced at $24.39 against a base case fair value of $5.05 — the asymmetry is extreme. A bad outcome (SOP delay, covenant trigger on the facility, unexpected dilutive raise) sends the stock to $5-8. A good outcome (both programs on schedule, 1-2 Luminar replacements won) sends the stock to $17-22. The expected value at the current price requires assigning 80%+ probability to the bull case AND a 9% WACC. That is not analysis; that is hope. The 91% YTD gain has attracted momentum buyers who will exit at the first sign of a setback, creating a non-linear sell-off risk.",
+      "bull_counter": "Pre-revenue hardware platform companies routinely trade above fundamental DCF value because option value (the probability of future program wins, strategic acquisition, or the technology becoming the standard) has value that the DCF misses. The market is pricing the option correctly.",
+      "our_verdict": "The option value argument is real. But option value requires a catalyst to monetize. Without a major new contract win in the next 12 months, the stock will drift toward the post-production-SOP re-rating level ($12-16). The bear argument is correct that there is no margin of safety at $24.39. HIGH conviction on this debate.",
+      "break_mechanism": "Market re-rating: rotation out of growth/pre-revenue hardware names (which happened in 2022 and again in 2024) collapses the EV/Sales multiple from 45x to 15-20x, irrespective of fundamental newsflow. No specific catalyst required — multiple compression is the mechanism.",
+      "what_changes_our_mind": "A second exclusive passenger OEM production win announced in 2026 (CONTRACTED, not development) would materially change the risk/reward by narrowing the gap between base and bull case.",
+      "value_at_stake_per_share": "$10-15 (represents the multiple compression risk from 45x NTM EV/Sales to 15-20x as the growth narrative matures)",
+      "evidence_quality": "OBSERVABLE-AND-NEAR — multiple compression from >40x EV/Sales is historically almost always followed by a re-rating; examples: Luminar, Ouster, Quanergy, Rivian, pre-SOP EV plays"
+    },
+    {
+      "debate_id": 3,
+      "title": "Continental's in-house FMCW program could arrive earlier than expected and undercut Aeva's technology moat",
+      "bear_argument": "Continental AG is the largest Tier-1 automotive supplier by revenue (~$40B). It has been publicly developing its own FMCW LiDAR since 2021. Unlike Aeva, Continental has: (1) direct OEM relationships — it sells to every major OEM globally; (2) the scale to absorb manufacturing ramp losses; (3) an existing optical and photonic supply chain from its Advanced Driver Assistance Systems business. If Continental achieves automotive-grade FMCW production by 2028-2029, it becomes a direct competitor AND threatens Aeva's exclusive contracts at renewal. The EU OEM exclusive runs to the 'mid-2030s' — but exclusivity clauses often have carve-outs for OEM in-house or Tier-1 developments. A major Tier-1 with FMCW capability is the most credible long-run threat to Aeva's moat.",
+      "bull_counter": "Continental's FMCW development is years behind Aeva's. Aeva has 300+ FMCW patents and a 9-year head start. OEMs that have already committed to Aeva (the EU OEM, Daimler) have invested in integration — switching costs are real and high. Continental FMCW risk is a 2029+ event, not a near-term driver.",
+      "our_verdict": "This is a medium-term risk, not a 12-month driver. The bear debate is well-founded on the 2028-2030 horizon but does not affect the near-term valuation directly. We weight it at MEDIUM in the 12m bear case — an overhang on the multiple but not an immediate catalyst for a SELL.",
+      "break_mechanism": "Continental announces production-level FMCW qualification or wins an OEM program, removing the 'only qualified western FMCW supplier' narrative that underlies the valuation.",
+      "what_changes_our_mind": "Continental announces FMCW program delay beyond 2030 (press release or earnings commentary), removing the Tier-1 overhang.",
+      "value_at_stake_per_share": "$3-5 (reduces the bull premium for technology moat durability)",
+      "evidence_quality": "MECHANISM — Continental's FMCW program is public, sourced; timeline is extrapolated but mechanism is concrete"
+    }
+  ],
+
+  "scenario_spec": {
+    "label": "Bear",
+    "revenue_fy2030_usd_m": 90,
+    "revenue_fy2033_usd_m": 185,
+    "ebitda_margin_fy2033_pct": 30,
+    "nopat_fy2033_usd_m": 34,
+    "wacc": 0.115,
+    "g_lt": 0.035,
+    "roic": 0.20,
+    "dilutive_raise_2028_usd_m": 150,
+    "dilutive_raise_price_per_share": 12.0,
+    "shares_post_dilution_m": 80.0,
+    "implied_px": 0.50,
+    "implied_px_note": "Engine output -$0.96/share. Practical floor $0.50 — the business survives via dilution but existing shareholders are largely wiped out. Dilution math: $150M raise at $12 (50% discount to current) → +12.5M shares → 80M total diluted; terminal EV $350M discounted at 11.5% / 2.1x = $166M; net equity after ~$240M cumulative burn PV = ~$40M / 80M shares = $0.50."
+  },
+
+  "self_conviction": "HIGH",
+  "self_conviction_note": "The bear case rests on two OBSERVABLE facts: (1) automotive hardware ramp delays are the historical norm — Luminar is the directly comparable precedent; (2) the stock has no margin of safety at 45x NTM EV/Sales with no production revenue. These are not hypothetical risks. HIGH conviction is warranted: the price is wrong even in the bull scenario. The WACC at which the market is pricing this stock (9%) is demonstrably inconsistent with the risk profile of a pre-production hardware company, regardless of which revenue scenario materializes."
+}

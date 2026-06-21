@@ -1,0 +1,361 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "produced_by": "theia",
+    "as_of_utc": "2026-06-20T00:00:00Z",
+    "pheme_market_facts": "NOT YET AVAILABLE — produced in parallel; re-read when available",
+    "contract_version": "3.0"
+  },
+
+  "business": {
+    "description": "Aeva Technologies designs and manufactures FMCW (Frequency Modulated Continuous Wave) 4D LiDAR sensing systems and related software. Unlike conventional pulsed Time-of-Flight LiDAR, Aeva's chips emit a continuous low-power laser and measure the Doppler frequency shift of the return to derive both range and instantaneous radial velocity simultaneously for every point in a scan — a capability no ToF sensor provides natively. The company is pre-mass-production: FY2025 revenue was $18M ($9M product, ~$9M NRE/service), loss from operations was $128M, and the business operates on grant, NRE, and design-win funding while its first mass-production programs ramp toward SOP dates in 2026-2028.",
+    "founded": 2017,
+    "headquarters": "Mountain View, CA",
+    "employees": 239,
+    "listing": "NASDAQ: AEVA",
+    "business_type": "highgrowth_preprofit"
+  },
+
+  "segments": [
+    {
+      "name": "Automotive LiDAR (sensor hardware + NRE)",
+      "nature": "high-growth",
+      "description": "Design, qualification, and supply of automotive-grade Atlas and Atlas Ultra 4D LiDAR sensors to OEMs and Tier-1/Tier-2 suppliers for ADAS (SAE L3/L4). Current revenue is almost entirely non-recurring engineering (NRE) payments and pre-production supply; mass-production volumes begin with Daimler Truck's Freightliner Cascadia autonomous platform (SOP ~2027) and the undisclosed European passenger OEM global platform (SOP ~2028). Gross margin is currently deeply negative (negative 5.6% at the company level) reflecting overhead on minimal volume; the path to gross positive margin requires achieving production economies of scale above an estimated 50,000-100,000 units per year.",
+      "revenue_fy2025_usd_m": "~12 (estimated blend of product and automotive NRE; company does not segment publicly)",
+      "revenue_growth_yoy": "~100% (company-level revenue doubled FY2024 to FY2025: $9M to $18M)",
+      "margin": "negative; estimated gross margin trajectory toward 20-35% at scale (comparable: Innoviz guided ~50% GM at production scale; Hesai at 1.6M units achieved ~28% GM in 2025)",
+      "key_customers": [
+        {
+          "name": "Daimler Truck / TORC Robotics",
+          "program": "Freightliner Cascadia SAE L4 autonomous truck",
+          "sop": "2027",
+          "status": "CONTRACTED — multi-year production agreement announced Jan 2024, expanded July 2025 with DTNA non-recurring funding; first trucks operating on Texas roads as of 2026",
+          "demand_type": "CONTRACTED"
+        },
+        {
+          "name": "Unnamed European Passenger OEM (Top-10 global)",
+          "program": "Global series-production vehicle platform, Level 3 automated driving, multiple ICE/hybrid/EV models outside China",
+          "sop": "2028",
+          "status": "CONTRACTED — exclusive production contract awarded December 2025; multi-year program into mid-2030s",
+          "demand_type": "CONTRACTED (design win award confirmed; volume not yet disclosed)"
+        },
+        {
+          "name": "Unnamed Top-5 Passenger OEM (new development program)",
+          "program": "Development / qualification program announced Q1 2026",
+          "sop": "TBD",
+          "status": "DEVELOPMENT — not yet a production award",
+          "demand_type": "EXTRAPOLATED"
+        }
+      ],
+      "concentration_note": "Customer concentration is very high. Daimler Truck and the European OEM together represent effectively all current and near-term committed production revenue. No single production volume disclosed."
+    },
+    {
+      "name": "Industrial Automation (Eve sensors + NRE)",
+      "nature": "high-growth (early)",
+      "description": "High-precision laser displacement sensors (Eve1) for factory inspection, metrology, and robotics. Nikon Metrology selected Aeva's Eve technology for its APDIS MV5X Laser Radar under a multi-year production agreement (announced April 2026). Volumes described as 'thousands-plus' units. A second industrial vertical: Forterra defense/autonomous ground vehicles began using Aeva 4D LiDAR in 2026. Revenue is small (~$2-4M estimated for FY2025) but growing and strategically important as a second production revenue stream that arrives before automotive mass production ramp.",
+      "revenue_fy2025_usd_m": "~3 (estimated; not separately disclosed)",
+      "revenue_growth_yoy": "strong but off low base",
+      "margin": "negative currently; Eve sensors carry better unit economics potential than automotive at small volumes due to higher per-unit ASPs",
+      "key_customers": [
+        {
+          "name": "Nikon Metrology",
+          "program": "APDIS MV5X Laser Radar (factory inspection for automotive, aerospace, energy)",
+          "status": "PRODUCTION — multi-year agreement, first units shipping April 2026",
+          "demand_type": "CONTRACTED"
+        },
+        {
+          "name": "Forterra (defense / autonomous ground vehicles)",
+          "status": "PRODUCTION — first defense design win",
+          "demand_type": "CONTRACTED (limited initial volumes)"
+        }
+      ]
+    },
+    {
+      "name": "CityOS / Smart Infrastructure",
+      "nature": "high-growth (very early / optionality)",
+      "description": "AI operating system for real-time traffic intelligence, combining Atlas 4D LiDAR with edge AI to track vehicles, pedestrians, cyclists. Georgia DOT has deployed CityOS at 30 intersections across greater Atlanta (March 2026 expansion). Revenue is currently near zero (contract services model, likely subscription or per-intersection fee). Management counts this toward its '4 commercial wins in 2026' target. Financial size is not material to the near-term revenue model; this is a long-duration optionality segment that requires sustained government or municipal procurement cycles.",
+      "revenue_fy2025_usd_m": "~1-2 (estimated; immaterial in absolute terms)",
+      "revenue_growth_yoy": "high off near-zero base",
+      "margin": "negative (software/services overhead on minimal deployments)",
+      "key_customers": [
+        {
+          "name": "Georgia Department of Transportation (GDOT)",
+          "program": "30-intersection deployment, greater Atlanta area",
+          "status": "DEPLOYED — expanding from Centennial Olympic Park pilot",
+          "demand_type": "CONTRACTED (initial deployment; renewal/expansion extrapolated)"
+        }
+      ]
+    }
+  ],
+
+  "financials_summary": {
+    "fy2025_revenue_usd_m": 18.1,
+    "fy2025_operating_loss_usd_m": -128,
+    "fy2025_fcf_usd_m": -120,
+    "q1_2026_revenue_usd_m": 6.3,
+    "q1_2026_yoy_growth_pct": 90,
+    "q1_2026_operating_cash_burn_usd_m": -25.8,
+    "fy2026_revenue_guidance_usd_m": {"low": 30, "high": 36},
+    "liquidity_q1_2026": {
+      "cash_and_marketable_securities_usd_m": 99.5,
+      "undrawn_facility_usd_m": 125.0,
+      "total_available_liquidity_usd_m": 224.5,
+      "source": "Aeva Q1 2026 earnings release, May 6 2026",
+      "source_url": "https://www.businesswire.com/news/home/20260506436947/en/Aeva-Reports-First-Quarter-2026-Results"
+    },
+    "debt": {
+      "apollo_convertible_notes_usd_m": 100,
+      "terms": "4.375% convertible senior notes due 2032, initial conversion price $15.8643",
+      "source": "Aeva 8-K Nov 5 2025",
+      "source_url": "https://finance.yahoo.com/news/aeva-announces-100m-investment-apollo-211500662.html"
+    }
+  },
+
+  "tam": {
+    "tam_usd_bn_automotive_2030": {
+      "value": 3.6,
+      "source": "Yole Group, July 2025 — '4x by 2030' from ~$1B in 2025",
+      "source_url": "https://www.yolegroup.com/press-release/china-takes-the-lead-in-automotive-lidar-a-market-set-to-quadruple-by-2030/",
+      "tier": "research_firm",
+      "cagr_pct": 24,
+      "note": "Yole is the most cited specialist automotive sensor house; this is their latest July 2025 update"
+    },
+    "tam_usd_bn_automotive_2030_cross_check": {
+      "value": 9.59,
+      "source": "MarketsandMarkets, January 2025",
+      "source_url": "https://www.prnewswire.com/news-releases/automotive-lidar-market-worth-9-59-billion-in-2030--marketsandmarkets-302354039.html",
+      "tier": "research_firm",
+      "cagr_pct": 41.6,
+      "note": "MarketsandMarkets figures are systematically higher than Yole; likely broader scope definition. Single-source divergence flagged — use Yole $3.6B as the more conservative and specialist estimate; $9.6B as the bull ceiling."
+    },
+    "tam_usd_bn_global_lidar_all_segments_2030": {
+      "value": 12.79,
+      "source": "MarketsandMarkets, August 2025",
+      "source_url": "https://www.theautochannel.com/news/2025/08/29/1571841-lidar-market-worth-12-79-billion-by-2030-exclusive-report.html",
+      "tier": "research_firm",
+      "cagr_pct": 31.3,
+      "note": "Global all-segment LiDAR (automotive + industrial + mapping + defense). Aeva addresses automotive (~45% of this), industrial (~25%), infrastructure (~10%)."
+    },
+    "addressable_market_aeva": {
+      "description": "Aeva's addressable market is NOT the whole automotive LiDAR TAM. It is the subset where (a) FMCW technology is technically superior or preferred (L3/L4 ADAS, autonomous trucks), (b) Aeva has production-qualified hardware, and (c) Aeva can compete outside China. Chinese OEM volume (where Hesai and RoboSense dominate ~89% market share) is explicitly excluded from Aeva's European OEM contract and represents a different cost curve.",
+      "automotive_addressable_ex_china_2030_usd_bn": {
+        "value": 1.8,
+        "derivation": "Yole $3.6B total automotive × ~50% ex-China share (China now ~40-50% of global LiDAR volume per Yole 2025 data) = ~$1.8B addressable for non-Chinese suppliers",
+        "tier": "theia_bottom_up",
+        "note": "Single-source bottom-up; wide confidence interval"
+      },
+      "industrial_plus_infrastructure_addressable_2030_usd_bn": {
+        "value": 0.5,
+        "derivation": "Industrial robotics/metrology LiDAR subset where FMCW precision is valued; infrastructure/smart city is nascent. Conservative; Aeva's Eve product targets high-precision metrology (Nikon), not commodity industrial scanning.",
+        "tier": "theia_bottom_up"
+      },
+      "total_serviceable_addressable_2030_usd_bn": 2.3,
+      "aeva_current_capture_pct": "less than 1% (FY2025 $18M revenue against ~$1B current total automotive LiDAR market)"
+    }
+  },
+
+  "competitors": [
+    {
+      "name": "Hesai Technology",
+      "hq": "China",
+      "technology": "ToF (spinning and solid-state)",
+      "market_position": "Global market leader by revenue and units; 33% market share by revenue (2024), ~1.62M units shipped in 2025 (222% growth), first Chinese LiDAR maker to achieve full-year profitability in 2025",
+      "revenue_2025_usd_m": 416,
+      "share_trajectory": "GAINING — consolidating China, expanding to European and US OEMs via cost leadership",
+      "key_wins": "Multiple Chinese OEMs (BYD, Huawei ecosystem), some western commercial vehicle programs",
+      "threat_to_aeva": "Cost and scale threat for commodity automotive LiDAR; not yet qualified for the specific L3/L4 use cases where FMCW differentiates",
+      "source_url": "https://www.automotiveworld.com/news/hesai-posts-first-ever-profit-as-lidar-shipments-pass-1-6m-units/"
+    },
+    {
+      "name": "RoboSense",
+      "hq": "China",
+      "technology": "ToF solid-state",
+      "market_position": "26% of China passenger car LiDAR market (joint with Hesai); aggressive international expansion",
+      "share_trajectory": "GAINING — winning volume programs; listed on HKEX",
+      "threat_to_aeva": "Similar to Hesai; cost-driven, volume-focused; not yet in production in European/US L3 passenger programs"
+    },
+    {
+      "name": "Innoviz Technologies",
+      "hq": "Israel",
+      "technology": "ToF solid-state (InnovizOne, InnovizTwo)",
+      "market_position": "The most direct western ToF competitor to Aeva in L3 passenger OEM programs. FY2025 revenue $55.1M (doubled YoY). BMW Series 7 / i7 in production (InnovizOne). Volkswagen ID.Buzz AD program ramping (InnovizTwo). Won Daimler Truck L4 program alongside Aeva (different sensors).",
+      "revenue_2025_usd_m": 55.1,
+      "share_trajectory": "GROWING — in production with BMW; VW ramp underway; targeting top-5 global OEM (2027 SOP). Successfully completing L3 production milestones where Aeva is pre-SOP.",
+      "key_wins": "BMW (production), Volkswagen (production ramp), undisclosed top-5 global OEM (SOP 2027)",
+      "threat_to_aeva": "HIGH — already in production at passenger OEM scale where Aeva is not yet. InnovizTwo meets 450m detection range for L3 highway autonomy; directly contests the argument that ToF cannot match FMCW for L3.",
+      "source_url": "https://www.prnewswire.com/news-releases/innoviz-reports-fourth-quarter-and-full-year-2025-results-302696902.html"
+    },
+    {
+      "name": "Ouster (merged with Velodyne; now Ouster-Velodyne)",
+      "hq": "US",
+      "technology": "ToF (digital spinning and solid-state)",
+      "market_position": "Revenue ~$169M TTM; broader market coverage (infrastructure, robotics, vehicles). Acquired StereoLabs (vision AI) in February 2026. Not focused on L3 passenger OEM automotive.",
+      "revenue_ttm_usd_m": 169,
+      "share_trajectory": "STABLE/BROADENING — pivoting toward smart infrastructure and robotics, less direct competition with Aeva in automotive L3",
+      "threat_to_aeva": "MODERATE — in CityOS/infrastructure segment (Ouster's REV8 color LiDAR targets smart transport); lower in automotive L3"
+    },
+    {
+      "name": "Luminar Technologies",
+      "hq": "US (bankrupt / liquidated)",
+      "technology": "ToF (1550nm)",
+      "market_position": "EXITED. Filed Chapter 11 December 2025. IP sold to MicroVision for $33M; chip business to Quantum Computing. Formerly had Volvo (lost), Mercedes, Nissan development agreements.",
+      "share_trajectory": "ELIMINATED — Luminar's exit removes a direct US ToF competitor in L3 automotive. Its design wins are in dispute/transition.",
+      "note": "Luminar's bankruptcy is a meaningful competitive clearing event for Aeva. OEMs that were using Luminar as a second-source or alternative must now qualify a replacement — Aeva is the only Western-headquartered FMCW supplier with automotive-grade hardware in qualification.",
+      "source_url": "https://www.manufacturingdive.com/news/sensor-luminar-technologies-chapter-11-bankruptcy-chip-sale-quantum-computing/808129/"
+    },
+    {
+      "name": "Mobileye (Intel subsidiary) / Waymo (Alphabet subsidiary)",
+      "hq": "US / Israel",
+      "technology": "Captive (in-house VCSEL-based and custom)",
+      "market_position": "Captive — build for their own autonomy stacks only; not open-market competitors to Aeva. However, OEMs that adopt the Mobileye Drive platform must use Mobileye's sensor suite, reducing addressable market.",
+      "threat_to_aeva": "INDIRECT — OEM adoption of Mobileye Drive locks out third-party LiDAR unless selected as reference (Aeva is now on the NVIDIA DRIVE Hyperion reference platform, providing a parallel path)"
+    },
+    {
+      "name": "Continental AG (in-house LiDAR development)",
+      "technology": "FMCW (in-house)",
+      "market_position": "Tier-1 automotive supplier building its own FMCW LiDAR. Continental is both a potential customer (if it outsources) and a direct competitor (if it develops in-house). No announced production programs as an FMCW supplier as of mid-2026.",
+      "threat_to_aeva": "MODERATE-TO-HIGH — the main risk of OEM in-sourcing or Tier-1 vertical integration for FMCW; timeline is 2028+ for any Continental-developed FMCW production"
+    }
+  ],
+
+  "the_share_dynamic": "The automotive LiDAR market is undergoing two simultaneous shifts. First, China is consolidating around Hesai and RoboSense at high volume and falling ASPs (Hesai: 1.62M units in 2025, now profitable). Western OEMs outside China are following a different trajectory: they are awarding L3 production programs to independent suppliers with automotive-grade qualification — Innoviz won BMW and VW; Aeva won Daimler Truck and the unnamed European OEM. Second, within the western L3 market, FMCW is beginning to displace ToF in new-program selection — the December 2025 European OEM exclusive award to Aeva (over unnamed ToF alternatives) and the NVIDIA DRIVE Hyperion reference-sensor selection (announced January 2026) are the first concrete signals of a technology preference shift. However, Innoviz (ToF) counters this: InnovizTwo has achieved 450m range, meeting L3 requirements, and is already in production with VW. The share-shift thesis for Aeva therefore rests on new program wins from 2026 onward, NOT on displacing Innoviz from its existing book. Luminar's exit creates a direct competitive opening: 3-4 OEMs that had Luminar in their supply chain need a qualified replacement, and Aeva is the most advanced western alternative. The risk is Chinese suppliers (Hesai, Seyond) winning those replacements via cost, or Continental completing its in-house FMCW program.",
+
+  "product_differentiation": {
+    "fmcw_vs_tof": {
+      "fmcw_advantages": [
+        "Simultaneous range AND instantaneous radial velocity per point — no computational inference of velocity; direct Doppler measurement. This is physically impossible with pulsed ToF.",
+        "Ghost-free: immune to interference from other LiDARs (the frequency sweep is unique), making dense autonomous-vehicle environments safe. ToF sensors can cause false echoes.",
+        "Higher SNR at long range due to coherent detection; theoretically better performance in rain/fog for close-range detections.",
+        "Lower peak optical power (continuous wave vs pulse), enabling compact photonic-integrated-circuit (PIC) designs that scale like semiconductors."
+      ],
+      "tof_advantages": [
+        "Mature supply chain; Hesai and Innoviz are in production while FMCW remains pre-production.",
+        "Modern ToF (InnovizTwo) achieves 450m detection range, meeting L3 highway requirements — the traditional range gap has narrowed.",
+        "FMCW degrades in fog beyond ~25m (vs ~125m for ToF) — a meaningful limitation for adverse-weather markets.",
+        "Lower cost at scale today; FMCW silicon photonics yield and packaging cost is unproven at mass production."
+      ],
+      "verdict": "FMCW is technically differentiated for velocity sensing and interference immunity. The velocity advantage matters most for L4 autonomy (object classification and motion prediction) and dense multi-sensor environments. For L3 highway ADAS where range is the primary metric, the advantage is less clear-cut. The market is making its judgment: Aeva has won one exclusive passenger OEM production program and the NVIDIA reference position, but Innoviz (ToF) has won more programs and is already shipping.",
+      "sources": [
+        "https://lidarnews.com/fmcw-vs-tof-lidar-technology-debate/",
+        "https://innoviz.tech/blog/fmcw-vs-time-of-flight-lidar-why-tof-leads-the-way-in-automotive-applications"
+      ]
+    }
+  },
+
+  "five_forces": {
+    "buyer_power": "HIGH — OEMs have enormous negotiating leverage over small pre-revenue suppliers. Aeva's multi-year exclusive contracts partially mitigate this within the program, but initial pricing is OEM-driven. Customer concentration is extreme (two contracted OEMs account for essentially all committed production revenue).",
+    "supplier_power": "MODERATE — photonic components (InP/Si chips) from a small number of foundries; packaging and optical components are specialized. The Fortune 500 investment includes manufacturing partnership, reducing some supply risk.",
+    "threat_of_entry": "LOW-TO-MODERATE (near-term) / MODERATE (medium-term) — automotive-grade qualification (AEC-Q100, IATF 16949) takes 3-5 years and hundreds of millions in R&D. Near-term new entrants are unlikely. Medium-term risk is Tier-1 suppliers (Continental, Bosch) vertically integrating FMCW once silicon photonics matures.",
+    "threat_of_substitutes": "HIGH — camera-only or radar-only ADAS (Tesla's approach) represents a no-LiDAR path. For L3+ autonomy, the regulatory/safety path appears to require LiDAR, but this is not yet mandated globally. Within LiDAR, ToF is a direct substitute and is in production now.",
+    "competitive_rivalry": "HIGH — the L3 western OEM market has 3-4 qualified suppliers (Aeva, Innoviz, Cepton/Magna, potentially Valeo) competing for a limited number of new-platform awards. Program wins are winner-take-most within an OEM platform (Aeva won exclusive supplier status for the European OEM). Rivalry is most intense at the design-win stage."
+  },
+
+  "moat": {
+    "assessment": "NARROW and CONTESTED at this stage",
+    "sources": [
+      "Technology differentiation: FMCW provides native velocity measurement that ToF cannot replicate without additional processing. This is a real and defensible technical advantage — but only as long as the velocity data creates meaningful value in the OEM's perception stack.",
+      "Design-win lock-in: once qualified as the exclusive supplier on a multi-year OEM platform, switching costs are very high (re-qualification takes 2+ years). The European OEM exclusive through the mid-2030s is the strongest moat evidence to date.",
+      "NVIDIA DRIVE Hyperion reference position: being the reference LiDAR for NVIDIA's AV platform creates a structural advantage for any OEM that adopts NVIDIA's stack — the path of least resistance is to use Aeva.",
+      "IP: 300+ patents in FMCW LiDAR."
+    ],
+    "moat_risks": [
+      "Moat is not yet monetized — Aeva has won programs but not yet achieved production economics that prove the moat translates to margin.",
+      "Continental's in-house FMCW development is the most direct threat to the technology differentiation story.",
+      "Hesai's cost curve: if FMCW ASPs must compete with ToF at $100-200/unit, the economics may be challenged."
+    ]
+  },
+
+  "revenue_drivers": [
+    "Number of production design wins (SOP dates and volumes)",
+    "Vehicle production volumes of OEM partners (Daimler Truck, European OEM)",
+    "ASP per LiDAR unit (currently not disclosed; automotive target typically $150-500 at scale)",
+    "NRE/engineering services from new development programs",
+    "CityOS municipal/government contract awards",
+    "Eve/industrial sensor volumes (Nikon, new wins)"
+  ],
+
+  "npat_margin_drivers": [
+    "Gross margin leverage: shift from NRE/custom work toward volume hardware — unit economics improve at >50,000-100,000 units/year",
+    "Fixed-cost leverage: 239 employees, ~$120M opex/year; revenue scaling with fixed R&D base drives margin",
+    "Manufacturing partner (Fortune 500 affiliate, 6% stake): reduces capex and accelerates yield curve",
+    "Mix shift: higher-margin software (CityOS) as a proportion of revenue over time"
+  ],
+
+  "sources": [
+    {
+      "name": "Aeva Q1 2026 earnings release",
+      "url": "https://www.businesswire.com/news/home/20260506436947/en/Aeva-Reports-First-Quarter-2026-Results",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva European OEM exclusive award press release, Dec 3 2025",
+      "url": "https://www.businesswire.com/news/home/20251203154553/en/Aeva-Wins-Exclusive-Global-Production-Contract-from-Top-European-Passenger-OEM",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Daimler Truck scaled production collaboration, July 16 2025",
+      "url": "https://investors.aeva.com/news-releases/news-release-details/aeva-accelerate-scaled-production-4d-lidar-autonomous-trucks",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Apollo $100M convertible note, Nov 5 2025",
+      "url": "https://finance.yahoo.com/news/aeva-announces-100m-investment-apollo-211500662.html",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva NVIDIA DRIVE Hyperion reference sensor, Jan 5 2026",
+      "url": "https://investors.aeva.com/news-releases/news-release-details/aeva-and-nvidia-integrate-4d-lidar-reference-sensor-within",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva CityOS Georgia deployment, March 31 2026",
+      "url": "https://www.aeva.com/press/aeva-cityos-selected-for-large-scale-deployment-in-georgia/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Nikon Aeva multi-year production agreement, April 2026",
+      "url": "https://www.aeva.com/press/nikon-selects-aeva-in-multi-year-production-agreement-to-power-next-generation-of-high-precision-industrial-metrology-inspection-products/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Yole Group: automotive LiDAR market quadruples to $3.6B by 2030, July 2025",
+      "url": "https://www.yolegroup.com/press-release/china-takes-the-lead-in-automotive-lidar-a-market-set-to-quadruple-by-2030/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "MarketsandMarkets: automotive LiDAR $9.59B by 2030, Jan 2025",
+      "url": "https://www.prnewswire.com/news-releases/automotive-lidar-market-worth-9-59-billion-in-2030--marketsandmarkets-302354039.html",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Innoviz FY2025 results: $55.1M revenue, BMW/VW programs",
+      "url": "https://www.prnewswire.com/news-releases/innoviz-reports-fourth-quarter-and-full-year-2025-results-302696902.html",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Hesai 2025: 1.62M units, first profit, $416M revenue",
+      "url": "https://www.automotiveworld.com/news/hesai-posts-first-ever-profit-as-lidar-shipments-pass-1-6m-units/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Luminar bankruptcy Dec 2025, Luminar assets to MicroVision",
+      "url": "https://www.manufacturingdive.com/news/sensor-luminar-technologies-chapter-11-bankruptcy-chip-sale-quantum-computing/808129/",
+      "tier": "media"
+    },
+    {
+      "name": "FMCW vs ToF technical comparison, LidarNews",
+      "url": "https://lidarnews.com/fmcw-vs-tof-lidar-technology-debate/",
+      "tier": "media"
+    },
+    {
+      "name": "Innoviz ToF rebuttal: InnovizTwo 450m range meets L3",
+      "url": "https://innoviz.tech/blog/fmcw-vs-time-of-flight-lidar-why-tof-leads-the-way-in-automotive-applications",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Fortune 500 $50M strategic investment, May 2025",
+      "url": "https://www.businesswire.com/news/home/20250514327758/en/Aeva-Announces-Strategic-Collaboration-and-Investment-with-a-Global-Fortune-500-Companys-Technology-Affiliate",
+      "tier": "company_filed"
+    }
+  ]
+}
