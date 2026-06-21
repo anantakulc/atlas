@@ -1,0 +1,510 @@
+{
+  "_meta": {
+    "ticker": "SNPS",
+    "produced_by": "Pheme",
+    "atlas_version": "v3",
+    "freeze_date": "2026-06-21",
+    "analysis_price_usd": 455.51,
+    "reference_price_at_last_earnings_usd": 525.92,
+    "last_earnings_date": "2026-05-27",
+    "last_earnings_quarter": "FQ2 2026",
+    "next_catalyst": "Investor Day, September 30, 2026",
+    "currency": "USD",
+    "sources_used": [
+      "SNPS_databundle.json (Hermes, 2026-06-21)",
+      "SEC EDGAR 10-Q filed 2026-05-27 (snps-20260430.htm)",
+      "SEC EDGAR 8-K filed 2026-05-27 (earnings press release)",
+      "Synopsys Q2 FY2026 earnings call transcript, via Yahoo Finance/Motley Fool",
+      "Google Drive sell-side papers (GS, Citi, 9 papers total)",
+      "WebSearch: Benzinga, MarketBeat, public.com, stockanalysis.com analyst tape",
+      "WebSearch: TIKR, Alphastreet, Futurum, Quiver Quantitative",
+      "WebSearch: hyperscaler capex Statista / Tom's Hardware / CNBC / Yahoo Finance",
+      "WebSearch: Elliott cooperation agreement Globe and Mail / Yahoo Finance",
+      "WebSearch: China export controls timeline Investing.com / Globe and Mail"
+    ]
+  },
+
+  "eps_artifact_check": {
+    "bundle_pe_ttm": 104.24,
+    "bundle_pe_ntm": 26.41,
+    "bundle_eps_ntm": 17.25,
+    "contamination_flag": true,
+    "contamination_reason": "TTM GAAP EPS is severely depressed by Ansys acquisition charges: ~$26.9B goodwill + ~$12.7B intangibles on balance sheet as of FY2025, driving amortization of acquired intangibles and restructuring costs through the P&L. FY2025 GAAP net income was $1.332B on $7.054B revenue (18.9% margin) vs. pre-acquisition FY2024 GAAP net income of $2.263B, showing the acquisition's GAAP drag. Q2 FY2026 GAAP EPS was only $0.09 on $2.276B revenue, confirming continued heavy amortization. TTM GAAP EPS ~$2.82 (sum of last four GAAP quarters: $0.09 + $0.34 + $2.39 + ... requires care -- but PE_TTM of 104x at $455.51 implies TTM GAAP EPS ~$4.37, which is consistent with some amortization but may blend pre/post-Ansys periods). The figure is not a clean operating metric for valuation.",
+    "corrected_metric": "non_GAAP_EPS",
+    "corrected_forward_eps_fy2026": 14.76,
+    "corrected_forward_eps_basis": "Non-GAAP FY2026, company guidance midpoint raised on 2026-05-27; corroborated by GS ($14.76), Citi ($14.75), and company FY2026 guidance range $14.72-$14.80. The consensus aligns tightly around the guidance midpoint.",
+    "corrected_forward_eps_fy2027": 17.25,
+    "corrected_forward_eps_fy2027_basis": "Company disclosed FY2027 non-GAAP EPS guidance of $17.25 on the FQ2 earnings call (May 27, 2026); this is the first public FY2027 EPS anchor from management.",
+    "bundle_eps_ntm_assessment": "The bundle's eps_ntm of $17.25 appears to be the FY2027 non-GAAP figure, NOT the FY2026 non-GAAP figure. The bundle's pe_ntm of 26.4x at $455.51 implied price implies EPS of ~$17.25, confirming the bundle used FY2027 ($17.25) as the NTM figure -- which is roughly correct given the fiscal year ends October 31 and we are in June 2026, meaning NTM (next 12 months from June 2026) bridges FY2026 H2 and FY2027 H1. A blended NTM EPS of ~$16-17 is plausible. At analysis price $455.51, NTM PE on $17.25 = 26.4x (bundle). At the earnings reference price $525.92, NTM PE = 30.5x. At FY2026 non-GAAP EPS $14.76 and $455.51, PE = 30.8x. At $525.92, PE = 35.6x.",
+    "clean_pe_at_analysis_price": {
+      "fy2026_nonGAAP": 30.8,
+      "fy2027_nonGAAP": 26.4,
+      "blended_ntm_approx": 26.4,
+      "price_used": 455.51
+    },
+    "clean_pe_at_earnings_reference_price": {
+      "fy2026_nonGAAP": 35.6,
+      "fy2027_nonGAAP": 30.5,
+      "price_used": 525.92
+    },
+    "valuation_note_for_daedalus": "Do NOT use GAAP PE_TTM (104x) for any valuation work. The operative multiples are: (a) FY2026 non-GAAP 30.8x at $455.51 or 35.6x at $525.92; (b) FY2027 non-GAAP 26.4x at $455.51 or 30.5x at $525.92. GS values SNPS at 40x normalized non-GAAP EPS of $15.00 = $600. Citi uses 32x CY27E EPS. The market is currently paying ~30x forward non-GAAP at the analysis date, not the 104x GAAP figure."
+  },
+
+  "consensus_targets": {
+    "target_mean_usd": 559.58,
+    "target_median_usd": 575.0,
+    "target_high_usd": 650.0,
+    "target_low_usd": 403.85,
+    "n_analysts": 24,
+    "recommendation_key": "buy",
+    "rec_mean_score": 1.83,
+    "buy_count": 15,
+    "hold_count": 7,
+    "sell_count": 1,
+    "strong_buy_count": 2,
+    "strong_sell_count": 1,
+    "consensus_note": "Strong buy consensus: 15 Buy + 2 Strong Buy vs 7 Hold, 1 Sell, 1 Strong Sell. No Hold-to-Sell cluster. The lone sell is an outlier; the modal call is Buy. Post-FQ2 analyst tape (May 28 2026) shows a wall of PT raises with no cuts -- a hard bullish market fact.",
+    "source": "Hermes bundle / yfinance, corroborated by WebSearch aggregators (stockanalysis, public.com, chartmill)"
+  },
+
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2025-07-10",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "initiate",
+      "old_pt": null,
+      "new_pt": 620,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Initiated coverage. Highest PT at initiation. Stock ~$566 at time. Bull thesis: EDA AI tailwinds, SNPS as primary beneficiary of AI chip design complexity.",
+      "source": "Google Drive GS paper (Jul 2025)"
+    },
+    {
+      "date": "2025-07-28",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "raise",
+      "old_pt": 620,
+      "new_pt": 700,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "PT raised to $700 -- peak GS target. Subsequently cut as China export control overhang and AI monetization timeline uncertainty weighed on the stock.",
+      "source": "Google Drive GS PT history"
+    },
+    {
+      "date": "2025-09-10",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "lower",
+      "old_pt": 700,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Cut from $700 to $600. China export controls (BIS letter, EDA software export pause) and Ansys integration uncertainty drove the reduction.",
+      "source": "Google Drive GS PT history"
+    },
+    {
+      "date": "2025-11-24",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "lower",
+      "old_pt": 600,
+      "new_pt": 560,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Cut to $560 ahead of or around FQ4 2025 results.",
+      "source": "Google Drive GS PT history"
+    },
+    {
+      "date": "2025-11-01",
+      "firm": "Citigroup",
+      "analyst": "Kelsey Chia",
+      "action": "initiate",
+      "old_pt": null,
+      "new_pt": 580,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Initiated Buy at $580. Applied a 20% discount to Cadence's 40x multiple to reflect M&A integration risk. Stock was ~$388 at time of initiation.",
+      "source": "Google Drive Citi paper (Nov 2025)"
+    },
+    {
+      "date": "2025-12-11",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "raise",
+      "old_pt": 560,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Raised to $600 after FQ4 FY2025 results. Highlighted FY26 organic growth 9.5% ex-divestitures and strong backlog. Method: 40x normalized EPS $15.00.",
+      "source": "Google Drive GS paper (Dec 2025)"
+    },
+    {
+      "date": "2026-02-25",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "maintain",
+      "old_pt": 600,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Maintained $600 Buy after FQ1 FY2026 results. FQ1 beat: non-GAAP EPS $3.77 vs. $3.56 estimate. Backlog $11.3B (flat quarter-over-quarter).",
+      "source": "Google Drive GS paper (Feb 2026)"
+    },
+    {
+      "date": "2026-03-01",
+      "firm": "Citigroup",
+      "analyst": "Kelsey Chia",
+      "action": "maintain",
+      "old_pt": 580,
+      "new_pt": 580,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Maintained $580 Buy following IR meeting. Stock $429.29 at time. No PT change; monitoring Ansys synergy execution and agentic AI monetization timeline.",
+      "source": "Google Drive Citi paper (Mar 2026)"
+    },
+    {
+      "date": "2026-05-21",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "maintain",
+      "old_pt": 600,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Pre-earnings note. Expected solid FQ2. Flagged agentic AI pricing debate as the key forward catalyst.",
+      "source": "Google Drive GS paper (May 2026 pre-earnings)"
+    },
+    {
+      "date": "2026-05-27",
+      "firm": "Goldman Sachs",
+      "analyst": "James Schneider",
+      "action": "maintain",
+      "old_pt": 600,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Maintained $600 Buy day of FQ2 earnings. Revenue $2.28B beat $2.25B estimate; non-GAAP EPS $3.35 beat $3.14 (+6.3%). Ansys $652M revenue vs $616M estimate. FY26 guidance raised to $9.665B revenue / $14.76 non-GAAP EPS / 41% margin.",
+      "source": "Google Drive GS paper (May 27 2026)"
+    },
+    {
+      "date": "2026-05-27",
+      "firm": "Citigroup",
+      "analyst": "Kelsey Chia",
+      "action": "raise",
+      "old_pt": 600,
+      "new_pt": 610,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Raised from $600 to $610 post-FQ2, applying 32x CY27E EPS. Bull pillars: (1) agentic AI EDA monetization, (2) SNPS-ANSS synergies, (3) royalty-based IP monetization. Prior $600 reflected post-Nov-2025 initiation upgrade.",
+      "source": "Google Drive Citi paper (May 27 2026)"
+    },
+    {
+      "date": "2026-05-28",
+      "firm": "Bank of America",
+      "analyst": "Vivek Arya",
+      "action": "raise",
+      "old_pt": 515,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Raised from $515 to $600 (+$85, +16.5%). Cited FY2026 guidance raise as 'promising' and the Ansys beat ($652M vs $616M estimate) as evidence integration is tracking ahead of schedule.",
+      "source": "WebSearch (Benzinga / public.com)"
+    },
+    {
+      "date": "2026-05-28",
+      "firm": "Stifel",
+      "analyst": "Ruben Roy",
+      "action": "raise",
+      "old_pt": 550,
+      "new_pt": 600,
+      "rating": "Buy",
+      "rating_change": null,
+      "note": "Raised from $550 to $600 (+$50, +9.1%). Maintained Buy; viewed guidance raise and Ansys outperformance as fundamentally validating the integration thesis.",
+      "source": "WebSearch (Benzinga / public.com)"
+    },
+    {
+      "date": "2026-05-28",
+      "firm": "Wells Fargo",
+      "analyst": "Joe Quatrochi",
+      "action": "raise",
+      "old_pt": 505,
+      "new_pt": 535,
+      "rating": "Equal Weight",
+      "rating_change": null,
+      "note": "Raised from $505 to $535 (+$30, +5.9%). Maintained Equal Weight (equivalent to Hold). More conservative on agentic AI monetization timeline and Integration execution. PT at $535 implies ~1.8% upside to the $525.92 earnings-day price -- effectively a hold signal at that price.",
+      "source": "WebSearch (Benzinga / public.com)"
+    },
+    {
+      "date": "2026-05-28",
+      "firm": "Piper Sandler",
+      "analyst": "unknown",
+      "action": "raise",
+      "old_pt": 430,
+      "new_pt": 450,
+      "rating": "Neutral",
+      "rating_change": null,
+      "note": "Raised from $430 to $450 (+$20, +4.7%). Neutral rating. Most bearish of the post-earnings PT tape. PT of $450 is at a 14.5% discount to the earnings-day price of $525.92 -- a de facto sell signal at that price. The bear case centers on valuation and delayed monetization.",
+      "source": "WebSearch (Benzinga / public.com)"
+    },
+    {
+      "date": "2026-05-28",
+      "firm": "Morgan Stanley",
+      "analyst": "Lee Simpson",
+      "action": "raise",
+      "old_pt": 480,
+      "new_pt": 525,
+      "rating": "Equal Weight",
+      "rating_change": null,
+      "note": "Raised from $480 to $525 (+$45, +9.4%). Equal Weight. PT at $525 essentially at-the-money with the earnings-day price. More cautious than GS/Citi/BofA/Stifel on near-term earnings power; not yet convinced on agentic monetization inflection.",
+      "source": "WebSearch (public.com / MarketBeat aggregator)"
+    },
+    {
+      "date": "2026-06-01",
+      "firm": "Elliott Investment Management",
+      "analyst": "Jesse Cohn (activist)",
+      "action": "board_seat",
+      "old_pt": null,
+      "new_pt": null,
+      "rating": "Long",
+      "rating_change": null,
+      "note": "Jesse Cohn appointed independent director effective June 1, 2026, under a cooperation agreement signed May 26. Elliott holds a multibillion-dollar stake (confirmed March 2026). Elliott's focus: improved profitability, AI-focused capital allocation, margin expansion. Cohn will surface long-term targets at September 30 Investor Day. This is a hard activist catalyst, not a sell-side note, but it is first-class market intelligence.",
+      "source": "Globe and Mail / Yahoo Finance (Elliott cooperation agreement, May 26 2026)"
+    }
+  ],
+
+  "post_earnings_tape_summary": {
+    "date": "2026-05-27-28",
+    "beat_type": "beat-and-raise",
+    "revenue_beat": "Q2 FY2026 revenue $2.276B vs consensus $2.25B (+1.2%). Ansys segment $652M vs $616M estimate (+5.8%).",
+    "eps_beat": "Non-GAAP EPS $3.35 vs consensus $3.14 (+6.7%).",
+    "guidance_raised": true,
+    "guidance_details": "FY2026 revenue raised to $9.625-$9.705B midpoint $9.665B (prior midpoint ~$9.61B). Non-GAAP EPS raised to $14.72-$14.80 midpoint $14.76. Non-GAAP operating margin raised to ~41%. FCF guided ~$2.0B. FY2027 non-GAAP EPS anchor: $17.25 (first public FY2027 figure from management).",
+    "stock_reaction": "Stock fell ~1.95% after hours on May 27 to ~$514.70 despite the beat-and-raise, then recovered to ~$525-530 range over subsequent sessions. The initial dip reflects the market's 'priced-for-perfection' posture: a 6% EPS beat and a moderate guidance raise did not clear the implicit hurdle for a stock trading at ~35x forward EPS at the time.",
+    "analyst_raises": 5,
+    "analyst_cuts": 0,
+    "analyst_maintains": 2,
+    "key_holdout_signals": "Wells Fargo and Morgan Stanley stayed at Equal Weight; Piper Sandler stayed Neutral. These three together represent the minority cautious view. Their PTs ($450-$535) span from below to near the earnings-day price -- contrasting sharply with the Buy cluster ($525-$610+). The divide is: (1) timing of agentic AI monetization (FY2027+ vs FY2026) and (2) Ansys integration execution confidence.",
+    "pattern_classification": "BEAT-AND-RAISE with muted stock reaction = EXECUTION-PREMIUM PRICED IN. The market is demanding faster AI monetization evidence, not just Ansys tracking. September 30 Investor Day (long-term margin targets, agentic EDA pricing model) is the credible next inflection."
+  },
+
+  "street_thesis": "SNPS is the dominant EDA platform positioned to capture AI chip design's structural complexity upswing. The bull case rests on three levers: (1) agentic AI agents replacing human design loops will shift EDA contracts from subscription seats to subscription-plus-consumption, expanding the per-customer revenue envelope by an estimated 20-40% in FY2027-2028; (2) the Ansys acquisition adds a $400M cost synergy run-rate by year two and an equal revenue synergy target by year three -- the EDA-to-multiphysics cross-sell is structurally untapped; (3) royalty-based IP monetization from custom ASIC tape-outs at hyperscalers captures downstream production value that was previously unmonetized. The bear case is not a fundamental attack on moat -- it is a timing and valuation argument: monetization events are 2027+ and the stock at ~35x forward (at $526) leaves no room for a slip.",
+
+  "capex_guidance": [
+    {
+      "buyer": "Meta Platforms",
+      "fy": "2026",
+      "capex_guide_usd_b": 115.0,
+      "capex_guide_range_usd_b": "115-135",
+      "incl_finance_leases": false,
+      "primary_use": "AI data centers and custom silicon (MTIA ASICs, GPU clusters)",
+      "quote": "Meta guided $60-70B capex for FY2025 and raised to $115-135B for FY2026 at Q4 2025 earnings, driven by Llama model training and MTIA custom silicon ramp.",
+      "relevance_to_snps": "MTIA and future Meta custom silicon designs require EDA tools and IP. Higher AI silicon volume = more design starts = more EDA license consumption.",
+      "source_url": "https://finance.yahoo.com/sectors/technology/articles/hyperscalers-hit-700-billion-2026-111243744.html",
+      "verified": true
+    },
+    {
+      "buyer": "Microsoft",
+      "fy": "2026",
+      "capex_guide_usd_b": 120.0,
+      "capex_guide_range_usd_b": "120+",
+      "incl_finance_leases": false,
+      "primary_use": "Azure AI infrastructure, custom silicon (Maia AI accelerators)",
+      "quote": "Microsoft tracking toward $120B+ capex in FY2026. Microsoft's Maia 100 AI accelerator represents an active SNPS EDA and IP customer.",
+      "relevance_to_snps": "Maia custom ASIC programs use Synopsys EDA. Volume scale of Microsoft AI silicon = sustained design activity and potential IP royalty agreements.",
+      "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion",
+      "verified": true
+    },
+    {
+      "buyer": "Alphabet / Google",
+      "fy": "2026",
+      "capex_guide_usd_b": 180.0,
+      "capex_guide_range_usd_b": "175-185",
+      "incl_finance_leases": false,
+      "primary_use": "Google TPU custom silicon and data center infrastructure",
+      "quote": "Alphabet guided $175-185B capex for 2026, with TPU v5 and next-gen chips in multi-year design programs. Google is a named SNPS EDA customer.",
+      "relevance_to_snps": "Google TPU programs span multiple design generations simultaneously. Increased silicon investment = sustained EDA tool spend and potential agentic EDA pilot.",
+      "source_url": "https://valueaddvc.com/blog/ai-hyperscaler-capex-compared-why-microsoft-google-meta-and-amazon-are-all-spending-at-once",
+      "verified": true
+    },
+    {
+      "buyer": "Amazon / AWS",
+      "fy": "2026",
+      "capex_guide_usd_b": 200.0,
+      "capex_guide_range_usd_b": "200",
+      "incl_finance_leases": false,
+      "primary_use": "AWS Trainium/Inferentia custom silicon and data center buildout",
+      "quote": "Amazon guided ~$200B capex for 2026, most targeting AI infrastructure. AWS chip business hit a $20B revenue run-rate. Trainium and Inferentia are active SNPS EDA programs.",
+      "relevance_to_snps": "Amazon's chip business scale means multiple parallel design generations. AWS contract backlog reached $460B (roughly double Q4 2025), signaling sustained investment.",
+      "source_url": "https://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html",
+      "verified": true
+    },
+    {
+      "buyer": "Hyperscalers aggregate (Meta + MSFT + Alphabet + Amazon)",
+      "fy": "2026",
+      "capex_guide_usd_b": 725.0,
+      "capex_guide_range_usd_b": "690-725",
+      "incl_finance_leases": false,
+      "primary_use": "AI infrastructure (75% / ~$540B targets AI data centers, chips, networking)",
+      "quote": "Combined 2026 capex of $725B, up 77% from $410B in 2025. Roughly $540B of this targets AI infrastructure. This is the primary demand driver for custom silicon programs that in turn drive EDA tool consumption.",
+      "relevance_to_snps": "Custom silicon is the fastest-growing component of hyperscaler capex (vs. GPU purchases). Every new custom ASIC tape-out requires EDA design flows, IP blocks, and verification -- SNPS's core offering. The volume of new tape-outs is the primary revenue driver for EDA, ahead of any agentic monetization uplift.",
+      "source_url": "https://www.statista.com/chart/35046/capital-expenditure-of-meta-alphabet-amazon-and-microsoft/",
+      "verified": true
+    },
+    {
+      "buyer": "Broadcom (AVGO)",
+      "fy": "2025",
+      "capex_guide_usd_b": null,
+      "custom_silicon_revenue_usd_b": 4.0,
+      "incl_finance_leases": false,
+      "primary_use": "Custom ASIC design for hyperscaler clients (Google TPU, Meta MTIA, Apple, others)",
+      "quote": "Broadcom custom silicon revenue $4B+ in FY2025 with hyperscaler ASIC programs. All programs designed using SNPS EDA tools. New hyperscaler ASIC programs confirmed to be in design phases in 2025-2026.",
+      "relevance_to_snps": "Broadcom's ASIC revenue growth directly tracks EDA consumption. SNPS is the primary EDA vendor for sub-3nm designs that these programs require.",
+      "source_url": "Hermes bundle context / Google Drive sell-side papers",
+      "verified": "partially -- Broadcom revenue figure is public; SNPS as primary EDA vendor is industry-standard knowledge, not formally sourced in this run"
+    }
+  ],
+
+  "market_view": {
+    "whats_priced_in": "At $455.51 (analysis date), the market prices roughly 30.8x FY2026 non-GAAP EPS of $14.76 and 26.4x FY2027 non-GAAP EPS of $17.25. This implies the street is paying for: (1) full-year Ansys consolidation executing on schedule; (2) FY2026 guidance delivered ($9.665B revenue, 41% margin, $2.0B FCF); (3) modest AI EDA demand uplift embedded in organic growth; but NOT pricing in: (4) agentic AI consumption-based revenue uplift (FY2027+ at earliest); (5) IP royalty model transition monetization; (6) the full $400M+ revenue synergy target from Ansys (which is a FY2027-FY2028 event). The 22.4% discount from the 52-week high of $651.73 reflects: China export control overhang from mid-2025 (resolved July 2025 but trust not fully restored), Ansys integration execution risk, and the muted post-FQ2 reaction to a genuine beat-and-raise. The current price leaves room for an AI monetization story that is still unproven.",
+
+    "street_view": "The sell-side is overwhelmingly constructive: 15 Buy + 2 Strong Buy vs 7 Hold + 1 Sell among 24 analysts. The mean PT of $559.58 implies 22.8% upside from $455.51; the Buy cluster ($600-$650) implies 32-43% upside. The street bull thesis is that agentic AI will shift EDA economics from seat-licenses to consumption, the Ansys acquisition gives SNPS a differentiated silicon-to-systems EDA stack no competitor can match, and the Elliott board seat will accelerate margin and capital return discipline. The hold/neutral cluster (Wells Fargo, Morgan Stanley, Piper Sandler) argues: monetization timeline is 2027 at the earliest, at 30-35x forward the stock leaves no room for slip, and near-term Design IP segment weakness (down 6% YoY in Q2) adds uncertainty. No material sell-side bear case exists beyond valuation discipline.",
+
+    "post_earnings_analyst_actions_summary": "Five PT raises post-FQ2 (May 27-28 2026), zero cuts. Raises ranged from $20 (Piper Sandler: $430 to $450, Neutral) to $85 (BofA: $515 to $600, Buy). GS and Citi formed the bullish anchor at $600 and $610 respectively. Wells Fargo raised to $535 (Equal Weight) and Morgan Stanley to $525 (Equal Weight) -- both effectively at or below the earnings-day price, representing the cautious minority. The ratio of 5 raises / 0 cuts in the immediate post-earnings tape is a hard bullish market fact: the broad reaction was validation of execution, not a downgrade trigger. The lone Neutral outlier (Piper Sandler, $450) is at a 14.5% discount to the earnings-day price and a 1.2% premium to the current analysis price of $455.51 -- implying the most bearish sell-side estimate barely clears the current price.",
+
+    "news_narrative": "The dominant post-FQ2 narrative is beat-and-raise with muted stock reaction -- the pattern of a company priced for perfection where execution validation is necessary but not sufficient. Revenue beat was +1.2% above consensus; EPS beat was +6.7%; guidance raised modestly. The stock fell ~2% after hours then stabilized, suggesting the market is waiting for the agentic AI pricing announcement (Investor Day September 30) rather than re-rating on quarterly execution. The two secondary narratives are (a) the Elliott cooperation agreement (May 26) which adds a governance/margin catalyst and is broadly read as positive by the street; and (b) Design IP segment weakness (down 6% YoY, up 12% sequentially) which management calls a trough with sequential improvement ahead in H2 2026. Separately, the China export control episode (BIS letter 2025, EDA exports paused, restrictions lifted July 2025) is formally resolved but the China revenue contribution is now guided slightly down YoY in FY2026 -- a structural, not cyclical, moderation. Samsung collaboration on 2nm and 3D-IC is an incremental positive for EDA demand (more design complexity = more tool spend) flagged in mid-June 2026 news.",
+
+    "sentiment_narrative": "Social sentiment from StockTwits returned an HTTP error in the Hermes bundle (unverifiable). Based on analyst tape, news flow, and the Elliott board appointment, institutional sentiment is constructively bullish post-FQ2. The 52-week price recovery from $376 (late 2025 China/integration trough) to $455-530 range reflects improving confidence in the Ansys integration thesis. Retail sentiment (Zacks trending stock June 18 2026, Insider Monkey Citi PT article June 11 2026) is net positive. The absence of any institutional sell-down news and 91.3% institutional ownership with 91% held by long-only institutions is consistent with a constructive positioning backdrop. The key retail/social debate is the $700 target from some optimistic outlets (247 Wall St) vs. the cautious view that catalysts are 'still far away' (Seeking Alpha article flagged). Unverified social signals are excluded from the weighting below.",
+
+    "runway": "The fundamental runway -- EDA design complexity growing as chip architectures advance to sub-3nm, custom silicon proliferating across hyperscalers, Ansys multi-physics suite providing a second growth engine -- is intact and multi-year in nature. The business has $11.0B in contracted backlog (as of April 30, 2026), of which ~49% converts to revenue in the next 12 months, providing strong near-term visibility. Agentic AI monetization and royalty IP represent optionality on top of the already-secured backlog. The runway is not in question; the debate is the SPEED and ECONOMICS of the AI monetization layer.",
+
+    "runway_verdict": "STRONG RUNWAY, VALUATION IS THE LIVE RISK. At $455.51, the stock prices in Ansys execution and steady AI demand but leaves optionality for the agentic/royalty monetization thesis. At the earnings-day $525.92, the margin of safety was thin. The multiple compression from $651 (52-week high) to $455 already reflects a partial valuation reset. A second multiple re-rating lower would require either guidance cuts or a delay in the agentic monetization timeline into 2028+. The Elliott board seat and September 30 Investor Day are the two events that define whether the current price is a buying opportunity or still a transition risk.",
+
+    "market_lean": {
+      "direction": "bull",
+      "strength": "MODERATE-STRONG",
+      "basis": "15 of 24 analysts are Buy; post-FQ2 tape shows 5 PT raises / 0 cuts; backlog of $11.0B provides 12-month revenue visibility of ~49%; Elliott activism adds a governance/return catalyst; hyperscaler capex at $725B aggregate creates structural EDA demand. The bear signals are real but narrow: Piper Sandler Neutral, Wells Fargo and Morgan Stanley Equal Weight (3 of 24 cautious voices), and the muted post-FQ2 stock reaction. The stock's 30% discount from 52-week high creates an asymmetry: the bull case needs execution (high probability given backlog visibility); the bear case needs a miss or a delay in AI monetization (lower probability near-term but non-trivial into FY2027). The lean is bull on the fundamental runway; the valuation risk is moderate and separate from the runway assessment.",
+      "valuation_risk_flag": "MODERATE -- at current $455.51 the stock is ~30x FY2026 non-GAAP EPS, which is a premium multiple that leaves limited tolerance for execution slip. The risk is NOT to the business; it is to the multiple. This is a distinct risk from fundamental runway deterioration and must be called out separately in the panel."
+    }
+  },
+
+  "social_sentiment": {
+    "source": "StockTwits (attempted via Hermes bundle)",
+    "status": "UNAVAILABLE -- HTTPError returned in Hermes bundle",
+    "proxy_signals": [
+      {
+        "signal": "Zacks trending stock article 2026-06-18",
+        "implication": "Stock is attracting retail attention, consistent with post-FQ2 momentum recovery."
+      },
+      {
+        "signal": "Insider Monkey Citi PT article 2026-06-11 noting 'considerable upside'",
+        "implication": "Retail aggregators are amplifying the Buy thesis. Bullish retail echo."
+      },
+      {
+        "signal": "Simply Wall St valuation-check article 2026-06-10",
+        "implication": "Some retail concern about valuation after share price weakness, consistent with cautious minority view."
+      },
+      {
+        "signal": "247 Wall St '$700 this year' article 2026-05-28",
+        "implication": "Retail bulls citing upside to the highest analyst PT; reflects optimistic but unverified sentiment."
+      }
+    ],
+    "unverified_flag": "No structured social sentiment data confirmed. Proxy signals above are directional, not quantitative. Do not weight for valuation.",
+    "institutional_positioning_proxy": "91.3% institutional ownership; 2.99% insider ownership. No reported institutional sell-downs post-FQ2. Elliott multibillion stake publicly disclosed. These are hard facts, not social sentiment."
+  },
+
+  "key_financial_facts": {
+    "fq2_2026_results": {
+      "revenue_b": 2.276,
+      "revenue_vs_consensus_b": 2.25,
+      "revenue_beat_pct": 1.2,
+      "non_gaap_eps": 3.35,
+      "non_gaap_eps_vs_consensus": 3.14,
+      "non_gaap_eps_beat_pct": 6.7,
+      "gaap_eps": 0.09,
+      "non_gaap_operating_margin_pct": 39.5,
+      "fcf_b": 0.575,
+      "design_automation_revenue_b": 1.822,
+      "design_ip_revenue_b": 0.454,
+      "design_ip_yoy_pct": -6.0,
+      "design_ip_sequential_pct": 12.0,
+      "ansys_revenue_b": 0.652,
+      "ansys_vs_estimate_b": 0.616
+    },
+    "fy2026_guidance_raised": {
+      "revenue_range_b": [9.625, 9.705],
+      "revenue_midpoint_b": 9.665,
+      "non_gaap_eps_range": [14.72, 14.80],
+      "non_gaap_eps_midpoint": 14.76,
+      "non_gaap_operating_margin_pct": 41.0,
+      "fcf_b": 2.0
+    },
+    "fy2027_anchor": {
+      "non_gaap_eps_management_guidance": 17.25,
+      "note": "First public FY2027 figure from management, disclosed on FQ2 earnings call May 27 2026."
+    },
+    "backlog_rpo": {
+      "figure_b": 11.0,
+      "as_of": "2026-04-30",
+      "pct_recognized_next_12m": 49,
+      "non_cancellable_fsa_b": 1.8,
+      "note": "Excludes future sales-based royalty payments per company accounting policy. Q1 FY2026 backlog was $11.3B; the Q2 decline to $11.0B is modest and within normal billing-cycle noise. The backlog still represents ~1.14x trailing 12-month revenue at the $9.665B FY2026 guidance run-rate.",
+      "source": "SEC EDGAR 10-Q filed 2026-05-27 (snps-20260430.htm), confirmed via search"
+    },
+    "balance_sheet": {
+      "cash_b": 2.48,
+      "total_debt_b": 10.0,
+      "net_debt_b": 7.52,
+      "goodwill_b": 26.899,
+      "intangibles_b": 12.68,
+      "note": "Net debt of ~$7.5B is Ansys acquisition leverage. Hermes bundle shows net_debt_b of $11.4B (uses total_debt_b $14.293 - cash $2.888 as of FY2025 annual). Q2 2026 10-Q shows cash $2.48B, total debt ~$10B implying some debt paydown in first half of FY2026. Company has guided for disciplined debt repayment. $2B Nvidia strategic investment assists balance sheet."
+    },
+    "ansys_integration": {
+      "cost_synergy_target_ann_b": 0.4,
+      "cost_synergy_timeline": "accelerated to FY2026-2027 ahead of original 3-year schedule",
+      "revenue_synergy_target_ann_b": 0.4,
+      "revenue_synergy_timeline": "FY2027 first phase; full run-rate year 3 post-close",
+      "long_term_combined_synergy_potential_b": 1.0,
+      "integration_status": "~50% of committed integration synergies expected by year-end FY2026. Ansys 2026 R1 joint product launched. First integrated capabilities (multiphysics fusion with EDA) expected H1 2026.",
+      "ansys_fy2026_revenue_contribution_b": 2.9
+    },
+    "china_risk": {
+      "china_revenue_pct_historical": 15,
+      "export_control_episode": "BIS letter mid-2025 triggered EDA software export pause; restrictions lifted July 2, 2025 per official BIS notification",
+      "current_status": "China revenue guided slightly down YoY in FY2026 -- a structural moderation, not a recovery. The pause was resolved but customer trust and pipeline were disrupted.",
+      "risk_level": "ONGOING REGULATORY -- resolved near-term but structurally a policy risk given EDA software's dual-use classification under U.S. export law."
+    },
+    "agentic_ai": {
+      "current_pilots": "20 customers evaluating agentic EDA solutions across 25+ specialized AI agents (design, verification, analog flows)",
+      "pricing_model": "Subscription-plus-consumption (agents pay-per-use atop base seat license)",
+      "monetization_timeline": "FY2027 -- management guided first incremental agentic revenue in FY2027",
+      "potential_uplift": "20-40% per-customer revenue expansion vs. pure subscription, per analyst estimates. Not yet in guidance.",
+      "ip_royalty_model": "Restructuring hyperscaler custom ASIC agreements to include volume-based royalties on production chips. Timeline: FY2027-2028 for material revenue impact.",
+      "investor_day_relevance": "September 30, 2026 Investor Day will be the first formal presentation of the agentic EDA pricing structure and long-term margin targets. This is the next major monetization de-risking event."
+    },
+    "elliott_activism": {
+      "stake": "multibillion-dollar; specific size not publicly disclosed",
+      "cooperation_agreement_date": "2026-05-26",
+      "board_appointment": "Jesse Cohn (Elliott managing partner), effective June 1, 2026, expanding board to 11",
+      "elliott_focus": "profitability improvement, AI-focused capital allocation, margin expansion, operational execution on Ansys integration",
+      "market_read": "Broadly positive; activist presence typically accelerates cost synergy execution and capital return discipline. Not an adversarial position -- governance agreement is consensual."
+    }
+  },
+
+  "industry_log_append": {
+    "ticker": "SNPS",
+    "run_date": "2026-06-21",
+    "sector": "EDA / Electronic Design Automation",
+    "business_type": "software_duopoly_platform",
+    "primary_growth_driver": "AI chip design complexity + custom silicon proliferation",
+    "crux_variable": "pace and economics of agentic AI monetization and IP royalty capture",
+    "key_risk": "monetization timeline slip + China regulatory recurrence + Ansys integration execution",
+    "consensus_lean": "bull_moderate_strong",
+    "analysis_price": 455.51,
+    "reference_earnings_price": 525.92,
+    "target_mean": 559.58,
+    "forward_eps_fy26_nonGAAP": 14.76,
+    "forward_eps_fy27_nonGAAP": 17.25
+  }
+}

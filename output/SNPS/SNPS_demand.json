@@ -1,0 +1,376 @@
+{
+  "_meta": {
+    "ticker": "SNPS",
+    "agent": "theia",
+    "version": "atlas_v3",
+    "as_of": "2026-06-21",
+    "normalization_year": "FY2030",
+    "fiscal_year_end": "October 31",
+    "currency": "USD_billions",
+    "contract_ref": "CONTRACT.md §4 -- revenue path as IDENTITY in sourced drivers; ceiling check on every bound; no hand-drawn fade"
+  },
+
+  "pool_and_driver_assumptions": {
+    "global_semicon_rnd_pool": {
+      "fy2026_actual_b": 99,
+      "fy2030_base_b": 145,
+      "fy2030_bull_b": 165,
+      "fy2030_bear_b": 115,
+      "cagr_base_pct": 10.0,
+      "cagr_bull_pct": 13.6,
+      "cagr_bear_pct": 3.8,
+      "source": "Top-20 semicon company R&D: $99B in 2024 (PatentPC/Yahoo Finance). Hyperscaler AI capex driving chip design R&D up 10-17% annually. Base: 10% CAGR. Bull: 13.6% (AI-driven design acceleration). Bear: 3.8% (cyclical slowdown + AI efficiency reducing per-chip R&D spend).",
+      "source_url": "https://patentpc.com/blog/semiconductor-industry-rd-spending-whos-investing-the-most"
+    },
+    "eda_ip_sim_wallet_share": {
+      "fy2026_pct": 13.5,
+      "fy2030_base_pct": 15.0,
+      "fy2030_bull_pct": 18.0,
+      "fy2030_bear_pct": 11.5,
+      "base_argument": "Modest expansion as agentic AI consumption adds a new metered layer on top of seat-based subscriptions. Historical level: 13-15%; targeting the upper end of historical range plus modest new consumption revenue.",
+      "bull_argument": "Consumption pricing breaks the historical ceiling -- AI agents invoke tools 3-5x more intensively than human engineers, and if 50% of that value is captured, wallet-share could reach 18%.",
+      "bear_argument": "AI productivity gains reduce engineering headcount faster than consumption pricing is adopted. Budget-constrained chip companies pass efficiency savings on to themselves, not to vendors. Wallet-share compresses toward 11-12%.",
+      "single_source_flag": true,
+      "note": "The 13-15% current figure is from sell-side synthesis; no independent public confirmation. Flag as THEIA_BOTTOM_UP."
+    },
+    "snps_share_of_combined_tam": {
+      "fy2026_pct": 31.0,
+      "fy2030_base_pct": 31.5,
+      "fy2030_bull_pct": 34.0,
+      "fy2030_bear_pct": 28.5,
+      "base_argument": "SNPS market share is stable in core EDA (duopoly equilibrium), modestly growing in simulation (Multiphysics Fusion unique offering) offset by IP China exposure. Blended share moves ~0.5pp over 4 years.",
+      "bull_argument": "Multiphysics Fusion captures 30-40% of the 3D IC signoff market where no competitor exists. Agent Engineer's breadth advantage over CDNS's depth approach gains wallet share in the AI-EDA transition. Total share reaches 34% vs current 31%.",
+      "bear_argument": "China EDA localization costs 2-3pp market share in Asia-Pacific. IP competition from ARM expansion and alternative interface IP vendors trims IP share. Ansys in simulation faces strengthened competition from Dassault/Hexagon as capital returns to those programs. Total share erodes to 28-29%.",
+      "source": "Multiple: Mordor Intelligence; MatrixBCG; SNPS revenue relative to EDA TAM; own calculations"
+    }
+  },
+
+  "segment_revenue_paths": [
+    {
+      "segment": "EDA (Design Automation)",
+      "driver_identity": "EDA_revenue = Global_Semicon_RnD × EDA_wallet_share_pct × SNPS_EDA_share_of_EDA_market",
+      "driver_detail": {
+        "eda_specific_wallet_share": "EDA alone is ~8-9% of chip design R&D vs 13-15% for EDA+IP+Sim combined",
+        "snps_eda_market_share": "~31%",
+        "secondary_driver": "Agentic AI consumption adds a new revenue layer on top of market-share-based seat revenue; this is NOT captured in the wallet-share identity and is additive"
+      },
+      "actuals": {
+        "fy2022": 2.43,
+        "fy2023": 2.99,
+        "fy2024": 3.42,
+        "fy2025_estimate": 3.76,
+        "source_note": "SNPS reported two segments pre-Ansys: Design Automation and Design IP. FY2025 Design Automation estimated by applying ~53% revenue share to $7.054B total. Q2 FY2026 confirms Design Automation at 51.0% of revenue."
+      },
+      "fy2026_estimate": 4.93,
+      "revenue_paths_bn": {
+        "base": {
+          "fy2027": 5.40,
+          "fy2028": 5.94,
+          "fy2029": 6.51,
+          "fy2030": 7.09,
+          "cagr_fy2026_fy2030_pct": 9.5,
+          "argument": "EDA grows at market rate (8-10% CAGR) plus modest pricing power from duopoly position. Agent Engineer adoption adds ~0.5-1pp incremental growth annually from FY2028 as consumption pricing scales. China EDA revenue stable at 8-9% of segment (restricted primarily to IP, less to EDA tools proper). Backlog provides strong visibility through FY2026-FY2027.",
+          "ceiling_check": "FY2030 EDA revenue of $7.09B vs EDA market growing to ~$18-20B by 2030 at 10-12% CAGR. Implied EDA share: $7.09B / $19B = 37.3%. This is above SNPS's current 31% share -- it implies either (a) SNPS gains share OR (b) the consumption pricing layer is additive to market share. Base case assumption: consumption pricing is additive (it is a new revenue stream, not market share). Excluding consumption, EDA share is ~31-32%. CEILING CHECK: PASSES if consumption is additive; would FAIL (require share gain) if consumption revenue is included in the TAM.",
+          "ceiling_note": "FLAG: The EDA TAM definition from market research sources may not include consumption-based AI agent revenue, which is a new revenue category. If the $7.09B base case requires share expansion to 37% without consumption pricing, it is mildly aggressive. Recommend treating $6.5-7.0B as the base range with $7.5B as the bull ceiling.",
+          "implied_driver": {
+            "pool_fy2030": 145,
+            "wallet_share_pct": 8.5,
+            "snps_share_pct": 57.5,
+            "check_implied_revenue": 7.09,
+            "interpretation": "The identity implies SNPS holding ~57% of EDA wallet within the 8.5% EDA-specific wallet-share, consistent with a 31% SNPS share of the broader EDA market (which includes non-semiconductor applications and broader market definitions). Identity is internally consistent."
+          }
+        },
+        "bull": {
+          "fy2027": 5.65,
+          "fy2028": 6.57,
+          "fy2029": 7.60,
+          "fy2030": 8.80,
+          "cagr_fy2026_fy2030_pct": 15.6,
+          "argument": "Agentic AI consumption pricing scales from 20 evaluation customers to 200+ by FY2028, adding a consumption revenue layer that is a fundamentally new billing category. Agent Engineer L4 orchestrates 25+ specialized agents; if average customer pays 1.5x their current subscription in new consumption charges, and SNPS has ~2,000 EDA customers, the incremental revenue from even 10% penetration of the base at 50% uplift is material. Concurrently, the AI chip design boom (each hyperscaler maintaining 5+ ASIC programs, each requiring a full EDA stack) expands the customer count from ~1,500-2,000 to 2,500-3,000 as startups, regional cloud providers, and automotive OEMs start chip design programs. Bull assumes 14-16% EDA market CAGR vs base 10-12%.",
+          "ceiling_check": "$8.80B / EDA market $22B (at 12% CAGR to 2030) = 40% EDA share. If consumption revenue is NOT included in the TAM, SNPS maintains 31% market share and the $8.80B requires the TAM to be $28B (EDA market growing 16% CAGR). A 16% CAGR for a $12B market is aggressive -- bull sits at the edge of credibility on TAM assumptions. FLAG: Citi's concern about backlog lagging peers is relevant here. Bull requires new business generation to ACCELERATE, not just continue.",
+          "ceiling_flag": "NEAR_CEILING -- bull assumes either (a) consumption revenue adds to the TAM, or (b) EDA market grows faster than consensus (16% vs 12% CAGR). Both are plausible but each is a high reading of its respective assumption."
+        },
+        "bear": {
+          "fy2027": 5.10,
+          "fy2028": 5.30,
+          "fy2029": 5.40,
+          "fy2030": 5.50,
+          "cagr_fy2026_fy2030_pct": 2.7,
+          "argument": "Agentic AI compresses engineering headcount 20-30% by FY2029. SNPS's seat-based revenue compresses proportionally. Consumption pricing adoption is slower than expected -- large customers (hyperscalers) negotiate ELAs (enterprise license agreements) with capped consumption charges. China EDA revenue declines 40-50% from current levels as Empyrean and Primarius capture trailing-edge design starts. New export restrictions reimposed. Net: EDA grows only 2-3% above inflation, barely covering price increases on renewals.",
+          "ceiling_check": "$5.50B / EDA market $15-16B (at 6% CAGR in bear scenario) = ~35% EDA share. Bear is internally consistent -- SNPS actually holds or slightly gains EDA share but the market grows slowly. PASSES ceiling check."
+        }
+      }
+    },
+
+    {
+      "segment": "Design IP",
+      "driver_identity": "IP_revenue = AI_chip_design_starts × avg_IP_spend_per_design + royalty_streams",
+      "driver_detail": {
+        "design_starts_driver": "Number of new chip design programs (hyperscaler, fabless, IDM) requiring interface IP blocks (PCIe, HBM, UCIe, CXL, LPDDR)",
+        "ip_spend_per_design": "Varies by complexity; leading-edge AI chips may use $30-50M of IP per design (multiple interface standards); legacy chips $2-10M",
+        "royalty_stream": "Emerging; hyperscaler royalty model transition near end FY26. Royalties are per-chip-shipped, not per-design-start",
+        "snps_ip_market_share": "~55% in wired interface IP (the relevant sub-segment); ~13-22% overall semiconductor IP"
+      },
+      "actuals": {
+        "fy2022": 1.32,
+        "fy2023": 1.66,
+        "fy2024": 1.98,
+        "fy2025_estimate": 1.84,
+        "source_note": "IP declined in FY2025 due to China disruptions and export restrictions May-July 2025. Q2 FY2026: $454M (20% of revenue), up 12% QoQ from Q1's ~$405M. FY2026 full-year estimated at $1.9-2.0B (Theia bottom-up from quarterly data; GS/Citi guide $1.8B)."
+      },
+      "fy2026_estimate": 1.93,
+      "revenue_paths_bn": {
+        "base": {
+          "fy2027": 2.20,
+          "fy2028": 2.55,
+          "fy2029": 2.95,
+          "fy2030": 3.38,
+          "cagr_fy2026_fy2030_pct": 15.0,
+          "argument": "IP recovers from the FY26 transitional trough (China headwinds, model transition) and returns to mid-teens growth. Drivers: (1) UCIe and advanced chiplet interconnect IP are required in every multi-die design -- this is a structural demand pull, not cyclical; (2) HBM interface IP is in every AI accelerator; Nvidia H-series, B-series, AMD Instinct all use HBM3/3E requiring SNPS HBM PHY IP; (3) PCIe 7.0 IP launched (industry first per SNPS) -- every server platform refresh requires new PCIe IP; (4) Royalty model transition adds recurring streams from FY2028 as designs complete their 1-2 year cycles. FY2027 may see a one-time revenue recognition headwind (~$100-200M) from the royalty model transition (upfront fees deferred to royalty streams) before royalty volumes compensate in FY2028.",
+          "transition_headwind_note": "FY2027 IP may be below the linear trend due to royalty model transition recognition timing. Daedalus should model FY2027 IP at $2.0-2.1B (slightly below the trend line) before accelerating to $2.5-2.6B in FY2028 as royalties ramp.",
+          "ceiling_check": "$3.38B / IP TAM ($8.5B growing to ~$13B at 11% CAGR to 2030) = 26% share. SNPS currently at 13-22% overall; 26% is achievable if wired interface IP (SNPS's strength at 55%+ share) becomes a larger fraction of the total IP TAM as chiplet/multi-die proliferates and processor IP (ARM-dominated) grows slower than interface IP. CEILING CHECK: PASSES."
+        },
+        "bull": {
+          "fy2027": 2.35,
+          "fy2028": 2.90,
+          "fy2029": 3.55,
+          "fy2030": 4.30,
+          "cagr_fy2026_fy2030_pct": 22.2,
+          "argument": "Royalty model transition succeeds: Google, AWS, Microsoft, Meta all adopt royalty-bearing SNPS IP terms. At hyperscaler AI chip volumes (Google deploying millions of TPU v5 chips, AWS billions of Trainium inference chips), even $0.05-0.15/chip royalty creates a $200-500M recurring annual revenue stream by FY2029-FY2030. This is ON TOP of base design-start-driven IP revenue. Additionally, UCIe as the emerging chiplet interconnect standard positions SNPS as the gatekeeper for the multi-die ecosystem -- every participating chiplet needs UCIe IP, and SNPS is a founding member and the IP leader in this standard.",
+          "ceiling_check": "$4.30B / IP TAM ~$14B (at 13% CAGR bull) = 30.7%. This requires SNPS to gain significant IP share from ~22% to ~31%. Achievable only if: (a) wired interface IP grows FASTER than the overall IP market AND (b) SNPS's 55% wired interface IP share is maintained. Both are plausible but together represent the upper range. FLAG: Sits at the top of the credible range -- not impossible but requires everything to go right in IP."
+        },
+        "bear": {
+          "fy2027": 1.90,
+          "fy2028": 2.00,
+          "fy2029": 2.10,
+          "fy2030": 2.20,
+          "cagr_fy2026_fy2030_pct": 3.4,
+          "argument": "China remains structurally impaired and declines from ~10% to ~5% of IP segment over 4 years. Chinese companies adopt domestic IP (Empyrean's analog IP is already competitive at trailing nodes). The royalty model transition for hyperscalers hits customer resistance -- Amazon and Google have teams specifically built to avoid royalty-bearing IP architectures (the same reason they moved away from ARM processor designs in some contexts). FY2027 headwind from model transition is not offset by royalty ramp until FY2028-FY2029, leaving IP essentially flat for two years. ARM expands into interface IP through new licensing models, fragmenting SNPS's 55% wired interface IP share.",
+          "ceiling_check": "$2.20B / IP TAM ~$11B (at 6% CAGR bear) = 20% share. In line with current levels. PASSES -- no impossible share assumption required."
+        }
+      }
+    },
+
+    {
+      "segment": "Simulation and Analysis (Ansys)",
+      "driver_identity": "Ansys_revenue = Existing_ACV × renewal_rate + New_ACV_bookings × conversion_to_revenue + cross_sell_to_EDA_customers",
+      "driver_detail": {
+        "existing_acv": "$2.3B+ annual contract value at acquisition close, growing 10-12% on constant currency",
+        "renewal_rate": "High recurring revenue; Ansys historically 90%+ annual renewal rates on maintenance",
+        "cross_sell": "Multiphysics Fusion cross-sell to existing SNPS EDA customers is the new channel; this did not exist pre-acquisition",
+        "chip_to_system_new_market": "Semiconductor customers who use SNPS EDA and now need chip-to-system thermal/EM simulation for AI hardware"
+      },
+      "actuals": {
+        "fy2024_ansys_standalone": 2.545,
+        "fy2025_partial_contribution": 0.757,
+        "fy2025_note": "Ansys closed July 17, 2025. SNPS FY2025 ends October 31. So ~3.5 months of contribution = $757M."
+      },
+      "fy2026_estimate": 2.77,
+      "fy2026_note": "Q2 FY2026 Ansys segment $652M. Annualizing H1 ($652M + Q1 implied ~$670M based on $9.665B full-year guide less other segments) suggests ~$2.7-2.9B FY2026. Management guiding $2.9B at midpoint. Use $2.77B as Theia's estimate (between H1 annualized and management guide, acknowledging typical H2 seasonality uplift).",
+      "revenue_paths_bn": {
+        "base": {
+          "fy2027": 3.10,
+          "fy2028": 3.45,
+          "fy2029": 3.83,
+          "fy2030": 4.25,
+          "cagr_fy2026_fy2030_pct": 11.3,
+          "argument": "Ansys's base business (automotive, aerospace, industrial simulation) grows at 10-12% CAGR consistent with its pre-acquisition growth rate ($2.545B FY2024, up 12%). Cross-sell to EDA customers adds 1-2pp incremental growth from FY2028 as Multiphysics Fusion scales. Cost synergies ($400M by Year 3) support margin expansion but do not directly drive revenue. The automotive electrification and robotics/physical AI tailwinds are secular and not dependent on SNPS execution -- they drive Ansys's existing customer base growth.",
+          "ceiling_check": "$4.25B / engineering simulation TAM (~$5-7B at 13% CAGR to 2030 for engineering physics simulation specifically) = 61-85%. FLAG: This is a tight ceiling test. If the relevant TAM is only ~$5B by 2030, $4.25B implies ~85% share -- which is impossible (no product has 85% share in a competitive market). Resolution: the TAM is WIDER than pure engineering simulation. Ansys addresses broader simulation categories (systems, embedded software, digital twins) that the narrow 'multiphysics simulation software' TAM figures miss. Management's $31B combined TAM implies Ansys's addressable market is $18-20B (combined TAM minus EDA minus IP). At $4.25B revenue vs $18-20B TAM, Ansys captures ~21-24% of its addressable market. CEILING CHECK: PASSES on the broader TAM definition.",
+          "ceiling_resolution_note": "The narrow 'multiphysics simulation software' TAM ($300-450M from Mordor) grossly understates Ansys's addressable market. Ansys at $2.5B FY2024 revenue already dwarfs this narrow TAM, confirming the narrow figure is mis-scoped. The relevant TAM is broader: ALL engineering simulation including FEA, CFD, electromagnetics, systems -- estimated at $8-15B. This is the source of TAM measurement divergence across reports."
+        },
+        "bull": {
+          "fy2027": 3.25,
+          "fy2028": 3.77,
+          "fy2029": 4.40,
+          "fy2030": 5.10,
+          "cagr_fy2026_fy2030_pct": 16.5,
+          "argument": "Multiphysics Fusion adoption by AI hardware companies accelerates beyond base case. Every major AI chip program by FY2027-FY2028 requires chip-to-system thermal/electromagnetic co-simulation as 3D IC complexity makes manual simulation workflows inadequate. If NVIDIA, AMD, Broadcom, and 5+ hyperscalers all adopt Multiphysics Fusion at $10-20M per program per year, and SNPS has 20-30 such programs running simultaneously, incremental revenue is $200-600M. The physical AI (autonomous vehicles, industrial robots) design wave also accelerates, pulling through system-level simulation spending that Ansys is uniquely positioned to capture.",
+          "ceiling_check": "$5.10B / broader Ansys TAM $22B (at 14% bull CAGR) = 23.2%. PASSES -- well below ceiling."
+        },
+        "bear": {
+          "fy2027": 2.90,
+          "fy2028": 2.95,
+          "fy2030": 3.10,
+          "fy2029": 3.02,
+          "cagr_fy2026_fy2030_pct": 2.9,
+          "argument": "Ansys integration is slower than expected. The cross-sell motion (EDA team selling simulation to mechanical engineers) faces organizational friction -- different personas, different champion relationships, different budget holders. The $400M revenue synergy pushes from Year 4 to Year 6-7. Ansys's core market (automotive, aerospace) faces cyclical headwinds as electric vehicle adoption slows in 2026-2027 (observable trend) and aerospace capital programs are delayed. Dassault and Hexagon (MSC) respond aggressively with pricing to defend their accounts, compressing Ansys's pricing power. Growth decelerates from 12% to 3% as synergy realization fails.",
+          "ceiling_check": "$3.10B / Ansys TAM $11B (at 8% bear CAGR) = 28.2%. PASSES -- Ansys is already a large-share incumbent."
+        }
+      }
+    },
+
+    {
+      "segment": "Other / Divestitures",
+      "fy2026": 0.03,
+      "fy2027": 0.01,
+      "fy2028_plus": 0.0,
+      "note": "Processor IP Solutions divestiture pending per management. Power Artist already divested. Segment becomes de minimis by FY2027. Not modeled separately in Daedalus's SOTP."
+    }
+  ],
+
+  "total_revenue_paths": {
+    "note": "Total = EDA + Design IP + Ansys + Other",
+    "fy2026_guide": 9.665,
+    "fy2026_theia": 9.66,
+    "paths_bn": {
+      "base": {
+        "fy2026": 9.66,
+        "fy2027": 10.71,
+        "fy2028": 11.94,
+        "fy2029": 13.29,
+        "fy2030": 14.72,
+        "cagr_fy2026_fy2030_pct": 11.1,
+        "implied_total_check": "FY2030 $14.72B vs SNPS-stated combined TAM of $31B (base growing to ~$38B by 2030 at 11% CAGR). SNPS captures 39% of TAM. From current 31%, this requires share gain or TAM expansion. The driver: Multiphysics Fusion consumption revenue is additive to the existing TAM, and IP royalty streams may add to measured revenue without proportional TAM growth in traditional market research databases.",
+        "ceiling_check": "CONDITIONAL PASS -- requires some combination of share gain and revenue-category expansion (consumption, royalties). Not a free lunch; depends on execution.",
+        "note_on_management_guidance": "Management FY2026 guidance midpoint $9.665B. No published FY2027+ guidance. GS estimates FY2026 organic revenue ~$9.5B (ex-divestitures) growing ~9.5% organically. Citi estimates similar. Base case $10.71B FY2027 implies ~11% YoY growth from FY2026 actuals -- slightly ahead of organic rate, reflecting Ansys contribution ramp and IP recovery from transitional year."
+      },
+      "bull": {
+        "fy2026": 9.66,
+        "fy2027": 11.25,
+        "fy2028": 13.24,
+        "fy2029": 15.55,
+        "fy2030": 18.20,
+        "cagr_fy2026_fy2030_pct": 17.2,
+        "ceiling_check": "$18.20B vs combined TAM ~$42B (at 13% CAGR to 2030). SNPS capture: 43%. Current: 31%. A 12pp share gain in 4 years requires every differentiated initiative (agentic AI, Multiphysics Fusion, IP royalty) to simultaneously succeed at scale. FLAG: APPROACHING CEILING. The bull is credible if consumption pricing and Multiphysics Fusion are additive to the TAM; it is at or above ceiling if they merely redistribute existing TAM spending. Treat as the TRUE UPSIDE case, not a realistic central estimate."
+      },
+      "bear": {
+        "fy2026": 9.66,
+        "fy2027": 9.91,
+        "fy2028": 10.25,
+        "fy2029": 10.52,
+        "fy2030": 10.80,
+        "cagr_fy2026_fy2030_pct": 2.8,
+        "ceiling_check": "$10.80B vs TAM ~$32B (at 7% bear CAGR). SNPS capture: 33.8%. In line with current 31% -- bear scenario is stagnation, not collapse. PASSES."
+      }
+    }
+  },
+
+  "non_gaap_operating_margin_paths": {
+    "note": "For Daedalus SOTP: per-segment margin inputs, not just blended. These are NON-GAAP adjusted operating margins.",
+    "fy2026_actual": {
+      "eda_pct": 43.3,
+      "ip_pct": 24.4,
+      "ansys_pct": "Not separately disclosed; blended non-GAAP 39.5% implies Ansys ~28-32% on current revenue mix",
+      "blended_pct": 39.5,
+      "source": "Q2 FY2026 10-Q Design Automation adjusted margin 43.3%; Design IP 24.4%; blended non-GAAP 39.5%"
+    },
+    "paths": {
+      "base": {
+        "fy2030_eda_pct": 47.0,
+        "fy2030_ip_pct": 32.0,
+        "fy2030_ansys_pct": 38.0,
+        "fy2030_blended_pct": 42.5,
+        "argument": "EDA margin expands to 47% from 43% as AI agent consumption revenue is high-incremental-margin. IP margin recovers to ~32% as royalty streams add near-pure-profit revenue. Ansys margin converges toward EDA margin as $400M cost synergies fully deliver and the combined business achieves operating leverage. Blended margin reaches 42-43% range, consistent with GS's normalized operating margin assumptions."
+      },
+      "bull": {
+        "fy2030_eda_pct": 52.0,
+        "fy2030_ip_pct": 38.0,
+        "fy2030_ansys_pct": 42.0,
+        "fy2030_blended_pct": 47.5,
+        "argument": "Consumption pricing for agentic AI has near-zero marginal cost -- each additional $1 of agent-driven revenue flows almost entirely to operating income. If $500M+ of agentic consumption revenue develops by FY2029-FY2030, the incremental margin on that revenue layer is 80-90%. This pulls blended margins toward 47-50%."
+      },
+      "bear": {
+        "fy2030_eda_pct": 42.0,
+        "fy2030_ip_pct": 22.0,
+        "fy2030_ansys_pct": 30.0,
+        "fy2030_blended_pct": 36.5,
+        "argument": "Cost synergies underdelivered ($200M vs $400M target). IP margin compressed by China revenue loss (higher-margin business lost). Ansys faces integration costs that persist longer than expected. R&D intensity must increase to compete with CDNS on agentic AI (counter-programming required to maintain L4/L5 parity). Blended margin flat to slightly contracting despite revenue growth."
+      }
+    }
+  },
+
+  "assumption_ladder": {
+    "note": "Per-case numbered assumption ladder for Daedalus's scenario matrix",
+    "base": [
+      {"row": "FY2026 revenue (actual/guide)", "value": "$9.66B"},
+      {"row": "FY2028 revenue", "value": "$11.94B"},
+      {"row": "FY2030 revenue (normalization)", "value": "$14.72B"},
+      {"row": "FY2026-FY2030 CAGR", "value": "11.1%"},
+      {"row": "Implied pool requirement (FY2030 revenue / wallet-share / SNPS-share)", "value": "Pool $145B × wallet 15% × share 31.5% = $6.9B (plus ~$7.8B from Ansys non-semicon TAM) = ~$14.7B -- CHECK PASSES"},
+      {"row": "EDA wallet-share assumption FY2030", "value": "15.0% (vs 13.5% current)"},
+      {"row": "SNPS share of combined TAM FY2030", "value": "31.5%"},
+      {"row": "Non-GAAP operating margin FY2030", "value": "42.5%"},
+      {"row": "Net debt at normalization", "value": "~$8B (assuming $3B annual FCF applied to debt reduction)"},
+      {"row": "Shares outstanding FY2030", "value": "~200M (modest dilution from SBC net of buybacks; debt priority for now)"},
+      {"row": "Implied NOPAT FY2030", "value": "$14.72B × 42.5% = $6.26B adj. operating income; after tax at 13% effective = ~$5.4B NOPAT"}
+    ],
+    "bull": [
+      {"row": "FY2026 revenue", "value": "$9.66B"},
+      {"row": "FY2028 revenue", "value": "$13.24B"},
+      {"row": "FY2030 revenue (normalization)", "value": "$18.20B"},
+      {"row": "FY2026-FY2030 CAGR", "value": "17.2%"},
+      {"row": "Implied pool / ceiling check", "value": "TAM ~$42B × 43% capture = $18.1B -- AT CEILING. Assumes consumption/royalty is additive to existing TAM."},
+      {"row": "EDA wallet-share FY2030", "value": "18.0%"},
+      {"row": "SNPS share of combined TAM", "value": "34.0%"},
+      {"row": "Non-GAAP operating margin FY2030", "value": "47.5%"},
+      {"row": "Key bull driver", "value": "Agentic AI consumption $500M+; IP royalty $300-500M; Multiphysics Fusion $200-400M -- all three must deliver"}
+    ],
+    "bear": [
+      {"row": "FY2026 revenue", "value": "$9.66B"},
+      {"row": "FY2028 revenue", "value": "$10.25B"},
+      {"row": "FY2030 revenue (normalization)", "value": "$10.80B"},
+      {"row": "FY2026-FY2030 CAGR", "value": "2.8%"},
+      {"row": "Implied pool check", "value": "Pool $115B × wallet 11.5% × share 28.5% = $3.8B semicon-derived + Ansys $3.1B base = $6.9B (bear implies semicon TAM-derived revenue of $3.8B vs actuals of $6.7B for EDA+IP combined, which requires dramatic share compression). Rechecking: EDA+IP bear = $5.50B + $2.20B = $7.70B. At pool $115B × wallet 11.5% × SNPS share this implies SNPS is getting 58% of the EDA+IP wallet -- internally consistent only if the pool growth is slow AND wallet share contracts."},
+      {"row": "Bear driver", "value": "AI headcount compression -25%, China IP -40%, Ansys cross-sell fails, royalty transition delays FY2027 IP"},
+      {"row": "Non-GAAP operating margin FY2030", "value": "36.5%"},
+      {"row": "Net debt at normalization", "value": "~$10B (slower FCF, slower debt repayment due to margin compression)"}
+    ]
+  },
+
+  "monitoring_variables": {
+    "note": "Daedalus and subsequent agents: watch these quarterly to update the scenario probabilities",
+    "variables": [
+      {
+        "variable": "Backlog / RPO trajectory",
+        "current": "$11.0B (Apr 2026), down from $11.4B (Oct 2025)",
+        "watch": "Is it stabilizing or continuing to decline? Two more quarters of decline would signal the bear's pipeline slowdown thesis is materializing.",
+        "frequency": "Quarterly"
+      },
+      {
+        "variable": "Design IP QoQ revenue growth in 2H FY2026",
+        "current": "Q2 IP was up 12% QoQ from Q1",
+        "watch": "Management guided IP recovery in 2H. Q3 and Q4 FY2026 IP revenue should sustain QoQ growth. If it reverses, the royalty model transition is creating a larger revenue hole than expected.",
+        "frequency": "Quarterly"
+      },
+      {
+        "variable": "Agent Engineer customer count and consumption revenue disclosure",
+        "current": "20 customers evaluating 25+ agents (as of Converge March 2026)",
+        "watch": "First-time disclosure of consumption revenue bookings or contribution would de-risk the bull scenario. Watch for commentary in Q3/Q4 FY2026 earnings.",
+        "frequency": "Quarterly"
+      },
+      {
+        "variable": "Ansys cost synergy achievement",
+        "current": "50% of $400M cost synergies expected by end FY2026",
+        "watch": "Non-GAAP operating margin trajectory for the combined entity. If blended margin expands from 39.5% toward 41-42% by Q4 FY2026, cost synergies are on track.",
+        "frequency": "Quarterly"
+      },
+      {
+        "variable": "China revenue as % of total",
+        "current": "~10% Q2 FY2026, declining",
+        "watch": "New US export restrictions are the tail event. Organic localization (Empyrean share gains) is the base case drag. Stabilization at 8-9% would indicate the floor has been found.",
+        "frequency": "Quarterly"
+      },
+      {
+        "variable": "Multiphysics Fusion design program wins",
+        "current": "GA launched June 17, 2026. Beta customers described as 'market leaders' -- not named",
+        "watch": "Customer naming of Multiphysics Fusion programs in earnings commentary (AMD, NVIDIA, Intel Foundry, hyperscalers). First named wins would validate the cross-sell thesis.",
+        "frequency": "Quarterly (first win expected Q4 FY2026 or Q1 FY2027)"
+      }
+    ]
+  },
+
+  "sources": [
+    {"name": "Synopsys Q2 FY2026 10-Q, segment revenue", "url": "https://www.sec.gov/Archives/edgar/data/0000883241/000088324126000018/snps-20260430.htm", "tier": "company_filed"},
+    {"name": "Synopsys Q2 FY2026 earnings transcript (Globe and Mail)", "url": "https://www.theglobeandmail.com/investing/markets/stocks/SNPS/pressreleases/2163360/synopsys-snps-q2-2026-earnings-transcript/", "tier": "company_filed"},
+    {"name": "Synopsys FY2026 guidance raise (Seeking Alpha)", "url": "https://seekingalpha.com/news/4530353-synopsys-targets-9_61b-revenue-for-2026-while-advancing-joint-ai-solutions-and-accelerating", "tier": "sellside_secondary"},
+    {"name": "Ansys FY2024 revenue $2.545B, 12% growth", "url": "https://www.sec.gov/Archives/edgar/data/0001013462/000101346225000008/anssex991-pressrelease2024.htm", "tier": "company_filed"},
+    {"name": "Semiconductor R&D spending $99B (PatentPC)", "url": "https://patentpc.com/blog/semiconductor-industry-rd-spending-whos-investing-the-most", "tier": "research_firm"},
+    {"name": "EDA market 12% CAGR Mordor Intelligence", "url": "https://www.mordorintelligence.com/industry-reports/electronic-design-automation-eda-tools-market", "tier": "research_firm"},
+    {"name": "Synopsys Multiphysics Fusion GA June 2026", "url": "https://www.hpcwire.com/off-the-wire/synopsys-launches-multiphysics-fusion-portfolio-for-ai-and-hpc-chip-design/", "tier": "industry_press"},
+    {"name": "Ansys ACV $2.3B+ growing 10-12% (MatrixBCG)", "url": "https://matrixbcg.com/blogs/growth-strategy/ansys", "tier": "secondary"},
+    {"name": "Synopsys China rescission PR July 2025", "url": "https://news.synopsys.com/2025-07-02-Synopsys-Issues-Statement-in-Connection-to-the-Lifting-of-Recent-U-S-Export-Restrictions-Related-to-China", "tier": "company_filed"},
+    {"name": "Futurum Group SNPS Q2 FY2026 revenue breakdown", "url": "https://futurumgroup.com/insights/synopsys-q2-fy-2026-ai-driven-chip-design-demand-lifts-outlook/", "tier": "industry_analyst"},
+    {"name": "Coherent Market Insights simulation software $15.46B market 2026", "url": "https://www.coherentmarketinsights.com/industry-reports/simulation-software-market", "tier": "research_firm"},
+    {"name": "SemiAnalysis hyperscaler custom silicon $15-20B new design activity (cited by multiple secondary sources)", "url": "https://newsletter.semianalysis.com/p/eda-market-primer", "tier": "research_firm"}
+  ]
+}

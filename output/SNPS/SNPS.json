@@ -1,0 +1,1092 @@
+{
+  "ticker": "SNPS",
+  "name": "Synopsys, Inc.",
+  "listings": "NMS",
+  "sector": "Technology",
+  "industry": "Software - Infrastructure",
+  "business_type": "software_sotp",
+  "currency": "USD",
+  "date": "2026-06-21",
+  "engine": "Atlas v3",
+  "section_1_the_call": {
+    "our_view": "BUY, MEDIUM conviction. Synopsys at $455.51 is priced at 26.4x FY2027 non-GAAP EPS -- a multiple that assumes the Ansys acquisition adds Ansys's standalone growth and nothing more, with zero credit for agentic AI consumption pricing or IP royalty monetization. That is too cheap. Four contracted or observable events in the next 12 months (Elliott board seat secured June 1, Multiphysics Fusion GA June 17, Ansys cost synergies 50% on track, September 30 Investor Day confirmed) should narrow the integration-risk discount from the current 9 percentage points below SNPS's pre-deal historical multiple toward 3-4pp, reaching a 32x FY2027 P/E target of $552. The single biggest risk is the Design IP royalty model transition: management's planned shift from upfront IP license fees to per-chip royalties creates a revenue recognition gap in FY2027 that the consensus has not fully modeled, and a surprise guidance cut in that segment would stall the multiple re-rating.",
+    "crux": {
+      "variable": "EDA+IP+Simulation wallet-share of global semiconductor R&D spend",
+      "one_line": "Whether SNPS captures a rising or flat share of the ~$99B global chip design budget as agentic AI tools reshape the billing model",
+      "base": "Wallet-share expands modestly from 13.5% to 15% by FY2030 as AI consumption pricing adds a partial new layer on top of seat subscriptions; SNPS SOTP fair value today $390.86",
+      "bull": "Consumption pricing breaks the 20-year ceiling and wallet-share reaches 18% as AI agents invoke tool licenses 3-5x more intensively than human engineers; bull $624",
+      "bear": "AI productivity gains compress engineering headcount faster than consumption billing replaces seat revenue; wallet-share stagnates at 13.5% or slips to 11-12%; bear $218",
+      "what_decides_it": "The September 30 Investor Day is the pivot event: a formal consumption pricing framework with early adoption data from the 20 current evaluation customers de-risks the bull case; an absence of quantified adoption data leaves the stock at 26x with no re-rating catalyst confirmed"
+    },
+    "recommendation": {
+      "action": "BUY",
+      "tone": "positive",
+      "current_price": 455.51,
+      "target_12m": 552.0,
+      "upside_pct": 21.2,
+      "conviction": "MEDIUM",
+      "rationale": "The 21.2% implied 12-month return to our $552 target exceeds the 15% BUY hurdle. The call is not a bet on AI monetization arriving at scale -- it is a bet that four already-observable events narrow a multiple that has overshot to the downside. The intrinsic SOTP base ($390.86) is 14% below current price because the base does not embed AI optionality; the $552 target rests instead on a justified multiple re-rating from 26x to 32x as integration risk is documented and reduced. At MEDIUM conviction: the band is wide ($218-$624), valuation rests partly on a market re-rating rather than pure fundamental growth, and the IP royalty transition introduces a near-term guidance risk.",
+      "next_catalyst": "Investor Day, September 30 2026"
+    },
+    "four_numbers": {
+      "fair_value_today": {
+        "value": 390.86,
+        "multiple": 22.4,
+        "multiple_label": "EV/FY2030 NOPAT (Gordon exit, blended)",
+        "basis": "Segment-first SOTP: EDA $49.3B + Design IP $12.1B + Ansys $21.0B = $82.4B total EV, less $7.52B net debt, divided by 0.1914B shares. Each segment valued by the exit-multiple method with its own WACC."
+      },
+      "price_today": {
+        "value": 455.51,
+        "multiple": 26.4,
+        "multiple_label": "P/E FY2027 non-GAAP",
+        "basis": "market"
+      },
+      "fair_value_12m": {
+        "value": 425.65,
+        "basis": "#1 rolled forward at blended WACC 8.9% with no dividend",
+        "convergence_return_pct": -6.6
+      },
+      "target_12m": {
+        "value": 552.0,
+        "multiple": 32.0,
+        "multiple_label": "P/E FY2027 non-GAAP",
+        "basis": "32x FY2027 non-GAAP EPS $17.25. The 32x is 3-4pp below SNPS's 5-year pre-Ansys historical median (34-38x) -- a deliberate discount for integration risk that has not yet been fully confirmed. Four CONTRACTED/OBSERVABLE catalysts in the next 12 months justify narrowing the current 9pp integration discount to 3-4pp: Elliott board seat (June 1, done), Multiphysics Fusion GA (June 17, done), Ansys cost synergy 50% pace (management-confirmed), September 30 Investor Day (confirmed date)."
+      },
+      "method_primary": "SOTP (exit-multiple per segment) + defensible P/E for target",
+      "method_why": "SNPS has three economically distinct segments with different growth rates, margins, and risk profiles -- a single DCF or single multiple would blend an AI-growth-kicker annuity (EDA), a transitional royalty business (IP), and a newly-acquired simulation platform (Ansys) into one curve, losing information. The exit-multiple method per segment normalizes to FY2030 earnings, applies the Gordon steady-state multiple at each segment's own WACC, and discounts back.",
+      "band_low": 218.0,
+      "band_high": 624.0,
+      "target_reasoning": "The $552 target requires a 32x multiple on $17.25 FY2027 EPS. The street's $600+ bulls use 35-40x -- we are below them because the integration is only in Year 1 post-close. The $552 captures the CONTRACTED/OBSERVABLE subset of re-rating catalysts; agentic AI consumption revenue (EXTRAPOLATED) moves the target into the $624 bull when it crosses to contracted evidence.",
+      "return_to_target_pct": 21.2,
+      "return_to_fair_value_pct": -6.6,
+      "return_to_street_mean_pct": 22.8
+    },
+    "thesis": [
+      {
+        "pillar": "The integration discount is too wide for what is already delivered",
+        "detail": "At 26.4x FY2027 P/E the market applies a 9pp discount to SNPS's 35x pre-Ansys median. That discount made sense at deal announcement. But four observable facts now exist that did not: Elliott Capital landed a board seat June 1 (history shows Elliott board activism produces 12-18 month operational tightening), Multiphysics Fusion went GA June 17 as the only chip-to-system multiphysics product in market, Ansys cost synergies are running ahead of 50% by year-end FY2026, and the September 30 Investor Day is a confirmed date at which management will present long-term margin targets. A 9pp discount was appropriate for an unconfirmed integration. A 3-4pp discount is appropriate for Year 1 of a confirmed integration with these four data points in hand. The difference is 32x FY2027 EPS, or $552."
+      },
+      {
+        "pillar": "EDA's 8-10% CAGR is visible and contracted; the AI optionality is free at the current price",
+        "detail": "$11.0B backlog (49% near-term) provides coverage of ~56% of FY2026 revenue guidance -- an unusually high visibility level. The EDA market is growing 10-12% annually driven by AI chip design complexity (NVIDIA GB300, AMD MI450, Intel Foundry 18A all active design programs). SNPS holds ~31% EDA share in a duopoly with Cadence where switching costs are effectively prohibitive (customers cannot change EDA vendors mid-project). At 26.4x the market pays zero for Agent Engineer's 20 customer evaluations, zero for the PCIe 7.0 IP launch (industry-first, June 2026), and zero for Samsung 2nm collaboration (June 2026). These are not hoped-for options; they are observable product launches that have no price in the current multiple."
+      },
+      {
+        "pillar": "The only required return is a partial multiple re-rating, not a growth acceleration",
+        "detail": "Both bears and bulls agree on approximately $17-18 in FY2027 non-GAAP EPS. The $155 spread between the $455 current price and the $610 bull cluster is entirely explained by a P/E difference: 26x vs 35-40x on the same earnings number. Our call does not require EDA revenue to accelerate, AI monetization to materialize at scale, or Ansys synergies to exceed targets. It requires only that the market moves from 26x to 32x as two more quarters of Ansys integration data are delivered -- from the September 30 Investor Day through Q1 FY2027 earnings in February 2027. That is a narrower bar than the consensus bull is setting."
+      }
+    ]
+  },
+  "section_2_business": {
+    "business_overview": {
+      "summary": "Synopsys designs the tools that design chips. Its Electronic Design Automation (EDA) software is the environment in which every advanced semiconductor engineer works -- from Intel Foundry to TSMC foundries, from NVIDIA's GPU to Apple's A-series to AWS's Graviton. EDA is structural to the semiconductor industry: no chip gets made without it, and SNPS and Cadence together control approximately 60% of a market with prohibitive switching costs. The $35B acquisition of Ansys (closed July 17, 2025) adds the global leader in engineering physics simulation -- thermal, structural, electromagnetic, fluid dynamics -- used by automotive, aerospace, industrial, and semiconductor companies. The combined business is the only vendor offering a chip-to-system simulation platform.",
+      "business_model": "Three revenue streams: (1) EDA subscriptions -- multi-year term licenses (3-5 years) for design and verification software, priced per seat or per server; >90% recurring, high-single-digit annual price escalators, renewal rates >90%. (2) Design IP -- interface semiconductor IP blocks (HBM memory interfaces, PCIe, UCIe, CXL) licensed upfront; transitioning to per-chip royalties for hyperscaler customers. (3) Simulation (Ansys) -- annual subscriptions for multiphysics simulation software; Ansys ACV was $2.3B+ at acquisition, growing ~10-12%. The business generates ~80% gross margins on a non-GAAP basis and converts ~40-45% of revenue to non-GAAP operating income at steady state.",
+      "segments": [
+        {
+          "name": "EDA (Design Automation)",
+          "revenue_share_pct": 51.0,
+          "fy2026_rev_b": 4.93,
+          "growth_pct": 8.0,
+          "margin_pct": 43.3,
+          "nature": "mature-annuity-with-AI-growth-kicker",
+          "note": "Near-monopoly software annuity; 90%+ recurring revenue; ~31% share of $12-13B EDA market alongside Cadence. Agent Engineer (agentic AI workflow) has 20 customers in evaluation for a potential consumption pricing layer on top of seat subscriptions."
+        },
+        {
+          "name": "Design IP",
+          "revenue_share_pct": 20.0,
+          "fy2026_rev_b": 1.93,
+          "growth_pct": -6.0,
+          "margin_pct": 24.4,
+          "nature": "growth-lumpy-transition",
+          "note": "Transitional year: down 6% YoY in Q2 FY2026 due to China export restrictions (May-July 2025, now rescinded) and the royalty model transition. SNPS holds 55%+ of wired interface IP market. Recovery expected in H2 FY2026 as royalty transition completes and hyperscaler custom silicon demand resumes."
+        },
+        {
+          "name": "Simulation and Analysis (Ansys)",
+          "revenue_share_pct": 28.7,
+          "fy2026_rev_b": 2.77,
+          "growth_pct": 12.0,
+          "margin_pct": null,
+          "nature": "high-growth-platform",
+          "note": "Global leader in engineering physics simulation. First full fiscal year post-acquisition. Cost synergies 50% of $400M target on track by end FY2026. Multiphysics Fusion (chip-to-system, multi-die) went GA June 17, 2026 with no competition from Cadence at GA status."
+        }
+      ],
+      "customers": [
+        "TSMC, Samsung, Intel Foundry (EDA -- foundry tooling)",
+        "NVIDIA, AMD, Broadcom, Qualcomm (EDA -- advanced node design)",
+        "Google, AWS, Microsoft, Meta (EDA, IP -- hyperscaler custom silicon)",
+        "Boeing, Airbus, automotive OEMs (Ansys -- structural/thermal simulation)",
+        "No single customer >10% of total revenue"
+      ],
+      "geographic": [
+        {
+          "region": "Americas",
+          "note": "Largest region; hyperscaler and fabless customers"
+        },
+        {
+          "region": "Asia-Pacific (ex-China)",
+          "note": "TSMC, Samsung, NVIDIA design teams"
+        },
+        {
+          "region": "China",
+          "share_pct_fy2025": 11.54,
+          "trend": "declining; 10% in Q2 FY2026; structural localization risk from Empyrean"
+        }
+      ]
+    },
+    "historical_financials": [
+      {
+        "fy": "FY2022",
+        "revenue_b": 4.616,
+        "revenue_growth_pct": null,
+        "gross_margin_pct": 80.5,
+        "ebitda_b": 1.334,
+        "ebitda_margin_pct": 28.9,
+        "net_income_b": 0.985,
+        "eps": 6.29
+      },
+      {
+        "fy": "FY2023",
+        "revenue_b": 5.318,
+        "revenue_growth_pct": 15.2,
+        "gross_margin_pct": 80.6,
+        "ebitda_b": 1.555,
+        "ebitda_margin_pct": 29.2,
+        "net_income_b": 1.23,
+        "eps": 7.92
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 6.127,
+        "revenue_growth_pct": 15.2,
+        "gross_margin_pct": 79.7,
+        "ebitda_b": 1.846,
+        "ebitda_margin_pct": 30.1,
+        "net_income_b": 2.263,
+        "eps": 14.51
+      },
+      {
+        "fy": "FY2025",
+        "revenue_b": 7.054,
+        "revenue_growth_pct": 15.1,
+        "gross_margin_pct": 77.0,
+        "ebitda_b": 2.5,
+        "ebitda_margin_pct": 35.4,
+        "net_income_b": 1.332,
+        "eps": 8.04,
+        "note": "Includes 3.5 months Ansys contribution post-July 17 close; GAAP EPS depressed by acquisition amortization"
+      }
+    ],
+    "historical_financials_read": "Pre-Ansys SNPS was a 15% annual revenue compounder from FY2022-FY2025. GAAP earnings in FY2025 fell sharply to $8.04 from $14.51 in FY2024 -- this is an accounting artifact from $39.6B of Ansys acquisition goodwill and intangible amortization, not an operational deterioration. The operative metric is non-GAAP: FY2026 non-GAAP EPS is guided at $14.76, recovering toward $17.25 in FY2027 as the integration cost drag fades and operating leverage builds. The 5-year organic EDA revenue CAGR (ex-Ansys) was ~14%, with stable 80%+ gross margins throughout. The Ansys acquisition is a step-change in revenue scale ($7B to $9.7B), debt ($0.7B to $14.3B), and employee count ($14K to $28K), but the underlying economics of the EDA business are unchanged.",
+    "snapshot": [
+      {
+        "label": "Price",
+        "value": "$455.51"
+      },
+      {
+        "label": "Market cap",
+        "value": "$87.2B"
+      },
+      {
+        "label": "Enterprise value",
+        "value": "$95.6B"
+      },
+      {
+        "label": "52-week range",
+        "value": "$376-$652"
+      },
+      {
+        "label": "FY2026 revenue guide",
+        "value": "$9.665B"
+      },
+      {
+        "label": "FY2026 non-GAAP EPS guide",
+        "value": "$14.76"
+      },
+      {
+        "label": "FY2027 non-GAAP EPS anchor",
+        "value": "$17.25"
+      },
+      {
+        "label": "P/E FY2027 non-GAAP",
+        "value": "26.4x"
+      },
+      {
+        "label": "P/E FY2026 non-GAAP",
+        "value": "30.8x"
+      },
+      {
+        "label": "EV/Sales (FY2026)",
+        "value": "9.9x"
+      },
+      {
+        "label": "Net debt (Q2 FY2026)",
+        "value": "$7.52B"
+      },
+      {
+        "label": "Total backlog (Apr 2026)",
+        "value": "$11.0B"
+      },
+      {
+        "label": "Near-term backlog (12m)",
+        "value": "49% of $11B"
+      },
+      {
+        "label": "Non-GAAP operating margin",
+        "value": "39.5% (FY2026 guide)"
+      },
+      {
+        "label": "FCF margin (FY2026 guide)",
+        "value": "~21%"
+      },
+      {
+        "label": "Dividend yield",
+        "value": "None"
+      },
+      {
+        "label": "Shares outstanding",
+        "value": "191.4M"
+      },
+      {
+        "label": "SBC (FY2025)",
+        "value": "$893M ($4.67/share)"
+      },
+      {
+        "label": "Goodwill + intangibles",
+        "value": "$39.6B"
+      },
+      {
+        "label": "Regression beta",
+        "value": "1.21 (rejected for valuation; fundamental 0.85-1.00)"
+      },
+      {
+        "label": "Analyst consensus",
+        "value": "Buy (15 Buy, 7 Hold, 1 Sell) / mean PT $559.58"
+      },
+      {
+        "label": "Key shareholders",
+        "value": "Elliott Investment Management (board seat June 1, 2026)"
+      },
+      {
+        "label": "CEO/CFO",
+        "value": "Sassine Ghazi (CEO) / Shelagh Glaser (CFO)"
+      }
+    ]
+  },
+  "section_3_industry": {
+    "industry_position": {
+      "market_overview": "The EDA industry is a natural duopoly. Synopsys and Cadence together control ~60% of a $12-13B market that grows with chip design starts, new process nodes, and the increasing complexity of AI semiconductor architecture. The barrier to entry is absolute: an EDA tool must be qualified on each foundry's process design kit (PDK), a qualification process that takes 2-3 years and requires foundry cooperation that incumbents have locked up. No new entrant has qualified a competitive full-flow EDA suite at TSMC N3 or N2 in a decade. The simulation market that Ansys leads is structurally similar -- deeply embedded in customer workflows, with 30+ year customer relationships common.",
+      "tam_usd_bn": 38.0,
+      "tam_growth_pct": 11.5,
+      "tam_basis": "Combined: EDA $12-13B (Mordor/Gartner, 9-12% CAGR), semiconductor IP $8.5B (ARM royalty war expanding TAM), engineering simulation $15B (Ansys pre-deal annual reports)",
+      "addressable_market": "SNPS directly addresses approximately $25B of the combined EDA+IP+simulation market, growing at 10-12% annually. The additional addressable opportunity from agentic AI consumption pricing is unquantified but would sit on top of this TAM -- it is a billing-model expansion, not a market-share change.",
+      "the_share_dynamic": "EDA is stable duopoly: SNPS ~31% and Cadence ~30% of EDA by revenue, with Siemens EDA a distant third at ~10%. Neither SNPS nor Cadence has materially moved share from the other in a decade -- the competition is around new product categories (agentic AI, advanced packaging) rather than core design automation. In Design IP: ARM dominates processor IP at 41-44% share; SNPS leads wired interface IP at 55%+ for UCIe, HBM, PCIe, and CXL. In Simulation: Ansys holds ~25-30% of the $15B market; Dassault Systemes (SIMULIA), Hexagon (MSC), and Altair are the other three. The post-acquisition share dynamic in simulation is negative: Dassault and Hexagon are aggressively calling on Ansys accounts following the acquisition, betting that some customers prefer a pure-play simulation vendor to an EDA-company-owned tool.",
+      "revenue_drivers": [
+        "AI chip design complexity: each new AI accelerator generation requires more verification compute, driving EDA intensity per design",
+        "Hyperscaler custom silicon (Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA) -- all active SNPS EDA customers, now expanding into UCIe chiplet architectures that require SNPS interface IP",
+        "Advanced packaging (CoWoS, SoIC): multi-die designs require SNPS tools for inter-die signal integrity and thermal analysis -- the specific market Multiphysics Fusion addresses",
+        "Autonomous vehicles and robotics: ADAS and physical AI systems drive Ansys simulation demand across thermal, structural, and electromagnetic domains"
+      ],
+      "moat": "Near-absolute EDA moat: foundry PDK qualification locks EDA vendors in at the tool level; customer workflow lock-in (years of scripts, IP, sign-off flows built on SNPS tools) makes switching effectively impossible mid-project. The moat has held intact through every competitive challenge (Mentor Graphics before Siemens, Magma before SNPS absorbed it, Cadence's Virtuoso vs IC Compiler). Interface IP moat is narrower but real: SNPS holds 55% of wired interface IP because it developed PCIe, UCIe, and HBM silicon-proven PHY implementations first, and silicon-proven beats faster-developed alternatives in the qualification cycle.",
+      "competitors": [
+        {
+          "name": "Cadence Design Systems (CDNS)",
+          "position": "Co-leader in EDA; leads in analog/mixed-signal design tools",
+          "share": "~30% EDA",
+          "trajectory": "Growing 12-15% organically; no large-scale M&A overhang. Trading at 38x NTM P/E, a 12pp premium to SNPS -- the difference is entirely the Ansys integration discount."
+        },
+        {
+          "name": "ARM Holdings (ARM)",
+          "position": "Processor IP monopoly (41-44% semiconductor IP share); partner and competitor in wired interface IP",
+          "share": "41-44% semiconductor IP",
+          "trajectory": "Expanding royalty model into AI accelerators; collaboration with SNPS on AGI CPU design creates both revenue and competition tension"
+        },
+        {
+          "name": "Siemens EDA (formerly Mentor)",
+          "position": "Third in EDA (~10% share); strong in PCB design and automotive electronics verification",
+          "share": "~10% EDA",
+          "trajectory": "Stable; benefits from Siemens industrial customer relationships but not competitive in advanced-node digital design"
+        },
+        {
+          "name": "Dassault Systemes (SIMULIA)",
+          "position": "Second in engineering simulation; aggressive post-Ansys-acquisition campaigns targeting Ansys accounts",
+          "share": "~20% engineering simulation",
+          "trajectory": "Growing; Dassault is the primary near-term risk to Ansys customer retention in automotive and aerospace"
+        },
+        {
+          "name": "Empyrean Technology",
+          "position": "China domestic EDA vendor; state-subsidized; trailing-edge EDA only",
+          "share": "<1% globally; ~8-10% of China trailing-edge",
+          "trajectory": "Growing at 73% R&D intensity (H1 2025 reported); government-subsidized displacement of SNPS in trailing-edge China design -- 3-5 year horizon to material threat at trailing nodes"
+        }
+      ],
+      "five_forces": {
+        "buyer_power": "LOW -- chip companies must use SNPS or Cadence tools for advanced nodes; no credible alternative at N3 or N2. Hyperscalers have more leverage than fabless companies on ELA pricing but cannot walk away.",
+        "supplier_power": "LOW -- SNPS's inputs are engineering labor and cloud compute; neither is concentrated.",
+        "new_entrants": "MINIMAL -- foundry PDK qualification and customer workflow lock-in create a 5-10 year barrier at advanced nodes. Possible at trailing nodes (Empyrean, China).",
+        "substitutes": "MINIMAL in core EDA -- no substitute exists for place-and-route, timing closure, or formal verification software at advanced nodes. Ansys simulation: some substitution risk from lower-fidelity simulation tools or AI-driven approximations, but not in high-stakes safety-critical design.",
+        "rivalry": "MODERATE in EDA (Cadence is a real and aggressive competitor); MODERATE in simulation post-acquisition (Dassault response is active); LOW in interface IP (55% share, few alternatives for HBM/UCIe at leading-edge)"
+      }
+    },
+    "peers": [
+      {
+        "ticker": "CDNS",
+        "name": "Cadence Design Systems",
+        "pe_ntm": 38.0,
+        "ev_ebitda": null,
+        "rev_growth_ttm": 14.0,
+        "ytd": 8.0,
+        "y1": 15.0,
+        "highlight": "Pure-play EDA at 38x NTM P/E -- the 12pp premium to SNPS quantifies the Ansys integration discount exactly"
+      },
+      {
+        "ticker": "ANSYS_standalone",
+        "name": "Ansys pre-acquisition",
+        "pe_ntm": 30.0,
+        "note": "Traded 28-32x NTM P/E as standalone; SNPS paid 45x FCF -- acquisition premium embedded"
+      },
+      {
+        "ticker": "PTC",
+        "name": "PTC Inc.",
+        "pe_ntm": 28.0,
+        "ev_ebitda": null,
+        "rev_growth_ttm": 10.0,
+        "note": "Industrial software; comparable simulation software moat but less dominant; 28x NTM P/E"
+      }
+    ],
+    "peers_read": "Cadence at 38x NTM P/E is the cleanest mirror for SNPS's EDA business without the Ansys overhang. The 12pp gap between Cadence (38x) and SNPS (26x) is the market's integration-risk discount in basis-point terms. Our 32x target implies the discount narrows from 12pp to 6pp as integration confirmation arrives -- a more conservative read than the GS/Citi/BofA $600+ cluster which expect full elimination of the discount at 35-40x."
+  },
+  "section_4_market": {
+    "market_view": {
+      "whats_priced_in": "At $455.51 and 26.4x FY2027 non-GAAP EPS, the market prices SNPS as a plain EDA+Ansys compounder growing at 5.5% long-run (Gordon decomposition at r=8.9%, ROIC=55%). This is below EDA's observed 8-10% organic growth rate -- the market is pricing in a mix of integration friction, China headwinds, and IP royalty transition risk that together drag the perceived long-run rate below even the organic EDA trend. Zero AI monetization credit is embedded at $455.51.",
+      "street_view": "24 analysts cover SNPS: 15 Buy, 7 Hold, 1 Sell. The modal cluster ($600-$610, Goldman Sachs, Citigroup, BofA, Stifel) uses 32-40x FY2027 EPS -- the historical SNPS median multiple applied to post-deal earnings. Morgan Stanley ($525) and Wells Fargo ($535) use 30-31x, essentially paying no multiple expansion vs today. Piper Sandler ($450, Neutral) applies 26x -- no re-rating whatsoever. The Sell outlier uses 23x on reduced EPS estimates.",
+      "post_earnings_analyst_actions": [
+        {
+          "date": "2026-05-28",
+          "firm": "Goldman Sachs",
+          "action": "reiterate/raise",
+          "old_pt": 575,
+          "new_pt": 600,
+          "rating": "Buy",
+          "note": "Post-Q2 raise; 40x normalized non-GAAP EPS $15.00 = $600. Beat on EPS and revenue; guidance raised."
+        },
+        {
+          "date": "2026-05-28",
+          "firm": "Citigroup",
+          "action": "reiterate",
+          "new_pt": 610,
+          "rating": "Buy",
+          "note": "32.5x CY27E EPS $18.75. Citing AI pricing optionality as undervalued."
+        },
+        {
+          "date": "2026-05-28",
+          "firm": "Bank of America",
+          "action": "reiterate/raise",
+          "new_pt": 600,
+          "rating": "Buy",
+          "note": "35x FY2027 EPS $17.25."
+        },
+        {
+          "date": "2026-05-28",
+          "firm": "Stifel",
+          "action": "reiterate",
+          "new_pt": 600,
+          "rating": "Buy",
+          "note": "35x FY2027 EPS $17.25."
+        },
+        {
+          "date": "2026-05-28",
+          "firm": "Morgan Stanley",
+          "action": "reiterate",
+          "new_pt": 525,
+          "rating": "Equal Weight",
+          "note": "30x FY2027 EPS. Cautious on AI monetization timeline."
+        },
+        {
+          "date": "2026-05-28",
+          "firm": "Wells Fargo",
+          "action": "reiterate",
+          "new_pt": 535,
+          "rating": "Equal Weight",
+          "note": "31x FY2027 EPS."
+        },
+        {
+          "date": "2026-05-28",
+          "firm": "Piper Sandler",
+          "action": "reiterate",
+          "new_pt": 450,
+          "rating": "Neutral",
+          "note": "26x FY2027; essentially priced for no re-rating."
+        }
+      ],
+      "news_narrative": "Post-Q2 FY2026 (May 27, 2026): SNPS delivered 6.7% EPS beat on non-GAAP metrics and raised full-year guidance. Stock fell 2% day-of -- a sign the market is discounting the quality of the beat rather than the EPS headline itself, consistent with the multiple-contest narrative (bears don't think the EPS number is enough; they want the multiple re-rating catalyst). June 2026 events since the Q2 report: Multiphysics Fusion GA (June 17), Samsung 2nm collaboration announcement, PCIe 7.0 IP launch (industry-first). Elliott cooperation agreement (June 1) received no incremental announcement post-board-seat -- Elliott's interest is presumably focused on the September 30 Investor Day.",
+      "sentiment_narrative": "Sentiment is constructively cautious: no panic, but no conviction on the upside catalyst. The stock sits at $455 vs a $525 pre-earnings reference price (13.4% below where it was when Q2 beat) -- the post-earnings fade reflects that the EPS beat did not provide the consumption pricing data the bulls need.",
+      "runway": "FY2027 is the first year where the AI monetization narrative either gets validated (consumption revenue disclosed) or invalidated (guidance beats but with no new pricing data). September 30 Investor Day is the nearest event where management can front-run that narrative with a formal consumption framework.",
+      "runway_verdict": "12-18 month; re-rating requires execution confirmation, not a new product or market",
+      "market_lean": "CONSTRUCTIVELY_CAUTIOUS"
+    },
+    "street_reconstruction": {
+      "currency": "USD",
+      "what_price_implies": "At $455.51, the stock prices 26.4x FY2027 non-GAAP EPS. Decomposing via Gordon at r=8.9% and ROIC=55%: (1 - g/0.55)/(0.089 - g) = 26.4 solves to g = 5.5% long-run growth. This is GDP plus a modest EDA market share -- a scenario that prices SNPS as a mature-ish annuity with no AI uplift and integration risk offsetting organic growth. The stock is priced as if the Ansys acquisition adds Ansys's existing growth trajectory but nothing more.",
+      "what_street_implies": "The modal street PT ($600) embeds 34-35x FY2027 EPS, which at r=8.9%, ROIC=55% implies long-run growth of ~6.5%. The difference between 5.5% (today's price) and 6.5% (street) is not a growth forecast revision -- it is a multiple normalizing as integration risk resolves. Both sides agree on the earnings. The contest is entirely the multiple.",
+      "history_anchor": "SNPS traded at 30-45x NTM P/E over FY2019-FY2024, median ~35x. Post-deal close the multiple compressed to 26-31x as integration risk was assigned. Removing integration risk (three discount layers: execution ~5pp, IP headwinds ~2pp, China ~2pp = ~9pp) recovers 35x, which at FY2027 EPS $17.25 = $603.",
+      "our_justified_multiple": "32x FY2027 EPS = $552. Justified at: historical 35x minus 3pp for integration risk not yet fully documented (two more quarters of synergy delivery needed before paying pre-deal multiples).",
+      "agree_disagree": {
+        "agree_with": "GS and Citi that the discount is a multiple compression story and not a fundamental deterioration. FY2026 execution is tracking.",
+        "disagree_with": "GS's 40x framework -- full multiple recovery requires at least two more quarters of confirmed synergy delivery and a formal AI monetization disclosure, neither of which has happened. GS's 40x assumes complete integration de-risking; we model only partial de-risking at 32x."
+      }
+    }
+  },
+  "section_5_management": {
+    "management": {
+      "ceo": "Sassine Ghazi (CEO since January 2023; previously SNPS COO; oversaw Ansys acquisition negotiation and close)",
+      "cfo": "Shelagh Glaser (CFO; oversaw Q2 FY2026 beat-and-raise; managing $10B debt paydown roadmap)",
+      "capital_allocation_history": "Pre-Ansys: SNPS was a disciplined capital allocator -- small M&A ($100-500M), consistent buybacks (offsetting SBC), 14-15% organic revenue CAGR with no dilution. Post-Ansys: $14.3B total debt (FY2025 year-end), $10B outstanding today (Q2 FY2026), zero buybacks, SBC $893M annually creating $4.67/share dilution without offset. The debt paydown math: $2.0B FCF FY2026E minus $440M annual net interest cost = ~$1.5B available for debt paydown; at this pace net debt reaches zero in 5 years. The capital return constraint persists until FY2029-FY2030. Elliott's board presence creates pressure to accelerate margin targets and potentially a faster return to buybacks.",
+      "elliott_factor": "Elliott Investment Management took a cooperation agreement (board seat effective June 1, 2026). Elliott's historical pattern in software names is to push for: (1) margin improvement through cost discipline, (2) portfolio rationalization (the processor IP divestiture already announced is likely an Elliott-influenced move), (3) accelerated capital return commitments once leverage declines. Elliott's 12-18 month operational impact has been observable in Salesforce, Citrix, and Micro Focus -- in each case margin improvement was the first visible consequence. September 30 Investor Day is likely the forum where Elliott-influenced targets are presented.",
+      "recent_insider_activity": []
+    }
+  },
+  "section_6_valuation": {
+    "valuation_method": "Segment-first SOTP (three segments, each valued by the exit-multiple method with its own WACC). EDA: mature-annuity-with-AI-kicker; still growing 8-10% CAGR so exit-multiple rather than current-earnings multiple. Design IP: transitional -- current earnings artificially depressed by royalty model transition; exit-multiple normalizes to FY2030 after recovery. Ansys: first full year post-acquisition; exit-multiple normalizes to FY2030 as synergies and Multiphysics cross-sell contribute. Net debt ($7.52B, Q2 FY2026) subtracted once at group level. The exit-multiple method (CONTRACT §2.2) normalizes NOPAT at year T, applies the Gordon steady-state multiple (1-g_LT/ROIC)/(r-g_LT), discounts back at the segment WACC. T-invariance confirmed: values stable across T=FY2029 to T=FY2031.",
+    "segment_valuation": [
+      {
+        "name": "EDA Software (Design Automation)",
+        "nature": "mature-annuity-with-AI-growth-kicker",
+        "method": "ExitMultiple",
+        "revenue_path_b": [
+          4.93,
+          5.4,
+          5.94,
+          6.51,
+          7.09
+        ],
+        "revenue_path_years": [
+          "FY2026E",
+          "FY2027",
+          "FY2028",
+          "FY2029",
+          "FY2030"
+        ],
+        "revenue_path_basis": "Theia base EDA path: 9.5% CAGR from $4.93B FY2026E. Driven by 8-10% EDA market growth plus modest consumption pricing in FY2028-FY2030.",
+        "nopat_at_T_b": 2.932,
+        "nopat_derivation": "$7.09B x 47% adj margin x 0.88 (1 - 12% effective non-GAAP tax rate) = $2.932B",
+        "margin_path_pct": [
+          43.3,
+          44.0,
+          45.0,
+          46.0,
+          47.0
+        ],
+        "wacc": 0.086,
+        "wacc_basis": "Ke = 4.3% rf + 0.85 fundamental beta x 5.0% ERP = 8.55%, rounded to 8.6%. Fundamental beta 0.85: EDA revenue >90% recurring, near-monopoly, no debt in EDA segment. Regression beta 1.21 rejected -- inflated by China export episode and Ansys acquisition volatility.",
+        "g_lt": 0.045,
+        "roic": 0.55,
+        "gordon_multiple": 22.4,
+        "gordon_derivation": "(1 - 0.045/0.55) / (0.086 - 0.045) = 0.9182 / 0.041 = 22.4x",
+        "exit_multiple_used": 22.4,
+        "ev_at_T_b": 65.7,
+        "pv_exit_b": 47.2,
+        "interim_fcf_pv_b": 2.09,
+        "implied_ev_b": 49.3,
+        "implied_px_contribution": 217.2,
+        "four_levers": {
+          "growth_rate_and_duration": "9.5% CAGR FY2026-FY2030 (4 years), normalizing at $7.09B. Duration of 4 years is appropriate: AI consumption pricing pilots are live (20 evaluation customers, Converge March 2026) but not yet in production revenue; the base assumes consumption contribution begins FY2028. Sourced from Theia demand model: EDA pool grows 10% CAGR; wallet-share expands modestly from 13.5% to 15%.",
+          "economics": "Adj operating margin expands from 43.3% (FY2026) to 47% (FY2030) as operating leverage compounds on recurring subscriptions. Non-GAAP tax 12%. ROIC 55% for Gordon -- EDA requires minimal reinvestment (software, high-single-digit R&D intensity on a steady-state basis).",
+          "wacc": "8.6% (fundamental beta 0.85). EDA WACC is the lowest of the three segments reflecting its annuity characteristics: >90% recurring, contractual multi-year subscriptions, pricing power from duopoly.",
+          "exit_multiple": "22.4x EV/NOPAT (Gordon output, not an input). Compares to Cadence normalized ~22-25x EV/NOPAT. Conservative: does not embed a consumption pricing premium."
+        }
+      },
+      {
+        "name": "Design IP",
+        "nature": "growth-lumpy-transition",
+        "method": "ExitMultiple",
+        "revenue_path_b": [
+          1.93,
+          2.2,
+          2.55,
+          2.95,
+          3.38
+        ],
+        "revenue_path_years": [
+          "FY2026E",
+          "FY2027",
+          "FY2028",
+          "FY2029",
+          "FY2030"
+        ],
+        "revenue_path_basis": "Theia base IP path: royalty model transition headwind in FY2027 ($2.20B, at the low end of recovery), then mid-teens recovery as royalties ramp FY2028-FY2030. SNPS holds 55%+ of wired interface IP -- HBM, PCIe, UCIe -- for every advanced AI chip using chiplet/multi-die architecture.",
+        "nopat_at_T_b": 0.951,
+        "nopat_derivation": "$3.38B x 32% adj margin x 0.88 = $0.951B",
+        "margin_path_pct": [
+          24.4,
+          24.0,
+          27.0,
+          30.0,
+          32.0
+        ],
+        "wacc": 0.091,
+        "wacc_basis": "Ke = 4.3% + 0.95 fundamental beta x 5.0% = 9.05%, rounded 9.1%. Beta 0.95 reflects China concentration (~10% revenue), royalty model transition uncertainty, and ARM expansion into interface IP.",
+        "g_lt": 0.04,
+        "roic": 0.4,
+        "gordon_multiple": 17.6,
+        "gordon_derivation": "(1 - 0.04/0.40) / (0.091 - 0.04) = 0.90 / 0.051 = 17.6x",
+        "exit_multiple_used": 17.6,
+        "ev_at_T_b": 16.7,
+        "pv_exit_b": 11.9,
+        "interim_fcf_pv_b": 0.21,
+        "implied_ev_b": 12.1,
+        "implied_px_contribution": 24.0,
+        "four_levers": {
+          "growth_rate_and_duration": "FY2027 at $2.20B (absorbing royalty transition headwind); then 15% CAGR FY2027-FY2030 as royalty streams ramp on confirmed hyperscaler custom silicon volumes. The duration is 4 years to normalization: the royalty ramp requires design cycles to complete (18-24 months from signing to chip shipment).",
+          "economics": "IP margin compressed in FY2027 (24%) due to transitional costs; recovers to 32% by FY2030 as royalties (near-pure-margin at the incremental) dominate the mix. ROIC 40% -- IP requires ongoing R&D for new interface standards (PCIe 8.0, HBM4, UCIe 2.0) reducing ROIC vs EDA.",
+          "wacc": "9.1% (fundamental beta 0.95). IP WACC is highest of the EDA+IP pair reflecting China regulatory risk and royalty model uncertainty.",
+          "exit_multiple": "17.6x EV/NOPAT (Gordon). Conservative vs ARM Holdings normalized ~20-25x -- a deliberate discount for China impairment risk and royalty model uncertainty that could persist at T."
+        }
+      },
+      {
+        "name": "Simulation and Analysis (Ansys)",
+        "nature": "high-growth-platform",
+        "method": "ExitMultiple",
+        "revenue_path_b": [
+          2.77,
+          3.1,
+          3.45,
+          3.83,
+          4.25
+        ],
+        "revenue_path_years": [
+          "FY2026E",
+          "FY2027",
+          "FY2028",
+          "FY2029",
+          "FY2030"
+        ],
+        "revenue_path_basis": "Theia base Ansys path: 11.3% CAGR from $2.77B FY2026E. Ansys standalone grew 12% FY2024; base assumes in-line growth as cost synergies deliver margin improvement but revenue synergies ($400M by Year 4) arrive at the lower end ($100-200M contribution by FY2030).",
+        "nopat_at_T_b": 1.421,
+        "nopat_derivation": "$4.25B x 38% adj margin x 0.88 = $1.421B",
+        "margin_path_pct": [
+          null,
+          30.0,
+          33.0,
+          36.0,
+          38.0
+        ],
+        "wacc": 0.093,
+        "wacc_basis": "Ke = 4.3% + 1.00 fundamental beta x 5.0% = 9.3%. Beta 1.0 reflects: Ansys industrial cyclicality (aerospace and auto customers are cyclical), integration uncertainty, cross-sell execution risk.",
+        "g_lt": 0.05,
+        "roic": 0.4,
+        "gordon_multiple": 20.3,
+        "gordon_derivation": "(1 - 0.05/0.40) / (0.093 - 0.05) = 0.875 / 0.043 = 20.3x",
+        "exit_multiple_used": 19.5,
+        "exit_multiple_override_basis": "19.5x applied (vs 20.3x Gordon). Integration risk haircut: cost synergies are 50% delivered but revenue synergies ($400M) are zero as of today. The 0.8x haircut is the one deliberate conservative lean in the base case; it is documented in the bias audit and represents the market's legitimate uncertainty about a $35B acquisition in Year 1.",
+        "ev_at_T_b": 27.7,
+        "pv_exit_b": 19.4,
+        "interim_fcf_pv_b": 1.59,
+        "implied_ev_b": 21.0,
+        "implied_px_contribution": 70.2,
+        "four_levers": {
+          "growth_rate_and_duration": "11.3% CAGR from $2.77B to $4.25B over 4 years. Anchored in Ansys's 12% standalone growth trajectory. Revenue synergies (Multiphysics Fusion cross-sell, EDA-to-simulation bundling) are conservative in the base: only $100-200M contribution by FY2030 vs management's $400M target.",
+          "economics": "Margin path from ~null% (FY2026 blended, below SNPS EDA economics due to pre-acquisition Ansys ~20-25% adj. EBIT) to 38% by FY2030 as $400M cost synergies fully deliver. The 38% FY2030 target is management-consistent and achievable if cost synergies run on track.",
+          "wacc": "9.3% (fundamental beta 1.0). Ansys customers include aerospace and automotive OEMs -- a cyclical customer base with longer sales cycles than pure semiconductor EDA.",
+          "exit_multiple": "19.5x (19.5 applied vs 20.3x Gordon due to integration risk). At 9.3% WACC and 5% terminal growth, ROIC 40%, Gordon gives 20.3x. The 4% haircut is the integration risk discount."
+        }
+      }
+    ],
+    "sotp_aggregation": {
+      "eda_ev_b": 49.3,
+      "ip_ev_b": 12.1,
+      "ansys_ev_b": 21.0,
+      "total_ev_b": 82.4,
+      "net_debt_b": 7.52,
+      "equity_value_b": 74.88,
+      "shares_b": 0.1914,
+      "fair_value_per_share": 390.86,
+      "note": "Net debt of $7.52B uses Q2 FY2026 figure (cash $2.48B, gross debt ~$10B), not FY2025 year-end $11.405B. SNPS has been paying down Ansys acquisition debt at ~$1.5B/year."
+    },
+    "four_levers": {
+      "growth_rate_and_duration": "Blended revenue 9.5% CAGR FY2026-FY2030 across all three segments. Duration: 4 years to normalization -- appropriate because AI consumption pricing, IP royalty ramp, and Ansys synergies all have 2-4 year delivery windows. The crux is wallet-share (13.5% to 15% base; 18% bull) -- this single variable drives more value than SNPS's market share within the EDA+IP+Sim pool.",
+      "economics": "Blended non-GAAP adj operating margin expands from ~39.5% (FY2026) to ~43-45% (FY2030) as: (a) Ansys cost synergies ($400M, 50% by year-end FY2026) deliver, (b) EDA operating leverage compounds, (c) IP margin recovers as royalty streams normalize. NOPAT at T: $2.932B (EDA) + $0.951B (IP) + $1.421B (Ansys) = $5.304B.",
+      "wacc": "Blended 8.9% (segment-weighted: EDA 8.6% x 45% + IP 9.1% x 13% + Ansys 9.3% x 28% + group overlap = 8.9%). Each segment its own WACC -- CONTRACT §2.3.",
+      "exit_multiple": "Blended 22.3x EV/NOPAT (segment-weighted). EDA 22.4x (Gordon, conservative vs Cadence 22-25x). IP 17.6x (Gordon, discounted for China risk). Ansys 19.5x (Gordon 20.3x minus 4% integration haircut). The blended multiple is the OUTPUT of the Gordon formula per segment -- not a dialed assumption."
+    },
+    "bias_audit": {
+      "rows": [
+        {
+          "assumption": "EDA revenue CAGR 9.5% FY2026-FY2030",
+          "lean": "CENTER (in line with sell-side EDA market growth consensus 9-12%)"
+        },
+        {
+          "assumption": "EDA margin path to 47% by FY2030",
+          "lean": "CENTER (management targets 43-45% for SNPS consolidated; EDA-only would be higher)"
+        },
+        {
+          "assumption": "EDA WACC 8.6% (fundamental beta 0.85)",
+          "lean": "CENTER (honest de-rating from 1.21 regression beta; EDA is demonstrably lower-beta than the regression)"
+        },
+        {
+          "assumption": "EDA Gordon exit multiple 22.4x",
+          "lean": "CENTER (Cadence comps at 22-25x; no consumption premium in base)"
+        },
+        {
+          "assumption": "IP FY2027 revenue $2.20B (includes transition headwind)",
+          "lean": "HIGH (base is above Theia IP bear path of $1.90B; we use management's recovery guide -- if transition is worse, $2.20B overstates)"
+        },
+        {
+          "assumption": "IP margin recovery to 32% by FY2030",
+          "lean": "CENTER (royalty model at maturity is near-pure-margin incremental)"
+        },
+        {
+          "assumption": "IP WACC 9.1% (fundamental beta 0.95)",
+          "lean": "CENTER"
+        },
+        {
+          "assumption": "IP Gordon exit multiple 17.6x",
+          "lean": "LOW (ARM at mature royalty stage trades ~20-25x; 17.6x is conservative for SNPS wired interface monopoly)"
+        },
+        {
+          "assumption": "Ansys revenue CAGR 11.3% FY2026-FY2030",
+          "lean": "CENTER (Ansys grew 12% standalone in FY2024; base is slightly below standalone trend)"
+        },
+        {
+          "assumption": "Ansys margin path to 38% by FY2030",
+          "lean": "CENTER (management cost synergy target; achievable if $400M delivered on time)"
+        },
+        {
+          "assumption": "Ansys WACC 9.3% (fundamental beta 1.00)",
+          "lean": "CENTER"
+        },
+        {
+          "assumption": "Ansys exit multiple 19.5x (vs Gordon 20.3x)",
+          "lean": "LOW (deliberate integration risk haircut; the one conservative lean in the Ansys segment)"
+        },
+        {
+          "assumption": "Net debt $7.52B (Q2 FY2026)",
+          "lean": "CENTER (most current available figure; $4B below FY2025 year-end)"
+        },
+        {
+          "assumption": "Shares 0.1914B",
+          "lean": "CENTER (from Q2 FY2026 10-Q)"
+        }
+      ],
+      "same_direction_count": {
+        "HIGH": 1,
+        "LOW": 2,
+        "CENTER": 11
+      },
+      "verdict": "PASS -- 2 LOW leans (IP exit multiple conservative, Ansys exit multiple conservative) and 1 HIGH lean (IP FY2027 revenue). Fewer than 3 same-direction leans. No stacked bias detected. The base is the honest most-likely."
+    },
+    "earnings_bridge": {
+      "reported_gaap_eps_fy2025": 8.04,
+      "gaap_contamination": "GAAP EPS severely depressed by Ansys acquisition amortization: $26.9B goodwill + $12.7B intangibles drive ~$1.5B+ annual amortization charges. Not a cash cost; not operative for valuation.",
+      "non_gaap_eps_fy2026_guide": 14.76,
+      "sbc_per_share_fy2025": 4.67,
+      "owner_fcf_per_share_fy2026": 10.09,
+      "owner_fcf_derivation": "Non-GAAP EPS $14.76 minus SBC per share $4.67 = $10.09. No buyback offset (zero buybacks FY2025/FY2026). Owner FCF per share reflects real dilution.",
+      "cash_pe_at_current_price": 45.1,
+      "note": "The 45x cash P/E (owner FCF basis) vs 30.8x non-GAAP P/E is the SBC gap. SNPS is making real progress on earnings; the headline non-GAAP is the industry-standard metric but the owner FCF reveals the SBC cost. As debt is paid down (FY2029-FY2030), buybacks become possible and this gap narrows."
+    },
+    "multiple_maths": {
+      "current_multiple": 26.4,
+      "current_multiple_label": "P/E FY2027 non-GAAP",
+      "justified_multiple": 32.0,
+      "justified_multiple_basis": "Historical median 35x minus 3pp integration risk discount = 32x. Cadence peer at 38x confirms SNPS at 32x is not expensive on a relative basis for an EDA software platform.",
+      "implied_growth_at_current_price": "5.5% long-run (Gordon at r=8.9%, ROIC=55%)",
+      "implied_growth_at_target": "6.2% long-run",
+      "dominant_lever": "wallet-share -- $80-97/share per 4.5pp change vs $35-43/share for SNPS market-share within EDA+IP+Sim pool. ROIC is second-order (~$10/share per 5pp change)."
+    }
+  },
+  "section_7_key_debates": {
+    "key_debates": [
+      {
+        "debate": "Will agentic AI consumption pricing break the 20-year wallet-share ceiling, or will productivity gains compress seat demand faster than consumption billing replaces it?",
+        "is_crux": true,
+        "bull_view": "Agent Engineer (25+ specialized agents, 20 customers in evaluation at Converge March 2026) invokes licensed tool compute 3-5x more per design cycle than a human engineer on a seat license. If SNPS captures 30-50% of that implied value uplift through a consumption tier on top of existing subscriptions, per-customer revenue doubles without needing a single new customer. Management guided first consumption revenue in FY2027. EDA reaches $8.80B by FY2030 at 52% margin; wallet-share expands from 13.5% to 18%. Value above base: +$160/share.",
+        "bear_view": "SNPS's own Converge 2026 claims of 2-5x productivity gains are the trigger for 20-30% engineering headcount reductions at chip design teams. Customers capture the productivity gain as cost savings rather than vendor billing expansion -- the 20-year history of EDA wallet-share at 13-15% through every prior tool productivity wave (place-and-route automation 1990s, formal verification 2000s, high-level synthesis 2010s) shows this is the default outcome. Hyperscalers specifically build in-house silicon programs to reduce open-meter royalty obligations (AWS Graviton, Google Tensor). The consumption tier requires a negotiation hyperscaler procurement teams are trained to resist. EDA grows only 2.7% CAGR to $5.50B FY2030 as seat compression offsets consumption adoption. Value below base: -$97/share.",
+        "our_verdict": "Base: wallet-share expands modestly (13.5% to 15%) as consumption pricing adds a partial new layer without fully displacing seat revenue. The 20-year ceiling holds in the base because the same dynamic that broke every prior productivity-driven pricing cycle operates here -- but the argument that Agent Engineer is qualitatively different (24/7 AI compute vs 8-hour human shifts) is real and not yet disproved. The September 30 Investor Day is the first test: a quantified consumption framework with adoption data shifts this toward the bull case; an absence of data keeps it in the base.",
+        "what_would_change_our_mind": "Three consecutive quarters post-FY2027 guidance with no consumption revenue line item, or a disclosed ELA cap from a hyperscaler EDA customer. Either moves this toward the bear. A signed consumption pricing agreement with a named hyperscaler moves it toward the bull.",
+        "worth_per_share": "$160/share bull uplift from base, $97/share bear downside from base. The dominant lever in the sensitivity matrix."
+      },
+      {
+        "debate": "Does the IP royalty model transition create a FY2027 revenue guidance cut that stalls the multiple re-rating?",
+        "is_crux": false,
+        "bull_view": "The royalty transition is deliberate and managed. SNPS holds 55% of wired interface IP (HBM, PCIe, UCIe, CXL) -- the chokepoint for every advanced AI chip using chiplet architecture. Per-chip royalties from hyperscaler custom silicon (Google TPU v5, AWS Trainium 2, Microsoft Maia, Meta MTIA) generate $200-400M of recurring annual revenue by FY2030 -- genuinely incremental because SNPS's accounting policy excludes future royalty payments from the $11B backlog. The FY2027 headwind is acknowledged in our base; the royalty wave arrives FY2028-FY2030. Value above base: +$32/share (bull scenario).",
+        "bear_view": "Management guided the royalty model transition completes 'near end FY2026.' Under the old model, upfront license fees recognize immediately. Under royalties, revenue recognizes on chip shipment -- 18-24 months after design start. A $200-300M annual upfront license fee that converts to royalties in FY2026 does not produce royalty revenue until FY2028. FY2027 IP could land at $1.90B rather than the base $2.20B -- a $300M miss. At 24% IP margin and 17.6x exit multiple, this is $5/share direct impact but the guidance-cut narrative causes a multiple compression from 26x to 22-24x on the full company, implying -$26 to -$30 additional. The bear notes: ARM's royalty transition in the early 2000s created 3-4 years of below-expectation revenue, with the stock underperforming during the transition window. Value below base: -$40/share.",
+        "our_verdict": "This is the highest-probability near-term negative catalyst. Design IP was already down 6% YoY in Q2 FY2026 even after the May-July 2025 export restriction was lifted. The royalty transition timing creates observable risk in the next two earnings reports. Our base uses $2.20B FY2027 IP (acknowledging the headwind), but if reality is $1.90B, FY2027 EPS guides below $17.25 and the September 30 Investor Day re-rating narrative is complicated. This is the debate that makes us MEDIUM rather than HIGH conviction on the BUY.",
+        "what_would_change_our_mind": "IP sequential revenue growth in Q3 and Q4 FY2026 (above Q2's $454M), confirming the royalty transition is not creating a larger gap than guided. Alternatively: management provides a specific FY2027 IP revenue guide at Q4 FY2026 earnings at or above $2.0B.",
+        "worth_per_share": "$40/share downside from base in the bear; $32/share upside in the bull from royalty ramp."
+      },
+      {
+        "debate": "Does Ansys deliver its cross-sell synergies, or does the 70x scale mismatch create a persistent integration friction?",
+        "is_crux": false,
+        "bull_view": "Multiphysics Fusion (GA June 17, 2026, no Cadence competitor at GA status) is the chip-to-system product that bridges EDA and simulation: it runs within the EDA environment, reducing procurement friction for chip design teams that already buy EDA. Beta customers are described as 'market leaders' (HPCwire, June 2026). At $5-10M per program and 20-30 active AI hardware programs (TSMC CoWoS, HBM-using designs), $100-300M incremental Ansys cross-sell revenue by FY2028. Cost synergies ($400M target, 50% already confirmed) mean margin improves regardless of cross-sell. Value above base: +$42/share (Ansys EV from $21.0B to $32.0B).",
+        "bear_view": "SNPS's EDA sales team (serves chip designers) and Ansys's simulation sales team (serves mechanical and aerospace engineers) have zero customer overlap and entirely different sales motions. Multiphysics Fusion only went GA four days before this analysis -- no named customer win, no disclosed contract. Dassault Systemes and Hexagon launched aggressive campaigns at Ansys accounts immediately post-acquisition. The Magma acquisition (2012) took two years longer to integrate than guided at 1/70th the scale. If revenue synergies arrive in Year 6 rather than Year 4, Ansys EV falls to $13.9B (bear) from $21.0B (base). Value below base: -$37/share.",
+        "our_verdict": "Ansys is on track in what it can control (cost synergies) and unproven in what it cannot (cross-sell). Our base applies a 19.5x vs 20.3x Gordon exit multiple as an integration risk haircut -- the one deliberate conservative lean in the valuation. The Ansys question resolves over 12-18 months, not 12 weeks. The September 30 Investor Day and Q1 FY2027 earnings (February 2027) are the first evidence checkpoints.",
+        "what_would_change_our_mind": "A named Multiphysics Fusion customer win at a semiconductor company (EDA customer adopting simulation). Alternatively: Ansys non-GAAP operating margin reaching 38%+ in any quarter in the next 12 months confirms cost synergies ahead of schedule.",
+        "worth_per_share": "$37/share downside (bear) to $42/share upside (bull) from the Ansys segment alone."
+      },
+      {
+        "debate": "Is China revenue structurally declining toward 6-8%, and does a second BIS episode represent a material tail?",
+        "is_crux": false,
+        "bull_view": "China export restrictions were lifted July 2025; China revenue is stabilizing at 10% rather than continuing to fall. The domestic EDA alternative (Empyrean) is limited to trailing-edge nodes (28nm and older) and poses no threat to SNPS at advanced nodes (N5, N3, N2) where China's leading chip companies (SMIC, HiSilicon) still need foreign EDA for competitive designs. A stable 9-10% China contribution at $900M+ annual is manageable.",
+        "bear_view": "China revenue has declined in every measurable period: 15% historical, 11.54% FY2025, 10% Q2 FY2026 -- the trend is structural, not episodic. Empyrean is growing at 73% R&D intensity (government-subsidized) and is capturing trailing-edge design starts that represent 40-50% of China EDA volume. A second BIS episode -- which trade policy analysts assess as non-zero probability in H2 2026 given ongoing AI competitiveness policy -- removes $800M+ in revenue. Even without a ban, organic localization moves China to 6-8% of revenue, a permanent $200-300M structural reduction from peak.",
+        "our_verdict": "The organic decline trend is observable and real; we factor a modest continued decline into the base. The full-ban tail is low probability (10-15%) but would cause a material guidance cut if triggered. China is not the primary debate -- it is a risk overlay on the wallet-share and IP transition debates.",
+        "what_would_change_our_mind": "Two consecutive quarters of stable China revenue (9-10% of total) and positive YoY IP growth in China would signal stabilization. A new BIS restriction on EDA tools specifically (currently EDA tools are not on the BIS restricted list, unlike chips) would be the downside trigger.",
+        "worth_per_share": "$11/share scenario-weighted downside (organic 65% probability $11/sh, full ban 12% probability $34/sh). Second-order relative to the wallet-share and IP debates."
+      }
+    ],
+    "bear_paragraph": "The most concrete near-term bear case rests on a mechanism that management itself confirmed: the Design IP royalty model transition. By completing the shift from upfront hyperscaler IP license fees to per-chip royalties 'near end FY2026,' SNPS creates a mandatory revenue recognition gap in FY2027 -- the year the $17.25 EPS consensus is priced to prove the re-rating case. Design IP was already down 6% YoY in Q2 FY2026 even after the export restriction was lifted, and the accounting timing of royalty recognition (chips tape out 12-18 months after design start; royalties flow on shipment) means the FY2027 gap is not speculative -- it is arithmetic. A $300M IP miss at the March 2026 guidance implies FY2027 EPS of $16.00-16.50 rather than $17.25; at the current 26.4x multiple this is $423-436, and if the miss also kills the re-rating narrative (markets stay at 24x rather than re-rating to 32x), the stock converges to $390 -- precisely the intrinsic base value, reached from the market side via a guidance cut rather than via fundamental improvement. The deeper structural bear -- that agentic AI productivity gains compress seat demand faster than consumption billing replaces it -- is the more important debate over three to five years, but it requires a FY2028-FY2029 manifestation in reported revenue, not a near-term catalyst. The $218 full-bear requires all three transformation failures to materialize simultaneously; the $390-430 near-term bear requires only the IP royalty timing to play out as guided.",
+    "key_risks": [
+      {
+        "rank": 1,
+        "category": "Revenue recognition",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM-HIGH",
+        "risk": "IP royalty model transition creates a $200-300M FY2027 revenue gap, triggering EPS guidance cut and stalling the multiple re-rating",
+        "monitor": "Design IP QoQ revenue in Q3/Q4 FY2026; FY2027 IP revenue guide at Q4 FY2026 earnings"
+      },
+      {
+        "rank": 2,
+        "category": "Seat demand compression",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM",
+        "risk": "AI-driven productivity gains reduce EDA seat demand faster than consumption billing compensates; wallet-share stagnates at 13.5% rather than expanding to 15%",
+        "monitor": "Backlog trajectory (must reverse $400M 6-month decline); September 30 Investor Day consumption revenue framework"
+      },
+      {
+        "rank": 3,
+        "category": "Ansys integration",
+        "severity": "MEDIUM",
+        "likelihood": "MEDIUM",
+        "risk": "Cross-sell revenue synergies ($400M Year 4 target) arrive in Year 6, keeping Ansys at dilutive P/E and multiple at 26x",
+        "monitor": "First named Multiphysics Fusion customer in earnings; Ansys segment operating margin trajectory"
+      },
+      {
+        "rank": 4,
+        "category": "China regulatory",
+        "severity": "HIGH-IF-TRIGGERED",
+        "likelihood": "LOW (10-15%)",
+        "risk": "Second BIS episode targets EDA tools specifically; $800M+ revenue removal",
+        "monitor": "US-China tech policy news; BIS Federal Register notices"
+      },
+      {
+        "rank": 5,
+        "category": "Capital structure",
+        "severity": "LOW-MEDIUM",
+        "likelihood": "HIGH",
+        "risk": "$893M annual SBC dilutes owners by $4.67/share with no buyback offset until FY2029-FY2030; owner FCF per share ($10.09) is 46% below non-GAAP EPS ($14.76)",
+        "monitor": "FCF and buyback announcement at September 30 Investor Day"
+      }
+    ]
+  },
+  "section_8_conclusion": {
+    "range_and_sensitivity": {
+      "anchor": "base = fair value today ($390.86 SOTP)",
+      "cases": [
+        {
+          "label": "Bear",
+          "implied_value": 218,
+          "thesis_one_line": "AI self-disruption compresses EDA seats, IP royalty transition fails to ramp, Ansys cross-sell is delayed 2+ years",
+          "evidence_grade": "MECHANISM-NOT-YET-FIRING (C1, C3) + OBSERVABLE-AND-NEAR (C2, C4)",
+          "key_driver": "EDA wallet-share stays flat or compresses from 13.5% to 11-12%; IP segment stalls at $2.20B FY2030"
+        },
+        {
+          "label": "Base",
+          "implied_value": 390.86,
+          "thesis_one_line": "Modest wallet-share expansion (13.5% to 15%), Ansys delivers cost synergies on time, IP recovers to $3.38B FY2030",
+          "evidence_grade": "PARTIALLY_CONTRACTED",
+          "key_driver": "EDA and Ansys grow in line with market; IP transitions successfully by FY2028"
+        },
+        {
+          "label": "Bull",
+          "implied_value": 624,
+          "thesis_one_line": "Agentic AI consumption pricing breaks the wallet-share ceiling to 18%, IP royalty model creates a recurring annuity, Multiphysics Fusion wins multi-die signoff",
+          "evidence_grade": "EXTRAPOLATED",
+          "key_driver": "EDA wallet-share expands to 18%, driven by consumption billing on existing customer base"
+        }
+      ],
+      "sensitivity_matrix": {
+        "axis_x": "EDA+IP wallet-share of semiconductor R&D pool",
+        "axis_y": "SNPS market share within EDA+IP+Sim combined",
+        "grid": [
+          [
+            270,
+            287,
+            301
+          ],
+          [
+            288,
+            307,
+            323
+          ],
+          [
+            324,
+            347,
+            367
+          ]
+        ],
+        "grid_labels_x": [
+          "13.5% (bear)",
+          "15.0% (base)",
+          "18.0% (bull)"
+        ],
+        "grid_labels_y": [
+          "28.5% (bear)",
+          "31.5% (base)",
+          "34.0% (bull)"
+        ],
+        "where_cases_land": "Bear: wallet-share 13.5% x SNPS-share 28.5% = $270 sensitivity cell (full SOTP bear $218 -- difference reflects per-segment margin compression and exit multiple haircut not captured in blended sensitivity). Base: 15.0% x 31.5% = $307 sensitivity cell (full SOTP $390.86 -- premium from EDA's higher segment margin 47% vs 42.5% blend). Bull: 18.0% x 34.0% = $367 sensitivity cell (full SOTP bull $624 -- premium from consumption pricing premium on exit multiple and higher revenue growth).",
+        "dominant_lever_finding": "Moving wallet-share from 13.5% to 18% adds $80-97/share; moving SNPS market share from 28.5% to 34% adds $35-43/share. The wallet-share lever is worth 2-3x the SNPS-share lever. ROIC is second-order (~$10/share per 5pp). The agentic AI debate (which determines wallet-share) is the right place to spend analytical energy."
+      }
+    },
+    "scenario_assumptions": {
+      "base": {
+        "label": "BASE -- Modest wallet-share expansion, Ansys on plan",
+        "one_line": "EDA grows 9.5% CAGR, IP recovers to $3.38B, Ansys delivers cost synergies; no consumption revenue in base",
+        "implied_value": 390.86,
+        "rows": [
+          {
+            "driver": "EDA revenue FY2030",
+            "value": "$7.09B",
+            "note": "9.5% CAGR from $4.93B FY2026"
+          },
+          {
+            "driver": "IP revenue FY2030",
+            "value": "$3.38B",
+            "note": "Mid-teens CAGR from $1.93B; royalty ramp FY2028+"
+          },
+          {
+            "driver": "Ansys revenue FY2030",
+            "value": "$4.25B",
+            "note": "11.3% CAGR; cost synergies deliver, revenue synergies conservative"
+          },
+          {
+            "driver": "Wallet-share FY2030",
+            "value": "15%",
+            "note": "Modest expansion from 13.5%; no consumption premium"
+          },
+          {
+            "driver": "Blended non-GAAP margin FY2030",
+            "value": "~43%",
+            "note": "Ansys synergies + EDA leverage"
+          },
+          {
+            "driver": "Blended WACC",
+            "value": "8.9%",
+            "note": "Segment-weighted"
+          },
+          {
+            "driver": "Blended exit multiple",
+            "value": "22.3x EV/NOPAT",
+            "note": "Weighted by segment EV"
+          },
+          {
+            "driver": "Implied equity value",
+            "value": "$74.9B / $390.86/share",
+            "note": ""
+          }
+        ]
+      },
+      "bull": {
+        "label": "BULL -- Consumption pricing breaks ceiling, IP royalty wave",
+        "one_line": "Agent Engineer drives wallet-share to 18%; IP royalty model generates per-chip recurring revenue; Multiphysics Fusion cross-sell contributes from FY2028",
+        "implied_value": 624,
+        "rows": [
+          {
+            "driver": "EDA revenue FY2030",
+            "value": "$8.80B",
+            "note": "Consumption pricing adds $1.7B above base"
+          },
+          {
+            "driver": "IP revenue FY2030",
+            "value": "$4.30B",
+            "note": "Royalty model succeeds; $900M+ above base"
+          },
+          {
+            "driver": "Ansys revenue FY2030",
+            "value": "$5.10B",
+            "note": "Multiphysics cross-sell + full synergies"
+          },
+          {
+            "driver": "Wallet-share FY2030",
+            "value": "18%",
+            "note": "Consumption pricing breaks 20-year ceiling"
+          },
+          {
+            "driver": "EDA margin FY2030",
+            "value": "52%",
+            "note": "Consumption tier near-pure-margin at incremental"
+          },
+          {
+            "driver": "EDA exit multiple",
+            "value": "29.5x",
+            "note": "Consumption premium above 22.4x Gordon base"
+          },
+          {
+            "driver": "Implied equity value",
+            "value": "$136.5B / $624/share",
+            "note": ""
+          }
+        ]
+      },
+      "bear": {
+        "label": "BEAR -- Seat compression, IP transition fails, Ansys cross-sell delayed",
+        "one_line": "AI productivity compresses EDA seats; IP royalty ramp is smaller than expected; Ansys integration delivers cost synergies but zero revenue synergies through FY2030",
+        "implied_value": 218,
+        "rows": [
+          {
+            "driver": "EDA revenue FY2030",
+            "value": "$5.50B",
+            "note": "2.7% CAGR -- seat compression offsets consumption"
+          },
+          {
+            "driver": "IP revenue FY2030",
+            "value": "$2.20B",
+            "note": "Flat from FY2027 trough; royalty ramp never materializes at scale"
+          },
+          {
+            "driver": "Ansys revenue FY2030",
+            "value": "$3.10B",
+            "note": "2.9% CAGR -- below Ansys standalone growth pre-acquisition"
+          },
+          {
+            "driver": "Wallet-share FY2030",
+            "value": "11.5%",
+            "note": "Compression from 13.5% as AI displaces seat demand"
+          },
+          {
+            "driver": "EDA margin FY2030",
+            "value": "42%",
+            "note": "Compressed by pricing pressure"
+          },
+          {
+            "driver": "EDA exit multiple",
+            "value": "21.0x",
+            "note": "Compressed from 22.4x base due to slower growth"
+          },
+          {
+            "driver": "Implied equity value",
+            "value": "$41.9B / $218/share",
+            "note": ""
+          }
+        ]
+      }
+    },
+    "synthesis_paths": [
+      {
+        "label": "Multiple re-rating as integration confirms",
+        "outcome_range": "$490-$552",
+        "description": "The most likely 12-month path. Four observable catalysts (Elliott board, Multiphysics Fusion GA, Ansys cost synergies, September 30 Investor Day) reduce the integration-risk discount from 9pp to 3-4pp. The market re-rates from 26x to 30-32x FY2027 EPS. No AI consumption revenue is required for this path.",
+        "evidence_grade": "PARTIALLY_CONTRACTED"
+      },
+      {
+        "label": "AI consumption inflection",
+        "outcome_range": "$550-$624",
+        "description": "A September 30 Investor Day that delivers a formal consumption pricing framework with quantified adoption from the 20 evaluation customers -- even $50-100M of FY2027 consumption revenue guidance -- pushes the multiple toward 35x and the stock toward the $600 bull cluster. This path requires moving from EXTRAPOLATED to PARTIALLY_CONTRACTED evidence on Agent Engineer.",
+        "evidence_grade": "EXTRAPOLATED"
+      },
+      {
+        "label": "IP guidance cut and multiple compression",
+        "outcome_range": "$390-$440",
+        "description": "The IP royalty transition creates a larger-than-guided FY2027 revenue gap. FY2027 EPS guides to $16.00-16.50, and the September 30 Investor Day delivers no consumption pricing data. The stock stays at 26x on reduced EPS: $16.25 x 26 = $423. This path does not require Ansys to disappoint or China to worsen.",
+        "evidence_grade": "OBSERVABLE-AND-NEAR"
+      }
+    ],
+    "catalysts_to_watch": [
+      {
+        "theme": "Multiple re-rating / integration confirmation",
+        "horizon": "3-6 months",
+        "what_to_watch": "September 30, 2026 Investor Day: management long-term revenue and margin targets, consumption pricing framework, any quantified Multiphysics Fusion pipeline",
+        "why_it_matters": "This is the de-risking event both bulls and bears are watching. A confident long-term target (revenue > $15B by FY2029, non-GAAP margins > 45%) plus the first consumption revenue guidance would move this from 26x to 30-32x. The lack of specific data would keep the multiple compressed.",
+        "bull_or_bear_tell": "Bull: formal consumption pricing tiers disclosed with at least one named hyperscaler evaluation commitment. Bear: vague language on consumption timeline ('exploring pricing options') without quantified adoption data."
+      },
+      {
+        "theme": "IP royalty transition and near-term guidance risk",
+        "horizon": "1-6 months",
+        "what_to_watch": "Q3 FY2026 earnings (August 2026) and Q4 FY2026 earnings (December 2026): Design IP sequential revenue trajectory, FY2027 IP revenue guidance",
+        "why_it_matters": "This is the highest-probability near-term negative catalyst. IP sequential growth in Q3/Q4 FY2026 confirms the royalty transition is proceeding without a revenue gap. A QoQ decline in IP despite management's H2 recovery guidance is the trigger for a FY2027 EPS guidance cut.",
+        "bull_or_bear_tell": "Bull: IP Q3 FY2026 revenue above $480M (sequential growth from Q2's $454M). Bear: IP flat or down QoQ in Q3 despite the export restriction having been lifted a year earlier."
+      },
+      {
+        "theme": "Agentic AI consumption evidence",
+        "horizon": "6-18 months",
+        "what_to_watch": "First disclosure of Agent Engineer consumption revenue as a line item in earnings; named hyperscaler EDA customer accepting a consumption tier; EDA backlog inflection from the current declining trend",
+        "why_it_matters": "The crux debate resolves here. The backlog declined $400M in six months (October 2025 to April 2026) -- a signal that customers are signing shorter-duration deals as they await the AI pricing model. Backlog growth resumption would be the first hard evidence that the consumption model is additive, not substitutive.",
+        "bull_or_bear_tell": "Bull: backlog returns to $11.4B+ and any consumption revenue disclosure, even modest ($25-50M). Bear: third consecutive quarter of backlog decline, indicating customer commitment duration is shortening structurally."
+      },
+      {
+        "theme": "Ansys integration milestones",
+        "horizon": "6-18 months",
+        "what_to_watch": "First named Multiphysics Fusion customer in earnings; Ansys segment non-GAAP operating margin trajectory toward 38-40%; any disclosure of Ansys revenue synergy pipeline at September 30 Investor Day",
+        "why_it_matters": "Cost synergies are being tracked (50% by year-end FY2026 confirmed). Revenue synergies ($400M Year 4 target) have zero evidence as of today -- Multiphysics Fusion was GA four days ago. The first named customer win de-risks the $42/share of Ansys bull upside.",
+        "bull_or_bear_tell": "Bull: named chip company buys Multiphysics Fusion, or Ansys margin exceeds 38% in any quarter. Bear: three quarters pass post-GA with no named Multiphysics Fusion customer and Dassault wins a named Ansys defection."
+      }
+    ],
+    "conclusion": "SNPS at $455.51 is not cheap on an intrinsic basis (SOTP fair value $390.86), but the $552 target is achievable without AI monetization arriving at scale -- it requires only that four already-observable events (Elliott board, Multiphysics Fusion GA, Ansys cost synergies, September 30 Investor Day) reduce an integration-risk discount that the market has applied at a 9pp premium to any supportable integration risk, not a 3-4pp premium. The risk is that the IP royalty model transition delivers a FY2027 guidance cut before the re-rating catalyst has time to work; at MEDIUM conviction, the risk/reward is still positive (+21.2% to target vs -14.2% to intrinsic base), and the BUY rating is appropriate at the current price. Data caveat: the 13.5% wallet-share anchor is a single-source sell-side synthesis (Citi/GS initiation reports); no independent public data series confirms this figure, and readers should treat it as an order-of-magnitude estimate rather than a hard empirical baseline."
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "basis": "MEDIUM conviction: base rests on four CONTRACTED/OBSERVABLE catalysts for the multiple re-rating, but the intrinsic SOTP ($390.86) is below current price and the target ($552) requires a market re-rating rather than pure fundamental growth. Valuation confidence LOW because the band is wide ($218-$624), and the full SOTP uses normalized FY2030 earnings requiring assumptions about a royalty transition (IP), integration outcome (Ansys), and consumption pricing (EDA) that are not yet contracted. Path confidence LOW because the 12-month path to $552 depends on the September 30 Investor Day delivering adequate disclosure -- a market event, not a fundamental milestone."
+  },
+  "run_manifest": {
+    "pipeline_version": "Atlas v3",
+    "run_date": "2026-06-21",
+    "agents_completed": [
+      "hermes",
+      "pheme",
+      "theia",
+      "daedalus",
+      "boreas",
+      "cassandra",
+      "atlas",
+      "erinys",
+      "forseti"
+    ],
+    "agents_pending": [],
+    "compute_files": [
+      "SNPS_databundle.json",
+      "SNPS_market_facts.json",
+      "SNPS_industry.json",
+      "SNPS_crux.json",
+      "SNPS_demand.json",
+      "SNPS_comps_inputs.json",
+      "SNPS_comps.json",
+      "SNPS_inputs.json",
+      "SNPS_valuation.json",
+      "SNPS_headline.json",
+      "SNPS_boreas.json",
+      "SNPS_cassandra.json"
+    ]
+  },
+  "change_log": [
+    {
+      "run": "2026-06-21-001",
+      "change": "Initial SNPS report -- full v3 pipeline cycle 1. No prior run to diff."
+    }
+  ],
+  "data_gaps": [
+    "EDA/IP/Ansys segment operating margins not separately disclosed for Ansys post-acquisition; blended non-GAAP margin used as proxy",
+    "Customer concentration data: no public breakdown of customer revenue concentration within each segment",
+    "Agentic AI consumption pricing rates: no disclosed pricing schedule for Agent Engineer consumption tier; dollar contribution is extrapolated",
+    "IP royalty rates: SNPS accounting policy excludes future royalties from backlog; no disclosed per-chip royalty rates with any hyperscaler",
+    "China revenue by segment: total China revenue available (10-11% of total) but no segment split disclosed"
+  ],
+  "sources": [
+    "SNPS_databundle.json (Hermes, 2026-06-21)",
+    "SEC EDGAR 10-Q filed 2026-05-27 (Q2 FY2026)",
+    "SEC EDGAR 8-K filed 2026-05-27 (Q2 FY2026 earnings press release)",
+    "SNPS Q2 FY2026 earnings call transcript (May 27, 2026)",
+    "Goldman Sachs SNPS initiation (July 2025, PT $620) and reiteration (May 2026, PT $600)",
+    "Citigroup SNPS March 2026 IR meeting notes and May 2026 reiteration (PT $610)",
+    "Bank of America, Stifel, Morgan Stanley, Wells Fargo, Piper Sandler analyst notes (May 2026)",
+    "Elliott Investment Management cooperation agreement (Globe and Mail, June 1, 2026)",
+    "Synopsys Converge 2026 (Agent Engineer, March 2026, 20 evaluation customers)",
+    "Multiphysics Fusion GA announcement (HPCwire, June 17, 2026)",
+    "PCIe 7.0 IP launch (SNPS press release, June 2026)",
+    "Samsung 2nm collaboration (SNPS press release, June 2026)",
+    "PatentPC/Yahoo Finance semiconductor R&D analysis (~$99B global 2024)",
+    "Mordor Intelligence EDA market sizing ($12-13B, 9-12% CAGR)",
+    "Empyrean Technology H1 2025 financial data (Theia; $69M revenue, 73% R&D intensity)",
+    "SNPS_crux.json, SNPS_demand.json, SNPS_industry.json, SNPS_market_facts.json (Theia/Pheme, 2026-06-21)"
+  ]
+}

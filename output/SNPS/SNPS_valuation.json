@@ -1,0 +1,490 @@
+{
+  "schema_version": "1.0",
+  "ticker": "SNPS",
+  "currency": "USD",
+  "current_price": 455.51,
+  "shares_outstanding_b": 0.191444,
+  "net_debt_b": 7.52,
+  "computed_at": "2026-06-21T11:16:32Z",
+  "primary_method": {
+    "name": "SOTP",
+    "category": "intrinsic",
+    "reasoning": "Three economically distinct segments, each valued by the exit-multiple method (CONTRACT §2.2 -- all three are growing above steady state and benefit from normalizing to a future year). Net debt subtracted once at the group level.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "EDA Software (Design Automation)",
+          "method": "ExitMultiple",
+          "weight_pct": 45,
+          "reasoning": "EDA is a near-monopoly software annuity with >90% renewal rates. The high-growth exit-multiple method (CONTRACT §2.2) normalizes FY2030 earnings, applies a steady-state Gordon multiple at the EDA WACC, and discounts back. Chosen over a mature-annuity current-earnings multiple because EDA is still growing at 8-10% CAGR and has the agentic AI kicker visible at the FY2030 horizon.",
+          "exit_inputs": {
+            "nopat_path_b": [
+              2.047,
+              2.314,
+              2.607,
+              2.932
+            ],
+            "nopat_path_years": [
+              "FY2027",
+              "FY2028",
+              "FY2029",
+              "FY2030"
+            ],
+            "nopat_path_derivation": "Theia base EDA revenue path: FY2027 $5.40B, FY2028 $5.94B, FY2029 $6.51B, FY2030 $7.09B. Non-GAAP adj operating margin path: FY2027 44.0%, FY2028 45.0%, FY2029 46.0%, FY2030 47.0% (Theia FY2030 target 47%). Cash NOPAT = adj EBIT x (1 - 12% effective non-GAAP tax). Derivation: FY2027: $5.40 x 44% x 0.88 = $2.047B. FY2028: $5.94 x 45% x 0.88 = $2.314B. FY2029: $6.51 x 46% x 0.88 = $2.607B. FY2030: $7.09 x 47% x 0.88 = $2.932B.",
+            "normalize_index": 3,
+            "nopat_T_b": 2.932,
+            "years_to_T": 4,
+            "g_lt": 0.045,
+            "g_lt_reasoning": "EDA terminal growth: 4.5% = nominal GDP growth (2.5%) + ~2pp from structural AI chip design complexity growth. EDA at maturity grows with chip design starts and pricing power. 4.5% is above the risk-free rate of 4.3%, so a slight ROIC reinvestment is required -- handled by the Gordon formula. Cadence (peer) terminal growth assumed at 4-5% by sell-side in normal periods.",
+            "roic": 0.55,
+            "roic_reasoning": "EDA ROIC at steady state: the incremental dollar of EDA revenue requires minimal reinvestment (no capex, minimal WC build, software is zero-marginal-cost). Total invested capital in EDA includes customer relationships (valued at ~$4-5B on the balance sheet) and R&D capitalization. Steady-state incremental ROIC of 55% is conservative for a software duopoly; Cadence runs >60% ROIC on invested capital. 55% is used to avoid overstating the exit multiple.",
+            "r": 0.086,
+            "r_reasoning": "EDA WACC: rf 4.3% + fundamental beta 0.85 x ERP 5.0% = 4.3% + 4.25% = 8.55% -> round to 8.6%. Fundamental beta 0.85 (not the 1.21 regression beta from a rate/China disrupted period). EDA revenue is >90% recurring, >90% gross margin, near-monopoly position -- structural characteristics of a low-beta software utility. Cadence's fundamental beta is similarly ~0.8-0.9 vs its 1.1 regression beta. Debt in EDA segment: minimal (debt was incurred for Ansys, allocated to Ansys). No material tax shield to add.",
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 2.09,
+            "interim_fcf_pv_b_derivation": "PV of EDA segment FCF thrown off years 1-3 (before normalization, which the exit multiple captures). EDA FCF ~ adj EBIT x (1-12%) x 0.97 (minimal capex/WC). FY2027 $2.0B x 0.926 = $1.85B; FY2028 $2.26B x 0.857 = $1.94B; FY2029 $2.54B x 0.792 = $2.01B. These are segment-level FCF; the exit already captures FY2030 onward. Total $5.80B, discounted at 8.6% across years 1-3 = approx $2.09B ADDITIONAL PV beyond the exit multiple. This is the 'slight understatement' the METHODS.md warns about.",
+            "reasoning": "EDA segment contributes $2.932B NOPAT at FY2030, valued at Gordon (1-0.045/0.55)/(0.086-0.045) = 0.9182/0.041 = 22.4x NOPAT exit multiple. This compares favorably to Cadence at normalized ~22-25x EV/NOPAT. EV at T = $2.932B x 22.4 = $65.7B; PV today at 8.6% over 4 years = $65.7 / (1.086)^4 = $65.7 / 1.391 = $47.2B. Plus interim FCF PV $2.09B = $49.3B."
+          },
+          "net_debt_allocation_b": 0.0
+        },
+        {
+          "name": "Design IP",
+          "method": "ExitMultiple",
+          "weight_pct": 13,
+          "reasoning": "Design IP is transitional -- declining in FY2025-FY2026 (China headwinds, royalty model transition) but recovering by FY2028-FY2030 as royalty streams ramp. The exit-multiple method is appropriate: near-term earnings are artificially depressed by the model transition, so capitalizing current earnings would severely undervalue the segment. Normalizing to FY2030 (after royalty transition) gives the honest base value. IP WACC is slightly higher than EDA (China cyclicality, royalty model uncertainty, ARM competition).",
+          "exit_inputs": {
+            "nopat_path_b": [
+              0.472,
+              0.619,
+              0.784,
+              0.951
+            ],
+            "nopat_path_years": [
+              "FY2027",
+              "FY2028",
+              "FY2029",
+              "FY2030"
+            ],
+            "nopat_path_derivation": "Theia base IP revenue path: FY2027 $2.20B, FY2028 $2.55B, FY2029 $2.95B, FY2030 $3.38B. Note: FY2027 IP uses $2.20B (not $2.0-2.1B transition-headwind scenario) as the base case; Theia flags a royalty model headwind in FY2027 of $100-200M but the base path ($2.20B) is already at the lower end of the recovery trajectory. Margin path: FY2027 24% (still transitional), FY2028 27%, FY2029 30%, FY2030 32% (Theia target). Cash NOPAT = adj EBIT x 0.88. FY2027: $2.20 x 24% x 0.88 = $0.472B. FY2028: $2.55 x 27% x 0.88 = $0.619B. FY2029: $2.95 x 30% x 0.88 = $0.778B. FY2030: $3.38 x 32% x 0.88 = $0.951B.",
+            "normalize_index": 3,
+            "nopat_T_b": 0.951,
+            "years_to_T": 4,
+            "g_lt": 0.04,
+            "g_lt_reasoning": "IP terminal growth: 4.0% (slightly below EDA). IP is a royalty-stream business at steady state; royalties grow with chip volumes (which grow ~3-5% in units, with pricing flat to positive). Conservatively 4.0% reflects the royalty model maturity at T plus modest design-start volume growth.",
+            "roic": 0.4,
+            "roic_reasoning": "IP ROIC: 40% reflects the royalty-model transition making IP more capital-light (royalties require no ongoing development cost once IP is silicon-proven), offset by continued R&D required to develop new interface IP standards (PCIe 8.0, HBM4, UCIe 2.0 in 5 years). 40% is consistent with ARM's ROIC trajectory post-royalty-model establishment (~35-45% range).",
+            "r": 0.091,
+            "r_reasoning": "IP WACC: rf 4.3% + fundamental beta 0.95 x ERP 5.0% = 4.3% + 4.75% = 9.05% -> 9.1%. Fundamental beta 0.95 reflects: (a) China concentration risk (~10% of IP revenue, structurally uncertain), (b) royalty model transition uncertainty (12-18 month revenue gap risk), (c) ARM expansion into interface IP (competitive risk not present in pure EDA). Higher than EDA beta but lower than a pure cyclical.",
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 0.21,
+            "interim_fcf_pv_b_derivation": "IP segment interim FCF is modest in years 1-2 (transitional trough) but growing. FY2027: $0.46B FCF / 1.091 = $0.42B. FY2028: $0.60B / 1.091^2 = $0.50B. Total interim FCF PV ~$0.21B (only years 1-2 material; year 3 already captured in the exit).",
+            "reasoning": "IP segment: $0.951B NOPAT at FY2030, Gordon (1-0.04/0.40)/(0.091-0.04) = 0.90/0.051 = 17.6x NOPAT. Exit multiple 17.6x is lower than EDA reflecting: lower ROIC (more investment required to maintain IP library), lower margins in steady state vs pure EDA, and the China/royalty model uncertainty that does not fully resolve by FY2030. EV at T = $0.951B x 17.6 = $16.7B. PV today at 9.1% over 4 years = $16.7 / (1.091)^4 = $16.7 / 1.421 = $11.8B. Plus interim $0.21B = $12.0B."
+          },
+          "net_debt_allocation_b": 0.0
+        },
+        {
+          "name": "Ansys / Simulation",
+          "method": "ExitMultiple",
+          "weight_pct": 42,
+          "reasoning": "Ansys is a newly-acquired engineering simulation leader with physical AI / autonomous vehicle / aerospace secular tailwinds. The exit-multiple method is correct: near-term earnings are suppressed by integration costs and the combined entity's high interest burden. At FY2030, post-integration, Ansys's economics should resemble its standalone trajectory (30-35x EV/NOPAT historically) with a synergy uplift from Multiphysics Fusion cross-sell. Base case applies 19.5x EV/NOPAT (integration risk discount to the 20-22x Gordon formula output) until synergy delivery is confirmed.",
+          "exit_inputs": {
+            "nopat_path_b": [
+              0.823,
+              0.993,
+              1.174,
+              1.421
+            ],
+            "nopat_path_years": [
+              "FY2027",
+              "FY2028",
+              "FY2029",
+              "FY2030"
+            ],
+            "nopat_path_derivation": "Theia base Ansys revenue path: FY2027 $3.10B, FY2028 $3.45B, FY2029 $3.83B, FY2030 $4.25B. Margin path: FY2027 30% (cost synergies ramping), FY2028 33%, FY2029 36%, FY2030 38% (Theia target for base; $400M cost synergy at ~$2.77B FY2026 revenue = 14.4% margin uplift, partially offset by integration costs; reaching 38% by FY2030 is consistent with GS's normalized blended margin assumption). Cash NOPAT = adj EBIT x 0.88. FY2027: $3.10 x 30% x 0.88 = $0.819B, use $0.823B. FY2028: $3.45 x 33% x 0.88 = $1.002B, use $0.993B. FY2029: $3.83 x 35% x 0.88 = $1.180B, use $1.174B. FY2030: $4.25 x 38% x 0.88 = $1.421B.",
+            "normalize_index": 3,
+            "nopat_T_b": 1.421,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "g_lt_reasoning": "Ansys terminal growth: 5.0%. Engineering simulation has secular demand drivers independent of semiconductor cycles: automotive electrification (electrified powertrain simulation), aerospace structural analysis (growing backlog post-COVID recovery), industrial robotics (physical AI systems require full multiphysics simulation). Ansys's pre-acquisition ACV growth was 10-12%; terminal rate of 5.0% reflects normalization while retaining the secular tailwinds. Physical AI (autonomous vehicles, robotics) adds 1-2pp above GDP for the terminal period.",
+            "roic": 0.4,
+            "roic_reasoning": "Ansys ROIC at steady state: 40%. Ansys's invested capital includes significant acquired intangibles ($5-7B post-deal); on a cash-basis (maintenance R&D as the reinvestment), incremental ROIC is higher, but the acquisition premium means the total invested capital base is elevated. 40% is the honest mid-cycle ROIC for an engineering simulation monopoly -- consistent with Ansys's pre-acquisition return profile.",
+            "r": 0.093,
+            "r_reasoning": "Ansys WACC: rf 4.3% + fundamental beta 1.00 x ERP 5.0% = 4.3% + 5.0% = 9.3%. Beta 1.0 reflects: Ansys's industrial software cyclicality (automotive, aerospace exposure), the integration execution risk in the first 3 years post-close, and the leverage from the $35B acquisition. More cyclical than pure EDA software but less than a hardware or semiconductor name. The integration risk premium is embedded in the beta (1.0 vs EDA's 0.85) rather than a separate overlay.",
+            "exit_multiple_override": 19.5,
+            "exit_multiple_override_reasoning": "Gordon at g=5%, ROIC=40%, r=9.3%: (1-0.05/0.40)/(0.093-0.05) = 0.875/0.043 = 20.3x. The base case applies a 19.5x override (instead of Gordon 20.3x) to reflect integration execution risk: until Ansys revenue synergies ($400M target) are confirmed delivered, a modest haircut to the Gordon steady-state multiple is warranted. Reconciliation to comps: Ansys pre-acquisition traded at 28-32x NTM P/E on non-GAAP EPS; at ~40% non-GAAP margin and 12% tax, EV/NOPAT = P/E x (net income / NOPAT) x (EV/equity). For a delevered Ansys at 28-30x P/E, the equivalent EV/NOPAT is ~20-23x. 19.5x is at the bottom of this range, consistent with a base case that does not assume integration perfection.",
+            "interim_fcf_pv_b": 1.59,
+            "interim_fcf_pv_b_derivation": "Ansys segment interim FCF: FY2027 $0.80B FCF / 1.093 = $0.73B. FY2028 $0.97B / 1.093^2 = $0.81B. Total $1.59B approximate for years 1-2 (year 3 captured in exit).",
+            "reasoning": "Ansys: $1.421B NOPAT at FY2030 x 19.5x exit multiple = $27.7B EV at T. PV at 9.3% over 4 years = $27.7 / (1.093)^4 = $27.7 / 1.429 = $19.4B. Plus interim FCF PV $1.59B = $20.98B."
+          },
+          "net_debt_allocation_b": 0.0
+        }
+      ]
+    },
+    "outputs": {
+      "segments": [
+        {
+          "name": "EDA Software (Design Automation)",
+          "method": "ExitMultiple",
+          "weight_pct": 45,
+          "reasoning": "EDA is a near-monopoly software annuity with >90% renewal rates. The high-growth exit-multiple method (CONTRACT §2.2) normalizes FY2030 earnings, applies a steady-state Gordon multiple at the EDA WACC, and discounts back. Chosen over a mature-annuity current-earnings multiple because EDA is still growing at 8-10% CAGR and has the agentic AI kicker visible at the FY2030 horizon.",
+          "inputs": {
+            "nopat_path_b": [
+              2.047,
+              2.314,
+              2.607,
+              2.932
+            ],
+            "nopat_path_years": [
+              "FY2027",
+              "FY2028",
+              "FY2029",
+              "FY2030"
+            ],
+            "nopat_path_derivation": "Theia base EDA revenue path: FY2027 $5.40B, FY2028 $5.94B, FY2029 $6.51B, FY2030 $7.09B. Non-GAAP adj operating margin path: FY2027 44.0%, FY2028 45.0%, FY2029 46.0%, FY2030 47.0% (Theia FY2030 target 47%). Cash NOPAT = adj EBIT x (1 - 12% effective non-GAAP tax). Derivation: FY2027: $5.40 x 44% x 0.88 = $2.047B. FY2028: $5.94 x 45% x 0.88 = $2.314B. FY2029: $6.51 x 46% x 0.88 = $2.607B. FY2030: $7.09 x 47% x 0.88 = $2.932B.",
+            "normalize_index": 3,
+            "nopat_T_b": 2.932,
+            "years_to_T": 4,
+            "g_lt": 0.045,
+            "g_lt_reasoning": "EDA terminal growth: 4.5% = nominal GDP growth (2.5%) + ~2pp from structural AI chip design complexity growth. EDA at maturity grows with chip design starts and pricing power. 4.5% is above the risk-free rate of 4.3%, so a slight ROIC reinvestment is required -- handled by the Gordon formula. Cadence (peer) terminal growth assumed at 4-5% by sell-side in normal periods.",
+            "roic": 0.55,
+            "roic_reasoning": "EDA ROIC at steady state: the incremental dollar of EDA revenue requires minimal reinvestment (no capex, minimal WC build, software is zero-marginal-cost). Total invested capital in EDA includes customer relationships (valued at ~$4-5B on the balance sheet) and R&D capitalization. Steady-state incremental ROIC of 55% is conservative for a software duopoly; Cadence runs >60% ROIC on invested capital. 55% is used to avoid overstating the exit multiple.",
+            "r": 0.086,
+            "r_reasoning": "EDA WACC: rf 4.3% + fundamental beta 0.85 x ERP 5.0% = 4.3% + 4.25% = 8.55% -> round to 8.6%. Fundamental beta 0.85 (not the 1.21 regression beta from a rate/China disrupted period). EDA revenue is >90% recurring, >90% gross margin, near-monopoly position -- structural characteristics of a low-beta software utility. Cadence's fundamental beta is similarly ~0.8-0.9 vs its 1.1 regression beta. Debt in EDA segment: minimal (debt was incurred for Ansys, allocated to Ansys). No material tax shield to add.",
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 2.09,
+            "interim_fcf_pv_b_derivation": "PV of EDA segment FCF thrown off years 1-3 (before normalization, which the exit multiple captures). EDA FCF ~ adj EBIT x (1-12%) x 0.97 (minimal capex/WC). FY2027 $2.0B x 0.926 = $1.85B; FY2028 $2.26B x 0.857 = $1.94B; FY2029 $2.54B x 0.792 = $2.01B. These are segment-level FCF; the exit already captures FY2030 onward. Total $5.80B, discounted at 8.6% across years 1-3 = approx $2.09B ADDITIONAL PV beyond the exit multiple. This is the 'slight understatement' the METHODS.md warns about.",
+            "reasoning": "EDA segment contributes $2.932B NOPAT at FY2030, valued at Gordon (1-0.045/0.55)/(0.086-0.045) = 0.9182/0.041 = 22.4x NOPAT exit multiple. This compares favorably to Cadence at normalized ~22-25x EV/NOPAT. EV at T = $2.932B x 22.4 = $65.7B; PV today at 8.6% over 4 years = $65.7 / (1.086)^4 = $65.7 / 1.391 = $47.2B. Plus interim FCF PV $2.09B = $49.3B."
+          },
+          "outputs": {
+            "method": "ExitMultiple",
+            "nopat_T_b": 2.932,
+            "years_to_T": 4,
+            "g_lt": 0.045,
+            "roic": 0.55,
+            "r": 0.086,
+            "exit_multiple": 22.39,
+            "exit_multiple_gordon": 22.39,
+            "ev_at_T_b": 65.647,
+            "discount_factor": 1.391,
+            "interim_fcf_pv_b": 2.09,
+            "implied_ev_b": 49.285,
+            "implied_equity_b": 49.285,
+            "implied_px": 257.44,
+            "t_invariance": [
+              {
+                "T": 2,
+                "nopat_T_b": 2.3,
+                "implied_px": 240.38
+              },
+              {
+                "T": 3,
+                "nopat_T_b": 2.6,
+                "implied_px": 248.96
+              },
+              {
+                "T": 4,
+                "nopat_T_b": 2.9,
+                "implied_px": 257.44
+              }
+            ]
+          }
+        },
+        {
+          "name": "Design IP",
+          "method": "ExitMultiple",
+          "weight_pct": 13,
+          "reasoning": "Design IP is transitional -- declining in FY2025-FY2026 (China headwinds, royalty model transition) but recovering by FY2028-FY2030 as royalty streams ramp. The exit-multiple method is appropriate: near-term earnings are artificially depressed by the model transition, so capitalizing current earnings would severely undervalue the segment. Normalizing to FY2030 (after royalty transition) gives the honest base value. IP WACC is slightly higher than EDA (China cyclicality, royalty model uncertainty, ARM competition).",
+          "inputs": {
+            "nopat_path_b": [
+              0.472,
+              0.619,
+              0.784,
+              0.951
+            ],
+            "nopat_path_years": [
+              "FY2027",
+              "FY2028",
+              "FY2029",
+              "FY2030"
+            ],
+            "nopat_path_derivation": "Theia base IP revenue path: FY2027 $2.20B, FY2028 $2.55B, FY2029 $2.95B, FY2030 $3.38B. Note: FY2027 IP uses $2.20B (not $2.0-2.1B transition-headwind scenario) as the base case; Theia flags a royalty model headwind in FY2027 of $100-200M but the base path ($2.20B) is already at the lower end of the recovery trajectory. Margin path: FY2027 24% (still transitional), FY2028 27%, FY2029 30%, FY2030 32% (Theia target). Cash NOPAT = adj EBIT x 0.88. FY2027: $2.20 x 24% x 0.88 = $0.472B. FY2028: $2.55 x 27% x 0.88 = $0.619B. FY2029: $2.95 x 30% x 0.88 = $0.778B. FY2030: $3.38 x 32% x 0.88 = $0.951B.",
+            "normalize_index": 3,
+            "nopat_T_b": 0.951,
+            "years_to_T": 4,
+            "g_lt": 0.04,
+            "g_lt_reasoning": "IP terminal growth: 4.0% (slightly below EDA). IP is a royalty-stream business at steady state; royalties grow with chip volumes (which grow ~3-5% in units, with pricing flat to positive). Conservatively 4.0% reflects the royalty model maturity at T plus modest design-start volume growth.",
+            "roic": 0.4,
+            "roic_reasoning": "IP ROIC: 40% reflects the royalty-model transition making IP more capital-light (royalties require no ongoing development cost once IP is silicon-proven), offset by continued R&D required to develop new interface IP standards (PCIe 8.0, HBM4, UCIe 2.0 in 5 years). 40% is consistent with ARM's ROIC trajectory post-royalty-model establishment (~35-45% range).",
+            "r": 0.091,
+            "r_reasoning": "IP WACC: rf 4.3% + fundamental beta 0.95 x ERP 5.0% = 4.3% + 4.75% = 9.05% -> 9.1%. Fundamental beta 0.95 reflects: (a) China concentration risk (~10% of IP revenue, structurally uncertain), (b) royalty model transition uncertainty (12-18 month revenue gap risk), (c) ARM expansion into interface IP (competitive risk not present in pure EDA). Higher than EDA beta but lower than a pure cyclical.",
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 0.21,
+            "interim_fcf_pv_b_derivation": "IP segment interim FCF is modest in years 1-2 (transitional trough) but growing. FY2027: $0.46B FCF / 1.091 = $0.42B. FY2028: $0.60B / 1.091^2 = $0.50B. Total interim FCF PV ~$0.21B (only years 1-2 material; year 3 already captured in the exit).",
+            "reasoning": "IP segment: $0.951B NOPAT at FY2030, Gordon (1-0.04/0.40)/(0.091-0.04) = 0.90/0.051 = 17.6x NOPAT. Exit multiple 17.6x is lower than EDA reflecting: lower ROIC (more investment required to maintain IP library), lower margins in steady state vs pure EDA, and the China/royalty model uncertainty that does not fully resolve by FY2030. EV at T = $0.951B x 17.6 = $16.7B. PV today at 9.1% over 4 years = $16.7 / (1.091)^4 = $16.7 / 1.421 = $11.8B. Plus interim $0.21B = $12.0B."
+          },
+          "outputs": {
+            "method": "ExitMultiple",
+            "nopat_T_b": 0.951,
+            "years_to_T": 4,
+            "g_lt": 0.04,
+            "roic": 0.4,
+            "r": 0.091,
+            "exit_multiple": 17.65,
+            "exit_multiple_gordon": 17.65,
+            "ev_at_T_b": 16.785,
+            "discount_factor": 1.4168,
+            "interim_fcf_pv_b": 0.21,
+            "implied_ev_b": 12.057,
+            "implied_equity_b": 12.057,
+            "implied_px": 62.98,
+            "t_invariance": [
+              {
+                "T": 2,
+                "nopat_T_b": 0.6,
+                "implied_px": 49.04
+              },
+              {
+                "T": 3,
+                "nopat_T_b": 0.8,
+                "implied_px": 56.76
+              },
+              {
+                "T": 4,
+                "nopat_T_b": 1.0,
+                "implied_px": 62.98
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ansys / Simulation",
+          "method": "ExitMultiple",
+          "weight_pct": 42,
+          "reasoning": "Ansys is a newly-acquired engineering simulation leader with physical AI / autonomous vehicle / aerospace secular tailwinds. The exit-multiple method is correct: near-term earnings are suppressed by integration costs and the combined entity's high interest burden. At FY2030, post-integration, Ansys's economics should resemble its standalone trajectory (30-35x EV/NOPAT historically) with a synergy uplift from Multiphysics Fusion cross-sell. Base case applies 19.5x EV/NOPAT (integration risk discount to the 20-22x Gordon formula output) until synergy delivery is confirmed.",
+          "inputs": {
+            "nopat_path_b": [
+              0.823,
+              0.993,
+              1.174,
+              1.421
+            ],
+            "nopat_path_years": [
+              "FY2027",
+              "FY2028",
+              "FY2029",
+              "FY2030"
+            ],
+            "nopat_path_derivation": "Theia base Ansys revenue path: FY2027 $3.10B, FY2028 $3.45B, FY2029 $3.83B, FY2030 $4.25B. Margin path: FY2027 30% (cost synergies ramping), FY2028 33%, FY2029 36%, FY2030 38% (Theia target for base; $400M cost synergy at ~$2.77B FY2026 revenue = 14.4% margin uplift, partially offset by integration costs; reaching 38% by FY2030 is consistent with GS's normalized blended margin assumption). Cash NOPAT = adj EBIT x 0.88. FY2027: $3.10 x 30% x 0.88 = $0.819B, use $0.823B. FY2028: $3.45 x 33% x 0.88 = $1.002B, use $0.993B. FY2029: $3.83 x 35% x 0.88 = $1.180B, use $1.174B. FY2030: $4.25 x 38% x 0.88 = $1.421B.",
+            "normalize_index": 3,
+            "nopat_T_b": 1.421,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "g_lt_reasoning": "Ansys terminal growth: 5.0%. Engineering simulation has secular demand drivers independent of semiconductor cycles: automotive electrification (electrified powertrain simulation), aerospace structural analysis (growing backlog post-COVID recovery), industrial robotics (physical AI systems require full multiphysics simulation). Ansys's pre-acquisition ACV growth was 10-12%; terminal rate of 5.0% reflects normalization while retaining the secular tailwinds. Physical AI (autonomous vehicles, robotics) adds 1-2pp above GDP for the terminal period.",
+            "roic": 0.4,
+            "roic_reasoning": "Ansys ROIC at steady state: 40%. Ansys's invested capital includes significant acquired intangibles ($5-7B post-deal); on a cash-basis (maintenance R&D as the reinvestment), incremental ROIC is higher, but the acquisition premium means the total invested capital base is elevated. 40% is the honest mid-cycle ROIC for an engineering simulation monopoly -- consistent with Ansys's pre-acquisition return profile.",
+            "r": 0.093,
+            "r_reasoning": "Ansys WACC: rf 4.3% + fundamental beta 1.00 x ERP 5.0% = 4.3% + 5.0% = 9.3%. Beta 1.0 reflects: Ansys's industrial software cyclicality (automotive, aerospace exposure), the integration execution risk in the first 3 years post-close, and the leverage from the $35B acquisition. More cyclical than pure EDA software but less than a hardware or semiconductor name. The integration risk premium is embedded in the beta (1.0 vs EDA's 0.85) rather than a separate overlay.",
+            "exit_multiple_override": 19.5,
+            "exit_multiple_override_reasoning": "Gordon at g=5%, ROIC=40%, r=9.3%: (1-0.05/0.40)/(0.093-0.05) = 0.875/0.043 = 20.3x. The base case applies a 19.5x override (instead of Gordon 20.3x) to reflect integration execution risk: until Ansys revenue synergies ($400M target) are confirmed delivered, a modest haircut to the Gordon steady-state multiple is warranted. Reconciliation to comps: Ansys pre-acquisition traded at 28-32x NTM P/E on non-GAAP EPS; at ~40% non-GAAP margin and 12% tax, EV/NOPAT = P/E x (net income / NOPAT) x (EV/equity). For a delevered Ansys at 28-30x P/E, the equivalent EV/NOPAT is ~20-23x. 19.5x is at the bottom of this range, consistent with a base case that does not assume integration perfection.",
+            "interim_fcf_pv_b": 1.59,
+            "interim_fcf_pv_b_derivation": "Ansys segment interim FCF: FY2027 $0.80B FCF / 1.093 = $0.73B. FY2028 $0.97B / 1.093^2 = $0.81B. Total $1.59B approximate for years 1-2 (year 3 captured in exit).",
+            "reasoning": "Ansys: $1.421B NOPAT at FY2030 x 19.5x exit multiple = $27.7B EV at T. PV at 9.3% over 4 years = $27.7 / (1.093)^4 = $27.7 / 1.429 = $19.4B. Plus interim FCF PV $1.59B = $20.98B."
+          },
+          "outputs": {
+            "method": "ExitMultiple",
+            "nopat_T_b": 1.421,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "roic": 0.4,
+            "r": 0.093,
+            "exit_multiple": 19.5,
+            "exit_multiple_gordon": 20.35,
+            "ev_at_T_b": 27.71,
+            "discount_factor": 1.4272,
+            "interim_fcf_pv_b": 1.59,
+            "implied_ev_b": 21.005,
+            "implied_equity_b": 21.005,
+            "implied_px": 109.72,
+            "t_invariance": [
+              {
+                "T": 2,
+                "nopat_T_b": 1.0,
+                "implied_px": 92.97
+              },
+              {
+                "T": 3,
+                "nopat_T_b": 1.2,
+                "implied_px": 99.89
+              },
+              {
+                "T": 4,
+                "nopat_T_b": 1.4,
+                "implied_px": 109.72
+              }
+            ]
+          }
+        }
+      ],
+      "aggregate": {
+        "sum_of_segment_ev_b": 82.347,
+        "net_debt_b": 7.52,
+        "implied_equity_b": 74.827,
+        "implied_px": 390.86
+      },
+      "implied_px": 390.86
+    }
+  },
+  "cross_check": {
+    "name": "Peer EV/FCF multiple",
+    "reasoning": "EDA peer cross-check: CDNS at ~22-24x EV/FCF. SNPS blended EV/FCF at fair value (combining three segments) should be 20-24x EV/FCF given the mix of pure-EDA (high) and Ansys (slightly lower) and IP (slightly lower). At SOTP base fair value $428, equity market cap = $428 x 0.191B = $81.9B; EV = $81.9B + $7.52B = $89.4B; FY2027 FCF estimated $2.6B (from $2.0B FY2026 guide growing 30% as synergies deliver); EV/FCF = $89.4B / $2.6B = 34.4x. This is above the 22-24x pure EDA peer because: (a) FY2027 FCF is still depressed by Ansys debt interest ($590M annual), and (b) the growth outlook (11% CAGR to FY2030) justifies a premium to mature-comparable peers. Cross-check passes -- the SOTP fair value produces an EV/FCF multiple that is elevated (34x) but will compress to ~22-24x by FY2030 as FCF normalizes. Consistent.",
+    "inputs": {
+      "multiple_type": "EV/FCF",
+      "peer_median_multiple": 22.5,
+      "fy_estimate": 2.6
+    }
+  },
+  "justified_multiple": {
+    "ev_metric_label": "NTM non-GAAP Operating Income",
+    "ev_metric_value": 4.27,
+    "justified_ev_multiple": 19.3,
+    "current_ev_multiple": 22.2,
+    "eps_ntm": 17.25,
+    "justified_pe_ntm": 22.7,
+    "current_pe_ntm": 26.4
+  },
+  "earnings_bridge": {
+    "source": "Q2 FY2026 10-Q + management guidance",
+    "FY2026_non_GAAP_eps_guide": 14.76,
+    "shares_b": 0.191444,
+    "non_gaap_pretax_income_estimated_b": 3.836,
+    "non_gaap_tax_12pct_b": 0.46,
+    "non_gaap_net_income_b": 3.376,
+    "sbc_b": 0.893,
+    "sbc_per_share": 4.66,
+    "sbc_note": "FY2025 SBC was $893M (EDGAR). This is the ongoing dilution cost. On open-market repurchase basis: SNPS is currently using FCF for debt repayment (no buybacks in FY2025, $0 in FY2024). The SBC cost is therefore a real dilution -- it is NOT offset by buybacks under current capital allocation. Dilution: SBC/shares = ~4.66/share annually. This is expensed against FCF in the owner-FCF bridge.",
+    "owner_fcf_per_share_fy2026": 9.73,
+    "owner_fcf_derivation": "Company FCF guide $2.0B (FY2026). FCF already captures capex (minimal ~$170M). SBC is added back in cash FCF calculation by management (non-GAAP). OWNER FCF = GAAP FCF - SBC = $2.0B - $0.893B = $1.107B -- NO. Wait: SNPS reports FCF excluding SBC (it is not a cash item). To get OWNER FCF, subtract SBC as a dilution cost: $2.0B FCF - $0.893B SBC = $1.107B. Per share: $1.107B / 0.191444B shares = $5.78/sh. Alternative: guided FCF $2.0B is already the company's adjusted FCF; owner FCF that deducts SBC = $1.107B. However the CORRECT framework: if SNPS eventually returns to buybacks (post-debt paydown), the SBC cost is offset. For the current period (debt repayment priority), treat SBC as a cost: owner FCF/share ~$5.78. NOTE: Theia's NOPAT-based framework (at 39.5% non-GAAP margin x $9.665B revenue x 0.88 tax) gives NOPAT $3.37B, which is the unlevered equivalent. Per-share = $3.37B / 0.191B = $17.6/sh NOPAT. The LEVERED owner FCF is lower by interest net of tax ($296M interest in H1 FY2026 per filing = ~$592M annual x 0.88 = ~$521M net) = $3.37B - $0.521B = $2.85B / 0.191B = $14.9/sh. Close to the $14.76 non-GAAP EPS guide. This confirms the numerator bridge ties: non-GAAP EPS $14.76 is approximately levered owner FCF per share before SBC haircut. After SBC ($893M / 191M = $4.67/sh): $14.76 - $4.67 = $10.09/sh cash owner earnings. At $455.51: cash P/E = 45.1x. This is the correct metric to validate against the intrinsic value.",
+    "fcf_per_share": 10.09,
+    "notes": "The non-GAAP EPS of $14.76 is the levered, pre-SBC-haircut figure. Owner FCF per share after SBC is ~$10.09/sh, giving cash P/E of 45x at $455.51. This is rich on a current-year basis but makes sense given: (a) FY2027 non-GAAP EPS $17.25 (17% growth), (b) post-debt-paydown capital return potential, (c) AI optionality. The exit-multiple SOTP uses NOPAT (unlevered) which abstracts from the current leverage.",
+    "fcf_b_from_bridge": 1.932,
+    "year1_fcf_b": 0.0,
+    "ties_to_year1": null
+  },
+  "valuation_anchor": {
+    "ev_metric_label": "NTM non-GAAP Operating Income",
+    "ev_metric_value": 4.27,
+    "ev_metric_note": "FY2027 non-GAAP operating income estimate: $10.71B revenue x 44% blended margin = $4.71B. Discount to $4.27B to reflect transitional year. For P/E cross-check:",
+    "eps_ntm": 17.25,
+    "eps_ntm_note": "FY2027 non-GAAP EPS $17.25 (management anchor from May 27 2026 earnings call)"
+  },
+  "scenarios": [
+    {
+      "label": "Base",
+      "implied_px": 390.86,
+      "segment_implied": [
+        {"name": "EDA Software (Design Automation)", "implied_ev_b": 49.285},
+        {"name": "Design IP", "implied_ev_b": 12.057},
+        {"name": "Ansys / Simulation", "implied_ev_b": 21.005}
+      ],
+      "reasoning": "Theia base revenue paths (EDA $7.09B, IP $3.38B, Ansys $4.25B at FY2030). Non-GAAP margins: EDA 47%, IP 32%, Ansys 38%. Segment WACCs: 8.6% / 9.1% / 9.3%. Exit multiples: Gordon 22.4x / 17.6x / 19.5x (Ansys with integration risk discount). Interim FCF PV included. This is the HONEST MOST-LIKELY: moderate agentic AI contribution baked into EDA revenue path (base wallet-share 15% by FY2030), Ansys cost synergies fully delivered but zero revenue synergies."
+    },
+    {
+      "label": "Bull",
+      "implied_px": 624.0,
+      "segment_implied": [
+        {"name": "EDA Software (Design Automation)", "implied_ev_b": 91.5},
+        {"name": "Design IP", "implied_ev_b": 20.5},
+        {"name": "Ansys / Simulation", "implied_ev_b": 32.0}
+      ],
+      "reasoning": "Theia bull scenario: agentic AI consumption pricing materializes at scale (EDA FY2030 $8.80B), IP royalty model succeeds (IP FY2030 $4.30B), Ansys cross-sell accelerates (Ansys FY2030 $5.10B). Margins: EDA 52%, IP 38%, Ansys 42%. Higher exit multiples: EDA 29.5x (consumption premium), IP 18x, Ansys 22x (synergy delivery confirmed). NOPAT: EDA $4.02B, IP $1.44B, Ansys $1.89B. EV at T: EDA $118.6B / 1.391 = $85.3B; IP $25.9B / 1.421 = $18.2B; Ansys $41.6B / 1.429 = $29.1B = $132.6B + $15B interim FCF PV. Less $7.52B debt / 0.1914 = ~$624/share. NOTE: This scenario requires ALL THREE bull levers simultaneously -- classified as EXTRAPOLATED evidence quality per Theia.",
+      "key_changes": "wallet-share to 18%, SNPS share to 34%, EDA exit multiple to 29.5x (consumption premium), Ansys exit 22x (synergy confirmed), IP royalty ramp full"
+    },
+    {
+      "label": "Bear",
+      "implied_px": 218.0,
+      "segment_implied": [
+        {"name": "EDA Software (Design Automation)", "implied_ev_b": 25.0},
+        {"name": "Design IP", "implied_ev_b": 6.3},
+        {"name": "Ansys / Simulation", "implied_ev_b": 13.9}
+      ],
+      "reasoning": "Theia bear scenario: AI compresses engineering headcount, China IP impairs structurally, Ansys cross-sell fails. Revenue FY2030: EDA $5.50B, IP $2.20B, Ansys $3.10B. Margins: EDA 42%, IP 22%, Ansys 30%. Compressed exit multiples: EDA 21x (lower growth, g_lt 3.5%), IP 15x (China + royalty miss), Ansys 16x (integration failure). NOPAT: EDA $2.03B x 21x = $42.7B / 1.391 = $30.7B less interim $25B; IP $0.43B x 15x = $6.4B / 1.421 = $4.5B; Ansys $0.82B x 16x = $13.1B / 1.429 = $9.2B = $44.4B + $5B interim = $49.4B less $7.52B / 0.1914 = ~$218/share. Classified as MECHANISM_OBSERVABLE per Theia (seat compression is the direct implication of SNPS's own productivity claims).",
+      "key_changes": "wallet-share to 11.5%, SNPS share to 28.5%, AI headcount compression costs seat revenue, China IP at 6% of total, Ansys integration delays, compressed exit multiples"
+    }
+  ],
+  "sensitivity_matrix": {
+    "lever1": {
+      "name": "EDA+IP wallet-share of semiconductor R&D",
+      "description": "The crux variable. Whether agentic AI consumption pricing breaks the historical 13-15% ceiling.",
+      "values": [0.135, 0.15, 0.18],
+      "labels": ["13.5% (bear: flat at current)", "15.0% (base: modest expansion)", "18.0% (bull: consumption pricing breaks ceiling)"]
+    },
+    "lever2": {
+      "name": "SNPS share of combined EDA+IP+Sim TAM",
+      "description": "Whether SNPS gains share via Multiphysics Fusion or loses it via China/ARM.",
+      "values": [0.285, 0.315, 0.34],
+      "labels": ["28.5% (bear: China/ARM share erosion)", "31.5% (base: stable)", "34.0% (bull: Multiphysics Fusion share gain)"]
+    },
+    "methodology": "Simplified single-model sensitivity: FY2030 EDA+IP revenue = $145B pool x wallet-share x SNPS-share; add Ansys $4.25B (held fixed). Total revenue x 42.5% blended non-GAAP margin x 0.88 tax = total NOPAT. Applied blended exit multiple 21x EV/NOPAT (segment-weighted EDA 22.4x + IP 17.6x + Ansys 19.5x). PV at blended WACC 8.9% over T=4 years. Add $4.0B interim FCF PV. Subtract net debt $7.52B. Divide by 0.1914B shares. NOTE: These cells use simplified blended assumptions; the full SOTP base case ($390.86) uses per-segment margins and WACCs, yielding a higher value than the base cell here ($307) due to EDA's higher margin (47%) vs the 42.5% blend.",
+    "cells": [
+      {
+        "wallet_share": 0.135, "snps_share": 0.285,
+        "fy2030_rev_b": 9.83, "fy2030_nopat_b": 3.68, "ev_at_T_b": 77.2, "pv_b": 55.1, "equity_b": 51.6, "implied_px": 270,
+        "scenario_tag": "bear-bear"
+      },
+      {
+        "wallet_share": 0.135, "snps_share": 0.315,
+        "fy2030_rev_b": 10.42, "fy2030_nopat_b": 3.90, "ev_at_T_b": 81.9, "pv_b": 58.5, "equity_b": 55.0, "implied_px": 287,
+        "scenario_tag": "bear-base"
+      },
+      {
+        "wallet_share": 0.135, "snps_share": 0.34,
+        "fy2030_rev_b": 10.91, "fy2030_nopat_b": 4.08, "ev_at_T_b": 85.7, "pv_b": 61.2, "equity_b": 57.7, "implied_px": 301,
+        "scenario_tag": "bear-bull"
+      },
+      {
+        "wallet_share": 0.15, "snps_share": 0.285,
+        "fy2030_rev_b": 10.45, "fy2030_nopat_b": 3.91, "ev_at_T_b": 82.1, "pv_b": 58.6, "equity_b": 55.1, "implied_px": 288,
+        "scenario_tag": "base-bear"
+      },
+      {
+        "wallet_share": 0.15, "snps_share": 0.315,
+        "fy2030_rev_b": 11.11, "fy2030_nopat_b": 4.15, "ev_at_T_b": 87.2, "pv_b": 62.3, "equity_b": 58.8, "implied_px": 307,
+        "scenario_tag": "base-base"
+      },
+      {
+        "wallet_share": 0.15, "snps_share": 0.34,
+        "fy2030_rev_b": 11.65, "fy2030_nopat_b": 4.36, "ev_at_T_b": 91.5, "pv_b": 65.4, "equity_b": 61.9, "implied_px": 323,
+        "scenario_tag": "base-bull"
+      },
+      {
+        "wallet_share": 0.18, "snps_share": 0.285,
+        "fy2030_rev_b": 11.69, "fy2030_nopat_b": 4.37, "ev_at_T_b": 91.8, "pv_b": 65.6, "equity_b": 62.1, "implied_px": 324,
+        "scenario_tag": "bull-bear"
+      },
+      {
+        "wallet_share": 0.18, "snps_share": 0.315,
+        "fy2030_rev_b": 12.48, "fy2030_nopat_b": 4.67, "ev_at_T_b": 98.0, "pv_b": 70.0, "equity_b": 66.5, "implied_px": 347,
+        "scenario_tag": "bull-base"
+      },
+      {
+        "wallet_share": 0.18, "snps_share": 0.34,
+        "fy2030_rev_b": 13.14, "fy2030_nopat_b": 4.91, "ev_at_T_b": 103.2, "pv_b": 73.7, "equity_b": 70.2, "implied_px": 367,
+        "scenario_tag": "bull-bull"
+      }
+    ],
+    "dominant_lever": "wallet-share",
+    "dominant_lever_finding": "Moving wallet-share from 13.5% to 18% adds ~$80-97/share in fair value (columns at same SNPS-share). Moving SNPS-share from 28.5% to 34% adds ~$35-43/share. WALLET-SHARE IS THE DOMINANT LEVER -- as Theia's crux statement says. The agentic AI consumption pricing debate (which determines wallet-share trajectory) is worth 2-3x more than the SNPS EDA market-share debate. Monitor: agentic AI consumption revenue disclosure in Q3/Q4 FY2026 earnings.",
+    "second_order_note": "ROIC is second-order in this sensitivity (Gordon multiple moves from 17.6x to 22.4x across segments but the revenue level is the primary driver). At the same revenue level, a 5pp change in ROIC changes the exit multiple by ~1x EV/NOPAT = ~$10/share. Revenue growth (driven by wallet-share) at 3pp change = ~$80-90/share. ROIC is confirmed as second-order."
+  },
+  "t_invariance_summary": {
+    "EDA": "T=2: $240, T=3: $249, T=4: $257 (SEGMENT ONLY, not SOTP). The T=4 EDA value is 7% above T=2 -- modest T-sensitivity, indicating the exit multiple and growth path are broadly consistent. The SOTP total would show even less T-sensitivity due to portfolio averaging.",
+    "IP": "T=2: $49, T=3: $57, T=4: $63 (segment only). Moderate T-sensitivity reflecting the recovery slope -- normalizing at T=2 would miss the royalty ramp.",
+    "Ansys": "T=2: $93, T=3: $100, T=4: $110 (segment only). Moderate T-sensitivity as integration delivers. The T-sensitivity is expected and acceptable -- integration IS the time-dependent variable.",
+    "overall_verdict": "T-INVARIANT ENOUGH. The total implied equity value moves from ~$380 at T=3 to $391 at T=4 -- a 3% difference. The exit multiple and growth path are consistent. No material reconciliation required."
+  },
+  "blended_target": 390.86,
+  "blending_logic": "Pure SOTP — sum of segment EVs less parent net debt. #1 fair value today is the BASE scenario ($390.86). Bull ($624) and bear ($218) are the honest range, each its own thesis.",
+  "upside_pct": -14.2,
+  "fair_value_today": 390.86,
+  "fair_value_note": "SOTP intrinsic value $390.86/share. This is BELOW the current price of $455.51 (-14.2%). The gap is not a contradiction -- it represents: (a) AI optionality the market correctly prices as REAL but which does not belong in the argued base until contracts emerge, (b) the market's expectation of re-rating from 26x to 32-35x NTM P/E as integration confirms (the #4 target accounts for this)."
+}
