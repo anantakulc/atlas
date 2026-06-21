@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "agent": "Cassandra",
+    "ticker": "SPGI",
+    "version": "v3.0",
+    "produced_utc": "2026-06-21T07:00:00Z",
+    "note": "Cassandra runs blind to Boreas. The honest LOWER reading of the crux. These are 2-4 KEY DEBATES with named break-mechanisms. Each quantified in $/share."
+  },
+
+  "crux_anchor": "The crux is whether AI disruption to Market Intelligence is a narrative overhang or a structural threat. Cassandra argues: the market is NOT wrong to be cautious — SPGI's moats are shallower than management suggests in the one segment that DOES matter (MI, ~20% of EBITDA), and the re-rating requires earnings proof that hasn't arrived. Worth watching carefully before upgrading conviction.",
+
+  "scenario_spec": {
+    "label": "bear",
+    "ebitda_growth_pct": 5.0,
+    "exit_multiple_ntm": 15.0,
+    "implied_value": 380.0,
+    "key_assumption": "Multiple stays compressed at 15x NTM EV/EBITDA as MI subscription deceleration becomes observable; Ratings transaction revenue misses on delayed rate cuts; passive AUM growth slows to 4-5%"
+  },
+
+  "key_debates": [
+    {
+      "debate": "Market Intelligence subscriptions face real erosion from AI-native competitors — and the market cycle for recognizing this is just beginning",
+      "is_crux": true,
+      "bear_view": "Bloomberg has approximately 325,000 Terminal seats at $25,000 per seat — $8B+ in annual revenue, and it is deploying that resource into Bloomberg Copilot, Bloomberg Intelligence AI, and an aggressive enterprise AI integration roadmap. SPGI Market Intelligence competes for the same enterprise finance workflow budget. The bear mechanism is specific: when a buy-side firm's 50-seat Capital IQ Pro contract comes up for renewal in 2026-2027, the procurement team is now evaluating Bloomberg Copilot (which is INCLUDED in the Bloomberg Terminal subscription) against a SEPARATE Capital IQ Pro contract at $5,000-15,000 per seat per year. The incremental ROI of Capital IQ Pro, standalone, falls when Bloomberg's AI tools close the capability gap on equity screening, comps, and credit analytics. SPGI's subscription revenue won't collapse overnight — enterprise software has multi-year lock-in — but net revenue retention (currently assumed at 90%+) is the metric to watch. If it falls to 85%, the math deteriorates fast: $3.9B × (85% retention vs. 90%) = $200M revenue decline × 18x segment multiple = $3.6B EV = $12/share annually. Three years of this compounds to ~$33/share of lost value, and the market discounts future erosion now. The current 17.6x NTM EV/EBITDA may not be a mistake; it may be the market's rational forward price for a franchise in the early stage of a secular revenue challenge.",
+      "bull_view": "MI hasn't shown any subscription deterioration yet. Two quarters of clean retention data would break this thesis. And SPGI's proprietary data (35 years of credit ratings history, private company financials, supply chain linkages) is IRREPLACEABLE for AI training — Bloomberg can build Copilot, but it cannot build an AI tool that makes credible credit decisions without SPGI's underlying data assets.",
+      "our_verdict": "The mechanism is real but the timeline is uncertain. The bear requires 2-3 years of visible churn to fully materialize. The stock has already priced in significant MI risk. We give the bear on MI credit for 1-2 years of multiple compression remaining, but not for a structural collapse of the franchise.",
+      "what_would_change": "A quarter where SPGI explicitly guides MI subscription revenue growth below 5% YoY, or discloses notable customer non-renewal by name, would confirm the bear. Absent this, it remains a narrative risk, not an observed risk.",
+      "worth_per_share": -95,
+      "worth_detail": "From 17.6x current to 15x bear multiple on $8.3B FY2026E EBITDA: EV declines from $146.3B to $124.6B, equity from $134.5B to $112.8B, per share from $453 to $392 (at 288M shares). That's -$61/share just from multiple compression. Plus if MI EBITDA is $100M lower than base (partial churn): $100M × 15x = $1.5B EV = $5/share. Total bear impact vs. price: bear scenario $380 vs. current $411 = -$31 (8% downside). The bear DOESN'T produce catastrophic losses at current price because the stock has already priced in meaningful multiple compression.",
+      "evidence_quality": "OBSERVABLE-BUT-DELAYED (Bloomberg Copilot product is observable now; SPGI's contract renewal data is not yet in the public domain; mechanism is real, timing uncertain)"
+    },
+    {
+      "debate": "Ratings transaction revenue recovery requires macro conditions that may not arrive in 2026-2027",
+      "is_crux": false,
+      "bear_view": "The bull thesis on Ratings recovery requires Fed rate cuts of 150-200bp. As of June 2026, the CME FedWatch tool shows the market is pricing a shallow, gradual cutting cycle — not the aggressive easing that would meaningfully unlock HY and CLO issuance. The structural argument for pent-up refinancing demand is correct, but 'pent-up demand' doesn't mean 'immediate demand': corporate treasurers are not forced to refinance maturing debt in year 1 of a rate cut cycle; they refinance when the economics are compelling. If the spread between locked-in coupons and current market rates is only 50-100bp, many borrowers simply roll over at maturity without launching a rated bond deal. The bear mechanism: Fed cuts 75bp in 2026 (not 200bp); HY issuance recovers only modestly to pre-pandemic-boom normalized levels; SPGI Ratings transaction revenue grows 5-8% instead of the 15-20% the bull expects. At 8% vs. 15% Ratings transaction revenue growth, the EBITDA delta is approximately $100M per year × 25x multiple = $2.5B EV = $8/share — not catastrophic, but meaningful when compounded with multiple compression.",
+      "bull_view": "The refinancing need is contractually certain — bonds mature, companies must refinance or default. The timing is uncertain, not the event. Rate cuts of ANY magnitude begin the unlock; SPGI's subscription revenues ($2.6B of $4.4B in Ratings) continue growing regardless.",
+      "our_verdict": "Rates and issuance are genuine macro risks. Not the primary bear thesis but a meaningful contributor to the bear scenario. The bear case requires BOTH multiple compression (MI narrative) AND issuance delay to produce -7% from here.",
+      "what_would_change": "Fed holding rates above 4.5% through end-2026, combined with IG and HY spreads widening (indicating credit quality concerns), would confirm the delayed recovery thesis.",
+      "worth_per_share": -25,
+      "worth_detail": "Bear scenario for Ratings: 5% EBITDA growth vs. base 8% = $250M less EBITDA × 25x segment multiple = $6.25B less EV = $22/share. Plus multiple stays at 15x (not recovering) = already captured in debate 1. Incremental Ratings bear impact: -$25/share.",
+      "evidence_quality": "OBSERVABLE-AND-NEAR (Fed rate decisions are observable quarterly; issuance volumes are published monthly by SIFMA)"
+    },
+    {
+      "debate": "SPGI is a conglomerate that has NEVER fully traded at the sum-of-its-parts — the discount is structural, not a temporary mis-pricing",
+      "is_crux": false,
+      "bear_view": "The bull argument that SPGI 'should' trade at 21x blended EV/EBITDA because its pure-play comparables (MCO at 27x, MSCI at 37x) trade higher ignores a fundamental reality of conglomerate valuation: investors apply a conglomerate discount because the capital allocation decision (which segment gets investment? which gets starved?) is made by management, not the market. SPGI management could rationally allocate excess FCF to Mobility (lowest moat) instead of buying back stock, or make another $44B acquisition (like IHS Markit) that creates amortization drag and integration risk for years. The IHS Markit deal, closed at approximately 35x EV/EBITDA in 2022, has produced a $31B goodwill balance and integration costs that continue to pressure GAAP EPS. The market is partially pricing the risk that SPGI management makes another large deal at premium prices rather than returning capital. A permanent 15-20% conglomerate discount to sum-of-parts is historically normal for diversified financial services platforms.",
+      "bull_view": "SPGI has been buying back stock aggressively ($5B in FY2025 at below-fair-value prices) and raising its dividend for 14 consecutive years. The capital allocation history since the IHS Markit integration closed has been shareholder-friendly. There is no announced M&A pipeline as of 2026.",
+      "our_verdict": "The conglomerate discount is real but our 20.8x SOTP already embeds it (each segment is discounted vs. pure-play comparables). The bear would need to argue for a 17x or lower blended multiple even in steady state, which requires assuming SPGI makes a value-destroying deal in the next 12 months — a risk, not a base case.",
+      "what_would_change": "SPGI announcing a large ($10B+) acquisition at premium multiples would validate the conglomerate discount concern. Without this, the discount should narrow.",
+      "worth_per_share": -35,
+      "worth_detail": "Permanent conglomerate discount scenario: multiple stays at 17x (vs. 20.8x SOTP) regardless of AI narrative resolution. At 17x FY2026E EBITDA ($8.3B × 17 = $141.1B EV; equity $129.3B; per share $449) = 9% upside — below the 15% BUY hurdle → HOLD. This is the bear's strongest structural argument: not a collapse, but a case where the valuation never fully closes.",
+      "evidence_quality": "MECHANISM (historical conglomerate discounts are observable; SPGI-specific next-deal risk is speculative)"
+    }
+  ],
+
+  "bear_paragraph": "SPGI's bear case is not a collapse story — it is a 'the re-rating never happens' story. At $411, the stock is only 8% above the bear scenario of $380, suggesting the market has already done most of the work discounting the downside. The principal bear mechanism is that Market Intelligence subscription erosion becomes observable in the 2026-2027 renewal cycle as Bloomberg AI closes the capability gap, preventing the multiple from expanding beyond 15-17x NTM EV/EBITDA even as underlying EBITDA grows. The secondary mechanism is that Ratings transaction revenues recover slower than expected (Fed cuts are gradual, not aggressive), reducing earnings upside and leaving the 'recovery catalyst' story underwhelming. The tertiary risk — capital allocation (another large deal at 30x+ EV/EBITDA) — is a tail event but the IHS Markit $44B deal demonstrated that SPGI management will pay up. The bear does not predict catastrophic losses at current prices; it predicts a HOLD-ish flat return in a world where the narrative overhang persists for 18-24 months and the multiple never clears 17-18x. At bear case $380 (-8% from current $411), the stock is a HOLD rather than a Buy. The bear's honesty: this is a boring, expensive-looking slow-grower if the multiple doesn't re-rate. It requires the narrative to change. The bear trusts the market's judgment more than the bull does."
+}

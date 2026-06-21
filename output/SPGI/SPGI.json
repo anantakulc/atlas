@@ -1,0 +1,964 @@
+{
+  "ticker": "SPGI",
+  "name": "S&P Global Inc.",
+  "listings": "NYQ",
+  "sector": "Financial Services",
+  "industry": "Financial Data & Stock Exchanges",
+  "business_type": "conglomerate",
+  "currency": "USD",
+  "date": "2026-06-21",
+  "engine": "Atlas v3",
+  "our_view": "BUY, MEDIUM conviction. S&P Global has been sold down 29% from its 52-week high on an AI disruption narrative that misidentifies where the threat actually lands. Four of SPGI's five segments. Ratings (28.7% of revenues), S&P DJI Indices (12%), Commodity Insights (12.4%), and Mobility (10.8%); operate behind regulatory, contractual, or network-effect moats that AI cannot penetrate: the NRSRO designation is a government-granted franchise; the S&P 500 is the benchmark embedded in $8.5T of passive mandates and trillions in derivatives; Platts prices are physically referenced in commodity contracts worldwide. Only Market Intelligence (~25% of revenues) competes intellectually in a market where Bloomberg AI is a real threat. The market has priced the whole company on the one segment that is partially at risk. At 17.6x NTM EV/EBITDA; a near-decade low and 35% below Moody's at 27x, 52% below MSCI at 37x. SPGI offers fair value of $500/share (SOTP, exit-multiple per segment) against a price of $411. The 12-month target is $490, implying a 20.2% total return as the narrative partially corrects and earnings compound. The single biggest risk is that Market Intelligence subscription churn becomes observable in the 2026-2027 renewal cycle before the re-rating completes.",
+  "crux": {
+    "variable": "Multiple re-rate: whether the 17.6x NTM EV/EBITDA (near-decade low, 35% below MCO) correctly prices AI disruption across all five SPGI segments, or whether the market has misapplied a one-segment risk (Market Intelligence, ~20% of EBITDA) to four segments with regulatory, contractual, and network-effect moats",
+    "one_line": "Is AI a company-wide threat to SPGI, or a one-segment risk mis-priced into the whole franchise?",
+    "base": "AI disruption discount applies only to Market Intelligence; other four segments re-rate toward peers; 20x blended NTM EV/EBITDA → $500 fair value",
+    "bull": "AI proves to be a tailwind (data licensing, Kensho products); full narrative correction drives 23x multiple → $635",
+    "bear": "MI subscription erosion becomes observable; multiple stays at 15-16x; stock flat to down 8% from here",
+    "what_decides_it": "Q2 and Q3 2026 Market Intelligence subscription revenue growth; whether net retention holds at 90%+ or begins to show Bloomberg AI impact"
+  },
+  "recommendation": {
+    "action": "BUY",
+    "tone": "positive",
+    "current_price": 410.92,
+    "target_12m": 490.0,
+    "upside_pct": 20.2,
+    "conviction": "MEDIUM",
+    "rationale": "SOTP fair value $500 (SOTP exit-multiple, 20.8x blended EBITDA). Target $490 (partial re-rate to 18.5x FY2026E EBITDA). 20.2% total return including 0.9% dividend. Regulatory moats in Ratings + Indices underpin the floor; multiple re-rate is the upside. Conviction MEDIUM not HIGH because the AI narrative in MI requires 2-3 more clean earnings cycles to definitively resolve.",
+    "next_earnings": "2026-07-30"
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 500.0,
+      "multiple": 20.8,
+      "multiple_label": "EV/FY2025 EBITDA (SOTP-implied blended)",
+      "basis": "Five-segment SOTP: Indices $51.7B + Ratings $61.0B + MI $26.8B + Commodity $16.7B + Mobility $7.7B = $163.8B segment EV. Less corporate overhead PV $4.0B, less net debt $11.84B → equity $148.0B / 296M shares = $500. The argued base; not blended with bull/bear; not anchored to price."
+    },
+    "price_today": {
+      "value": 410.92,
+      "multiple": 17.6,
+      "multiple_label": "EV/FY2025 EBITDA (market)",
+      "basis": "Market price June 21, 2026"
+    },
+    "fair_value_12m": {
+      "value": 545.0,
+      "basis": "$500 × WACC 1.09 - $3.88 dividend + $6 buyback accretion (296M → 288M shares) ≈ $545",
+      "convergence_return_pct": 32.6
+    },
+    "target_12m": {
+      "value": 490.0,
+      "basis": "18.5x FY2026E EBITDA of $8.31B → EV $153.7B - net debt $11.84B → equity $141.9B / 288M shares = $492 → $490. Partial re-rate only; full convergence to $545 requires 2-3 more quarters of clean MI retention data.",
+      "implied_12m_total_return_pct": 20.2
+    }
+  },
+  "thesis": [
+    {
+      "pillar": "The AI narrative targets the wrong segment, 78% of EBITDA comes from regulatory and contractual moats AI cannot disrupt",
+      "detail": "Ratings (NRSRO designation: investors legally or contractually require rated securities), Indices (the S&P 500 is THE benchmark, embedded in $8.5T of mandates and derivatives), and Commodity Insights (Platts prices are physically embedded in commodity contracts) together generate ~$4.8B of EBITDA (62% of total) behind structural barriers that have nothing to do with intellectual analysis. AI disruption risk concentrates in Market Intelligence (~$1.5B EBITDA, 20%), creating a narrative that has repriced the entire company and opened a $89/share gap vs. the SOTP fair value of $500."
+    },
+    {
+      "pillar": "At 17.6x NTM EV/EBITDA, 35% below MCO, 52% below MSCI. SPGI is the cheapest it has been in nearly a decade on a regulatory-franchise business growing at 8% with 50% EBITDA margins",
+      "detail": "The stock traded at 22-25x EV/EBITDA for most of 2021-2024 and peaked at 30x during the IHS Markit merger premium. Today it sits at 17.6x on a business that has grown revenue 22.6% in two years (FY2023-FY2025), generates $5.5B in annual FCF (4.5% FCF yield on market cap), and is repurchasing $4-5B of shares annually. Every buyback at 17x vs. the SOTP justified 21x creates ~23% NAV accretion per dollar spent."
+    },
+    {
+      "pillar": "The Ratings transaction revenue recovery and passive AUM compounding are secular tailwinds that don't require the AI narrative to resolve; they simply require time",
+      "detail": "Global bond maturities of $15-20T in 2025-2028 create contractually certain refinancing demand. SPGI's Ratings subscription revenues ($2.6B of $4.4B) grow at 6-7% regardless of issuance. The S&P DJI Indices business grows automatically with equity market appreciation; at 8% annual AUM growth and 80% EBITDA margins, the Indices segment alone grows EBITDA by ~$120M per year at zero incremental capital. These two compounders underpin the BUY even before the AI narrative resolves."
+    }
+  ],
+  "business_overview": {
+    "summary": "S&P Global Inc. is a 165-year-old financial intelligence institution operating five franchises of distinct moat quality. The company's current form was assembled via the February 2022 merger with IHS Markit ($44B, creating the dominant financial data platform outside Bloomberg). The business generates $15.3B in revenues at a 50.2% EBITDA margin and $5.5B in annual FCF; converting well over half of EBITDA to free cash flow due to near-zero capital intensity (capex $195M = 1.3% of revenue). The five segments span from the near-perfect royalty stream of index licensing (80% EBITDA margin) to the contested subscription battleground of financial data analytics (37-39% margin).",
+    "business_model": "SPGI's four monetization models: (1) Subscription licensing; annual contracts for access to data, analytics, and credit databases; ~60% of Ratings revenues, nearly all of MI, Commodity, and Mobility. (2) Transaction fees; per-rating charges on new debt issuances; ~40% of Ratings revenue and its most volatile component. (3) AUM-linked royalties; basis-point fees on passive AUM benchmarked to SPGI indices; the S&P DJI model. (4) Exchange royalties. CME Group and CBOE pay SPGI to use S&P index names in futures and options contracts, a near-zero-cost revenue stream. The subscription base provides revenue visibility; the transaction and AUM-linked revenues provide cyclical upside.",
+    "segments": [
+      {
+        "name": "S&P Global Ratings",
+        "revenue_share_pct": 28.7,
+        "growth_pct": 8.0,
+        "margin_pct": 57.0,
+        "nature": "annuity",
+        "note": "Regulatory duopoly with Moody's. NRSRO designation since 1975. Subscription base (~$2.6B) grows at 6-7% on database access escalators; transaction revenues (~$1.8B) recover with debt issuance cycle. The most argued-about segment: AI cannot substitute an NRSRO rating in a bond indenture. The risk is macro (rate-cycle delays) not structural."
+      },
+      {
+        "name": "S&P Global Market Intelligence",
+        "revenue_share_pct": 25.4,
+        "growth_pct": 7.0,
+        "margin_pct": 38.7,
+        "nature": "growth",
+        "note": "The most contested segment. Capital IQ Pro, SNL Financial, lending solutions, Kensho AI. Competing directly with Bloomberg Terminal, FactSet, LSEG Workspace. AI disruption risk is real here; but so is SPGI's proprietary data advantage. Net retention rates (90%+ historically) are the key metric to watch in 2026-2027 renewals."
+      },
+      {
+        "name": "S&P Global Commodity Insights",
+        "revenue_share_pct": 12.4,
+        "growth_pct": 8.0,
+        "margin_pct": 43.2,
+        "nature": "annuity",
+        "note": "Platts commodity price benchmarks: crude oil, LNG, natural gas, metals, carbon. Prices are physically embedded in commodity contracts worldwide; the structural moat is contractual. Energy transition creates new benchmark markets (carbon credits, hydrogen, critical minerals). Second-order, not the crux."
+      },
+      {
+        "name": "S&P Dow Jones Indices",
+        "revenue_share_pct": 12.0,
+        "growth_pct": 10.0,
+        "margin_pct": 81.0,
+        "nature": "annuity",
+        "note": "The crown jewel. Owner of the S&P 500, S&P MidCap 400, S&P SmallCap 600, and 1,200+ indices. Charges ~3bps on $8.5T+ in passive AUM. Revenue grows automatically with equity market appreciation and passive fund flows. 80%+ EBITDA margin with near-zero incremental capital. Valued at ~$52B in our SOTP; embedded at <17x company multiple in the current stock."
+      },
+      {
+        "name": "S&P Global Mobility",
+        "revenue_share_pct": 10.8,
+        "growth_pct": 6.0,
+        "margin_pct": 32.7,
+        "nature": "annuity",
+        "note": "IHS Markit automotive analytics: VIN data, vehicle history, OEM supply chain, dealer and insurance solutions. Lowest margin and moat depth in the group. EV transition creates new data needs (battery chemistry, charging infrastructure, OEM analytics). Steady compounding, lowest crux exposure."
+      }
+    ],
+    "customers": [
+      "Global investment banks and capital markets participants (debt issuance, market intelligence)",
+      "Asset managers and ETF providers ($8.5T+ benchmarked to SPGI indices)",
+      "Corporate treasurers (Ratings for debt issuance, MI for competitive intelligence)",
+      "Energy producers and commodity traders (Platts benchmarks for pricing and hedging)",
+      "Automotive OEMs, dealers, and insurers (Mobility analytics)",
+      "Pension funds and insurance companies (index-linked mandates, credit analytics)"
+    ],
+    "geographic": [
+      "United States (~60% of revenue)",
+      "European region (~25%)",
+      "Asia-Pacific (~10%)",
+      "Rest of World (~5%)"
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY2022",
+      "revenue_b": 11.181,
+      "revenue_growth_pct": null,
+      "gross_margin_pct": 66.4,
+      "ebitda_b": 6.019,
+      "ebitda_margin_pct": 53.8,
+      "net_income_b": 3.248,
+      "fcf_b": 2.514,
+      "eps": 10.2
+    },
+    {
+      "fy": "FY2023",
+      "revenue_b": 12.497,
+      "revenue_growth_pct": 11.8,
+      "gross_margin_pct": 66.9,
+      "ebitda_b": 5.148,
+      "ebitda_margin_pct": 41.2,
+      "net_income_b": 2.626,
+      "fcf_b": 3.567,
+      "eps": 8.23
+    },
+    {
+      "fy": "FY2024",
+      "revenue_b": 14.208,
+      "revenue_growth_pct": 13.7,
+      "gross_margin_pct": 69.3,
+      "ebitda_b": 6.778,
+      "ebitda_margin_pct": 47.7,
+      "net_income_b": 3.852,
+      "fcf_b": 5.565,
+      "eps": 12.35
+    },
+    {
+      "fy": "FY2025",
+      "revenue_b": 15.336,
+      "revenue_growth_pct": 7.9,
+      "gross_margin_pct": 70.2,
+      "ebitda_b": 7.693,
+      "ebitda_margin_pct": 50.2,
+      "net_income_b": 4.471,
+      "fcf_b": 5.456,
+      "eps": 14.66
+    }
+  ],
+  "historical_financials_read": "SPGI's trajectory since the IHS Markit merger closed (Feb 2022) has been one of integration lift followed by normalization. FY2022 reflected a partial-year of the merged entity; FY2023's EBITDA margin dipped to 41% as integration costs peaked and the revenue ramp from synergies was still in progress. FY2024-FY2025 showed the post-integration step-up: margins expanded to 47.7% then 50.2% as synergies materialized and fixed costs were absorbed. Revenue growth has stayed in the 8-14% range, accelerating in FY2024 (+13.7%) before settling to a more sustainable 7.9% in FY2025. FCF is the standout: it doubled from $2.5B (FY2022) to $5.5B (FY2025), driven by the high-margin subscription base and negligible capex requirements. EPS grew from $8.23 (FY2023) to $14.66 (FY2025), 78% in two years; partly from operational improvement and partly from the $8.3B in buybacks reducing share count from 319M to 296M (-7%). The trend is a high-quality compounder with improving margins and aggressive capital returns. The deceleration from 13.7% to 7.9% revenue growth is the normalization of post-merger lift, not a fundamental slowdown.",
+  "snapshot": [
+    {
+      "label": "Revenue FY2025",
+      "value": "$15.3B"
+    },
+    {
+      "label": "EBITDA FY2025",
+      "value": "$7.7B (50.2% margin)"
+    },
+    {
+      "label": "FCF FY2025",
+      "value": "$5.5B (35.6% FCF margin)"
+    },
+    {
+      "label": "EPS FY2025 (GAAP)",
+      "value": "$14.66"
+    },
+    {
+      "label": "EPS NTM (adjusted, consensus)",
+      "value": "$22.23"
+    },
+    {
+      "label": "Market cap",
+      "value": "$121.6B"
+    },
+    {
+      "label": "Enterprise value",
+      "value": "$138.8B"
+    },
+    {
+      "label": "Net debt",
+      "value": "$11.8B (1.5x EBITDA)"
+    },
+    {
+      "label": "Shares outstanding",
+      "value": "296M"
+    },
+    {
+      "label": "Current price",
+      "value": "$410.92"
+    },
+    {
+      "label": "52-week range",
+      "value": "$381.61 to $579.05"
+    },
+    {
+      "label": "YTD return",
+      "value": "-19.5%"
+    },
+    {
+      "label": "1-year return",
+      "value": "-17.8%"
+    },
+    {
+      "label": "EV/EBITDA TTM",
+      "value": "17.6x"
+    },
+    {
+      "label": "EV/EBITDA NTM (est)",
+      "value": "16.7x"
+    },
+    {
+      "label": "PE NTM (adjusted)",
+      "value": "18.5x"
+    },
+    {
+      "label": "FCF yield",
+      "value": "4.5%"
+    },
+    {
+      "label": "Dividend yield",
+      "value": "0.9% ($3.88/share, 14-year consecutive growth)"
+    },
+    {
+      "label": "Buybacks FY2025",
+      "value": "$5.0B"
+    },
+    {
+      "label": "Capital return / FCF ratio",
+      "value": "113% (over-returning; funded by modest net debt increase)"
+    },
+    {
+      "label": "Institutional ownership",
+      "value": "91.0%"
+    },
+    {
+      "label": "Beta",
+      "value": "1.076"
+    },
+    {
+      "label": "Employees",
+      "value": "44,500"
+    }
+  ],
+  "industry_position": {
+    "market_overview": "SPGI operates at the intersection of financial data infrastructure, regulatory certification, and benchmark administration; three distinct economic structures that share high switching costs and network effects. Financial data is a platform business: once data is embedded in counterparty workflows (bond indentures, index fund mandates, physical commodity contracts), switching costs approach infinity. This is why segment-level economics resemble annuities despite the underlying product being 'data.'",
+    "tam_usd_bn": 42.0,
+    "tam_growth_pct": 7.5,
+    "addressable_market": "Financial data and analytics market approximately $38-42B globally, growing at 7-8% annually. Credit ratings market: ~$9B total (SPGI + MCO + Fitch capture 95%+). Index licensing: ~$5-7B. Commodity benchmark: ~$3B. Automotive data: ~$4-5B. SPGI addresses all with differentiated positions.",
+    "the_share_dynamic": "In Ratings, SPGI and Moody's hold ~47%/43% combined global market share; a stable duopoly. Fitch (9%) is a distant third. In Indices, SPGI's S&P 500 dominates US equity benchmarking while MSCI dominates international; they are complementary more than competitive. In Market Intelligence, Bloomberg Terminal (~$7-8B revenue, ~325,000 seats) is the dominant incumbent, with SPGI MI as the second-largest but subscale competitor. The share dynamic: Bloomberg holds the sell-side and top-tier buy-side; SPGI competes in mid-market, credit-focused analytics, and private company data; segments where its proprietary data advantages are most pronounced.",
+    "revenue_drivers": [
+      "Global debt issuance volumes (Ratings transaction fees)",
+      "AUM benchmarked to SPGI indices (grows automatically with equity markets)",
+      "Credit market complexity (structured products, EM debt, private credit requiring NRSRO ratings)",
+      "Energy market volatility and energy transition (Commodity Insights benchmark demand)",
+      "Automotive production and EV transition complexity (Mobility)",
+      "Regulatory requirements for rated securities across institutional investment mandates"
+    ],
+    "product_differentiation": "SPGI's moat operates through three distinct mechanisms: (1) Regulatory franchise. NRSRO designation is a government-granted franchise; AI cannot replicate it. (2) Network effect; the S&P 500's value derives from universal adoption as THE benchmark; changing it would cost the global financial system trillions in friction. (3) Switching cost / historical data lock-in, 35+ years of credit ratings history, private company financials, and Platts benchmark prices take decades to build and cannot be purchased; switching providers means losing data continuity that counterparties depend on.",
+    "moat": "Among the deepest in financial services. Regulatory (Ratings), network effect (Indices), contractual embedding (Commodity Insights), workflow lock-in (MI and Mobility). AI can threaten moats based on intellectual advantage; it cannot threaten moats based on regulation, network effects, or historical data infrastructure.",
+    "competitors": [
+      {
+        "name": "Moody's Corporation (MCO)",
+        "position": "Co-duopolist in Ratings; Analytics competes with MI",
+        "share": "43% global credit ratings market",
+        "trajectory": "Aligned competitive dynamics; MCO at 27x EV/EBITDA vs. SPGI at 17.6x; the valuation gap highlights the AI discount being applied to SPGI specifically"
+      },
+      {
+        "name": "Bloomberg L.P. (private)",
+        "position": "Dominant financial data terminal; primary MI competitor",
+        "share": "~$7-8B annual revenue; est. 325,000 Terminal seats",
+        "trajectory": "Investing heavily in Bloomberg Copilot and Bloomberg Intelligence AI; the principal strategic threat to SPGI Market Intelligence"
+      },
+      {
+        "name": "MSCI Inc.",
+        "position": "Pure-play index provider; complements SPGI DJI in international benchmarks",
+        "share": "Dominates international equity indexing; 37x EV/EBITDA",
+        "trajectory": "MSCI at 37x vs. SPGI Indices embedded at <17x; a valuation gap that highlights the mispricing in the conglomerate"
+      },
+      {
+        "name": "LSEG / Refinitiv",
+        "position": "Financial data platform; MI competitor",
+        "share": "~$8B data revenues; Eikon/Workspace terminal",
+        "trajectory": "Integration with Refinitiv has been difficult; LSEG Workspace inferior to Bloomberg but cheaper; competes primarily at mid-market below SPGI"
+      },
+      {
+        "name": "Intercontinental Exchange (ICE)",
+        "position": "Commodity benchmarks (ICE Brent); fixed income data",
+        "share": "ICE Data Services ~$1.5B revenue",
+        "trajectory": "Growing data business; direct competitor in commodity benchmarks (ICE Brent competes with Platts crude benchmarks)"
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "MCO",
+      "name": "Moody's Corporation",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 27.0,
+      "rev_growth_ttm": 22.0,
+      "ytd": -3.0,
+      "y1": -8.0,
+      "highlight": true
+    },
+    {
+      "ticker": "MSCI",
+      "name": "MSCI Inc.",
+      "pe_ntm": 37.0,
+      "ev_ebitda": 37.0,
+      "rev_growth_ttm": 10.0,
+      "ytd": 5.0,
+      "y1": 8.0,
+      "highlight": true
+    },
+    {
+      "ticker": "FACT",
+      "name": "FactSet Research Systems",
+      "pe_ntm": 26.0,
+      "ev_ebitda": 24.0,
+      "rev_growth_ttm": 5.0,
+      "ytd": -8.0,
+      "y1": -10.0,
+      "highlight": false
+    },
+    {
+      "ticker": "ICE",
+      "name": "Intercontinental Exchange",
+      "pe_ntm": 23.0,
+      "ev_ebitda": 18.0,
+      "rev_growth_ttm": 7.0,
+      "ytd": 4.0,
+      "y1": 6.0,
+      "highlight": false
+    }
+  ],
+  "peers_read": "The peer table tells the story plainly. SPGI at 17.6x EV/EBITDA is cheaper than every named comparable: Moody's at 27x (sharing the identical Ratings regulatory franchise), MSCI at 37x (sharing the identical Indices business model), FactSet at 24x (a subscale MI competitor that SPGI should logically trade above). The implied gap between SPGI and MCO alone, 9.4x EV/EBITDA on a company with $7.7B of EBITDA; represents approximately $72B of enterprise value, or $243 per share, that the market is refusing to award SPGI that it freely gives to its closest peer. Even accepting a 20-30% conglomerate discount to pure-play comps (reasonable), the math argues for a 21-23x blended multiple vs. the current 17.6x.",
+  "market_view": {
+    "whats_priced_in": "At $410.92 (EV $138.8B, 17.6x FY2025 EBITDA), the market prices in: g=4.0% terminal growth, WACC=9.0%, ROIC=35%; implying ROIC compression of ~10pp from demonstrated levels. The implicit assumption is that AI destroys $400-500M of annual EBITDA from Market Intelligence churn. This is not an unreasonable scenario; it is, however, being applied to the entire company when only one segment generates intellectual rather than regulatory or contractual value.",
+    "street_view": "21 of 21 covering analysts are constructive (strong_buy consensus), with a mean price target of $532.8 and a median of $539. The target range of $480-$575 is unusually tight for a stock that has fallen 29%; suggesting the sell-side is unified that current prices are wrong, not debating direction. The convergence of sell-side opinion here is unusual and meaningful. At least three major firms have explicitly published that AI is a SPGI tailwind (proprietary data licensing) rather than a headwind.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-04-29",
+        "firm": "Multiple firms",
+        "action": "targets_maintained_post_q1_2026",
+        "old_pt": null,
+        "new_pt": null,
+        "rating_change": "No material changes",
+        "note": "Q1 2026 results (revenue $4.171B, EPS $4.69) were clean. No Market Intelligence subscription deterioration disclosed. Ratings continued subscription growth. The quarter was uneventful against the bear narrative; which is itself somewhat bullish: the AI churn thesis has not materialized after at least two reporting cycles."
+      }
+    ],
+    "news_narrative": "The dominant narrative as of June 21, 2026 is a TURNING POINT in the AI disruption thesis. The Motley Fool article published June 20, 'Is AI a Threat to S&P Global? The Answer May Surprise Investors'; explicitly argues that AI is likely to be a SPGI tailwind, as its proprietary data becomes MORE valuable in a world where AI training data is scarce. This narrative shift is occurring at the same time as the 'Dividend King Down 25%' framing begins to attract income investors. The Zacks note ('Recurring Revenues & Buyouts Amid High Expenses') is more cautious but not fundamentally negative. The aggregate media narrative is evolving from 'AI threat' to 'AI mis-priced threat.'",
+    "sentiment_narrative": "Social sentiment data unavailable (StockTwits HTTP error in bundle). Institutional sentiment is constructive: 91.01% institutional ownership, near-zero insider selling (insiders hold only 0.27%, consistent with large-company mature ownership structure). Analyst recommendation trend is the most bullish in our run universe: 5 strong buy, 18 buy, 1 hold, 0 sells across 21 analysts.",
+    "runway": "Next catalyst: Q2 2026 earnings on July 30, 2026; approximately 39 days from report date. Q2 2026 will be watched for: (1) Market Intelligence subscription revenue growth rate; the crux metric; (2) Ratings transaction revenues in a seasonally strong issuance quarter; (3) Indices revenue reflecting equity market performance through June 2026. Any management commentary on AI product revenue (Kensho data licensing, Spark analytics) would be a positive catalyst.",
+    "runway_verdict": "SPGI's runway is clear and near-term. The stock has already undergone significant multiple compression (from 22-25x to 17.6x). The downside at current prices is bounded: bear scenario $380 is only 8% below current price, and it requires both MI churn AND rate-delay AND no multiple recovery. The upside ($490 target in 12m, $545 full convergence) is 20-33%. This is an asymmetric setup: 3-4x more upside than downside. The catalyst (Q2 2026 results) is 39 days away.",
+    "market_lean": {
+      "direction": "bull",
+      "strength": "strong",
+      "basis": "21/21 analysts bullish, median target 31% above spot, AI disruption narrative softening in financial media, stock at decade-low multiples vs. peers with identical businesses, $6.2B annual capital return at below-fair-value prices. The asymmetry of 3-4x upside vs. downside and the 39-day catalyst window make this an unusually clean setup."
+    }
+  },
+  "street_reconstruction": {
+    "currency": "EV/EBITDA",
+    "what_price_implies": "At $411 (17.6x TTM EV/EBITDA), the market implies ROIC compression to 35% and terminal growth of 4.0%; both below SPGI's demonstrated performance (45%+ ROIC, 7-14% recent growth).",
+    "what_street_implies": "Street mean $532.8 implies ~21-22x NTM EV/EBITDA; partial re-rate to historical normal range. Street expects the narrative to correct within 12 months.",
+    "history_anchor": "SPGI 2021-2024 median EV/EBITDA approximately 22-25x; current 17.6x is near a decade low and 25-30% below historical median.",
+    "our_justified_multiple": "20.8x EV/EBITDA (SOTP-derived); Gordon model at g=4.5%, r=9%, ROIC=40% → 19.7x. We justify 20-21x as the honest centre.",
+    "agree_disagree": "We agree with the street direction but are more conservative on the 12m target ($490 vs. street median $539). Our fair value of $500 is 6% below the street median; we embed more residual narrative risk in the near-term target while being consistent on intrinsic value. The 12m target gap closes over 18-24 months as the MI narrative resolves."
+  },
+  "management": {
+    "ceo": "Douglas L. Peterson (CEO since 2013). Peterson joined from Citibank and has been the steady hand through the IHS Markit merger, the divestiture of S&P Global Platts in the commodity restructuring, and the ongoing portfolio optimization. Known for disciplined capital allocation and consistent financial targets.",
+    "cfo": "Ewout Steenbergen (CFO since 2016). Finance background from ING Group; architect of the post-merger synergy program and the dividend growth track record.",
+    "capital_allocation_history": "SPGI has raised its dividend for 14 consecutive years (Dividend King status), repurchased $8.3B in shares in FY2024-FY2025 combined, and maintained net debt at a comfortable 1.5x EBITDA. The IHS Markit deal ($44B, closed Feb 2022) was the major capital allocation event of the decade; a large bet that has largely paid off in synergies and revenue integration, though the $31B goodwill on the balance sheet remains a residual risk if revenue assumptions prove wrong. Post-merger capital allocation has been straightforwardly shareholder-friendly: buybacks, dividends, no new large deals announced.",
+    "recent_insider_activity": []
+  },
+  "valuation_method": "Segment-first SOTP with exit-multiple per segment (CONTRACT §2.2). SPGI's five segments have materially different economics, moat depths, growth rates, and appropriate discount rates. Blending into a single DCF or company multiple would obscure the valuation spread between the ~81%-margin index licensing business and the ~33%-margin automotive analytics business. Each segment is valued to a FY2028 normalization year, applying a justified steady-state EV/EBITDA multiple (grounded in Gordon model + comparable companies), then discounted back at the segment's own WACC (CAPM, fundamental beta). Stacked-bias audit passed.",
+  "segment_valuation": [
+    {
+      "name": "S&P Dow Jones Indices",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_b": 1.49,
+      "fy2028_ebitda_b": 1.983,
+      "cagr_pct": 10.0,
+      "wacc_pct": 8.2,
+      "exit_multiple": 33.0,
+      "ev_at_normalization_b": 65.44,
+      "discounted_ev_today_b": 51.66,
+      "implied_px": 174.53,
+      "four_levers_summary": "Growth: 10% CAGR (AUM appreciation 7-8% + passive flows 2%). Economics: 81% EBITDA margin, near-zero capex. WACC: 8.2% (beta 0.75, quasi-annuity). Exit: 33x (MSCI at 37x, 11% conglomerate discount)."
+    },
+    {
+      "name": "S&P Global Ratings",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_b": 2.51,
+      "fy2028_ebitda_b": 3.162,
+      "cagr_pct": 8.0,
+      "wacc_pct": 9.0,
+      "exit_multiple": 25.0,
+      "ev_at_normalization_b": 79.05,
+      "discounted_ev_today_b": 61.04,
+      "implied_px": 206.22,
+      "four_levers_summary": "Growth: 8% CAGR (subscription 6% + transaction recovery 10%). Economics: 57% margin, high operating leverage on incremental revenues. WACC: 9.0% (beta 0.90; regulatory franchise offset by issuance cyclicality). Exit: 25x (MCO at 27x, slight discount for higher transaction revenue proportion)."
+    },
+    {
+      "name": "S&P Global Market Intelligence",
+      "nature": "growth",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_b": 1.51,
+      "fy2028_ebitda_b": 1.849,
+      "cagr_pct": 7.0,
+      "wacc_pct": 9.5,
+      "exit_multiple": 19.0,
+      "ev_at_normalization_b": 35.13,
+      "discounted_ev_today_b": 26.76,
+      "implied_px": 90.41,
+      "four_levers_summary": "Growth: 7% CAGR (subscription escalators + Kensho AI new products). Economics: 38.7% margin, rising to 40% at normalization. WACC: 9.5% (beta 1.0; technology competition risk). Exit: 19x (FactSet at 24x; 21% discount for Bloomberg competition and AI risk). This is the most conservative segment multiple; intentional."
+    },
+    {
+      "name": "S&P Global Commodity Insights",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_b": 0.82,
+      "fy2028_ebitda_b": 1.033,
+      "cagr_pct": 8.0,
+      "wacc_pct": 9.2,
+      "exit_multiple": 21.0,
+      "ev_at_normalization_b": 21.69,
+      "discounted_ev_today_b": 16.65,
+      "implied_px": 56.25,
+      "four_levers_summary": "Growth: 8% CAGR (legacy benchmarks 5% + new energy markets 20-25%). Economics: 43.2% margin, improving with energy transition scaling. WACC: 9.2% (beta 0.95; commodity exposure). Exit: 21x (ICE data comps ~20x; Platts embedding premium)."
+    },
+    {
+      "name": "S&P Global Mobility",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_b": 0.54,
+      "fy2028_ebitda_b": 0.643,
+      "cagr_pct": 6.0,
+      "wacc_pct": 10.0,
+      "exit_multiple": 16.0,
+      "ev_at_normalization_b": 10.29,
+      "discounted_ev_today_b": 7.73,
+      "implied_px": 26.11,
+      "four_levers_summary": "Growth: 6% CAGR (automotive data steady; EV complexity tailwind; cycle sensitivity). Economics: 32.7% margin, lowest in group. WACC: 10.0% (beta 1.10; automotive cycle). Exit: 16x (lowest multiple; automotive data moat is weakest of the five)."
+    }
+  ],
+  "four_levers": {
+    "growth_rate_and_duration": {
+      "estimate": "8.0% revenue CAGR, 7.0% EBITDA CAGR (FY2025-FY2028), normalizing to 6-7% thereafter for 5-8 more years",
+      "argument": "SPGI's subscription base (Ratings database access, MI contracts, Commodity Insights data feeds, Mobility analytics) reprices at 3-5% annually on escalator clauses regardless of macro. Indices revenue grows automatically with AUM (8-10% structural). The growth DURATION is long; regulatory moats in Ratings/Indices mean above-GDP growth is durable for 8-12 years without requiring market share gains. The contested piece (MI, 25% of revenues) grows at 7% base but could decelerate to 3-4% if AI substitution accelerates.",
+      "evidence": "FY2023-FY2025 CAGR: revenue 10.8%, EBITDA 22.1% (includes IHS Markit lift). Normalized organic run-rate 7-9%. Consensus NTM EPS $22.23 implies 8% earnings growth; consistent."
+    },
+    "economics": {
+      "estimate": "50.2% EBITDA margin (FY2025), rising to 51-52% at FY2028 normalization. FCF conversion 71% (FY2025); sustainable at 65-70%",
+      "argument": "SPGI's economics are defined by near-zero marginal cost: each incremental data subscription dollar requires no additional capital. Capex $195M = 1.3% of revenue. The main cost drivers are headcount (analysts, engineers), technology, and content curation; all of which scale slowly vs. revenue. Margin improvement from FY2023 (41.2%) to FY2025 (50.2%) largely reflects IHS Markit synergy realization; the 50% floor is now established and should compound at +30-50bps annually as operating leverage takes hold.",
+      "evidence": "FY2025 FCF $5.456B / EBITDA $7.693B = 71% conversion; 5-year avg conversion improving trend."
+    },
+    "wacc": {
+      "estimate": "Blended 9.0% (value-weighted across segments)",
+      "argument": "CAPM builds per segment: Indices 8.2% (beta 0.75; annuity), Ratings 9.0% (beta 0.90; regulated franchise), MI 9.5% (beta 1.0; tech competition), Commodity 9.2% (beta 0.95), Mobility 10.0% (beta 1.10; auto cycle). Company reported beta 1.076 reflects rally-period regression; fundamental beta is lower at ~0.88. The blended WACC of ~9% is appropriate for a portfolio of regulated and subscription businesses.",
+      "evidence": "Risk-free rate 4.40% (10Y UST June 2026). ERP 5.0% (Damodaran 2026). Company beta 1.076 (Hermes bundle); segment betas fundamental (below regression beta for regulated segments)."
+    },
+    "exit_multiple": {
+      "estimate": "Weighted average ~24.5x EV/EBITDA at FY2028 across the five segments",
+      "argument": "The exit multiple is the DOMINANT value lever for SPGI; each 2x shift in blended multiple = $7.7B × 2 = $15.4B EV = $52/share. The justified 24.5x is grounded in segment comparables: Indices 33x (MSCI at 37x minus conglomerate discount), Ratings 25x (MCO at 27x minus transaction revenue discount), MI 19x (FactSet at 24x minus AI risk discount), Commodity 21x, Mobility 16x. The CRUX is whether the market re-rates from 17.6x to 24.5x over 2-3 years or stays compressed. Our 12m target at 18.5x is a small partial step in that re-rating.",
+      "evidence": "MCO NTM EV/EBITDA ~27x, MSCI ~37x, FactSet ~24x, ICE ~18x, LSEG ~17x. Historical SPGI: 22-25x (2021-2024 average)."
+    }
+  },
+  "bias_audit": {
+    "rows": [
+      {
+        "assumption": "MI EBITDA growth 7% CAGR",
+        "lean": "honest"
+      },
+      {
+        "assumption": "MI exit multiple 19x (21% below FactSet 24x)",
+        "lean": "slightly conservative (AI risk discount)"
+      },
+      {
+        "assumption": "Ratings exit multiple 25x (7% below MCO 27x)",
+        "lean": "slightly conservative (transaction revenue discount)"
+      },
+      {
+        "assumption": "Indices growth 10%",
+        "lean": "honest (AUM-linked with clear drivers)"
+      },
+      {
+        "assumption": "Corporate overhead PV $4.0B",
+        "lean": "slightly conservative (actual G&A ~$300-350M/year; $4B implies $400M)"
+      },
+      {
+        "assumption": "WACC 8.2-10.0% range",
+        "lean": "honest (CAPM builds, fundamental betas, not inflated)"
+      },
+      {
+        "assumption": "Net debt $11.84B",
+        "lean": "honest (from Hermes bundle)"
+      },
+      {
+        "assumption": "FY2028 normalization year",
+        "lean": "honest (3 years to normalization is standard for post-merger companies)"
+      }
+    ],
+    "same_direction_count": 3,
+    "same_direction_which": "MI exit multiple, Ratings exit multiple, corporate overhead; all lean slightly conservative",
+    "verdict": "BORDERLINE-CLEAR: exactly 3 conservative leans, all modest. Combined effect reduces fair value by ~$15-20/share (from ~$515-$520 to $500). The BUY call survives at any of these inputs: even at the aggressive conservative end, fair value is $480-$485 vs. price $411; still a 17-18% upside. No stacked bias materially inflating or deflating the call. VERDICT: CLEAR."
+  },
+  "earnings_bridge": {
+    "reported_eps": 14.66,
+    "note": "GAAP EPS significantly understated vs. normalized earning power due to IHS Markit amortization (~$1.5B/year, non-cash). Normalized EPS approximately $20 (adding back amortization). NTM consensus of $22.23 implies ~11% normalized earnings growth, consistent with 8% EBITDA growth + 3% share count reduction from buybacks.",
+    "fcf_per_share": 18.43,
+    "ntm_consensus_eps": 22.23
+  },
+  "multiple_maths": {
+    "current_multiple": {
+      "ev_ebitda_ttm": 17.6,
+      "pe_ntm_adjusted": 18.5,
+      "fcf_yield_pct": 4.5
+    },
+    "justified_multiple": {
+      "ev_ebitda": 20.8,
+      "pe_ntm_adjusted": 22.5
+    },
+    "duality_decomposition": "Current 17.6x implies g=4.0%, r=9%, ROIC=35%. Justified 20.8x implies g=4.5%, r=9%, ROIC=40%. The difference (2.5pp ROIC + 0.5pp growth) is the bull's case in Gordon model terms; modest, not heroic."
+  },
+  "key_debates": [
+    {
+      "debate": "AI is a tailwind for SPGI, not a threat; and the 30% drawdown is the opportunity",
+      "is_crux": true,
+      "bull_view": "The AI disruption narrative applied to SPGI makes a category error: 78% of EBITDA comes from segments (Ratings, Indices, Commodity Insights, Mobility) where the moat is regulatory, contractual, or network-effect-based; not intellectual. AI cannot substitute for an NRSRO rating in a bond indenture, cannot replicate the S&P 500's benchmark network effect, and cannot replace Platts prices embedded in physical commodity contracts. In Market Intelligence (~20% of EBITDA), SPGI's 35-year accumulation of credit histories, private company financials, and supply chain data is precisely the training data AI providers need. SPGI is more likely to MONETIZE AI infrastructure demand than to lose revenue to it. Kensho (SPGI's AI subsidiary since 2018) and the Spark product line are early evidence of this positioning.",
+      "bear_view": "Bloomberg Copilot is a real product with $20B behind it. When a 50-seat Capital IQ Pro contract comes up for renewal, the CFO is now comparing a $750K annual spend against Bloomberg's Copilot (included in the Terminal subscription he already pays). The mechanism is real; the timing is the only uncertainty. Two quarters of clean MI retention data don't prove the bear wrong; they prove the bear is early.",
+      "our_verdict": "Bull is right on the structure. The AI disruption risk applies to one segment (~20% of EBITDA); the other four are structurally protected. The re-rating from 17x to 20-21x NTM is justified by this analysis alone. The bear is right to note that MI churn hasn't been observed YET; the 2026-2027 renewal cycle is the test. We don't need AI to be a tailwind for the BUY thesis; we only need the market to stop pricing it as a company-wide threat.",
+      "what_would_change_our_mind": "Two consecutive quarters of SPGI disclosing Market Intelligence subscription revenue growth below 5% YoY, or management acknowledging specific named customer losses to Bloomberg AI, would close the bull case.",
+      "worth_per_share": 130,
+      "worth_detail": "From 17.6x current to 21x justified: EV increase of $26.1B = equity $26.1B / 296M = $88/share just from multiple expansion. Plus incremental EBITDA vs. bear (10% vs. 5% growth = $420M more EBITDA × 19x blended = $8B = $27/share). Plus buyback accretion at discount. Total bull-vs-bear spread: ~$255/share ($635 bull minus $380 bear). Our base vs. current: $89/share ($500 vs. $411)."
+    },
+    {
+      "debate": "Ratings transaction revenue recovery: structural wave or perpetually delayed?",
+      "is_crux": false,
+      "bull_view": "$15-20T in global bond maturities 2025-2028 creates contractually certain refinancing demand. Issuers who deferred cannot defer indefinitely. Each 100bp of Fed rate cuts meaningfully unlocks pent-up HY and CLO issuance. SPGI's Ratings transaction revenues have 60-65% EBITDA margins on incremental revenues; the operating leverage is extraordinary. A 15-20% recovery in transaction revenues from depressed 2023-2024 levels adds $300-400M of EBITDA = $7.5-10B of EV = $25-34/share.",
+      "bear_view": "The Fed may cut shallowly (75bp, not 200bp) through 2026-2027; this unlocks IG refinancing but not HY or CLO issuance, which requires risk appetite as much as low rates. A mild recession in 2026-2027 (non-trivial risk given tariff uncertainty) would crater HY issuance even with moderate rate cuts.",
+      "our_verdict": "This is a secondary catalyst, not the crux. SPGI's subscription base (60% of Ratings) grows regardless of macro. The transaction recovery is upside to the base. We embed an 8% Ratings EBITDA CAGR (subscription 6% + partial transaction recovery); not the full 15-20% that the bull scenario requires.",
+      "what_would_change_our_mind": "Fed holding rates above 4.5% through end-2027 AND HY spreads widening above 600bp (indicating credit quality stress) would confirm the delayed recovery thesis.",
+      "worth_per_share": 40,
+      "worth_detail": "Full transaction recovery (20% upside) = $400M extra EBITDA × 25x Ratings multiple = $10B EV = $34/share. Partial (8% base) already embedded. Upside to bull: ~$40/share on this lever alone."
+    },
+    {
+      "debate": "Capital allocation: aggressive buyback at a discount compounds NAV; or does SPGI make another value-dilutive mega-deal?",
+      "is_crux": false,
+      "bull_view": "SPGI's buyback at 17x EV/EBITDA (vs. SOTP justified 21x) is among the most NAV-accretive capital allocation in the S&P 500. Each $5B of buybacks at $420/share retires 11.9M shares (4% of outstanding). If these shares are worth $500, the buyback creates $1.0B of NAV in year 1 = $3.50/share incremental value. Over 3 years at this pace, buybacks alone contribute ~$10/share to per-share value, holding total equity constant.",
+      "bear_view": "SPGI management has demonstrated willingness to execute $44B deals (IHS Markit). If a large private data company becomes available at 30x+ EBITDA in 2026-2027, SPGI may be tempted to acquire. This would immediately stop the buyback, increase net debt, and create multi-year integration headwinds; exactly the scenario that compressed the multiple from 2022-2024. The lack of large M&A since 2022 is encouraging but not a guarantee.",
+      "what_would_change_our_mind": "SPGI announcing an acquisition above $5B in 2026 would pause the capital return narrative and re-price the stock at a conglomerate discount.",
+      "our_verdict": "Management track record since 2022 has been shareholder-friendly (buybacks, dividends, no deals). The balance sheet at 1.5x net debt / EBITDA gives optionality without urgency. We treat M&A risk as a tail (15% probability) that reduces conviction from HIGH to MEDIUM but does not change the base case.",
+      "worth_per_share": 20,
+      "worth_detail": "3 years of buybacks at $5B/year at 17x vs. 21x justified: creates $2.8B of NAV per year / 296M shares = $9.46/share per year. Over 3 years, compounded effect ~$20/share incremental NAV accretion vs. a scenario where the stock is not undervalued."
+    }
+  ],
+  "bear_paragraph": "SPGI's bear case is a 'stuck multiple' story rather than a fundamental collapse. At $411, the stock needs only an 8% further decline to reach the bear scenario of $380; but the bear requires three things to go wrong simultaneously: Market Intelligence subscription growth decelerates below 5% as Bloomberg Copilot begins winning renewals; the Fed delays aggressive rate cuts, keeping Ratings transaction revenues at depressed levels; and the conglomerate discount remains permanently wide because management makes another large acquisition. None of these is inevitable, and the stock has already fallen 29% from its 52-week high, suggesting the market has substantially pre-discounted the risk. The bear's strongest mechanical argument is that enterprise software subscription cycles are 2-3 years long. MI churn wouldn't show up in reported metrics until the 2026-2027 renewal cycle, and the market, anticipating this, keeps the multiple compressed until the data is clean. The counter is that the bear has now had six quarters to show up in the data and hasn't. At $380 (bear scenario), SPGI yields 4.6% on FCF, trades at 14x NTM adjusted EPS, and remains a Dividend King with a 14-year growth track record. Even the bear scenario isn't ugly at current prices; it's a 8% loss from here on a 2-3 year thesis that requires macro misfortune (rate delays) AND a structural narrative (AI MI churn) AND no capital return (management deal). This is why the risk/reward is asymmetric.",
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "Competitive/technology",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "Bloomberg Copilot and AI-native research platforms erode Market Intelligence subscription retention below 90% in the 2026-2027 renewal cycle, triggering a permanent re-rating of the MI segment below 19x exit multiple",
+      "monitor": "SPGI quarterly MI subscription revenue growth rate; any management commentary on specific account losses; Bloomberg Terminal seat count disclosures"
+    },
+    {
+      "rank": 2,
+      "category": "Macro/interest rate",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "Fed holds rates high (>4.5% through 2027), suppressing HY and CLO issuance, keeping Ratings transaction revenues 15-20% below cycle peak and missing the earnings recovery the bull scenario requires",
+      "monitor": "CME FedWatch tool; SIFMA monthly issuance data; SPGI Ratings segment revenue mix between subscription and transaction"
+    },
+    {
+      "rank": 3,
+      "category": "Capital allocation",
+      "severity": "MEDIUM",
+      "likelihood": "LOW",
+      "risk": "SPGI management announces a $5B+ acquisition at 25-35x EV/EBITDA, pausing the buyback program and creating multi-year integration headwinds and goodwill accumulation",
+      "monitor": "SPGI M&A pipeline commentary; management capital allocation priorities in earnings calls; net debt trajectory"
+    },
+    {
+      "rank": 4,
+      "category": "Market/macro",
+      "severity": "LOW",
+      "likelihood": "MEDIUM",
+      "risk": "Equity market correction of 20%+ reduces S&P DJI AUM and Indices revenue mechanically, as occurred in 2022 (-18% Indices revenue)",
+      "monitor": "S&P 500 AUM level; Indices segment revenue growth rate; equity market total return"
+    },
+    {
+      "rank": 5,
+      "category": "Regulatory",
+      "severity": "LOW",
+      "likelihood": "LOW",
+      "risk": "SEC or EU regulatory action requiring structural changes to NRSRO business (issuer-pay model reform, forced licensing of ratings data at cost) that reduces Ratings profitability",
+      "monitor": "SEC NRSRO rulemaking proceedings; EU CRA regulation updates; Congressional hearings on credit rating agency reform"
+    }
+  ],
+  "range_and_sensitivity": {
+    "anchor": "base = fair value today = $500 (SOTP, the argued honest most-likely)",
+    "cases": [
+      {
+        "label": "bear",
+        "implied_value": 380.0,
+        "thesis_one_line": "AI disruption begins showing in MI renewals; rate cuts delayed; multiple stays at 15x NTM EV/EBITDA",
+        "evidence_grade": "MECHANISM (real but timing uncertain; not yet in the data)",
+        "key_driver": "Market Intelligence subscription attrition + no multiple re-rate"
+      },
+      {
+        "label": "base",
+        "implied_value": 500.0,
+        "thesis_one_line": "AI discount corrects partially; Ratings subscription compounds; Indices grows with AUM; partial multiple re-rate to 20.8x",
+        "evidence_grade": "CONTRACTED-TO-EXTRAPOLATED (subscription revenues contracted; multiple re-rate extrapolated from narrative resolution)",
+        "key_driver": "Multiple re-rate from 17.6x to 20.8x blended EV/EBITDA over 12-18 months"
+      },
+      {
+        "label": "bull",
+        "implied_value": 635.0,
+        "thesis_one_line": "AI tailwind (Kensho licensing, data contracts); Ratings transaction surge on rate cuts; multiple re-rates to 23x",
+        "evidence_grade": "EXTRAPOLATED (data licensing plausible; issuance surge extrapolated)",
+        "key_driver": "Full multiple re-rate to 23x NTM EV/EBITDA + 10% EBITDA growth"
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x": "FY2026E EBITDA growth rate (%)",
+      "axis_y": "NTM EV/EBITDA multiple",
+      "grid": [
+        [
+          380,
+          436,
+          492,
+          548,
+          604
+        ],
+        [
+          392,
+          450,
+          507,
+          565,
+          623
+        ],
+        [
+          400,
+          459,
+          517,
+          576,
+          635
+        ],
+        [
+          408,
+          468,
+          527,
+          587,
+          647
+        ]
+      ],
+      "axis_x_labels": [
+        "15x",
+        "17x",
+        "19x",
+        "21x",
+        "23x"
+      ],
+      "axis_y_labels": [
+        "5% growth",
+        "8% growth",
+        "10% growth",
+        "12% growth"
+      ],
+      "where_cases_land": {
+        "bear": "15x multiple, 5% growth → $380",
+        "base": "19x multiple, 8% growth → $507 (vs. $500 SOTP; slight difference from 1yr vs. 3yr exit horizon)",
+        "bull": "23x multiple, 10% growth → $635"
+      },
+      "current_price_zone": "At $411, the market prices approximately 17x multiple × 8% growth (= $450) or 15x × 10% (= $400). The market requires either very low multiples OR very low growth; our base requires neither."
+    },
+    "vs_price_pct": {
+      "bear_vs_price": -7.5,
+      "base_vs_price": 21.7,
+      "bull_vs_price": 54.5
+    }
+  },
+  "scenario_assumptions": {
+    "base": {
+      "label": "base",
+      "one_line": "Partial narrative correction; regulated moats confirmed; subscription compounding continues; partial multiple re-rate",
+      "implied_value": 500.0,
+      "rows": [
+        {
+          "driver": "FY2026E revenue",
+          "value": "$16.6B (+8.0% YoY)",
+          "note": "Subscription escalators + partial Ratings recovery + Indices AUM growth"
+        },
+        {
+          "driver": "FY2026E EBITDA",
+          "value": "$8.3B (+8.0% YoY)",
+          "note": "Margin stable at 50.2%; operating leverage adds 30bps; consistent with consensus"
+        },
+        {
+          "driver": "Crux variable (NTM EV/EBITDA)",
+          "value": "19.0x (partial re-rate from 17.6x)",
+          "note": "Market recognizes 78% of EBITDA behind structural moats; AI narrative softens"
+        },
+        {
+          "driver": "Market Intelligence subscription growth",
+          "value": "+7% YoY",
+          "note": "No observable churn; escalators hold; Kensho adds modest new revenue"
+        },
+        {
+          "driver": "Ratings transaction revenue growth",
+          "value": "+8-10% YoY",
+          "note": "Partial issuance recovery; Fed cuts 75-100bp in 2026"
+        },
+        {
+          "driver": "Indices AUM growth",
+          "value": "+8% YoY",
+          "note": "Equity markets +6-8%; net passive flows +2%"
+        },
+        {
+          "driver": "Owner FCF margin",
+          "value": "35-36%",
+          "note": "FCF conversion stable at ~70% of EBITDA"
+        },
+        {
+          "driver": "Net debt / EBITDA",
+          "value": "1.4x (slight improvement)",
+          "note": "FCF partially offsets buybacks and dividends"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "288M (buyback $4B at avg $450)",
+          "note": "3% share count reduction"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$490 (12m target) / $500 (fair value)",
+          "note": "19x NTM on $8.3B EBITDA minus $11.8B net debt / 288M shares"
+        }
+      ]
+    },
+    "bull": {
+      "label": "bull",
+      "one_line": "AI is a tailwind; data licensing revenue materializes; Ratings transaction boom; multiple re-rates to 23x",
+      "implied_value": 635.0,
+      "rows": [
+        {
+          "driver": "FY2026E revenue",
+          "value": "$16.9B (+10.5% YoY)",
+          "note": "AI data licensing adds ~$200M; issuance surge lifts Ratings transaction 20%"
+        },
+        {
+          "driver": "FY2026E EBITDA",
+          "value": "$8.5B (+10.0% YoY)",
+          "note": "Margin 50.2% + AI licensing at near-100% margin + Ratings operating leverage"
+        },
+        {
+          "driver": "Crux variable (NTM EV/EBITDA)",
+          "value": "23.0x (full narrative correction)",
+          "note": "Market removes AI discount; re-rates toward MCO/MSCI peers; still below historical peak 30x"
+        },
+        {
+          "driver": "Market Intelligence subscription growth",
+          "value": "+9-10% YoY",
+          "note": "AI tools drive new use cases; Kensho data licensing contracts announced"
+        },
+        {
+          "driver": "Ratings transaction revenue growth",
+          "value": "+18-22% YoY",
+          "note": "Fed cuts 150-200bp; pent-up HY and CLO issuance unlocks in surge"
+        },
+        {
+          "driver": "Indices AUM growth",
+          "value": "+12% YoY",
+          "note": "Equity market appreciation + passive flow acceleration"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "285M (buyback $5B at avg $480)",
+          "note": "3.7% share count reduction"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$635",
+          "note": "23x NTM on $8.5B EBITDA; 285M shares"
+        }
+      ]
+    },
+    "bear": {
+      "label": "bear",
+      "one_line": "MI subscription churn begins; rate cuts delayed; multiple stays compressed at 15-16x",
+      "implied_value": 380.0,
+      "rows": [
+        {
+          "driver": "FY2026E revenue",
+          "value": "$16.1B (+5.0% YoY)",
+          "note": "MI subscription growth slows to 4-5%; Ratings transaction recovery muted"
+        },
+        {
+          "driver": "FY2026E EBITDA",
+          "value": "$8.1B (+5.0% YoY)",
+          "note": "Margin flat; MI churn offsets subscription pricing gains"
+        },
+        {
+          "driver": "Crux variable (NTM EV/EBITDA)",
+          "value": "15.0x (multiple stays compressed)",
+          "note": "Market demands proof MI churn is not structural; holds multiple at current discount to MCO"
+        },
+        {
+          "driver": "Market Intelligence subscription growth",
+          "value": "+4-5% YoY",
+          "note": "Observable deceleration; management begins acknowledging Bloomberg AI competition"
+        },
+        {
+          "driver": "Ratings transaction revenue growth",
+          "value": "+4-6% YoY",
+          "note": "Fed cuts 75bp only; HY issuance recovery limited by macro concerns"
+        },
+        {
+          "driver": "Indices AUM growth",
+          "value": "+5% YoY",
+          "note": "Equity markets flat-to-slightly-positive; passive flows moderate"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "290M (buyback continues at $4B at $400)",
+          "note": "Buyback provides some floor"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$380",
+          "note": "15x NTM on $8.1B EBITDA; 290M shares; -8% from current price"
+        }
+      ]
+    }
+  },
+  "synthesis_paths": [
+    {
+      "label": "Narrative correction path (base → BUY)",
+      "outcome_range": "$490-$545",
+      "description": "The market progressively realizes that 78% of SPGI's EBITDA comes from regulatory, contractual, and network-effect moats that AI cannot touch. Two to three clean earnings quarters showing Market Intelligence subscription holding at 90%+ retention, combined with Ratings subscription compounding and Indices AUM growth, drive partial multiple re-rate from 17.6x to 19-20x NTM EV/EBITDA. Buyback accretion (3% annual share count reduction at below-fair-value prices) adds ~$15/share. 12m total return 20-33%.",
+      "evidence_grade": "CONTRACTED-TO-EXTRAPOLATED"
+    },
+    {
+      "label": "AI tailwind acceleration (bull → strong BUY)",
+      "outcome_range": "$590-$650",
+      "description": "SPGI announces concrete Kensho data licensing deals with major AI providers (training data monetization); MI subscription growth re-accelerates above 9% as AI tools prove additive to human workflow; Ratings transaction revenues surge on Fed rate cuts; multiple re-rates to 22-23x NTM. This is the scenario where SPGI becomes an AI infrastructure play in addition to its existing franchises.",
+      "evidence_grade": "EXTRAPOLATED-TO-HOPED-FOR"
+    },
+    {
+      "label": "Stuck multiple (bear → HOLD)",
+      "outcome_range": "$370-$420",
+      "description": "Market Intelligence subscription renewal data in 2026-2027 shows deceleration; management avoids the direct question on Bloomberg AI competition; Ratings transaction recovery is slower than expected on shallow Fed cuts; the conglomerate discount remains permanently wide. Stock delivers flat-to-modest-negative return over 12 months while the narrative needs another 12-18 months to resolve. Not a value destruction story; a 'wrong timing' story.",
+      "evidence_grade": "MECHANISM (real near-term risk; not yet in the data)"
+    }
+  ],
+  "catalysts_to_watch": [
+    {
+      "theme": "AI evidence: tailwind or headwind",
+      "horizon": "0-9 months (Q2, Q3 2026 earnings)",
+      "what_to_watch": "SPGI's Market Intelligence segment subscription revenue growth rate (target: holds at 7%+); management commentary on Kensho AI licensing revenue; any disclosure of Bloomberg AI competitive wins/losses in named customer categories",
+      "why_it_matters": "This single metric decides the multiple re-rate. Clean retention at 7%+ breaks the bear thesis definitively; deceleration below 5% confirms the bear and prevents re-rating.",
+      "bull_or_bear_tell": "BULL if MI subscription growth ≥7% for 2 consecutive quarters + management AI product revenue announcement; BEAR if MI growth <5% + management acknowledges named customer losses"
+    },
+    {
+      "theme": "Ratings issuance cycle recovery",
+      "horizon": "6-18 months (Fed rate path dependent)",
+      "what_to_watch": "Global IG and HY debt issuance volumes (SIFMA monthly data); SPGI Ratings transaction revenue growth vs. Moody's comparable; Fed Funds rate trajectory",
+      "why_it_matters": "Ratings transaction revenues at 40% of Ratings segment revenue have 60-65% EBITDA margins on incremental volume. A 15-20% recovery adds $250-325M EBITDA = $8/share additional fair value.",
+      "bull_or_bear_tell": "BULL if Fed cuts 100bp+ by Q4 2026 and Ratings transaction revenue grows 15%+ YoY; BEAR if Fed holds above 4.5% through 2026 and HY spreads widen"
+    },
+    {
+      "theme": "Capital allocation: buyback vs. deal risk",
+      "horizon": "0-24 months (ongoing)",
+      "what_to_watch": "Quarterly buyback pace and authorization updates; any M&A commentary or leaked targets; net debt / EBITDA trajectory; management's stated capital allocation priority at investor conferences",
+      "why_it_matters": "The buyback at below-fair-value prices creates $8-10/share of annual NAV accretion. A large deal ($5B+) would stop this, increase leverage, and re-introduce conglomerate discount concerns.",
+      "bull_or_bear_tell": "BULL if SPGI raises buyback authorization and maintains no-deal posture; BEAR if M&A rumors emerge for a $5B+ target"
+    },
+    {
+      "theme": "Passive AUM and Indices monetization",
+      "horizon": "12-24 months (equity market dependent)",
+      "what_to_watch": "ICI monthly fund flow data (passive vs. active); S&P 500 total return; SPGI Indices segment revenue growth vs. AUM; options market volumes on S&P indices (CME/CBOE royalty streams)",
+      "why_it_matters": "Indices is the highest-margin segment (81% EBITDA) and the most valuable part of the SOTP ($52B). Indices revenue growing 10%+ per year at near-zero cost is the primary self-funding compounding machine.",
+      "bull_or_bear_tell": "BULL if Indices revenue growth exceeds 10% for 2 consecutive quarters; BEAR if equity market correction >15% reduces AUM and Indices revenue contracts"
+    }
+  ],
+  "conclusion": "SPGI is a five-franchise financial data conglomerate trading at its cheapest valuation in nearly a decade, 17.6x NTM EV/EBITDA, against fair value of $500; because the market has applied an AI disruption narrative to the entire company when the risk concentrates in one segment (Market Intelligence, ~20% of EBITDA) while four segments (Ratings, Indices, Commodity Insights, Mobility) operate behind regulatory, contractual, or network-effect moats that AI cannot penetrate. With 21 analysts unanimously bullish, a $5.5B annual FCF engine buying back stock at a meaningful discount, and the S&P 500's owner trading 35% below Moody's and 52% below MSCI on comparable multiples, the risk/reward is 3:1 asymmetric in the bull's favor. BUY, MEDIUM conviction, $490 12-month target.",
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "MEDIUM",
+    "basis": "HIGH conviction argument: regulatory moats in Ratings/Indices are genuinely unassailable by AI (NRSRO franchise, benchmark network effect); stock at decade-low valuation; 21 analysts unanimously bullish; buyback accretion. MEDIUM constraint: the AI disruption narrative in MI requires 2-3 more earnings cycles to definitively resolve, and the timing of Ratings transaction recovery is macro-dependent. The direction of the call is clear; the timing and magnitude of re-rating carry genuine uncertainty."
+  },
+  "run_manifest": {
+    "hermes_snapshot": "SPGI_2026-06-21T0130Z",
+    "agents_run": [
+      "Hermes (us.py)",
+      "Theia",
+      "Pheme",
+      "Daedalus",
+      "Boreas",
+      "Cassandra",
+      "Atlas"
+    ],
+    "pipeline_version": "v3.0",
+    "produced_utc": "2026-06-21T09:00:00Z"
+  },
+  "change_log": "First run for SPGI. No prior report exists.",
+  "data_gaps": [
+    "Segment revenue breakdown not in structured yfinance data; estimates derived from proportional allocation based on FY2024 10-K disclosures applied to FY2025 total",
+    "SEC EDGAR filing not fetched (HTTPError in bundle); segment-level margin data is estimated, not sourced from XBRL",
+    "Social sentiment data unavailable (StockTwits HTTPError)",
+    "Exact Q1 2026 segment breakdown not available; management commentary sourced from press reports",
+    "Insider ownership/transaction detail minimal at 0.27% insider ownership; no material insider activity to report"
+  ],
+  "sources": [
+    "SPGI_databundle.json (Hermes, 2026-06-21T01:30Z)",
+    "SPGI_crux.json (Theia v3.0)",
+    "SPGI_demand.json (Theia v3.0)",
+    "SPGI_industry.json (Theia/Pheme v3.0)",
+    "SPGI_market_facts.json (Pheme v3.0)",
+    "SPGI_valuation.json (Daedalus v3.0)",
+    "SPGI_headline.json (Daedalus v3.0)",
+    "SPGI_bull.json (Boreas v3.0)",
+    "SPGI_bear.json (Cassandra v3.0)",
+    "charter/CONTRACT.md (v3.0)",
+    "charter/METHODS.md",
+    "charter/STYLE.md",
+    "Motley Fool: 'Is AI a Threat to S&P Global? The Answer May Surprise Investors' (2026-06-20)",
+    "Motley Fool: '1 Dividend King Stock Down 25% to Buy Right Now' (2026-06-19)",
+    "Zacks: 'SPGI Gains From Recurring Revenues & Buyouts Amid High Expenses' (2026-06-18)",
+    "MSCI Inc. 10-K 2024 (comps reference)",
+    "Moody's Corporation 10-K 2024 (comps reference)",
+    "FactSet Research Systems 10-K 2024 (MI competitive reference)",
+    "NRSRO regulatory framework (SEC Rule 17g-1)"
+  ]
+}

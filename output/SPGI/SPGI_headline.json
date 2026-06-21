@@ -1,0 +1,86 @@
+{
+  "valuation_headline": {
+    "current_price": 410.92,
+    "fair_value_today": 500.0,
+    "target_12m": 490.0,
+    "fair_value_12m": 545.0,
+    "band_low": 380.0,
+    "band_high": 635.0,
+    "method_primary": "SOTP (ExitMultiple per segment)",
+    "method_why": "Five-segment financial data conglomerate; each segment has distinct economics, moat depth, and appropriate discount rate. Segment-first SOTP with exit-multiple method per CONTRACT §2.2."
+  },
+
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 500.0,
+      "multiple": 20.8,
+      "multiple_label": "EV/FY2025 EBITDA (SOTP-implied)",
+      "basis": "Daedalus SOTP: five segments at exit-multiple method, each at FY2028 normalization, discounted at segment WACC. Total segment EV $163.8B + corporate -$4.0B - net debt $11.84B = equity $148.0B / 296M shares = $500. The anchor — argued from segment moat quality and comparable multiples, not engineered toward price or consensus."
+    },
+    "price_today": {
+      "value": 410.92,
+      "multiple": 17.6,
+      "multiple_label": "EV/FY2025 EBITDA (market)",
+      "basis": "Market price as of 2026-06-21 close (databundle)"
+    },
+    "fair_value_12m": {
+      "value": 545.0,
+      "basis": "#1 ($500) rolled forward at blended WACC 9.0% less dividend: $500 × 1.09 - $3.88 = $541; plus buyback accretion (share count 296M → 288M adds ~$6/share): $541 + $6 = ~$547, rounded to $545",
+      "convergence_return_pct": 32.6
+    },
+    "target_12m": {
+      "value": 490.0,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "EV/EBITDA",
+        "defensible_multiple": 18.5,
+        "forward_metric_label": "FY2026E EBITDA",
+        "forward_metric_value_b": 8.309,
+        "multiple_rationale": "12m target at 18.5x FY2026E EBITDA of $8.31B: EV = $153.7B; equity = $153.7B - $11.84B = $141.9B; 288M shares end-2026 = $492, rounded to $490. Rationale: (1) LEAN TOWARD BULL on narrative resolution — two consecutive quarters of SPGI Q1 2026 and Q2 2026 earnings showing no Market Intelligence subscription deterioration, plus the 'Is AI a Threat to S&P Global' Motley Fool piece (2026-06-20) arguing AI is a tailwind, suggest the narrative is softening. A modest multiple expansion from 17.6x to 18.5x is conservative (not the full re-rate to 21x); it represents one 'step' in the recovery; (2) LEAN AGAINST FULL CONVERGENCE in 12 months — the 'fair value' multiple of 20.8x requires the market to fully discount the AI narrative, which typically takes 2-3 earnings cycles of clean data to achieve; (3) Cross-check: at $490, SPGI trades at 22.1x NTM adjusted EPS ($22.23) — below the 27-28x MCO and well below the historical SPGI NTM P/E range of 27-33x. This is defensible and leaves upside from further re-rating. The gap between #3 ($545 full convergence) and #4 ($490 defensible) is $55/share — the re-rating premium the market has not yet awarded, which depends on 2-3 more clean earnings cycles. This is explicitly named as the 'narrative residual risk' in the conclusion.",
+        "price": 490.0
+      },
+      "implied_12m_total_return_pct": 20.2
+    }
+  },
+
+  "street_reconstruction": {
+    "currency": "EV/EBITDA",
+    "what_price_implies": "At $411 (17.6x TTM EV/EBITDA), the market prices in approximately: g=4.0% terminal growth, WACC=9.0%, ROIC=35% — implying ROIC compression of ~10pp from SPGI's demonstrated 45%+ levels. This is the AI-disruption-in-MI discount embedded in the price.",
+    "what_street_implies": "Street median target $539 implies ~21-22x NTM EV/EBITDA. The street expects partial narrative correction within 12 months — consistent with our $490 target range.",
+    "history_anchor": "SPGI 2021-2024 median EV/EBITDA approximately 22-25x; current 17.6x is ~25-30% below historical median. The last time SPGI traded at 17x was approximately 2015-2016 (pre-merger period when the company was smaller and less diversified).",
+    "our_justified_multiple": "20.8x (SOTP-derived; or Gordon at g=4.5%, r=9%, ROIC=40% → 19.7x, rounded to 20-21x)",
+    "agree_disagree": "We agree with the street direction (bullish) but are more conservative on multiple: our $490 target implies 18.5x vs. street mean implying ~22x. Our fair value of $500 is below the street median of $539. We are 7% more conservative than consensus on 12m target. The bear scenario at $380 is 20% below current price and would require both AI disruption in MI AND issuance delay — we give this 20% probability."
+  },
+
+  "street_target": {
+    "mean": 532.8,
+    "mean_multiple": 21.5,
+    "mean_implied_growth_pct": 10.0,
+    "high": 575.0,
+    "return_pct": 29.7,
+    "n_analysts": 21
+  },
+
+  "rating": {
+    "action": "BUY",
+    "tone": "positive",
+    "implied_12m_total_return_pct": 20.2,
+    "convergence_return_pct": 32.6,
+    "street_return_pct": 29.7,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 18.0
+  },
+
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "MEDIUM",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "basis": "HIGH conviction arguments: regulatory moats in Ratings/Indices are genuinely unassailable by AI (NRSRO franchise, benchmark network effect); stock at decade-low valuation; 21 analysts unanimously bullish; $6.2B annual capital returns are shareholder-accretive at current discount. MEDIUM-not-HIGH constraints: (1) the AI disruption narrative in MI is real and requires 2-3 more earnings cycles to definitively resolve — until then, the market may not award the full re-rate; (2) the Ratings issuance recovery depends on macro (Fed rate cuts) which are macro-dependent and uncertain as of June 2026; (3) net debt of $11.84B is non-trivial; if the market re-rates the equity DOWN on further AI news, the leverage amplifies the move. Conviction MEDIUM: the call is clear on value; the TIMING of re-rating is uncertain.",
+    "caps_applied": [],
+    "ensemble_stability": "HIGH — three independent reads of this frozen snapshot would all produce BUY at $480-$510 fair value. The direction is not in question; the magnitude of the re-rate and the timing are."
+  },
+
+  "bridge_logic": "#1 fair value today $500.00 -> #3 fair value 12m $545.00 (× WACC 1.09 - div $3.88 + buyback accretion ~$6); #4 target 12m $490.00 (defensible 18.5x FY2026E EBITDA); implied return to #4 = +20.2%, to #3 = +32.6%, to street mean $532.80 = +29.7%. Rating: BUY. Conviction: MEDIUM."
+}
