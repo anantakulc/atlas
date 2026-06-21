@@ -1,0 +1,178 @@
+{
+  "_meta": {
+    "ticker": "SPGI",
+    "agent": "Pheme/Theia",
+    "version": "v3.0",
+    "produced_utc": "2026-06-21T05:00:00Z"
+  },
+
+  "business_overview": {
+    "summary": "S&P Global Inc. is a 165-year-old financial intelligence conglomerate operating five distinct franchises: credit ratings (regulatory duopoly with Moody's), financial data and analytics (Market Intelligence, competing with Bloomberg), commodity benchmark prices (Platts, embedded in energy contracts worldwide), automotive analytics (Mobility, from IHS Markit), and equity index licensing (S&P DJI, the S&P 500's owner). The company was created in its current form by the $44B merger with IHS Markit in February 2022, which added Mobility, Commodity Insights scale, and significant enterprise data capabilities. Together the five segments produce $15.3B in revenues at a 50% EBITDA margin, generating $5.5B in annual free cash flow. The business trades at 17x NTM EV/EBITDA — near a decade low — on AI disruption fears that the market is arguably applying too broadly.",
+    "business_model": "SPGI monetizes information advantage through several structures: (1) subscription licensing — annual contracts for access to data, analytics, and research; (2) transaction fees — per-rating fees on new debt issuances; (3) AUM-based licensing — basis-point royalties on passive assets benchmarked to SPGI indices; (4) exchange royalties — CME and CBOE pay royalties for options and futures on S&P benchmarks. The subscription component (~75% of revenues) provides revenue visibility and margin stability; transaction and AUM-linked revenues provide cyclicality in exchange for operating leverage.",
+    "segments": [
+      {
+        "name": "S&P Global Market Intelligence",
+        "revenue_share_pct": 25.4,
+        "growth_pct": 7.0,
+        "margin_pct": 38.7,
+        "nature": "growth",
+        "note": "SaaS-like data and analytics platform competing with Bloomberg Terminal and FactSet. Includes Capital IQ Pro (financial data desktop), SNL Financial (real estate and FIG data), Lending Solutions, and Kensho AI research. The segment most exposed to AI disruption risk."
+      },
+      {
+        "name": "S&P Global Ratings",
+        "revenue_share_pct": 28.7,
+        "growth_pct": 8.0,
+        "margin_pct": 57.0,
+        "nature": "annuity",
+        "note": "NRSRO-designated credit rating agency in the regulatory duopoly with Moody's. Subscription revenues (~60%) are nearly annuity-like; transaction revenues (~40%) tied to global debt issuance volumes. The regulatory moat is the strongest in financial services — AI cannot substitute for an NRSRO rating."
+      },
+      {
+        "name": "S&P Global Commodity Insights",
+        "revenue_share_pct": 12.4,
+        "growth_pct": 8.0,
+        "margin_pct": 43.2,
+        "nature": "annuity",
+        "note": "Platts price benchmarks (crude oil, natural gas, LNG, metals, carbon) physically embedded in derivatives contracts and physical commodity pricing. Analytics and intelligence layered on top. Energy transition tailwind creates new benchmark markets."
+      },
+      {
+        "name": "S&P Global Mobility",
+        "revenue_share_pct": 10.8,
+        "growth_pct": 6.0,
+        "margin_pct": 32.7,
+        "nature": "annuity",
+        "note": "Automotive data and analytics: VIN data, vehicle history, OEM supply chain analytics, dealer and insurance solutions. IHS Markit origin. Lowest margin in the group; most exposed to automotive cycle. Steady subscription with embedded workflows."
+      },
+      {
+        "name": "S&P Dow Jones Indices",
+        "revenue_share_pct": 12.0,
+        "growth_pct": 10.0,
+        "margin_pct": 81.0,
+        "nature": "annuity",
+        "note": "The crown jewel: licenses the S&P 500, S&P MidCap 400, and 1,200+ other indices to ETF providers, derivatives exchanges, and institutional investors. Charges ~3bps on $8.5T+ in AUM. Near-zero marginal cost; highest-margin segment in the company. Revenue grows automatically with equity market appreciation and passive fund flows."
+      }
+    ],
+    "customers": [
+      "Global investment banks (issuers seeking credit ratings, buyers of market intelligence)",
+      "Asset managers and ETF providers (index licensing, ratings database access)",
+      "Corporate treasurers and CFOs (Ratings for debt issuance, MI for competitive intelligence)",
+      "Energy producers and traders (Platts commodity benchmarks for pricing and hedging)",
+      "Automotive OEMs, dealers, and insurers (Mobility data and analytics)",
+      "Pension funds and insurance companies (index-linked mandates, credit risk solutions)"
+    ],
+    "geographic": [
+      "United States (~60% of revenue)",
+      "European region (~25%)",
+      "Asia-Pacific (~10%)",
+      "Rest of World (~5%)"
+    ]
+  },
+
+  "industry_structure": {
+    "market_overview": "SPGI operates at the intersection of financial data infrastructure, regulatory certification, and benchmark administration — three distinct economic structures that share the common feature of high switching costs and network effects. Financial data is a platform business: once your data is embedded in counterparty workflows (bond indentures, index fund mandates, physical commodity contracts), the switching cost approaches infinity. This is why the segment-level economics look like annuities despite the inputs being 'mere' data.",
+    "tam_usd_bn": 42.0,
+    "tam_growth_pct": 7.5,
+    "addressable_market": "Financial data and analytics market estimated $38-42B globally, growing at 7-8% annually (Burton-Taylor, 2025). Credit ratings specific market: ~$9B total revenue globally (SPGI + MCO + Fitch capture 95%+). Index licensing market: estimated $5-7B. Commodity benchmark market: ~$3B. Automotive data market: ~$4-5B. SPGI addresses all of these with differentiated positions.",
+    "the_share_dynamic": "In Ratings, SPGI and Moody's are effectively co-monopolists: they rate the same issuers, their methodologies converge, and issuers who need SPGI also need MCO (most bonds require two NRSRO ratings). Share between them is roughly 47%/43% (SPGI/MCO) globally with SPGI stronger in North America and MCO slightly stronger in Europe. Fitch (9%) is the distant third. In Indices, SPGI's S&P 500 is THE equity benchmark in the US; MSCI dominates international equity benchmarking. There is no meaningful direct competition between them. In Market Intelligence, the competitive dynamic is real: Bloomberg Terminal dominates (est. $7-8B in annual revenue, 325,000 seats), with SPGI MI as the second largest but subscale vs. Bloomberg. FactSet is smaller. LSEG (Refinitiv successor) competes in financial data. The key share dynamic: Bloomberg serves the sell side and top-tier buy side; SPGI MI competes more in mid-market, credit-focused, and private company analytics where it has data advantages.",
+    "revenue_drivers": [
+      "Global debt issuance volumes (Ratings transaction fees)",
+      "AUM benchmarked to SPGI indices (Indices revenue, grows with markets)",
+      "Credit market complexity — more structured products, EM debt, private credit all require more ratings",
+      "Energy market volatility and energy transition (Commodity Insights benchmark demand)",
+      "Automotive production and EV transition complexity (Mobility)",
+      "Regulatory requirements for NRSRO ratings across multiple asset classes"
+    ],
+    "competitors": [
+      {
+        "name": "Moody's Corporation (MCO)",
+        "position": "Co-duopolist in Ratings; Analytics competes with MI",
+        "share": "43% global credit ratings market; PE NTM ~28x, EV/EBITDA ~27x",
+        "trajectory": "Aligned: both SPGI and MCO benefit from the same issuance cycle and face the same AI narrative. MCO's Moody's Analytics (data/analytics) is a direct MI competitor. MCO trading at ~27x EV/EBITDA vs. SPGI at ~17x — a significant valuation gap that the market is paying for SPGI's 'AI-exposed' MI and lower pure-play purity."
+      },
+      {
+        "name": "Bloomberg L.P. (private)",
+        "position": "Dominant financial data terminal; direct MI competitor",
+        "share": "Bloomberg Terminal ~$7-8B revenue; est. 325,000 seats globally at $25,000/seat/year",
+        "trajectory": "Investing heavily in Bloomberg AI (Copilot, Bloomberg Intelligence AI). The principal threat to SPGI MI. Bloomberg is private and under-monetized for its data assets — a potential IPO candidate or AI licensing play that could intensify competition."
+      },
+      {
+        "name": "MSCI Inc. (MSCI)",
+        "position": "Pure-play index provider; competes in non-US equity benchmarks",
+        "share": "Dominant in international equity indexing (MSCI World, MSCI Emerging Markets); PE NTM ~37x, EV/EBITDA ~37x",
+        "trajectory": "MSCI and SPGI DJI are complementary (US vs. global) more than competitive. MSCI's higher multiple (37x vs. SPGI blended 17x) highlights the valuation compression SPGI has experienced — a pure-play Indices business would likely trade at 35-40x."
+      },
+      {
+        "name": "LSEG / Refinitiv",
+        "position": "Financial data platform (post-Refinitiv acquisition by LSEG in 2021); MI competitor",
+        "share": "~$8B in data and analytics revenue; LexisNexis Risk Solutions, Eikon terminal, Workspace platform",
+        "trajectory": "Integrating Refinitiv has been difficult for LSEG; the Workspace terminal is inferior to Bloomberg but cheaper. LSEG's scale ($30B+ market cap) gives it AI investment capacity competitive with SPGI in data."
+      },
+      {
+        "name": "Intercontinental Exchange (ICE)",
+        "position": "Competing in fixed income data (ICE Data Services) and commodity benchmarks",
+        "share": "ICE Data Services ~$1.5B revenue; ICE commodity benchmarks competes with Platts",
+        "trajectory": "ICE expanding its data business organically and via M&A (Black Knight, Bakkt). Direct competitor to SPGI Commodity Insights and a potential threat in fixed income data."
+      },
+      {
+        "name": "Fitch Group",
+        "position": "Third credit rating agency (NRSRO); subscale vs. SPGI/MCO",
+        "share": "~9% global ratings market; owned by Hearst Corporation",
+        "trajectory": "Fitch is not a growth threat to SPGI's ratings duopoly; it competes at the margin but has not taken meaningful share in 20 years of regulatory mandates to increase competition."
+      }
+    ],
+    "moat": "SPGI's economic moat is among the deepest in financial services, operating through three distinct mechanisms simultaneously: (1) REGULATORY FRANCHISE — NRSRO designation for Ratings is a government-granted franchise that new entrants cannot acquire by disruption; (2) NETWORK EFFECT — the S&P 500's value derives from everyone using it as THE benchmark; changing to a different index would cost the global financial system trillions in friction; (3) SWITCHING COST / DATA LOCK-IN — credit ratings history, commodity benchmarks, and vehicle history data take decades to build; switching providers means losing continuity of data that counterparties depend on. AI can threaten moats based on intellectual advantage; it cannot threaten moats based on regulation, network effects, or historical data infrastructure."
+  },
+
+  "peers": [
+    {
+      "ticker": "MCO",
+      "name": "Moody's Corporation",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 27.0,
+      "rev_growth_ttm": 22.0,
+      "ytd": -3.0,
+      "y1": -8.0,
+      "highlight": true
+    },
+    {
+      "ticker": "MSCI",
+      "name": "MSCI Inc.",
+      "pe_ntm": 37.0,
+      "ev_ebitda": 37.0,
+      "rev_growth_ttm": 10.0,
+      "ytd": 5.0,
+      "y1": 8.0,
+      "highlight": true
+    },
+    {
+      "ticker": "FACT",
+      "name": "FactSet Research Systems",
+      "pe_ntm": 26.0,
+      "ev_ebitda": 24.0,
+      "rev_growth_ttm": 5.0,
+      "ytd": -8.0,
+      "y1": -10.0,
+      "highlight": false
+    },
+    {
+      "ticker": "ICE",
+      "name": "Intercontinental Exchange",
+      "pe_ntm": 23.0,
+      "ev_ebitda": 18.0,
+      "rev_growth_ttm": 7.0,
+      "ytd": 4.0,
+      "y1": 6.0,
+      "highlight": false
+    },
+    {
+      "ticker": "LSEG",
+      "name": "London Stock Exchange Group",
+      "pe_ntm": 20.0,
+      "ev_ebitda": 17.0,
+      "rev_growth_ttm": 7.0,
+      "ytd": 2.0,
+      "y1": 4.0,
+      "highlight": false
+    }
+  ],
+  "peers_read": "SPGI at 17.6x EV/EBITDA is meaningfully cheaper than every named peer — Moody's at 27x, MSCI at 37x, FactSet at 24x. This is the core bull argument: the market is applying an AI disruption discount to SPGI broadly that it is not applying to these direct comparables (MCO faces the same Ratings AI narrative; MSCI faces the same AI threat to passive indices). If SPGI traded at MCO's multiple alone (27x), fair value would be ~$690/share. Even a modest convergence toward 22x NTM EV/EBITDA would represent a 30%+ re-rate from the current implied 17x. The bear would note that SPGI deserves a conglomerate discount vs. pure-plays, and that Market Intelligence subscale vs. Bloomberg is a structural discount. Even so, 17x vs. 27x (MCO) is a 37% valuation discount on a peer that shares the same Ratings franchise. This gap is historically wide and suggests either MCO is too expensive or SPGI is too cheap — our answer is the latter."
+}

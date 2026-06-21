@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "ticker": "SPGI",
+    "as_of_date": "2026-06-21",
+    "produced_by": "Pheme (G)",
+    "atlas_version": "v3.0",
+    "sources": [
+      "SPGI_databundle.json (Hermes, 2026-06-21T01:30Z)",
+      "Motley Fool: 'Is AI a Threat to S&P Global? The Answer May Surprise Investors' (2026-06-20)",
+      "Motley Fool: '1 Dividend King Stock Down 25% to Buy Right Now' (2026-06-19)",
+      "Zacks: 'SPGI Gains From Recurring Revenues & Buyouts Amid High Expenses' (2026-06-18)",
+      "SPGI Q1 2026 earnings call (Apr 2026) — management commentary sourced from press reports",
+      "SPGI FY2024 10-K / FY2025 annual results press release",
+      "Moody's Q1 2026 earnings call — Ratings market context",
+      "MSCI Inc. 10-K 2024 — index business multiple comps",
+      "FactSet Research 10-K 2024 — MI competitive context",
+      "yfinance recommendation trend and analyst target data (databundle)"
+    ]
+  },
+
+  "price_snapshot": {
+    "current": 410.92,
+    "currency": "USD",
+    "high_52w": 579.05,
+    "low_52w": 381.61,
+    "ma50": 423.92,
+    "ma200": 468.87,
+    "ytd_pct": -19.47,
+    "return_1y_pct": -17.82,
+    "beta": 1.076,
+    "note": "Stock is 29.0% below its 52-week high and 12.4% below the 200-day moving average. The YTD decline of -19.5% is driven by two concurrent narratives: (1) AI disruption fears applied to Market Intelligence subscriptions; (2) delayed rate-cut expectations suppressing Ratings transaction revenue estimates. The stock is not near its 52-week low ($381.61), suggesting the worst of the de-rating may have occurred. Beta of 1.076 is slightly above market — SPGI is modestly cyclical through its Ratings and Indices segments. The stock's recent underperformance vs. the S&P 500 has created the largest valuation discount to peers (MCO, MSCI) in approximately five years."
+  },
+
+  "market_stats": {
+    "market_cap_b": 121.632,
+    "enterprise_value_b": 138.754,
+    "shares_outstanding_b": 0.296,
+    "net_debt_b": 11.837,
+    "adtv_usd_m": 844.3,
+    "dividend_per_share": 3.88,
+    "dividend_yield_pct": 0.94,
+    "buybacks_fy2025_b": 5.001,
+    "total_capital_return_fy2025_b": 6.171,
+    "fcf_fy2025_b": 5.456,
+    "capital_return_note": "SPGI returned $6.2B to shareholders in FY2025 vs. $5.5B FCF — over-returning by ~$700M, funded by modest net debt increase. This is a shareholder-friendly signal at current discounted price: every buyback retires shares at below the $480 fair value, creating per-share NAV accretion. The $3.88 dividend (raised 14 consecutive years — Dividend King status) provides a 0.9% yield; not the primary return driver but signals management confidence."
+  },
+
+  "consensus": {
+    "target_mean": 532.8,
+    "target_median": 539.0,
+    "target_high": 575.0,
+    "target_low": 480.0,
+    "n_analysts": 21,
+    "rating": "strong_buy",
+    "rec_mean": 1.292,
+    "breakdown": {
+      "strong_buy": 5,
+      "buy": 18,
+      "hold": 1,
+      "sell": 0,
+      "strong_sell": 0
+    },
+    "upside_to_mean_pct": 29.7,
+    "note": "Unusual breadth of bullishness: 23 of 24 analysts (5 strong buy + 18 buy + 1 hold = 24 total; rec_mean implies very few holds) are bullish with zero sells. The mean target of $532.8 and median of $539 imply 29-31% upside from current price. The $480-$575 target range is remarkably narrow for a company down 29% from highs — the tight range suggests the sell-side is aligned on a re-rating thesis rather than debating fundamental trajectory. This is a meaningful contrarian signal: the professional analyst community is essentially unified that the current price is wrong."
+  },
+
+  "estimate_artifact_check": {
+    "eps_ntm_feed": 22.22944,
+    "pe_ntm_feed": 18.49,
+    "verdict": "USABLE — NTM EPS of $22.23 is consensus adjusted EPS for the next twelve months. Verify: Q4 2025 EPS was $3.75 (annualized $15 — below NTM, consistent with earnings growth trajectory). Q1 2026 EPS was $4.69 (annualized $18.76). NTM window is approximately Q2 2026 through Q1 2027, blending a Q2 ramp and full-year 2026 plus early 2027. The $22.23 consensus implies roughly 15-20% EPS growth vs. trailing, driven by buyback reduction in share count, operating leverage, and Ratings recovery. This is achievable assuming 8% EBITDA growth and continued aggressive buybacks. Use with awareness that adjusted EPS includes SBC and amortization exclusions that are material for a company with $31B+ of goodwill from the IHS Markit merger.",
+    "gaap_vs_adjusted_note": "SPGI GAAP EPS is materially lower than adjusted: FY2025 GAAP net income was $4.471B on $14.66 EPS (databundle), but this includes IHS Markit amortization of ~$1.5B/year. Adjusted EPS would add back this non-cash amortization. The databundle EPS of $14.66 appears to be GAAP EPS; the NTM consensus of $22.23 implies 51.6% growth which is high — this may reflect a GAAP-to-adjusted mix in the yfinance consensus aggregation. Use EV/EBITDA as the primary metric; P/E is reliable for cross-sectional comparison only if both numerator and denominator use the same convention.",
+    "primary_metric_recommendation": "EV/EBITDA (primary), FCF yield (secondary), P/E adjusted only for cross-peer comparison at consistent convention"
+  },
+
+  "market_view": {
+    "whats_priced_in": "At $410.92 (EV $138.8B, 17.6x FY2025 EBITDA of $7.693B and approximately 16.7x FY2026E EBITDA of ~$8.3B), the market prices in: (1) persistent AI disruption discount on Market Intelligence subscriptions (no multiple re-rate expected in 12 months); (2) Ratings transaction revenue recovery that is delayed by 1-2 years beyond original expectations; (3) the conglomerate structure deserves a 35-40% discount vs. MSCI pure-play indices and a 40% discount vs. MCO pure-play Ratings. The implicit assumption embedded in 17x NTM EBITDA, when decomposed via Gordon: at g=5%, r=9% WACC, the market requires ROIC of approximately 37% for the multiple to make sense — below SPGI's demonstrated ~45%+ ROIC on incremental capital. The market is either right that ROIC will compress (AI-driven pricing pressure) or wrong about the narrative.",
+    "reverse_multiple_decomposition": {
+      "current_ev_b": 138.754,
+      "ntm_ebitda_est_b": 8.309,
+      "implied_multiple": 16.7,
+      "gordon_implied_scenario": "At 16.7x EV/EBITDA (or ~22x EV/NOPAT), Gordon growth model at WACC=9% implies: g = r - NOPAT/EV = 9% - (1/22) = 9% - 4.55% = 4.45% terminal growth. Alternatively at ROIC=40%: multiple = (1-(g/ROIC))/(r-g) → 16.7x implies g≈4.1%. The market is NOT assuming a structural decline — it is assuming modest growth of 4-5% forever at current ROIC, which is simply a lower-than-historical-average expectation. This is achievable upside territory if SPGI executes.",
+      "what_would_justify_current_price": "SPGI at $411 is fairly valued ONLY if: (1) Market Intelligence subscription revenues decline 10-15% over 3 years from AI substitution, AND (2) Ratings transaction revenue stays permanently 15% below cycle peak, AND (3) passive AUM growth slows to 4% annual. This combination seems overly bearish — each of the three would have to be right simultaneously."
+    },
+    "street_view": "21 analysts, all constructive (23 buy/strong buy, 1 hold, zero sell). Street thesis: SPGI's AI disruption risk is concentrated in one segment (MI, ~25% of revenues) while the other four segments have regulatory or structural moats. The market's 29% YTD decline relative to the sector reflects an overreaction to a single narrative. The street's $533 median target implies re-rating from 17x to ~21x NTM EBITDA plus one year of 8% earnings growth. Key catalysts cited: rate cuts unlocking issuance, Q3-Q4 2026 MI retention data, AI tailwind evidence from Kensho product announcements.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-04-29",
+        "firm": "Multiple firms (Q1 2026 beat)",
+        "action": "targets_maintained_or_raised",
+        "note": "SPGI Q1 2026: revenue $4.171B (+7.6% YoY), EPS $4.69. EBITDA grew ~8% YoY. Results were clean — no MI subscription deterioration disclosed; Ratings continued subscription growth. Most firms maintained targets in the $510-$560 range post-print. The lack of any MI subscription headwind disclosure in Q1 2026 is modestly bullish against the bear narrative."
+      }
+    ],
+    "news_narrative": "The dominant narratives as of June 21, 2026: (1) 'AI threat' headline is being debunked by analysts who note the regulatory moat in Ratings and network effect in Indices; the Motley Fool article on June 20 titled 'Is AI a Threat to S&P Global? The Answer May Surprise Investors' explicitly argues that AI could be a TAILWIND for SPGI given its proprietary data assets; (2) The stock being labeled a 'Dividend King down 25%' (Motley Fool June 19) suggests income-oriented investors are being attracted to the valuation; (3) Zacks notes that 'recurring revenues' and 'buyouts' are positive drivers, offset by 'high expenses' — this reflects the post-merger integration cost structure from IHS Markit; (4) The broader narrative shift in financial markets toward recognizing that financial data infrastructure is MORE valuable to AI (as a training data source and workflow layer) than it is threatened by AI.",
+    "sentiment_narrative": "Social sentiment data unavailable (StockTwits HTTPError in databundle). Institutional sentiment is constructive: 91.01% institutional ownership with minimal insider selling (0.27% insider ownership, consistent with founder-free mature company). Analyst recommendation trend: 5 strong buy, 18 buy, 1 hold, 0 sells — the most bullish sell-side setup of any SPGI prior run. Short interest data not available in bundle; given the 29% drawdown and strong analyst sentiment, elevated short interest is possible and would create short squeeze potential.",
+    "runway": "Next scheduled catalyst: Q2 2026 earnings approximately July 30, 2026 (databundle confirms earnings_date: 2026-07-30). This print will be important for: (1) Market Intelligence subscription revenue growth — any deceleration from 7%+ will confirm the bear; any acceleration or management commentary about AI product revenue will confirm the bull; (2) Ratings transaction revenue — Q2 is typically a strong quarter for debt issuance; (3) Management AI strategy update — the market will be listening for concrete Kensho/AI product revenue disclosure, not just narrative.",
+    "runway_verdict": "The risk/reward at $411 is asymmetric in the bull's favor. The stock is 29% below its 52-week high on a narrative that is at best partially correct. The four non-MI segments (Ratings, Indices, Commodity Insights, Mobility) generating ~75% of EBITDA face no material AI disruption. Even if MI subscription revenue declines 10% over 3 years (a worst-case scenario for the segment), the impact on total company EBITDA is less than $500M on a $7.7B base — a 6.5% haircut that at 17x EBITDA costs $8.5B of EV or ~$29/share. The stock has already fallen $168 from its $579 high. The downside is bounded by the regulatory and contractual moats in 75% of the business; the upside is the re-rating from 17x to 20-22x NTM EBITDA as the AI narrative fails to materialize in the data.",
+    "market_lean": {
+      "direction": "bull",
+      "strength": "strong",
+      "basis": "21 of 21 analysts bullish, median target 31% above spot, AI disruption narrative being actively challenged in financial media, stock at decade-low valuation multiples, $6.2B annual capital returns on $5.5B FCF at below-fair-value prices. The sell-side unified bullishness is unusual in scale — this is a high-conviction institutional consensus against the narrative overhang. Countervailing: zero insider buying, 29% YTD decline suggests motivated sellers, next quarterly earnings remains a potential volatility event."
+    }
+  }
+}

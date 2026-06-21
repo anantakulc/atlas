@@ -1,0 +1,166 @@
+{
+  "_meta": {
+    "ticker": "SPGI",
+    "agent": "Theia",
+    "version": "v3.0",
+    "produced_utc": "2026-06-21T05:00:00Z",
+    "note": "Segment revenue estimates are based on proportional allocation from SPGI 10-K 2024 segment disclosures applied to FY2025 total revenue of $15.336B. Exact FY2025 segment breakdown not in structured yfinance data (see _databundle.json gaps). Use as directional estimates; precise split pending 10-K 2025 filing."
+  },
+
+  "total_revenue_path": {
+    "fy2022": 11.181,
+    "fy2023": 12.497,
+    "fy2024": 14.208,
+    "fy2025": 15.336,
+    "fy2026e": 16.563,
+    "fy2027e": 17.888,
+    "fy2028e": 19.320,
+    "cagr_fy2025_fy2028_pct": 8.0,
+    "driver": "Subscription base (inflation-escalated) + issuance cycle recovery (Ratings transaction) + AUM-linked growth (Indices) + new AI-adjacent products (Kensho/Spark)"
+  },
+
+  "segments": [
+    {
+      "name": "S&P Global Market Intelligence",
+      "ticker_code": "MI",
+      "nature": "subscription_saas",
+      "fy2025_revenue_est_b": 3.90,
+      "fy2025_revenue_pct_of_total": 25.4,
+      "fy2025_ebitda_est_b": 1.51,
+      "fy2025_ebitda_margin_pct_est": 38.7,
+      "fy2028e_revenue_b": 4.78,
+      "cagr_fy2025_fy2028_pct": 7.0,
+      "growth_drivers": [
+        "Multi-year subscription contracts with 3-5% annual price escalators; renewal rates historically 90%+",
+        "Enterprise solution expansion (Capital IQ Pro, Lending Solutions, Clearance Risk)",
+        "Cross-sell of Ratings data into Market Intelligence workflow tools",
+        "Kensho AI/ML products driving new use cases in credit risk and equity research"
+      ],
+      "growth_risks": [
+        "Bloomberg Terminal AI expansion (Bloomberg Copilot, Bloomberg Intelligence AI) directly competing for the same workflow budget",
+        "FactSet, Refinitiv/LSEG DataStream competing at lower price points for mid-market customers",
+        "AI-native startups (AlphaSense, Tegus) growing rapidly in research workflow automation",
+        "Enterprise budget pressure may drive customers to rationalize multi-vendor data spend"
+      ],
+      "evidence_quality": "MEDIUM",
+      "crux_exposure": "HIGH — this is the segment where the AI disruption narrative is most directly applicable"
+    },
+    {
+      "name": "S&P Global Ratings",
+      "ticker_code": "RATINGS",
+      "nature": "regulatory_franchise_plus_cyclical",
+      "fy2025_revenue_est_b": 4.40,
+      "fy2025_revenue_pct_of_total": 28.7,
+      "fy2025_ebitda_est_b": 2.51,
+      "fy2025_ebitda_margin_pct_est": 57.0,
+      "fy2028e_revenue_b": 5.54,
+      "cagr_fy2025_fy2028_pct": 8.0,
+      "growth_drivers": [
+        "Subscription revenues (~60% of Ratings) growing 6-7% per year on database access and analytics products",
+        "Transaction revenues (~40% of Ratings) driven by global debt issuance volumes — pent-up demand from 2022-2023 rate-hike suppression",
+        "$15-20T in global bond maturities 2025-2028 requiring refinancing",
+        "Emerging market debt growth (EM issuers increasingly requiring international credit ratings for bond market access)",
+        "Private credit rating expansion (SPGI rating private credit vehicles for institutional investors)"
+      ],
+      "growth_risks": [
+        "Higher-for-longer Fed Funds rate delays HY issuance recovery — transaction revenue stays below peak",
+        "European ESMA regulatory push to increase credit rating competition (limited practical impact historically)",
+        "AI-based credit scoring for small/mid-cap issuers could reduce demand for formal NRSRO ratings in some segments",
+        "Macro recession suppresses new issuance; credit quality concerns keep HY dormant"
+      ],
+      "evidence_quality": "MEDIUM-HIGH",
+      "crux_exposure": "MEDIUM — moat is regulatory (NRSRO), not intellectual; cycle risk is real but temporary"
+    },
+    {
+      "name": "S&P Global Commodity Insights (Platts)",
+      "ticker_code": "COMMODITY",
+      "nature": "benchmark_subscription",
+      "fy2025_revenue_est_b": 1.90,
+      "fy2025_revenue_pct_of_total": 12.4,
+      "fy2025_ebitda_est_b": 0.82,
+      "fy2025_ebitda_margin_pct_est": 43.2,
+      "fy2028e_revenue_b": 2.39,
+      "cagr_fy2025_fy2028_pct": 8.0,
+      "growth_drivers": [
+        "Platts crude oil, natural gas, LNG, and metals benchmark prices are physically contractually embedded (spot markets, futures settlement, physical contracts)",
+        "Energy transition creates new benchmarks: carbon credits (ETS, voluntary), critical minerals (lithium, cobalt, nickel), green hydrogen",
+        "LNG market growth: global LNG trade doubled 2010-2025, creating demand for real-time price benchmarks",
+        "Analytics products layered on top of benchmarks: margin analytics, supply chain visibility, scenario analysis"
+      ],
+      "growth_risks": [
+        "ICE (Intercontinental Exchange) and CME Group are building competing commodity data and analytics capabilities",
+        "If fossil fuel demand declines faster than expected, legacy oil/gas benchmark volumes could shrink",
+        "Carbon market benchmark competition from ICE, MSCI, and regional operators"
+      ],
+      "evidence_quality": "MEDIUM",
+      "crux_exposure": "LOW — benchmark prices are contractually embedded; moat is structural"
+    },
+    {
+      "name": "S&P Global Mobility",
+      "ticker_code": "MOBILITY",
+      "nature": "subscription_analytics",
+      "fy2025_revenue_est_b": 1.65,
+      "fy2025_revenue_pct_of_total": 10.8,
+      "fy2025_ebitda_est_b": 0.54,
+      "fy2025_ebitda_margin_pct_est": 32.7,
+      "fy2028e_revenue_b": 1.97,
+      "cagr_fy2025_fy2028_pct": 6.0,
+      "growth_drivers": [
+        "VIN data (Vehicle Identification Number) and vehicle history data is embedded in dealer and insurer workflows; sticky renewal rates",
+        "EV transition complexity: OEMs and dealers need more sophisticated analytics for new powertrain configurations",
+        "Supply chain visibility tools for automotive OEMs — global chip shortage aftermath created demand for supply chain risk monitoring",
+        "Insurance pricing and risk analytics (AutoSource, insurance underwriting tools)"
+      ],
+      "growth_risks": [
+        "Automotive market cyclicality: new vehicle sales volumes affect both dealer software demand and OEM analytics spend",
+        "Connected vehicle data: OEM data partnerships may bypass IHS Markit's data intermediary role",
+        "China automotive market exposure where SPGI Mobility faces domestic competitors (ChinaAuto, 36kr data)"
+      ],
+      "evidence_quality": "MEDIUM",
+      "crux_exposure": "LOW — steady subscription; automotive data is deeply embedded in counterparty workflows"
+    },
+    {
+      "name": "S&P Dow Jones Indices",
+      "ticker_code": "INDICES",
+      "nature": "aum_linked_licensing",
+      "fy2025_revenue_est_b": 1.84,
+      "fy2025_revenue_pct_of_total": 12.0,
+      "fy2025_ebitda_est_b": 1.49,
+      "fy2025_ebitda_margin_pct_est": 81.0,
+      "fy2028e_revenue_b": 2.45,
+      "cagr_fy2025_fy2028_pct": 10.0,
+      "growth_drivers": [
+        "S&P 500, S&P MidCap 400, S&P SmallCap 600 have $8.5T+ in passive AUM — revenue grows automatically with market appreciation",
+        "Net passive fund flows: $500B+ annually into US equity index funds and ETFs (ICI data)",
+        "New index products: ESG indices, factor indices, private market indices expanding licensable IP",
+        "International expansion: increasing AUM in APAC and EM indexed to SPGI benchmarks",
+        "Options market growth: S&P 500 options notional is $10T+; CME and CBOE pay royalties to SPGI for options on S&P indices"
+      ],
+      "growth_risks": [
+        "Equity market correction reduces AUM mechanically (2022: equity indices fell 20%, Indices revenue fell proportionally)",
+        "Passive-to-active rotation if active managers demonstrate sustained alpha (structural but slow-moving risk)",
+        "MSCI and FTSE Russell compete for new international index mandates",
+        "Regulatory pressure on index provider market concentration"
+      ],
+      "evidence_quality": "HIGH — AUM-linked revenue is transparent and predictable",
+      "crux_exposure": "LOW — the S&P 500 cannot be disrupted; it IS the benchmark"
+    }
+  ],
+
+  "segment_growth_summary": {
+    "weighted_cagr_fy2025_fy2028_pct": 8.0,
+    "fastest_growing": "Indices (10% CAGR, AUM-linked + options royalties)",
+    "slowest_growing": "Mobility (6% CAGR, automotive cycle dependent)",
+    "highest_margin": "Indices (81% EBITDA), then Ratings (57%)",
+    "lowest_margin": "Mobility (33%), Market Intelligence (39%)",
+    "crux_segment": "Market Intelligence — smallest margin differential, largest AI risk, but also largest data asset value if AI demand for proprietary data proves out"
+  },
+
+  "key_growth_assumptions": {
+    "base_cagr": 8.0,
+    "bull_cagr": 10.5,
+    "bear_cagr": 5.5,
+    "what_decides_it": "MI subscription retention rates (next 2-3 renewals cycles) and Ratings transaction revenue recovery (rate cycle timing)",
+    "bias_audit": "8% CAGR base is consistent with FY2023-FY2025 trend (12.5% avg YoY, slowing post-IHS-Markit integration lift; normalized run-rate is 7-9% organic). Not stacked conservative or bullish."
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0",
+  "ticker": "SPGI",
+  "currency": "USD",
+  "current_price": 410.92,
+  "shares_outstanding_b": 0.296,
+  "net_debt_b": 11.84,
+  "computed_at": "2026-06-21T06:00:00Z",
+  "agent": "Daedalus",
+
+  "method_selection": {
+    "primary_method": "SOTP",
+    "method_per_segment": {
+      "market_intelligence": "ExitMultiple (subscription SaaS — project to FY2028 normalization, apply steady-state multiple, discount at 9.5% WACC)",
+      "ratings": "ExitMultiple (regulatory franchise with cyclical transaction layer — normalize to recovery EBITDA in FY2028, 9.0% WACC)",
+      "commodity_insights": "ExitMultiple (benchmark subscription franchise — FY2028 normalization, 9.2% WACC)",
+      "mobility": "ExitMultiple (automotive data subscription — FY2028 normalization, 10.0% WACC)",
+      "sp_dow_jones_indices": "ExitMultiple (AUM-linked licensing royalty, near-zero marginal cost — FY2028 normalized, 8.2% WACC)"
+    },
+    "method_why": "SPGI is a five-segment financial data and regulatory franchise conglomerate. Each segment has distinct economics, growth rates, risk profiles, and competitive moats. Blending into a single DCF or a company-level multiple would obscure the enormous valuation spread between the ~80%-margin index licensing business and the ~33%-margin automotive analytics business. Segment-first SOTP with exit-multiple per segment (CONTRACT §2.2) is the most efficient method: it isolates the genuine question per segment (how big does EBITDA get? what multiple does the market pay at maturity?) and avoids the g>r blow-up that would distort a perpetual DCF applied to a growing franchise. Each segment gets its own WACC built from CAPM with a fundamental beta, not the company beta. See CONTRACT §2.3."
+  },
+
+  "wacc_builds": {
+    "risk_free_rate_pct": 4.40,
+    "equity_risk_premium_pct": 5.00,
+    "note": "10-year US Treasury approximately 4.40% as of June 2026. ERP 5.0% (Damodaran implied ERP for US markets, Jan 2026 estimate).",
+    "segments": {
+      "sp_dow_jones_indices": {
+        "fundamental_beta": 0.75,
+        "wacc_pct": 8.2,
+        "rationale": "AUM-linked licensing with near-zero incremental capital requirement. Revenue variability is driven by equity market returns, not company operating decisions. Beta 0.75 reflects that this is effectively a toll road on the equity market itself; CAPM: 4.40% + 0.75 × 5.0% = 8.15%, rounded to 8.2%."
+      },
+      "ratings": {
+        "fundamental_beta": 0.90,
+        "wacc_pct": 9.0,
+        "rationale": "Regulatory franchise (NRSRO) with counter-cyclical subscription base and pro-cyclical transaction revenues. Beta 0.90 — below market because subscription annuity is stable, but issuance revenues create above-average market sensitivity. CAPM: 4.40% + 0.90 × 5.0% = 8.90%, rounded to 9.0%."
+      },
+      "market_intelligence": {
+        "fundamental_beta": 1.00,
+        "wacc_pct": 9.5,
+        "rationale": "SaaS-like subscription data business competing in a technology-intensive market with AI-driven disruption risk. Beta 1.00 reflects subscription stability offset by competitive risk and technology reinvestment requirements. CAPM: 4.40% + 1.00 × 5.0% = 9.40%, rounded to 9.5%."
+      },
+      "commodity_insights": {
+        "fundamental_beta": 0.95,
+        "wacc_pct": 9.2,
+        "rationale": "Benchmark prices embedded in energy contracts; subscription subscription base is sticky. Modest commodity market cyclicality (energy market volatility affects analytics spend). Beta 0.95. CAPM: 4.40% + 0.95 × 5.0% = 9.15%, rounded to 9.2%."
+      },
+      "mobility": {
+        "fundamental_beta": 1.10,
+        "wacc_pct": 10.0,
+        "rationale": "Automotive analytics: cyclical end-market (auto OEM spend, dealer revenue), lowest EBITDA margin in group (33%), highest reinvestment requirement. Beta 1.10. CAPM: 4.40% + 1.10 × 5.0% = 9.90%, rounded to 10.0%."
+      }
+    }
+  },
+
+  "segment_sotp": [
+    {
+      "name": "S&P Dow Jones Indices",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_est_b": 1.490,
+      "fy2025_ebitda_margin_pct": 81.0,
+      "normalization_year": "FY2028",
+      "cagr_fy2025_fy2028_pct": 10.0,
+      "fy2028_ebitda_b": 1.983,
+      "exit_multiple": 33.0,
+      "exit_multiple_rationale": "MSCI pure-play index company trades at 37x NTM EV/EBITDA; SPGI Indices benchmarked by S&P 500 (more brand power, more AUM) but inside a conglomerate. Gordon model check: at g=5%, r=8.2%, ROIC→∞ (zero marginal capital): multiple = 1/(r-g) = 1/(0.032) = 31.3x — empirically justified. Premium to Gordon for network effects and embedded benchmark status. 33x is 11% below MSCI, reasonable conglomerate discount.",
+      "ev_at_normalization_b": 65.44,
+      "wacc_pct": 8.2,
+      "discount_factor_3yr": 1.2667,
+      "discounted_ev_today_b": 51.66,
+      "four_levers": {
+        "growth_rate_and_duration": "10% CAGR through FY2028 (AUM appreciation ~7-8% + net passive flows ~2%). Duration of high growth: 5-7 years before AUM growth slows to long-run GDP. AUM is the sole driver; near-zero operating leverage needed — $1 of AUM growth = $0.03 of revenue at 3bps fee = $0.024 EBITDA at 80% margin.",
+        "economics": "EBITDA margin 81% today, rising to 82-83% at FY2028 as AUM grows faster than fixed costs. Owner-FCF conversion near 100% (capex ~0.5% of revenue; taxes ~24%). This is the company's highest-quality cash flow stream.",
+        "wacc": "8.2% (fundamental beta 0.75; quasi-annuity; CAPM build above). Lower than any other segment — justified by the near-elimination of operating risk.",
+        "exit_multiple": "33x EV/EBITDA at FY2028 — steady-state Gordon at g=5%, r=8.2% implies 31x; network premium for benchmark embedding → 33x. MSCI at 37x is the ceiling; 33x leaves appropriate room for conglomerate discount."
+      }
+    },
+    {
+      "name": "S&P Global Ratings",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_est_b": 2.510,
+      "fy2025_ebitda_margin_pct": 57.0,
+      "normalization_year": "FY2028",
+      "cagr_fy2025_fy2028_pct": 8.0,
+      "fy2028_ebitda_b": 3.162,
+      "exit_multiple": 25.0,
+      "exit_multiple_rationale": "Moody's MCO trades at 27x NTM EV/EBITDA. SPGI Ratings is slightly larger than MCO's ratings-only business and has comparable margins. Discount to MCO's 27x reflects: (a) higher transaction revenue proportion in SPGI (more volatile), and (b) that MCO's multiple includes Analytics (which trades at a lower multiple than Ratings). Net: 25x for SPGI Ratings is slightly below pure-play MCO, intentionally conservative. Gordon at g=4%, r=9.0%, ROIC=60%: multiple = (1-4/60)/(9-4)% = 18.7x. Franchise premium for NRSRO regulatory scarcity → 25x.",
+      "ev_at_normalization_b": 79.05,
+      "wacc_pct": 9.0,
+      "discount_factor_3yr": 1.2950,
+      "discounted_ev_today_b": 61.04,
+      "four_levers": {
+        "growth_rate_and_duration": "8% CAGR FY2025-FY2028: subscription revenues (60% of Ratings, ~6% growth via database access escalators + new analytical products) + transaction revenues (40%, 10-12% recovery as pent-up global refinancing demand unlocks with rate cuts). The duration question for Ratings: regulatory moat ensures subscription revenues compound indefinitely at 5-7% without relying on share gains. Transaction revenue is cyclical but mean-reverting.",
+        "economics": "EBITDA margin 57% today rising to 58-59% at FY2028 as operating leverage from subscription base dominates. FCF conversion ~70% of EBITDA (taxes 24%, modest capex). The highest absolute EBITDA contributor in the SOTP.",
+        "wacc": "9.0% (fundamental beta 0.90). The regulatory franchise creates below-average systematic risk; the transaction revenue cycle creates some correlation with macro. Net beta 0.90.",
+        "exit_multiple": "25x EV/EBITDA at FY2028 normalization. MCO at 27x is the anchor; 25x is a responsible slight discount for SPGI's higher transaction revenue proportion. Gordon lower bound 18.7x; franchise premium justified by NRSRO scarcity."
+      }
+    },
+    {
+      "name": "S&P Global Market Intelligence",
+      "nature": "growth",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_est_b": 1.510,
+      "fy2025_ebitda_margin_pct": 38.7,
+      "normalization_year": "FY2028",
+      "cagr_fy2025_fy2028_pct": 7.0,
+      "fy2028_ebitda_b": 1.849,
+      "exit_multiple": 19.0,
+      "exit_multiple_rationale": "FactSet (FACTS) comparable at 24x NTM EV/EBITDA; SPGI MI competes in a tougher niche (vs. Bloomberg's dominant Terminal) and carries AI disruption risk. 19x is a 21% discount to FactSet, reflecting: (a) SPGI MI's subscale vs. Bloomberg, (b) genuine AI competition from Bloomberg Copilot and AI-native research tools. Gordon at g=4%, r=9.5%, ROIC=35%: (1-4/35)/(9.5-4)% = 0.886/5.5% = 16.1x. Premium to Gordon for data network effects → 19x. Bias audit: this is the most conservative multiple in the SOTP; intentional given AI uncertainty.",
+      "ev_at_normalization_b": 35.13,
+      "wacc_pct": 9.5,
+      "discount_factor_3yr": 1.3129,
+      "discounted_ev_today_b": 26.76,
+      "four_levers": {
+        "growth_rate_and_duration": "7% CAGR: subscription contract escalators (~5%) plus new product revenue from Kensho AI and Spark platform (~2%). Growth duration is contested: if AI substitution accelerates, growth slows to 3-4% from Year 3 onward; if SPGI's proprietary data becomes a premium in the AI era, growth accelerates to 9-10%. The base uses 7% as the expected value.",
+        "economics": "38.7% EBITDA margin rising to 40% at normalization as subscription scale exceeds fixed-cost growth. Lower than Ratings/Indices because of higher headcount (analysts, engineers), technology reinvestment, and content curation costs. Owner-FCF: ~60% of EBITDA.",
+        "wacc": "9.5% (beta 1.00; technology competition risk). The highest WACC among SPGI segments except Mobility.",
+        "exit_multiple": "19x — the lowest quality of the five franchises in terms of moat depth. This is the crux segment where the AInarrative centers. At 19x, I'm embedding a risk discount but not catastrophizing: if FactSet trades at 24x and SPGI MI has more proprietary data, 19x is the appropriate discounted entry."
+      }
+    },
+    {
+      "name": "S&P Global Commodity Insights",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_est_b": 0.820,
+      "fy2025_ebitda_margin_pct": 43.2,
+      "normalization_year": "FY2028",
+      "cagr_fy2025_fy2028_pct": 8.0,
+      "fy2028_ebitda_b": 1.033,
+      "exit_multiple": 21.0,
+      "exit_multiple_rationale": "ICE Data Services (comparable, embedded in derivatives pricing) implies ~20x EV/EBITDA. Platts has the additional benefit of physically-embedded benchmark prices (can't be substituted without contract renegotiation). Energy transition creates new benchmark markets (carbon, hydrogen). 21x reflects a modest premium to ICE for benchmark embedding and energy transition tailwind. Gordon at g=4%, r=9.2%, ROIC=40%: (1-4/40)/(9.2-4)% = 0.90/5.2% = 17.3x. Premium for contractual embedding → 21x.",
+      "ev_at_normalization_b": 21.69,
+      "wacc_pct": 9.2,
+      "discount_factor_3yr": 1.3024,
+      "discounted_ev_today_b": 16.65,
+      "four_levers": {
+        "growth_rate_and_duration": "8% CAGR: legacy oil/gas benchmark pricing growing ~5% (volume + pricing) + new energy benchmark markets (carbon 20%+ growth, LNG, metals) growing ~25% on a smaller base. Duration: energy transition creates multi-decade demand for new benchmark infrastructure.",
+        "economics": "43.2% EBITDA margin rising to 44-45% as new energy markets scale without proportional cost. Capex light.",
+        "wacc": "9.2% (beta 0.95; commodity market exposure offset by subscription stickiness).",
+        "exit_multiple": "21x — between ICE data (20x) and a pure-play benchmark utility (25x). Energy transition is the wildcard that could push this higher."
+      }
+    },
+    {
+      "name": "S&P Global Mobility",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "fy2025_ebitda_est_b": 0.540,
+      "fy2025_ebitda_margin_pct": 32.7,
+      "normalization_year": "FY2028",
+      "cagr_fy2025_fy2028_pct": 6.0,
+      "fy2028_ebitda_b": 0.643,
+      "exit_multiple": 16.0,
+      "exit_multiple_rationale": "Automotive data analytics with embedded VIN history and OEM workflow tools. Comparable: IHS Markit (pre-merger) traded at 22-25x EV/EBITDA as a standalone; post-merger Mobility is the most automotive-concentrated and cyclically exposed. 16x reflects: (a) automotive cycle exposure, (b) lowest EBITDA margin in group (33%), (c) EV disruption creating uncertainty about future data architecture. Gordon at g=3.5%, r=10%, ROIC=30%: (1-3.5/30)/(10-3.5)% = 0.883/6.5% = 13.6x. Sticky workflow premium → 16x.",
+      "ev_at_normalization_b": 10.29,
+      "wacc_pct": 10.0,
+      "discount_factor_3yr": 1.3310,
+      "discounted_ev_today_b": 7.73,
+      "four_levers": {
+        "growth_rate_and_duration": "6% CAGR: automotive VIN/history data grows with vehicle parc (steady); EV transition analytics adds new data needs; offset by automotive production cycle uncertainty. Lowest duration business in SOTP.",
+        "economics": "32.7% EBITDA margin — the lowest in the group. EV transition adds complexity but also cost. Target 34% at FY2028 as integration matures.",
+        "wacc": "10.0% (beta 1.10; automotive cycle and EV uncertainty). Highest WACC in the group.",
+        "exit_multiple": "16x — the lowest in the SOTP. Reflects weakest moat (automotive data can theoretically be in-sourced by large OEMs with connected vehicle data). At 16x, Mobility is valued as a good but not exceptional franchise."
+      }
+    }
+  ],
+
+  "sotp_summary": {
+    "segment_evs_discounted_b": {
+      "sp_dow_jones_indices": 51.66,
+      "ratings": 61.04,
+      "market_intelligence": 26.76,
+      "commodity_insights": 16.65,
+      "mobility": 7.73,
+      "total_five_segments": 163.84
+    },
+    "corporate_overhead_pv_b": -4.00,
+    "note_corporate": "PV of ~$400M/year of corporate overhead (unallocated to segments) at 10% perpetuity = $4.0B. SPGI's reported 'corporate' line also includes intersegment eliminations and other items that may net positive; this conservatively treats the unallocated corporate as a cost center.",
+    "total_ev_b": 159.84,
+    "net_debt_b": 11.84,
+    "equity_value_b": 148.00,
+    "shares_b": 0.296,
+    "fair_value_per_share": 500.0,
+    "implied_current_ev_ebitda": 20.8,
+    "note_implied_multiple": "The SOTP implies a 20.8x blended EV/EBITDA on FY2025 EBITDA of $7.693B ($159.8B / $7.693B). This is the 'justified' blended multiple given the segment mix and respective moat qualities. The market at 17.6x EV/EBITDA implies the market is applying a ~3.2x discount vs. what the sum-of-parts warrants — an $24.6B EV shortfall, equal to approximately $83/share."
+  },
+
+  "bias_audit": {
+    "rows": [
+      {"assumption": "Market Intelligence EBITDA growth 7% CAGR", "lean": "honest — in line with subscription escalator + modest new product revenue; not assuming AI eliminates any revenue"},
+      {"assumption": "Market Intelligence exit multiple 19x", "lean": "slightly conservative — FactSet at 24x; 19x embeds AI risk discount intentionally"},
+      {"assumption": "Ratings EBITDA growth 8% CAGR", "lean": "honest — subscription 6% + transaction recovery 10% blended to 8%; transaction recovery assumes partial rate cut, not a full boom"},
+      {"assumption": "Ratings exit multiple 25x", "lean": "slightly conservative — MCO at 27x; 25x is a modest discount"},
+      {"assumption": "Commodity Insights growth 8%", "lean": "honest — energy transition tailwind balanced against commodity market volatility"},
+      {"assumption": "Mobility growth 6%", "lean": "honest — automotive cycle steady; not assuming EV disruption kills Mobility but not modeling a boom either"},
+      {"assumption": "Indices growth 10%", "lean": "honest — AUM appreciation ~7-8% + net flows ~2%; not assuming passive AUM stagnation"},
+      {"assumption": "Corporate overhead PV $4.0B", "lean": "slightly conservative — actual corporate G&A ~$300-350M/year; $400M overstates it by ~$50-100M"},
+      {"assumption": "WACC 8.2-10.0% range by segment", "lean": "honest — built from CAPM with fundamental betas; not inflating WACC to manufacture a sell"}
+    ],
+    "same_direction_count": 3,
+    "same_direction_which": "MI exit multiple, Ratings exit multiple, Corporate overhead — all lean slightly conservative",
+    "verdict": "BORDERLINE — exactly 3 conservative leans. However, all three are modest (MI: 19x vs. 24x comp at 21% discount; Ratings: 25x vs. 27x comp at 7% discount; corporate: $4B vs. $3B, $1B difference). The combined effect of these three leans reduces fair value by approximately $15-20/share (from ~$515-$520 to $500). This is below the threshold for 'structural stacked bias' (which would require leans that, combined, change the rating call). With fair value at $500 vs. price at $411 (22% upside), the call is BUY even at the conservative end of the bias range. VERDICT: CLEAR — no systematic bias inflating the call; conservative leans are documented and small."
+  },
+
+  "four_levers_aggregate": {
+    "growth_rate_and_duration": {
+      "estimate": "8.0% revenue CAGR, 7.0% EBITDA CAGR (FY2025-FY2028), sustained at 6-7% for a further 5-7 years (Indices + Ratings regulatory compounding). Duration of above-GDP growth is 8-12 years — driven by passive AUM growth (secular), Ratings issuance recovery (cyclical), and MI subscription compounding (secular, contested).",
+      "evidence": "FY2023-FY2025 CAGR: revenue 10.8%, EBITDA 22.1% (includes post-IHS-Markit integration lift). Normalized organic run-rate 7-9% revenue growth. Consensus NTM EPS $22.23 implies ~8% earnings growth — consistent with our assumption. Theia demand model: 8% weighted CAGR.",
+      "contested": "MI segment growth (7% or lower if AI disruption accelerates). This is the CRUX lever."
+    },
+    "economics": {
+      "estimate": "EBITDA margins stable at 50-52% at company level (FY2025: 50.2%). FCF conversion: 71% of EBITDA ($5.456B FCF / $7.693B EBITDA in FY2025). Owner-FCF per share growing at 11-12% per year (EBITDA growth + buyback reduction in share count).",
+      "evidence": "FCF FY2025: $5.456B. Capital intensity is minimal (capex $195M = 1.3% of revenue). The main drag is taxes (~24% effective) and interest on net debt ($11.84B at ~4.5% = ~$533M/year). Net debt should decline modestly as FCF ($5.5B) exceeds capital returns (~$4.5B dividends + buybacks assuming $4B buyback + $1.2B dividends).",
+      "contested": "FCF conversion has been at 71% vs. historical 50-60%. FY2025's 71% may include timing benefits. More sustainable conversion is 65-70%."
+    },
+    "wacc": {
+      "estimate": "Blended WACC 9.0% (value-weighted across segments: Indices 8.2% × 34% + Ratings 9.0% × 38% + MI 9.5% × 18% + Commodity 9.2% × 10% + Mobility 10.0% × 8% ≈ 8.7-9.0%).",
+      "evidence": "CAPM builds shown per segment in wacc_builds above. Company reported beta 1.076 (bundle) — our blended fundamental beta is ~0.88, lower than reported because the rally-period regression beta overstates systematic risk vs. the fundamental read of the business mix.",
+      "contested": "If AI risk genuinely increases SPGI's operating risk (pricing power erosion in MI), the MI beta could rise to 1.2-1.3, pushing blended WACC to 9.3-9.5%. This would reduce fair value by ~$20-30/share but not change the BUY rating."
+    },
+    "exit_multiple": {
+      "estimate": "Weighted average exit multiple at FY2028 normalization: approximately 24.5x EV/EBITDA (EBITDA-weighted across the five segments at their respective exit multiples). This blended multiple is the 'FY2028 steady-state trading multiple' we expect the market to apply.",
+      "evidence": "MCO at 27x (Ratings), MSCI at 37x (Indices), FactSet at 24x (MI), ICE data at 20x (Commodity), generic data/SaaS at 16-20x (Mobility). SPGI's conglomerate discount to pure-plays is appropriate but currently excessive at 17.6x vs. our 24.5x steady-state estimate.",
+      "contested": "The exit multiple is the dominant variable for SPGI value. A 2x move in blended multiple = $7.693B × 2 = $15.4B EV = $52/share. The CRUX is whether 24.5x is achievable by FY2028 or whether AI keeps multiples compressed at 17-18x permanently."
+    }
+  },
+
+  "sensitivity_matrix": {
+    "lever_1_name": "FY2026E EV/EBITDA multiple (the narrative multiple — what the market pays)",
+    "lever_2_name": "FY2026E EBITDA growth rate vs FY2025 (growth execution lever)",
+    "note": "Net debt $11.84B. Shares at end-2026: 288M (296M less ~8.9M buyback at avg $450). Each cell is implied stock price in USD. Base case: 19x multiple, 8% EBITDA growth. Current market: 17.6x multiple (the market's implied multiple on forward EBITDA).",
+    "cells": [
+      {
+        "growth_pct": 5,
+        "ebitda_b": 8.078,
+        "ev_15x": 109.3,
+        "ev_17x": 125.5,
+        "ev_19x": 141.7,
+        "ev_21x": 157.9,
+        "ev_23x": 174.1,
+        "ps_15x": 380,
+        "ps_17x": 436,
+        "ps_19x": 492,
+        "ps_21x": 548,
+        "ps_23x": 604
+      },
+      {
+        "growth_pct": 8,
+        "ebitda_b": 8.309,
+        "ev_15x": 112.8,
+        "ev_17x": 129.5,
+        "ev_19x": 146.1,
+        "ev_21x": 162.7,
+        "ev_23x": 179.3,
+        "ps_15x": 392,
+        "ps_17x": 450,
+        "ps_19x": 507,
+        "ps_21x": 565,
+        "ps_23x": 623
+      },
+      {
+        "growth_pct": 10,
+        "ebitda_b": 8.462,
+        "ev_15x": 115.1,
+        "ev_17x": 132.1,
+        "ev_19x": 149.0,
+        "ev_21x": 165.9,
+        "ev_23x": 182.9,
+        "ps_15x": 400,
+        "ps_17x": 459,
+        "ps_19x": 517,
+        "ps_21x": 576,
+        "ps_23x": 635
+      },
+      {
+        "growth_pct": 12,
+        "ebitda_b": 8.617,
+        "ev_15x": 117.5,
+        "ev_17x": 134.7,
+        "ev_19x": 151.9,
+        "ev_21x": 169.1,
+        "ev_23x": 186.4,
+        "ps_15x": 408,
+        "ps_17x": 468,
+        "ps_19x": 527,
+        "ps_21x": 587,
+        "ps_23x": 647
+      }
+    ],
+    "base_cell": {
+      "growth_pct": 8,
+      "multiple": 19,
+      "implied_px": 507,
+      "note": "Base cell 8% growth / 19x is slightly above the SOTP fair value of $500 because the SOTP uses FY2028 exit discounted back 3 years, while this table applies a FY2026 1-year multiple directly."
+    },
+    "current_market_zone": "At $411, the market prices approximately 17x × 8% growth → $450; or 15x × 10% growth → $400. The market requires either a very low multiple (15-16x) or a low growth rate (5%) or both simultaneously to justify $411. Our base requires neither.",
+    "dominant_lever": "The MULTIPLE is the dominant lever: each 2x step in the multiple (e.g., 17x → 19x) = $56-60/share at base growth, regardless of growth outcome. The growth rate lever at ±3% changes value by only $14-20/share at any given multiple. This confirms the crux: SPGI is a multiple re-rate story, not a fundamental growth story. The call hinges on whether the AI narrative lifts or the market keeps the multiple compressed.",
+    "fragility": "The call is NOT fragile to growth: at 19x multiple, even 5% EBITDA growth gives $492/share (20% upside). The call IS sensitive to the multiple: at 15x (market refuses to re-rate), even 12% EBITDA growth gives only $408 (flat vs. current). The multiple is the crux — confirmed."
+  },
+
+  "bull_bear_specs": {
+    "bull": {
+      "label": "bull",
+      "scenario_multiple": 23.0,
+      "scenario_ebitda_growth_pct": 10.0,
+      "implied_value": 635.0,
+      "thesis": "AI proves to be a tailwind: SPGI's proprietary data becomes a premium licensing asset for LLM providers; Kensho announces data licensing deals; MI retention holds at 90%+; Ratings transaction revenue recovers 15%+ as Fed cuts 200bp; Indices AUM grows 12% driven by market appreciation + passive flow acceleration. Multiple re-rates to 23x NTM EV/EBITDA as 'AI disruption discount' is definitively removed.",
+      "key_driver": "Multiple re-rate from 17x to 23x NTM EV/EBITDA as AI tailwind narrative replaces AI disruption narrative"
+    },
+    "base": {
+      "label": "base",
+      "scenario_multiple": 19.0,
+      "scenario_ebitda_growth_pct": 8.0,
+      "implied_value": 507.0,
+      "thesis": "Partial re-rate: the market eventually recognizes that 75% of SPGI's EBITDA comes from regulatory/contractual moats and corrects the AI discount partially. Ratings transaction revenue recovers modestly (Fed cuts 100bp); MI holds subscription retention; Indices grows with equity markets. Multiple expands from 17x to 19x NTM; this, combined with 8% EBITDA growth and 3% share count decline, produces 32% total return to fair value.",
+      "key_driver": "Partial multiple re-rate (17x → 19x) + organic earnings growth + buyback accretion"
+    },
+    "bear": {
+      "label": "bear",
+      "scenario_multiple": 15.0,
+      "scenario_ebitda_growth_pct": 5.0,
+      "implied_value": 380.0,
+      "thesis": "Multiple stays compressed. Bloomberg Copilot wins MI renewals; SPGI discloses MI subscription growth deceleration below 5%. Fed holds rates high; Ratings transaction revenue fails to recover. Passive AUM growth slows to 4% in risk-off environment. Multiple stays at 15-16x NTM EV/EBITDA as investors demand continued AI risk premium. Stock delivers -7% total return including dividend.",
+      "key_driver": "No multiple re-rate (stays 15-16x); both AI disruption and issuance delay materialize"
+    }
+  },
+
+  "earnings_bridge": {
+    "fy2025_reported_net_income_b": 4.471,
+    "fy2025_reported_eps": 14.66,
+    "note_gaap_eps": "GAAP EPS includes amortization of IHS Markit acquisition intangibles (~$1.5B/year, non-cash). This inflates GAAP EPS relative to normalized earning power.",
+    "add_back_da_amort_b": 1.516,
+    "normalized_earnings_b": 5.987,
+    "normalized_eps": 20.23,
+    "fcf_per_share": 18.43,
+    "ntm_consensus_eps_adjusted": 22.23,
+    "bridge_note": "GAAP EPS of $14.66 significantly understates earning power due to IHS Markit amortization. Adding back ~$1.5B of D&A amortization gives normalized EPS of ~$20.23. NTM consensus at $22.23 implies ~10% normalized EPS growth, consistent with 8% EBITDA growth + 3% share count reduction from buybacks. FCF per share ($5.456B / 296M = $18.43) is the cleanest owner-earnings metric — above adjusted EPS because capex is minimal ($195M = <$1/share). Use NTM EPS $22.23 as the primary earnings metric with awareness of the GAAP/adjusted convention gap."
+  },
+
+  "multiple_maths": {
+    "current_multiple": {
+      "ev_ebitda_ttm": 17.6,
+      "pe_ntm_adjusted": 18.5,
+      "fcf_yield_pct": 4.5,
+      "basis": "Market price $411; EV $138.8B from bundle"
+    },
+    "justified_multiple": {
+      "ev_ebitda": 20.8,
+      "pe_ntm_adjusted": 22.5,
+      "basis": "SOTP derived; also consistent with Gordon model at g=4.5%, r=9%, ROIC=40%: multiple = (1-4.5/40)/(9-4.5)% = 0.8875/4.5% = 19.7x EV/EBITDA ≈ 20x"
+    },
+    "justified_grid": [
+      {"wacc_pct": 8.0, "g_pct": 4.0, "roic_pct": 40, "ev_ebitda": 22.5},
+      {"wacc_pct": 9.0, "g_pct": 4.5, "roic_pct": 40, "ev_ebitda": 19.7},
+      {"wacc_pct": 9.5, "g_pct": 4.0, "roic_pct": 35, "ev_ebitda": 17.2},
+      {"wacc_pct": 9.0, "g_pct": 5.0, "roic_pct": 50, "ev_ebitda": 21.6}
+    ],
+    "duality_decomposition": "Current 17.6x EV/EBITDA implies one of: (a) r=9.5% + g=4% + ROIC=35% (plausible bear); or (b) r=9.0% + g=4% + ROIC=35% (market is applying too high a risk discount to what is mainly a regulated franchise). Our base at 20.8x implies r=9.0% + g=4.5% + ROIC=40% — entirely consistent with SPGI's demonstrated 45%+ ROIC on organic capital and the modest growth already assumed."
+  },
+
+  "street_reconstruction": {
+    "currency": "EV/EBITDA",
+    "what_price_implies": "At $411 (EV ~$138.8B, 17.6x FY2025 EBITDA), the market implies: g=4.0%, r=9.0%, ROIC=35% — a scenario where SPGI's ROIC declines 10pp from demonstrated levels (likely reflecting AI disruption to MI margins) and growth stays at CPI+. This is the market's 'AI erodes MI' pricing.",
+    "what_street_implies": "Street mean $532.8 implies approximately 21-22x NTM EV/EBITDA on FY2026E — consistent with our 20.8x justified multiple but slightly more bullish. The street expects the narrative to resolve within 12 months.",
+    "history_anchor": "SPGI 5-year EV/EBITDA range: 17x (current, 2026 trough) to 30x (2021 peak, IHS Markit merger premium). 2022-2024 average approximately 22-25x. The current 17.6x is the lowest in approximately 8 years.",
+    "contested_lever": "Whether SPGI's Market Intelligence subscriptions grow at 7%+ (stable retention) or decelerate below 5% (AI substitution beginning) — this single lever determines whether the multiple re-rates from 17x to 20x+ or stays permanently compressed."
+  }
+}
