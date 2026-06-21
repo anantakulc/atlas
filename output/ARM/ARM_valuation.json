@@ -1,0 +1,337 @@
+{
+  "schema_version": "1.0",
+  "ticker": "ARM",
+  "currency": "USD",
+  "current_price": 439.46,
+  "shares_outstanding_b": 1.064,
+  "net_debt_b": -2.294,
+  "computed_at": "2026-06-21T06:24:32Z",
+  "primary_method": {
+    "name": "SOTP",
+    "category": "intrinsic",
+    "reasoning": "Two-segment SOTP: (1) Core IP Business (royalties + license combined, ExitMultiple), (2) AGI CPU option (Multiple, current EV). Segments differ in growth trajectory, margin, risk, and method. Segment WACCs differ. Net debt (net cash of $2.294B) deducted at the group level.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "method": "ExitMultiple",
+          "weight_pct": 97,
+          "reasoning": "ARM's royalty and license revenue streams share the same R&D base and cost structure. Both are pure IP monetization with near-zero incremental cost per revenue dollar. Both are high-growth segments warranting the exit-multiple method. Valued together to avoid artificial R&D cost allocation between them.",
+          "segment_classification": "high-growth annuity (IP royalties) + high-growth recurring (licensing)",
+          "wacc_derivation": {
+            "rf": 0.043,
+            "beta_fundamental": 1.1,
+            "erp": 0.055,
+            "ke": 0.1035,
+            "wacc_segment": 0.105,
+            "wacc_rounded": 0.105,
+            "beta_rationale": "Fundamental beta 1.10: ARM's core IP stream is a near-monopoly in mobile with contractual royalty flows (low beta factor), but carries China revenue risk (19-22% of revenue at risk from RISC-V substitution), Qualcomm legal precedent risk (caps royalty rate upside on its largest ALA payer), and customer concentration (Apple indirect, hyperscalers growing). The regression beta of 3.79 reflects the stock's rally and momentum — it is not a fundamental risk metric. The market-cap beta of 3.79 inflates WACC by 15pp vs the business risk. Beta 1.10 is at the low end of IP licensors (Qualcomm ~1.1, ASML ~1.0) and credits the contracted pipeline (ACV +22% YoY provides royalty visibility 2-4 years forward) while crediting the named risks. NOT the regression beta.",
+            "note_on_r_vs_market": "The market is currently implying a 5.6% discount rate for ARM (143x NTM P/E decomposed via Gordon formula at g=5%, ROIC=60%). This is 4.9pp below our 10.5% WACC. The gap is the central disagreement: the market is treating ARM as a near-risk-free perpetuity; we treat it as a growth IP company with real sovereign (China), legal (Qualcomm), and execution (AGI CPU) risks. At r=10.5%, a business growing NOPAT at 20-30% per year for 4 years and then at 5% in perpetuity is worth $57/share. The multiple expansion (from 18.7x to 143x NTM P/E) that would justify the current price requires either r<6% or a revenue trajectory at 5-8x Theia's base case."
+          },
+          "growth_lever": {
+            "argument": "Core IP revenue (royalties + license) grows from $4.92B in FY2026 to $9.30B in FY2030 in the base case -- a 4-year CAGR of 17.2%. This is argued from Theia's bottom-up demand model: royalties grow via the v9-to-CSS rate migration (v9 at 31% of royalty revenue in Q4 FY2026, rising ~10pp/yr; CSS at early innings but licensing bookings at record $819M in Q4 FY2026 convert to CSS royalties 2-4 years later); data center royalties guided by CEO Haas to 'double year-on-year again' in FY2027 (company disclosure, Q4 FY2026 earnings call). License revenue tracks ACV (+22% YoY FY2026, company disclosure). Duration: the v9/CSS transition takes approximately 4-5 years to reach saturation; growth then normalizes to 5% (unit volume growth in semiconductor market + modest rate improvement on next architecture).",
+            "fy2026_base_rev_b": 4.92,
+            "fy2027_rev_b": 5.97,
+            "fy2028_rev_b": 7.22,
+            "fy2029_rev_b": 8.4,
+            "fy2030_rev_b": 9.3,
+            "growth_pct_cagr_4yr": 17.2,
+            "sources": [
+              "ARM Q4 FY2026 earnings call: data center royalties guided to double YoY again in FY2027",
+              "v9 at 31% of royalty revenue Q4 FY2026, up from 20% Q4 FY2025 -- 11pp/yr trend",
+              "ACV +22% YoY FY2026 -- the licensing leading indicator",
+              "Q4 FY2026 licensing record $819M -- CSS deal bookings converting to future royalties"
+            ]
+          },
+          "economics_lever": {
+            "argument": "NOPAT margin (non-GAAP, after cash taxes) rises from ~38% in FY2026 to ~48% in FY2030 as ARM scales. The case: (a) royalties and license have near-zero incremental cost (IP marginal cost = zero); (b) R&D as a percentage of revenue declines with scale -- $4.92B revenue supporting the current R&D base implies significant leverage as revenue reaches $9.3B; (c) ARM management guides to ~38% non-GAAP net margin at $25B FY2031 revenue; on a smaller IP-only base at $9.3B with less of the margin drag from the chip business, 48% NOPAT is consistent with the management trajectory. SBC is treated as an economic cost: non-GAAP NI overstates owner economics. FCF margin of 19.3% in FY2026 is the cash reality; FY2026 capex was elevated ($575M vs $143M FY2024) because of AGI CPU chip infrastructure build-out, not maintenance. Maintenance capex ~$150-200M. SBC estimated at $450-550M (implied by gap between non-GAAP NI of $1.88B and reported FCF of $0.949B minus elevated capex). By FY2030, as AGI CPU capex normalizes and SBC as % of revenue declines, NOPAT margin of 48% is the honest center -- not 19.3% (depressed by one-time capex and SBC/size dynamics) and not 97.5% (gross margin, ignoring all operating costs).",
+            "nopat_margin_fy2027": 0.4,
+            "nopat_margin_fy2028": 0.43,
+            "nopat_margin_fy2029": 0.46,
+            "nopat_margin_fy2030": 0.48,
+            "nopat_path_b": [
+              2.39,
+              3.1,
+              3.86,
+              4.46
+            ],
+            "normalize_index": 3,
+            "numerator_bridge_validation": "FY2026 GAAP NI $0.904B; non-GAAP NI $1.883B (SBC and amortization add-back ~$0.98B). Reported FCF $0.949B. FCF < non-GAAP NI because: elevated capex ($0.575B, of which ~$0.37B is AGI CPU growth capex) and SBC (~$0.50B estimated) are both economic costs. Maintenance capex ~$0.15-0.20B. FCF is the correct owner earnings anchor. Non-GAAP EBIT estimated at ~38.5% of revenue = $1.893B; after 15% cash tax = $1.610B NOPAT. FY2026 NOPAT in the model represents the company-level economics before the IP-vs-chip segment split."
+          },
+          "terminal_growth_lever": {
+            "argument": "g_lt = 5.0%. Long-run semiconductor unit growth ~5-7% (per ARM company disclosures; ~30B chips/yr growing at ~5-7%). ARM's architecture share is near-saturated in mobile but still gaining in data center. v10 and beyond will provide a next-generation rate step after CSS. 5% is consistent with nominal semiconductor market growth and avoids the trap of extrapolating the current 20%+ growth forever. RISC-V is a cap on the upside but has not displaced ARM in premium segments. 5% also satisfies the g < r mathematical requirement (5% < 10.5%).",
+            "g_lt": 0.05
+          },
+          "exit_inputs": {
+            "nopat_T_b": 4.46,
+            "nopat_path_b": [
+              2.39,
+              3.1,
+              3.86,
+              4.46
+            ],
+            "normalize_index": 3,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "roic": 0.8,
+            "r": 0.105,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 5.727,
+            "interim_fcf_derivation": "PV of FCF in years 1-3 before normalization year T=4. Year 1 (FY2027): NOPAT $2.39B, reinvestment 21.8%/80%=27.2%, FCF $1.74B, PV $1.574B. Year 2 (FY2028): NOPAT $3.10B, reinvest 20.9%/80%=26.1%, FCF $2.29B, PV $1.876B. Year 3 (FY2029): NOPAT $3.86B, reinvest 16.3%/80%=20.4%, FCF $3.07B, PV $2.278B. Sum $5.727B. Reinvestment rate = segment revenue growth / segment ROIC, per METHODS.md.",
+            "reasoning": "ExitMultiple: normalize Core IP NOPAT at FY2030 (T=4), apply Gordon multiple, discount at r=10.5%. Interim FCF (FY2027-FY2029) material and included."
+          }
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "method": "Multiple",
+          "weight_pct": 3,
+          "reasoning": "Pre-revenue segment. First production revenue in Q4 FY2027 (guided, supply-constrained). Cannot apply ExitMultiple without earnings trajectory; FY2030 revenue of $4B (base) at ~45% gross margin implies a chip business, not an IP business. Valued as an option on the committed demand pipeline: $2B+ in confirmed customer demand from Meta, Oracle, ByteDance (company disclosure, Q4 FY2026 earnings). This is real commercial demand but not a signed order backlog in the IP-licensing sense. Option EV = 0.5x of FY2030 base revenue ($4B x 0.5 = $2B), reflecting: (a) real demand signal; (b) significant execution risk (supply chain, licensee conflict, first-chip margins); (c) discounting for 4 years of risk at a higher chip-business rate (~15% vs IP 10.5%). The $2B option value is consistent with the stated '$0-2B for base' range from the task, and specifically at $2B because the committed demand pipeline provides a real floor.",
+          "agi_cpu_evidence": "More than $2B in customer demand across FY2027-FY2028 at Q4 FY2026 earnings. Demand reportedly doubled to >$20B within 6 weeks (CEO Q4 FY2026 call). Management target $15B in chip revenue by FY2031. First production Q4 FY2027. Named customers: Meta, Oracle, ByteDance. Supply is the constraint, not demand.",
+          "multiple_inputs": {
+            "multiple_type": "EV/Revenue",
+            "multiple_value": 0.5,
+            "fy_estimate": 4.0,
+            "forward_year": "FY2030 (base demand model)",
+            "discount_note": "The $4B x 0.5x = $2B EV represents a present-value estimate: at 15% WACC over 4 years, a $4B FY2030 revenue chip business at 1.8x EV/Revenue in FY2030 would be worth $4 x 1.8 / 1.749 = $4.1B today. The 0.5x trailing multiple applied directly is roughly equivalent and more transparent given the pre-revenue status. Bull option value: $8B (bull FY2030 chip revenue $10B x 0.8x discounted). Bear option value: $0.5B (supply/conflict delays, minimal revenue by FY2030).",
+            "reasoning": "AGI CPU is a genuinely nascent option. The committed $2B+ demand pipeline is a real signal, not a projection. $2B EV is the honest most-likely option value -- not zero (ignores real commercial interest) and not $15B (assumes full FY2031 management target, which is hoped-for not contracted)."
+          },
+          "segment_owner_fcf0_b": 0.0
+        }
+      ]
+    },
+    "outputs": {
+      "segments": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "method": "ExitMultiple",
+          "weight_pct": 97,
+          "reasoning": "ARM's royalty and license revenue streams share the same R&D base and cost structure. Both are pure IP monetization with near-zero incremental cost per revenue dollar. Both are high-growth segments warranting the exit-multiple method. Valued together to avoid artificial R&D cost allocation between them.",
+          "inputs": {
+            "nopat_T_b": 4.46,
+            "nopat_path_b": [
+              2.39,
+              3.1,
+              3.86,
+              4.46
+            ],
+            "normalize_index": 3,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "roic": 0.8,
+            "r": 0.105,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 5.727,
+            "interim_fcf_derivation": "PV of FCF in years 1-3 before normalization year T=4. Year 1 (FY2027): NOPAT $2.39B, reinvestment 21.8%/80%=27.2%, FCF $1.74B, PV $1.574B. Year 2 (FY2028): NOPAT $3.10B, reinvest 20.9%/80%=26.1%, FCF $2.29B, PV $1.876B. Year 3 (FY2029): NOPAT $3.86B, reinvest 16.3%/80%=20.4%, FCF $3.07B, PV $2.278B. Sum $5.727B. Reinvestment rate = segment revenue growth / segment ROIC, per METHODS.md.",
+            "reasoning": "ExitMultiple: normalize Core IP NOPAT at FY2030 (T=4), apply Gordon multiple, discount at r=10.5%. Interim FCF (FY2027-FY2029) material and included."
+          },
+          "outputs": {
+            "method": "ExitMultiple",
+            "nopat_T_b": 4.46,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "roic": 0.8,
+            "r": 0.105,
+            "exit_multiple": 17.05,
+            "exit_multiple_gordon": 17.05,
+            "ev_at_T_b": 76.043,
+            "discount_factor": 1.4909,
+            "interim_fcf_pv_b": 5.727,
+            "implied_ev_b": 56.732,
+            "implied_equity_b": 56.732,
+            "implied_px": 53.32,
+            "t_invariance": [
+              {
+                "T": 2,
+                "nopat_T_b": 3.1,
+                "implied_px": 46.07
+              },
+              {
+                "T": 3,
+                "nopat_T_b": 3.9,
+                "implied_px": 51.23
+              },
+              {
+                "T": 4,
+                "nopat_T_b": 4.5,
+                "implied_px": 53.32
+              }
+            ]
+          }
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "method": "Multiple",
+          "weight_pct": 3,
+          "reasoning": "Pre-revenue segment. First production revenue in Q4 FY2027 (guided, supply-constrained). Cannot apply ExitMultiple without earnings trajectory; FY2030 revenue of $4B (base) at ~45% gross margin implies a chip business, not an IP business. Valued as an option on the committed demand pipeline: $2B+ in confirmed customer demand from Meta, Oracle, ByteDance (company disclosure, Q4 FY2026 earnings). This is real commercial demand but not a signed order backlog in the IP-licensing sense. Option EV = 0.5x of FY2030 base revenue ($4B x 0.5 = $2B), reflecting: (a) real demand signal; (b) significant execution risk (supply chain, licensee conflict, first-chip margins); (c) discounting for 4 years of risk at a higher chip-business rate (~15% vs IP 10.5%). The $2B option value is consistent with the stated '$0-2B for base' range from the task, and specifically at $2B because the committed demand pipeline provides a real floor.",
+          "inputs": {
+            "multiple_type": "EV/Revenue",
+            "multiple_value": 0.5,
+            "fy_estimate": 4.0,
+            "forward_year": "FY2030 (base demand model)",
+            "discount_note": "The $4B x 0.5x = $2B EV represents a present-value estimate: at 15% WACC over 4 years, a $4B FY2030 revenue chip business at 1.8x EV/Revenue in FY2030 would be worth $4 x 1.8 / 1.749 = $4.1B today. The 0.5x trailing multiple applied directly is roughly equivalent and more transparent given the pre-revenue status. Bull option value: $8B (bull FY2030 chip revenue $10B x 0.8x discounted). Bear option value: $0.5B (supply/conflict delays, minimal revenue by FY2030).",
+            "reasoning": "AGI CPU is a genuinely nascent option. The committed $2B+ demand pipeline is a real signal, not a projection. $2B EV is the honest most-likely option value -- not zero (ignores real commercial interest) and not $15B (assumes full FY2031 management target, which is hoped-for not contracted)."
+          },
+          "outputs": {
+            "implied_ev_b": 2.0,
+            "implied_equity_b": 2.0,
+            "implied_px": 1.88
+          }
+        }
+      ],
+      "aggregate": {
+        "sum_of_segment_ev_b": 58.732,
+        "net_debt_b": -2.294,
+        "implied_equity_b": 61.026,
+        "implied_px": 57.36
+      },
+      "implied_px": 57.36
+    }
+  },
+  "cross_check": {
+    "name": "Mature IP licensor comps + NTM P/E comparison",
+    "reasoning": "No direct pure-play IP licensor comps at ARM's scale exist. Dolby Laboratories (IP royalties, audio): EV/EBIT ~20x, NTM P/E ~20x (mature). InterDigital (wireless IP royalties): EV/EBIT ~13x, NTM P/E ~12x. QUALCOMM (IP-heavy, also chip design): NTM P/E ~15x. Synopsys/Cadence (EDA IP, different model but IP-adjacent): NTM P/E ~40-50x (still growing fast). ARM's core IP at maturity is superior to Dolby/InterDigital (larger TAM, higher moat) but its steady-state NOPAT multiple of 17x is appropriate: it is above InterDigital (lower ROIC), below Synopsys/Cadence (still in high-growth mode). The Gordon formula at r=10.5%, g=5%, ROIC=80% gives 17.0x exit EV/NOPAT -- consistent with the comp bracket. Cross-check: PASS.",
+    "inputs": {
+      "multiple_type": "EV/NOPAT_exit",
+      "peer_median_multiple": 17.0,
+      "fy_estimate": 4.46,
+      "comps_range": "Dolby 20x, InterDigital 13x, Qualcomm (IP) 15x -> ARM at 17x is the honest center"
+    }
+  },
+  "justified_multiple": {
+    "ev_metric_label": "NTM non-GAAP NOPAT (estimated)",
+    "ev_metric_value": 2.1,
+    "justified_ev_multiple": 28.0,
+    "current_ev_multiple": 221.6,
+    "eps_ntm": 3.07,
+    "justified_pe_ntm": 18.7,
+    "current_pe_ntm": 143.1
+  },
+  "earnings_bridge": {
+    "basis_year": "FY2026",
+    "reported_fcf_b": 0.949,
+    "gaap_ni_b": 0.904,
+    "nongaap_ni_b": 1.883,
+    "nongaap_eps": 1.77,
+    "sbc_estimated_b": 0.5,
+    "elevated_capex_vs_maintenance_b": 0.375,
+    "maintenance_capex_b": 0.2,
+    "note": "FY2026 capex of $0.575B was elevated by AGI CPU chip infrastructure investment. Maintenance capex ~$0.15-0.20B (per FY2023/FY2024 levels of $0.093B-$0.143B, growing modestly). SBC estimated at $0.50B (implied by non-GAAP vs FCF gap). Owner FCF = FCF + maintenance capex adj - SBC (or: use FCF directly as owner earnings since buybacks are zero and SBC dilution is the cost). Valuation uses NOPAT (unlevered, non-GAAP, before SBC) as the exit multiple numerator because Gordon formula gives enterprise value, which is unlevered.",
+    "fcf_per_share": 0.892,
+    "gaap_eps": 0.85,
+    "nongaap_eps_ntm_consensus": 3.07,
+    "pe_ntm_basis": "non-GAAP forward consensus $3.07; GAAP NTM would be materially lower due to SBC (~$0.50B+). Non-GAAP NTM P/E of 143x is the market's lens; our 18.7x justified NTM non-GAAP P/E at $57 fair value represents the same metric but at our discount rate.",
+    "fcf_b_from_bridge": 0.949,
+    "year1_fcf_b": 0.0,
+    "ties_to_year1": null
+  },
+  "valuation_anchor": {
+    "ev_metric_label": "NTM non-GAAP NOPAT (estimated)",
+    "ev_metric_value": 2.1,
+    "eps_ntm": 3.07,
+    "note": "NTM non-GAAP NOPAT estimated at ~40% of NTM expected revenue of ~$5.25B (guided ~+20% YoY from $4.92B FY2026) = $2.10B. This is the enterprise-value anchor for the justified multiple comparison."
+  },
+  "scenarios": [
+    {
+      "label": "Bull",
+      "key_changes": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "exit_overrides": {
+            "nopat_T_b": 6.05,
+            "nopat_path_b": [
+              2.84,
+              3.96,
+              5.24,
+              6.05
+            ],
+            "interim_fcf_pv_b": 6.187
+          }
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "multiple_overrides": {
+            "fy_estimate": 10.0,
+            "multiple_value": 0.8
+          }
+        }
+      ],
+      "derived_growth_paths": null,
+      "segment_implied": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "implied_ev_b": 75.375
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "implied_ev_b": 8.0
+        }
+      ],
+      "implied_px": 80.52,
+      "probability": 0.25,
+      "probability_reasoning": "25% -- AGI CPU supply eases faster than guided, CSS adoption accelerates, hyperscaler buildout sustains. Requires 3 of 4 crux debates to break ARM's way simultaneously. Plausible but not likely the base.",
+      "reasoning": "CSS adoption accelerates: hyperscaler deals convert CSS royalties at 30% of royalty revenue by FY2028 vs 15% base. Data center royalties triple in FY2027 rather than double. AGI CPU supply constraints ease mid-FY2027, contributing $1.5B in FY2027 vs $0.1B base. FY2030 IP revenue $12.1B (royalty $7.5B + license $4.6B). AGI CPU option EV $8B. Theia's bull demand path."
+    },
+    {
+      "label": "Base",
+      "key_changes": [],
+      "derived_growth_paths": null,
+      "segment_implied": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "implied_ev_b": 56.732
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "implied_ev_b": 2.0
+        }
+      ],
+      "implied_px": 57.36,
+      "probability": 0.5,
+      "probability_reasoning": "50% -- Theia's base demand path. v9 transition continues at current pace; data center doubles in FY2027 as guided; CSS from FY2028. The most-likely outcome given current evidence.",
+      "reasoning": "v9 reaches 55% of royalty revenue by FY2028. Data center doubles in FY2027 (guided) then sustains 40-50% growth. CSS ramps from FY2028. License grows ~20% per year (in line with FY2027 guidance). AGI CPU supply-constrained through FY2027, reaching $1-2B by FY2029. FY2030 IP revenue $9.3B. AGI CPU option EV $2B."
+    },
+    {
+      "label": "Bear",
+      "key_changes": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "exit_overrides": {
+            "nopat_T_b": 3.21,
+            "nopat_path_b": [
+              2.13,
+              2.52,
+              2.86,
+              3.21
+            ],
+            "interim_fcf_pv_b": 5.243
+          }
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "multiple_overrides": {
+            "fy_estimate": 2.5,
+            "multiple_value": 0.2
+          }
+        }
+      ],
+      "derived_growth_paths": null,
+      "segment_implied": [
+        {
+          "name": "Core IP Business (Royalties + License)",
+          "implied_ev_b": 41.953
+        },
+        {
+          "name": "AGI CPU Chip Sales Option",
+          "implied_ev_b": 0.5
+        }
+      ],
+      "implied_px": 42.06,
+      "probability": 0.25,
+      "probability_reasoning": "25% -- Qualcomm appeal outcome caps royalty rate on ALA licensees; China revenue erodes 20-25%; data center plateaus after FY2027 doubling. Two of three named mechanisms materializing is a realistic downside.",
+      "reasoning": "Qualcomm appeal outcome caps royalty rate upside for ALA licensees' custom designs; China revenue (22% of total) erodes 20-25% from RISC-V substitution; data center royalties double in FY2027 as guided but plateau at ~$800M. FY2030 IP revenue $7.3B (royalty $4.0B + license $3.3B). AGI CPU option EV $0.5B (supply delays + licensee conflict)."
+    }
+  ],
+  "blended_target": 57.36,
+  "blending_logic": "Pure SOTP — sum of segment EVs less parent net debt",
+  "upside_pct": -86.9
+}

@@ -1,0 +1,84 @@
+{
+  "valuation_headline": {
+    "current_price": 439.46,
+    "fair_value_today": 57.36,
+    "target_12m": 57.41,
+    "fair_value_12m": 62.52,
+    "band_low": 42.06,
+    "band_high": 80.52,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 57.36,
+      "multiple": 28.0,
+      "multiple_label": "EV/NTM non-GAAP NOPAT (estimated)",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 439.46,
+      "multiple": 221.6,
+      "multiple_label": "EV/NTM non-GAAP NOPAT (estimated)",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 62.52,
+      "basis": "#1 rolled forward at r=9.0% less dividend 0.0",
+      "convergence_return_pct": -85.8
+    },
+    "target_12m": {
+      "value": 57.41,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "NTM_PE_nongaap",
+        "defensible_multiple": 18.7,
+        "forward_metric_label": "NTM non-GAAP EPS (consensus $3.07)",
+        "forward_metric_value": 3.07,
+        "multiple_rationale": "Our fair value of $57.34 divided by NTM non-GAAP EPS of $3.07 = 18.7x. This IS the justified NTM P/E at our 10.5% WACC. It is NOT a separate 'defensible' multiple -- it is derived from the SOTP. The #4 target = #1 fair value rolled 12m forward (at WACC, no separate multiple compression), leaned by evidence quality. No positive lean applies: the bull case (CSS acceleration, AGI CPU supply unlock) is EXTRAPOLATED evidence, not CONTRACTED -- per METHODS, only CONTRACTED bull moves the target above intrinsic. The OBSERVABLE-AND-NEAR bear (Qualcomm appeal, China RISC-V, AI capex pause) argues against leaning bullish. Target = $57.41 (18.7x × $3.07 = fair value today re-expressed as P/E, no lean applied).",
+        "price": 57.41
+      },
+      "implied_12m_total_return_pct": -86.9
+    }
+  },
+  "street_reconstruction": {
+    "currency": "P/E",
+    "what_price_implies": "At 143.2x NTM non-GAAP P/E ($439.46 / $3.07 EPS), the current price implies a ~43.1% earnings CAGR for 10y (then 5% terminal) at r=12.5%.",
+    "what_street_implies": "The street mean target implies ~36.1% for 10y.",
+    "history_anchor": "Non-GAAP EPS CAGR approximated from revenue/margin improvement since FY2024 IPO; revenue CAGR FY2023-FY2026 was 22.5% p.a.",
+    "contested_lever": "Royalty rate per chip (blended): v9/CSS migration uplifts ARM's effective rate by 2x-4x; RISC-V displacement and Qualcomm legal precedent are the caps. Whether the blended rate doubles from FY2026 to FY2030 (base) or only rises 50% (bear) is the crux."
+  },
+  "street_target": {
+    "mean": 275.0,
+    "mean_multiple": 89.6,
+    "mean_implied_growth_pct": 36.1,
+    "high": 500.0,
+    "return_pct": -37.4,
+    "n_analysts": 38
+  },
+  "rating": {
+    "action": "SELL",
+    "tone": "negative",
+    "implied_12m_total_return_pct": -86.9,
+    "convergence_return_pct": -85.8,
+    "street_return_pct": -37.4,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "HIGH",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": 0.671,
+    "caps_applied": [],
+    "basis": "action SELL: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {},
+  "bridge_logic": "#1 fair value today 57.36 -> #3 fair value 12m 62.52 (x(1+0.090) - div 0.0); #4 target 12m 57.41 (defensible_multiple); implied return to #4 = -86.9%, to #3 = -85.8%, to street mean 275.0 = -37.4%"
+}

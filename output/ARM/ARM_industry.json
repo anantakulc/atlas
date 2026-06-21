@@ -1,0 +1,216 @@
+{
+  "ticker": "ARM",
+  "as_of": "2026-06-20",
+  "analyst": "Theia v3.0",
+  "business_type": "ip_licensor",
+  "business_type_override_note": "Bundle hint 'industrial' is wrong. ARM is a semiconductor IP licensor: it designs CPU/GPU/NPU architecture and charges licensees upfront fees plus a per-chip royalty on every chip shipped. No manufacturing, no inventory risk, ~97.5% gross margin on IP revenue. The correct valuation method is exit-multiple on the IP licensing engine; the AGI CPU chip-sales segment (first chip shipped 2026) is a new, currently small, and economically distinct segment.",
+
+  "segments": [
+    {
+      "name": "Royalties",
+      "description": "Per-chip royalties paid by ARM's semiconductor licensees each time they ship a chip incorporating ARM IP. The royalty rate is set as a percentage of the chip's average selling price (ASP) and varies by architecture generation and product type. Armv8 rates: ~2.5-3.5% of chip ASP (CEO Rene Haas, Q1 FY2026 earnings, August 2025). Armv9 rates: ~5% of chip ASP (same source). CSS v2 (Compute Subsystems, pre-integrated platform IP): over 10% of chip ASP, the highest in ARM's history (company disclosure, Q1 FY2026). Revenue is recognized on a one-quarter lag as licensees report chip shipments.",
+      "revenue_fy2026_b": 2.613,
+      "revenue_fy2025_b": 2.157,
+      "revenue_fy2024_b": 1.684,
+      "yoy_growth_fy2026_pct": 21.1,
+      "revenue_share_fy2026_pct": 53.1,
+      "gross_margin_nature": "Near-100% incremental margin on each additional royalty dollar; fixed R&D already sunk into the architecture.",
+      "nature": "high-growth annuity",
+      "growth_driver": "Mix shift from v8 to v9 (rate doubles); CSS adoption (rate doubles again vs v9); data center unit growth (Neoverse doubling royalties YoY); smartphone unit volume plus mix upgrade. The rate-per-chip vector is the primary lever, not unit volume.",
+      "key_metric_trend": "v9 was ~20% of royalty revenue in Q4 FY2025; ~31% in Q4 FY2026 (company disclosure). Data center royalties more than doubled YoY in Q4 FY2026 (earnings call). Data center royalties expected to double again in FY2027 (CEO Haas, Q4 FY2026 call).",
+      "sources": [
+        {"label": "Q4 FY2026 earnings call - royalty revenue figures", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"},
+        {"label": "Royalty rate by architecture - CEO Haas Q1 FY2026", "url": "https://www.eetimes.com/armv9-and-css-royalties-drive-growth-in-1bn-arm-q1-earnings/", "tier": "company_filed"}
+      ]
+    },
+    {
+      "name": "License and Other",
+      "description": "Upfront technology licensing fees paid by semiconductor companies (and now cloud/OEM customers) for the right to use ARM IP in their chip designs. Fees are larger for more complex products (CSS deals vs raw architecture licenses) and recognized over the contract term (typically 1-3 years). Also includes Arm's emerging 'Total Access' subscription program that bundles broad IP access for a recurring fee. In FY2026, licensing revenue grew 25% to $2.307B, faster than royalties, driven by CSS deal bookings and data center licensing.",
+      "revenue_fy2026_b": 2.307,
+      "revenue_fy2025_b": 1.850,
+      "revenue_fy2024_b": 1.549,
+      "yoy_growth_fy2026_pct": 24.7,
+      "revenue_share_fy2026_pct": 46.9,
+      "gross_margin_nature": "Near-100% incremental margin. License revenue is 'seed' revenue: it signals future royalty streams 2-4 years out when licensed chips reach production.",
+      "nature": "high-growth, lumpy (deal timing)",
+      "growth_driver": "CSS deals replacing raw architecture licenses (higher ACV per deal); Total Access subscription program converting one-time licensees to recurring; hyperscaler and cloud computing customers licensing Neoverse for custom server CPUs; automotive OEMs licensing for next-generation ADAS and compute. ACV (annualized contract value) grew 22% YoY in FY2026.",
+      "key_metric_trend": "Q4 FY2026 licensing hit a record $819M in a single quarter (up 29% YoY), driven by CSS bookings. Licensing as a share of total revenue rose from ~48% in FY2024 to ~47% in FY2026, relatively stable, but the composition shifted toward higher-value CSS deals.",
+      "sources": [
+        {"label": "Q4 FY2026 full-year results", "url": "https://newsroom.arm.com/news/arm-q4-fye26-results", "tier": "company_filed"},
+        {"label": "Arm Q4 FY2026 record Q4 breakdown", "url": "https://mlq.ai/news/arm-holdings-unveils-record-breaking-q4-and-full-year-2026-financial-results/", "tier": "company_filed"}
+      ]
+    },
+    {
+      "name": "AGI CPU Chip Sales (emerging, immaterial FY2026)",
+      "description": "ARM's first foray into selling its own silicon directly into the data center: the Arm AGI CPU, announced March 2026. This is a structural departure from the pure IP model. ARM designs, procures (via TSMC), and sells a complete CPU chip for AI/agentic workloads. First production revenue is expected in Q4 FY2027. Customer demand exceeded $2B across FY2027-FY2028 at launch (doubled to ~$20B backlog within 6 weeks per CEO, though management maintained a conservative $10B long-run outlook citing supply constraints). Revenue in FY2026: zero (pre-revenue). This segment carries a very different economics profile: gross margins will be substantially lower than IP (~50-60% chip vs ~97% IP), but the revenue opportunity is structurally larger. Management targets $15B in chip revenue by FY2031, alongside $10B in IP revenue, for $25B total.",
+      "revenue_fy2026_b": 0.0,
+      "revenue_fy2027_expected_b": "< 0.5 (supply-constrained; first production Q4 FY2027)",
+      "revenue_share_fy2026_pct": 0.0,
+      "nature": "pre-revenue / emerging",
+      "growth_driver": "Agentic AI demand for energy-efficient CPU compute; 4x CPU core count per data center projected (CEO); hyperscaler partnerships. Key partners named: Meta (co-developed), OpenAI, Cloudflare, SAP.",
+      "key_metric_trend": "Zero FY2026 revenue. Demand pipeline >$2B at Q4 earnings. Supply constraints (wafers, packaging, memory, testing) are the binding constraint, not demand.",
+      "sources": [
+        {"label": "AGI CPU demand doubling - Q4 FY2026 earnings", "url": "https://finance.biggo.com/news/US_ARM_2026-05-06", "tier": "company_filed"},
+        {"label": "$15B/$25B FY2031 target", "url": "https://www.investing.com/news/company-news/arm-q4-fy2026-slides-15b-chip-revenue-target-9-eps-by-2031-93CH-4665934", "tier": "company_filed"},
+        {"label": "Tom's Hardware analyst: $90M revenue before FY2027", "url": "https://www.tomshardware.com/pc-components/cpus/arms-usd2-billion-in-agi-cpu-sales-are-still-not-enough-to-penetrate-5-percent-of-overall-market-share-analyst-reveals-at-least-usd90-million-worth-of-cpus-to-be-shipped-before-fy2027", "tier": "sellside"}
+      ]
+    }
+  ],
+
+  "end_markets": [
+    {
+      "market": "Smartphones",
+      "share_pct_of_royalty_est": 45,
+      "share_note": "ARM estimates not broken out by end market in press releases; ~45% of royalty revenue is an industry-analyst consensus estimate consistent with ARM's dominant ~99% unit share of smartphone application processors. All major SoC vendors (Qualcomm Snapdragon, Apple A-series, MediaTek Dimensity, Samsung Exynos) use ARM. v9 adoption in flagship phones is the key rate-per-chip driver.",
+      "trend": "Mature in unit volume (smartphone market ~1.3B units/year, low single-digit growth). Revenue growth driven by rate mix shift to v9 and CSS. Smartphone royalties grew ~30% YoY in Q4 FY2025 even as smartphone units grew <2%. The volume story is saturated; the rate story is not.",
+      "source_tier": "theia_bottom_up",
+      "sources": [{"label": "Smartphone royalties +30% YoY Q4 FY2025; units <2% growth", "url": "https://futurumgroup.com/insights/arm-q4-fy-2025-delivers-record-revenue-as-armv9-and-css-ramp-up/", "tier": "research_firm"}]
+    },
+    {
+      "market": "Data Center / Cloud AI",
+      "share_pct_of_royalty_est": 15,
+      "share_note": "Data center royalties more than doubled YoY in Q4 FY2026 (company disclosure). ARM's Neoverse platform holds ~50% share of hyperscaler custom CPU compute (company claim, Q4 FY2026). AWS Graviton, Microsoft Cobalt, Google Axion, NVIDIA Vera all use ARM Neoverse. This end market is the highest royalty rate per chip (Neoverse CSS rates) and the fastest growing. The ~15% share estimate of total royalty revenue is a Theia bottom-up estimate based on the doubling trajectory from a lower base; ARM does not disclose the split.",
+      "trend": "Fastest growing. Data center royalties doubling YoY and expected to double again in FY2027 (CEO Haas, Q4 FY2026 call). AWS custom silicon (Graviton + Trainium + Nitro) running at >$20B annually growing triple-digit YoY. The compute intensity of agentic AI (CPU-heavy inference) is the structural driver. ARM targets >50% hyperscaler CPU share.",
+      "source_tier": "theia_bottom_up",
+      "sources": [
+        {"label": "Data center royalties doubling - Q4 FY2026 earnings call", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"},
+        {"label": "AWS $20B+ custom silicon", "url": "https://futurumgroup.com/insights/arm-q2-fy-2026-earnings-highlight-ai-driven-royalty-momentum/", "tier": "company_filed"}
+      ]
+    },
+    {
+      "market": "Automotive",
+      "share_pct_of_royalty_est": 10,
+      "share_note": "ARM dominates automotive microcontroller and ADAS compute with ~85% unit share. Revenue growing but base is smaller. Royalties here carry lower ASPs than data center but secular growth is strong (ADAS, autonomy, EV compute expansion). ARM does not break out automotive in its filings.",
+      "trend": "Growing 15-20% annually. Long design cycles (4-6 years chip-to-royalty) mean automotive licensing today translates to royalty revenue in 2028-2032. RISC-V is a low risk here given ARM's deep ecosystem integration with Tier 1 suppliers.",
+      "source_tier": "theia_bottom_up"
+    },
+    {
+      "market": "IoT / Embedded / Consumer Electronics",
+      "share_pct_of_royalty_est": 30,
+      "share_note": "Largest by unit volume (billions of low-cost microcontrollers), but lowest ASP and lowest royalty rate per chip. ARM Cortex-M and Cortex-A for IoT/edge. RISC-V is making inroads here (see competitor section). This segment is the most commoditized and most exposed to RISC-V substitution.",
+      "trend": "Unit volumes are massive but flat/low growth. Revenue contribution growing slowly because ASPs are low and RISC-V captures new design wins at the low end. The segment's strategic importance to ARM is declining relative to data center.",
+      "source_tier": "theia_bottom_up"
+    }
+  ],
+
+  "customer_concentration": {
+    "note": "ARM does not publish individual customer revenue shares as a percentage in press releases. The company's F-1 filing (IPO 2023) disclosed that its top licensees include Apple, Samsung, Qualcomm, MediaTek, NVIDIA, and Amazon. Geographic revenue in FY2025: US ~43% ($1.72B), China ~19% ($749M, some sources say 22% in recent quarters via Arm China JV), Taiwan ~16% ($629M), Korea ~8% ($324M), other ~14%.",
+    "top_customer_risk": "Apple is a dominant end customer (every iPhone/Mac/iPad uses ARM). Apple generates royalties indirectly (Apple designs its own chips using ARM architecture licenses, then pays royalties per chip shipped). Apple's continued use of ARM architecture in its M-series and A-series is a given through at least 2030 given multi-year investment in the platform.",
+    "china_risk": "China ~19-22% of revenue and growing as a geographic risk. ARM China operates as a semi-independent JV (Arm Technology (China) Co.), creating governance complexity. RISC-V adoption in China, driven by T-Head (Alibaba) and geopolitical pressure to reduce Western proprietary architecture dependence, is the primary bear case for this revenue stream.",
+    "sources": [
+      {"label": "Geographic revenue FY2025", "url": "https://stockdividendscreener.com/technology/arm-holdings-revenue-by-country/", "tier": "company_filed"},
+      {"label": "China RISC-V risk - Digitimes", "url": "https://www.digitimes.com/news/a20260213PD208/arm-risc-v-competition-chips-market.html", "tier": "research_firm"}
+    ]
+  },
+
+  "industry_structure": {
+    "market_description": "ARM operates in the semiconductor IP licensing market: a structurally distinct sub-segment of the broader semiconductor industry. There are no physical plants, no inventory, no commodity inputs. The product is architecture (the blueprint telling transistors how to interpret instructions), and the moat is ecosystem depth (software, tools, compilers, developer familiarity). The market is not a commodity; switching costs are very high once a platform is established.",
+
+    "competitive_dynamics": "ARM holds ~95%+ unit share of smartphone application processors and an estimated 85%+ of embedded microcontrollers. Data center is the contested space, where x86 held near-monopoly but ARM Neoverse reached ~50% of hyperscaler custom CPU compute by FY2026 (company claim). The competitive dynamic in data center is a genuine share-shift from x86 (Intel/AMD) to ARM, not an incremental game -- AMD and Intel are losing socket share to AWS Graviton, Microsoft Cobalt, and Google Axion, all ARM-based. The question in data center is not whether ARM gains share, but how fast and at what royalty rate.",
+
+    "named_competitors": [
+      {
+        "name": "RISC-V ecosystem (SiFive, Ventana, Alibaba T-Head, Qualcomm RISC-V efforts)",
+        "threat_level": "MEDIUM-HIGH in IoT/embedded; LOW in premium smartphone; LOW in data center (near-term)",
+        "market_segment_at_risk": "IoT/embedded (Cortex-M replacement), low-end Android smartphones in China, Chinese data center (geopolitical substitution)",
+        "evidence": "RISC-V achieved ~25% market penetration by unit volume in embedded/IoT by January 2026 (Tom's Hardware, RISC-V Foundation), ahead of Omdia's prior 2030 forecast. Critically: this 25% figure is by UNIT COUNT in the lowest-ASP segments (Wi-Fi modules, sensor nodes), NOT by revenue value. By revenue, RISC-V represented ~10.4% of the semiconductor market in 2024 (Mordor Intelligence). The royalty-free model is attractive in high-volume, low-ASP IoT where ARM's $0.01-0.03 per chip royalty matters. In premium smartphone and data center, RISC-V lacks the software ecosystem maturity to displace ARM within the next 3-5 years. In China: Alibaba T-Head (XUANTIE C950 RISC-V processor), facing potential IPO, is the most credible near-term threat to ARM's China revenue (22% of ARM total). China government programs have directed billions toward RISC-V to reduce Western architecture dependency.",
+        "timeline": "IoT: RISC-V already winning new low-ASP design wins, trend 2023-2030. China smartphone/server: 3-5 year substitution risk. Western data center: 5+ year risk (ecosystem gap too large).",
+        "sources": [
+          {"url": "https://www.tomshardware.com/tech-industry/semiconductors/risc-v-set-to-announce-25-percent-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint", "tier": "research_firm"},
+          {"url": "https://www.marketsandmarkets.com/PressReleases/risc-v.asp", "tier": "research_firm"},
+          {"url": "https://www.digitimes.com/news/a20260213PD208/arm-risc-v-competition-chips-market.html", "tier": "research_firm"}
+        ]
+      },
+      {
+        "name": "x86 (Intel / AMD)",
+        "threat_level": "DECLINING in data center; NEGLIGIBLE in mobile",
+        "market_segment_at_risk": "None currently -- x86 is the one losing share to ARM, not vice versa.",
+        "evidence": "ARM Neoverse hit ~50% of hyperscaler custom CPU compute by FY2026, up from near-zero in 2020. Intel's Xeon and AMD's EPYC continue to be deployed at scale in general-purpose servers, but hyperscaler custom silicon (all ARM) is the fastest-growing component of data center compute. Intel has not announced an ARM architecture license; AMD does not license ARM. x86 is structurally disadvantaged on power efficiency for inference workloads. This dynamic is a TAILWIND for ARM royalties, not a competitive threat.",
+        "timeline": "Share shift already underway and accelerating through 2030.",
+        "sources": [
+          {"url": "https://www.datacenterdynamics.com/en/news/arm-posts-recording-breaking-revenue-for-full-year-and-q4-26-with-its-share-of-hyperscaler-cpu-compute-hitting-50/", "tier": "research_firm"}
+        ]
+      },
+      {
+        "name": "Custom silicon (Apple M-series, Amazon Graviton, Google Axion, Microsoft Cobalt, NVIDIA Vera)",
+        "threat_level": "LOW to NEUTRAL -- these are ARM licensees, not ARM alternatives",
+        "market_segment_at_risk": "These customers design their own chips using ARM architecture and pay royalties. They represent ARM's highest-value, highest-rate-per-chip customers.",
+        "evidence": "Apple uses ARM architecture for all its silicon (A-series iPhone, M-series Mac). AWS Graviton runs at >$20B annually. Microsoft Cobalt 200 deployed across Azure regions. Google Axion CPU deployed at scale. NVIDIA Vera = ARM Neoverse for Grace Blackwell platforms. All are ARM architecture licensees paying CSS-level royalties. The bear risk here is not substitution but ARM's own pricing power vs these large buyers in contract renegotiations.",
+        "timeline": "Not a competitive threat; a customer concentration and pricing power dynamic.",
+        "sources": [
+          {"url": "https://futurumgroup.com/insights/arm-q2-fy-2026-earnings-highlight-ai-driven-royalty-momentum/", "tier": "company_filed"}
+        ]
+      },
+      {
+        "name": "Qualcomm (ARM licensee, Nuvia licensing dispute)",
+        "threat_level": "MEDIUM -- legal/commercial risk, not architectural",
+        "market_segment_at_risk": "Royalty rate on Qualcomm's custom CPU designs (Snapdragon X Elite series using Nuvia-derived CPU cores)",
+        "evidence": "Qualcomm won the Nuvia licensing dispute in Delaware District Court (full and final judgment, October 2025). A Delaware jury found Qualcomm did NOT violate ARM's ALA in December 2024. ARM is appealing. Separately, Qualcomm counter-sued ARM for breach of contract (trial March 2026). If ARM loses the appeal, ALA licensees could potentially design fully custom CPU cores without renegotiating terms, capping ARM's ability to charge higher rates on custom designs. The financial impact: Qualcomm is ARM's largest single royalty payer for high-ASP chips. If Qualcomm prevails in the final appeal, ARM's royalty rate on Qualcomm's custom designs stays at the original TLA rate, not the higher rate ARM sought.",
+        "timeline": "Appeal outcome 2026-2027. Ongoing countersuit. Material financial risk if ARM loses on appeal AND the precedent spreads to other ALA licensees.",
+        "sources": [
+          {"url": "https://www.tomshardware.com/pc-components/cpus/qualcomms-big-win-over-arm-could-reverberate-throughout-the-industry-ala-licensees-could-potentially-develop-custom-designs-without-renegotiating-terms", "tier": "research_firm"},
+          {"url": "https://finance.yahoo.com/news/qualcomm-achieves-complete-victory-over-011200178.html", "tier": "company_filed"}
+        ]
+      }
+    ],
+
+    "moat_assessment": "ARM's moat is its software ecosystem: 15+ million developers, every major OS (iOS, Android, Windows, Linux, all hyperscaler stacks) optimized for ARM ISA. Switching from ARM to RISC-V or x86 requires recompiling software, retooling toolchains, and retraining engineers - a multi-year process with no guarantee of performance parity. This is a STRONG moat in smartphone and data center, a MODERATE moat in automotive (deep Tier-1 integration), and a WEAK moat in low-end IoT (software complexity is lower, RISC-V toolchains mature enough for microcontrollers). The moat is not invulnerable - China is the principal test case, where geopolitical pressure provides a non-economic incentive to switch."
+  },
+
+  "addressable_market": {
+    "semiconductor_ip_licensing_market": {
+      "tam_usd_bn": 10.0,
+      "tam_note": "The pure semiconductor IP licensing market (ARM + MIPS + Imagination + Cadence/Synopsys IP) is ~$8-10B today (theia bottom-up). This is the market ARM ALREADY serves.",
+      "arm_share_pct": 40,
+      "arm_share_note": "ARM's $4.92B revenue against a ~$10B IP licensing market implies ~40-50% share. This is a served-market figure, not a TAM for expansion.",
+      "source_tier": "theia_bottom_up"
+    },
+    "cpu_market_total": {
+      "tam_usd_bn": 100,
+      "tam_note": "CEO Rene Haas cited a '$100B+ CPU market' opportunity at investor day (FY2026 Q4, May 2026). This includes data center CPUs, edge CPUs, embedded processors, and automotive compute -- the full semiconductor market for CPU-like devices where ARM earns royalties per chip.",
+      "arm_current_revenue_bn": 4.92,
+      "arm_current_capture_pct": 4.9,
+      "arm_target_capture_bn": 25.0,
+      "arm_target_year": "FY2031",
+      "arm_target_capture_pct": 25.0,
+      "source_tier": "company_filed",
+      "sources": [{"label": "CEO Haas $100B CPU market, Q4 FY2026 earnings call", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"}]
+    },
+    "data_center_cpu_market": {
+      "tam_usd_bn": 120,
+      "tam_note": "Server CPU TAM expected to exceed $120B by 2030 (analyst consensus per multiple sources, CAGR >35% driven by AI). Mizuho forecasts $15B in AGI/agentic AI CPU infrastructure revenue for ARM by FY2031. ARM's Neoverse already at ~50% hyperscaler custom CPU share.",
+      "arm_current_share_pct": 50,
+      "arm_share_note": "50% of hyperscaler CUSTOM CPU compute (ARM's own claim, Q4 FY2026). This is NOT 50% of the total server CPU market -- Intel/AMD still dominate general-purpose. The distinction matters: ARM's 50% is of a fast-growing slice (custom silicon) of a growing total.",
+      "share_trajectory": "Gaining rapidly from near-zero in 2020. Data center royalties doubled YoY in FY2026 and expected to double again in FY2027.",
+      "source_tier": "sellside",
+      "sources": [
+        {"label": "Server CPU TAM $120B by 2030, 35% CAGR", "url": "https://www.ultimamarkets.com/academy/arm-holdings-stock-forecast-2026-to-2030/", "tier": "sellside"},
+        {"label": "Mizuho $15B ARM data center by FY2031", "url": "https://www.investing.com/news/analyst-ratings/mizuho-raises-arm-holdings-stock-price-target-on-ai-growth-outlook-93CH-4730604", "tier": "sellside"}
+      ]
+    },
+    "share_trajectory_summary": "ARM is gaining share in the highest-value segment (data center/AI) while holding near-monopoly in smartphone. The share dynamic is not volume-driven but rate-driven: ARM's architecture captures an increasing fraction of each chip's economic value as licensees upgrade from v8 to v9 to CSS. In data center, ARM is taking wallet share from x86 via custom silicon -- a structural shift accelerated by AI inference workload growth. The risk is the reverse in low-ASP IoT (RISC-V taking new design wins) and potentially China (RISC-V + government policy). Net: the higher-value segments are all ARM-gaining; the lower-value segment (IoT) is contested."
+  },
+
+  "five_forces": {
+    "buyer_power": "MODERATE. Large hyperscalers (AWS, Microsoft, Google, Apple) have significant negotiating leverage and multi-year contracts. The Qualcomm dispute illustrates that large buyers push back. However, switching costs are very high -- no buyer has successfully migrated a major platform away from ARM architecture. CSS deals shift more power to ARM by locking buyers into higher-rate contracts.",
+    "supplier_power": "LOW. ARM has no manufacturing (TSMC/Samsung dependence is for the new AGI CPU chip segment only, not the IP segment). For IP licensing, there are no material suppliers.",
+    "new_entrant_threat": "LOW to MODERATE. RISC-V is the primary new entrant -- it is royalty-free, backed by major tech companies (Qualcomm, Meta, Google, Western Digital), and advancing rapidly in toolchain maturity. However, creating a competing ecosystem from scratch in smartphone or data center requires decades of software investment. The entrant threat is real but slow-moving except in China.",
+    "substitute_threat": "LOW in near-term premium segments; MEDIUM in IoT/embedded. RISC-V is the only credible substitute architecture at scale. x86 is not a substitute for mobile (power efficiency) and is losing ground in server.",
+    "rivalry": "LOW in IP licensing (ARM is effectively a monopoly in mobile; duopoly with x86 in server). HIGH in AGI CPU chip sales (ARM will compete directly with Intel, AMD, Qualcomm, and potentially Nvidia in the data center CPU market -- a segment where ARM has zero incumbency advantage as a chip seller)."
+  },
+
+  "product_differentiation": "ARM's primary differentiation is ecosystem lock-in, not technical superiority in any single dimension. The ISA (instruction set architecture) is well-established; competitors can match individual performance metrics. ARM's advantage is the installed software base and toolchain: every major OS, compiler, and cloud stack is ARM-optimized. CSS differentiates on integration -- it provides validated, pre-integrated platform IP that reduces customers' design complexity and time-to-market, justifying the 10%+ ASP royalty rate.",
+
+  "sources": [
+    {"label": "ARM Q4 FY2026 annual results press release", "url": "https://newsroom.arm.com/news/arm-q4-fye26-results", "tier": "company_filed"},
+    {"label": "ARM Q4 FY2026 earnings call highlights", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"},
+    {"label": "Royalty rate by architecture - EE Times Q1 FY2026", "url": "https://www.eetimes.com/armv9-and-css-royalties-drive-growth-in-1bn-arm-q1-earnings/", "tier": "company_filed"},
+    {"label": "RISC-V 25% market penetration - Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/semiconductors/risc-v-set-to-announce-25-percent-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint", "tier": "research_firm"},
+    {"label": "RISC-V market by revenue $4.85B by 2032 - MarketsAndMarkets", "url": "https://www.marketsandmarkets.com/PressReleases/risc-v.asp", "tier": "research_firm"},
+    {"label": "Qualcomm vs ARM litigation outcome", "url": "https://finance.yahoo.com/news/qualcomm-achieves-complete-victory-over-011200178.html", "tier": "company_filed"},
+    {"label": "ARM AGI CPU $15B/$25B FY2031 investor slides", "url": "https://www.investing.com/news/company-news/arm-q4-fy2026-slides-15b-chip-revenue-target-9-eps-by-2031-93CH-4665934", "tier": "company_filed"},
+    {"label": "ARM China 19-22% revenue, RISC-V risk - DigiTimes", "url": "https://www.digitimes.com/news/a20260213PD208/arm-risc-v-competition-chips-market.html", "tier": "research_firm"},
+    {"label": "SoftBank 87% ownership", "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261921505-arm-300b-softbank-87-stake-wins-cpu-fuels-wall-street-tradingkey", "tier": "research_firm"},
+    {"label": "Data center ARM share 50% hyperscaler - DCD", "url": "https://www.datacenterdynamics.com/en/news/arm-posts-recording-breaking-revenue-for-full-year-and-q4-26-with-its-share-of-hyperscaler-cpu-compute-hitting-50/", "tier": "research_firm"}
+  ]
+}

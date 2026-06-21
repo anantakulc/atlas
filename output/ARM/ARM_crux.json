@@ -1,0 +1,143 @@
+{
+  "ticker": "ARM",
+  "as_of": "2026-06-20",
+  "analyst": "Theia v3.0",
+
+  "crux_statement": "The call on ARM turns on how fast and how far the royalty rate per chip rises as licensees migrate from v8 to v9 to CSS, and whether the data center/AI segment grows large enough (and at high enough rates) to sustain double-digit royalty revenue growth past FY2028 -- because at 143x NTM P/E, the stock prices in that continuation, not just the current trajectory.",
+
+  "crux_variable": "Effective royalty revenue per chip (blended), driven by architecture mix shift (v8 to v9 to CSS) and end-market mix shift (smartphone to data center)",
+
+  "crux_identity": "Royalty Revenue = (Total Chips Shipped x ARM IP) x Blended Rate Per Chip, where Blended Rate = f(% v8 chips, % v9 chips, % CSS chips) x f(% smartphone, % data center, % IoT/auto). The variable is not one number but two interacting mix levers: RATE and END MARKET. The bull case needs BOTH levers moving favorably (rate rising as CSS adoption accelerates AND data center growing at 2x+). The bear case needs either lever to stall.",
+
+  "why_this_is_the_crux": {
+    "argument": "ARM's unit volume is not the crux. ARM already has near-100% smartphone unit share; it does not need to win new customers -- it needs to earn more per existing chip. The rate story is: v8 chips earn 2.5-3.5% of chip ASP; v9 chips earn ~5% (2x v8); CSS v2 earns >10% (4x v8). In FY2026, v9 was 31% of royalty revenue (up from 20% a year earlier). CSS is at early innings. Data center (highest-ASP chips, highest royalty rates, doubling YoY) was perhaps 15% of royalty revenue in FY2026 but growing 2x YoY. The arithmetic is: if v9+CSS rises from 31% to 60% of royalty revenue by FY2030, and data center grows from 15% to 30% of the royalty base, the blended rate per chip approximately doubles again from current levels -- generating $5B+ in royalty revenue on roughly flat-to-modest unit growth. This is achievable based on current trajectories. The contest is whether this double-rate regime can be sustained past the initial v9 ramp (i.e., does v10/next-gen CSS continue the step, or does the rate plateau as the v9 transition completes?), and whether RISC-V and the Qualcomm legal precedent cap the upside.",
+    "second_order_variables": {
+      "AGI_CPU_chip_revenue": "Real but second-order for the next 2-3 years (zero FY2026 revenue, supply-constrained). If it scales to $15B by FY2031 as guided, it becomes the primary crux variable post-FY2028. For the FY2026-FY2029 valuation window, it is an option, not a lever.",
+      "unit_volume": "Second-order. Smartphone units are flat. Data center units are growing fast but from a small base. IoT units are large but low-ASP. Volume does not move the needle on valuation the way rate does.",
+      "licensing_revenue": "Important but derivative. License bookings predict royalty revenue 2-4 years out. ACV growth of 22% YoY in FY2026 is a strong leading indicator of royalty growth into FY2028-FY2029. It confirms the base case but does not change the central crux.",
+      "RISC-V": "Third lever -- a rate/volume cap, not a demand driver. Capped upside in IoT (RISC-V already winning at low-ASP), potential China revenue risk (19-22% of revenue). Does not change the crux direction but caps the ceiling in the bear case."
+    }
+  },
+
+  "crux_decomposition": {
+    "identity": "Royalty Rev = Units_shipped x Blended_Rate_per_chip",
+    "driver_1_units": {
+      "description": "ARM-based chips shipped per year",
+      "current_estimate": "~30 billion chips/year (ARM company disclosure, Q4 FY2026 investor presentation)",
+      "trajectory": "Low single digit unit growth in smartphone; high double-digit in data center (from small base); IoT contested by RISC-V. Net total unit growth: ~5-8% per year.",
+      "source": "ARM company disclosures; unit growth derived from smartphone market data and hyperscaler capex commentary",
+      "tier": "company_filed"
+    },
+    "driver_2_rate": {
+      "description": "Blended average royalty per chip as a % of chip ASP",
+      "v8_rate_pct_asp": "2.5-3.5%",
+      "v9_rate_pct_asp": "~5% (2x v8, CEO Haas Q1 FY2026 earnings)",
+      "css_rate_pct_asp": ">10% (company disclosure, Q1 FY2026)",
+      "v9_share_of_royalty_rev_fy2026_q4": "31%",
+      "v9_share_fy2025_q4": "~20%",
+      "v9_trajectory": "Rising ~10-11 percentage points per year. If linear, v9+CSS reaches 55-65% of royalty revenue by FY2028.",
+      "data_center_royalty_growth": "More than doubled YoY in FY2026; expected to double again in FY2027 (CEO, Q4 FY2026 call)",
+      "source": "ARM Q1 FY2026 earnings (EE Times); ARM Q4 FY2026 earnings call transcript",
+      "tier": "company_filed"
+    },
+    "driver_3_ceiling": {
+      "description": "The physical/competitive ceiling on the royalty rate trajectory",
+      "rate_ceiling_pct_asp": "~10-15% (CSS v2 already >10%; incremental product tiers could push higher but subject to customer pushback)",
+      "share_ceiling_data_center": "ARM at ~50% of hyperscaler CUSTOM CPU compute. Total server CPU market (Intel + AMD + custom) is much larger. ARM's share of TOTAL server compute is ~25-30% -- still significant upside to custom silicon adoption.",
+      "risc_v_floor": "RISC-V is capturing new low-ASP IoT design wins. This constrains ARM's royalty base growth at the low end. The floor on overall royalty revenue growth is positive even with RISC-V, because IoT loss is more than offset by data center gains.",
+      "qualcomm_legal_risk_cap": "If ARM loses its appeal in the Nuvia case, ALA licensees could potentially pay legacy TLA rates on custom CPU designs, capping ARM's ability to charge higher CSS-equivalent rates to these buyers. Qualcomm is ARM's largest high-ASP payer. Financial impact hard to quantify but material.",
+      "source": "Tom's Hardware Qualcomm-ARM analysis; EE Times royalty rate data"
+    }
+  },
+
+  "crux_argued": {
+    "base": {
+      "label": "BASE -- honest most-likely",
+      "assumption": "v9 reaches 55% of royalty revenue by FY2028 (from 31% in Q4 FY2026), CSS grows from a small base to ~15% of royalty revenue. Data center royalties double in FY2027 as guided, then compound at 40-50% per year through FY2029 as Neoverse CSS deployments scale. Smartphone royalties grow at low-to-mid single digits (unit flat, rate mix improving). Blended royalty revenue grows ~25% per year in FY2027-FY2028, slowing to ~18% per year in FY2029-FY2030 as the v9 transition matures and data center growth normalizes. Total royalty revenue: ~$3.2B FY2027, ~$4.0B FY2028, ~$4.7B FY2029. License revenue grows ~20% per year (in line with FY2027 management guidance). AGI CPU chip revenue: minimal FY2027 (supply-constrained, <$0.3B), ramping to $1-2B by FY2029.",
+      "evidence": [
+        "v9 at 31% of royalty revenue in Q4 FY2026, up from 20% in Q4 FY2025 -- an 11 pp/year trajectory (ARM company disclosure)",
+        "Data center royalties doubling YoY in FY2026 and guided to double again in FY2027 (CEO Haas, Q4 FY2026 earnings call)",
+        "FY2027 guidance: royalty and license both ~+20% YoY (company guidance, Q4 FY2026 earnings)",
+        "ACV +22% YoY in FY2026 -- leading indicator of royalty growth 2-3 years out (ARM disclosure)",
+        "CSS royalty rate >10% of ASP vs v9 at ~5% -- CSS mix shift is the incremental upside beyond v9 alone",
+        "Three consecutive years of 20%+ total revenue growth (FY2024: +20.7%, FY2025: +24.0%, FY2026: +22.8%) -- the trajectory is established, not emerging"
+      ],
+      "implied_royalty_revenue_fy2029_b": 4.7,
+      "implied_total_revenue_fy2029_b": 8.5,
+      "confidence": "MEDIUM",
+      "confidence_note": "The v9 trajectory is contracted (v9 chips in production, royalties are a lagged recognition of ships already sold). The data center doubling is partially contracted (CSS deals signed = committed pipeline). The FY2029+ portion is EXTRAPOLATED from trend, not contracted. The main uncertainty is CSS adoption rate and whether data center growth sustains above 40% beyond FY2027.",
+      "demand_classification": "Near-term (FY2027): CONTRACTED -- v9 adoption rate and data center royalty doubling are confirmed by management guidance and existing CSS deal pipeline. FY2028-FY2029: EXTRAPOLATED from current v9/CSS trajectory. FY2030+: HOPED-FOR, depends on next-generation architecture step and AGI CPU scaling."
+    },
+    "bull": {
+      "label": "BULL -- credible higher reading",
+      "assumption": "CSS adoption accelerates beyond the base case: CSS v2 reaches 30% of royalty revenue by FY2028 (vs 15% base), driven by hyperscaler data center deals where ARM bundles the full compute platform. Data center royalties triple rather than double in FY2027 (faster Neoverse buildout for agentic AI inference). AGI CPU chip revenue reaches $3B+ by FY2029 as supply constraints ease. ARM also captures uplift from the Qualcomm appeal winning (ARM), restoring higher royalty rates on custom CPU designs across ALA licensees. Total royalty revenue: ~$3.5B FY2027, ~$5.0B FY2028, ~$6.5B FY2029.",
+      "evidence": [
+        "AGI CPU demand doubled to >$20B within 6 weeks of March 2026 launch -- demand signal is genuine (company disclosure, Q4 FY2026 earnings). If supply eases, revenue could accelerate faster than base.",
+        "Neoverse CSS data center royalties more than doubled in Q4 FY2026. If agentic AI (which CEO cites as '4x CPU core count per data center') drives faster buildout, the doubling rate could sustain longer.",
+        "AWS custom silicon running at >$20B/year growing triple-digit YoY (Q2 FY2026 Futurum). A fraction of this paying Neoverse CSS rates (>10% of chip ASP) implies a larger royalty pool than the base assumes.",
+        "CSS licensing deal bookings are the leading indicator. Licensing revenue grew 25% in FY2026 and Q4 licensing hit a record $819M -- if these deals convert to CSS royalties at 10%+ rates in FY2027-FY2028, royalty revenue growth accelerates."
+      ],
+      "implied_royalty_revenue_fy2029_b": 6.5,
+      "implied_total_revenue_fy2029_b": 11.5,
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_note": "The demand signal is genuine (AGI CPU demand, ACV growth). The conversion to revenue assumes supply constraints ease faster than management guided and CSS deals convert at the high end of the rate range. This is plausible but not yet contracted."
+    },
+    "bear": {
+      "label": "BEAR -- credible lower reading",
+      "assumption": "The v9 transition proves less rate-accretive than expected in the key smartphone segment, as Qualcomm's legal victory limits ARM's ability to charge CSS-level rates to its largest ALA licensees for custom CPU designs. RISC-V captures 15%+ of new IoT/embedded design wins by FY2028, eroding the volume base. China revenue (22% of total) comes under sustained RISC-V substitution pressure as T-Head (Alibaba) scales its XUANTIE platform, reducing ARM China revenue by 20-30% over FY2027-FY2029. Data center royalties do double in FY2027 (as guided) but then plateau at ~$800M/year as the custom silicon buildout slows and ARM faces competition from its own AGI CPU in the data center royalty pool. Total royalty revenue: ~$3.0B FY2027, ~$3.4B FY2028, ~$3.7B FY2029.",
+      "evidence": [
+        "Qualcomm won the Nuvia case (Delaware, October 2025). If ARM's appeal fails, ALA licensees can design custom CPU cores at legacy TLA rates -- a named mechanism that caps royalty rate upside for ARM's highest-ASP customers (Tom's Hardware analysis, October 2025).",
+        "RISC-V at 25% unit penetration in embedded/IoT by January 2026, ahead of Omdia's prior 2030 forecast. Low-ASP IoT is where ARM's per-chip rates are lowest, but it is a large unit volume base. If RISC-V accelerates, ARM's unit volume declines even as smartphone is flat.",
+        "China revenue 19-22% of total, with Alibaba T-Head building RISC-V infrastructure and Chinese government directing funding away from Western proprietary architectures. DigiTimes (February 2026) documents the accelerating RISC-V competition in China.",
+        "ARM's AGI CPU is a new business that competes with ARM's own licensees in the data center. This risks souring licensee relationships and causing some hyperscalers to slow their CSS licensing in favor of waiting for an ARM-supplied chip. The AGI CPU cannibalizes some CSS licensing upside."
+      ],
+      "implied_royalty_revenue_fy2029_b": 3.7,
+      "implied_total_revenue_fy2029_b": 6.5,
+      "evidence_quality": "MECHANISM",
+      "evidence_quality_note": "The Qualcomm legal risk is OBSERVABLE-AND-NEAR (court ruling already happened; appeal pending). The RISC-V risk is MECHANISM (documented share gain in IoT, clear trajectory in China). The AGI CPU cannibalization is a logical mechanism but not yet observable. None of these are tail risks -- they are plausible base-case outcomes that the market is discounting."
+    },
+    "ceiling": "ARM's royalty revenue ceiling is approximately $8-10B by FY2030 in the IP-licensing segment only, bounded by: (a) the total CPU market where ARM earns royalties being ~$100B at chip ASP level, and ARM's average rate being 5-10% implies $5-10B in royalties; (b) CSS rates of >10% cannot indefinitely rise without customer pushback; (c) RISC-V and Qualcomm legal risk cap the effective rate on a material portion of the base. The AGI CPU chip segment has a separate ceiling (data center CPU market, $120B+ by 2030) and adds revenue on top of the IP ceiling.",
+    "floor": "ARM's royalty revenue floor is approximately $2.5-3.0B even in a bear scenario, because (a) smartphone ARM dominance is near-absolute and not under credible threat from RISC-V in the next 3 years; (b) automotive royalties are contracted through multi-year design cycles; (c) licensing revenue provides a buffer (ACV $22% YoY growth gives visibility 1-2 years out). Below this floor requires a major ARM licensee defection (e.g., Apple switching away) which has no near-term evidence."
+  },
+
+  "key_debates": [
+    {
+      "debate": "v9-to-CSS rate migration: how fast and how much?",
+      "bull_read": "v9 at 31% of royalty revenue in Q4 FY2026 and rising ~10pp per year; CSS is layered on top at 2x v9 rates. By FY2028, v9+CSS could be 60%+ of royalty revenue. The blended effective rate per chip doubles from today's levels. Evidence: ACV up 22% YoY in FY2026 (licensing pipeline); Q4 FY2026 licensing hit record $819M (CSS deal bookings).",
+      "bear_read": "The Qualcomm legal precedent could cap the rate ARM can charge ALA licensees for custom designs. If other large ALA holders (Qualcomm, potentially others) invoke the same argument, ARM's rate upside is limited to TLA licensees only. Also: CSS adoption requires customers to accept a deeper lock-in (paying 10%+ ASP vs 2.5%); some customers may slow CSS adoption to preserve flexibility.",
+      "what_to_watch": "Qualcomm appeal outcome (2026-2027). ACV growth rate each quarter (the leading indicator). v9 % of royalty revenue in each earnings call (reported in investor slides). CSS deal signings in license revenue growth.",
+      "financial_magnitude": "Rate scenario swing is large: if CSS reaches 20% of royalty revenue at 10%+ rates vs the v9 base of 5%, incremental royalty revenue is ~$500M+ annually by FY2028. At a 40x exit multiple on incremental IP revenue, this is worth ~$20B in enterprise value, or ~$19/share on 1.064B shares."
+    },
+    {
+      "debate": "Data center royalty trajectory: sustained 2x or one-time burst?",
+      "bull_read": "CEO guided data center royalties to 'double year-on-year again' in FY2027 (Q4 FY2026 call). Hyperscaler custom CPU buildout (Graviton, Cobalt, Axion, Vera) is structurally multi-year. Agentic AI ('4x CPU core count per data center') is a genuine demand driver, not a cyclical one. AWS custom silicon already at >$20B/year and growing triple-digit. Even if ARM captures 1-2% of that in royalties, it's $200-400M from AWS alone.",
+      "bear_read": "Data center royalties doubling from a small base is easy; sustaining double-digit growth from a larger base is harder. AMD EPYC and Intel Xeon remain dominant in general-purpose server compute (the majority of server spending). ARM's 50% hyperscaler custom CPU share is a niche within data center, not a majority of server spending. If AI capex cools, the data center royalty growth slows sharply.",
+      "what_to_watch": "Data center royalty growth rate each quarter (ARM discloses this qualitatively; no exact figure). Hyperscaler capex guidance each quarter. Neoverse design wins announced in press releases.",
+      "financial_magnitude": "Data center royalties at ~$400-500M in FY2026 (Theia estimate based on 'doubling from the prior year' and 15% of $2.6B). Doubling to $800-1000M in FY2027, then sustaining 40-50% growth to $1.2-1.5B in FY2028: this segment alone adds $700M+ in annual royalty revenue by FY2028 vs today. At a 45x exit multiple, this is worth ~$31B or ~$29/share."
+    },
+    {
+      "debate": "RISC-V and China risk: contained or structural?",
+      "bull_read": "RISC-V's 25% unit penetration is concentrated in the lowest-ASP, lowest-royalty segments (IoT microcontrollers). By revenue, RISC-V is ~10% of the semiconductor market. ARM's loss is in segments where it was earning <$0.05 per chip. China risk is real but partially contained by the ARM China JV structure (Arm Technology (China) Co.), which has independent governance and Chinese government buy-in. Large Chinese companies (Alibaba, Huawei, Baidu) use ARM for their premium AI chips where RISC-V toolchains are not yet competitive.",
+      "bear_read": "RISC-V in China is not just about low-ASP chips. Alibaba T-Head is building RISC-V for AI inference (XuanTie C950 RISC-V CPU for data center). Chinese government funding is specifically directed at reducing ARM dependency. If China (19-22% of ARM revenue) experiences a 25% revenue decline, that is ~$300M+ of annual revenue loss. ARM China's JV structure creates governance opacity; ARM has limited control if the JV decides to prioritize RISC-V partnerships.",
+      "what_to_watch": "ARM China revenue as disclosed (geographic segment). Chinese RISC-V design wins announced by Alibaba T-Head, Huawei HiSilicon, and StarFive. Any ARM China JV governance changes.",
+      "financial_magnitude": "China is ~$1.1B revenue (22% of $4.92B). A sustained 20% erosion is ~$220M/year. At a 45x exit multiple, that is ~$10B of enterprise value destruction or ~$9/share."
+    },
+    {
+      "debate": "AGI CPU chip business: business model transformer or licensee relationship risk?",
+      "bull_read": "ARM's AGI CPU opened with >$20B customer demand in 6 weeks. Management confirmed >$2B in FY2027-FY2028 customer demand at launch. The $15B chip revenue target by FY2031 is achievable if supply scales. Meta co-developing, OpenAI, Cloudflare, SAP as named initial customers. ARM retains its IP revenue AND captures manufacturing margin -- total value captured per chip jumps from ~5-10% (royalty on a partner's chip) to potentially 40-60% (chip maker margin on its own chip).",
+      "bear_read": "ARM selling chips puts it in direct competition with its own licensees (Qualcomm, MediaTek, Samsung). Hyperscalers who were paying ARM CSS rates for Neoverse may instead buy ARM's AGI CPU directly (substitution), reducing royalty revenue per unit. The chip business carries semiconductor supply-chain risk (TSMC dependency, memory costs) that ARM has never managed. Gross margins will be much lower than the 97.5% IP business. If chip sales grow to $5B but royalty displacement reduces IP revenue by $1B, the net gain is smaller than it appears. CEO Haas joining SoftBank Group International role (April 2026) raises the question of governance focus.",
+      "what_to_watch": "First revenue recognition from AGI CPU (guided Q4 FY2027). Royalty revenue trend at ARM licensees who are also AGI CPU customers. Gross margin disclosure for the chip segment when it appears.",
+      "financial_magnitude": "If AGI CPU scales to $5B by FY2030 at 40% gross margin, it adds $2B in gross profit. Versus the IP business at 97.5% margin, this is less value-accretive per revenue dollar. But the total revenue opportunity ($15B chip + $10B IP = $25B) is large enough that even at lower IP-equivalent margins, the value created is material."
+    }
+  ],
+
+  "sources": [
+    {"label": "ARM Q4 FY2026 earnings call - v9 31%, data center doubling, guidance", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"},
+    {"label": "Royalty rates v8/v9/CSS - CEO Haas Q1 FY2026", "url": "https://www.eetimes.com/armv9-and-css-royalties-drive-growth-in-1bn-arm-q1-earnings/", "tier": "company_filed"},
+    {"label": "Qualcomm vs ARM final judgment and implications", "url": "https://www.tomshardware.com/pc-components/cpus/qualcomms-big-win-over-arm-could-reverberate-throughout-the-industry-ala-licensees-could-potentially-develop-custom-designs-without-renegotiating-terms", "tier": "research_firm"},
+    {"label": "RISC-V 25% penetration, IoT focus", "url": "https://www.tomshardware.com/tech-industry/semiconductors/risc-v-set-to-announce-25-percent-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint", "tier": "research_firm"},
+    {"label": "AGI CPU demand doubling", "url": "https://www.cnbc.com/2026/03/25/arm-stock-chip-revenue-agi-cpu.html", "tier": "company_filed"},
+    {"label": "ARM $15B/$25B FY2031 targets", "url": "https://www.investing.com/news/company-news/arm-q4-fy2026-slides-15b-chip-revenue-target-9-eps-by-2031-93CH-4665934", "tier": "company_filed"},
+    {"label": "China RISC-V risk, ARM competition", "url": "https://www.digitimes.com/news/a20260213PD208/arm-risc-v-competition-chips-market.html", "tier": "research_firm"}
+  ]
+}

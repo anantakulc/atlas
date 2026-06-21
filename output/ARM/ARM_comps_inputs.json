@@ -1,0 +1,45 @@
+{
+  "ticker": "ARM",
+  "currency": "USD",
+  "current_price": 439.46,
+  "shares_outstanding_b": 1.064,
+  "net_debt_b": -2.294,
+  "fundamental_discount_rate": 0.125,
+  "terminal_growth": 0.05,
+  "horizon_years": 10,
+
+  "anchor": {
+    "type": "P/E",
+    "metric_label": "NTM non-GAAP EPS",
+    "metric_value": 3.07,
+    "fcf_conversion": 0.75,
+    "roic": 0.30
+  },
+
+  "street": {
+    "target_mean": 275.0,
+    "target_high": 500.0,
+    "target_low": 125.0,
+    "n_analysts": 38,
+    "rating": "buy",
+    "thesis": "ARM is the dominant ISA licensor for mobile and AI silicon; royalty rate uplift from v9/CSS migration and data center growth drive sustained 20%+ revenue growth through the decade"
+  },
+
+  "history": {
+    "anchor_cagr_5y": 0.25,
+    "note": "Non-GAAP EPS CAGR approximated from revenue/margin improvement since FY2024 IPO; revenue CAGR FY2023-FY2026 was 22.5% p.a."
+  },
+
+  "peers": [
+    {"ticker": "QCOM (QTL division)", "multiple": 12.0, "note": "Closest royalty-model comp; QTL earns ~50% EBIT margin on patent royalties — ARM's closest structural peer, but QTL is mature and ARM is in a rate-upgrade cycle"},
+    {"ticker": "CDNS",               "multiple": 45.0, "note": "IP/EDA peer; 30%+ FCF margins but growing at 15% not 25%; ARM deserves premium"},
+    {"ticker": "SNPS",               "multiple": 40.0, "note": "IP/EDA peer; similar quality but slower growth trajectory"},
+    {"ticker": "NVDA",               "multiple": 35.0, "note": "AI silicon reference point at mature scale; ARM at its royalty build-out is earlier stage"}
+  ],
+
+  "contested_lever": "Royalty rate per chip (blended): v9/CSS migration uplifts ARM's effective rate by 2x-4x; RISC-V displacement and Qualcomm legal precedent are the caps. Whether the blended rate doubles from FY2026 to FY2030 (base) or only rises 50% (bear) is the crux.",
+
+  "justified_g_grid": [0.15, 0.18, 0.20, 0.22, 0.25, 0.28, 0.30],
+  "roic_grid": [0.20, 0.30, 0.50, 0.80],
+  "duality_g_grid": [0.04, 0.06, 0.08]
+}

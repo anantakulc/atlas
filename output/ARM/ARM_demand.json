@@ -1,0 +1,220 @@
+{
+  "ticker": "ARM",
+  "as_of": "2026-06-20",
+  "analyst": "Theia v3.0",
+
+  "demand_model_note": "ARM's revenue is an IP royalty/license business, not a unit-shipment demand curve. The correct model is a rate-times-volume identity applied to two distinct revenue streams: Royalties (lagged per-chip fees) and License (upfront/recurring IP access fees). The AGI CPU chip business is treated separately as a nascent segment with binary near-term revenue (supply-constrained) and a long-term ramp. Revenue does NOT follow a smooth demand curve; it follows a contract-and-conversion cycle where license bookings (ACV) lead royalty revenue by 2-4 years. The demand model below is an IDENTITY in sourced drivers, not a hand-drawn fade.",
+
+  "revenue_identity": {
+    "royalty_segment": "Royalty_Rev = ARM_Chips_Shipped (units) x Blended_Royalty_Rate_per_chip, where Blended_Rate = weighted_avg(v8_rate x v8_share + v9_rate x v9_share + CSS_rate x CSS_share) x End_Market_weight_adjustment",
+    "license_segment": "License_Rev = ACV x Revenue_Recognition_Rate, where ACV is the annual contract value of total IP licensing agreements signed and in force. ACV grew 22% YoY in FY2026. License revenue grows as a function of deal signings + CSS bundling.",
+    "agi_cpu_segment": "AGI_CPU_Rev = Units_shipped x ASP_per_chip, where units are supply-constrained in FY2027 and demand-driven thereafter. Gross margin ~40-50% vs IP segments ~97%."
+  },
+
+  "revenue_growth_history": [
+    {
+      "fy": "FY2023",
+      "revenue_b": 2.679,
+      "royalty_b": null,
+      "license_b": null,
+      "yoy_pct": null,
+      "note": "Pre-IPO year. No public segment disclosure in bundle."
+    },
+    {
+      "fy": "FY2024",
+      "revenue_b": 3.233,
+      "royalty_b": 1.684,
+      "license_b": 1.549,
+      "yoy_pct": 20.7,
+      "note": "First year post-IPO. v8 dominant. Data center royalties small."
+    },
+    {
+      "fy": "FY2025",
+      "revenue_b": 4.007,
+      "royalty_b": 2.157,
+      "license_b": 1.850,
+      "yoy_pct": 24.0,
+      "note": "v9 ramping. Royalties exceeded $2B for first time. Data center emerging."
+    },
+    {
+      "fy": "FY2026",
+      "revenue_b": 4.920,
+      "royalty_b": 2.613,
+      "license_b": 2.307,
+      "yoy_pct": 22.8,
+      "note": "v9 at 31% of royalty rev in Q4. Data center royalties more than doubled YoY in Q4. ACV +22%. Three consecutive years of 20%+ growth."
+    }
+  ],
+
+  "driver_inputs": {
+    "chips_shipped_bn_per_year": {
+      "fy2026_actual": "~30 (company disclosure)",
+      "fy2027_base": "~32",
+      "fy2028_base": "~34",
+      "fy2029_base": "~36",
+      "growth_rate_note": "Low single-digit unit growth: smartphone flat to -1%; data center units +30-40%; IoT contested by RISC-V. Net ~5-7% unit growth.",
+      "source": "ARM company disclosures; Theia estimate for segment decomposition"
+    },
+    "v9_share_of_royalty_revenue_pct": {
+      "fy2026_q4_actual": 31,
+      "fy2026_full_year_est": 27,
+      "fy2027_base": 40,
+      "fy2028_base": 52,
+      "fy2029_base": 62,
+      "trajectory_note": "Rising ~10-11 pp per year based on FY2025-FY2026 trend (20% in Q4 FY2025 to 31% in Q4 FY2026). Slows as v8 base shrinks and v9 becomes the norm.",
+      "source": "ARM Q4 FY2026 earnings call; ARM Q4 FY2025 earnings"
+    },
+    "css_share_of_royalty_revenue_pct": {
+      "fy2026_est": 5,
+      "fy2027_base": 10,
+      "fy2028_base": 18,
+      "fy2029_base": 25,
+      "trajectory_note": "CSS is at early innings. License bookings are the leading indicator. Q4 FY2026 licensing hit record $819M; many of these deals convert to CSS royalties in FY2028-FY2029.",
+      "source": "Theia estimate; CSS royalty rate disclosed at >10% of ASP (ARM Q1 FY2026)"
+    },
+    "data_center_share_of_royalty_revenue_pct": {
+      "fy2026_est": 15,
+      "fy2027_base": 22,
+      "fy2028_base": 30,
+      "fy2029_base": 36,
+      "trajectory_note": "Data center royalties more than doubled in FY2026 and guided to double again in FY2027. From an estimated ~$390M base in FY2026, doubling implies ~$780M in FY2027. Growth decelerates to 40-50% in FY2028-FY2029 as base grows.",
+      "source": "ARM Q4 FY2026 earnings call -- CEO guided 'data center royalties to double year-on-year again' in FY2027"
+    }
+  },
+
+  "royalty_revenue_paths": {
+    "methodology": "Royalty revenue = prior year royalty x (1 + implied_growth). Implied growth derived from: (a) unit growth ~5-7%; (b) mix shift from v8 to v9 adds ~4-5% to blended rate per chip per year; (c) CSS shift adds incremental rate; (d) data center mix shift adds incremental rate because data center chips have higher ASPs and higher royalty rates. Each driver is sourced above.",
+    "implied_blended_rate_growth_note": "In FY2026, royalties grew 21% on ~5-7% unit growth. The residual ~14-16% is the blended rate improvement from mix shift. This is consistent with v9 moving from 20% to 31% of royalty revenue (+10pp at 2x the rate) and data center more than doubling. The base case assumes this rate-improvement effect continues at ~12-15% per year in FY2027, then slows to ~10% as the v9 ramp matures.",
+
+    "base": {
+      "label": "BASE -- honest most-likely",
+      "basis": "v9 migration continues at current pace; data center doubles in FY2027 as guided then sustains 40-50% growth; CSS ramps from FY2028; RISC-V captures low-ASP IoT but does not affect smartphone or data center meaningfully; Qualcomm appeal does not materially alter the royalty rate structure for TLA licensees; AGI CPU revenue ramps slowly (supply constrained).",
+      "royalty_revenue": [
+        {"fy": "FY2027", "royalty_b": 3.20, "license_b": 2.77, "agi_cpu_b": 0.10, "total_b": 6.07, "growth_pct": 23.4, "key_driver": "v9 to 40% of royalty rev; data center royalties doubling as guided; ACV +22% converts to license revenue"},
+        {"fy": "FY2028", "royalty_b": 4.00, "license_b": 3.22, "agi_cpu_b": 0.80, "total_b": 8.02, "growth_pct": 32.2, "key_driver": "v9+CSS at 70% of royalty rev; data center sustains 50% growth; AGI CPU first meaningful revenue"},
+        {"fy": "FY2029", "royalty_b": 4.70, "license_b": 3.70, "agi_cpu_b": 2.00, "total_b": 10.40, "growth_pct": 29.7, "key_driver": "CSS at 25% of royalty rev; data center now 36% of royalty; AGI CPU scaling"},
+        {"fy": "FY2030 (normalization year)", "royalty_b": 5.30, "license_b": 4.00, "agi_cpu_b": 4.00, "total_b": 13.30, "growth_pct": 27.9, "key_driver": "IP business approaching maturity at ~20% growth; AGI CPU scaling toward $15B by FY2031"}
+      ],
+      "ceiling_check": "Base FY2030 implies $5.3B royalty revenue. ARM's royalty ceiling is $8-10B (total CPU ASP market ~$100B x 5-10% blended rate). $5.3B is ~53-67% of the ceiling -- achievable without requiring ARM to capture an impossible share of its addressable market. AGI CPU of $4B in FY2030 is 4% of the $100B+ CPU market -- consistent with supply-constrained ramp toward the $15B FY2031 target."
+    },
+    "bull": {
+      "label": "BULL -- credible higher reading",
+      "basis": "CSS adoption accelerates (hyperscaler deals convert faster); data center royalties triple in FY2027 rather than double (faster agentic AI buildout); AGI CPU supply constraints ease by mid-FY2027, contributing $1.5B in FY2027 vs $0.1B base; Qualcomm appeal irrelevant as ARM wins (restoring higher rate authority).",
+      "royalty_revenue": [
+        {"fy": "FY2027", "royalty_b": 3.60, "license_b": 3.00, "agi_cpu_b": 1.50, "total_b": 8.10, "growth_pct": 64.6, "key_driver": "Data center royalties triple; AGI CPU ramps faster than supply guidance"},
+        {"fy": "FY2028", "royalty_b": 5.00, "license_b": 3.60, "agi_cpu_b": 4.00, "total_b": 12.60, "growth_pct": 55.6, "key_driver": "CSS at 30% of royalty rev; AGI CPU at $4B"},
+        {"fy": "FY2029", "royalty_b": 6.50, "license_b": 4.20, "agi_cpu_b": 7.00, "total_b": 17.70, "growth_pct": 40.5, "key_driver": "Full CSS + data center + AGI CPU scale"},
+        {"fy": "FY2030 (normalization year)", "royalty_b": 7.50, "license_b": 4.60, "agi_cpu_b": 10.00, "total_b": 22.10, "growth_pct": 24.9, "key_driver": "Approaching $25B management target"}
+      ],
+      "ceiling_check": "Bull FY2030 royalty of $7.5B is 75-94% of the $8-10B IP royalty ceiling. This is achievable but stretches the assumption (requires CSS to capture most of the addressable IP market). AGI CPU of $10B in FY2030 implies 10% of the $100B CPU market -- aggressive but not impossible given $20B+ demand pipeline. The bull scenario implies management's $25B FY2031 target is effectively hit one year early."
+    },
+    "bear": {
+      "label": "BEAR -- credible lower reading",
+      "basis": "Qualcomm appeal outcome caps ARM's royalty rate on ALA licensees' custom designs; China revenue declines 20-25% due to RISC-V substitution; IoT royalty base erodes faster; AGI CPU faces licensee pushback and supply delays extending to FY2028; data center royalties double in FY2027 (as guided) but then plateau as AI capex cycle pauses.",
+      "royalty_revenue": [
+        {"fy": "FY2027", "royalty_b": 3.00, "license_b": 2.60, "agi_cpu_b": 0.05, "total_b": 5.65, "growth_pct": 14.8, "key_driver": "Data center doubles as guided; China -10%; AGI CPU immaterial FY2027"},
+        {"fy": "FY2028", "royalty_b": 3.40, "license_b": 2.90, "agi_cpu_b": 0.30, "total_b": 6.60, "growth_pct": 16.8, "key_driver": "Qualcomm precedent caps rate on ALA base; China -15% YoY; data center plateaus"},
+        {"fy": "FY2029", "royalty_b": 3.70, "license_b": 3.10, "agi_cpu_b": 0.80, "total_b": 7.60, "growth_pct": 15.2, "key_driver": "IP growth slows to mid-teens; AGI CPU delayed but starting"},
+        {"fy": "FY2030 (normalization year)", "royalty_b": 4.00, "license_b": 3.30, "agi_cpu_b": 2.50, "total_b": 9.80, "growth_pct": 28.9, "key_driver": "IP growth structurally impaired; AGI CPU saves some upside"}
+      ],
+      "ceiling_check": "Bear FY2030 royalty of $4.0B is well within ceiling ($8-10B). This path is internally consistent but requires three simultaneous headwinds: Qualcomm legal loss, China substitution, and data center growth slowdown. These are correlated (if China slows, the headline growth rate falls sharply). The bear case is not a tail -- it is the outcome if two of the three named mechanisms materialize."
+    }
+  },
+
+  "growth_drivers": [
+    {
+      "driver": "Architecture mix shift: v8 to v9 to CSS",
+      "magnitude": "The single largest identified lever. v9 at ~2x v8 rate; CSS at ~4x v8 rate. v9 was 31% of royalty revenue in Q4 FY2026, rising ~10pp/year. If this pace holds, v9+CSS reaches ~65% of royalty revenue by FY2028. On a $2.6B base, this mix shift alone implies ~$1.2B in incremental annual royalty revenue by FY2028 vs a world where the mix stayed at v8.",
+      "evidence": "ARM CEO Rene Haas: 'v8 was of the order of 2.5-3.5% of ASP; v9 takes that to 5% of ASP; CSS roughly 10% of ASP' (Q1 FY2026 earnings, August 2025). v9 share trajectory: 15% in Q3 FY2025, 20% in Q4 FY2025, 31% in Q4 FY2026.",
+      "evidence_source_url": "https://www.eetimes.com/armv9-and-css-royalties-drive-growth-in-1bn-arm-q1-earnings/",
+      "horizon": "near-mid (FY2027-FY2028 for v9; FY2028-FY2030 for CSS)",
+      "contracted_vs_extrapolated": "v9 chips already in production -- royalties are lagged recognition. This is CONTRACTED for the chips already shipped (current-quarter royalties). v9 growth beyond FY2027 is EXTRAPOLATED from current adoption rates."
+    },
+    {
+      "driver": "Data center / AI royalty ramp",
+      "magnitude": "Data center royalties more than doubled YoY in FY2026 (company disclosure). Guided to 'double again' in FY2027. Estimated at ~$390M in FY2026, growing to ~$780M in FY2027. By FY2029 at continued high growth, potentially $1.5-2B.",
+      "evidence": "CEO Rene Haas Q4 FY2026 earnings call: 'royalties associated with customers building chips based on Neoverse have doubled year-on-year, and I expect they're going to double year-on-year again in the upcoming year.' AWS custom silicon >$20B annually, growing triple-digit. Microsoft Cobalt 200 (ARM CSS V3) deployed across Azure regions.",
+      "evidence_source_url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html",
+      "horizon": "near (FY2027 is guided); mid (FY2028-FY2029 is extrapolated)",
+      "contracted_vs_extrapolated": "FY2027 doubling is partially CONTRACTED (CSS deals signed, Neoverse deployments underway). FY2028+ is EXTRAPOLATED based on hyperscaler capex trajectory and agentic AI CPU demand."
+    },
+    {
+      "driver": "Total Access / ACV licensing growth",
+      "magnitude": "ACV grew 22% YoY in FY2026. License revenue grew 25% in FY2026. License bookings lead royalty revenue by 2-4 years, making this a reliable forward indicator. Q4 FY2026 license revenue hit a record $819M in a single quarter, implying a $3.3B annualized run rate.",
+      "evidence": "ARM Q4 FY2026 earnings: 'ACV grew 22% year-over-year.' Q4 FY2026 licensing hit record $819M, up 29% YoY. CSS deals convert to higher downstream royalty rates.",
+      "evidence_source_url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html",
+      "horizon": "near (FY2027 license visibility high); mid (royalty conversion FY2028-FY2029)",
+      "contracted_vs_extrapolated": "License revenue backlog is partially disclosed as ACV. The 22% ACV growth is CONTRACTED (signed deals). Revenue recognition converts to P&L over contract term."
+    },
+    {
+      "driver": "AGI CPU chip revenue (emerging, long-dated)",
+      "magnitude": "Zero FY2026 revenue. Customer demand >$2B for FY2027-FY2028 (company disclosure). Management conservatively guided supply-constrained initial revenue with first production in Q4 FY2027. Analyst estimate: ~$90M before FY2027 (Tom's Hardware); $1-2B by FY2029 (base case). Management targets $15B by FY2031.",
+      "evidence": "ARM Q4 FY2026 earnings: 'More than $2 billion of customer demand across fiscal 2027 and fiscal 2028.' AGI CPU demand doubled within 6 weeks to '$20B+ in customer demand' (CEO, post-launch). Meta co-developer; OpenAI, Cloudflare, SAP named as initial customers.",
+      "evidence_source_url": "https://www.cnbc.com/2026/03/25/arm-stock-chip-revenue-agi-cpu.html",
+      "horizon": "mid-long (FY2028-FY2031 is the meaningful window)",
+      "contracted_vs_extrapolated": "$2B demand cited is a demand signal (letters of intent / customer conversations), not a signed order backlog in the IP-licensing sense. Revenue recognition requires chip delivery, which requires supply availability. Current status: HOPED-FOR to EXTRAPOLATED for FY2027-FY2028; too early to call CONTRACTED."
+    }
+  ],
+
+  "growth_risks": [
+    {
+      "risk": "Qualcomm legal precedent caps royalty rate on ALA licensees",
+      "mechanism": "If ARM loses the appeal of the Nuvia case, ALA licensees can design fully custom CPU cores at legacy TLA rates without renegotiating. This affects all ALA holders' custom designs, potentially capping the royalty rate upside on the highest-ASP smartphone and PC chips.",
+      "affected_revenue": "Qualcomm is ARM's largest single high-ASP royalty payer. Hard to quantify exactly but material to smartphone royalty growth.",
+      "probability": "MEDIUM (appeal pending; ARM has a weak legal track record against Qualcomm in this case)",
+      "sources": [{"url": "https://www.tomshardware.com/pc-components/cpus/qualcomms-big-win-over-arm-could-reverberate-throughout-the-industry-ala-licensees-could-potentially-develop-custom-designs-without-renegotiating-terms", "tier": "research_firm"}]
+    },
+    {
+      "risk": "China revenue erosion via RISC-V substitution",
+      "mechanism": "Chinese tech companies (Alibaba T-Head, potentially Huawei) invest in RISC-V architecture to reduce dependence on ARM (Western proprietary IP). Chinese government policy directs funding toward RISC-V. ARM China revenue (19-22% of total) at risk over a 3-5 year horizon.",
+      "affected_revenue": "$0.9-1.1B annual revenue from China (FY2026 estimate)",
+      "probability": "MEDIUM (already happening in low-end; premium segment at risk over 3-5 years)",
+      "sources": [{"url": "https://www.digitimes.com/news/a20260213PD208/arm-risc-v-competition-chips-market.html", "tier": "research_firm"}]
+    },
+    {
+      "risk": "AGI CPU cannibalizes licensee relationships and CSS royalties",
+      "mechanism": "ARM selling its own chips competes with its own licensees (Qualcomm, MediaTek). Hyperscalers may slow CSS licensing in favor of procuring ARM-designed chips. This substitution reduces royalty revenue while chip revenue grows -- net revenue gain is real but smaller than headline suggests, and gross margins dilute.",
+      "affected_revenue": "Potentially $500M+ in CSS royalty displacement by FY2029 in a negative scenario",
+      "probability": "LOW to MEDIUM (near-term; hyperscalers are currently using both)",
+      "sources": [{"url": "https://www.indexbox.io/blog/arm-holdings-unveils-first-in-house-chip-the-arm-agi-cpu/", "tier": "research_firm"}]
+    },
+    {
+      "risk": "AI capex cycle pause",
+      "mechanism": "Data center royalties are currently growing 2x YoY, driven by hyperscaler AI capex. If AI infrastructure spending slows (ROI concerns, regulatory headwinds, model efficiency improvements reducing compute demand), data center royalty growth slows sharply, removing the fastest-growing segment.",
+      "affected_revenue": "Data center royalties ~$390M FY2026, growing to ~$780M FY2027 on current guidance. A pause could hold this at $500-600M instead.",
+      "probability": "LOW to MEDIUM (near-term AI capex is supply-constrained and demand-driven; but 2-3 year cycles exist in data center)",
+      "sources": [{"url": "https://futurumgroup.com/insights/arm-q2-fy-2026-earnings-highlight-ai-driven-royalty-momentum/", "tier": "research_firm"}]
+    },
+    {
+      "risk": "SoftBank governance and float concentration",
+      "mechanism": "SoftBank owns ~87% of ARM (as of March 2025). CEO Rene Haas took on expanded SoftBank Group International CEO role in April 2026. SoftBank's financial condition (it has taken $8.5B margin loans against ARM shares) creates risk of forced selling. The 13% public float means any large block sale causes outsized price moves.",
+      "affected_revenue": "Does not affect revenue directly but creates a valuation overhang.",
+      "probability": "LOW (SoftBank has financial incentive to maintain ARM's value; no evidence of forced selling intent)",
+      "sources": [{"url": "https://www.tradingkey.com/analysis/stocks/us-stocks/261921505-arm-300b-softbank-87-stake-wins-cpu-fuels-wall-street-tradingkey", "tier": "research_firm"}]
+    }
+  ],
+
+  "normalization_year_for_valuation": "FY2030",
+  "normalization_year_rationale": "By FY2030, the v9/CSS transition will be largely complete (v9+CSS at 60-70% of royalty revenue); the initial AGI CPU chip ramp will be visible in the P&L; and data center royalty growth will have normalized from the current 2x/year trajectory to a more sustainable 20-30% rate. The IP segment will be a maturing, high-margin annuity; the AGI CPU segment will be the high-growth engine. Valuing these separately (SOTP) with exit multiples in FY2030 is the most efficient approach per CONTRACT §2.2.",
+
+  "bias_audit": {
+    "check": "Are all three demand paths (base, bull, bear) internally consistent and ceiling-checked?",
+    "base_ceiling_check": "PASS. Base FY2030 royalty $5.3B < $8-10B IP ceiling. AGI CPU $4B = 4% of $100B CPU market.",
+    "bull_ceiling_check": "PASS but tight. Bull FY2030 royalty $7.5B = 75-94% of IP ceiling. Achievable but requires near-full CSS adoption.",
+    "bear_ceiling_check": "PASS. Bear FY2030 royalty $4.0B well within ceiling.",
+    "lean_direction": "No systematic lean detected. Base case follows the management-guided FY2027 trajectory and then applies conservative growth deceleration (from 2x to 40-50% to 20-30%). Bull follows the $25B management target trajectory. Bear applies named mechanisms (Qualcomm, China, data center plateau) that are all currently observable.",
+    "stacked_bias_warning": "None. The base does not assume either the best or worst outcome on any single driver; it follows the contracted/extrapolated evidence."
+  },
+
+  "sources": [
+    {"label": "ARM FY2026 full-year revenue: royalty $2.613B, license $2.307B", "url": "https://newsroom.arm.com/news/arm-q4-fye26-results", "tier": "company_filed"},
+    {"label": "v9 31% of royalty revenue Q4 FY2026; data center doubling guided again", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"},
+    {"label": "v8 ~2.5-3.5% ASP, v9 ~5%, CSS ~10% - CEO Haas Q1 FY2026", "url": "https://www.eetimes.com/armv9-and-css-royalties-drive-growth-in-1bn-arm-q1-earnings/", "tier": "company_filed"},
+    {"label": "AGI CPU $2B demand, supply constraints, FY2027 production start", "url": "https://finance.biggo.com/news/US_ARM_2026-05-06", "tier": "company_filed"},
+    {"label": "$15B chip revenue / $25B total FY2031 targets", "url": "https://www.investing.com/news/company-news/arm-q4-fy2026-slides-15b-chip-revenue-target-9-eps-by-2031-93CH-4665934", "tier": "company_filed"},
+    {"label": "ACV +22% FY2026", "url": "https://finance.yahoo.com/markets/stocks/articles/arm-q4-earnings-call-highlights-225942093.html", "tier": "company_filed"},
+    {"label": "Qualcomm legal risk - rate cap mechanism", "url": "https://www.tomshardware.com/pc-components/cpus/qualcomms-big-win-over-arm-could-reverberate-throughout-the-industry-ala-licensees-could-potentially-develop-custom-designs-without-renegotiating-terms", "tier": "research_firm"},
+    {"label": "China RISC-V risk - DigiTimes February 2026", "url": "https://www.digitimes.com/news/a20260213PD208/arm-risc-v-competition-chips-market.html", "tier": "research_firm"},
+    {"label": "RISC-V 25% unit penetration, IoT concentrated", "url": "https://www.tomshardware.com/tech-industry/semiconductors/risc-v-set-to-announce-25-percent-market-penetration-open-standard-isa-is-ahead-of-schedule-securing-fast-growing-silicon-footprint", "tier": "research_firm"}
+  ]
+}
