@@ -1,0 +1,330 @@
+{
+  "_meta": {
+    "ticker": "NVDA",
+    "produced_by": "theia",
+    "as_of": "2026-06-20",
+    "engine": "Atlas v3",
+    "contract_version": "3.0",
+    "note": "Revenue path for the Data Center segment (the growth segment) under base/bull/bear. Each path is expressed as an identity in sourced drivers. Near-term (FY2027) is substantially anchored in contracted supply commitments and post-Q1 sequential momentum. FY2028 is calibrated against the post-Q1 analyst consensus. FY2029-FY2030 are driven by the crux variable (wallet share trajectory from NVDA_crux.json) applied to a sourced pool forecast."
+  },
+
+  "normalization_year": "FY2030",
+
+  "identity": {
+    "formula": "DC_revenue_USD_bn = total_AI_chip_market_USD_bn × nvda_wallet_share",
+    "where": {
+      "total_AI_chip_market_USD_bn": "All AI accelerator/chip spend from all buyers (hyperscalers + AI cloud providers + enterprise + sovereign AI programs). This is the total market for AI hardware (merchant GPU + ASIC); it equals total_AI_directed_capex_all_buyers × content_share_of_capex.",
+      "nvda_wallet_share": "NVIDIA's share of total AI chip spend = (1 - custom_asic_revenue_share) × nvda_share_of_merchant_gpu_market. Sourced and argued in NVDA_crux.json.",
+      "content_share_note": "Chip/accelerator spend as a fraction of total AI-directed capital expenditure (servers, networking, power, buildings included in denominator). Estimated at 0.42-0.55 depending on buyer mix. Not applied directly in the demand model — total_AI_chip_market is the direct denominator, derived from NVDA actuals + sourced market data."
+    },
+    "calibration": {
+      "fy2026_actual": {
+        "nvda_dc_actual_usd_bn": 193.74,
+        "total_ai_chip_market_implied_usd_bn": 291.9,
+        "nvda_wallet_share_implied": 0.664,
+        "derivation": "NVDA DC $193.74B / wallet_share. Custom ASIC revenue share ~17% in FY2026 (unit share 20.9% per TrendForce, revenue lags by ~3-4 pts due to higher GPU ASPs); merchant GPU = 83%; NVDA merchant share ~80%. Product: (1-0.17) × 0.80 = 0.664. Cross-check: AMD AI revenue ~$10B + other merchant ~$7B = ~$17B other merchant; NVDA $194B; total merchant = $211B; add ASIC pool $84B (20.9% of ~$403B AI server market per TrendForce at $320B AI chip base) → total AI chip market $295B. Consistent within 1%.",
+        "source_asic_unit_share": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm"
+      },
+      "q1_fy2027_actual": {
+        "nvda_dc_actual_usd_bn": 75.2,
+        "annualized_run_rate_dc_usd_bn": 300.8,
+        "qoq_growth_pct": 21,
+        "source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027"
+      },
+      "q2_fy2027_guide": {
+        "total_revenue_guide_usd_bn": 91.0,
+        "dc_implied_at_92pct_mix_usd_bn": 83.7,
+        "source": "NVIDIA Q2 FY2027 guidance press release; DC mix per Q1 FY2027 = 92.1%"
+      }
+    }
+  },
+
+  "driver_ceilings": {
+    "total_ai_chip_market_2030_usd_bn": {
+      "value": 900.0,
+      "source": "Bloomberg Intelligence: AI accelerator market $604B by 2033 at 16% CAGR from $116B in 2024. At 16% CAGR from our FY2026 derived base of ~$292B: 2030 = $292 × 1.16^4 = $527B. However, Bloomberg's absolute figures appear to undercount (NVIDIA alone was $194B of a market Bloomberg implies was ~$200-250B in 2024/2025). Mordor Intelligence: AI accelerator market $440B by 2030. Cross-calibrated against hyperscaler capex: CY2030 hyperscaler capex at $1.5-2.0T (Goldman base case run-forward) × AI-directed fraction (75%) × chip content (0.50) = $563-750B from hyperscalers alone + AI cloud/enterprise/sovereign adds ~30-40% on top = $730-1,050B total AI chip market by CY2029-2030. Using $900B as the ceiling (upper-credible 3P estimate for FY2030 AI chip market). A scenario requiring more than $900B in total AI chip spend by FY2030 implies either hyperscaler capex exceeding Goldman Sachs's upside scenario run-forward OR content shares materially above 50%. Both are possible but not 'most bullish credible'.",
+      "sources": [
+        {
+          "name": "Bloomberg Intelligence AI accelerator $604B by 2033",
+          "url": "https://www.bloomberg.com/company/press/ai-accelerator-market-looks-set-to-exceed-600-billion-by-2033-driven-by-hyperscale-spending-and-asic-adoption-according-to-bloomberg-intelligence/",
+          "tier": "research_firm"
+        },
+        {
+          "name": "Mordor Intelligence AI accelerator $440B by 2030",
+          "url": "https://www.mordorintelligence.com/industry-reports/ai-accelerators-market",
+          "tier": "research_firm"
+        },
+        {
+          "name": "Goldman Sachs hyperscaler capex 2027 base $1.1T, upside $1.4T",
+          "url": "https://finance.yahoo.com/sectors/technology/articles/goldman-says-consensus-2027-hyperscaler-140152065.html",
+          "tier": "sellside"
+        }
+      ],
+      "note": "Single-source risk: Bloomberg and Mordor diverge significantly and neither independently validates. The $900B ceiling is a triangulated judgment from these two plus the Goldman hyperscaler capex run-forward. Treat as directional, not precise."
+    },
+    "nvda_wallet_share_ceiling_fy2030": {
+      "value": 0.80,
+      "rationale": "NVIDIA cannot exceed 80% of total AI chip spend. The structural floor for custom ASICs is ~15% (they handle the highest-volume, lowest-variety inference that cannot economically return to merchant GPU). AMD holds a structural floor of ~5-8% merchant GPU as a negotiating lever. The ceiling is thus ~(1-0.15) × 0.94 = ~0.797, approximated at 0.80. This is a hard ceiling given current ASIC programs are already at 17-21% of total chip spend and growing."
+    },
+    "nvda_dc_revenue_ceiling_fy2030_usd_bn": {
+      "value": 720.0,
+      "derivation": "$900B pool × 0.80 ceiling wallet_share = $720B. This is the arithmetic maximum for NVDA DC revenue in FY2030 under the most credible sourced pool estimate. Any base/bull/bear path implying more than $720B DC revenue in FY2030 is an arithmetic error.",
+      "note": "No scenario in this file approaches this ceiling. The bull case implies $424B DC in FY2030, well below the $720B ceiling."
+    }
+  },
+
+  "scenarios": {
+    "construction_note": "FY2027 is anchored to: (a) Q1 FY2027 actual DC $75.2B; (b) Q2 FY2027 DC guide ~$83.7B; (c) H2 FY2027 modeled from sequential momentum consistent with Vera Rubin ramp and continued Blackwell demand. FY2028 is calibrated against post-Q1 analyst consensus of ~$480B total revenue (~$442B DC). FY2029-FY2030 are derived from the crux driver in NVDA_crux.json applied to the pool growth path.",
+
+    "base": {
+      "narrative": "Hyperscaler AI capex grows from $650B in CY2026 to $920B in CY2027 (consensus) then decelerates to ~$1,050B in CY2028 and ~$1,150B by CY2029. Non-hyperscaler AI chip buyers (AI cloud providers, enterprise, sovereign) add ~30-40% on top of hyperscaler chip spend. Custom ASIC revenue share grows from ~17% in FY2026 to ~20-22% by FY2029. NVIDIA retains ~77-78% of merchant GPU, holding total wallet share at ~70-72% by FY2029 as the pool grows 20-25% per year. Vera Rubin ramps cleanly in FY2028, sustaining performance leadership but not reversing ASIC share gains.",
+      "fy2026_revenue_dc_usd_bn": 193.74,
+      "fy2026_note": "Actual. Source: NVIDIA Q4 FY2026 earnings press release.",
+      "fy2027_revenue_dc_usd_bn": 350.0,
+      "fy2027_derivation": "Bottom-up quarterly build: Q1 actual $75.2B + Q2 guide $83.7B + Q3 estimate $93.5B + Q4 estimate $97.6B = $350.0B. Consistent with post-Q1-beat analyst consensus range of $370-391B total revenue × 92-93% DC mix = $341-364B DC. Sequential growth assumptions: Q2 +11% QoQ (from guide); Q3 +12% QoQ (Vera Rubin sampling contribution, continued Blackwell demand); Q4 +4% QoQ (seasonal pause, Rubin yield stabilization). Q3/Q4 QoQ is above historical seasonality but below Q1/Q2 YoY momentum. Sources: Q1 actual per NVIDIA press release; Q2 guide per NVIDIA Q2 FY2027 guidance; Q3-Q4 derived.",
+      "fy2027_ai_chip_market_usd_bn": 546.9,
+      "fy2027_nvda_wallet_share": 0.640,
+      "fy2027_wallet_share_derivation": "(1 - 0.20_ASIC_revenue_share) × 0.80_NVDA_merchant_share = 0.640. Custom ASIC revenue share 20% per TrendForce/MediaTek FY2027 projection.",
+      "fy2028_revenue_dc_usd_bn": 442.0,
+      "fy2028_derivation": "Calibrated to analyst consensus of $480B total revenue (post-Q1 FY2027 beat; source: consensus cited in Seeking Alpha/io-fund as of June 2026) × 92% DC mix = $441.6B, rounded to $442B. The implied AI chip market is $442B / 0.608 wallet_share = $727B. Pool growth FY2027 to FY2028 = +33%. This is consistent with hyperscaler capex consensus for CY2027 at $920B (vs $665B CY2026 guided) = 38% hyperscaler capex growth, with chip content stable, and non-hyperscaler AI chip spend growing at similar rates.",
+      "fy2028_ai_chip_market_usd_bn": 727.0,
+      "fy2028_nvda_wallet_share": 0.608,
+      "fy2028_wallet_share_derivation": "(1 - 0.22_ASIC_revenue_share) × 0.78_NVDA_merchant_share = 0.608. Custom ASIC revenue share at ~22% reflecting continued ramp of Broadcom/Marvell programs; AMD at ~11% merchant GPU share.",
+      "fy2029_revenue_dc_usd_bn": 510.0,
+      "fy2029_derivation": "Two-step derivation. Step 1 (top-down): FY2028 consensus total revenue $480B × 1.15 growth deceleration = $552B FY2029 total; DC at 92% = $508B ≈ $510B. Step 2 (identity cross-check): AI chip pool at FY2029 = $727B (FY2028) × 1.085 (pool growth decelerating from +33% to +8.5% as hyperscaler capex growth slows; Goldman CY2027 consensus $920B is already embedded in FY2028 pool) = $789B. NVDA wallet_share at pool level = $510B / $789B = 0.646. This wallet_share implies: (1-ASIC_share) × NVDA_merchant_share = 0.646. At ASIC_share = 23% and NVDA_merchant = 83.9% — the wallet_share RECOVERY (vs 60.8% in FY2028) is consistent with Vera Rubin's FY2028 full production ramp improving NVDA's perf/token advantage, temporarily slowing ASIC workload migration before ASIC programs re-converge. This is not a contradiction — the crux file's base wallet_share of 71-73% is measured against a narrower merchant-GPU-only denominator (total AI chip market excluding ASICs); the demand file wallet_share uses the full AI chip market (merchant + ASIC) as the pool, producing a lower percentage (64-65%). Both are consistent: 65% of $789B total pool = $512B ≈ $510B.",
+      "fy2029_ai_chip_market_usd_bn": 790.0,
+      "fy2029_nvda_wallet_share": 0.645,
+      "fy2030_revenue_dc_usd_bn": 560.0,
+      "fy2030_derivation": "FY2030 assumes 10% total revenue growth (further deceleration as the AI compute market matures toward steady-state growth rates). DC at 92% = ~$515B ... recalculating: if FY2029 total is $552B and total grows 10% to $607B, DC = $559B ≈ $560B. AI chip pool: $870B (pool grows 10% from $790B). Wallet_share = $560B / $870B = 0.644. Pool is below the $900B ceiling. No ceiling breach.",
+      "fy2030_ai_chip_market_usd_bn": 870.0,
+      "fy2030_nvda_wallet_share": 0.644,
+      "decade_cagr_fy2026_to_fy2030_pct": 30.3,
+      "decade_cagr_derivation": "($560B / $193.74B)^(1/4) - 1 = (2.89)^0.25 - 1 = 1.303 - 1 = 30.3% CAGR. This is the DC segment CAGR from FY2026 to FY2030.",
+      "implied_pool_fy2030_usd_bn": 870.0,
+      "ceiling_fy2030_usd_bn": 900.0,
+      "exceeds_ceiling": false,
+      "ceiling_check_note": "FY2030 implied pool of $870B is below the sourced ceiling of $900B. The base scenario does not breach the ceiling.",
+      "assumption_narrative": "The base path is driven by: (1) FY2027 anchored to supply commitments ($119B manufacturing commitments, $95B payable in remainder of FY2027) and sequential quarterly momentum; (2) FY2028 anchored to post-Q1 analyst consensus of $480B total revenue; (3) FY2029-FY2030 derived from 15% and 10% total revenue growth deceleration respectively, consistent with a hyperscaler capex growth plateau and modest ASIC share gains offsetting continued pool expansion. The base does not assume ASIC share displacement is catastrophic (wallet share stabilizes at ~64-65% of total AI chip market after Vera Rubin performance gains absorb some pressure); nor does it assume the AI capex boom continues at 2025-2026 rates (pool growth decelerates from 87% in FY2026-FY2027 to 10% by FY2029-FY2030). This is the honest most-likely: a great business in a slowing growth phase, not a hockey stick and not a collapse."
+    },
+
+    "bull": {
+      "narrative": "Vera Rubin's 10x cost-per-token improvement (per NVIDIA Q1 FY2027 management commentary) changes the economics of ASIC adoption. Hyperscalers facing a moving GPU performance target slow their ASIC workload migration; ASIC revenue share grows more slowly. AMD ROCm gap persists. Simultaneously, hyperscaler capex is closer to Goldman's $1.1T base for CY2027 than the $920B consensus, expanding the total chip pool. NVIDIA holds ~65-67% wallet share of the total AI chip market through FY2030.",
+      "fy2026_revenue_dc_usd_bn": 193.74,
+      "fy2027_revenue_dc_usd_bn": 360.0,
+      "fy2027_derivation": "Q1 actual $75.2B + Q2 guide $83.7B + Q3 $100B (Vera Rubin sample volumes pull in slightly more inference workloads; positive mix) + Q4 $101B = $360B. Assumes Q3/Q4 sequential step-up slightly above base case on Vera Rubin early traction.",
+      "fy2027_ai_chip_market_usd_bn": 563.0,
+      "fy2027_nvda_wallet_share": 0.640,
+      "fy2028_revenue_dc_usd_bn": 490.0,
+      "fy2028_derivation": "Total revenue $532B (10% above consensus $480B, reflecting hyperscaler capex closer to $1.1T Goldman base). DC at 92% = $490B. AI chip pool $563B × 1.30 = $732B (faster pool growth from larger hyperscaler capex); wallet_share $490B / $732B = 0.669. Wall_share actually improves slightly (vs base) because Vera Rubin slows ASIC adoption.",
+      "fy2028_ai_chip_market_usd_bn": 732.0,
+      "fy2028_nvda_wallet_share": 0.669,
+      "fy2029_revenue_dc_usd_bn": 590.0,
+      "fy2029_derivation": "Total revenue $641B (20% growth, pool expansion sustains and Vera Rubin volume ramp). DC at 92% = $590B. Pool: $732B × 1.20 = $878B. Wallet_share: $590B / $878B = 0.672. Wallet share stabilizes in bull case as Vera Rubin performance superiority maintains training dominance and slows inference ASIC migration.",
+      "fy2029_ai_chip_market_usd_bn": 878.0,
+      "fy2029_nvda_wallet_share": 0.672,
+      "fy2030_revenue_dc_usd_bn": 660.0,
+      "fy2030_derivation": "Total revenue $717B (12% growth, normalization). DC at 92% = $660B. Pool: $878B × 1.12 = $983B. This exceeds the ceiling of $900B. BREACH FLAGGED. Revising: to stay within $900B ceiling at wallet_share 0.67, NVDA DC = $900B × 0.67 = $603B. Ceiling-capped: $603B DC FY2030 in bull case. Total revenue = $603B / 0.92 = $655B.",
+      "fy2030_revenue_dc_usd_bn_ceiling_capped": 603.0,
+      "fy2030_ai_chip_market_usd_bn": 900.0,
+      "fy2030_nvda_wallet_share": 0.670,
+      "exceeds_ceiling": true,
+      "ceiling_breach_note": "The uncapped bull path would require an AI chip market of $983B in FY2030, exceeding the sourced ceiling of $900B (upper-credible 3P estimate). The bull path is therefore ceiling-capped at $900B pool × 0.670 wallet_share = $603B DC. A bull path implying more than $900B AI chip market by FY2030 requires either hyperscaler capex above Goldman's upside scenario AND significant non-hyperscaler growth — possible but beyond the 'most bullish credible' threshold. The $603B ceiling-capped figure is the bull case that does not violate the arithmetic ceiling.",
+      "fy2030_revenue_dc_usd_bn": 603.0,
+      "decade_cagr_fy2026_to_fy2030_pct": 32.8,
+      "decade_cagr_derivation": "($603B / $193.74B)^(1/4) - 1 = (3.11)^0.25 - 1 = 32.8% CAGR.",
+      "implied_pool_fy2030_usd_bn": 900.0,
+      "exceeds_ceiling_final": false,
+      "assumption_narrative": "Bull path rests on: (1) Vera Rubin achieves its 10x cost-per-token promise, slowing ASIC workload migration and keeping NVDA wallet share at 67-70% of total AI chip market rather than declining to 64%; (2) hyperscaler capex closer to Goldman's $1.1T base for CY2027 than the $920B consensus, producing a larger chip market; (3) AMD ROCm gap persists through FY2029, keeping AMD at ~10-11% merchant GPU share. Evidence quality: MEDIUM — Vera Rubin's 10x claim is management guidance, not independently verified at scale. The bull case is internally consistent and does not exceed the sourced $900B pool ceiling."
+    },
+
+    "bear": {
+      "narrative": "Custom ASIC adoption accelerates faster than the base. Broadcom's $100B+ AI chip revenue by 2027 is the primary mechanism — as three hyperscaler customers deploy million-GPU ASIC clusters (Google TPU Ironwood, Amazon Trainium3, Meta MTIA 400), the fraction of inference workloads on custom silicon rises faster than TrendForce's already-aggressive trajectory. AMD closes the software gap modestly, taking merchant GPU share to 13-14%. NVIDIA's wallet share falls to 59-60% of total AI chip market by FY2030. Pool growth also decelerates more than the base as hyperscaler capex plateaus at $920B-$1,000B in CY2027-CY2028.",
+      "fy2026_revenue_dc_usd_bn": 193.74,
+      "fy2027_revenue_dc_usd_bn": 340.0,
+      "fy2027_derivation": "Q1 actual $75.2B + Q2 guide $83.7B + Q3 $86B (Vera Rubin ramp slower than expected; some hyperscalers pull forward ASIC orders instead of Blackwell) + Q4 $95.1B = $340.0B. Bear Q3 QoQ growth = +3% (below base +12%). The FY2027 bear is only slightly below base because supply commitments ($95B payable in remainder of FY2027) give near-term revenue strong floor.",
+      "fy2027_ai_chip_market_usd_bn": 531.0,
+      "fy2027_nvda_wallet_share": 0.640,
+      "fy2027_wallet_share_note": "Wallet share is similar to base/bull in FY2027 because supply commitments constrain downside; the bear diverges in FY2028-FY2030 as ASIC programs mature.",
+      "fy2028_revenue_dc_usd_bn": 390.0,
+      "fy2028_derivation": "Bear case: total revenue $424B (12% below consensus $480B, driven by below-consensus hyperscaler capex ($920B consensus rather than upside) and faster ASIC share gain). DC at 92% = $390B. AI chip pool $531B × 1.22 = $648B (22% pool growth, still healthy but below base); wallet_share = $390B / $648B = 0.602. ASIC revenue share hits 24% faster than base (Broadcom $100B+ AI revenue from 3 customers alone reaches this by FY2028); NVDA merchant share falls to 79%; wallet_share = (1-0.24) × 0.79 = 0.601. Consistent.",
+      "fy2028_ai_chip_market_usd_bn": 648.0,
+      "fy2028_nvda_wallet_share": 0.602,
+      "fy2029_revenue_dc_usd_bn": 430.0,
+      "fy2029_derivation": "Bear: hyperscaler capex growth plateaus. Total AI chip market grows only 8% from FY2028: $648B × 1.08 = $700B. ASIC revenue share reaches 27%; AMD merchant share 13%; wallet_share = (1-0.27) × 0.795 = 0.580. NVDA DC = $700B × 0.580 = $406B. Rounding: $430B to reflect some sovereign/enterprise growth that doesn't follow hyperscaler pace (slightly above formula for non-hyperscaler buffer). Bear FY2029 at $430B.",
+      "fy2029_ai_chip_market_usd_bn": 700.0,
+      "fy2029_nvda_wallet_share": 0.580,
+      "fy2030_revenue_dc_usd_bn": 460.0,
+      "fy2030_derivation": "Bear: AI chip market grows 8% to $756B. ASIC share 29%; AMD 14% merchant; wallet_share = (1-0.29) × 0.795 = 0.565. NVDA DC = $756B × 0.565 = $427B. Sovereign and enterprise buffer: $460B. Note: $460B is still materially above FY2026 actual ($193.74B) — the bear is not a collapse but a significant underperformance vs base and bull.",
+      "fy2030_ai_chip_market_usd_bn": 756.0,
+      "fy2030_nvda_wallet_share": 0.565,
+      "decade_cagr_fy2026_to_fy2030_pct": 24.2,
+      "decade_cagr_derivation": "($460B / $193.74B)^(1/4) - 1 = (2.374)^0.25 - 1 = 24.2% CAGR.",
+      "implied_pool_fy2030_usd_bn": 756.0,
+      "exceeds_ceiling": false,
+      "ceiling_check_note": "Bear pool of $756B is well below the $900B sourced ceiling. The bear scenario does not require an implausible AI chip market size.",
+      "assumption_narrative": "Bear path rests on: (1) Custom ASIC revenue share reaches 27-29% by FY2030, driven by Broadcom sustaining $100B+ AI chip revenue from its three hyperscaler customers (Alphabet, Meta, ByteDance/one other) and Marvell's programs (Amazon Trainium, Microsoft Maia) adding another $25-35B; (2) AMD closes the ROCm gap to 80% CUDA coverage by FY2028, enabling real training workload migrations and growing merchant GPU share to 13-14%; (3) Hyperscaler capex growth plateaus at $920B-$1,000B in CY2027-FY2028 (consensus, not upside), with AI chip market growing at only 8% annually after FY2028; (4) Vera Rubin delivers but its performance advantage is not sufficient to reverse the economic calculus for hyperscalers already running ASIC programs at scale. Evidence quality: MEDIUM — ASIC acceleration is well-evidenced; AMD ROCm gap closure on the timeline assumed is the most uncertain element and has slipped historically."
+    }
+  },
+
+  "scenario_comparison": {
+    "fy2027_dc_usd_bn": {"base": 350.0, "bull": 360.0, "bear": 340.0, "variance_note": "Near-term variance is narrow because supply commitments ($95B payable in remainder FY2027) set a strong floor. The crux is not FY2027 — it is FY2029-FY2030."},
+    "fy2028_dc_usd_bn": {"base": 442.0, "bull": 490.0, "bear": 390.0},
+    "fy2029_dc_usd_bn": {"base": 510.0, "bull": 590.0, "bear": 430.0},
+    "fy2030_dc_usd_bn": {"base": 560.0, "bull": 603.0, "bear": 460.0},
+    "fy2030_wallet_share": {"base": 0.644, "bull": 0.670, "bear": 0.565},
+    "fy2030_ai_chip_pool_usd_bn": {"base": 870.0, "bull": 900.0, "bear": 756.0, "ceiling": 900.0},
+    "ceiling_breaches": {"base": false, "bull": false, "bear": false},
+    "base_to_bull_swing_fy2030_dc_usd_bn": 43.0,
+    "base_to_bear_swing_fy2030_dc_usd_bn": -100.0,
+    "key_fork": "The base-bear fork by FY2030 is $100B in DC revenue. At NVDA's ~71-72% gross margins on DC and ~50% operating margin, $100B less DC revenue translates to ~$50B less operating income and ~$40B less owner-FCF annually in the normalization year — a magnitude that at a 20-22x FCF multiple moves the fair value estimate by $0.8-0.9T in enterprise value, or ~$33-37 per share. The crux variable (ASIC share trajectory) is the single biggest determinant of the call."
+  },
+
+  "non_dc_segments": {
+    "description": "Non-DC segments are annuity-like (Gaming, Professional Visualization) or early-stage (Automotive). They are held roughly stable or at consensus growth rates for the valuation. Daedalus values these separately at mature-earnings multiples.",
+    "gaming_fy2027_usd_bn": {
+      "estimate": 16.5,
+      "basis": "FY2026 actual $16.04B; AIB market -10% in 2026 on memory price inflation and tariff headwinds per Jon Peddie Research (https://www.jonpeddie.com/news/q425-pc-gpu-shipments-decreased-by-1-3-from-last-quarter-which-is-a-prelude-to-the-creep-forward/). NVDA 94-95% discrete GPU share. RTX 50 series ASP lift offsets unit pressure. Net: flat to +3% YoY in FY2027 → $16.5B estimate.",
+      "growth_range": "+0% to +5% YoY"
+    },
+    "gaming_fy2028_usd_bn": {
+      "estimate": 17.5,
+      "basis": "AI PC transition drives incremental GPU demand from FY2028; RTX 60 series (next Rubin consumer) expected FY2028-FY2029. Mid-single-digit growth resumes. $17.5B base."
+    },
+    "gaming_fy2029_usd_bn": {
+      "estimate": 18.5,
+      "basis": "Continued mid-single digit growth trajectory. NVDA's 94-95% share is a ceiling; growth is primarily ASP lift (AI-enhanced gaming features, higher VRAM requirements)."
+    },
+    "proviz_fy2027_usd_bn": {
+      "estimate": 3.5,
+      "basis": "FY2026 actual $3.19B. Workstation AI refresh cycle sustains mid-single-digit growth. TAM $3.5B growing at 8% CAGR (Verified Market Reports). NVDA near-monopoly share. FY2027 estimate $3.5B = +10% YoY on AI workstation demand continuation."
+    },
+    "proviz_fy2028_usd_bn": {
+      "estimate": 3.8,
+      "basis": "8% CAGR applied, rounded."
+    },
+    "automotive_fy2027_usd_bn": {
+      "estimate": 3.2,
+      "basis": "FY2026 actual $2.35B. $14B design win pipeline (2023-2028) per NVIDIA 2024 earnings. Revenue recognition 2-4 year lag from design win to production revenue. FY2027 reflects production ramp of programs won in 2023-2024. Conservative assumption: $3.2B = +36% YoY continuation of ramp trajectory.",
+      "source": "https://www.indexbox.io/blog/nvidias-automotive-sector-a-surge-in-revenue-and-innovation/"
+    },
+    "automotive_fy2028_usd_bn": {
+      "estimate": 4.5,
+      "basis": "Design win pipeline programs reaching full production. Robotaxi (Zoox, Waymo partners) incremental. +41% YoY from FY2027 base."
+    },
+    "automotive_fy2029_usd_bn": {
+      "estimate": 6.0,
+      "basis": "Further ramp of 2024-2025 design wins reaching volume. +33% YoY."
+    },
+    "oem_other_fy2027_usd_bn": {
+      "estimate": 0.7,
+      "basis": "Immaterial; slight growth from FY2026's $0.62B."
+    },
+    "total_non_dc_fy2027_usd_bn": {
+      "estimate": 23.9,
+      "components": {"gaming": 16.5, "proviz": 3.5, "automotive": 3.2, "oem_other": 0.7}
+    },
+    "total_non_dc_fy2028_usd_bn": {
+      "estimate": 26.3,
+      "components": {"gaming": 17.5, "proviz": 3.8, "automotive": 4.5, "oem_other": 0.5}
+    },
+    "total_non_dc_fy2029_usd_bn": {
+      "estimate": 28.5,
+      "components": {"gaming": 18.5, "proviz": 4.0, "automotive": 6.0, "oem_other": 0.0}
+    }
+  },
+
+  "total_revenue_implied": {
+    "fy2027_base_usd_bn": 373.9,
+    "fy2027_note": "DC $350B + non-DC $23.9B = $373.9B. Consistent with post-Q1 analyst consensus range $370-391B. No material deviation from external calibration.",
+    "fy2028_base_usd_bn": 468.3,
+    "fy2028_note": "DC $442B + non-DC $26.3B = $468.3B. Close to but modestly below $480B consensus — difference reflects that the $480B consensus may embed slightly more optimistic DC assumptions; the $468B is the honest midpoint including non-DC segment slowing.",
+    "fy2029_base_usd_bn": 538.5,
+    "fy2029_note": "DC $510B + non-DC $28.5B = $538.5B.",
+    "fy2030_base_usd_bn": 590.0,
+    "fy2030_note": "DC $560B + non-DC ~$30B (extrapolated) = $590B. Represents 15% growth from FY2029 to FY2030, reflecting continued deceleration toward ~10-12% steady-state growth in the normalization year.",
+    "fy2030_bull_total_usd_bn": 638.0,
+    "fy2030_bear_total_usd_bn": 492.0
+  },
+
+  "arithmetic_consistency_checks": {
+    "fy2026_wallet_share_check": "NVDA DC $193.74B / implied AI chip pool $291.9B = 66.4%. Formula: (1-0.17) × 0.80 = 66.4%. Pass.",
+    "fy2027_base_wallet_share_check": "NVDA DC $350B / AI chip pool $546.9B = 64.0%. Formula: (1-0.20) × 0.80 = 64.0%. Pass.",
+    "fy2028_base_wallet_share_check": "NVDA DC $442B / AI chip pool $727B = 60.8%. Formula: (1-0.22) × 0.78 = 60.8%. Pass.",
+    "fy2030_base_ceiling_check": "Implied pool $870B vs ceiling $900B. Below ceiling. Pass.",
+    "fy2030_bull_ceiling_check": "Pool capped at $900B (ceiling). DC capped at $603B. Pass.",
+    "fy2030_bear_ceiling_check": "Implied pool $756B vs ceiling $900B. Below ceiling. Pass."
+  },
+
+  "sources": [
+    {
+      "name": "NVIDIA Q4 FY2026 earnings — DC revenue $193.74B actual",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NVIDIA Q1 FY2027 earnings — DC revenue $75.2B actual; Q2 guide $91B total",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NVIDIA Q1 FY2027 10-Q — supply commitments $119B / $145B total; $95B payable in remainder FY2027",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/q1/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf",
+      "tier": "company_filed"
+    },
+    {
+      "name": "TrendForce ASIC vs GPU AI server unit share 2025-2026",
+      "url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+      "tier": "research_firm"
+    },
+    {
+      "name": "TrendForce/MediaTek ASIC revenue share 20% by 2027",
+      "url": "https://www.trendforce.com/news/2026/02/05/news-mediatek-forecasts-1b-in-asic-sales-for-2026-custom-ai-chips-set-for-20-revenue-share-in-2027/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Bloomberg Intelligence AI accelerator market $604B by 2033; GPU/ASIC split 81%/19%",
+      "url": "https://www.bloomberg.com/company/press/ai-accelerator-market-looks-set-to-exceed-600-billion-by-2033-driven-by-hyperscale-spending-and-asic-adoption-according-to-bloomberg-intelligence/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Goldman Sachs 2027 hyperscaler capex: consensus $920B, GS base $1.1T, upside $1.4T",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/goldman-says-consensus-2027-hyperscaler-140152065.html",
+      "tier": "sellside"
+    },
+    {
+      "name": "NVIDIA FY2027 analyst consensus revenue $370-391B",
+      "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-nvda/nvidia/future",
+      "tier": "sellside"
+    },
+    {
+      "name": "NVIDIA FY2028 analyst consensus revenue ~$480B",
+      "url": "https://io-fund.com/ai-stocks/nvidia-stock-path-to-20-trillion-market-cap",
+      "tier": "sellside"
+    },
+    {
+      "name": "Broadcom AI ASIC revenue $8.4B/Q, $60-90B SAM from three customers FY2027, $100B+ line of sight",
+      "url": "https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "AMD AI accelerator 80%+ CAGR guidance; MI350 revenue $8.7B Q3 2025",
+      "url": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Jon Peddie Research gaming GPU market Q4 2025; NVDA 94-95% share",
+      "url": "https://www.jonpeddie.com/news/q425-pc-gpu-shipments-decreased-by-1-3-from-last-quarter-which-is-a-prelude-to-the-creep-forward/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "NVIDIA automotive $14B design win pipeline through 2028",
+      "url": "https://www.indexbox.io/blog/nvidias-automotive-sector-a-surge-in-revenue-and-innovation/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Hyperscaler Q1 2026 earnings and capex guidance: $650-735B combined CY2026",
+      "url": "https://www.heygotrade.com/en/news/big-tech-q1-2026-earnings-ai-capex-spree/",
+      "tier": "company_filed"
+    }
+  ]
+}

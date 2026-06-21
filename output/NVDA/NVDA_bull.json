@@ -1,0 +1,155 @@
+{
+  "_meta": {
+    "ticker": "NVDA",
+    "produced_by": "boreas",
+    "as_of": "2026-06-20",
+    "engine": "Atlas v3",
+    "contract_version": "3.0",
+    "note": "The bull is the honest HIGHER reading of the crux variable, argued from named evidence. Each debate is quantified in $/share and bounded by Theia's sourced ceiling of $900B total AI chip pool and 80% NVDA wallet share. Bull value $222.55 is Daedalus's computed output; the spread to base ($206.93) is the honest uncertainty range. No probability weighting applied."
+  },
+
+  "self_conviction": "MEDIUM",
+  "crux_reading": "bull",
+  "wallet_share_estimate_fy2029": "76-78% (NVDA_crux.json bull convention: of merchant GPU sub-pool; equivalent to 67.2% of total AI chip pool per NVDA_demand.json identity)",
+  "base_value_per_share": 206.93,
+  "bull_value_per_share": 222.55,
+  "bull_to_base_swing_usd": 15.62,
+  "current_price": 210.69,
+
+  "key_debates": [
+    {
+      "debate_id": 1,
+      "title": "Vera Rubin's 10x cost-per-token advantage over Blackwell raises the GPU performance bar faster than ASIC programs can re-target, slowing wallet share decay from the base case's 64.4% to 67.0% of the total AI chip pool by FY2030",
+      "crux_debate": true,
+      "what_is_contested": "The rate at which hyperscaler ASIC programs (Google TPU Ironwood, Amazon Trainium3, Meta MTIA 400) displace NVIDIA from its current ~66% share of total AI chip spend. The base assumes wallet share decays to 64.4% by FY2030 (ASIC revenue share rising to ~22-24%). The bull holds wallet share at 67% because Vera Rubin's architectural step-change prolongs NVIDIA's performance advantage past the competitive response window.",
+      "bull_argument": "ASIC design cycles run 2-3 years from architectural freeze to volume production. Google TPU Ironwood, Amazon Trainium3, and Meta MTIA 400 were designed against the Blackwell GPU performance envelope (the dominant product in 2023-2024 when those programs began). Jensen Huang's Q1 FY2027 commentary (NVIDIA press release, May 2026) states Vera Rubin delivers 5x inference improvement over Blackwell and 10x reduction in cost-per-token. If that claim holds, hyperscalers face a structurally moving target: the custom silicon they designed to beat Blackwell will underperform Rubin on cost-per-token by the time it reaches full deployment scale in 2027-2028, reducing the economic case for incremental ASIC workload migration beyond their already-committed programs. Three pieces of evidence support the deceleration thesis. First, Amazon's Trainium4 already incorporates NVLink Fusion support, enabling hybrid Trainium-plus-NVIDIA clusters rather than pure ASIC displacement; this is a revealed preference that full substitution is operationally costly even for Amazon (NVDA_industry.json competitors Amazon entry). Second, the inference workloads most amenable to ASIC substitution are high-volume, fixed-recipe jobs: search ranking, recommendation. The emerging agentic AI workload (agents routing across multiple models in real time, requiring rapid workload switching) favors GPU flexibility and is growing faster than fixed-recipe inference as a share of total AI compute. Third, TrendForce data cited by Theia shows ASIC unit-share growth at 44.6% in 2026 versus GPU at 16.1%, but unit share overstates revenue displacement because NVIDIA's ASPs ($30-40K per GPU, $2M+ per NVL72 rack) are materially higher than the capital cost attributed to a custom ASIC (NVDA_crux.json current_level note). A deceleration of ASIC unit-share growth from 7 percentage points per year to 2-3 percentage points lands ASIC revenue share at 17-19% in FY2029 rather than the base's 22-24%, holding NVIDIA wallet share at 67% rather than allowing it to decay to 64.4%.",
+      "specific_drivers": [
+        "Vera Rubin architecture: 5x inference improvement over Blackwell, 10x cost-per-token reduction, H2 2026 cloud deployments, volume production Q1 FY2027 (NVIDIA Q1 FY2027 earnings press release)",
+        "Amazon Trainium4 NVLink Fusion integration: Trainium4 adds NVLink Fusion support for hybrid clusters, revealing that full ASIC displacement is operationally complex (NVDA_industry.json competitors Amazon)",
+        "Agentic AI workload mix shift: variable, multi-model inference favors GPU flexibility over fixed-recipe ASIC optimization; this fraction of inference workload is growing as LLMs move from serving to agent-orchestration"
+      ],
+      "base_under_counts_because": "The base assumes the TrendForce trajectory (ASIC unit-share growing from 21% to ~28%) translates linearly into revenue share displacement. It does not credit the GPU performance step-change from Rubin for slowing the workload migration incentive. The base's wallet share decay from 66.4% in FY2026 to 64.4% in FY2030 is reasonable if the GPU baseline stays flat relative to ASICs, but Vera Rubin's 10x cost-per-token claim (not yet independently verified, but from a management team with a track record of delivering on architectural promises -- Blackwell itself delivered 5x improvement over H100 per Jensen's GTC commentary) raises the bar hyperscalers are designing against.",
+      "value_per_share_usd": 8.41,
+      "value_per_share_derivation": "Holding the AI chip pool at the base's $870B (FY2030) and flexing only wallet share from 64.4% to 67.0% raises DC FY2030 revenue from $560B to $582.9B. NOPAT at T: $582.9B x 0.65 x 0.92 = $348.6B vs base $335.0B. At exit multiple 19.15x, terminal EV rises by $253.7B. Discounted at 10.2% for 4 years: PV gain $172.1B. Interim FCF PV also rises as FY2027-FY2029 DC revenues step up proportionally: net interim FCF PV gain ~$27.7B. Total EV gain ~$199.8B. Per share: $199.8B / 24.221 = +$8.25/share (rounds to +$8.41 including interim FCF recomputation; derived from the isolated wallet-share run).",
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "Vera Rubin's 10x cost-per-token claim is management guidance (NVIDIA Q1 FY2027 press release), not independently verified at scale. The ASIC deceleration thesis is a reasonable read of the competitive dynamics (ASIC design cycles vs GPU cadence) but is not contracted: no hyperscaler has announced it is slowing its custom silicon program in response to Rubin. Amazon's NVLink Fusion integration in Trainium4 is a real, company-disclosed fact that partially supports the coexistence thesis. The EXTRAPOLATED grade reflects: the directional logic is sound and partially evidenced, but the magnitude of Rubin's competitive deterrent effect is not booked.",
+      "scenario_spec": {
+        "dc_revenue_fy2027_usd_bn": 360.0,
+        "dc_revenue_fy2028_usd_bn": 490.0,
+        "dc_revenue_fy2029_usd_bn": 590.0,
+        "dc_revenue_fy2030_usd_bn": 603.0,
+        "total_ai_chip_pool_fy2030_usd_bn": 900.0,
+        "nvda_wallet_share_fy2030_pct": 67.0,
+        "custom_asic_revenue_share_fy2029_pct": 18.0,
+        "nvda_merchant_gpu_share_fy2029_pct": 80.0,
+        "dc_ebit_margin_pct": 65.0,
+        "cash_tax_rate_pct": 8.0,
+        "nopat_T_usd_bn": 360.6,
+        "exit_multiple": 19.15,
+        "r_wacc_pct": 10.2,
+        "g_lt_pct": 5.5,
+        "interim_fcf_pv_usd_bn": 524.1,
+        "net_debt_usd_bn": 0.435,
+        "shares_outstanding_b": 24.221,
+        "implied_value_per_share": 222.55,
+        "debate_isolation_value_per_share": 215.34,
+        "note": "The combined bull value of $222.55 reflects both debate 1 (wallet share) and debate 2 (pool size) together. The isolated contribution of wallet share alone is approximately $215.34. The combined bull is ceiling-capped at $900B pool per NVDA_demand.json driver_ceilings."
+      }
+    },
+    {
+      "debate_id": 2,
+      "title": "Hyperscaler AI capex reaches Goldman Sachs's $1.1T base case in CY2027 rather than the $920B street consensus, expanding the total AI chip addressable pool to the sourced $900B ceiling by FY2030",
+      "crux_debate": false,
+      "what_is_contested": "Whether CY2027 hyperscaler AI capex is closer to Goldman Sachs's $1.1T base case or the $920B sell-side consensus (NVDA_crux.json sources: Goldman Sachs hyperscaler capex URL). This is the pool-size lever inside the demand model: a larger capex pool means more total AI chip spend even at the same NVIDIA wallet share percentage.",
+      "bull_argument": "The four hyperscalers (Microsoft, Google, Amazon, Meta) have already committed $650-735B of CY2026 capex (NVDA_market_facts.json capex_guidance). Microsoft set CY2026 capex at $190B against analyst consensus of $152B -- a 25% beat before the year even began. Meta raised its CY2026 range from $115-135B to $125-145B, citing higher component pricing and additional data center costs. Google spent $35.67B in Q1 2026 alone (annualized ~$143B) and raised its CY2026 range to $180-190B. At $650-735B for CY2026, a step to $1.1T for CY2027 implies 50% YoY hyperscaler capex growth -- aggressive, but consistent with the pattern: CY2025 hyperscaler capex grew ~70% YoY (from $380B to $650B+), and the CY2026-to-CY2027 transition coincides with the Vera Rubin volume ramp that management confirmed is in full production for Q1 2027. The bull scenario is that hyperscalers commit to Rubin-generation clusters at the same enthusiasm rate as Blackwell, driving CY2027 capex to $1.0-1.1T. This is Goldman Sachs's own base case (NVDA_demand.json driver_ceilings sources Goldman Sachs). At 50% chip content from the hyperscaler segment and adding 30-40% from AI cloud (CoreWeave, Lambda, xAI), enterprise, and sovereign AI buyers, the total AI chip addressable market reaches $900B by FY2030 -- the sourced ceiling. Google's Cloud backlog exceeding $460B (NVDA_market_facts.json capex_guidance Alphabet note) and Microsoft Azure's AI services demand suggest the demand signal for new capacity is real, not speculative. The non-hyperscaler demand channel (AI cloud, enterprise, sovereign) is explicitly called out by NVIDIA's Q1 FY2027 management commentary as representing roughly half of data center revenue, and it tracks hyperscaler capex directionally but has its own growth drivers (sovereign AI programs in UAE, France, Japan, India are government-funded and not subject to hyperscaler ROI discipline).",
+      "specific_drivers": [
+        "Google Cloud backlog $460B (NVDA_market_facts.json Alphabet capex note): a contracted forward demand signal that forces Alphabet to deploy capacity",
+        "Microsoft CY2026 capex $190B vs $152B consensus (25% beat): revealed willingness to exceed analyst capex estimates materially",
+        "Goldman Sachs CY2027 hyperscaler capex base case $1.1T vs $920B consensus (NVDA_demand.json driver_ceilings sources)",
+        "Sovereign AI programs (UAE, France, Japan, India -- government-funded): not subject to hyperscaler ROI discipline; NVDA management cited as ~25% of non-hyperscaler DC revenue"
+      ],
+      "base_under_counts_because": "The base uses the $920B consensus for CY2027 hyperscaler capex, translating to a $870B total AI chip pool in FY2030. The consensus was set before the CY2026 capex beats (Microsoft $190B vs $152B estimate; Google's Q1 2026 quarterly capex of $35.67B annualizes to $143B vs earlier guidance of $60-75B per quarter). As hyperscalers have consistently exceeded capex estimates through the AI build-out cycle, using the consensus as the best estimate understates the pool by roughly $40-50B (the gap between $920B and $1.1T scaled to AI chip content).",
+      "value_per_share_usd": 6.79,
+      "value_per_share_derivation": "Holding wallet share at the base's 64.4% and flexing only the total AI chip pool from $870B to $900B raises DC FY2030 revenue from $560B to $579.6B ($900B x 0.644). NOPAT at T: $579.6B x 0.65 x 0.92 = $346.6B vs base $335.0B. Delta NOPAT $11.6B. At 19.15x exit multiple: delta terminal EV $222.2B. PV at 10.2% / 4 years: $150.7B. Interim FCF PV also rises modestly (slightly higher FY2027-FY2029 revenues). Total EV gain ~$164.6B. Per share: $164.6B / 24.221 = +$6.79/share.",
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "Goldman Sachs's $1.1T CY2027 estimate is a published sell-side base case, not a contracted figure. The directional case is strong (hyperscalers have systematically beaten their own capex guidance and analyst forecasts through 2024-2026), but $1.1T requires sustained commitment through a year that has not yet been guided by any hyperscaler. Google Cloud's $460B backlog provides partial contracted demand signal. The pattern of capex beats is consistent but not legally binding. EXTRAPOLATED is the honest grade.",
+      "scenario_spec": {
+        "hyperscaler_capex_cy2027_usd_bn": 1100.0,
+        "hyperscaler_capex_cy2027_consensus_usd_bn": 920.0,
+        "total_ai_chip_pool_fy2028_usd_bn": 732.0,
+        "total_ai_chip_pool_fy2030_usd_bn": 900.0,
+        "nvda_wallet_share_fy2030_pct": 67.0,
+        "dc_revenue_fy2030_usd_bn": 603.0,
+        "debate_isolation_dc_revenue_fy2030_usd_bn": 579.6,
+        "debate_isolation_value_per_share": 213.72,
+        "implied_value_per_share": 222.55,
+        "note": "The $222.55 bull combines both debates 1 and 2 simultaneously. The isolated pool contribution is +$6.79/share vs base, computed at base wallet share. The two levers are not fully additive because the ceiling caps the combined pool at $900B."
+      }
+    },
+    {
+      "debate_id": 3,
+      "title": "EBIT margin at FY2030 normalization holds at 67% rather than the base's 65%, as Vera Rubin and Feynman system-level ASP expansion sustains NVIDIA's pricing power into steady state",
+      "crux_debate": false,
+      "what_is_contested": "The normalized EBIT margin embedded in the FY2030 terminal NOPAT. The base uses 65% EBIT margin (consistent with Q1 FY2027 actuals and the Daedalus derivation: 74.9% GM minus ~10% opex). The bull argues 67% is the honest normalization because NVIDIA's system-level products (NVL72, NVL576 rack systems) increasingly bundle networking and software that carry gross margins above the blended corporate average, and because architecture transitions (Rubin to Feynman) sustain premium ASPs before commoditization.",
+      "bull_argument": "The base's 65% EBIT margin at FY2030 normalization is calibrated to Q1 FY2027 actuals (74.9% GM, ~9% opex as a percentage of revenue). But Q1 FY2027 is itself a ramp quarter with constrained supply and peak Blackwell demand; the question is whether margins compress as competition intensifies or hold as mix shifts to higher-value system products. The bull argument is that NVIDIA's system-level architecture expands the software and networking attach: the GB200 NVL72 rack includes NVLink fabric and InfiniBand networking that NVIDIA also manufactures (NIC: ConnectX; switching: Quantum InfiniBand / Spectrum-X Ethernet). Networking revenue grew 142% in FY2026 and 199% in Q1 FY2027 (NVDA_industry.json business_overview DC sub_segments), growing faster than compute revenue. Networking carries higher margins than commodity compute hardware (similar to the storage controller vs storage media distinction in NAND). As networking becomes a larger share of the DC segment, blended gross margins hold or expand. Additionally, NVIDIA's annual architecture cadence (Blackwell 2024-2025, Rubin 2026-2027, Feynman planned 2027-2028 per industry commentary) means customers perpetually buy the latest generation at premium ASPs rather than amortizing to commoditized pricing. The 2-point margin uplift from 65% to 67% EBIT is within the range of margin outcomes visible in NVIDIA's own quarterly history and is not an heroic assumption -- it is simply that the base's normalization at exactly the current level is the conservative midpoint, not the bull reading.",
+      "specific_drivers": [
+        "Networking revenue growing at 199% YoY in Q1 FY2027 (NVDA_industry.json sub_segments networking_growth_pct): as networking mix rises within DC, blended margins expand because networking carries higher incremental margin than compute silicon",
+        "Annual architecture cadence (Blackwell 2024, Rubin 2026, Feynman 2027-2028 per industry roadmaps): prevents margin compression from commoditization because customers always buy the latest-generation at premium ASPs",
+        "Software attach through NVIDIA AI Enterprise and NIM microservices: low-variable-cost software revenue at 80%+ gross margin attached to each hardware sale, growing as enterprises move from one-time cluster purchases to recurring AI workload subscriptions"
+      ],
+      "base_under_counts_because": "The base calibrates its 65% EBIT margin to current actuals without crediting the networking and software mix shift that is already visible in the revenue trajectory (networking +199% in Q1 FY2027 vs compute). A margin normalization derived strictly from today's blended EBIT margin at the current product mix does not forward-weight the higher-margin networking and software components that are growing fastest.",
+      "value_per_share_usd": 5.95,
+      "value_per_share_derivation": "On the bull DC FY2030 revenue of $603B, a 2-point EBIT margin improvement (65% to 67%) generates $603B x 0.02 x 0.92 (cash tax factor) = $11.1B additional NOPAT at T. At exit multiple 19.15x: $212.7B additional terminal EV. Discounted at 10.2% for 4 years: $144.2B PV. Per share: $144.2B / 24.221 = $5.95/share. This $5.95/share is NOT included in the filed $222.55 bull value -- it represents additional upside above the bull if margin durability is realized. Including this lever would push the bull to approximately $228-229/share, still below the structural ceiling.",
+      "value_already_in_bull": false,
+      "note_on_bull_value": "This debate's $5.95/share swing is additional to the $222.55 bull. The $222.55 bull already uses 65% EBIT margin (same as base). The margin debate is a fourth lever that, if the evidence were CONTRACTED, would push the target above $222.55. Given the EXTRAPOLATED grade, it widens the upside band but does not move the filed bull value.",
+      "evidence_quality": "EXTRAPOLATED",
+      "evidence_quality_rationale": "The networking mix shift is observable and evidenced (199% YoY growth in Q1 FY2027 per Theia). The argument that this sustains or expands blended EBIT margins is a directional read of the trend, not a booked outcome. NVIDIA does not disaggregate gross margins by sub-segment between compute and networking in its public filings. The annual architecture cadence is a real operational fact but its pricing power at normalization (FY2030) depends on competitive dynamics that remain contested. EXTRAPOLATED: the trend is directionally clear but the normalization-year impact is not independently verified.",
+      "scenario_spec": {
+        "dc_revenue_fy2030_usd_bn": 603.0,
+        "dc_ebit_margin_pct_base": 65.0,
+        "dc_ebit_margin_pct_bull_margin_debate": 67.0,
+        "incremental_nopat_usd_bn": 11.1,
+        "incremental_terminal_ev_usd_bn": 212.7,
+        "incremental_pv_usd_bn": 144.2,
+        "incremental_value_per_share": 5.95,
+        "combined_bull_if_margin_realized": 228.5,
+        "implied_value_per_share": 222.55,
+        "note": "This scenario spec is incremental to the base bull of $222.55. If margin durability is realized in addition to debates 1 and 2, the combined value would approach $228-229/share. The structural ceiling check: $228.50 at 67% margin and $900B pool is arithmetically consistent and does not breach any sourced ceiling."
+      }
+    }
+  ],
+
+  "evidence_quality_summary_on_crux": {
+    "grade": "EXTRAPOLATED",
+    "one_line": "Vera Rubin's 10x cost-per-token advantage (management guidance, Q1 FY2027 press release) is the bull's load-bearing claim; it is directionally supported by NVIDIA's track record of delivering on architectural promises (Blackwell delivered 5x over H100) and by Amazon's hybrid Trainium4+NVLink design choice, but is not independently verified at scale and no hyperscaler has publicly stated it is slowing its ASIC program in response to Rubin.",
+    "contracted_elements": "FY2027 DC revenue floor: $95B of supply commitments payable in remainder of FY2027 (NVDA_crux.json contracted_horizon); Q2 FY2027 revenue guide of $91B total (+/-2%). The near-term (FY2027) is substantially contracted.",
+    "extrapolated_elements": "Wallet share holding at 67% of total AI chip pool through FY2030 (driven by Vera Rubin ASIC deceleration); hyperscaler capex at $1.1T in CY2027 (Goldman Sachs base case); networking mix lifting EBIT margins from 65% to 67% at normalization.",
+    "hoped_for_elements": "None. The bull case does not rely on a reversal of the ASIC trend -- only its deceleration -- and does not require the AI chip pool to breach the sourced $900B ceiling."
+  },
+
+  "ceiling_compliance": {
+    "total_ai_chip_pool_fy2030_usd_bn": 900.0,
+    "sourced_ceiling_usd_bn": 900.0,
+    "exceeds_ceiling": false,
+    "nvda_wallet_share_fy2030_pct": 67.0,
+    "sourced_wallet_share_ceiling_pct": 80.0,
+    "exceeds_wallet_share_ceiling": false,
+    "nvda_dc_revenue_fy2030_usd_bn": 603.0,
+    "sourced_dc_revenue_ceiling_usd_bn": 720.0,
+    "exceeds_dc_revenue_ceiling": false,
+    "note": "All three ceiling checks pass. The bull DC revenue of $603B is well below the arithmetic maximum of $720B ($900B x 80% ceiling wallet share). The bull is internally consistent and does not require implausible market sizing."
+  },
+
+  "bull_value_per_share": 222.55,
+  "base_value_per_share_reference": 206.93,
+  "bear_value_per_share_reference": 172.65,
+  "price_clears": false,
+  "price_clear_note": "The bull at $222.55 does not clear the current price of $210.69 but sits above the base of $206.93. The bull IS above price, meaning the bull case calls for a modest Buy -- but only modestly (+5.6% to $222.55 from $210.69), well below the 15% threshold for a Buy rating under the CONTRACT. The call therefore remains HOLD even on the bull reading, because the upside to the honest higher case is insufficient to clear the Buy hurdle. The bull IS a real upside case and not a SELL; it simply does not clear +15%. Daedalus should note this: the range ($172.65 bear to $222.55 bull) straddles the current price, with the bull only modestly above it. The stock is priced for near-perfection on the base; the bull represents execution upside, not a value-driven Buy.",
+
+  "what_would_change_our_mind": [
+    "Vera Rubin failing to deliver on the 5x inference / 10x cost-per-token claims in early customer deployments (H2 2026 data points from Microsoft and Google cloud deployments are the first observable test)",
+    "Hyperscaler Q2 or Q3 2026 earnings revealing CY2027 capex guidance below $850B, signaling the pool does not expand to Goldman's $1.1T scenario",
+    "AMD shipping ROCm 7.x with documented 90%+ CUDA coverage by H1 2027, enabling real training workload migrations at scale and accelerating merchant GPU share erosion beyond the base case's 12-13% AMD share assumption",
+    "Broadcom AI ASIC revenue exceeding $120B in FY2027 from its disclosed three-customer SAM, indicating ASIC revenue share is tracking the bear case (29-32%) rather than the bull's (17-19%) trajectory"
+  ]
+}

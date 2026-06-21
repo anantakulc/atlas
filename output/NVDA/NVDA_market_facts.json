@@ -1,0 +1,320 @@
+{
+  "_meta": {
+    "ticker": "NVDA",
+    "agent": "Pheme",
+    "atlas_version": "v3",
+    "snapshot_id": "NVDA_2026-06-20T0806Z",
+    "produced_utc": "2026-06-20",
+    "role": "Market-intelligence freeze. Facts only; no bull/bear vote."
+  },
+
+  "latest_earnings": {
+    "period": "Q1 FY2027",
+    "quarter_end_date": "2026-04-26",
+    "reported_date": "2026-05-20",
+    "revenue_b": 81.6,
+    "revenue_yoy_pct": 85,
+    "revenue_qoq_pct": 20,
+    "data_center_revenue_b": 75.2,
+    "data_center_yoy_pct": 92,
+    "gaming_and_other_b": 6.4,
+    "gross_margin_gaap_pct": 74.9,
+    "gross_margin_nongaap_pct": 75.0,
+    "eps_gaap": 2.39,
+    "eps_nongaap": 1.87,
+    "eps_gaap_yoy_pct": 214,
+    "eps_nongaap_yoy_pct": 140,
+    "beat_vs_consensus": {
+      "revenue_consensus_b": 78.8,
+      "revenue_beat_b": 2.8,
+      "eps_nongaap_consensus": 1.76,
+      "eps_nongaap_beat": 0.11
+    },
+    "q2_fy2027_guidance": {
+      "revenue_b": 91.0,
+      "revenue_range_pct": 2,
+      "gross_margin_gaap_pct": 74.9,
+      "gross_margin_nongaap_pct": 75.0,
+      "gross_margin_range_bps": 50,
+      "opex_gaap_b": 8.5,
+      "opex_nongaap_b": 8.3
+    },
+    "capital_allocation": {
+      "additional_buyback_authorization_b": 80.0,
+      "dividend_old_per_share": 0.01,
+      "dividend_new_per_share": 0.25,
+      "q1_total_shareholder_returns_b": 20.0
+    },
+    "ceo_quote": "The buildout of AI factories -- the largest infrastructure expansion in human history -- is accelerating at extraordinary speed.",
+    "product_note": "Blackwell is in volume ramp; Vera Rubin entered full production in Q1 2026 with H2 2026 cloud deployments expected. Rubin R100 samples already in customer hands per Q1 commentary.",
+    "china_revenue_assumption": "Management guided Q1 FY2027 and full FY2027 assuming zero China Data Center compute revenue; H20 export license requirement imposed April 2025 resulted in a $4.5B charge in Q1 FY2026 and $8B of foregone FY2026 revenue.",
+    "source": "https://finance.yahoo.com/markets/stocks/articles/nvidia-announces-financial-results-first-202000544.html"
+  },
+
+  "post_earnings_stock_reaction": {
+    "reaction_date": "2026-05-20",
+    "direction": "down",
+    "magnitude": "approximately -1.5% in after-hours trading following the earnings call",
+    "pattern": "fourth consecutive post-earnings decline despite beat-and-raise; stock had rallied ~13.7% since the February print ahead of the May report",
+    "interpretation": "classic priced-for-perfection dynamic: the stock moved up in anticipation of the result; the beat was large in absolute terms but not large enough relative to elevated buy-side expectations; the pattern is an expectations/valuation reaction, not a fundamental signal",
+    "source": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html"
+  },
+
+  "post_earnings_analyst_actions": [
+    {
+      "date": "2026-05-21",
+      "firm": "Baird",
+      "analyst": "not disclosed in available sources",
+      "action": "raise",
+      "old_pt": 300,
+      "new_pt": 500,
+      "rating": "Outperform",
+      "rating_change": "none",
+      "note": "Highest target on the Street at snapshot date. Baird expects Vera Rubin adoption at frontier model companies to exceed Blackwell's ramp rate.",
+      "source": "https://cryptobriefing.com/baird-nvidia-price-target-500/"
+    },
+    {
+      "date": "2026-05-21",
+      "firm": "CNBC Investing Club (Jim Cramer / David Faber)",
+      "analyst": "CNBC Investing Club",
+      "action": "raise",
+      "old_pt": null,
+      "new_pt": null,
+      "rating": "Buy",
+      "rating_change": "none",
+      "note": "CNBC Investing Club raised its price target on NVIDIA following the beat-and-raise Q1 result; exact old/new levels not retrieved.",
+      "source": "https://www.cnbc.com/2026/05/20/were-raising-our-price-target-on-nvidia-after-another-knockout-quarter-and-guide-.html"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "Wells Fargo",
+      "analyst": "Aaron Rakers",
+      "action": "raise",
+      "old_pt": 265,
+      "new_pt": 315,
+      "rating": "Overweight",
+      "rating_change": "none",
+      "note": "Pre-earnings raise. Dismissed peak-margin concerns; highlighted NVDA's capacity-driven revenue model. Cited valuation below 20x P/E as attractive. Flagged Jensen Huang's participation in Trump China delegation as potential export-control relief catalyst.",
+      "source": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-raises-nvidia-nvda-104510957.html"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "UBS",
+      "analyst": "Timothy Arcuri",
+      "action": "raise",
+      "old_pt": 245,
+      "new_pt": 275,
+      "rating": "Buy",
+      "rating_change": "none",
+      "note": "Pre-earnings raise ahead of the May 20 report. Dismissed Taiwan export data weakness as Lunar New Year normalization.",
+      "source": "https://www.cnbc.com/2026/05/14/ubs-hikes-nvidia-price-target-sees-strong-earnings-report-ahead.html"
+    },
+    {
+      "date": "2026-05-post",
+      "firm": "JPMorgan",
+      "analyst": "Harlan Sur",
+      "action": "raise",
+      "old_pt": 265,
+      "new_pt": 280,
+      "rating": "Overweight",
+      "rating_change": "none",
+      "note": "Post-earnings update. Sur raised PT citing management confirmation of sequential revenue growth continuing through the rest of CY2026 into CY2027, supported by hyperscaler capex growing more than 70% YoY.",
+      "source": "https://www.thestreet.com/investing/stocks/jpmorgan-resets-nvidia-stock-price-target-after-earnings"
+    },
+    {
+      "date": "2026-05-post",
+      "firm": "Morgan Stanley",
+      "analyst": "Joseph Moore",
+      "action": "raise",
+      "old_pt": 258,
+      "new_pt": 273,
+      "rating": "Overweight",
+      "rating_change": "none",
+      "note": "Post-earnings target raise; maintained Overweight.",
+      "source": "https://www.benzinga.com/analyst-ratings/analyst-color/18/05/11695689/morgan-stanley-lifts-nvidia-price-target-after-strong-q"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "Bernstein",
+      "analyst": "David Dai",
+      "action": "reiterate",
+      "old_pt": 300,
+      "new_pt": 300,
+      "rating": "Buy",
+      "rating_change": "none",
+      "note": "Reiterated Buy and $300 PT.",
+      "source": "https://finance.yahoo.com/markets/stocks/articles/analysts-resets-nvidia-stock-price-173038308.html"
+    },
+    {
+      "date": "2026-05-12",
+      "firm": "Citigroup",
+      "analyst": "Atif Malik",
+      "action": "reiterate",
+      "old_pt": 300,
+      "new_pt": 300,
+      "rating": "Buy",
+      "rating_change": "none",
+      "note": "Reiterated Buy and $300 PT.",
+      "source": "https://finance.yahoo.com/markets/stocks/articles/analysts-resets-nvidia-stock-price-173038308.html"
+    },
+    {
+      "date": "2026-06-05",
+      "firm": "China Renaissance",
+      "analyst": "not disclosed in available sources",
+      "action": "initiate",
+      "old_pt": null,
+      "new_pt": 319,
+      "rating": "Buy",
+      "rating_change": "initiation",
+      "note": "New coverage initiation with Buy and $319 PT; implies ~54% upside from initiation-date price.",
+      "source": "https://www.benzinga.com/quote/NVDA/analyst-ratings"
+    },
+    {
+      "date": "2026-03-03",
+      "firm": "JPMorgan",
+      "analyst": "Harlan Sur",
+      "action": "raise",
+      "old_pt": 250,
+      "new_pt": 265,
+      "rating": "Overweight",
+      "rating_change": "none",
+      "note": "Earlier raise, prior to Q1 earnings. Cited AI engine robustness and Blackwell-generation strength.",
+      "source": "https://finance.yahoo.com/news/jpmorgan-revamps-nvidia-stock-price-153700952.html"
+    }
+  ],
+
+  "consensus": {
+    "target_mean": 298.93,
+    "target_median": 288.0,
+    "target_high": 500.0,
+    "target_low": 180.0,
+    "n_analysts": 59,
+    "recommendation_key": "strong_buy",
+    "distribution": {
+      "strong_buy": 10,
+      "buy": 49,
+      "hold": 2,
+      "sell": 1,
+      "strong_sell": 0
+    },
+    "recommendation_tilt_note": "59 out of 62 analysts rated Buy or Strong Buy at snapshot date; zero strong sells. The distribution is one of the most uniformly bullish on any large-cap name in the market. The lone sell and two holds represent essentially no coverage dissent."
+  },
+
+  "eps_ntm_artifact_check": {
+    "bundle_eps_ntm": 12.73,
+    "bundle_pe_ntm": 16.55,
+    "arithmetic_check": "210.69 / 12.73 = 16.55x. The math is internally consistent.",
+    "what_the_12_73_represents": "The $12.73 figure is yfinance's blended next-12-month EPS, computed as a weighted average of the four upcoming quarters (Q2 FY2027 through Q1 FY2028). It is NOT the FY2027 annual GAAP consensus nor the FY2027 non-GAAP consensus. Because NVDA's quarterly EPS is on a steep ramp (Q1 FY2027 GAAP: $2.39, and Q2 FY2027 guidance implies further sequential growth), blending the next four rising quarters produces a figure materially above any single fiscal-year annual consensus.",
+    "fy2027_gaap_annual_consensus": "approximately $6.52 (range $6.00-$7.29, 15 estimates as of mid-May 2026)",
+    "fy2027_nongaap_consensus": "approximately $9.34 per share (pre-Q1 result; likely revised up post-beat); note that starting Q1 FY2027 NVDA reclassified SBC into non-GAAP, materially narrowing the GAAP/non-GAAP gap vs prior years",
+    "ttm_gaap_eps_check": "Sum of last 4 reported quarters: Q2 FY2026 $1.08 + Q3 FY2026 $1.30 + Q4 FY2026 $1.76 + Q1 FY2027 $2.39 = $6.53. At $210.69 price: TTM PE = 32.2x. This matches the bundle's stated 32.26x PE TTM exactly.",
+    "verdict": "FLAG. The bundle's NTM EPS of $12.73 and PE NTM of 16.55x are internally consistent but represent a forward-rate annualization of a rapidly-ramping quarterly trajectory, not the FY2027 annual consensus. Daedalus must not use $12.73 as the FY2027 EPS input. Use FY2027 GAAP annual consensus (~$6.52) for the valuation base. The NTM figure overstates the calendar-year annual number by approximately 95% because it blends future quarters that embed continued ramp assumptions. Additionally: starting Q1 FY2027, NVDA now includes SBC in non-GAAP figures, so the non-GAAP/GAAP gap is structurally narrower going forward.",
+    "corrected_pe_on_fy2027_gaap": "210.69 / 6.52 = 32.3x forward PE on FY2027 GAAP annual consensus",
+    "corrected_pe_on_fy2027_nongaap": "210.69 / 9.34 = 22.6x forward PE on FY2027 non-GAAP consensus (post-SBC reclassification)"
+  },
+
+  "street_thesis": "NVDA is a platform play on AI infrastructure build-out: as hyperscalers commit $650-700B of CY2026 capex of which ~75% is AI-directed, NVDA captures the majority of that spend via Blackwell GPUs (now in volume ramp) and the CUDA software ecosystem which makes switching costly. The bull case is that Vera Rubin (H2 2026 deployment, volume production Q1 2027) extends the ramp cycle at least two more years before any credible competitive alternative exists. The street is paying ~22-23x NTM non-GAAP (or ~33x NTM GAAP) for that runway, which at $299 mean target implies roughly 41% upside from current price.",
+
+  "reverse_multiple_decomposition": {
+    "current_price": 210.69,
+    "street_mean_target_12m": 298.93,
+    "implied_12m_return_pct": 41.8,
+    "method_note": "What must be true for $299 to be the right price in 12 months, using exit-multiple logic on FY2028 earnings.",
+    "fy2028_nongaap_eps_consensus": "approximately $13-15 per share (estimated, given ~35-40% consensus growth from FY2027's ~$9.34)",
+    "implied_pe_at_target_on_fy2028_nongaap": "approximately 20-23x",
+    "decomposition": "The street is essentially saying: NVDA grows non-GAAP EPS to ~$13-15 in FY2028 (ending Jan 2028) and the market re-rates to a mature-ish 20-23x multiple as the data center ramp normalizes. That requires: (a) revenue continuing to grow through FY2027 at 30-50% toward ~$280-390B in FY2028, (b) gross margins holding at 74-76%, and (c) no multiple compression below 20x even as growth moderates. At the current $210.69, paying ~16.5x the NTM blended figure or ~22.6x FY2027 non-GAAP, the market has already priced in successful execution of the Blackwell ramp and assumes Vera Rubin volume comes on-line cleanly.",
+    "whats_priced_in": "Continued data center revenue acceleration through at least FY2028; gross margin stability at 74-76%; no material China revenue recovery; Vera Rubin production ramp starting Q1 2027 without significant yield or supply issues; no new export controls beyond existing framework."
+  },
+
+  "sentiment": {
+    "institutional_pct": 70.88,
+    "insider_pct": 3.98,
+    "social_sentiment_source": "stocktwits",
+    "social_sentiment_status": "unavailable (HTTPError in bundle fetch)",
+    "social_narrative": "Stocktwits data could not be retrieved at bundle snapshot. Broader social media signal (verified from search results): NVDA discussed with 'remarkably cheap' framing post-Q1 on StockTwits, with some community members projecting $10T market cap. This is retail framing and is flagged as unverified/speculative sentiment, not a hard fact.",
+    "insider_signal": "Insider ownership at 3.98% is typical for a company of this scale and age; Jensen Huang holds a known large personal stake but percentage not broken out separately. No insider selling trend flagged in this snapshot.",
+    "institutional_note": "70.88% institutional ownership is high-quality sponsorship consistent with large-cap index inclusion and broad institutional mandates."
+  },
+
+  "runway": {
+    "next_earnings_date": "2026-08-26",
+    "next_earnings_label": "Q2 FY2027",
+    "key_events_near_term": [
+      {
+        "event": "Q2 FY2027 earnings",
+        "date": "2026-08-26",
+        "why_it_matters": "Q2 guidance was $91B (+11.5% QoQ from Q1). A beat or raised guide would confirm the ramp trajectory; a miss or flat guide would likely trigger a sharper post-earnings decline given the priced-for-perfection dynamic already evident across four consecutive post-earnings drops."
+      },
+      {
+        "event": "Vera Rubin H2 2026 customer deployments",
+        "date": "H2 2026",
+        "why_it_matters": "First commercial deployments of Rubin at hyperscaler scale would validate the next platform cycle and de-risk FY2028 revenue assumptions."
+      },
+      {
+        "event": "China export control policy",
+        "date": "ongoing",
+        "why_it_matters": "BIS closed the overseas-subsidiary loophole for China-headquartered firms in May-June 2026. FY2027 guidance assumes zero China data center revenue. Any relaxation (e.g. a negotiated H20-equivalent product) would be meaningful upside; any further tightening has limited incremental impact since China is already zeroed out."
+      },
+      {
+        "event": "Hyperscaler Q2 2026 earnings and capex updates",
+        "date": "July-August 2026",
+        "why_it_matters": "Microsoft, Amazon, Google, Meta all report; any capex revision (up or down) from the current $650-700B combined CY2026 level directly updates the demand signal for NVDA's primary market."
+      }
+    ],
+    "runway_verdict": "The fundamental runway is intact: $650-700B combined hyperscaler CY2026 AI capex and a clear Blackwell-to-Rubin transition path give NVDA a credible growth trajectory into FY2028. The valuation risk is distinct: four consecutive post-earnings declines on strong beats signals the stock consistently overshoots consensus before results and then corrects to a still-elevated level. At $210.69, the stock trades at ~22.6x FY2027 non-GAAP (or ~33x GAAP), which is not cheap for a company where significant multiple compression is possible as growth rates normalize. The risk is not the business -- it is paying the right price for it."
+  },
+
+  "capex_guidance": [
+    {
+      "buyer": "Alphabet (Google)",
+      "fy": "CY2026",
+      "capex_guide_b": "180-190",
+      "incl_finance_leases": false,
+      "note": "Raised from prior $175-185B band after Q1 2026 earnings. Google Cloud backlog exceeded $460B. Alphabet spent $35.67B on capex in Q1 2026 alone, more than doubling YoY.",
+      "quote": "Not retrieved verbatim from transcript; guidance range $180-190B confirmed via Q1 2026 earnings disclosures.",
+      "source_url": "https://www.heygotrade.com/en/news/big-tech-q1-2026-earnings-ai-capex-spree/"
+    },
+    {
+      "buyer": "Microsoft",
+      "fy": "CY2026",
+      "capex_guide_b": "up to 190",
+      "incl_finance_leases": false,
+      "note": "Set CY2026 capex at $190B, well above analyst consensus of $152B. Microsoft noted approximately $25B of its $190B reflects component price inflation rather than incremental capacity.",
+      "quote": "Not retrieved verbatim from transcript.",
+      "source_url": "https://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html"
+    },
+    {
+      "buyer": "Amazon (AWS)",
+      "fy": "CY2026",
+      "capex_guide_b": "200",
+      "incl_finance_leases": false,
+      "note": "Amazon maintained its $200B CY2026 forecast (published February 2026). Q1 2026 quarterly capex was $44.2B; AWS grew 28% and its chip business hit a $20B revenue run rate (Trainium/Inferentia).",
+      "quote": "Not retrieved verbatim from transcript.",
+      "source_url": "https://www.heygotrade.com/en/news/big-tech-q1-2026-earnings-ai-capex-spree/"
+    },
+    {
+      "buyer": "Meta Platforms",
+      "fy": "CY2026",
+      "capex_guide_b": "125-145",
+      "incl_finance_leases": false,
+      "note": "Raised from prior $115-135B range; Meta cited higher component pricing and additional data center costs.",
+      "quote": "Not retrieved verbatim from transcript.",
+      "source_url": "https://www.cnbc.com/2026/04/29/meta-q1-earnings-report-2026.html"
+    }
+  ],
+
+  "combined_hyperscaler_capex_note": "The four named hyperscalers (Microsoft, Google, Amazon, Meta) collectively guide $650-735B of CY2026 capex. Approximately 75% is estimated to be AI-directed infrastructure, implying roughly $490-550B of AI-specific spend. This is the primary external demand driver for NVDA's data center segment. Theia should note that Amazon's stated $200B and Microsoft's $190B both include broader IT infrastructure beyond pure AI compute; the AI-specific share requires further disaggregation. Amazon separately reports AWS chip business at a $20B revenue run rate (custom silicon via Trainium/Inferentia), which represents demand that NVDA does not capture.",
+
+  "market_view": {
+    "whats_priced_in": "At $210.69, the market prices continued sequential data center revenue growth through at least FY2028, gross margins stable at 74-76%, Vera Rubin arriving on schedule in H2 2026/Q1 2027, and no China revenue recovery. The NTM blended PE of 16.55x (on the yfinance forward rate) looks low but is misleading -- on FY2027 GAAP annual consensus it is 32.3x, and on non-GAAP FY2027 it is 22.6x. The market is paying a premium that requires flawless execution.",
+    "street_view": "59 analysts, 59 buy or strong buy (net). The street argues NVDA has at minimum two more years of accelerating data center GPU revenue as Blackwell ramps and Rubin follows; the CUDA ecosystem moat makes switching hard enough that AMD's MI300X/MI350 and custom silicon (Google TPU, Amazon Trainium, Meta MTIA) take share only slowly; and the gross margin profile (75%+) means earnings power is extraordinary at scale. The mean target of $299 requires no heroic multiple -- roughly 20-23x FY2028 non-GAAP -- if the revenue ramp materialises.",
+    "post_earnings_analyst_actions_summary": "The Q1 FY2027 beat (revenue $81.6B vs $78.8B consensus; non-GAAP EPS $1.87 vs $1.76) triggered a broad wave of PT raises, with Baird setting the high-water mark at $500 (from $300). Most firms raised by $15-35. No downgrades. The stock fell ~1.5% after hours despite the beat, marking the fourth consecutive post-earnings decline -- the priced-for-perfection signal was explicit.",
+    "news_narrative": "The dominant near-term news thread is the export control tightening (May-June 2026, BIS closing the overseas-subsidiary loophole) and the Vera Rubin ramp. The export control story is almost entirely already in guidance (zero China data center assumed). Rubin's ability to extend the ramp is the forward catalyst the street is pricing. The beat-and-raise pattern held in Q1 FY2027 but the stock's inability to hold gains post-earnings is a recurring market signal that expectations consistently run ahead of results.",
+    "sentiment_narrative": "Social sentiment data was unavailable from stocktwits at snapshot. Broader market sentiment, as expressed in the 59-analyst consensus (strong buy) and the 84% institutional ownership (70.88% institutional plus 3.98% insider), is structurally bullish. No short-squeeze or retail-driven framing evident in verified sources, though retail community on StockTwits used 'remarkably cheap' framing post-Q1 -- treat as unverified sentiment, not a hard fact.",
+    "runway": "Fundamental runway is multi-year: $490-550B of AI-directed hyperscaler capex in CY2026 provides durable near-term demand; Blackwell in volume ramp now, Rubin in production by Q1 2027. Next hard test is Q2 FY2027 earnings on 2026-08-26, where the question is whether revenue exceeds the $91B guide and whether Q3 guidance rises again.",
+    "runway_verdict": "Strong fundamental runway, but the stock trades at a premium that leaves no margin for error. The post-earnings pattern (beat-and-fall, four quarters in a row) is a hard market fact: the street has consistently priced in the upside before it arrives. The risk is valuation, not the business.",
+    "market_lean": "bull",
+    "market_lean_strength": "strong",
+    "market_lean_note": "84% of analysts rate the stock Buy or Strong Buy; zero strong sells; post-earnings PT raises from every major firm; consensus implies 41% upside. The market lean is unambiguously bullish. The only dissent is valuation-based (the stock's inability to hold gains post-earnings) and China-exposure concerns (already baked in via zero-China guidance). This is not a fundamental bear case -- it is a valuation-timing question."
+  }
+}

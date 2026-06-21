@@ -1,0 +1,1117 @@
+{
+  "ticker": "NVDA",
+  "name": "NVIDIA Corporation",
+  "listings": "NMS",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "business_type": "conglomerate",
+  "currency": "USD",
+  "date": "2026-06-20",
+  "engine": "Atlas v3",
+  "our_view": "HOLD at MEDIUM conviction. NVIDIA is the dominant AI compute platform and is fairly valued at $210.69 against our base of $206.93, implying 8.2% total return to a $228.03 12-month target. The business is extraordinary -- 85% revenue growth, 75% gross margins, $95B of contracted FY2027 supply commitments -- but the stock prices near-perfection at 22.6x non-GAAP FY2027 earnings. The crux is ASIC wallet share: Broadcom has already guided $60-90B of ASIC revenue from three hyperscaler customers in FY2027, with $73B of backlog in hand. If that ramp drives custom ASIC revenue share from 21% today to 29-32% by FY2029 faster than we expect in the base, fair value falls to $172.65. The bull case -- Vera Rubin's 10x cost-per-token claim slowing ASIC adoption -- is management guidance, not yet independently confirmed. At this price, the risk/reward is symmetric, not compelling. We hold rather than sell because NVIDIA's CUDA ecosystem moat is genuinely durable in training, the near-term is substantially contracted, and the honest bull path to $222.55 requires no heroic assumptions. We hold rather than buy because 8.2% to our 12-month target is well short of the 15% hurdle, and four consecutive post-earnings declines on strong beats confirm the market consistently over-prices the news before it arrives.",
+  "crux": {
+    "variable": "NVIDIA's AI accelerator wallet share as custom ASICs proliferate",
+    "one_line": "NVIDIA currently captures roughly 66% of all AI chip spend (merchant GPU plus custom ASIC combined); the question is whether Broadcom's $100B+ ASIC ramp and AMD's software improvements erode that to 58-60% by FY2029 (bear, $172.65) or whether Vera Rubin's performance step-change holds it at 67-70% (bull, $222.55), with the base at 64-65% ($206.93).",
+    "base": "71-73% wallet share of merchant GPU sub-market by FY2029 (64-65% of total AI chip pool); DC revenue $560B at FY2030 normalization",
+    "bull": "76-78% wallet share of merchant GPU sub-market by FY2029 (67% of total AI chip pool); DC revenue $603B ceiling-capped at FY2030",
+    "bear": "63-65% wallet share of merchant GPU sub-market by FY2029 (58-60% of total AI chip pool); DC revenue $460B at FY2030 normalization",
+    "what_decides_it": "The rate at which Broadcom's confirmed three-customer ASIC programs ramp to full revenue utilization, and whether AMD ROCm reaches 80% CUDA coverage by FY2028. Both are partially observable in the next 6-12 months."
+  },
+  "recommendation": {
+    "action": "HOLD",
+    "tone": "neutral",
+    "current_price": 210.69,
+    "target_12m": 228.03,
+    "upside_pct": 7.1,
+    "conviction": "MEDIUM",
+    "rationale": "Fairly valued at base; symmetric risk/reward; 7.1% implied return is well below the 15% Buy hurdle. Crux is real but not yet fully firing.",
+    "next_earnings": "2026-08-26"
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 206.93,
+      "multiple": 23.9,
+      "multiple_label": "EV / FY2027 DC Segment NOPAT",
+      "basis": "SOTP base case: DC exit-multiple at FY2030 normalization, Gaming and ProViz at current-earnings multiples, Automotive at exit-multiple"
+    },
+    "price_today": {
+      "value": 210.69,
+      "multiple": 24.4,
+      "multiple_label": "EV / FY2027 DC Segment NOPAT",
+      "basis": "Market price as of 2026-06-20"
+    },
+    "fair_value_12m": {
+      "value": 228.03,
+      "basis": "#1 rolled forward at blended WACC r=10.2% less dividend $0.01",
+      "convergence_return_pct": 7.1
+    },
+    "target_12m": {
+      "value": 228.03,
+      "basis": "Intrinsic convergence; no separate traded-multiple lean applied",
+      "implied_12m_total_return_pct": 8.2
+    }
+  },
+  "valuation_headline": {
+    "current_price": 210.69,
+    "fair_value_today": 206.93,
+    "target_12m": 228.03,
+    "fair_value_12m": 228.03,
+    "band_low": 172.65,
+    "band_high": 222.55,
+    "method_primary": "SOTP",
+    "method_why": "NVDA has four economically distinct segments; blending them into one DCF would distort a high-growth platform alongside mature annuities. Segment-first SOTP with per-segment WACC is the only honest method."
+  },
+  "thesis": [
+    {
+      "pillar": "Contracted near-term with extraordinary economics",
+      "detail": "$95B of manufacturing and supply commitments are payable in the remainder of FY2027 alone, giving DC revenue a hard floor near $340-350B. At 75% gross margins and 65% operating margins, the FCF conversion is exceptional -- FY2026 FCF was $96.7B on $215.9B revenue (44.8% margin). The near-term is not speculative; it is substantially pre-ordered."
+    },
+    {
+      "pillar": "The crux is ASIC wallet share, and it is already partially firing",
+      "detail": "Broadcom has disclosed $73B of AI backlog and guided $100B+ AI chip revenue in FY2027 from three hyperscaler customers whose programs (Google TPU Ironwood, Meta MTIA 400, Amazon Trainium3) are now in production. TrendForce data shows ASIC unit shipments at 27.8% of AI servers by 2026, growing at 44.6% vs GPU at 16.1%. This is not a future risk -- it is an observable mechanism that moves our bear to $172.65, 18% below the current price."
+    },
+    {
+      "pillar": "The multiple is fair, not cheap",
+      "detail": "At $210.69, NVDA trades at 22.6x FY2027 non-GAAP EPS of $9.34 (using the Pheme-corrected consensus; the yfinance NTM figure of $12.73 is an annualization artifact that overstates the annual number by roughly 95%). This is fair for a near-monopoly platform growing 85% YoY, but it leaves no margin for any guide disappointment. Four consecutive post-earnings declines on strong beats are the market's revealed preference: expectations consistently run ahead of results at this price."
+    }
+  ],
+  "business_overview": {
+    "summary": "NVIDIA designs high-performance parallel computing platforms. It built its franchise in gaming GPUs, then pivoted to AI data center infrastructure where it now generates roughly 90% of revenue. The economic engine is the combination of Blackwell GPU silicon, InfiniBand and NVLink networking, and the CUDA software stack -- a vertically integrated AI factory. In practice, NVIDIA is a one-segment company whose fate is decided by the AI accelerator market.",
+    "business_model": "NVIDIA designs chips (fabless model), contracts manufacturing to TSMC (primarily), and sells complete rack-scale systems -- GB200 NVL72, GB300 NVL72 -- directly or through ODMs including Foxconn and Quanta. Revenue is hardware-dominated; software (CUDA, NIM, NVIDIA AI Enterprise) is bundled or lightly monetized. The switching cost lives in the CUDA software stack: 5 million-plus registered developers, 15 years of library accumulation (cuDNN, cuBLAS, NCCL), and the majority of AI frameworks written natively to CUDA. Gross margins of approximately 71-75% reflect this pricing power. Networking (InfiniBand, Spectrum-X Ethernet) grew 142% in FY2026 and 199% in Q1 FY2027, becoming an increasingly important margin-mix tailwind.",
+    "segments": [
+      {
+        "name": "Data Center (Compute and Networking)",
+        "revenue_share_pct": 89.7,
+        "growth_pct": 68.0,
+        "margin_pct": 75.0,
+        "nature": "high-growth",
+        "note": "FY2026 revenue $193.74B. Primary growth engine. Top 4 customers (Microsoft, Amazon, Google, Meta via ODMs) were 61% of Q3 FY2026 revenue. Blackwell architecture in volume ramp; Vera Rubin entering H2 2026 cloud deployments. Zero China Data Center compute revenue assumed in all forward guidance."
+      },
+      {
+        "name": "Gaming",
+        "revenue_share_pct": 7.4,
+        "growth_pct": 41.0,
+        "margin_pct": 55.0,
+        "nature": "mature-annuity",
+        "note": "FY2026 revenue $16.04B. NVDA holds 94-95% discrete GPU market share (Jon Peddie Research). RTX 50 series drives ASP lift. AIB market expected to decline roughly 10% in 2026 on memory price inflation and tariff headwinds. Steady mid-single-digit growth outlook."
+      },
+      {
+        "name": "Professional Visualization",
+        "revenue_share_pct": 1.5,
+        "growth_pct": 70.0,
+        "margin_pct": 65.0,
+        "nature": "mature-annuity",
+        "note": "FY2026 revenue $3.19B. Near-monopoly workstation GPU share (greater than 90%). RTX PRO 6000 Blackwell drives AI workstation demand. TAM $3.5B growing at 8% CAGR. Sustainable at mid-single-digit rates."
+      },
+      {
+        "name": "Automotive",
+        "revenue_share_pct": 1.1,
+        "growth_pct": 55.0,
+        "margin_pct": 50.0,
+        "nature": "high-growth (early stage)",
+        "note": "FY2026 revenue $2.35B. DRIVE Thor dominates new design wins; $14B design win pipeline through 2028. Revenue recognition is 2-4 years lagged from win date. BYD, Geely, Toyota, Volvo, Zoox among customers."
+      }
+    ],
+    "customers": [
+      "Microsoft",
+      "Amazon",
+      "Google",
+      "Meta"
+    ],
+    "geographic": [
+      "US-dominated; China effectively zero for advanced AI chips since April 2025 H20 export license requirement"
+    ]
+  },
+  "historical_financials": [
+    {
+      "fy": "FY2023",
+      "revenue_b": 26.97,
+      "revenue_growth_pct": null,
+      "gross_margin_pct": 56.9,
+      "ebitda_b": 5.99,
+      "ebitda_margin_pct": 22.2,
+      "net_income_b": 4.37,
+      "fcf_b": 3.81,
+      "eps": 0.17
+    },
+    {
+      "fy": "FY2024",
+      "revenue_b": 60.92,
+      "revenue_growth_pct": 125.9,
+      "gross_margin_pct": 72.7,
+      "ebitda_b": 35.58,
+      "ebitda_margin_pct": 58.4,
+      "net_income_b": 29.76,
+      "fcf_b": 27.02,
+      "eps": 1.19
+    },
+    {
+      "fy": "FY2025",
+      "revenue_b": 130.5,
+      "revenue_growth_pct": 114.2,
+      "gross_margin_pct": 75.0,
+      "ebitda_b": 86.14,
+      "ebitda_margin_pct": 66.0,
+      "net_income_b": 72.88,
+      "fcf_b": 60.85,
+      "eps": 2.94
+    },
+    {
+      "fy": "FY2026",
+      "revenue_b": 215.94,
+      "revenue_growth_pct": 65.5,
+      "gross_margin_pct": 71.1,
+      "ebitda_b": 144.55,
+      "ebitda_margin_pct": 66.9,
+      "net_income_b": 120.07,
+      "fcf_b": 96.68,
+      "eps": 4.9
+    }
+  ],
+  "historical_financials_read": "Three years of data tell a single story: a step-change in scale with improving economics at each step. Revenue went from $27B in FY2023 to $216B in FY2026 -- a 3.3-year CAGR of 100%. More important than the growth rate is the quality: gross margins expanded from 57% to 71-75%, FCF conversion held above 44% of revenue despite $119B of supply commitments tying up working capital, and SBC as a percentage of revenue declined as the revenue base scaled. The FY2026 dip in reported gross margin (to 71.1%) reflects the one-time $4.5B H20 inventory charge from the April 2025 export control action; the underlying DC business ran at 74-75% in the same period. The EPS trajectory from $0.17 in FY2023 to $4.90 in FY2026 understates the earnings power because GAAP EPS is burdened by SBC and a ramping cash tax provision; the non-GAAP FY2027 consensus of $9.34 is the cleaner forward anchor. FCF grew from $3.8B in FY2023 to $96.7B in FY2026 and is on track to double again in FY2027 as DC revenue approaches $350B.",
+  "snapshot": [
+    {
+      "label": "Price",
+      "value": "$210.69"
+    },
+    {
+      "label": "Market Cap",
+      "value": "$5.1T"
+    },
+    {
+      "label": "Enterprise Value",
+      "value": "$4.98T"
+    },
+    {
+      "label": "Net Debt",
+      "value": "$0.44B"
+    },
+    {
+      "label": "Shares Outstanding",
+      "value": "24.22B"
+    },
+    {
+      "label": "FY2026 Revenue",
+      "value": "$215.9B"
+    },
+    {
+      "label": "FY2026 FCF",
+      "value": "$96.7B"
+    },
+    {
+      "label": "FY2026 FCF Margin",
+      "value": "44.8%"
+    },
+    {
+      "label": "FY2026 EBIT Margin",
+      "value": "60.4%"
+    },
+    {
+      "label": "Q1 FY2027 Gross Margin",
+      "value": "74.9% GAAP"
+    },
+    {
+      "label": "Q1 FY2027 DC Revenue",
+      "value": "$75.2B (+92% YoY)"
+    },
+    {
+      "label": "Q2 FY2027 Revenue Guide",
+      "value": "$91B"
+    },
+    {
+      "label": "FY2027 Supply Commitments",
+      "value": "$95B payable remainder FY2027"
+    },
+    {
+      "label": "FY2027 non-GAAP EPS (corrected)",
+      "value": "$9.34"
+    },
+    {
+      "label": "NTM P/E (non-GAAP, corrected)",
+      "value": "22.6x"
+    },
+    {
+      "label": "TTM P/E (GAAP)",
+      "value": "32.3x"
+    },
+    {
+      "label": "EV / FY2027 DC NOPAT",
+      "value": "23.9x (base) / 24.4x (market)"
+    },
+    {
+      "label": "ROE FY2026",
+      "value": "76.3%"
+    },
+    {
+      "label": "PEG Ratio",
+      "value": "0.65"
+    },
+    {
+      "label": "Beta (regression)",
+      "value": "2.2 (rally-inflated; fundamental beta used: 1.05)"
+    },
+    {
+      "label": "52-week Range",
+      "value": "$142.03 - $236.54"
+    },
+    {
+      "label": "YTD Return",
+      "value": "+11.7%"
+    },
+    {
+      "label": "Analyst Consensus",
+      "value": "59/62 Buy; mean target $298.93"
+    },
+    {
+      "label": "Next Earnings",
+      "value": "2026-08-26"
+    }
+  ],
+  "industry_position": {
+    "market_overview": "The AI accelerator market -- GPUs, ASICs, and FPGAs used for AI training and inference -- grew from roughly $140B in 2024 to an estimated $200B+ in 2026, driven by hyperscaler capital expenditure now running at $650-735B combined annually from just four buyers (Microsoft, Google, Amazon, Meta). Bloomberg Intelligence projects the market reaching $604B by 2033 at a 16% CAGR. Within that, a structural bifurcation is underway: merchant GPUs (where NVIDIA dominates) are growing at roughly 16% per year, while custom ASICs (purpose-built chips for hyperscaler workloads, designed by Broadcom and Marvell) are growing at 44.6% per year. TrendForce data shows ASIC unit shipments at 20.9% of AI servers in 2025 and 27.8% in 2026. The total AI chip market is large enough that NVIDIA's absolute revenue can grow even as its share percentage declines -- but the share trajectory matters enormously for the multiple.",
+    "tam_usd_bn": 440.0,
+    "tam_growth_pct": 28.0,
+    "addressable_market": "NVIDIA's directly addressable market is the merchant GPU segment -- chips available to external purchase. At roughly 80% share of an approximately $240B merchant GPU market (FY2026 Theia bottom-up), NVIDIA captures $193.7B. Custom ASICs are not available for purchase and are not in NVIDIA's addressable market, but they displace wallet share. The total AI chip spending pool (merchant GPU plus ASIC) is estimated at $291B in FY2026, reaching $870B by FY2030 in the base case.",
+    "the_share_dynamic": "NVIDIA holds approximately 80% of the merchant GPU market and roughly 66% of total AI chip spend (merchant plus ASIC). The dynamic is: (1) NVIDIA retains dominance in AI training workloads -- CUDA's 15-year head start and 5M+ developer ecosystem create genuine 6-12 month switching costs; (2) custom ASICs are winning fixed-workload inference -- Google Search AI on TPU Ironwood, Meta content recommendation on MTIA 400, Amazon AWS-native workloads on Trainium3. Inference is already 2/3 of total AI compute and growing toward 3/4 by FY2029. The merchant GPU market will not shrink in absolute terms (the pool grows faster than the share falls), but NVIDIA's percentage of total AI chip spend is structurally declining. The rate of decline is what the call hinges on.",
+    "revenue_drivers": [
+      "AI training capex at hyperscalers -- primary engine; 25-30% CAGR through FY2028 before deceleration",
+      "Inference buildout at AI cloud providers (CoreWeave, Lambda, xAI) and enterprise -- growing fastest in mix",
+      "Sovereign AI programs (UAE, France, Japan, India) -- government-funded, not subject to hyperscaler ROI discipline",
+      "Networking mix shift -- InfiniBand and Spectrum-X growing faster than compute, higher margins",
+      "PC gaming RTX refresh cycle -- ASP lift from AI-enhanced features offsetting unit headwinds",
+      "Automotive ADAS ramp -- $14B design win pipeline converting to revenue 2026-2030"
+    ],
+    "npat_margin_drivers": [
+      "Gross margin: Blackwell/Rubin architecture mix, TSMC yields, HBM memory pricing (SK Hynix, Samsung)",
+      "R&D leverage: R&D at roughly 10% of revenue at $215B scale; leverage accrues as revenue grows faster than R&D",
+      "SBC: approximately 2% of revenue, declining as revenue scales; reclassified into non-GAAP starting Q1 FY2027",
+      "Export controls: China H20 ban already embedded as zero DC compute revenue in guidance"
+    ],
+    "product_differentiation": "CUDA's 15-year head start and 5M+ developer ecosystem is the moat. The switching cost for a hyperscaler to migrate its ML stack from CUDA to ROCm (AMD) or Neuron (Amazon) is 6-12 months of engineering at minimum. NVLink 5.0 provides 900 GB/s GPU-to-GPU bandwidth within an NVL72 rack -- no competitor matches this for large-model training. NVIDIA sells complete AI factories (GB200 NVL72 rack: 72 GPUs plus NVLink fabric plus InfiniBand), making it difficult to dislodge on a module-by-module basis. The moat is strongest in training (where CUDA dependency is deepest) and moderating for fixed-workload inference (where ASICs can match or beat on cost-per-token for a specific workload).",
+    "five_forces": {
+      "buyer_power": "HIGH and growing. Top 4 customers were 61% of Q3 FY2026 revenue. Each runs its own custom silicon program partly as a negotiating lever against NVIDIA pricing. CUDA switching costs limit their practical substitution speed.",
+      "supplier_power": "HIGH. TSMC is the sole advanced node manufacturer for NVIDIA's critical chips. CoWoS-L advanced packaging is also TSMC-only and currently constrained. HBM3E from SK Hynix and Samsung is tight.",
+      "threat_of_new_entrants": "LOW for merchant GPU; HIGH for custom ASIC. Any hyperscaler with $5B+ annual capex can fund a Broadcom or Marvell custom program. The threat is hyperscaler insourcing, not a new chip company.",
+      "threat_of_substitutes": "MEDIUM and rising. Custom ASICs for fixed-workload inference. Training has no credible substitute for CUDA plus NVLink at scale.",
+      "competitive_rivalry": "LOW in merchant GPU (AMD at 5-10% share); HIGH in total AI compute when custom ASICs are included."
+    },
+    "moat": "Ecosystem switching cost plus scale network effect. STRONG for training (CUDA dependency is deep; AMD ROCm cannot substitute for training at scale today). MODERATE and declining for inference (the switching cost to a purpose-built ASIC for a fixed workload is lower, and hyperscalers have already made the investment decision).",
+    "competitors": [
+      {
+        "name": "AMD (Instinct MI300X/MI350/MI400)",
+        "position": "Merchant GPU number two. Only publicly-available GPU alternative in AI.",
+        "share": "5-10% of AI accelerator market in 2025 (Presenc AI, Silicon Analysts)",
+        "trajectory": "Gaining but slowly. MI300X secured inference wins at Microsoft, Meta, OpenAI. AMD guided 80%+ CAGR on DC AI revenue over 3-5 years at its November 2025 Analyst Day. The key constraint is ROCm software stack, still 2-3 years behind CUDA in framework coverage. Hyperscalers use AMD as a price lever, not a primary platform."
+      },
+      {
+        "name": "Broadcom (ASIC co-design partner)",
+        "position": "Not a merchant AI chip seller. The co-design engine behind Google TPU and Meta MTIA. Holds roughly 70% of the custom AI ASIC co-design market.",
+        "share": "$8.4B single-quarter AI ASIC revenue in Q2 FY2026 (+106% YoY); $73B AI backlog; $100B+ AI revenue line-of-sight in FY2027",
+        "trajectory": "SCALING. Every dollar of Broadcom ASIC revenue is silicon in a hyperscaler data center that did not go to NVIDIA. The primary mechanism for ASIC wallet share displacement."
+      },
+      {
+        "name": "Google (TPU v7 Ironwood / TPU v8 Sunfish and Zebrafish)",
+        "position": "Largest single custom silicon program. For Google internal use only. Design partner: Broadcom.",
+        "share": "TPU handles the majority of Google's own inference (Search AI, Gemini serving). Third-party workloads on Google Cloud remain NVIDIA-dominant.",
+        "trajectory": "TPU v7 Ironwood: 4,614 FP8 TFLOPS, 192GB HBM3E, competitive with Blackwell on fixed-workload inference. TPU v8 bifurcates into Sunfish (training, Broadcom) and Zebrafish (inference, MediaTek), signaling maturation."
+      },
+      {
+        "name": "Amazon (Trainium3)",
+        "position": "AWS custom silicon for AWS-native ML workloads. Design partner: Marvell.",
+        "share": "Amazon deployed over 1 million Trainium processors by December 2025. NVIDIA remains dominant for EC2 customers who request NVIDIA instances.",
+        "trajectory": "Trainium4 adds NVLink Fusion support, enabling hybrid Trainium-plus-NVIDIA clusters. Amazon is not purely displacing NVIDIA -- it is adding alongside."
+      },
+      {
+        "name": "Meta (MTIA 400)",
+        "position": "Meta custom inference accelerator for ranking and recommendation.",
+        "share": "MTIA 400 in production at Meta data centers for highest-volume inference. Meta still buys NVIDIA GPUs for training and generative AI workloads.",
+        "trajectory": "Pattern: custom chips for high-volume, low-variety inference; GPUs for everything else. Also AMD's largest confirmed GPU customer (MI300X deployments)."
+      },
+      {
+        "name": "Intel (Gaudi 3)",
+        "position": "Distant third in merchant AI accelerators. Sold Gaudi AI program to Battelle in early 2026.",
+        "share": "Under 1%",
+        "trajectory": "Effectively exited the AI accelerator merchant market."
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom Inc.",
+      "pe_ntm": 21.3,
+      "ev_ebitda": 43.7,
+      "rev_growth_ttm": 47.9,
+      "y1": 62.1,
+      "highlight": true
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "pe_ntm": 41.0,
+      "ev_ebitda": 110.2,
+      "rev_growth_ttm": 37.8,
+      "y1": 314.7
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "pe_ntm": 50.3,
+      "ev_ebitda": 90.4,
+      "rev_growth_ttm": 27.6,
+      "y1": 338.8
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor",
+      "pe_ntm": 23.5,
+      "ev_ebitda": 5.4,
+      "rev_growth_ttm": 35.1,
+      "y1": 119.7
+    },
+    {
+      "ticker": "QCOM",
+      "name": "QUALCOMM",
+      "pe_ntm": 21.2,
+      "ev_ebitda": 17.8,
+      "rev_growth_ttm": -3.5,
+      "y1": 47.7
+    }
+  ],
+  "peers_read": "NVIDIA at 22.6x FY2027 non-GAAP P/E sits between Broadcom at 21.3x (slower growth, more diverse revenue) and AMD at 41x (faster near-term growth as AMD ramps AI, but much smaller base). On a PEG basis NVIDIA looks inexpensive at 0.65 versus AMD at roughly 0.5 and Broadcom at roughly 1.0 -- PEG flatters the highest-growth names. The more honest peer is TSMC at 23.5x NTM P/E, which also enjoys near-monopoly economics in a critical AI infrastructure layer; TSMC's multiple is arguably a floor for NVIDIA at normalization given TSMC's more stable competitive position. AMD and Marvell's elevated multiples (41x and 50x respectively) reflect their earlier position on the AI ramp curve -- the market is paying for the revenue growth ahead; NVIDIA is further along the same curve and is appropriately priced at a lower multiple for its stage.",
+  "market_view": {
+    "whats_priced_in": "At $210.69, the market prices continued sequential DC revenue growth through at least FY2028, gross margins stable at 74-76%, Vera Rubin arriving on schedule in H2 2026 with volume production in Q1 2027, and zero China revenue recovery. The reverse-multiple decomposition: paying 22.6x FY2027 non-GAAP earnings (or 32.3x GAAP) requires 35-40% consensus earnings growth in FY2028 and a multiple that does not compress below 20x as growth moderates. The stock prices flawless execution with no margin for error.",
+    "street_view": "59 of 62 analysts rate the stock Buy or Strong Buy. The street argues NVDA has at least two more years of accelerating DC revenue as Blackwell ramps and Vera Rubin follows. The CUDA moat makes switching costs high enough that AMD and custom ASICs take share only slowly. The street mean target of $298.93 implies 41.8% upside and is derived from roughly 20-23x FY2028 non-GAAP earnings if the revenue ramp materializes. Our base of $206.93 is materially below the street consensus, primarily because we do not credit Vera Rubin's wallet-share-deceleration claim as a done deal.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-05-21",
+        "firm": "Baird",
+        "action": "raise",
+        "old_pt": 300,
+        "new_pt": 500,
+        "rating_change": "none",
+        "note": "Highest Street target at snapshot. Expects Vera Rubin adoption to exceed Blackwell ramp rate at frontier model companies."
+      },
+      {
+        "date": "2026-05-post",
+        "firm": "JPMorgan",
+        "analyst": "Harlan Sur",
+        "action": "raise",
+        "old_pt": 265,
+        "new_pt": 280,
+        "rating_change": "none",
+        "note": "Raised citing management confirmation of sequential revenue growth continuing into CY2027, supported by hyperscaler capex growing 70%+ YoY."
+      },
+      {
+        "date": "2026-05-post",
+        "firm": "Morgan Stanley",
+        "analyst": "Joseph Moore",
+        "action": "raise",
+        "old_pt": 258,
+        "new_pt": 273,
+        "rating_change": "none",
+        "note": "Maintained Overweight; raised target."
+      },
+      {
+        "date": "2026-05-12",
+        "firm": "Wells Fargo",
+        "analyst": "Aaron Rakers",
+        "action": "raise",
+        "old_pt": 265,
+        "new_pt": 315,
+        "rating_change": "none",
+        "note": "Dismissed peak-margin concerns; flagged NVDA's capacity-driven revenue model and potential China export relief."
+      },
+      {
+        "date": "2026-05-12",
+        "firm": "Bernstein",
+        "analyst": "David Dai",
+        "action": "reiterate",
+        "old_pt": 300,
+        "new_pt": 300,
+        "rating_change": "none",
+        "note": "Reiterated Buy and $300 target."
+      },
+      {
+        "date": "2026-06-05",
+        "firm": "China Renaissance",
+        "action": "initiate",
+        "old_pt": null,
+        "new_pt": 319,
+        "rating_change": "initiation",
+        "note": "New coverage with Buy and $319 target."
+      }
+    ],
+    "news_narrative": "The dominant near-term news thread is the Vera Rubin ramp (H2 2026 deployments) and the May-June 2026 BIS tightening (closing the overseas-subsidiary loophole for China-headquartered firms). The export control story is already in guidance: zero China DC compute is assumed in Q1 and Q2 FY2027. Vera Rubin's ability to extend the ramp cycle is the forward catalyst the street is pricing. The beat-and-raise pattern held in Q1 FY2027 -- revenue $81.6B versus $78.8B consensus -- but the stock fell 1.5% in after-hours, continuing the pattern of four consecutive post-earnings declines despite strong beats.",
+    "sentiment_narrative": "59 of 62 analysts on Buy; 84% combined institutional and insider ownership. The institutional base is high-quality (large-cap index inclusion, broad mandates). The post-earnings price behavior is the most informative sentiment signal: the market consistently prices in the upside before it arrives, then corrects to a still-elevated level on delivery. This is a priced-for-perfection dynamic, not a fundamental bear signal.",
+    "runway": "Fundamental runway is multi-year: $490-550B of AI-directed hyperscaler capex in CY2026 provides durable near-term demand; Blackwell in volume ramp, Rubin entering production in Q1 2027. Next hard test is Q2 FY2027 earnings on 2026-08-26 -- the question is whether revenue exceeds the $91B guide and whether Q3 guidance rises again.",
+    "runway_verdict": "Strong fundamental runway but the stock has no margin for error at 22.6x NTM non-GAAP. Four consecutive post-earnings declines on strong beats is the hard market signal: the stock overshoots consensus before results and corrects on delivery.",
+    "market_lean": "bull",
+    "market_lean_note": "Unambiguously bullish consensus (59/62 Buy); consensus implies 41.8% upside. The only structural dissent is valuation-based. The market lean is not a view we share at the current price."
+  },
+  "street_reconstruction": {
+    "currency": "USD",
+    "what_price_implies": "At $210.69 and FY2027 non-GAAP EPS of $9.34, the market pays 22.6x for a business growing DC revenue at 85% YoY. In exit-multiple terms, the market pays 24.4x EV per dollar of FY2027 DC segment NOPAT. This requires sustained execution into FY2028 (consensus $480B total revenue) and a multiple that does not compress below 20x as growth normalizes.",
+    "what_street_implies": "The street mean target of $298.93 implies 20-23x FY2028 non-GAAP EPS of $13-15 (estimated), requiring DC revenue of $440-480B in FY2028 and gross margin stability at 74-76%. The street effectively prices in the Vera Rubin cycle delivering another step-up in revenue comparable to Blackwell.",
+    "our_justified_multiple": "19.15x EV / FY2027 DC NOPAT (Gordon-derived at r=10.2%, g=5.5%, ROIC=55%). This reconciles to 22.2x FY2027 non-GAAP P/E, essentially where the stock trades. Our base says the market has priced it right.",
+    "agree_disagree": "AGREE on current price reflecting fair value; DISAGREE with the street's $299 mean target, which we believe prices in Vera Rubin wallet-share deceleration as a near-certainty when the evidence supports only EXTRAPOLATED confidence."
+  },
+  "management": {
+    "ceo": "Jensen Huang, co-founder and CEO since NVIDIA's founding in 1993. Track record: pioneered the GPU computing platform for AI with a decade-long bet on CUDA before the market validated it. The H100 to Blackwell transition delivered on the 5x performance promise. Q1 FY2027 commentary cited Vera Rubin's 10x cost-per-token improvement over Blackwell -- a management team that has repeatedly delivered on architectural promises, though at a cadence that is increasingly priced in.",
+    "cfo": "Colette Kress, CFO since 2013. Disclosure quality is high: supply commitment data ($119B manufacturing commitments) and segment-level guidance are detailed and consistent. The SBC reclassification decision (moving SBC into non-GAAP starting Q1 FY2027) was disclosed proactively and narrows the GAAP/non-GAAP gap, which is the transparent choice.",
+    "capital_allocation_history": "FY2026: $40.1B in buybacks at an average price well below the current $210; $80B new authorization announced at Q1 FY2027. Buybacks at $200+ price are less accretive than the prior program executed at $100-150. Dividend was raised from $0.01 to $0.25 per share. Total Q1 FY2027 shareholder returns were $20B. The capital allocation is appropriate for a company with $97B of annual FCF and minimal debt ($0.44B net); the concern is that the buyback authorization is being executed at arguably full valuation rather than at the value-creating levels of prior years.",
+    "recent_insider_activity": []
+  },
+  "valuation_method": "SOTP with four segments. Data Center (90% of value) uses the EXIT-MULTIPLE method: build NOPAT to the FY2030 normalization year when DC revenue growth decelerates from 30%+ to roughly 10%, apply a steady-state Gordon-derived multiple, and discount back at the segment WACC of 10.2%. This is the most efficient method for a high-growth segment: it isolates the only real question (how big do earnings get at normalization) and avoids the g greater than r blow-up that corrupts a forced perpetual DCF during the ramp years. Gaming and Professional Visualization are mature annuities valued at current earnings multiplied by Gordon-justified multiples. Automotive is an early-stage call option valued via exit-multiple at FY2030.",
+  "segment_valuation": [
+    {
+      "name": "Data Center",
+      "nature": "high-growth",
+      "method": "ExitMultiple",
+      "revenue_path": "FY2027 $350B (anchored: Q1 actual $75.2B + Q2 guide $83.7B + H2 estimate) | FY2028 $442B (calibrated to analyst consensus $480B total revenue x 92% DC mix) | FY2029 $510B | FY2030 $560B",
+      "margin": "65% EBIT margin at normalization (calibrated to Q1 FY2027 actuals: 74.9% GM minus 9% opex); 8% cash tax rate",
+      "wacc": 0.102,
+      "exit_multiple": 19.15,
+      "implied_ev_b": 4827.98,
+      "implied_px": 199.33,
+      "four_levers": {
+        "growth_rate_and_duration": "DC revenue grows from $193.7B (FY2026) to $560B (FY2030 base), a 30.3% CAGR over 4 years. Near-term (FY2027) is substantially contracted via $95B of supply commitments. FY2028 is anchored to sell-side consensus. FY2029-FY2030 are derived from the crux wallet-share identity applied to a sourced pool estimate. The duration question (will DC grow past FY2030?) is answered via the 5.5% long-run g_LT, which reflects AI infrastructure as a structural, not cyclical, spending category.",
+        "economics": "65% EBIT margin at normalization reflects current operating leverage (74.9% GM minus 9% opex ratio from Q2 FY2027 guidance). 45% FCF margin during the ramp years (FY2027-FY2029) is marginally below the DC-specific run rate to conservatively account for working capital build against $119B of supply commitments. FY2026 blended FCF margin was 44.8% -- the model is calibrated to observed history.",
+        "wacc": "CAPM: Ke = 4.4% (10yr UST) + 1.05 (fundamental beta) x 5.5% (ERP) = 10.175%, rounded to 10.2%. The regression beta of 2.2 from the databundle is explicitly rejected per CONTRACT §2.3 -- it captures rally enthusiasm, not fundamental risk. Beta 1.05 sits above a software annuity (0.7-0.8) to credit hardware cyclicality and customer concentration (top 4 = 61% of revenue), but below the regression to credit the CUDA ecosystem moat and the $119B contracted supply chain that de-risks the near term.",
+        "exit_multiple": "Gordon formula output: (1 - g_LT/ROIC) / (r - g_LT) = (1 - 0.055/0.55) / (0.102 - 0.055) = 0.90 / 0.047 = 19.15x. g_LT of 5.5% reflects nominal GDP (4-5%) plus an AI structural premium (1-2%) without assuming AI compute remains at today's hypergrowth rates. ROIC of 55% is conservative versus observed (ROE 76.3%), crediting the moat but discounting for competition at normalization. Changing ROIC from 45% to 55% moves the exit multiple by only 0.5x and fair value by only $12/share -- ROIC is not the hinge."
+      }
+    },
+    {
+      "name": "Gaming",
+      "nature": "mature-annuity",
+      "method": "Multiple (EV/EBIT)",
+      "revenue_path": "FY2027 $16.5B (flat to +3% YoY; RTX 50 ASP lift offsets AIB market decline)",
+      "margin": "37% EBIT margin (55% GM minus 12% R&D minus SG&A)",
+      "wacc": 0.09,
+      "exit_multiple": 18.0,
+      "implied_ev_b": 109.8,
+      "implied_px": 4.53,
+      "four_levers": {
+        "growth_rate_and_duration": "Mid-single-digit; 94-95% market share ceiling limits upside to ASP not unit growth",
+        "economics": "$16.5B x 37% EBIT margin = $6.1B EBIT; Gordon multiple 18.0x",
+        "wacc": "9.0%; beta 0.85 for mature near-monopoly consumer segment",
+        "exit_multiple": "Gordon: (1 - 0.04/0.40) / (0.09 - 0.04) = 0.90/0.05 = 18.0x; within 15-20x mature consumer tech range"
+      }
+    },
+    {
+      "name": "Professional Visualization",
+      "nature": "mature-annuity",
+      "method": "Multiple (EV/EBIT)",
+      "revenue_path": "FY2027 $3.5B (+10% YoY on AI workstation demand)",
+      "margin": "50% EBIT margin",
+      "wacc": 0.085,
+      "exit_multiple": 23.0,
+      "implied_ev_b": 40.25,
+      "implied_px": 1.66,
+      "four_levers": {
+        "growth_rate_and_duration": "5% long-run; TAM $3.5B growing at 8% CAGR",
+        "economics": "$3.5B x 50% = $1.75B EBIT; Gordon multiple 23x (capped from formula 25.4x)",
+        "wacc": "8.5%; beta 0.75 for near-monopoly enterprise segment with minimal substitution risk",
+        "exit_multiple": "23x capped for hardware economics versus software comps; immaterial to total at less than $0.10/share impact"
+      }
+    },
+    {
+      "name": "Automotive",
+      "nature": "high-growth (early stage)",
+      "method": "ExitMultiple",
+      "revenue_path": "FY2030 $8B (from $2.35B in FY2026; $14B design win pipeline converting to revenue)",
+      "margin": "30% EBIT margin (lower than DC due to OEM co-engineering and Mobileye competition)",
+      "wacc": 0.11,
+      "exit_multiple": 24.44,
+      "implied_ev_b": 34.34,
+      "implied_px": 1.42,
+      "four_levers": {
+        "growth_rate_and_duration": "8% long-run post-normalization; early-stage TAM ($3B to $12B+ by 2030)",
+        "economics": "$8B x 30% EBIT x 85% (1-15% tax) = $2.04B NOPAT at T; $1.5B interim FCF PV",
+        "wacc": "11%; beta 1.2 for program-level binary risk and OEM dependency",
+        "exit_multiple": "Gordon: (1 - 0.08/0.30) / (0.11 - 0.08) = 0.733/0.03 = 24.4x"
+      }
+    }
+  ],
+  "four_levers": {
+    "growth_rate_and_duration": "DC revenue at 30.3% CAGR from FY2026 to FY2030 in the base. FY2027 is substantially contracted ($95B supply commitments). FY2028 is anchored to $480B total revenue consensus. FY2029-FY2030 are the contested years, derived from the crux wallet-share identity. Duration is the key question -- 5.5% long-run g post-normalization assumes AI infrastructure spending remains structurally elevated versus nominal GDP but normalizes far below today's 28% market CAGR.",
+    "economics": "65% EBIT margin at FY2030 normalization calibrated to Q1 FY2027 actuals. 45% FCF margin during ramp years. The bias audit finds no systematic lean on margin -- it sits at the honest midpoint between current actuals (65-66%) and a margin-expansion bull that would require the networking mix shift to fully materialize.",
+    "wacc": "10.2% for Data Center (fundamental beta 1.05 applied via CAPM; regression beta of 2.2 rejected as rally-inflated). 9.0% for Gaming. 8.5% for ProViz. 11.0% for Automotive. Blended WACC is value-weighted result, not an input. NVIDIA is essentially debt-free ($0.44B net debt versus $5.1T market cap), so WACC equals cost of equity throughout.",
+    "exit_multiple": "19.15x for Data Center (Gordon formula output from r=10.2%, g_LT=5.5%, ROIC=55%). 24.4x for Automotive (higher g_LT=8.0% at early stage). This is a formula output, not a comparables pick. The T-invariance check confirms the answer is stable across FY2028 ($191.81/share), FY2029 ($199.98), and FY2030 ($199.33) normalization years -- the valuation does not depend on picking the right terminal year."
+  },
+  "bias_audit": {
+    "rows": [
+      {
+        "assumption": "DC revenue FY2030 base ($560B)",
+        "lean": "CENTER -- between bull ($603B) and bear ($460B); FY2027-FY2028 anchored to external data"
+      },
+      {
+        "assumption": "DC EBIT margin at normalization (65%)",
+        "lean": "CENTER -- calibrated to Q1 FY2027 actuals of 65-66%"
+      },
+      {
+        "assumption": "Cash tax rate (8%)",
+        "lean": "CENTER -- very close to FY2026 GAAP effective rate of 7.9%"
+      },
+      {
+        "assumption": "DC WACC (10.2%, beta 1.05)",
+        "lean": "CENTER -- above software annuity for hardware risk; below regression for moat and contracted backlog"
+      },
+      {
+        "assumption": "Long-run growth g_LT (5.5%)",
+        "lean": "CENTER -- nominal GDP (4-5%) plus AI structural premium (1-2%)"
+      },
+      {
+        "assumption": "DC ROIC at normalization (55%)",
+        "lean": "MILD LOW -- conservative vs observed (76.3% ROE) but ROIC is second-order ($12/share sensitivity)"
+      },
+      {
+        "assumption": "Exit multiple (19.15x)",
+        "lean": "CENTER -- Gordon formula output, not a picked number"
+      },
+      {
+        "assumption": "Gaming EV/EBIT (18x)",
+        "lean": "CENTER -- Gordon output; within 15-20x mature consumer tech range"
+      },
+      {
+        "assumption": "ProViz EV/EBIT (23x, capped from 25.4x)",
+        "lean": "MILD LOW -- Gordon gives 25.4x; 23x is slightly conservative; immaterial (less than $0.10/share)"
+      },
+      {
+        "assumption": "Interim FCF margin on DC (45%)",
+        "lean": "MILD LOW -- DC-specific is likely 48-50%; difference is roughly $4/share PV impact"
+      }
+    ],
+    "same_direction_count": 3,
+    "verdict": "PASS (mild low lean; no false SELL). Three mild-low leans identified: (1) DC ROIC 55% vs observed 76.3% ROE -- second-order, 2/share sensitivity; (2) ProViz Gordon multiple capped at 23x vs formula 25.4x -- immaterial (</bin/bash.10/share); (3) Interim FCF margin 45% on DC vs DC-specific ~48-50% -- ~/share PV impact. Aggregate directional bias: ~6/share upward (7.7% of base 06.93). All three leans push fair value UPWARD, away from a false SELL and toward a richer value. The HOLD rating is reinforced, not distorted, by the leans. No stacked conservative lean that manufactures a false conclusion."
+  },
+  "earnings_bridge": {
+    "reported_eps": 4.9,
+    "reported_eps_note": "FY2026 GAAP EPS on 24.5B shares",
+    "normalized_eps": 6.52,
+    "normalized_eps_note": "FY2027 GAAP annual consensus (Pheme-corrected); the yfinance NTM figure of $12.73 is an annualization artifact -- blending four rising quarters produces a figure roughly 95% above the annual number",
+    "owner_earnings_per_share": 9.34,
+    "owner_earnings_note": "FY2027 non-GAAP consensus (corrected); includes SBC reclassification effect starting Q1 FY2027; SBC is now included in non-GAAP, narrowing the historical GAAP/non-GAAP gap",
+    "fcf_per_share": 3.81,
+    "fcf_per_share_note": "FY2026 owner FCF ($92.18B) divided by 24.22B shares; owner FCF = reported FCF ($96.68B) minus SBC ($4.5B)"
+  },
+  "multiple_maths": {
+    "current_multiple": 24.4,
+    "justified_multiple": 23.9,
+    "multiple_label": "EV / FY2027 DC Segment NOPAT",
+    "justified_grid": [
+      {
+        "g_lt": 0.045,
+        "roic": 0.55,
+        "r": 0.102,
+        "multiple": 16.5
+      },
+      {
+        "g_lt": 0.055,
+        "roic": 0.55,
+        "r": 0.102,
+        "multiple": 19.15
+      },
+      {
+        "g_lt": 0.065,
+        "roic": 0.55,
+        "r": 0.102,
+        "multiple": 22.5
+      },
+      {
+        "g_lt": 0.055,
+        "roic": 0.55,
+        "r": 0.09,
+        "multiple": 25.4
+      },
+      {
+        "g_lt": 0.055,
+        "roic": 0.55,
+        "r": 0.11,
+        "multiple": 16.4
+      }
+    ],
+    "duality_decomposition": "At $210.69 and FY2027 non-GAAP EPS of $9.34 (Pheme-corrected), NTM P/E is 22.6x. Our justified P/E on the same earnings is 22.2x ($206.93 / $9.34). The gap is 0.4 turns -- the stock is essentially at fair value. The duality check: EV / FY2027 DC NOPAT at market price is 24.4x versus our justified 23.9x. Consistent: both measures show a 1.8% premium to intrinsic value."
+  },
+  "key_debates": [
+    {
+      "debate": "Broadcom's $100B+ ASIC ramp removes wallet share the base assumes NVIDIA retains for fixed-workload inference",
+      "is_crux": true,
+      "bull_view": "The total AI chip pool grows fast enough (28%+ CAGR through FY2028) to absorb Broadcom's ASIC ramp without cutting NVIDIA's absolute revenue. Broadcom's $80-100B AI ASIC revenue in FY2027 represents roughly 17-20% of a $450-500B total market -- consistent with the base assumption of 20-22% ASIC revenue share. Hyperscalers run dual-track architectures: NVIDIA for training and variable inference, custom ASICs for fixed-recipe inference. They are not choosing one or the other. Amazon's Trainium4 explicitly adds NVLink Fusion support for hybrid clusters, confirming coexistence is the design pattern, not full displacement. NVIDIA's $95B of supply commitments payable in remainder FY2027 mean this debate resolves slowly, not in a single quarter.",
+      "bear_view": "Broadcom's $73B AI backlog is not a future forecast -- it is an order book already in hyperscaler procurement plans, for programs (Google TPU Ironwood, Meta MTIA 400, Amazon Trainium3) that are in production now. The mechanism: as hyperscalers deploy these ASIC clusters at million-GPU scale for fixed-workload inference (Search AI, content recommendation, model serving), every rack they commission routes to Broadcom-designed silicon, not NVIDIA. Broadcom's single-quarter AI ASIC revenue was $8.4B in Q2 FY2026 and growing at 106% YoY. Marvell adds another $15-30B via Amazon Trainium and Microsoft Maia. Combined Broadcom plus Marvell ASIC revenue of $95-130B against a $450-500B total market is already 21-27% of pool -- above the base case's 20-22% assumption, before the next ASIC generation.",
+      "our_verdict": "We side with the base case: the mechanism is real and partially firing, but the pool is also growing fast (hyperscaler capex at $650-735B in CY2026, with Goldman Sachs projecting $1.1T in CY2027). The near-term (FY2027) is substantially contracted, giving NVIDIA the revenue floor while ASIC programs ramp. The bear's $100B DC revenue shortfall by FY2030 requires both the ASIC ramp to sustain and the pool to grow more slowly than we expect. That combination is possible but not yet the most likely path. We rate Broadcom's backlog mechanism OBSERVABLE-AND-NEAR -- it is the most dangerous risk in the report and the one to watch most carefully.",
+      "what_would_change_our_mind": "NVIDIA's DC revenue guide for Q3 FY2027 coming in below $90B would signal that hyperscalers are redirecting inference capacity to ASICs faster than the contracted FY2027 supply implied. Broadcom AI ASIC revenue exceeding $120B in FY2027 (versus our $80-100B assumption) would confirm the bear trajectory.",
+      "worth_per_share": "Full bear scenario: minus $34.28/share from base ($206.93 to $172.65), of which roughly $32/share is attributable to the ASIC ramp debate alone."
+    },
+    {
+      "debate": "Vera Rubin's 10x cost-per-token improvement slows ASIC adoption, holding wallet share at 67-70% of total AI chip pool through FY2030",
+      "is_crux": false,
+      "bull_view": "ASIC design cycles run 2-3 years from architectural freeze to volume production. Google TPU Ironwood and Amazon Trainium3 were designed against the Blackwell GPU envelope -- the dominant product in 2023-2024. If Jensen Huang's Q1 FY2027 claim of 10x cost-per-token reduction over Blackwell holds in customer deployments, hyperscalers face a structurally moving target: their in-flight ASIC programs will underperform Rubin on cost efficiency by the time they reach full deployment scale in 2027-2028. This reduces the economic incentive for incremental ASIC workload migration beyond programs already committed. Additionally, the emerging agentic AI workload (agents routing across multiple models in real time) requires GPU flexibility that fixed-recipe ASICs cannot provide. In the bull case, ASIC revenue share growth decelerates from 7 percentage points per year to 2-3 points per year, holding NVIDIA wallet share at 67-70% of total AI chip pool rather than allowing it to decay to 64-65%.",
+      "bear_view": "Cost-per-token on a GPU benchmark is not the metric hyperscalers optimize in inference at scale. They optimize for total infrastructure cost per inference request including power, cooling, rack space, and networking. A custom ASIC like Google TPU Ironwood, designed specifically to run Gemini serving at datacenter scale, does not need to be 10x better in a benchmark -- it needs to be better enough for the specific batch sizes and model architectures Google runs. And it already is. NVIDIA improving its GPU cost-per-token raises the bar, but the structural advantage of a purpose-built chip over a general-purpose chip does not disappear at any reasonable level of GPU improvement. The historical pattern (Intel losing iPhone baseband to Qualcomm, then to Apple A-series) is instructive: the incumbent always improved; the improvement never reversed the displacement once the custom-silicon program reached scale.",
+      "our_verdict": "We side with the bear on the mechanism (ASIC economics for fixed workloads are structurally superior) but with the bull on the timeline: Vera Rubin slows the adoption curve rather than reversing it. The base assumes modest deceleration in ASIC revenue share growth (from 7 points per year to roughly 2-3 points per year as the programs mature off their current ramp). We do not credit the 10x cost-per-token claim as having stopped ASIC adoption -- the ASIC programs are in procurement now. The evidence grade is EXTRAPOLATED: the logic is sound and NVIDIA's track record of delivering on architectural promises is real, but no hyperscaler has publicly stated it is slowing its custom silicon program in response to Rubin.",
+      "what_would_change_our_mind": "Hyperscaler operating commentary in Q3 2026 earnings explicitly citing Vera Rubin's cost-per-token advantage as a reason to slow incremental ASIC deployment. That is the test. H2 2026 customer deployment data (not management commentary) would be the first real signal.",
+      "worth_per_share": "The wallet-share debate (Vera Rubin deceleration): plus $8.41/share above base ($206.93 to approximately $215.34) in isolation; the combined bull case is $222.55, requiring both wallet share and pool expansion to go right simultaneously."
+    },
+    {
+      "debate": "AMD ROCm reaching 80% CUDA coverage by FY2028 compresses NVIDIA's merchant GPU share and forces price competition in inference",
+      "is_crux": false,
+      "bull_view": "AMD ROCm has repeatedly disappointed on timeline. The 6-12 month CUDA switching cost for training workloads has not closed materially in three years of AMD effort. Hyperscalers use AMD MI300X for specific inference slots where the workload has been carefully ported -- not as a platform replacement. AMD's $15B AI revenue in FY2026 against NVIDIA's $193.7B DC revenue is 7.2% of the combined merchant market; reaching 13-15% by FY2029 requires AMD to sustain 80%+ CAGR while NVIDIA grows at 30%, a math that implies the combined merchant pool growing fast enough to absorb AMD's gains. Even at 15% AMD merchant share, NVIDIA retains 85% of merchant GPU, which at 25% ASIC revenue share gives NVIDIA 64% wallet share of total pool -- above the bear's 58-60%.",
+      "bear_view": "AMD at $15B AI accelerator revenue in FY2026 and guided 80%+ CAGR over 3-5 years exits FY2029 at $43-50B AI revenue. Inference is a smaller, more homogeneous codebase than training; ROCm's framework gap matters less there. AMD already has MI300X inference wins at Microsoft, Meta, and OpenAI for specific workloads. At 13-15% AMD merchant GPU share by FY2029, NVIDIA's merchant GPU share falls from 80% to 73-75%. Combined with ASIC ramp, the wallet share impact is incremental but meaningful: roughly $5-7/share additional downside versus the full bear scenario without AMD pressure.",
+      "our_verdict": "The AMD threat is real but second-order to the ASIC mechanism. In isolation (without the Broadcom ramp), AMD growing to 13-15% merchant GPU share produces fair value of roughly $180-185/share -- uncomfortable but not catastrophic. The AMD debate matters most if it fires in combination with the ASIC ramp (debates 1 and 2), pushing the bear from $172.65 toward the stress-case $165. The evidence grade is MECHANISM-NOT-YET-FIRING: AMD's trajectory is plausible and partially visible in inference wins, but ROCm at 80% CUDA coverage by FY2028 has slipped timelines repeatedly. Monitor AMD quarterly DC AI revenue -- if it exits FY2027 at $25B+ run rate, the adoption is real.",
+      "what_would_change_our_mind": "AMD DC AI revenue sustaining above $25B annualized by end of FY2027, combined with any hyperscaler publicly disclosing that training workload migrations to AMD are underway. The training migration is the pivotal signal -- inference wins do not move the bear case alone.",
+      "worth_per_share": "Isolated AMD scenario (without ASIC ramp): roughly minus $25-35/share from base, producing approximately $180/share. Combined with ASIC ramp: incremental minus $5-7/share on top of the $32/share ASIC-mechanism downside."
+    },
+    {
+      "debate": "Vera Rubin HBM4 ramp costs compress gross margins to 72-73% in FY2027-FY2028, and the SBC reclassification removes the EPS tailwind the stale consensus assumed",
+      "is_crux": false,
+      "bull_view": "NVIDIA's Hopper-to-Blackwell transition showed exactly this pattern: Q1 FY2026 gross margin fell to 60.5% GAAP as Blackwell ramp costs hit before yields normalized, then recovered to 74.9% by Q1 FY2027. The margin compression in architecture transitions is real but temporary. By Q3-Q4 FY2027, Vera Rubin yield normalization should restore margins to 74-76%. The SBC reclassification into non-GAAP is already in guidance -- the corrected FY2027 non-GAAP EPS of $9.34 is the right anchor, and the market at 22.6x on that number is appropriately positioned.",
+      "bear_view": "Vera Rubin requires HBM4, which is first-generation technology with limited supply (SK Hynix initially only). HBM4 will command a cost premium over HBM3E in FY2027, potentially 10-15%. At $350B DC revenue and 200bps GM compression, the gross profit shortfall is $7B -- flowing through to $4.5B operating income and roughly $3.5B owner FCF at NVDA's 50% incremental margin. At 22.6x NTM P/E, there is no room for a $3.5B miss. The stock fell 1.5% post-Q1 on a $2.8B revenue beat; a $7B gross profit miss would be materially worse. Additionally, the SBC reclassification means every analyst who modeled non-GAAP on the historical gap now needs to revise estimates lower -- the stale NTM consensus of $12.73 still appears in screens and will cause confusion during the Q2 FY2027 earnings cycle.",
+      "our_verdict": "The HBM4 margin risk is real and observable in the Blackwell precedent, but it is temporary. We do not de-rate the long-term margin assumption (65% EBIT at FY2030 normalization) for a ramp-year dynamic that has resolved before. The SBC reclassification risk is already accounted for in our valuation: we use $9.34 non-GAAP FY2027 EPS, not the $12.73 artifact. The incremental downside from the margin debate in isolation is $4-5/share in the stress scenario. It is worth monitoring but is not load-bearing for the HOLD rating.",
+      "what_would_change_our_mind": "Q3 FY2027 gross margin guidance below 72% GAAP would signal that HBM4 costs are not normalizing on the Blackwell precedent timeline. That is the observable trigger.",
+      "worth_per_share": "Gross margin stress scenario (200bps compression at FY2030 normalization, combined with all other bear assumptions): minus approximately $7-8/share incremental versus the primary bear of $172.65, producing a stress-case of approximately $165."
+    }
+  ],
+  "bear_paragraph": "The bear case against NVIDIA is not that the business collapses -- it is that the stock is priced right on the base and 18% too high on the bear, and the bear mechanism is already partially observable. Broadcom disclosed $73B of AI ASIC backlog and guided $100B+ AI chip revenue in FY2027 from three named hyperscaler customers whose programs are in production today: Google TPU Ironwood, Meta MTIA 400, Amazon Trainium3. These programs do not compete for NVIDIA's training workloads -- they compete for the fixed-workload, high-volume inference jobs (search ranking, content recommendation, model serving) that already constitute 2/3 of total AI compute. Every rack these programs commission routes to Broadcom or Marvell-designed silicon, not NVIDIA. If ASIC revenue share rises to 29-32% of the total AI chip market by FY2029 (versus the base's 22-24%), and AMD grows to 13-15% of the merchant GPU sub-market on its 80%+ CAGR trajectory, NVIDIA's DC revenue at FY2030 normalization falls from $560B to $460B. At the same exit multiple (19.15x), the same WACC (10.2%), and the same g_LT (5.5%), fair value falls from $206.93 to $172.65 -- 18% below the current price. The bear does not require a de-rating. It does not require the AI capex boom to end. It requires only that the share trajectories already visible in Broadcom's order book continue at their current pace. That is the honest bear: the mechanism is named, evidenced, partially fired, and worth monitoring every quarter.",
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "Competitive/Market Share",
+      "severity": "HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "Custom ASIC revenue share accelerates to 29-32% by FY2029, driven by Broadcom $100B+ ASIC programs in hyperscaler procurement plans now",
+      "monitor": "Broadcom quarterly AI ASIC revenue (next report: Broadcom FY2026 Q3); NVIDIA DC revenue Q3 FY2027 guide at August 26 earnings"
+    },
+    {
+      "rank": 2,
+      "category": "Technology/Execution",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "Vera Rubin fails to deliver on 10x cost-per-token claim in early customer deployments, removing the bull case deceleration thesis",
+      "monitor": "H2 2026 hyperscaler cloud deployment commentary; Google Cloud Next 2026 and AWS re:Invent 2026 infrastructure sessions"
+    },
+    {
+      "rank": 3,
+      "category": "Supply Chain",
+      "severity": "MEDIUM",
+      "likelihood": "LOW-MEDIUM",
+      "risk": "Vera Rubin HBM4 ramp costs compress gross margins to 72-73% in FY2027, removing the earnings beat pattern the market prices in",
+      "monitor": "NVIDIA quarterly gross margin guidance; SK Hynix HBM4 ASP in supplier earnings"
+    },
+    {
+      "rank": 4,
+      "category": "Competitive/Market Share",
+      "severity": "MEDIUM",
+      "likelihood": "LOW",
+      "risk": "AMD ROCm reaches 80% CUDA coverage by FY2028, enabling real training workload migrations and forcing NVIDIA to compete on price in inference",
+      "monitor": "AMD quarterly DC AI revenue (exit FY2027 run rate above $25B is the trigger); AMD ROCm benchmark coverage announcements"
+    },
+    {
+      "rank": 5,
+      "category": "Regulatory",
+      "severity": "LOW",
+      "likelihood": "LOW",
+      "risk": "Additional US export controls beyond the existing zero-China-DC-compute framework; limited incremental impact since China already zeroed",
+      "monitor": "BIS regulatory actions; Jensen Huang geopolitical engagement"
+    }
+  ],
+  "range_and_sensitivity": {
+    "anchor": "Base = $206.93 = fair value today",
+    "cases": [
+      {
+        "label": "Bear",
+        "implied_value": 172.65,
+        "thesis_one_line": "Broadcom $100B+ ASIC ramp and AMD ROCm progress drive ASIC revenue share to 29-32% and DC revenue to $460B at FY2030 normalization",
+        "evidence_grade": "OBSERVABLE-AND-NEAR (ASIC mechanism) + MECHANISM-NOT-YET-FIRING (AMD ROCm, inference shift)",
+        "key_driver": "FY2030 DC revenue $460B versus base $560B; all other inputs unchanged"
+      },
+      {
+        "label": "Base",
+        "implied_value": 206.93,
+        "thesis_one_line": "ASIC revenue share grows moderately to 22-24% by FY2029; total pool grows fast enough that NVIDIA DC revenue reaches $560B at FY2030 normalization",
+        "evidence_grade": "HIGH (FY2027 contracted) / MEDIUM (FY2028-FY2030 extrapolated)",
+        "key_driver": "FY2030 DC revenue $560B; wallet share 64.4% of total AI chip pool"
+      },
+      {
+        "label": "Bull",
+        "implied_value": 222.55,
+        "thesis_one_line": "Vera Rubin slows ASIC adoption; hyperscaler capex closer to Goldman $1.1T; wallet share holds at 67% of total pool; DC revenue $603B ceiling-capped",
+        "evidence_grade": "EXTRAPOLATED",
+        "key_driver": "FY2030 DC revenue $603B (ceiling-capped); wallet share 67.0% of total AI chip pool"
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x": "FY2030 DC revenue (billions USD)",
+      "axis_y": "Exit multiple (EV / DC NOPAT)",
+      "grid": [
+        [
+          null,
+          "$460B bear",
+          "$510B",
+          "$560B base",
+          "$603B bull"
+        ],
+        [
+          "17.0x (r=11%, g=5%)",
+          "$152",
+          "$166",
+          "$180",
+          "$193"
+        ],
+        [
+          "19.15x (base)",
+          "$173",
+          "$190",
+          "$207",
+          "$222"
+        ],
+        [
+          "21.5x (r=9.5%, g=6%)",
+          "$195",
+          "$213",
+          "$232",
+          "$250"
+        ]
+      ],
+      "where_cases_land": "Bear: $173 at base multiple; Base: $207; Bull: $222. A 2-turn exit multiple compression (from 19.15x to 17x, e.g., if r rises 100bps) on the base DC revenue produces $180. A combination of bear DC revenue ($460B) and multiple de-rating to 17x produces $152 -- the tail scenario if ASIC displacement is both severe and leads to multiple compression."
+    },
+    "vs_price_pct": {
+      "bear_vs_price": -18.1,
+      "base_vs_price": -1.8,
+      "bull_vs_price": 5.6
+    }
+  },
+  "scenario_assumptions": {
+    "base": {
+      "label": "Base",
+      "one_line": "ASIC revenue share grows moderately; total AI chip pool grows 25-30% annually; Vera Rubin sustains performance leadership without reversing ASIC adoption",
+      "implied_value": 206.93,
+      "rows": [
+        {
+          "driver": "FY2027 DC revenue",
+          "value": "$350B",
+          "note": "Q1 actual $75.2B + Q2 guide $83.7B + H2 estimate; consistent with post-Q1 consensus $370-391B total"
+        },
+        {
+          "driver": "FY2030 DC revenue",
+          "value": "$560B",
+          "note": "30.3% CAGR from FY2026; wallet share 64.4% of $870B total AI chip pool"
+        },
+        {
+          "driver": "NVIDIA wallet share FY2029 (total pool basis)",
+          "value": "64.5%",
+          "note": "Custom ASIC revenue share 22-24%; NVDA merchant GPU share 77-78%"
+        },
+        {
+          "driver": "DC EBIT margin at normalization",
+          "value": "65%",
+          "note": "Calibrated to Q1 FY2027 actuals; 74.9% GM minus 9% opex"
+        },
+        {
+          "driver": "WACC (DC segment)",
+          "value": "10.2%",
+          "note": "CAPM; fundamental beta 1.05; rf 4.4%; ERP 5.5%"
+        },
+        {
+          "driver": "Exit multiple (DC)",
+          "value": "19.15x EV/NOPAT",
+          "note": "Gordon formula: (1-g/ROIC)/(r-g) = 0.90/0.047 = 19.15x"
+        },
+        {
+          "driver": "Long-run g_LT (post-normalization)",
+          "value": "5.5%",
+          "note": "Nominal GDP 4-5% plus AI structural premium 1-2%"
+        },
+        {
+          "driver": "Net debt",
+          "value": "$0.44B",
+          "note": "Essentially debt-free"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "24.22B",
+          "note": "As of Q1 FY2027; buyback program reducing count"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$206.93",
+          "note": "SOTP: DC $199.33 + Gaming $4.53 + ProViz $1.66 + Auto $1.42"
+        }
+      ]
+    },
+    "bull": {
+      "label": "Bull",
+      "one_line": "Vera Rubin 10x cost-per-token claim is validated in H2 2026 deployments, slowing ASIC workload migration; hyperscaler capex closer to Goldman $1.1T base case",
+      "implied_value": 222.55,
+      "rows": [
+        {
+          "driver": "FY2027 DC revenue",
+          "value": "$360B",
+          "note": "Vera Rubin early traction adds Q3/Q4 sequential upside above base"
+        },
+        {
+          "driver": "FY2030 DC revenue",
+          "value": "$603B",
+          "note": "Ceiling-capped at $900B total AI chip pool x 67% wallet share"
+        },
+        {
+          "driver": "NVIDIA wallet share FY2029 (total pool basis)",
+          "value": "67.2%",
+          "note": "Custom ASIC revenue share 17-19%; NVDA merchant GPU share 79-81%"
+        },
+        {
+          "driver": "DC EBIT margin at normalization",
+          "value": "65%",
+          "note": "Same as base; additional margin upside (debate 3, $5.95/share) not yet included"
+        },
+        {
+          "driver": "WACC (DC segment)",
+          "value": "10.2%",
+          "note": "Unchanged from base"
+        },
+        {
+          "driver": "Exit multiple (DC)",
+          "value": "19.15x EV/NOPAT",
+          "note": "Unchanged from base; bull is a revenue play, not a re-rate"
+        },
+        {
+          "driver": "Long-run g_LT (post-normalization)",
+          "value": "5.5%",
+          "note": "Unchanged from base"
+        },
+        {
+          "driver": "Net debt",
+          "value": "$0.44B",
+          "note": "Unchanged"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "24.22B",
+          "note": "Unchanged"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$222.55",
+          "note": "Bull does not clear the $210.69 price by the 15% Buy hurdle (+5.6% from price)"
+        }
+      ]
+    },
+    "bear": {
+      "label": "Bear",
+      "one_line": "Broadcom $100B+ ASIC ramp and AMD ROCm progress accelerate ASIC revenue share to 29-32% by FY2029, driving DC revenue $100B below base at normalization",
+      "implied_value": 172.65,
+      "rows": [
+        {
+          "driver": "FY2027 DC revenue",
+          "value": "$340B",
+          "note": "Near-term floor from supply commitments; modest bear divergence begins in Q3 FY2027"
+        },
+        {
+          "driver": "FY2030 DC revenue",
+          "value": "$460B",
+          "note": "$100B below base; wallet share 56.5% of $756B total AI chip pool"
+        },
+        {
+          "driver": "NVIDIA wallet share FY2029 (total pool basis)",
+          "value": "58.0%",
+          "note": "Custom ASIC revenue share 27-29%; AMD merchant GPU share 13-15%"
+        },
+        {
+          "driver": "DC EBIT margin at normalization",
+          "value": "65%",
+          "note": "Same as base; bear does not argue for margin de-rating in the primary scenario"
+        },
+        {
+          "driver": "WACC (DC segment)",
+          "value": "10.2%",
+          "note": "Unchanged from base; bear is a revenue play, not a re-rate"
+        },
+        {
+          "driver": "Exit multiple (DC)",
+          "value": "19.15x EV/NOPAT",
+          "note": "Unchanged from base; if market re-rates to 17x on the share-loss narrative, bear extends to $152"
+        },
+        {
+          "driver": "Long-run g_LT (post-normalization)",
+          "value": "5.5%",
+          "note": "Unchanged from base"
+        },
+        {
+          "driver": "Net debt",
+          "value": "$0.44B",
+          "note": "Unchanged"
+        },
+        {
+          "driver": "Shares outstanding",
+          "value": "24.22B",
+          "note": "Unchanged"
+        },
+        {
+          "driver": "Implied value per share",
+          "value": "$172.65",
+          "note": "Downside from price: minus 18.1%; from base: minus 16.6%"
+        }
+      ]
+    }
+  },
+  "synthesis_paths": [
+    {
+      "label": "Bull",
+      "outcome_range": "$222.55 (+5.6% from current price)",
+      "description": "Vera Rubin's 10x cost-per-token improvement is validated in real hyperscaler deployments by Q1 2027, decelerating ASIC workload migration. Hyperscaler capex runs closer to Goldman's $1.1T base than the $920B consensus for CY2027, expanding the total AI chip pool to the $900B sourced ceiling. NVIDIA wallet share holds at 67% of total pool. DC revenue reaches $603B at FY2030 normalization. The bull does not clear the 15% Buy threshold from current price.",
+      "evidence_grade": "EXTRAPOLATED"
+    },
+    {
+      "label": "Base",
+      "outcome_range": "$206.93 to $228.03 (minus 1.8% fair value to plus 8.2% 12-month target)",
+      "description": "ASIC revenue share grows moderately to 22-24% by FY2029 as Broadcom and Marvell programs mature. The AI chip pool grows 25-30% annually through FY2028 before decelerating. NVIDIA wallet share declines from 66% to 64-65% of total pool. Vera Rubin sustains performance leadership but does not reverse the ASIC share trajectory. DC revenue reaches $560B at FY2030 normalization. HOLD at 22.6x NTM non-GAAP -- fairly priced.",
+      "evidence_grade": "HIGH (FY2027) / MEDIUM (FY2028-FY2030)"
+    },
+    {
+      "label": "Bear",
+      "outcome_range": "$172.65 to $165 stress case (minus 18.1% to minus 21.7% from current price)",
+      "description": "Broadcom's $73B AI backlog converts to $100B+ AI ASIC revenue by FY2027, confirmed by sustained quarterly ASIC revenue above $25B. ASIC revenue share reaches 29-32% of total AI chip market by FY2029. AMD grows to 13-15% of merchant GPU on its 80%+ CAGR trajectory. NVIDIA wallet share falls to 58-60% of total pool and DC revenue reaches only $460B at FY2030. The primary bear of $172.65 assumes the exit multiple holds at 19.15x; if the market re-rates the multiple to 17x on visible share loss, fair value extends to $152.",
+      "evidence_grade": "OBSERVABLE-AND-NEAR (ASIC mechanism) / MECHANISM-NOT-YET-FIRING (AMD, inference shift scale)"
+    }
+  ],
+  "catalysts_to_watch": [
+    {
+      "theme": "Vera Rubin validation",
+      "horizon": "H2 2026 - Q1 2027",
+      "what_to_watch": "First hyperscaler operating commentary on Vera Rubin cost-per-token in real production workloads; Google Cloud Next 2026 and AWS re:Invent 2026 infrastructure sessions; NVIDIA Q2 FY2027 earnings (August 26) for Q3 guidance shape",
+      "why_it_matters": "If Vera Rubin delivers on the 10x cost-per-token claim in hyperscaler deployments, the bull case gains evidence quality. If early deployments show more modest improvement or supply constraints, the base and bear become more likely.",
+      "bull_or_bear_tell": "Bull: any hyperscaler explicitly citing Rubin's economics as a reason to pause or slow incremental ASIC deployment. Bear: Rubin yields or supply constraints in TSMC commentary; any hyperscaler noting that Rubin's production availability is limited through H1 2027."
+    },
+    {
+      "theme": "ASIC revenue share in quarterly earnings",
+      "horizon": "Each quarter FY2027-FY2028",
+      "what_to_watch": "Broadcom AI ASIC quarterly revenue trajectory (compare against $80-100B FY2027 bear assumption); Marvell AI ASIC revenue announcements; hyperscaler Q2 2026 earnings (July-August 2026) for any commentary on custom silicon share of new AI capacity additions",
+      "why_it_matters": "Broadcom's quarterly AI ASIC revenue is the most direct real-time signal for the most dangerous debate. It is observable, company-filed, and updates every quarter.",
+      "bull_or_bear_tell": "Bull: Broadcom AI ASIC revenue growth decelerates below 30% YoY despite the $73B backlog (suggesting hyperscaler deployment pace is slower than feared). Bear: Broadcom AI ASIC revenue sustains above $10B per quarter through Q4 FY2026 and Q1 FY2027 (confirming the $100B+ FY2027 run rate)."
+    },
+    {
+      "theme": "AMD ROCm software framework progress",
+      "horizon": "FY2027 - FY2028",
+      "what_to_watch": "AMD quarterly DC AI revenue trajectory (exit FY2027 above $25B annualized is the meaningful threshold); AMD ROCm benchmark coverage announcements; any publicly disclosed training workload migration from CUDA to ROCm at hyperscaler scale",
+      "why_it_matters": "AMD growing to 13-15% merchant GPU share is the second mechanism in the bear case. Without AMD's software gap closing, the bear requires only the Broadcom ASIC ramp (which produces $180-185/share in isolation, above the current price). With both firing, fair value falls to $172.65.",
+      "bull_or_bear_tell": "Bull: AMD ROCm coverage slipping beyond FY2028 targets again; AMD DC AI revenue growth decelerating below 50% YoY in FY2027. Bear: AMD DC AI revenue run rate above $25B by Q4 FY2027; any hyperscaler disclosing that training workload migration to AMD is underway."
+    },
+    {
+      "theme": "Gross margin sustainability through Vera Rubin ramp",
+      "horizon": "Q3-Q4 FY2027 (November 2026 - January 2027)",
+      "what_to_watch": "NVIDIA quarterly gross margin guidance in the Vera Rubin ramp period; SK Hynix HBM4 pricing in memory supplier earnings; TSMC quarterly commentary on CoWoS packaging capacity",
+      "why_it_matters": "The Blackwell ramp caused GM to fall to 60.5% in Q1 FY2026 before recovering to 74.9% by Q1 FY2027. If Vera Rubin's HBM4 cost structure follows the same pattern, a 200-300bps GM compression during the ramp would remove $7-10B of gross profit in a market priced for 75% GM. At 22.6x NTM non-GAAP, there is no tolerance for a gross profit miss.",
+      "bull_or_bear_tell": "Bull: Q3 FY2027 gross margin guidance at or above 74% GAAP, signaling HBM4 yield and cost normalization is ahead of the Blackwell precedent. Bear: Q3 FY2027 GM guidance below 72% GAAP for two consecutive quarters."
+    }
+  ],
+  "conclusion": "NVIDIA is a genuinely extraordinary business -- 90% gross margins on its best product mix, $97B of annual FCF, a CUDA moat that has held for 15 years, and a contracted near-term that provides unusual earnings certainty. The HOLD is not a statement about the business; it is a statement about the price. At $210.69 against a base fair value of $206.93, the stock is fairly valued with a 8.2% total return to our 12-month target of $228.03 -- well short of the 15% Buy hurdle. The bear case at $172.65 (minus 18%) is not speculative: it rests on Broadcom's observable $73B AI backlog and the structural reality that custom ASICs win on economics for fixed-workload inference at scale. What we are buying into is a fair-value bet on the world's dominant AI platform, with a symmetric risk/reward that resolves on one variable -- the rate at which Broadcom's confirmed ASIC programs and AMD's software improvements erode NVIDIA's wallet share of total AI chip spend between now and FY2030.",
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "HIGH",
+    "path_confidence": "MEDIUM",
+    "basis": "HIGH valuation confidence: the SOTP methodology is robust, T-invariance check passes (fair value stable across FY2028-FY2030 normalization years), bias audit passes (no stacked lean), and the corrected EPS anchor ($9.34 non-GAAP vs $12.73 artifact) is validated by Pheme. MEDIUM path confidence: FY2027 is substantially contracted, FY2028 is anchored to consensus, but FY2029-FY2030 depend on the crux variable (ASIC wallet share) where the base, bull, and bear are each plausible and the evidence quality is MEDIUM for the terminal years. MEDIUM conviction is the honest read on a business whose fair value is clear but whose earnings power three years out is genuinely contested."
+  },
+  "run_manifest": {
+    "engine": "Atlas v3",
+    "date": "2026-06-20",
+    "pipeline": "Hermes (frozen databundle) + Pheme (market facts) + Theia (crux, demand, industry) + Daedalus (valuation, bias audit) + Boreas (bull debates) + Cassandra (bear debates) + Atlas (synthesis)",
+    "frozen_inputs": [
+      "NVDA_databundle.json",
+      "NVDA_market_facts.json",
+      "NVDA_industry.json",
+      "NVDA_crux.json",
+      "NVDA_demand.json",
+      "NVDA_inputs.json",
+      "NVDA_valuation.json",
+      "NVDA_headline.json",
+      "NVDA_bull.json",
+      "NVDA_bear.json"
+    ],
+    "contract_version": "3.0"
+  },
+  "change_log": [
+    {
+      "item": "Initial report",
+      "prior": null,
+      "current": "HOLD / MEDIUM / $206.93 base / $228.03 12m target",
+      "justification": "First run; no prior report exists"
+    }
+  ],
+  "data_gaps": [
+    "SEC EDGAR structured financials fetch failed (HTTPError in bundle); segment financials sourced from Theia's sourced filings and earnings press releases",
+    "Social sentiment (Stocktwits) unavailable at bundle snapshot; retail sentiment treated as unverified",
+    "Street target breakdown beyond mean/median not available in structured form; analyst actions from Pheme are the primary tape"
+  ],
+  "sources": [
+    {
+      "name": "NVIDIA Q1 FY2027 earnings press release",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NVIDIA Q1 FY2027 10-Q (supply commitments $119B)",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/q1/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf",
+      "tier": "company_filed"
+    },
+    {
+      "name": "TrendForce ASIC vs GPU AI server shipment share 2025-2026",
+      "url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+      "tier": "research_firm"
+    },
+    {
+      "name": "TrendForce / MediaTek ASIC revenue share 20% by 2027",
+      "url": "https://www.trendforce.com/news/2026/02/05/news-mediatek-forecasts-1b-in-asic-sales-for-2026-custom-ai-chips-set-for-20-revenue-share-in-2027/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Bloomberg Intelligence AI accelerator $604B by 2033; GPU/ASIC split 81%/19%",
+      "url": "https://www.bloomberg.com/company/press/ai-accelerator-market-looks-set-to-exceed-600-billion-by-2033-driven-by-hyperscale-spending-and-asic-adoption-according-to-bloomberg-intelligence/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Broadcom AI ASIC revenue, backlog $73B, $60-90B SAM from three customers",
+      "url": "https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Goldman Sachs 2027 hyperscaler capex: consensus $920B, GS base $1.1T",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/goldman-says-consensus-2027-hyperscaler-140152065.html",
+      "tier": "sellside"
+    },
+    {
+      "name": "AMD AI accelerator 80%+ CAGR guidance at Analyst Day Nov 2025",
+      "url": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Presenc AI chip market share 2026 (AMD 5-10%)",
+      "url": "https://presenc.ai/research/ai-chip-market-share-2026",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Jon Peddie Research gaming GPU market Q4 2025; NVDA 94-95% share",
+      "url": "https://www.jonpeddie.com/news/q425-pc-gpu-shipments-decreased-by-1-3-from-last-quarter-which-is-a-prelude-to-the-creep-forward/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Mordor Intelligence AI accelerator market $440B by 2030",
+      "url": "https://www.mordorintelligence.com/industry-reports/ai-accelerators-market",
+      "tier": "research_firm"
+    },
+    {
+      "name": "NVIDIA automotive design win pipeline $14B",
+      "url": "https://www.indexbox.io/blog/nvidias-automotive-sector-a-surge-in-revenue-and-innovation/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Hyperscaler Q1 2026 capex guidance: $650-735B combined CY2026",
+      "url": "https://www.heygotrade.com/en/news/big-tech-q1-2026-earnings-ai-capex-spree/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NVIDIA Q4 FY2026 earnings (FY2026 annual financials)",
+      "url": "https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html",
+      "tier": "company_filed"
+    }
+  ]
+}
