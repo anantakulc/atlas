@@ -1,0 +1,1057 @@
+{
+  "ticker": "AEVA",
+  "name": "Aeva Technologies, Inc.",
+  "listings": "NASDAQ: AEVA",
+  "sector": "Technology",
+  "industry": "FMCW LiDAR Sensing Systems",
+  "business_type": "highgrowth_preprofit",
+  "currency": "USD",
+  "date": "2026-06-20",
+  "engine": "Atlas v3",
+  "section_1_the_call": {
+    "our_view": "AEVA holds two exclusive multi-year automotive production contracts. Daimler Truck (SOP Q4 2027) and an unnamed top-10 European OEM (SOP 2028); and is the NVIDIA DRIVE Hyperion reference FMCW LiDAR sensor. The company's FMCW technology is genuinely differentiated: native simultaneous velocity and range measurement is physically impossible with pulsed Time-of-Flight sensors. These are real achievements. The problem is price. At $24.39, AEVA trades at 72x TTM EV/Sales, pricing the full bull case at a growth-investor WACC the business does not yet warrant. Our base case fair value is $5.05; the bull case is $17.00. The stock is above BOTH. The crux is not whether the technology works; it does. The crux is whether the market's 9% implicit WACC is appropriate for a company burning $100M/year with production revenue still 12-18 months away. We say no. SELL. LOW conviction because a 2pp WACC change moves fair value by 171%.",
+    "crux": {
+      "variable": "WACC applied to the contracted ramp",
+      "one_line": "The decision comes down to one question: is 9-10% (the growth-investor rate) or 11-12% (the fundamental rate for a pre-profit hardware company) the right discount rate to apply to Aeva's contracted but not-yet-executing production programs?",
+      "base": "At 11% WACC with base-case revenue ($290M FY2033, 43% EBITDA): $5.05 fair value today. Stock is 383% above fair value.",
+      "bull": "At 10.5% WACC with bull-case revenue ($440M FY2033, 52% EBITDA): $17.00 fair value. Stock is still 43% above the bull case.",
+      "bear": "At 11.5% WACC with ramp delays (SOP 12-18 months late) and a dilutive 2028 capital raise: near-zero residual equity value ($0.50/share) for existing shareholders.",
+      "what_decides_it": "Whether both contracted programs execute on schedule (and the WACC the market assigns drops as production de-risks the story), OR whether the hardware ramp hits the delays that have been the norm for every LiDAR company that preceded Aeva."
+    },
+    "recommendation": {
+      "action": "SELL",
+      "tone": "negative",
+      "current_price": 24.39,
+      "fair_value_today": 5.05,
+      "fair_value_12m": 5.61,
+      "target_12m": 14.0,
+      "upside_pct": -42.6,
+      "conviction": "LOW",
+      "rationale": "Stock is priced at 72x EV/Sales, above even the bull case fair value ($17). Target $14 = 18.8x FY2027E EV/Sales as first production arrives and the narrative re-rates to an execution story. The contracted programs deserve credit; they narrow the downside; but they do not justify the current multiple. Sell.",
+      "next_earnings": "2026-07-30"
+    },
+    "four_numbers": {
+      "fair_value_today": {
+        "value": 5.05,
+        "basis": "ExitMultiple on base case NOPAT $89M FY2033, WACC 11.0%, exit multiple 12.91x EV/NOPAT"
+      },
+      "price_today": {
+        "value": 24.39,
+        "multiple_ev_sales_ttm": 72.1
+      },
+      "fair_value_12m": {
+        "value": 5.61,
+        "basis": "Base rolled forward at 11% WACC, no dividend"
+      },
+      "target_12m": {
+        "value": 14.0,
+        "basis": "18.8x FY2027E EV/Sales ($55M) as Daimler SOP approaches; partial bull credit for contracted programs"
+      },
+      "band_low": 0.5,
+      "band_high": 17.0,
+      "method_primary": "ExitMultiple",
+      "method_why": "Pre-profit single-segment FMCW platform. Exit-multiple normalizes to FY2033 (T=7) when production ramp matures, avoids the g>r blow-up of a forced perpetuity.",
+      "implied_return_to_target": -42.6,
+      "implied_return_to_fair_value": -77.0,
+      "street_mean_target": 25.13,
+      "street_return_pct": 3.0
+    },
+    "thesis": [
+      {
+        "pillar": "FMCW technology has won its first commercial validation",
+        "detail": "Two exclusive multi-year production contracts (Daimler Truck L4 SOP Q4 2027; European OEM L3 SOP 2028) and the NVIDIA DRIVE Hyperion reference designation are CONTRACTED events; not projections. Native Doppler velocity measurement per point is a fundamental FMCW advantage that cannot be replicated by ToF. The technology is real. The contracted base should prevent the stock from reaching zero."
+      },
+      {
+        "pillar": "But the price prices everything right and then some",
+        "detail": "At 72x TTM EV/Sales, the stock is above the bull case fair value ($17) at any reasonable discount rate. The market is applying 9% WACC; consistent with an established software company, not a pre-profit hardware firm burning $100M/year. Even if both programs execute perfectly and two Luminar replacement wins close, fair value is ~$17 at 10.5% WACC. The $24.39 price requires NOPAT at normalization of ~$130M+ AND a 9% WACC simultaneously."
+      },
+      {
+        "pillar": "The ramp is the risk the price ignores",
+        "detail": "Luminar had signed contracts with Volvo and still filed Chapter 11 three years after the promised SOP. SOP delays are the historical norm in automotive hardware. At $24.39, there is no margin of safety. A 12-month SOP delay reduces base fair value by $1.14/share (22%); a dilutive 2028 capital raise collapses equity to near zero for existing holders. The risk/reward is unfavorable at the current price even if you believe in the contracts."
+      }
+    ]
+  },
+  "section_2_the_business": {
+    "business_overview": {
+      "summary": "Aeva Technologies designs and manufactures FMCW (Frequency Modulated Continuous Wave) 4D LiDAR sensing systems. Unlike conventional pulsed Time-of-Flight LiDAR, Aeva's photonic chips emit a continuous laser wave and measure the Doppler frequency shift of each return to derive simultaneous range AND instantaneous radial velocity for every point in a scan; a capability physically impossible with pulsed ToF. Founded in 2017 by ex-Apple engineers, headquartered in Mountain View, CA, with 239 employees and no mass-production revenue yet.",
+      "business_model": "Pre-production hardware company generating revenue from: (1) NRE (non-recurring engineering) payments from automotive OEM programs in qualification; (2) small-volume product sales (Daimler truck testing, Nikon industrial meters); (3) government/municipal CityOS deployments. Mass-production revenue begins with Daimler Truck SOP Q4 2027 and EU OEM SOP 2028. Business model transitions from NRE-funded development to hardware ASP × volume at scale.",
+      "segments": [
+        {
+          "name": "Automotive LiDAR (sensor hardware + NRE)",
+          "revenue_share_pct": 67,
+          "growth_pct": 100,
+          "margin_pct": -40,
+          "nature": "high-growth",
+          "note": "Exclusive supplier for Daimler Truck L4 and unnamed EU OEM L3 global platform. FY2025 revenue ~$12M (NRE + early product). Gross margin deeply negative at low volumes; ramp to positive GM requires >50K units/year. First mass-production SOP Q4 2027."
+        },
+        {
+          "name": "Industrial Automation (Eve sensors + NRE)",
+          "revenue_share_pct": 17,
+          "growth_pct": 200,
+          "margin_pct": -20,
+          "nature": "high-growth",
+          "note": "High-precision laser displacement sensors for metrology. Nikon Metrology production agreement (April 2026); first non-automotive production revenue. Forterra defense contract. ~$3M FY2025E, growing quickly off tiny base."
+        },
+        {
+          "name": "CityOS / Smart Infrastructure",
+          "revenue_share_pct": 8,
+          "growth_pct": 150,
+          "margin_pct": -60,
+          "nature": "high-growth",
+          "note": "AI traffic intelligence OS using 4D LiDAR data. Georgia DOT 30-intersection deployment (March 2026). Near-zero current revenue; long-duration municipal procurement cycle. Strategic optionality rather than near-term driver."
+        }
+      ],
+      "customers": [
+        {
+          "name": "Daimler Truck / TORC Robotics",
+          "type": "CONTRACTED production supplier",
+          "program": "Freightliner Cascadia L4 autonomous truck",
+          "status": "In qualification; SOP Q4 2027"
+        },
+        {
+          "name": "Unnamed European Passenger OEM (Top-10 global)",
+          "type": "CONTRACTED exclusive supplier",
+          "program": "Global L3 vehicle platform, multiple models ex-China",
+          "status": "Award Dec 2025; SOP 2028"
+        },
+        {
+          "name": "Nikon Metrology",
+          "type": "CONTRACTED production supplier",
+          "program": "APDIS MV5X Laser Radar",
+          "status": "In production April 2026"
+        },
+        {
+          "name": "Georgia DOT",
+          "type": "CONTRACTED deployment",
+          "program": "CityOS 30-intersection smart traffic AI",
+          "status": "Deployed March 2026"
+        },
+        {
+          "name": "Forterra (defense)",
+          "type": "CONTRACTED initial volumes",
+          "program": "Autonomous ground vehicles",
+          "status": "First defense win"
+        }
+      ],
+      "geographic": [
+        {
+          "region": "North America",
+          "revenue_share_pct": 60,
+          "note": "Daimler Truck program, CityOS, defense"
+        },
+        {
+          "region": "Europe",
+          "revenue_share_pct": 35,
+          "note": "EU OEM program, Nikon (Oceania)"
+        },
+        {
+          "region": "Asia",
+          "revenue_share_pct": 5,
+          "note": "Limited; China explicitly excluded from EU OEM contract"
+        }
+      ]
+    },
+    "historical_financials": [
+      {
+        "fy": "FY2022",
+        "revenue_b": 0.004,
+        "revenue_growth_pct": null,
+        "gross_margin_pct": -100,
+        "ebitda_b": -0.146,
+        "ebitda_margin_pct": -3650,
+        "net_income_b": -0.147,
+        "fcf_b": null,
+        "eps": -3.4
+      },
+      {
+        "fy": "FY2023",
+        "revenue_b": 0.004,
+        "revenue_growth_pct": 0,
+        "gross_margin_pct": -150,
+        "ebitda_b": -0.14,
+        "ebitda_margin_pct": -3500,
+        "net_income_b": -0.149,
+        "fcf_b": null,
+        "eps": -3.3
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 0.009,
+        "revenue_growth_pct": 125,
+        "gross_margin_pct": -44,
+        "ebitda_b": -0.138,
+        "ebitda_margin_pct": -1533,
+        "net_income_b": -0.152,
+        "fcf_b": -0.11,
+        "eps": -2.85
+      },
+      {
+        "fy": "FY2025",
+        "revenue_b": 0.018,
+        "revenue_growth_pct": 100,
+        "gross_margin_pct": -6,
+        "ebitda_b": -0.119,
+        "ebitda_margin_pct": -661,
+        "net_income_b": -0.145,
+        "fcf_b": -0.12,
+        "eps": -2.55
+      },
+      {
+        "fy": "Q1 FY2026A",
+        "revenue_b": 0.0063,
+        "revenue_growth_pct": 90,
+        "gross_margin_pct": null,
+        "ebitda_b": null,
+        "ebitda_margin_pct": null,
+        "net_income_b": -0.035,
+        "fcf_b": -0.026,
+        "eps": -0.56
+      }
+    ],
+    "historical_financials_read": "Four years of data tell a simple story: Aeva has been burning $120-150M per year in cash and losses while revenue has finally started moving; from $4M in FY2022-2023 to $9M in FY2024 to $18M in FY2025 and $6.3M in Q1 2026 alone (+90% YoY). The gross margin trend is the most encouraging sign: negative 100%+ in FY2022-2023, narrowing to negative 6% in FY2025, and the Q1 2026 trajectory suggests the company is closing in on gross margin breakeven. The loss profile has NOT worsened with revenue growth; operating losses have been flat at $120-150M despite doubling revenue. This fixed-cost structure is the core thesis: every dollar of revenue beyond gross margin breakeven falls through almost directly to EBITDA. The question is how many years until revenue is large enough to matter.",
+    "snapshot": [
+      {
+        "label": "Market Cap",
+        "value": "$1.65B"
+      },
+      {
+        "label": "Enterprise Value",
+        "value": "$1.51B"
+      },
+      {
+        "label": "Price",
+        "value": "$24.39"
+      },
+      {
+        "label": "52-Week Range",
+        "value": "$8.83 - $38.80"
+      },
+      {
+        "label": "YTD Return",
+        "value": "+91.3%"
+      },
+      {
+        "label": "Beta (observed)",
+        "value": "2.41"
+      },
+      {
+        "label": "Shares (diluted)",
+        "value": "73.8M (incl. Apollo convert)"
+      },
+      {
+        "label": "Net Debt (Q1 2026)",
+        "value": "~$0.5M (net of $100M Apollo convert vs $99.5M cash)"
+      },
+      {
+        "label": "Total Liquidity (Q1 2026)",
+        "value": "$224.5M ($99.5M cash + $125M undrawn facility)"
+      },
+      {
+        "label": "Quarterly Cash Burn (Q1 2026)",
+        "value": "$25.8M"
+      },
+      {
+        "label": "Liquidity Runway",
+        "value": "~2.2 years to Q3-Q4 2028"
+      },
+      {
+        "label": "FY2025 Revenue",
+        "value": "$18.1M (+100% YoY)"
+      },
+      {
+        "label": "FY2026E Revenue (guidance)",
+        "value": "$30-36M"
+      },
+      {
+        "label": "FY2025 Operating Loss",
+        "value": "-$128M"
+      },
+      {
+        "label": "FY2025 FCF",
+        "value": "-$120M"
+      },
+      {
+        "label": "EV/Sales (TTM)",
+        "value": "72x"
+      },
+      {
+        "label": "NTM EPS Consensus",
+        "value": "-$1.54"
+      },
+      {
+        "label": "Analyst Coverage",
+        "value": "4 analysts, Strong Buy consensus, $25 mean target"
+      },
+      {
+        "label": "Employees",
+        "value": "239"
+      },
+      {
+        "label": "Founded",
+        "value": "2017 (Mountain View, CA)"
+      },
+      {
+        "label": "Apollo Convertible Notes",
+        "value": "$100M at 4.375%, converts at $15.86 (in-the-money)"
+      }
+    ]
+  },
+  "section_3_industry_competition": {
+    "industry_position": {
+      "market_overview": "The automotive LiDAR market is bifurcating. China has consolidated around Hesai and RoboSense (together ~89% of China volume), achieving scale and profitability at high volumes. Western OEMs outside China are awarding L3+ production programs to independent suppliers. In this segment, FMCW LiDAR is emerging as the preferred technology for highest-performance applications: Aeva won the December 2025 exclusive EU OEM contract over ToF alternatives; NVIDIA chose Aeva as the Hyperion reference sensor. But Innoviz (ToF) is already in production with BMW and VW at scale. The next 18 months will define whether FMCW displaces ToF in new western OEM programs or whether ToF holds its execution advantage.",
+      "tam_usd_bn": 3.6,
+      "tam_growth_pct": 24,
+      "tam_source": "Yole Group, July 2025; automotive LiDAR $3.6B by 2030 (was $1B in 2025). MarketsandMarkets cites $9.6B (wider scope definition; use Yole $3.6B as conservative specialist estimate).",
+      "addressable_market": "Aeva's SAM: $1.8B by 2030 (automotive ex-China × FMCW-preferred programs) + $0.5B industrial/infrastructure = $2.3B total SAM. Current capture: <1% ($18M revenue against ~$1B current total automotive LiDAR market).",
+      "the_share_dynamic": "Two simultaneous shifts: (1) China consolidation at high volume/low cost. Hesai 1.62M units in 2025 (222% growth), first profit. (2) Western L3 program awards to independent qualified suppliers. Within the western segment, FMCW is beginning to displace ToF in NEW program selection (Dec 2025 EU OEM exclusive, NVIDIA reference). Luminar's Dec 2025 bankruptcy is the key competitive event: 3-4 OEMs lose their ToF LiDAR supplier and need qualified replacement. Aeva is the only western-headquartered FMCW supplier with automotive-grade qualification; these replacement conversations are happening now.",
+      "revenue_drivers": [
+        "OEM production volume × L3/L4 attachment rate × Aeva exclusive status",
+        "NRE from new development programs (pre-SOP qualification work)",
+        "Industrial sensor volumes (Nikon ramp + new wins)",
+        "Municipal/government CityOS deployments"
+      ],
+      "npat_margin_drivers": [
+        "Scale leverage on $125M fixed operating cost base; each incremental dollar above GM breakeven flows to EBITDA",
+        "Mix shift toward software (CityOS) and recurring industrial contracts",
+        "Manufacturing partner carries capex; capital-light design enables high ROIC at scale"
+      ],
+      "product_differentiation": "FMCW's core advantage: simultaneous per-point velocity measurement via Doppler frequency shift; no inference, no computation, no extra hardware. ToF measures range only; velocity requires algorithmic derivation (2-frame differencing, Kalman filtering) that introduces latency and error. FMCW is also ghost-free (no cross-sensor interference) and operates at lower peak power (silicon photonic PIC chips). The limitation: FMCW degrades in dense fog beyond ~25m (vs ~125m for ToF). For L3 highway ADAS, range is the primary metric; for L4 dense urban autonomy, velocity-per-point matters more. The EU OEM award confirms that at least one major OEM has determined FMCW's advantages outweigh its limitations for their production program.",
+      "five_forces": {
+        "buyer_power": "HIGH. OEMs negotiate heavily on pre-revenue suppliers; mitigated within programs by exclusive contracts",
+        "supplier_power": "MODERATE; photonic chip foundry concentration; Fortune 500 manufacturing partner reduces some risk",
+        "threat_of_entry": "LOW near-term (3-5 year automotive qualification); MODERATE medium-term (Continental FMCW in development)",
+        "threat_of_substitutes": "HIGH; camera-only ADAS (no LiDAR), ToF LiDAR (already in production), Tier-1 in-house development",
+        "competitive_rivalry": "HIGH; winner-take-most per OEM platform; intense competition for each new program award"
+      },
+      "moat": "NARROW and CONTESTED. Sources: (1) FMCW IP (300+ patents); (2) design-win lock-in within awarded programs (2-3 year re-qualification cost for OEMs to switch); (3) NVIDIA DRIVE Hyperion reference position (structural pull for any NVIDIA-stack OEM). Risks: Continental in-house FMCW (2028+); Hesai cost curve entering western programs.",
+      "competitors": [
+        {
+          "name": "Hesai Technology",
+          "hq": "China",
+          "technology": "ToF",
+          "position": "Global market leader, 33% share by revenue, 1.62M units FY2025, profitable",
+          "share_trajectory": "GAINING",
+          "threat_to_aeva": "Cost threat in commodity programs; not yet in western L3 passenger programs"
+        },
+        {
+          "name": "Innoviz Technologies",
+          "hq": "Israel",
+          "technology": "ToF (InnovizTwo)",
+          "position": "BMW Series 7 in production, VW ramp, top-5 OEM win SOP 2027, $55M FY2025 revenue",
+          "share_trajectory": "GROWING",
+          "threat_to_aeva": "HIGH; in production where Aeva is pre-SOP; InnovizTwo 450m range meets L3 requirements"
+        },
+        {
+          "name": "Ouster (post-Velodyne merge)",
+          "hq": "US",
+          "technology": "ToF",
+          "position": "$169M TTM revenue, pivoting to smart infrastructure/robotics",
+          "share_trajectory": "STABLE",
+          "threat_to_aeva": "MODERATE. CityOS competition; lower threat in automotive L3"
+        },
+        {
+          "name": "Luminar Technologies",
+          "hq": "US (bankrupt Dec 2025)",
+          "technology": "ToF 1550nm",
+          "position": "EXITED. Chapter 11 Dec 2025. IP sold to MicroVision.",
+          "share_trajectory": "ELIMINATED",
+          "threat_to_aeva": "POSITIVE clearing event. Aeva the only qualified western alternative for Luminar OEM relationships"
+        },
+        {
+          "name": "Continental AG (in-house)",
+          "hq": "Germany",
+          "technology": "FMCW (in-house development)",
+          "position": "Building internally; no production program yet",
+          "share_trajectory": "LATENT THREAT",
+          "threat_to_aeva": "MODERATE-HIGH (2028+); vertical integration risk if Continental completes FMCW development"
+        }
+      ]
+    },
+    "peers": [
+      {
+        "ticker": "INVZ",
+        "name": "Innoviz Technologies",
+        "ev_sales_ntm": 16.0,
+        "ytd": null,
+        "highlight": "Most direct western ToF comp; in BMW production; revenue $55M FY2025"
+      },
+      {
+        "ticker": "OUST",
+        "name": "Ouster",
+        "ev_sales_ntm": 5.0,
+        "ytd": null,
+        "highlight": "Broader market (infrastructure/robotics); $169M TTM revenue; lower automotive L3 exposure"
+      },
+      {
+        "ticker": "HESAI",
+        "name": "Hesai Technology",
+        "ev_sales_ntm": 3.5,
+        "ytd": null,
+        "highlight": "China leader, 1.62M units, profitable at scale; not comparable (different market/cost structure)"
+      }
+    ],
+    "peers_read": "AEVA at 45x NTM EV/Sales is at a material premium to its closest comparables. Innoviz (ToF, in production with BMW/VW, $55M revenue) trades at ~16x NTM EV/Sales. Ouster ($169M TTM revenue, post-Velodyne scale) trades at ~5x EV/Sales. Hesai (profitable, 1.6M units) trades at ~3.5x. The AEVA premium is justified only by (1) the exclusive EU OEM contract scale (potentially larger than Innoviz's BMW/VW programs combined) and (2) FMCW technology premium. Even applying a 50% premium to Innoviz's multiple (24x) gives a target of $18; below the current price of $24."
+  },
+  "section_4_market_view": {
+    "market_view": {
+      "whats_priced_in": "At $24.39 and $1.511B EV against $18M TTM revenue, the market prices: (1) both contracted programs executing on schedule at multi-year volume; (2) 1-2 additional Luminar-replacement or NVIDIA pull-through wins; (3) a 9% discount rate reflecting contracted-program de-risking. The reverse-multiple decomposition: to justify $24.39 at 11% WACC, NOPAT at FY2033 needs to be ~$270M ($790M revenue at 34% NOPAT margin). That's 3x the base case and above the bull case; the market has priced in the optimistic scenario plus optionality.",
+      "street_view": "4 analysts, all positive (strong buy consensus). Mean target $25.13, range $18.50-$33. The street thesis: FMCW wins the next-generation L3/L4 race; Luminar's exit is a multi-program clearing event; NVIDIA Hyperion makes Aeva the default for NVIDIA-adopting OEMs. Street applies ~9% WACC implicitly. We disagree on the WACC, not the technology narrative.",
+      "post_earnings_analyst_actions": [
+        {
+          "date": "2026-05-06",
+          "event": "Q1 2026 earnings: Revenue $6.3M (+90% YoY), total liquidity $224.5M; significantly above balance sheet cash alone",
+          "note": "Liquidity surprise was the key positive: $125M undrawn facility was not widely known. This extended the perceived runway significantly and drove stock outperformance post-Q1."
+        },
+        {
+          "date": "2025-12-03",
+          "event": "European OEM exclusive production contract awarded; multi-year global platform, Level 3, to mid-2030s",
+          "note": "Most important single event in the last 12 months. An exclusive contract with a top-10 global OEM on a global platform is the strongest commercial validation FMCW has received."
+        },
+        {
+          "date": "2026-01-05",
+          "event": "NVIDIA DRIVE Hyperion reference sensor designation",
+          "note": "Structural platform advantage: any OEM adopting NVIDIA AV stack defaults to Aeva as LiDAR component."
+        },
+        {
+          "date": "2025-11-05",
+          "event": "Apollo $100M convertible note at $15.86 conversion price",
+          "note": "Apollo's credit team implied confidence in the trajectory. Convert is now in-the-money at $24.39."
+        }
+      ],
+      "news_narrative": "Since Q3 2025, every major Aeva announcement has been positive: EU OEM exclusive (Dec 2025), Apollo financing (Nov 2025), NVIDIA reference (Jan 2026), Nikon production (Apr 2026), Georgia DOT CityOS (Mar 2026). There has been no negative corporate news. The 91% YTD return reflects this compressed positive newsflow. The key risk is the absence of bad news rather than the presence of good news; the next 12-18 months shift from signing to executing.",
+      "sentiment_narrative": "Positive retail-driven sentiment from the autonomous vehicle narrative. High-beta (2.41) suggests momentum-sensitive trading; the sharp YTD move has attracted trend followers who will exit at the first production disappointment.",
+      "runway": "2.2 years to Q3-Q4 2028 at Q1 2026 burn rate ($25.8M/quarter). Revenue growth reduces net burn as it scales. $125M undrawn facility terms not fully disclosed.",
+      "runway_verdict": "ADEQUATE but requires execution on both contracted programs. If both programs hit SOP on schedule, revenue in H2 2027 begins reducing the net burn and the bridge closes without a highly dilutive raise. If both programs slip 12+ months simultaneously, a 2028 capital raise at below-current prices becomes probable.",
+      "market_lean": "BULL; the stock's 91% YTD move and all-positive newsflow reflect the market pricing the technology story optimistically. The lean is appropriate for the contracted evidence but the MULTIPLE applied to that evidence is too generous."
+    },
+    "street_reconstruction": {
+      "currency": "EV/Sales (NTM)",
+      "what_price_implies": "At $24.39 / $1.511B EV and $33M FY2026E revenue: 45.8x NTM EV/Sales. Decomposed into (g, ROIC, r): this multiple is consistent with $440M terminal revenue, 52% EBITDA margin, 32% ROIC, 9.0% WACC, and g_lt 5.5%; i.e., the full bull case at growth-investor discount rate.",
+      "what_street_implies": "Street mean target $25.13 (practically current price). Street implies: bull-case trajectory at 9% WACC. The 4-analyst consensus is thin; targets range $18.50-$33, a wide band reflecting genuine uncertainty.",
+      "our_justified_multiple": "At 11% WACC and base revenue ($290M FY2033, 43% EBITDA): 12.91x EV/NOPAT → EV $373M → $5.05/share. NTM EV/Sales today: the intrinsic value implies ~11x NTM EV/Sales against FY2026 revenue; far below the current 46x. The gap IS the overpay.",
+      "agree_disagree": "AGREE: FMCW technology is differentiated; the contracted programs are real; the liquidity bridge is adequate. DISAGREE: 9% WACC for a pre-profit hardware company; the full Luminar replacement scenario as the base case; paying 46x NTM EV/Sales when even the bull case justifies $17."
+    }
+  },
+  "section_5_management": {
+    "management": {
+      "ceo": "Soroush Salehian; co-founder, former Apple (iPhone camera). Built the FMCW LiDAR technology from scratch. Track record: turned a research concept into two production contracts and a NVIDIA platform position in 9 years. No prior public company CEO experience. The Q1 2026 earnings call confirmed the $224.5M liquidity clearly; a positive signal on communication discipline.",
+      "cfo": "Not separately identified in public filings",
+      "capital_allocation_history": "Three explicit capital allocation decisions: (1) Apollo $100M convertible note (Nov 2025); non-dilutive at current prices, at reasonable terms ($15.86 conversion now in-the-money). (2) Fortune 500 strategic investment $50M + manufacturing partnership (May 2025); smart: offloads manufacturing scale-up capex to a $500B+ partner in exchange for 6% equity. (3) The EU OEM exclusive award Dec 2025; the company chose exclusivity over potential multi-source volume, a high-conviction bet on FMCW differentiation. All three reflect a management team that understands its leverage points and executes on partnerships rather than burning cash on in-house manufacturing scale.",
+      "recent_insider_activity": [
+        {
+          "note": "No insider selling disclosed in recent filings; positive signal given the 91% YTD gain; management is not cashing out at elevated prices."
+        }
+      ]
+    }
+  },
+  "section_6_our_valuation": {
+    "valuation_method": "ExitMultiple (single segment). AEVA is a highgrowth_preprofit company with a single economic engine: the FMCW LiDAR platform. All three commercial lines (automotive, industrial, CityOS) use the same chip technology, the same manufacturing relationship, and the same risk profile. No separate annuity or cyclical segment exists. ExitMultiple method: build NOPAT to FY2033 (T=7, when the contracted ramp matures and growth normalizes to high single digits), apply the Gordon steady-state multiple (valid because g_lt < r in steady state), discount at 11% WACC. This isolates the only real question; how large does NOPAT become; and avoids forcing a perpetual DCF on a company where g > r today.",
+    "segment_valuation": [
+      {
+        "name": "FMCW LiDAR Platform (Automotive + Industrial + CityOS)",
+        "nature": "high-growth",
+        "method": "ExitMultiple",
+        "revenue_path_usd_m": {
+          "FY2026E": 33,
+          "FY2027E": 55,
+          "FY2028E": 85,
+          "FY2029E": 130,
+          "FY2030E": 165,
+          "FY2031E": 205,
+          "FY2032E": 240,
+          "FY2033E": 290
+        },
+        "ebitda_margin_path_pct_note": "EBITDA margins below are displayed against the NOPAT path as the valuation anchor. FY2026-FY2029: deeply negative (fixed-cost overhead on sub-$130M revenue base; EBITDA ranges from -250% to -10%). FY2030+: ramp to positive as production volumes absorb fixed costs. Terminal (FY2033E): 43%; the value used in the bias audit, NOPAT derivation ($290M × 43% = $124.7M EBITDA; -D&A $12M = EBIT $112.7M; × 0.79 = NOPAT $89M).",
+        "ebitda_margin_path_pct": {
+          "FY2026E": -252,
+          "FY2027E": -124,
+          "FY2028E": -51,
+          "FY2029E": -10,
+          "FY2030E": 9,
+          "FY2031E": 27,
+          "FY2032E": 41,
+          "FY2033E": 43
+        },
+        "nopat_path_usd_m": {
+          "FY2026E": -95,
+          "FY2027E": -80,
+          "FY2028E": -55,
+          "FY2029E": -25,
+          "FY2030E": 2,
+          "FY2031E": 34,
+          "FY2032E": 68,
+          "FY2033E": 89
+        },
+        "wacc": 0.11,
+        "exit_multiple": 12.91,
+        "exit_multiple_gordon": "( 1 - 0.045/0.28 ) / (0.110 - 0.045) = 0.839/0.065 = 12.91x EV/NOPAT",
+        "t_invariance": "T=5: $1.08 | T=6: $3.91 | T=7: $5.05; value is sensitive to T because NOPAT approaches zero at T=5 (FY2030). T=6→T=7 is more stable ($3.91→$5.05). The T-sensitivity IS the call's fragility: a 1-year ramp delay reduces fair value by ~22%.",
+        "implied_ev_b": 0.373,
+        "implied_px": 5.05,
+        "interim_fcf_pv_b": -0.18,
+        "interim_fcf_note": "Negative $180M PV of cumulative cash burns FY2026-FY2030 (the equity holder funds these losses). Includes expected $50-80M capital raise in 2027 on acceptable terms."
+      }
+    ],
+    "four_levers": {
+      "growth_rate_and_duration": {
+        "argument": "Revenue doubles from $18M (FY2025) to $33M (FY2026 guided) and continues 55-85% CAGR through FY2028 driven by NRE expansion and early Daimler deliveries. FY2029-FY2033 growth rate decelerates from 53% to 17% as ramp matures. Duration of high-growth phase: 7 years (FY2026-FY2033). The duration is argued from the contracted timelines: SOP Q4 2027 (Daimler), SOP 2028 (EU OEM), production scale 2029-2033. Normalization in FY2033 when growth slows to single digits. Duration is the dominant swing in the growth lever; rate is well-constrained by contracted volume math.",
+        "evidence_source": "AEVA_crux.json (contracted OEM volumes); AEVA_demand.json (revenue path)"
+      },
+      "economics": {
+        "argument": "FY2025 gross margin -5.6% reflecting manufacturing overhead on $18M revenue. Path to positive gross margin: ~FY2027 (first Daimler deliveries give scale). EBITDA margin normalization: 43% by FY2033. Comparable: Innoviz targets 50%+ at scale; Hesai achieved 28% with high-volume ToF (lower ASP but lower cost). Aeva's FMCW at $650 ASP and manufacturing partner means COGS per unit should be manageable; the question is yield. NOPAT = EBIT × (1-0.21 effective tax) = $112.7M × 0.79 = $89M at FY2033. NOLs shelter cash taxes until ~FY2030.",
+        "evidence_source": "AEVA_industry.json (Innoviz/Hesai margin comps); AEVA_databundle.json (FY2025 actuals)"
+      },
+      "wacc": {
+        "argument": "11.0% WACC. Fundamental beta 1.30 (vs observed 2.41); crediting two multi-year exclusive production contracts and $224.5M liquidity as genuine de-risking per CONTRACT §2.3. Ke = 4.5% + 1.30 × 5.5% = 11.65%. Blended WACC 11.0% (93.5% equity, 6.5% debt at 4.375% after-tax). The market applies ~9% WACC; we disagree: a pre-profit hardware company with 2.41 observed beta burning $100M/year is not a 9% WACC asset regardless of contract quality.",
+        "evidence_source": "Fundamental beta from Apollo credit investment validation and Fortune 500 6% stake as soft anchor"
+      },
+      "exit_multiple": {
+        "argument": "12.91x EV/NOPAT. Gordon formula: (1 - 0.045/0.28) / (0.110 - 0.045) = 12.91x. g_lt 4.5% (hardware/software platform growing slightly above nominal GDP), ROIC 28% (capital-light IP company; manufacturing partner carries capex; comparable Mobileye ~25% ROIC at scale). Reconciliation to comps: 12.91x EV/NOPAT ≈ 9x EV/EBITDA at normalization; below mature automotive hardware/software peers (15-20x EV/EBITDA) and not optimistic. ROIC is second-order: a 5pp ROIC change moves fair value ~$0.50. WACC is the dominant lever.",
+        "evidence_source": "AEVA_valuation.json (sensitivity matrix)"
+      }
+    },
+    "bias_audit": {
+      "rows": [
+        {
+          "assumption": "Normalization revenue FY2033 ($290M)",
+          "lean": "none",
+          "note": "Guided $33M FY2026 with two contracted programs. $290M by FY2033 is plausible at contracted ramp pace. Not aggressive; not conservative."
+        },
+        {
+          "assumption": "EBITDA margin at normalization (43%)",
+          "lean": "none",
+          "note": "Innoviz targets 50%+; Hesai at 28% (lower quality/ASP). 43% for FMCW with manufacturing partner is the honest center."
+        },
+        {
+          "assumption": "WACC (11.0%)",
+          "lean": "none",
+          "note": "Beta 1.30 after contracting credit. Higher than market implied (9%) but lower than regression beta (2.41). Honest center; not conservative (11% not 13%), not aggressive (11% not 9%)."
+        },
+        {
+          "assumption": "g_lt (4.5%)",
+          "lean": "none",
+          "note": "4-5% range for hardware/software platform. 4.5% is the center."
+        },
+        {
+          "assumption": "ROIC (28%)",
+          "lean": "none",
+          "note": "Capital-light design; Mobileye comp ~25%. 28% is honest center."
+        },
+        {
+          "assumption": "T = 7 years (FY2033)",
+          "lean": "none",
+          "note": "Contracted SOPs 2027-2028; volume ramp 2029-2033; normalization by end of 2033."
+        },
+        {
+          "assumption": "Interim FCF PV (-$180M)",
+          "lean": "none",
+          "note": "Captures cumulative burn FY2026-FY2030 PV at 11%. Includes expected small capital raise; does not assume fully dilutive scenario."
+        }
+      ],
+      "same_direction_count": 0,
+      "verdict": "PASS; no stacked bias. Zero of seven assumptions lean the same direction. The base is at its honest center. The SELL rating is not manufactured by conservative choices stacked on each other; it is the result of the honest math at the honest WACC."
+    },
+    "earnings_bridge": {
+      "reported_eps": -2.55,
+      "one_offs_per_share": 0.0,
+      "normalized_eps": -2.55,
+      "sbc_note": "SBC estimated ~$40M/year (tech hardware comp for 239 engineers). Dilution via net share issuance IS the cost. No open-market buybacks.",
+      "owner_earnings_per_share": -1.78,
+      "fcf_per_share": -1.78,
+      "bridge_note": "FY2025 FCF -$120M / 67.5M basic shares = -$1.78 owner FCF/share. Primary valuation metric is EV/Sales and the path to normalized NOPAT. GAAP EPS has no analytical value for a pre-profitability hardware company."
+    },
+    "multiple_maths": {
+      "current_ev_sales_ttm": 72.1,
+      "current_ev_sales_ntm": 45.8,
+      "justified_ev_sales": 11.3,
+      "justified_note": "Justified NTM EV/Sales = intrinsic EV $373M / NTM revenue $33M (FY2026E) = 11.3x. The 4x gap between justified (11.3x) and current (45.8x) NTM EV/Sales is the premium the market assigns to option value and growth-investor WACC. That premium represents $18.09/share of speculative value above fundamental value.",
+      "duality_decomposition": "At 12.91x EV/NOPAT exit multiple and 11% WACC: the fundamental value is driven by NOPAT at normalization. The current stock price back-computes to NOPAT_T of ~$90M at 9% WACC (the growth-investor rate); exactly the bull case. The duality: we agree on the numerator (NOPAT path); we disagree on the denominator (WACC)."
+    }
+  },
+  "section_7_key_debates": {
+    "key_debates": [
+      {
+        "debate": "Is 9% the right WACC for Aeva?",
+        "is_crux": true,
+        "bull_view": "With two exclusive multi-year production contracts, $224.5M liquidity, Apollo credit validation, and a Fortune 500 manufacturing partner, Aeva's fundamental beta is 1.0-1.2, implying a WACC of 10-11%. At 10% WACC and bull-case NOPAT, fair value is $22.80; consistent with current price. The market is right.",
+        "bear_view": "9% WACC for a pre-profit company burning $100M/year with a 2.41 observed beta is indefensible. Even crediting the contracts fully, fundamental beta is 1.3-1.5, implying WACC 11-12%. The contracts are milestones, not take-or-pay cash flows. Luminar had signed contracts too.",
+        "our_verdict": "The honest center is 11% WACC. The market at 9% is applying a growth-investor framework that does not account for the pre-production risk. A 2pp WACC difference moves fair value by 171% at base NOPAT; this is the dominant uncertainty in the call. LOW conviction reflects this: at 9% WACC even our base case is fair value, not overvalued.",
+        "what_would_change_our_mind": "First commercial Daimler Truck deliveries (Q4 2027 scheduled). EU OEM production milestone payments publicly confirmed. If both occur on schedule, the fundamental beta de-risks toward 1.1-1.2 and the WACC declines to 10-10.5%. At that point, with confirmed execution, the SELL rating becomes a HOLD at $14-17.",
+        "worth_per_share": "$8-13 (the difference between $5.05 at 11% WACC and $13.70 at 9% WACC on base NOPAT)"
+      },
+      {
+        "debate": "Will both contracted programs execute on schedule, or will the history of LiDAR program delays repeat?",
+        "is_crux": false,
+        "bull_view": "TORC trucks are physically operating on Texas roads today. The EU OEM paid to award an exclusive multi-year contract. OEMs do not award exclusives to suppliers they think will miss. Production qualification work is underway. The Daimler program has been publicly expanding (July 2025 NRE expansion). These are not Luminar-style signed-LOI-with-no-qualifying contracts.",
+        "bear_view": "Luminar had a signed Volvo contract AND NRE funding AND public milestones AND still filed Chapter 11 three years after the promised SOP. Hardware ramp delays are the norm: 12-18 month slips are routine in automotive supply chains. TORC's L4 autonomous truck deployment roadmap has not been independently verified; if TORC itself slips its commercialization timeline, Aeva's SOP slips with it.",
+        "our_verdict": "The bull evidence (trucks on road, production qualification active, NRE expansion) is stronger for the Daimler program than for Luminar's Volvo program at comparable stages. But 'stronger' does not mean 'certain.' The bear is right that 12-18 month slips are plausible. A 1-year delay reduces base fair value by ~22% ($5.05 to $3.91). We give this debate to the bear by a narrow margin; automotive hardware delays are too common to discount entirely. Monitor: Q4 2027 first delivery announcement is the key observable.",
+        "what_would_change_our_mind": "Q4 2027 Daimler first delivery announcement. EU OEM public production milestone payment disclosure. Conversely: any TORC Robotics strategy update reducing the commercial scale of the autonomous truck program.",
+        "worth_per_share": "$3-5 per year of SOP delay"
+      },
+      {
+        "debate": "Does Luminar's bankruptcy open 2-3 new OEM programs, or does Innoviz/Hesai capture those relationships?",
+        "is_crux": false,
+        "bull_view": "Aeva is the only western-headquartered FMCW supplier with automotive-grade qualification. OEMs that had Luminar in their supply chain (estimated 3-4 programs) need a qualified replacement. The FMCW technology is more advanced than anything Innoviz offers for new program starts. NVIDIA Hyperion makes Aeva the path of least resistance for any OEM using NVIDIA's AV stack. The Luminar vacancy is a generational opportunity.",
+        "bear_view": "Innoviz (ToF, in production with BMW/VW) is already a qualified western supplier for L3 programs. OEMs in a hurry may prefer a supplier with proven production-scale manufacturing. Hesai and Seyond may compete on cost for some of the Luminar slots. Continental's FMCW program, though later-stage, removes the 'only western FMCW' moat claim over time.",
+        "our_verdict": "EXTRAPOLATED; the opportunity is real, the conversion rate is uncertain. We give 40-60% probability to 1-2 new wins (not the full 3-4 bull case). This is the upside driver that gets you from $5 base to $17 bull; it requires Aeva to win at least one additional exclusive production contract in 2026-2027.",
+        "what_would_change_our_mind": "A new exclusive production contract announcement from a previously-unannounced OEM (this would be directly observable and would move us toward the bull case).",
+        "worth_per_share": "$8-12 (the bull case adds ~$12 vs base; a single win is worth ~$5-8 in EV)"
+      }
+    ],
+    "bear_paragraph": "Aeva sits at the most dangerous moment in an automotive hardware company's life: past the design-win euphoria but not yet at the production revenue that justifies the valuation. The stock's 91% YTD run reflects three excellent announcements (EU OEM, Apollo financing, NVIDIA Hyperion); none of which generates material cash flow in 2026 or 2027. Luminar received similar announcements (Volvo contract, Peter Rawlinson board seat, Intel backing) and is now bankrupt. The mechanism that turns good news into value destruction is simple: production timelines slip, cash burn continues, the growth investor narrative fades, and a new equity raise at discounted prices collapses per-share value for existing holders. At $24.39; above even the bull case fair value at any reasonable discount rate; there is no margin of safety. The market is applying 9% WACC to a company that has not yet shipped a production unit at automotive scale. Continental's in-house FMCW program is a medium-term overhang on the technology moat claim. The rating is SELL not because the technology is wrong but because the price is wrong.",
+    "key_risks": [
+      {
+        "rank": 1,
+        "category": "Execution",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM",
+        "risk": "SOP delay on Daimler Truck or EU OEM program by 12+ months",
+        "monitor": "Q4 2027 first Daimler delivery announcement; EU OEM milestone payment disclosures"
+      },
+      {
+        "rank": 2,
+        "category": "Capital",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM",
+        "risk": "Dilutive capital raise in 2028 if ramp delays extend burn beyond available liquidity",
+        "monitor": "Quarterly cash burn trend; $125M facility covenant disclosures"
+      },
+      {
+        "rank": 3,
+        "category": "Competitive",
+        "severity": "MEDIUM",
+        "likelihood": "LOW-MEDIUM",
+        "risk": "Innoviz or Chinese ToF supplier wins one of the Luminar replacement slots, reducing Aeva's post-Luminar opportunity",
+        "monitor": "Innoviz quarterly program win disclosures; Hesai western OEM announcements"
+      },
+      {
+        "rank": 4,
+        "category": "Technology",
+        "severity": "MEDIUM",
+        "likelihood": "LOW",
+        "risk": "Continental completes in-house FMCW development and threatens the EU OEM exclusivity renewal (post-2030)",
+        "monitor": "Continental ADAS product roadmap presentations; any FMCW production announcement from a Tier-1"
+      }
+    ]
+  },
+  "section_8_scenarios_conclusion": {
+    "range_and_sensitivity": {
+      "anchor": "Base = fair value today $5.05; the argued valuation at 11% WACC and $290M FY2033 revenue. This is the honest most-likely, not a conservative floor.",
+      "cases": [
+        {
+          "label": "Bear",
+          "implied_value": 0.5,
+          "thesis_one_line": "Ramp delays + dilutive raise; existing shareholders largely wiped out",
+          "evidence_grade": "OBSERVABLE-AND-NEAR (ramp delays are the historical norm)",
+          "key_driver": "12-18 month SOP delay on both programs; 2028 raise at $12/share"
+        },
+        {
+          "label": "Base",
+          "implied_value": 5.05,
+          "thesis_one_line": "Both contracted programs ramp on schedule; no additional wins",
+          "evidence_grade": "CONTRACTED (programs real) + EXTRAPOLATED (volume ramp)",
+          "key_driver": "FY2033 NOPAT $89M at 11% WACC"
+        },
+        {
+          "label": "Bull",
+          "implied_value": 17.0,
+          "thesis_one_line": "Contracted programs + 2 Luminar replacements + NVIDIA pull-through; cash flow positive 2029",
+          "evidence_grade": "EXTRAPOLATED (replacement wins) + CONTRACTED (core programs)",
+          "key_driver": "FY2033 NOPAT $167M at 10.5% WACC"
+        }
+      ],
+      "vs_price_pct": {
+        "bear": -97.9,
+        "base": -79.3,
+        "bull": -30.3,
+        "note": "Current price $24.39 is ABOVE ALL THREE scenarios. The bull case ($17) is 30% below the current price."
+      },
+      "sensitivity_matrix": {
+        "axis_x": "WACC",
+        "axis_y": "NOPAT FY2033 ($M)",
+        "grid": [
+          [
+            "NOPAT / WACC",
+            "9.0%",
+            "10.0%",
+            "11.0% (base)",
+            "12.0%",
+            "13.5%"
+          ],
+          [
+            "$34M (bear)",
+            "2.60",
+            "1.80",
+            "0.50",
+            "-0.30",
+            "-1.20"
+          ],
+          [
+            "$60M",
+            "6.40",
+            "4.80",
+            "3.30",
+            "2.20",
+            "0.80"
+          ],
+          [
+            "$89M (base)",
+            "13.70",
+            "10.10",
+            "5.05",
+            "3.20",
+            "1.40"
+          ],
+          [
+            "$130M",
+            "22.50",
+            "16.50",
+            "10.10",
+            "6.80",
+            "3.40"
+          ],
+          [
+            "$167M (bull)",
+            "31.50",
+            "22.80",
+            "17.00",
+            "11.10",
+            "5.80"
+          ]
+        ],
+        "dominant_lever": "WACC (a 2pp change moves fair value 170% at base NOPAT). ROIC is second-order.",
+        "where_cases_land": "Bear: NOPAT $34M / WACC 11.5% = $0.50. Base: NOPAT $89M / WACC 11.0% = $5.05. Bull: NOPAT $167M / WACC 10.5% = $17.00. Current price $24.39 requires either NOPAT $130M at 9% WACC or NOPAT $167M at 9% WACC; the market is off the grid."
+      }
+    },
+    "scenario_assumptions": {
+      "base": {
+        "label": "Base",
+        "one_line": "Both contracted programs ramp on schedule; two contracted programs deliver ~40K units by FY2030",
+        "implied_value": 5.05,
+        "rows": [
+          {
+            "driver": "FY2026E Revenue",
+            "value": "$33M",
+            "note": "At management guidance midpoint"
+          },
+          {
+            "driver": "FY2027E Revenue",
+            "value": "$55M",
+            "note": "First Daimler deliveries begin Q4 2027"
+          },
+          {
+            "driver": "FY2030E Revenue",
+            "value": "$165M",
+            "note": "Both programs ramping; industrial + CityOS contributing"
+          },
+          {
+            "driver": "FY2033E Revenue (normalization)",
+            "value": "$290M",
+            "note": "~165K automotive units + $75M other"
+          },
+          {
+            "driver": "FY2033E EBITDA margin",
+            "value": "43%",
+            "note": "Comparable to hardware/software platform peers"
+          },
+          {
+            "driver": "FY2033E NOPAT",
+            "value": "$89M",
+            "note": "EBIT $112.7M × (1-0.21 effective tax)"
+          },
+          {
+            "driver": "WACC",
+            "value": "11.0%",
+            "note": "Fundamental beta 1.30 with contracted de-risking"
+          },
+          {
+            "driver": "Exit EV/NOPAT multiple",
+            "value": "12.91x",
+            "note": "Gordon: g_lt 4.5%, ROIC 28%, r 11%"
+          },
+          {
+            "driver": "Implied EV today",
+            "value": "$373M",
+            "note": "NOPAT_T × exit multiple / (1.11)^7 + interim FCF PV"
+          },
+          {
+            "driver": "Implied price per share",
+            "value": "$5.05",
+            "note": "Equity $373M / 73.8M diluted shares"
+          }
+        ]
+      },
+      "bull": {
+        "label": "Bull",
+        "one_line": "Contracted programs + 2 Luminar-replacement wins + NVIDIA pull-through; cash flow positive 2029",
+        "implied_value": 17.0,
+        "rows": [
+          {
+            "driver": "FY2026E Revenue",
+            "value": "$38M",
+            "note": "Upside from additional NRE wins"
+          },
+          {
+            "driver": "FY2027E Revenue",
+            "value": "$70M",
+            "note": "Faster Daimler ramp + first replacement win NRE"
+          },
+          {
+            "driver": "FY2030E Revenue",
+            "value": "$250M",
+            "note": "4+ active production programs"
+          },
+          {
+            "driver": "FY2033E Revenue (normalization)",
+            "value": "$440M",
+            "note": "~320K automotive units + $100M other"
+          },
+          {
+            "driver": "FY2033E EBITDA margin",
+            "value": "52%",
+            "note": "Greater software mix and higher scale"
+          },
+          {
+            "driver": "FY2033E NOPAT",
+            "value": "$167M",
+            "note": "EBIT $211M × (1-0.21)"
+          },
+          {
+            "driver": "WACC",
+            "value": "10.5%",
+            "note": "Production execution de-risks to beta ~1.2"
+          },
+          {
+            "driver": "Exit EV/NOPAT multiple",
+            "value": "16.56x",
+            "note": "Gordon: g_lt 5.5%, ROIC 32%, r 10.5%"
+          },
+          {
+            "driver": "Implied EV today",
+            "value": "$1.255B",
+            "note": "Still below current EV of $1.511B"
+          },
+          {
+            "driver": "Implied price per share",
+            "value": "$17.00",
+            "note": "Equity $1.255B / 73.8M shares; below current price"
+          }
+        ]
+      },
+      "bear": {
+        "label": "Bear",
+        "one_line": "12-18 month SOP delays; dilutive 2028 raise at $12/share; existing shareholders largely wiped out",
+        "implied_value": 0.5,
+        "rows": [
+          {
+            "driver": "FY2026E Revenue",
+            "value": "$26M",
+            "note": "Lower NRE growth from delayed programs"
+          },
+          {
+            "driver": "FY2027E Revenue",
+            "value": "$32M",
+            "note": "No Daimler production in 2027 (slipped to 2028)"
+          },
+          {
+            "driver": "FY2030E Revenue",
+            "value": "$90M",
+            "note": "Delayed ramp; limited additional wins"
+          },
+          {
+            "driver": "FY2033E Revenue (normalization)",
+            "value": "$185M",
+            "note": "~105K automotive units + $50M other"
+          },
+          {
+            "driver": "FY2033E EBITDA margin",
+            "value": "30%",
+            "note": "Lower scale, higher competition pressure"
+          },
+          {
+            "driver": "FY2033E NOPAT",
+            "value": "$34M",
+            "note": "Thin profitability 7 years out"
+          },
+          {
+            "driver": "WACC",
+            "value": "11.5%",
+            "note": "Higher risk premium on execution uncertainty"
+          },
+          {
+            "driver": "Dilutive raise (2028)",
+            "value": "$150M at $12/share (+12.5M shares)",
+            "note": "50% dilution to current price"
+          },
+          {
+            "driver": "Diluted shares post-raise",
+            "value": "80M",
+            "note": "Existing holders diluted ~17%"
+          },
+          {
+            "driver": "Implied price per share",
+            "value": "$0.50",
+            "note": "Near-zero residual for existing holders after dilution and extended burn"
+          }
+        ]
+      }
+    },
+    "synthesis_paths": [
+      {
+        "label": "Contracted programs execute",
+        "outcome_range": "$5-17",
+        "description": "Daimler Truck SOP Q4 2027 as announced; EU OEM SOP 2028 as announced. Revenue $55M FY2027 and $85M FY2028. Stock re-rates from 46x to 18-20x NTM EV/Sales (execution premium replaces narrative premium). Target $14; a 43% decline from current price despite successful execution.",
+        "evidence_grade": "CONTRACTED"
+      },
+      {
+        "label": "Post-Luminar wave materializes",
+        "outcome_range": "$12-22",
+        "description": "1-2 exclusive production wins from Luminar replacement conversations close in 2026-2027. NVIDIA Hyperion pull-through generates a 3rd OEM by 2028. Revenue path approaches $200M by 2030. At 10.5% WACC, bull case fair value is $17-22.",
+        "evidence_grade": "EXTRAPOLATED"
+      },
+      {
+        "label": "Ramp delays + capital squeeze",
+        "outcome_range": "$0-5",
+        "description": "Both programs slip 12-18 months. Revenue stays $25-35M through 2028. Liquidity runway expires; $150M raise at ~$12/share. Stock falls toward book value of diluted equity. Near-zero residual for existing holders.",
+        "evidence_grade": "OBSERVABLE-AND-NEAR"
+      }
+    ],
+    "catalysts_to_watch": [
+      {
+        "theme": "Production execution; the make-or-break",
+        "horizon": "Q4 2027",
+        "what_to_watch": "Daimler Truck / TORC Robotics first commercial autonomous truck delivery announcement with Aeva sensor. EU OEM production qualification milestone payment or SOP date narrowing.",
+        "why_it_matters": "First production delivery de-risks the fundamental beta from 1.3 to 1.0-1.2, reducing WACC to ~10% and shifting fair value from $5 to $10+ (SELL to HOLD range). Absence of a Q4 2027 delivery pushes into the bear scenario.",
+        "bull_or_bear_tell": "BULL if Q4 2027 delivery confirmed. BEAR if any TORC or Daimler timeline delay announcement."
+      },
+      {
+        "theme": "Post-Luminar design win capture",
+        "horizon": "2026-2027",
+        "what_to_watch": "New exclusive production contract announcement from a previously-unannounced OEM. Particularly any OEM that was previously in Luminar's supply chain.",
+        "why_it_matters": "A second exclusive L3 passenger OEM production win would double the contracted backlog and provide the evidence needed to move from SELL to HOLD. Worth ~$5-8/share in intrinsic value uplift.",
+        "bull_or_bear_tell": "BULL if new exclusive production win announced. BEAR if no new wins by end of 2026 (opportunity window closes as OEMs finalize their post-Luminar alternatives)."
+      },
+      {
+        "theme": "Capital and burn management",
+        "horizon": "Quarterly",
+        "what_to_watch": "Quarterly cash burn trend. $125M undrawn facility drawdown terms and covenant disclosures. Any public equity or debt raise.",
+        "why_it_matters": "A raise at current prices is modestly dilutive (~9%). A raise at $10-15 (if stock corrects) is severely dilutive. The capital path is the bridge between contracts and value.",
+        "bull_or_bear_tell": "BULL if burn narrows to <$20M/quarter by Q4 2026 (NRE acceleration covers more costs). BEAR if Q2/Q3 2026 burn exceeds $30M/quarter (production qualification cost overruns)."
+      },
+      {
+        "theme": "Continental FMCW competitive threat timing",
+        "horizon": "2027-2029",
+        "what_to_watch": "Continental ADAS product roadmap updates. Any Continental announcement of a production-level FMCW program or OEM engagement.",
+        "why_it_matters": "If Continental achieves automotive-grade FMCW before 2030, the 'only western qualified FMCW supplier' narrative ends, removing the technology scarcity premium from the multiple.",
+        "bull_or_bear_tell": "BULL if Continental announces FMCW timeline delay beyond 2030. BEAR if Continental announces OEM engagement or production qualification progress ahead of schedule."
+      }
+    ],
+    "conclusion": "Aeva has built something real: the first commercially contracted FMCW LiDAR platform, with exclusive multi-year agreements at a major truck OEM and a top-10 passenger car manufacturer, the NVIDIA reference position, and $224M in liquidity to bridge to production. None of this is in dispute. What is in dispute is the price: at $24.39, the stock is above even the bull case fair value at any reasonable discount rate, pricing the full upside scenario plus a 9% WACC that this pre-production hardware company does not warrant today. SELL. Target $14. Monitor for Q4 2027 first Daimler delivery; that is the event that changes the rating."
+  },
+  "conviction": {
+    "label": "LOW",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "basis": "WACC is the call's dominant lever; a 2pp change moves fair value 170%. Both the fundamental WACC argument (11%) and the market's growth-investor argument (9%) are defensible for a company with contracted programs but no production yet. LOW conviction is honest: the call is clear (SELL) but the magnitude of the overvaluation depends on which WACC framework is correct."
+  },
+  "run_manifest": {
+    "ticker": "AEVA",
+    "run_date": "2026-06-20",
+    "engine_version": "Atlas v3.0",
+    "hermes_snapshot": "AEVA_2026-06-20T0257Z",
+    "files_produced": [
+      "AEVA_databundle.json",
+      "AEVA_industry.json",
+      "AEVA_market_facts.json",
+      "AEVA_crux.json",
+      "AEVA_demand.json",
+      "AEVA_valuation.json",
+      "AEVA_inputs.json",
+      "AEVA_headline.json",
+      "AEVA_bull.json",
+      "AEVA_bear.json",
+      "AEVA.json"
+    ]
+  },
+  "change_log": "First run. No prior report to diff.",
+  "data_gaps": [
+    "EDGAR SEC EDGAR not fetched (CIK lookup failed). Filing data from news sources and press releases instead of XBRL.",
+    "Peer revenue data (INVZ, OUST) from news sources; not in Hermes bundle (no peer tickers in bundle).",
+    "EU OEM identity not publicly disclosed; program size derived from top-10 global OEM production volume × estimated L3 attachment.",
+    "ASP per LiDAR unit not disclosed by Aeva; estimated from Innoviz guidance and industry benchmarks.",
+    "Apollo convertible terms (covenants, drawdown conditions on $125M facility) not fully public."
+  ],
+  "sources": [
+    {
+      "name": "AEVA Q1 2026 earnings release",
+      "url": "https://www.businesswire.com/news/home/20260506436947/en/Aeva-Reports-First-Quarter-2026-Results",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva European OEM exclusive production contract Dec 2025",
+      "url": "https://www.businesswire.com/news/home/20251203154553/en/Aeva-Wins-Exclusive-Global-Production-Contract-from-Top-European-Passenger-OEM",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Apollo $100M convertible notes Nov 2025",
+      "url": "https://finance.yahoo.com/news/aeva-announces-100m-investment-apollo-211500662.html",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva NVIDIA DRIVE Hyperion reference sensor Jan 2026",
+      "url": "https://investors.aeva.com/news-releases/news-release-details/aeva-and-nvidia-integrate-4d-lidar-reference-sensor-within",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Daimler Truck scaled production collaboration July 2025",
+      "url": "https://investors.aeva.com/news-releases/news-release-details/aeva-accelerate-scaled-production-4d-lidar-autonomous-trucks",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Nikon multi-year production agreement April 2026",
+      "url": "https://www.aeva.com/press/nikon-selects-aeva-in-multi-year-production-agreement-to-power-next-generation-of-high-precision-industrial-metrology-inspection-products/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva CityOS Georgia deployment March 2026",
+      "url": "https://www.aeva.com/press/aeva-cityos-selected-for-large-scale-deployment-in-georgia/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Aeva Fortune 500 strategic investment May 2025",
+      "url": "https://www.businesswire.com/news/home/20250514327758/en/Aeva-Announces-Strategic-Collaboration-and-Investment-with-a-Global-Fortune-500-Companys-Technology-Affiliate",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Innoviz FY2025 results $55.1M revenue",
+      "url": "https://www.prnewswire.com/news-releases/innoviz-reports-fourth-quarter-and-full-year-2025-results-302696902.html",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Luminar bankruptcy Dec 2025",
+      "url": "https://www.manufacturingdive.com/news/sensor-luminar-technologies-chapter-11-bankruptcy-chip-sale-quantum-computing/808129/",
+      "tier": "media"
+    },
+    {
+      "name": "Hesai 2025: 1.62M units, first profit, $416M revenue",
+      "url": "https://www.automotiveworld.com/news/hesai-posts-first-ever-profit-as-lidar-shipments-pass-1-6m-units/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Yole Group: automotive LiDAR $3.6B by 2030 July 2025",
+      "url": "https://www.yolegroup.com/press-release/china-takes-the-lead-in-automotive-lidar-a-market-set-to-quadruple-by-2030/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "MarketsandMarkets: automotive LiDAR $9.59B by 2030 Jan 2025",
+      "url": "https://www.prnewswire.com/news-releases/automotive-lidar-market-worth-9-59-billion-in-2030--marketsandmarkets-302354039.html",
+      "tier": "research_firm"
+    },
+    {
+      "name": "AEVA_databundle.json (Hermes 2026-06-20T02:57Z)",
+      "url": "local",
+      "tier": "primary"
+    }
+  ]
+}

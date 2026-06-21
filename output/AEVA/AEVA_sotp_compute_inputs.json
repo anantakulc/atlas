@@ -1,0 +1,107 @@
+{
+  "ticker": "AEVA",
+  "currency": "USD",
+  "current_price": 24.39,
+  "shares_outstanding_b": 0.0738,
+  "net_debt_b": 0.0005,
+
+  "primary_method": {
+    "name": "ExitMultiple",
+    "reasoning": "AEVA is a single-segment highgrowth_preprofit company. The FMCW LiDAR platform — automotive, industrial, CityOS — shares one risk profile and one growth driver (production ramp). No separate annuity or cyclical segment exists today; the industrial and CityOS sub-lines are early-stage extensions of the same technology, not independent businesses. ExitMultiple is the correct method per CONTRACT §2.2 and the registry for highgrowth_preprofit: normalize to FY2033 (T=7 from end of FY2026, when contracted program volumes have ramped and growth decelerates to high single digits), apply the steady-state Gordon multiple, discount at segment WACC.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "FMCW LiDAR Platform (Automotive + Industrial + CityOS)",
+          "method": "ExitMultiple",
+          "weight_pct": 100,
+          "reasoning": "Single-segment exit-multiple on NOPAT path to FY2033 normalization. NOPAT = EBIT x (1 - effective_cash_tax_rate). NOLs will shelter taxes well into the early-normalization years; effective cash tax ~5% through FY2030, rising to ~18% by FY2033 as NOLs are consumed. EBIT = EBITDA - D&A (~$12M at normalization). Base: FY2033 revenue $290M, EBITDA margin 43%, D&A $12M, EBIT $112.7M, NOPAT $89M. WACC 11.0% (fundamental beta 1.3 — credits contracted program de-risking vs. observed beta 2.41, per CONTRACT §2.3). g_lt 4.5% (hardware/software platform growing with auto production + software mix). ROIC 28% (capital-light design: manufacturing partner carries capex; IP/software is high-ROIC; consistent with Aeva's asset-light model). Gordon multiple = (1 - 0.045/0.28) / (0.11 - 0.045) = 0.839/0.065 = 12.91x EV/NOPAT.",
+          "exit_inputs": {
+            "ticker": "AEVA",
+            "nopat_path_b": [
+              -0.095,
+              -0.080,
+              -0.055,
+              -0.025,
+              0.002,
+              0.034,
+              0.068,
+              0.089
+            ],
+            "nopat_path_years": ["FY2026E","FY2027E","FY2028E","FY2029E","FY2030E","FY2031E","FY2032E","FY2033E"],
+            "normalize_index": 7,
+            "years_to_T": 7,
+            "g_lt": 0.045,
+            "roic": 0.28,
+            "r": 0.110,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": -0.18,
+            "reasoning": "nopat_path derived from demand.json base revenue x margin: FY2026-FY2029 losses as ramp costs exceed revenue; FY2030 breakeven; FY2031-2033 growing NOPAT. interim_fcf_pv_b = -$180M representing the PV of cumulative negative FCF years FY2026-FY2030 at 11% WACC (these are CASH OUTFLOWS that the equity holder funds; they reduce equity value today). Net_debt_b $0.5M (Q1 2026: $99.5M cash minus $100M Apollo convertible). Shares 73.8M includes 6.3M dilutive shares from Apollo convert at $15.86 (in-the-money at current $24.39)."
+          },
+          "net_debt_allocation_b": 0.0
+        }
+      ]
+    }
+  },
+
+  "valuation_anchor": {
+    "ev_metric_label": "FY2026E Revenue",
+    "ev_metric_value": 0.033
+  },
+
+  "earnings_bridge": {
+    "reported_eps": -2.55,
+    "one_offs_per_share": 0.0,
+    "sbc_per_share": 1.80,
+    "normalized_eps": -2.55,
+    "owner_earnings_per_share": -1.63,
+    "fcf_per_share": -1.63,
+    "notes": "AEVA is pre-profitability. FY2025 FCF -$120M / 67.5M basic shares = -$1.78/share. SBC estimated ~$40M annualized (typical for 239-person tech hardware company); net dilution after open-market buybacks (none reported) is the full SBC dilution. Primary metric: EV/Revenue and path to FCF. Street consensus EPS NTM -$1.54 is consistent with the FY2026E guided revenue of $30-36M and ~$120M operating cost base."
+  },
+
+  "scenarios": [
+    {
+      "label": "Bear",
+      "probability": null,
+      "probability_reasoning": "No probability assigned per CONTRACT — range, not a blend",
+      "reasoning": "SOP delays 12-18 months. Daimler Truck slips to Q4 2028; EU OEM slips to 2030. NRE stays flat; industrial scales slowly. Forced dilutive capital raise in 2028 at ~$12/share (+12.5M shares -> 80M diluted). FY2033 revenue $185M, EBITDA margin 30%, NOPAT $34M.",
+      "segment_changes": [
+        {
+          "name": "FMCW LiDAR Platform (Automotive + Industrial + CityOS)",
+          "exit_overrides": {
+            "nopat_T_b": 0.034,
+            "years_to_T": 7,
+            "g_lt": 0.035,
+            "roic": 0.20,
+            "r": 0.115,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": -0.22
+          }
+        }
+      ],
+      "net_debt_b_override": 0.0005,
+      "shares_override_b": 0.0800
+    },
+    {
+      "label": "Bull",
+      "probability": null,
+      "probability_reasoning": "No probability assigned per CONTRACT — range, not a blend",
+      "reasoning": "Contracted programs on schedule. 2 Luminar-replacement wins close in 2026-2027. NVIDIA Hyperion pull-through adds a 3rd OEM by 2028. Industrial and CityOS scale materially. FY2033 revenue $440M, EBITDA 52%, NOPAT $167M.",
+      "segment_changes": [
+        {
+          "name": "FMCW LiDAR Platform (Automotive + Industrial + CityOS)",
+          "exit_overrides": {
+            "nopat_T_b": 0.167,
+            "years_to_T": 7,
+            "g_lt": 0.055,
+            "roic": 0.32,
+            "r": 0.105,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": -0.12
+          }
+        }
+      ],
+      "net_debt_b_override": 0.0005,
+      "shares_override_b": 0.0738
+    }
+  ]
+}

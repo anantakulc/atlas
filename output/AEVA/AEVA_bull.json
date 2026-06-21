@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "produced_by": "Boreas (B) — Atlas v3.0",
+    "produced_utc": "2026-06-20T00:00:00Z",
+    "blind": true,
+    "crux_anchor": "Automotive production ramp — how much unit volume the contracted and post-Luminar OEM programs deliver by 2030, and at what WACC the market discounts the path"
+  },
+
+  "bull_thesis_sentence": "FMCW has won its first commercial production race, the competitive clearing from Luminar opens 3-4 new OEM relationships, NVIDIA Hyperion makes Aeva the path of least resistance for any OEM adopting the NVIDIA AV stack, and the market is right to apply a 9-10% discount rate to a company with two multi-year exclusive contracts and $224M in liquidity.",
+
+  "key_debates": [
+    {
+      "debate_id": 1,
+      "title": "FMCW vs ToF: Is the technology premium real and durable enough to win the next wave of OEM programs?",
+      "bull_argument": "The December 2025 exclusive EU OEM contract awarded to Aeva over unnamed ToF alternatives is the clearest possible signal that FMCW's native velocity measurement is valued for L3 production programs, not just for autonomous trucks. A top-10 global passenger OEM, after years of evaluation, chose FMCW. The NVIDIA DRIVE Hyperion reference designation (January 2026) is the second signal: NVIDIA's AV engineering team, which has the deepest view into sensor performance across hundreds of test miles, designated FMCW as the reference sensor. These are not marketing claims — they are customer decisions that involve hundreds of millions of dollars in program commitments. Luminar's bankruptcy removes the last well-funded western ToF competitor pursuing passenger OEM programs. Innoviz (ToF) is in production with BMW and VW but its InnovizTwo is a closed, non-reference design; the open-platform advantage sits with Aeva via NVIDIA. For any new OEM program starting qualification today (2026 award → 2028-2029 SOP), Aeva is the default choice for high-performance FMCW and the NVIDIA reference for ToF-agnostic programs. The 3-4 post-Luminar design win conversations are happening now. The conversion probability is 40-60% per program.",
+      "bear_counter": "Innoviz (ToF) has more production-qualified programs and is already shipping BMW/VW at scale. InnovizTwo meets 450m range for L3 highway. Continental is building FMCW in-house. Chinese OEMs (Hesai, Seyond) compete on cost. The technology premium may not survive contact with OEM procurement teams who prioritize delivery certainty over native velocity measurement.",
+      "our_verdict": "The bull argument is supported by CONTRACTED evidence (EU OEM exclusive, NVIDIA reference). The velocity measurement advantage is physically irreplaceable — no software can compute what FMCW measures directly. We weight this debate moderately bull: 2 new OEM wins likely (but timing is 2027-2028, not 2026).",
+      "what_changes_our_mind": "Continental completes its in-house FMCW development program and wins an OEM program (2028+). OR: an additional ToF sensor (Innoviz, Cepton) wins an exclusive L3 passenger OEM program that Aeva had been competing for, signaling the technology advantage is overstated.",
+      "value_at_stake_per_share": "$8-12 (represents the NPV of 2 additional OEM wins at 15-25K units/year each at $650 ASP, discounted at 10.5% WACC)",
+      "evidence_quality": "CONTRACTED (EU OEM, NVIDIA Hyperion); EXTRAPOLATED (post-Luminar replacement conversion rate)"
+    },
+    {
+      "debate_id": 2,
+      "title": "WACC: Is 9-10% the right discount rate for a company with two exclusive multi-year production contracts?",
+      "bull_argument": "The conventional critique of growth stocks is that investors apply inappropriately low discount rates. But the 'appropriate' WACC for AEVA is not a simple CAPM calculation on an observed beta of 2.41 — that beta is polluted by thin retail ownership and a 91% YTD momentum surge. The fundamental WACC should be argued from the economic risk of the underlying contracts, not the stock's recent trading behavior. Aeva has: (1) an exclusive multi-year production contract with a top-10 global OEM extending to mid-2030s — this is a CONTRACTED revenue stream, not a projection; (2) a multi-year supply agreement with Daimler Truck's TORC Robotics division; (3) $224.5M in total liquidity providing 2+ year bridge; (4) a Fortune 500 strategic investor with a 6% stake and manufacturing commitment; (5) an Apollo Global investment at $15.86 — Apollo's credit desk does not invest at $100M in companies it believes are distressed. These are the risk characteristics of a company with a 1.0-1.2 fundamental beta, implying a WACC of 10-11%. At 10% WACC and bull-case NOPAT ($167M in FY2033), fair value is $22.80 — consistent with the current market price. The market is not irrational; it is applying the right rate to the right contract.",
+      "bear_counter": "Contracted revenue for a hardware company means scheduled deliveries — and hardware companies routinely miss schedules, have yield issues, and get renegotiated by OEMs. The contracts are not take-or-pay arrangements; they are supply agreements contingent on achieving quality and delivery milestones. A 1.2 fundamental beta for a pre-profit company burning $100M/year is aggressive.",
+      "our_verdict": "The bull WACC argument is partially correct: the observed beta overstates the risk. A 1.3-1.5 fundamental beta (WACC 11-11.5%) is the honest center, not 1.2 (WACC 10%). The bull's key point that 'Apollo did not invest in a company with 1.5+ fundamental risk' is valid as a soft check. We do not concede the full 9% WACC argument but acknowledge the 11% is the conservative end of the reasonable range.",
+      "what_changes_our_mind": "If Daimler Truck ships first revenue units in Q4 2027 as scheduled AND EU OEM milestones are publicly confirmed, the execution risk is de-risked and the fundamental beta could decline to 1.2-1.3 — supporting the 10% WACC and a $15+ fair value.",
+      "value_at_stake_per_share": "$8 per 1pp WACC change at base NOPAT (from sensitivity matrix). A 2pp WACC change (11% to 9%) moves base fair value from $5 to $14.",
+      "evidence_quality": "CONTRACTED (program commitments lower beta); EXTRAPOLATED (WACC calibration from comps)"
+    },
+    {
+      "debate_id": 3,
+      "title": "Liquidity bridge: Can Aeva reach first production revenue without a deeply dilutive capital raise?",
+      "bull_argument": "The Q1 2026 earnings revealed a key fact the market had underestimated: $224.5M in total liquidity (not just the $99.5M balance sheet cash — also a $125M undrawn facility). At $25M quarterly burn, this is 2.2 years of runway — to approximately Q3-Q4 2028. Daimler Truck SOP is Q4 2027 (contracted). EU OEM SOP 2028 (contracted). The liquidity runway overlaps with first production revenue by design. Furthermore: (1) NRE revenue from new development programs reduces net cash burn — Aeva guided FY2026 revenue $30-36M (up from $18M), implying NRE acceleration; (2) the Fortune 500 manufacturing partnership provides access to non-dilutive operational leverage; (3) the Apollo convertible at $15.86 (now in-the-money at $24) effectively pre-funded the bridge at a reasonable cost. The dilutive raise thesis requires both programs to slip AND revenue growth to stall simultaneously. Given contractual commitments, the probability of that combination is low.",
+      "bear_counter": "The $125M undrawn facility has undisclosed covenants. The $100M Apollo convert matures in 2032 — there's no near-term refinancing pressure — but the $224.5M does not all live on the balance sheet; the facility may have drawdown conditions. Hardware programs routinely slip. If both programs slip 12 months, the burn exceeds the bridge and a raise at lower-than-current prices becomes necessary.",
+      "our_verdict": "The bull liquidity argument is the strongest of the three debates. $224.5M runway to 2028 is adequate for a company whose SOPs arrive in 2027-2028. The raise risk is real but not the most likely scenario. We modestly agree with the bull here.",
+      "what_changes_our_mind": "If Q2/Q3 2026 shows a sudden increase in quarterly burn (above $30M), suggesting cost overruns on the production qualification programs, the bridge gets tighter and raises risk increases.",
+      "value_at_stake_per_share": "$3-5 (represents the difference between a $100-150M raise at current prices vs a distressed raise at $12-15/share; dilution impact on per-share value)",
+      "evidence_quality": "CONTRACTED (Q1 2026 liquidity confirmed in earnings)"
+    }
+  ],
+
+  "scenario_spec": {
+    "label": "Bull",
+    "revenue_fy2030_usd_m": 250,
+    "revenue_fy2033_usd_m": 440,
+    "ebitda_margin_fy2033_pct": 52,
+    "nopat_fy2033_usd_m": 167,
+    "wacc": 0.105,
+    "g_lt": 0.055,
+    "roic": 0.32,
+    "implied_px": 17.00,
+    "clears_current_price": false,
+    "why_not": "At 10.5% WACC, the bull case ($17.00) does not clear the current price ($24.39). To clear $24.39 at fundamental WACC, NOPAT_T would need to be ~$250M — well above even the bull case. The gap between $17 and $24 is the speculative premium the market assigns to optionality and narrative beyond our bull scenario.",
+    "reconciles_to_comps": "Innoviz trades at 15-18x NTM EV/Sales. AEVA at $17.00 would imply ~15x FY2027 EV/Sales — consistent with a production-stage L3 LiDAR comp."
+  },
+
+  "self_conviction": "MEDIUM",
+  "self_conviction_note": "The bull case is grounded in CONTRACTED evidence for the two core programs. The Luminar replacement opportunity and NVIDIA pull-through are EXTRAPOLATED — real but uncertain in timing. The WACC debate is genuinely two-sided. MEDIUM conviction reflects that the bull thesis is credible but not inevitable."
+}

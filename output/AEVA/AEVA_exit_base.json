@@ -1,0 +1,35 @@
+{
+  "method": "ExitMultiple",
+  "nopat_T_b": 0.089,
+  "years_to_T": 7,
+  "g_lt": 0.045,
+  "roic": 0.28,
+  "r": 0.11,
+  "exit_multiple": 12.91,
+  "exit_multiple_gordon": 12.91,
+  "ev_at_T_b": 1.149,
+  "discount_factor": 2.0762,
+  "interim_fcf_pv_b": -0.18,
+  "implied_ev_b": 0.373,
+  "implied_equity_b": 0.373,
+  "implied_px": 5.05,
+  "t_invariance": [
+    {
+      "T": 5,
+      "nopat_T_b": 0.0,
+      "implied_px": 1.08
+    },
+    {
+      "T": 6,
+      "nopat_T_b": 0.1,
+      "implied_px": 3.91
+    },
+    {
+      "T": 7,
+      "nopat_T_b": 0.1,
+      "implied_px": 5.05
+    }
+  ],
+  "ticker": "AEVA",
+  "computed_at": "2026-06-20T16:35:05Z"
+}

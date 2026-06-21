@@ -1,0 +1,16 @@
+{
+  "ticker": "AEVA",
+  "currency": "USD",
+  "shares_outstanding_b": 0.0738,
+  "net_debt_b": 0.0005,
+  "nopat_path_b": [-0.090, -0.072, -0.040, -0.010, 0.030, 0.078, 0.130, 0.167],
+  "nopat_path_years": ["FY2026E","FY2027E","FY2028E","FY2029E","FY2030E","FY2031E","FY2032E","FY2033E"],
+  "normalize_index": 7,
+  "years_to_T": 7,
+  "g_lt": 0.055,
+  "roic": 0.32,
+  "r": 0.105,
+  "exit_multiple_override": null,
+  "interim_fcf_pv_b": -0.12,
+  "reasoning": "Bull: 2 Luminar-replacement wins + NVIDIA pull-through. FY2033 revenue $440M, EBITDA 52%, NOPAT $167M. Lower WACC 10.5% (bull wins reduce execution risk). Higher g_lt 5.5% (larger market capture + software mix)."
+}

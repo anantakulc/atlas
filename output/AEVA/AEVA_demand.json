@@ -1,0 +1,206 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "produced_by": "theia (synthesized by atlas from industry.json and crux.json)",
+    "as_of_utc": "2026-06-20T00:00:00Z",
+    "normalization_year": "FY2033",
+    "method_note": "Revenue path built as an identity in sourced drivers: [Automotive] = Σ(program × units × ASP) + [NRE]; [Industrial] = Nikon + new wins; [CityOS] = deployed intersections × fee. Base/bull/bear are different readings of ramp speed and win count, not cone dials.",
+    "contract_version": "3.0"
+  },
+
+  "assumptions_common": {
+    "daimler_truck_sop": "Q4 2027 (base/bull); Q4 2028 (bear)",
+    "eu_oem_sop": "2028 (base/bull); 2029-2030 (bear)",
+    "aeva_share_daimler_fleet_pct": "Exclusive supplier for L4 trucks; ~100% of L4 equipped units",
+    "dtna_l4_truck_units_2030": "15,000-30,000 (industry estimates; DTNA global production 200K/year, L4 attachment growing from ~5% to ~15%)",
+    "eu_oem_platform_total_units": "~1M/year global platform; L3 attachment starting at 2-5%",
+    "asp_truck_usd": 800,
+    "asp_passenger_usd": 600,
+    "nre_per_year_usd_m": 15,
+    "industrial_revenue_growth_path": "FY2025 $3M → $8M FY2026 → $15M FY2028 → $25M FY2030 (Nikon production ramp + new wins)",
+    "cityos_revenue_growth_path": "FY2025 ~$1M → $5M FY2027 → $15M FY2030 → $30M FY2033 (government procurement cycles)",
+    "opex_annual_usd_m": 125,
+    "capex_annual_usd_m": 10
+  },
+
+  "base": {
+    "label": "CONTRACTED PROGRAMS RAMP ON SCHEDULE",
+    "revenue_path_usd_m": {
+      "FY2025A": 18.1,
+      "FY2026E": 33.0,
+      "FY2027E": 55.0,
+      "FY2028E": 85.0,
+      "FY2029E": 130.0,
+      "FY2030E": 165.0,
+      "FY2031E": 205.0,
+      "FY2032E": 240.0,
+      "FY2033E": 270.0
+    },
+    "automotive_units": {
+      "FY2027E": 5000,
+      "FY2028E": 20000,
+      "FY2029E": 45000,
+      "FY2030E": 75000,
+      "FY2031E": 110000,
+      "FY2032E": 140000,
+      "FY2033E": 165000
+    },
+    "gross_margin_pct": {
+      "FY2026E": 5,
+      "FY2027E": 12,
+      "FY2028E": 22,
+      "FY2029E": 30,
+      "FY2030E": 37,
+      "FY2031E": 43,
+      "FY2032E": 46,
+      "FY2033E": 48
+    },
+    "ebitda_usd_m": {
+      "FY2026E": -105,
+      "FY2027E": -90,
+      "FY2028E": -65,
+      "FY2029E": -30,
+      "FY2030E": -3,
+      "FY2031E": 38,
+      "FY2032E": 75,
+      "FY2033E": 105
+    },
+    "fcf_usd_m": {
+      "FY2026E": -110,
+      "FY2027E": -95,
+      "FY2028E": -70,
+      "FY2029E": -35,
+      "FY2030E": -8,
+      "FY2031E": 30,
+      "FY2032E": 65,
+      "FY2033E": 95
+    },
+    "ceiling_check": {
+      "FY2033_implied_auto_units": 165000,
+      "FY2033_implied_spend_pool_usd_m": "165K × $600 ASP blend = ~$99M automotive revenue. Automotive ex-China SAM ~$1.8B by 2030 growing; $99M automotive revenue represents 4-5% SAM capture. Well within ceiling.",
+      "passes": true
+    },
+    "driver_notes": "FY2026 guided $30-36M by management. Base at $33M. FY2027 ramp begins with Daimler Truck first deliveries; NRE remains core revenue. FY2028 EU OEM SOP adds significant unit volume. FY2031 first FCF positive year. Normalization margin: EBITDA ~39% by FY2033 (vs Innoviz target 30%+, hardware+software mix)."
+  },
+
+  "bull": {
+    "label": "POST-LUMINAR WAVE + NVIDIA PULL-THROUGH",
+    "revenue_path_usd_m": {
+      "FY2025A": 18.1,
+      "FY2026E": 38.0,
+      "FY2027E": 70.0,
+      "FY2028E": 120.0,
+      "FY2029E": 185.0,
+      "FY2030E": 250.0,
+      "FY2031E": 320.0,
+      "FY2032E": 385.0,
+      "FY2033E": 440.0
+    },
+    "automotive_units": {
+      "FY2027E": 8000,
+      "FY2028E": 35000,
+      "FY2029E": 75000,
+      "FY2030E": 130000,
+      "FY2031E": 200000,
+      "FY2032E": 265000,
+      "FY2033E": 320000
+    },
+    "gross_margin_pct": {
+      "FY2026E": 7,
+      "FY2027E": 16,
+      "FY2028E": 26,
+      "FY2029E": 35,
+      "FY2030E": 42,
+      "FY2031E": 47,
+      "FY2032E": 50,
+      "FY2033E": 52
+    },
+    "ebitda_usd_m": {
+      "FY2026E": -100,
+      "FY2027E": -80,
+      "FY2028E": -45,
+      "FY2029E": 5,
+      "FY2030E": 60,
+      "FY2031E": 125,
+      "FY2032E": 180,
+      "FY2033E": 230
+    },
+    "fcf_usd_m": {
+      "FY2026E": -105,
+      "FY2027E": -85,
+      "FY2028E": -50,
+      "FY2029E": 0,
+      "FY2030E": 55,
+      "FY2031E": 115,
+      "FY2032E": 170,
+      "FY2033E": 220
+    },
+    "ceiling_check": {
+      "FY2033_implied_auto_units": 320000,
+      "FY2033_implied_auto_revenue_usd_m": "320K × $650 ASP blend = ~$208M. Against automotive ex-China SAM ~$2-3B by 2033 (growing). $208M = 7-10% capture — aggressive but not implausible given 2-3 major OEM programs. Within ceiling.",
+      "passes": true
+    },
+    "driver_notes": "2 Luminar-replacement wins add 2 new programs (SOP 2029). NVIDIA Hyperion shortens qualification. Industrial scales faster (3-4 new production agreements). Cash flow positive by FY2029. Normalization margin: EBITDA ~52% by FY2033 (premium hardware+software platform with strong recurring software mix)."
+  },
+
+  "bear": {
+    "label": "RAMP DELAYS + CAPITAL CONSTRAINT",
+    "revenue_path_usd_m": {
+      "FY2025A": 18.1,
+      "FY2026E": 26.0,
+      "FY2027E": 32.0,
+      "FY2028E": 45.0,
+      "FY2029E": 65.0,
+      "FY2030E": 90.0,
+      "FY2031E": 120.0,
+      "FY2032E": 155.0,
+      "FY2033E": 185.0
+    },
+    "automotive_units": {
+      "FY2027E": 0,
+      "FY2028E": 5000,
+      "FY2029E": 15000,
+      "FY2030E": 30000,
+      "FY2031E": 55000,
+      "FY2032E": 80000,
+      "FY2033E": 105000
+    },
+    "gross_margin_pct": {
+      "FY2026E": 2,
+      "FY2027E": 5,
+      "FY2028E": 12,
+      "FY2029E": 20,
+      "FY2030E": 28,
+      "FY2031E": 34,
+      "FY2032E": 40,
+      "FY2033E": 43
+    },
+    "ebitda_usd_m": {
+      "FY2026E": -120,
+      "FY2027E": -120,
+      "FY2028E": -105,
+      "FY2029E": -80,
+      "FY2030E": -50,
+      "FY2031E": -15,
+      "FY2032E": 25,
+      "FY2033E": 55
+    },
+    "fcf_usd_m": {
+      "FY2026E": -125,
+      "FY2027E": -125,
+      "FY2028E": -110,
+      "FY2029E": -85,
+      "FY2030E": -55,
+      "FY2031E": -20,
+      "FY2032E": 18,
+      "FY2033E": 48
+    },
+    "capital_raise_assumption": "Forced equity raise in Q1-Q2 2028 at ~$12-15/share (50% discount to current price); $150M raised → ~12M new shares (15-18% dilution). Included in share count below.",
+    "diluted_shares_post_raise_m": 79,
+    "ceiling_check": {
+      "FY2033_implied_auto_units": 105000,
+      "passes": true
+    },
+    "driver_notes": "Daimler SOP slips to Q4 2028. EU OEM SOP slips to 2030. NRE revenue holds but does not grow meaningfully. Industrial and CityOS continue but slowly. Cash crunch forces dilutive raise 2027-2028. Normalization margin: EBITDA ~30% by FY2033 — achievable but much later and from a larger share count."
+  }
+}

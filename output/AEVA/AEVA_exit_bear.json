@@ -1,0 +1,16 @@
+{
+  "ticker": "AEVA",
+  "currency": "USD",
+  "shares_outstanding_b": 0.0800,
+  "net_debt_b": 0.0005,
+  "nopat_path_b": [-0.110, -0.115, -0.105, -0.075, -0.040, -0.008, 0.020, 0.034],
+  "nopat_path_years": ["FY2026E","FY2027E","FY2028E","FY2029E","FY2030E","FY2031E","FY2032E","FY2033E"],
+  "normalize_index": 7,
+  "years_to_T": 7,
+  "g_lt": 0.035,
+  "roic": 0.20,
+  "r": 0.115,
+  "exit_multiple_override": null,
+  "interim_fcf_pv_b": -0.24,
+  "reasoning": "Bear: SOP delays 12-18 months + dilutive raise in 2028. FY2033 revenue $185M, EBITDA 30%, NOPAT $34M. Higher WACC 11.5%, more diluted shares (80M post-raise). Larger negative interim FCF PV from extended burn."
+}

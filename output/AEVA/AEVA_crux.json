@@ -1,0 +1,100 @@
+{
+  "_meta": {
+    "ticker": "AEVA",
+    "produced_by": "theia (synthesized by atlas from industry.json)",
+    "as_of_utc": "2026-06-20T00:00:00Z",
+    "contract_version": "3.0"
+  },
+
+  "crux_variable": "Automotive production ramp scale and timing — specifically, how much cumulative unit volume Aeva's contracted and won OEM programs (Daimler Truck L4 commercial vehicle SOP 2027; unnamed European passenger OEM exclusive SOP 2028) deliver by 2030, and whether Aeva converts that into a second wave of program wins (post-Luminar replacement + NVIDIA Hyperion pull-through) that drives the business to cash generation before capital is exhausted.",
+
+  "crux_identity": "AEVA Revenue ≈ [Daimler units × ASP_truck] + [EU_OEM units × ASP_passenger] + [new_wins × ASP] + [NRE + Industrial + CityOS]. The crux lever is (contracted_units + new_win_units) × ASP — the product of ramp speed and program breadth. Margin is second-order: once revenue crosses ~$150M, the fixed-cost base (~$120M opex) turns the business cash positive without structural change. The financing bridge is the other leg: $224.5M total liquidity (Q1 2026) at ~$25M quarterly burn gives ~2.2 years to SOP on the first programs.",
+
+  "crux_drivers": {
+    "contracted_volume": {
+      "description": "Daimler Truck (SOP 2027) and the European OEM exclusive (SOP 2028). These are the most important because they are CONTRACTED — the OEMs are committed. Volume undisclosed but derivable: Daimler Truck global commercial vehicle production is ~200K trucks/year; a subset targeting L4 (~5-10% of production in 2029, growing) implies 10,000-20,000 units/year for Aeva. European OEM: a top-10 global passenger OEM builds 500K-3M vehicles/year on a global platform; even a 2-5% initial ADAS attachment at SOP implies 10,000-150,000+ units/year. The wide range reflects non-disclosed attachment rates.",
+      "current_level": "Zero mass-production units; pre-SOP NRE and qualification only",
+      "trajectory": "SOP Q4 2027 (Daimler) → SOP 2028 (EU OEM) → volume ramp 2029-2032",
+      "evidence_type": "CONTRACTED"
+    },
+    "new_program_wins": {
+      "description": "Luminar's December 2025 bankruptcy cleared Aeva's most direct competitor for 3-4 OEM supply relationships. Aeva's NVIDIA DRIVE Hyperion reference status (Jan 2026) creates structural pull-through for any OEM adopting NVIDIA AV stack. A third unnamed Top-5 OEM is in development (Q1 2026 announcement). The question is: how many of these convert to production contracts and by when?",
+      "current_level": "One development program announced; several replacement conversations likely in progress (not public)",
+      "trajectory": "1-2 new production awards plausibly by end-2026 to end-2027; initial volumes ~2029",
+      "evidence_type": "EXTRAPOLATED (Luminar replacement opportunity is real; conversion rate is the contest)"
+    },
+    "asp_per_unit": {
+      "description": "ASP is not disclosed. Comparable data: Innoviz guided $1,000 at low-volume ramp, declining to ~$500-800 at scale for automotive-grade L3 sensors. Hesai charges ~$150-250 for commodity automotive ToF (not comparable quality). Aeva's FMCW with velocity data commands a premium. Best estimate: $500-900 at Daimler Truck scale; $400-700 at passenger OEM scale.",
+      "base_estimate_usd": 650,
+      "range_usd": "400-900",
+      "evidence_type": "EXTRAPOLATED (no disclosed ASP; derived from Innoviz and industry benchmarks)"
+    },
+    "gross_margin_at_scale": {
+      "description": "Target gross margin at production scale. Innoviz guided ~50% at scale. Hesai (ToF, high volume) reached ~28% GM in 2025. Aeva's FMCW has higher per-unit complexity but also higher ASP. Realistic target: 35-45% GM at 100K+ units/year, with a transition through 10-25% GM at initial ramp (50K units).",
+      "base_estimate_pct": 40,
+      "range_pct": "25-50",
+      "evidence_type": "EXTRAPOLATED"
+    },
+    "liquidity_bridge": {
+      "description": "Q1 2026: $99.5M cash + $125M undrawn facility = $224.5M total liquidity. Burn Q1 2026: ~$25.8M (operating). Annual burn at current rate: ~$100M. Runway: 2.2 years to mid-2028. SOP on first programs (Daimler Truck) is 2027; EU OEM SOP is 2028. The bridge is tight: Aeva needs either (a) revenue ramp from industrial/NRE to reduce net burn, (b) new capital (equity or debt), or (c) the Daimler program to ramp quickly enough in 2027 to close the gap. The $125M undrawn facility and the convertible note from Apollo ($100M, already drawn) suggest manageable but not comfortable near-term liquidity.",
+      "runway_years": 2.2,
+      "evidence_type": "CONTRACTED (known cash) / EXTRAPOLATED (burn evolution)"
+    }
+  },
+
+  "base": {
+    "label": "CONTRACTED PROGRAMS RAMP ON SCHEDULE",
+    "argument": "Both contracted programs (Daimler Truck 2027, European OEM 2028) achieve SOP on schedule. Daimler ramps to ~15,000 units/year by FY2030 (conservative share of DTNA's 200K annual production targeting L4 trucks); European OEM ramps to ~25,000 units/year by FY2030 (2-3% ADAS attachment on a 1M-unit global platform). NRE + Industrial + CityOS add ~$20M by FY2030. Combined: FY2030 revenue ~$80M, FCF burn narrows toward zero by FY2033. Aeva bridges through a modest capital raise in 2027 ($50-80M equity) that keeps the balance sheet solvent without destroying the equity story.",
+    "crux_value_fy2030": {
+      "automotive_units": 40000,
+      "asp_usd": 650,
+      "automotive_revenue_usd_m": 26,
+      "other_revenue_usd_m": 55,
+      "total_revenue_usd_m": 81,
+      "gross_margin_pct": 30,
+      "operating_loss_usd_m": -40,
+      "fcf_usd_m": -45
+    },
+    "ceiling_check": "FY2030 implied $81M revenue requires ~40K automotive units at $650 ASP plus $55M NRE/services/other. Daimler global truck production is ~200K; 40K implies 20% L4 penetration — plausible given TORC/Daimler commitment but not inevitable. Ceiling is not breached.",
+    "what_makes_this_right": "Both programs are contractually committed. The technology qualifications have passed (automotive-grade approval takes 3-5 years and Aeva is through it). NVIDIA Hyperion reference position pulls additional demand. Revenue growing 90% YoY already (Q1 2026). Industrial (Nikon) and CityOS (GDOT) provide non-automotive revenue cushion.",
+    "what_would_change_our_mind": "SOP delay beyond Q4 2028 on either contracted program; OEM partner production volumes sharply below forecast; inability to raise capital in 2027 on reasonable terms."
+  },
+
+  "bull": {
+    "label": "POST-LUMINAR WAVE + NVIDIA PULL-THROUGH",
+    "argument": "Luminar's bankruptcy frees 3-4 OEM supply relationships that need replacement by 2027-2028. Aeva, as the only western-headquartered FMCW supplier with automotive-grade hardware in qualification, wins 2 of these (estimated probability: 40-60% per opportunity given Innoviz competes for the same slots). Additionally, the NVIDIA DRIVE Hyperion reference designation accelerates qualification cycles at NVIDIA-aligned OEMs. Two new production wins (SOP 2029) add ~20,000 units by FY2031. Total FY2030 automotive revenue ~$60-80M (base) + $20-30M (bull wins) = $80-110M. With industrial and CityOS scaling, total FY2030 revenue $120-150M. Margin turns positive at the gross line by FY2029.",
+    "crux_value_fy2030": {
+      "automotive_units": 80000,
+      "asp_usd": 700,
+      "automotive_revenue_usd_m": 56,
+      "other_revenue_usd_m": 70,
+      "total_revenue_usd_m": 126,
+      "gross_margin_pct": 38,
+      "operating_loss_usd_m": -10,
+      "fcf_usd_m": -15
+    },
+    "ceiling_check": "FY2030 $126M revenue requires 80K units at $700 ASP plus $70M other. 80K units across 3-4 programs is a reasonable upper bound given program sizes. Addressable automotive ex-China market is ~$1.8B by 2030 at Yole estimates; $126M represents 7% capture — far below ceiling.",
+    "what_makes_this_right": "Luminar replacement conversations with OEMs are happening now (post-Dec 2025 bankruptcy). Aeva is the qualified alternative. NVIDIA Hyperion shortens qualification cycles. First-mover FMCW advantage in a market where velocity data is becoming standard for L3+ systems. Cash bridge holds if revenue ramp reduces net burn from $100M/year to $50M by 2028.",
+    "evidence_quality": "EXTRAPOLATED — the Luminar replacement opportunity is real and sourced; the conversion rate (how many wins Aeva captures) is extrapolated from competitive position"
+  },
+
+  "bear": {
+    "label": "RAMP DELAYS + CAPITAL CONSTRAINT",
+    "argument": "Automotive ramp delays are the norm in the industry (Luminar signed BMW in 2019 and never reached production scale before bankruptcy). Aeva's Daimler program slips to 2028-2029 SOP (yield issues, OEM internal delays, TORC strategic reset). European OEM delays to 2029. Net burn stays at ~$90M/year. With $224.5M liquidity, Aeva exhausts cash in Q3 2028, forcing a highly dilutive equity raise (30-50% dilution) at a much lower stock price. The diluted equity value per share compresses significantly even if the business ultimately survives. Additionally, if Hesai or Seyond win Luminar replacement slots on cost, the post-Luminar opportunity is smaller than expected.",
+    "crux_value_fy2030": {
+      "automotive_units": 15000,
+      "asp_usd": 600,
+      "automotive_revenue_usd_m": 9,
+      "other_revenue_usd_m": 30,
+      "total_revenue_usd_m": 39,
+      "gross_margin_pct": 15,
+      "operating_loss_usd_m": -80,
+      "fcf_usd_m": -85
+    },
+    "ceiling_check": "FY2030 $39M revenue is below today's trajectory — this requires actual backward movement from the contracted base. The bear needs both a ramp delay AND reduced NRE/industrial pace. Plausible if programs slip 2+ years.",
+    "what_makes_this_right": "Program slippage history in autonomous vehicles is extensive (GM SuperCruise, Waymo, Luminar all missed their timelines significantly). Manufacturing scale-up of silicon photonic chips is genuinely unproven. The $125M undrawn facility depends on maintaining covenants — unclear if available unconditionally.",
+    "what_would_change_our_mind": "Daimler trucks confirmed in production (first revenue shipment announcement); European OEM milestone payments starting; gross margin turning positive on quarterly basis.",
+    "break_mechanism": "Automotive ramp delay beyond 2028 forces cash depletion + dilutive raise before programs generate meaningful FCF. The capital raise itself creates a psychological and mechanical overhang that suppresses the stock well before the dilution occurs.",
+    "evidence_quality": "OBSERVABLE-AND-NEAR — cash burn and runway are live facts; ramp delay risk is observable from industry history (Luminar, Quanergy, IndiEV all missed timelines)"
+  }
+}

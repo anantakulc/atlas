@@ -1,0 +1,16 @@
+{
+  "ticker": "AEVA",
+  "currency": "USD",
+  "shares_outstanding_b": 0.0738,
+  "net_debt_b": 0.0005,
+  "nopat_path_b": [-0.095, -0.080, -0.055, -0.025, 0.002, 0.034, 0.068, 0.089],
+  "nopat_path_years": ["FY2026E","FY2027E","FY2028E","FY2029E","FY2030E","FY2031E","FY2032E","FY2033E"],
+  "normalize_index": 7,
+  "years_to_T": 7,
+  "g_lt": 0.045,
+  "roic": 0.28,
+  "r": 0.110,
+  "exit_multiple_override": null,
+  "interim_fcf_pv_b": -0.18,
+  "reasoning": "FMCW LiDAR Platform. Base: FY2033 revenue $290M, EBITDA margin 43%, D&A $12M, EBIT $112.7M, effective tax 21%, NOPAT $89M. Interim FCF PV captures cumulative cash burn FY2026-FY2030 before breakeven. Net debt ~$0.5M (Q1 2026: $99.5M cash, $100M Apollo convert). Diluted shares 73.8M (basic 67.5M + 6.3M Apollo convert at $15.86 in-the-money)."
+}
