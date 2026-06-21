@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "ticker": "SNPS",
+    "produced_by": "daedalus",
+    "atlas_version": "v3",
+    "as_of": "2026-06-21",
+    "note": "Street reconstruction -- manual build from Pheme analyst tape + SNPS_comps_inputs.json; comps_implied.py not run (schema-compatible manual output)"
+  },
+
+  "current": {
+    "price": 455.51,
+    "multiple": 26.4,
+    "multiple_label": "P/E NTM (FY2027 non-GAAP)",
+    "eps_basis": 17.25,
+    "implied_long_run_g": 0.055,
+    "implied_long_run_g_basis": "Gordon decomposition at r=8.9%, ROIC=55%: (1-g/ROIC)/(r-g)=26.4 solves to g~5.5%",
+    "what_price_implies": "At $455.51, the market prices Ansys execution on the base case trajectory but assigns ZERO credit to agentic AI consumption revenue (FY2027+ per management) or IP royalty monetization. The 26.4x NTM P/E is a discount of ~8-12pp to the pre-acquisition 34-38x SNPS average multiple, fully explained by integration risk and delayed AI monetization. At the 52-week high of $651.73, the market was paying 37.8x FY2027 non-GAAP EPS -- a premium that embedded early agentic AI optionality and the full synergy roadmap at face value. That premium was subsequently unwound by the China export pause (mid-2025) and the Ansys integration uncertainty."
+  },
+
+  "street": {
+    "n_analysts": 24,
+    "target_mean": {
+      "price": 559.58,
+      "multiple": 32.4,
+      "multiple_basis": "P/E NTM (FY2027 non-GAAP $17.25)",
+      "implied_growth_pct": 6.2,
+      "implied_growth_basis": "Gordon at r=8.9%, ROIC=55%: solving (1-g/0.55)/(0.089-g)=32.4 -> g~6.2%"
+    },
+    "target_high": {
+      "price": 650.0,
+      "multiple": 37.7,
+      "multiple_basis": "P/E NTM FY2027",
+      "implied_growth_pct": 7.0
+    },
+    "target_low": {
+      "price": 403.85,
+      "multiple": 23.4,
+      "multiple_basis": "P/E NTM FY2027",
+      "implied_growth_pct": 4.1
+    },
+    "key_anchors": [
+      {"firm": "Goldman Sachs", "pt": 600, "multiple": 40.0, "eps_basis": 15.00, "basis": "40x normalized non-GAAP EPS $15.00 (conservative; uses FY2026 mid-year rather than forward FY2027)", "rating": "Buy"},
+      {"firm": "Citigroup", "pt": 610, "multiple": 32.5, "eps_basis": 18.75, "basis": "32x CY27E non-GAAP EPS ~$18.75", "rating": "Buy"},
+      {"firm": "Bank of America", "pt": 600, "multiple": 34.8, "eps_basis": 17.25, "basis": "~35x FY2027 non-GAAP EPS", "rating": "Buy"},
+      {"firm": "Stifel", "pt": 600, "multiple": 34.8, "eps_basis": 17.25, "basis": "~35x FY2027 non-GAAP EPS", "rating": "Buy"},
+      {"firm": "Morgan Stanley", "pt": 525, "multiple": 30.4, "eps_basis": 17.25, "basis": "~30x FY2027 non-GAAP EPS; Equal Weight on monetization timeline", "rating": "Equal Weight"},
+      {"firm": "Wells Fargo", "pt": 535, "multiple": 31.0, "eps_basis": 17.25, "basis": "~31x FY2027 non-GAAP EPS; Equal Weight", "rating": "Equal Weight"},
+      {"firm": "Piper Sandler", "pt": 450, "multiple": 26.1, "eps_basis": 17.25, "basis": "~26x FY2027; bear on monetization, values at near-current-price -- essentially a Hold/Sell signal", "rating": "Neutral"}
+    ]
+  },
+
+  "reconstruction": {
+    "what_price_implies": "At $455.51, the stock prices 26.4x FY2027 non-GAAP EPS. Decomposing via Gordon at r=8.9% and ROIC=55%, this embeds long-run growth of ~5.5% -- the pace of GDP plus modest EDA market share. The market assigns no premium for AI monetization. The stock is priced as if the Ansys acquisition adds Ansys's existing growth trajectory but nothing more -- a 'zero synergy, zero AI uplift' scenario. Every firm with a $600+ PT is expressing a view that SNPS re-rates once: (a) Ansys integration is confirmed (September 30 Investor Day is the de-risking event), and (b) first evidence of agentic AI consumption revenue appears in FY2027 guidance.",
+    "what_street_implies": "The modal sell-side PT of $600 embeds 34-40x FY2027 P/E. This is not premium territory for a near-monopoly software platform -- it is the historical SNPS average (2020-2024: 34-38x). The street is simply saying: the integration-risk discount should normalize as integration executes. The GS/BofA/Stifel/Citi cluster at $600-610 is methodologically consistent: 32-40x on $15-$18.75 EPS reaches $600-610 from three different methods (GS normalized, Citi CY27, BofA/Stifel FY2027). The holdouts (WF $535, MS $525, Piper $450) all use 26-31x -- the current market multiple -- and see no re-rating catalyst near-term.",
+    "history_anchor": "SNPS traded at a median 35x NTM P/E for the 5 years prior to the Ansys announcement (FY2019-FY2024). Post-deal close, the multiple compressed to 26-31x as the market assigned: (a) integration execution risk (~5pp discount), (b) IP segment headwinds (~2pp discount), (c) China regulatory overhang (~2pp discount). Removing all three discount factors recovers the 35x historical average, which at FY2027 EPS $17.25 = $603. The street's $600 target is not optimism -- it is the pre-deal historical average applied to post-deal EPS.",
+    "contested_lever": "The entire $155 spread between the current price ($455) and the bull cluster ($610) is a P/E multiple contest, not an EPS contest. Both sides agree on ~$17-18 FY2027 non-GAAP EPS. The bear says 26-30x (no re-rating: integration risk persists, AI monetization delayed). The bull says 35-40x (integration de-risks by September 30 Investor Day, AI option has a visible monetization pathway). Our base case: 32x FY2027 EPS is the honest most-likely (historical discount for integration risk, not full recovery) = $552 fair value. This is above current price but below the peak bull cluster.",
+    "where_we_agree_with_street": "We agree with GS and Citi that the stock's 22.4% discount from the 52-week high is predominantly a multiple compression story, not a fundamental deterioration. FY2026 execution is tracking (beat-and-raise, Q2 2026). Ansys cost synergies are on track (50% by year-end). The EDA market is accelerating to 10-12% CAGR. These are the bull's contracted/observable pillars.",
+    "where_we_disagree_with_street": "We are more cautious than the GS 40x framework on the multiple recovery. GS's 40x normalized on $15 EPS implies SNPS re-rates fully back to its pre-deal peak multiple. We model 32x on $17.25 FY2027 EPS because: (a) Ansys's integration is still in Year 1 post-close -- the market will want two more quarters of synergy delivery before paying pre-deal multiples; (b) IP segment royalty model transition creates a FY2027 revenue recognition headwind (~$15-30/share near-term per Theia R5) that the consensus has not fully modeled; (c) Elliott board seat is a constructive catalyst but historically takes 12-18 months to manifest in financial results."
+  }
+}

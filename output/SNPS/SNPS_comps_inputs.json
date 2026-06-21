@@ -1,0 +1,59 @@
+{
+  "_meta": {
+    "ticker": "SNPS",
+    "produced_by": "daedalus",
+    "atlas_version": "v3",
+    "as_of": "2026-06-21",
+    "contract_ref": "CONTRACT.md §3 -- street reconstruction; comps first, then the panel argues the contested lever"
+  },
+  "ticker": "SNPS",
+  "currency": "USD",
+  "current_price": 455.51,
+  "shares_outstanding_b": 0.191444,
+  "net_debt_b": 7.52,
+  "fundamental_discount_rate": 0.089,
+  "terminal_growth": 0.045,
+  "horizon_years": 5,
+
+  "anchor": {
+    "type": "P/E",
+    "metric_label": "non-GAAP NTM EPS (FY2027 management anchor)",
+    "metric_value": 17.25,
+    "fcf_conversion": 1.0,
+    "roic": 0.55,
+    "note": "Street reconstructs on non-GAAP P/E; FY2027 EPS of $17.25 is the first management anchor. PE is the industry currency for EDA software (Cadence, peers). EV/FCF cross-check below."
+  },
+
+  "street": {
+    "target_mean": 559.58,
+    "target_high": 650.0,
+    "target_low": 403.85,
+    "n_analysts": 24,
+    "rating": "buy",
+    "thesis": "SNPS is the dominant EDA platform capturing AI chip design complexity through agentic AI pricing, Ansys multiphysics cross-sell, and IP royalty monetization. The street prices $600-610 on 32-40x normalized non-GAAP EPS, implying 14-16% upside from current $455.51."
+  },
+
+  "history": {
+    "anchor_cagr_5y": 0.19,
+    "note": "Non-GAAP EPS CAGR FY2020-FY2025 ~19% organically. Revenue CAGR (ex-Ansys) ~14% FY2020-FY2025. Post-Ansys FY2026 non-GAAP EPS $14.76 is modestly diluted by acquisition amortization on a non-GAAP basis; the organic growth rate is intact."
+  },
+
+  "peers": [
+    {"ticker": "CDNS", "multiple": 38.0, "note": "Cadence: pure-play EDA, higher margin, similar moat. Trades 37-40x NTM P/E. SNPS should trade at a 5-10% discount reflecting Ansys integration risk and IP segment volatility."},
+    {"ticker": "ANSYS_standalone", "multiple": 30.0, "note": "Ansys pre-acquisition standalone: traded 28-32x NTM P/E as an engineering simulation software leader with 90%+ renewal rates."},
+    {"ticker": "PTC", "multiple": 28.0, "note": "PTC: industrial software, 25-30x P/E. Less moaty than EDA duopoly but comparable simulation software business."}
+  ],
+
+  "contested_lever": "Pace and economics of agentic AI monetization -- whether consumption-based pricing lifts per-customer EDA revenue 20-40% by FY2027-FY2028, and whether Ansys cross-sell revenue synergies ($400M target by Year 4) arrive on schedule. These two levers together determine whether FY2027 non-GAAP EPS $17.25 is the floor or the ceiling of the upgrade cycle.",
+
+  "reconstruction": {
+    "what_price_implies": "At $455.51, the stock prices 30.8x FY2026 non-GAAP EPS ($14.76) and 26.4x FY2027 non-GAAP EPS ($17.25). Decomposing $455.51 into (g, ROIC, r): at r=8.9%, ROIC=55%, terminal g the Gordon multiple implies (1-g/0.55)/(0.089-g)=26.4x, solving: 1-g/0.55 = 26.4*(0.089-g) -> 1-g/0.55 = 2.35 - 26.4g -> 26.4g - g/0.55 = 1.35 -> g*(26.4-1.818) = 1.35 -> g=1.35/24.582 = 5.5%. The price of $455.51 implies the market expects long-run earnings growth of only ~5.5% -- consistent with a scenario that prices in base Ansys execution but ZERO credit for agentic AI monetization or IP royalty transition.",
+    "what_street_implies": "GS's $600 PT uses 40x normalized EPS $15.00. Decomposing 40x at r=8.9%, ROIC=55%: (1-g/0.55)/(0.089-g)=40 -> 1-g/0.55=3.56-40g -> 40g-g/0.55=2.56 -> g*(40-1.818)=2.56 -> g=2.56/38.18=6.7%. The GS target implies ~6.7% long-run growth. Citi's $610 PT at 32x CY27E EPS $18.75 implies similar: 32x at r=8.9% -> implied g=(32*8.9%-1)/(32-1/0.55) = (2.848-1)/(32-1.818) = 1.848/30.18 = 6.1%. Both the GS and Citi frameworks imply 6-7% long-run growth is embedded in their targets -- slightly above the $455.51 price's implied ~5.5% but not materially different. The entire $150-160 PT spread vs current price is explained by the transition from 26x to 32-40x P/E, which the street defends on: (1) Ansys de-risks the revenue base, (2) AI monetization is an option above this.",
+    "history_anchor": "Pre-Ansys SNPS traded at 30-45x NTM P/E for the last 5 years, averaging ~35x. The Ansys acquisition caused a de-rating to 26-31x as the market assigned integration risk. If integration executes (management reporting 50% cost synergies on track), the stock should re-rate toward the 32-38x historical range.",
+    "contested_lever": "The contest is not EPS -- both sides agree on ~$17.25 FY2027 EPS. The contest is the MULTIPLE: 26x (no AI uplift, integration risk discount) vs 32-40x (historical re-rating + AI option). The spread of $150 between $455 and $610 is entirely explained by the P/E difference (26x vs 35x on ~$17.25 EPS = $448 vs $603). The bull says the multiple re-rates; the bear says execution delays keep the multiple suppressed."
+  },
+
+  "justified_g_grid": [0.04, 0.05, 0.06, 0.07, 0.08, 0.09, 0.10],
+  "roic_grid": [0.30, 0.40, 0.55, 0.70],
+  "duality_g_grid": [0.04, 0.05, 0.06]
+}

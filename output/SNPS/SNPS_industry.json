@@ -1,0 +1,332 @@
+{
+  "_meta": {
+    "ticker": "SNPS",
+    "agent": "theia",
+    "version": "atlas_v3",
+    "as_of": "2026-06-21",
+    "note": "All numbers sourced and argued. Single-source figures flagged. Triangulation where available."
+  },
+
+  "business_overview": {
+    "summary": "Synopsys is the global co-leader in Electronic Design Automation (EDA) software alongside Cadence Design Systems. Its core business -- licensing the tools that semiconductor companies use to design and verify chips -- is a durable, high-margin annuity with ~90% recurring revenue, 3-5 year multi-year contracts, and switching costs so deep that customers effectively cannot change EDA vendors mid-project. The $35B acquisition of Ansys (closed July 17, 2025) transforms Synopsys from an EDA-plus-IP vendor into a chip-to-system simulation platform, adding multiphysics analysis (thermal, structural, electromagnetic, fluid dynamics) used by automotive, aerospace, industrial, and semiconductor customers. The combined entity competes across three distinct markets: (1) the ~$12-13B global EDA market where it co-leads, (2) the ~$8.5B semiconductor IP licensing market where it is #2 behind ARM, and (3) the broader ~$15B engineering simulation market where Ansys is the clear leader.",
+    "fiscal_year_end": "October 31",
+    "fy2026_revenue_guide_mid": 9.665,
+    "currency": "USD_billions",
+    "employees": 28000
+  },
+
+  "segments": [
+    {
+      "name": "EDA (Design Automation)",
+      "also_known_as": "Electronic Design Automation",
+      "fy2026_revenue_estimate_b": 4.93,
+      "revenue_mix_pct": 51.0,
+      "revenue_basis": "Q2 FY2026 10-Q (filed 2026-05-27): Design Automation $1.822B in Q2, 51.0% of total revenue. Annualizing implies ~$4.9B FY2026 for EDA standalone.",
+      "yoy_growth_pct": 8.0,
+      "growth_note": "EDA revenue grew over 8% year-over-year in Q2 FY2026, driven by hardware-assisted verification (Zebu emulator) demand and advanced-node solutions. GS (May 2026) forecasts organic EDA growth ~9.5% for FY2026 ex-divestitures.",
+      "adjusted_operating_margin_pct": 43.3,
+      "margin_basis": "Q2 FY2026 Design Automation adjusted operating margin per 10-Q filing. Pre-Ansys standalone EDA was ~38-42% adj. operating margin; Ansys integration pushes blended non-GAAP to ~39.5%.",
+      "nature": "mature-annuity-with-AI-growth-kicker",
+      "nature_detail": "Core EDA is a subscription annuity -- 3-5 year contracts, ~90% recurring, pricing power from duopoly position. The growth kicker is agentic AI tooling (Agent Engineer L4) which could shift pricing from pure subscription to subscription-plus-consumption.",
+      "key_products": [
+        "IC Compiler II (physical design)",
+        "Fusion Design Platform",
+        "VCS (simulation)",
+        "Zebu (hardware emulator)",
+        "TCAD",
+        "Agent Engineer L4 (agentic AI workflow)"
+      ],
+      "customer_concentration": "Not publicly disclosed at segment level. Semiconductor customers broadly diversified -- SNPS lists TSMC, Samsung, Intel, NVIDIA, AMD, hyperscalers (Google, AWS, Meta, Microsoft) as key users. No single customer >10% of total revenue per SEC filings.",
+      "contracted_demand": "CONTRACTED -- $11.0B total backlog (April 30, 2026); ~49% recognized in next 12 months. EDA is the largest component. Multi-year subscriptions underpin near-term revenue visibility."
+    },
+    {
+      "name": "Design IP",
+      "fy2026_revenue_estimate_b": 1.93,
+      "revenue_mix_pct": 20.0,
+      "revenue_basis": "Q2 FY2026: Design IP $454M, ~20% of total. FY2026 annualized ~$1.9-2.0B. Management FY2026 guidance implied ~$1.8B; Q2 IP was up 12% sequentially, suggesting 2H recovery. GS guided $1.8B FY2026E; Citi at $1.8B.",
+      "yoy_growth_pct_q2": -6.0,
+      "sequential_growth_pct_q2": 12.0,
+      "growth_note": "FY26 is a transitional year for IP. China export restrictions disrupted design starts in H1FY25 and impacted IP deals. Management expects H2 FY26 recovery. Long-run IP growth is mid-teens, driven by HBM, PCIe 7.0, UCIe, CXL interface IP demand from advanced packaging.",
+      "adjusted_operating_margin_pct": 24.4,
+      "margin_basis": "Q2 FY2026 Design IP adjusted operating margin per 10-Q filing. Lower than EDA due to upfront R&D investment to develop new IP blocks and lumpier revenue recognition.",
+      "nature": "growth-lumpy",
+      "nature_detail": "IP is a growth segment but with lumpier revenue than EDA -- one-time license + optional royalty streams. Transitioning to royalty-based pricing for hyperscaler customers could create more recurring revenue but also one-time recognition headwinds.",
+      "key_products": [
+        "HBM interface IP",
+        "PCIe 7.0 IP",
+        "UCIe IP (universal chiplet interconnect)",
+        "CXL IP",
+        "LPDDR IP",
+        "1.6T Ethernet IP",
+        "DesignWare IP portfolio"
+      ],
+      "market_position": "SNPS is #2 in semiconductor IP with ~13-22% share (sources vary; GrandView: 13%; SNS Insider: 22%; ARM at 41-44%). SNPS leads in wired interface IP with estimated 55%+ share in that sub-segment. ARM dominates processor IP.",
+      "contracted_demand": "PARTIALLY CONTRACTED -- royalty tail on shipped silicon provides recurring, but new IP license deals are lumpier. Hyperscaler transition to royalty model (timing: near end FY26 per management) creates a near-term recognition headwind and a long-tail revenue opportunity.",
+      "china_risk": "IP most exposed to China restrictions. China export restrictions (briefly imposed May-July 2025, then rescinded) disrupted IP deal timing. Current ~10% China revenue exposure for total company but IP share is likely higher. Ongoing China localization risk remains."
+    },
+    {
+      "name": "Simulation and Analysis (Ansys)",
+      "fy2026_revenue_estimate_b": 2.77,
+      "revenue_mix_pct": 28.7,
+      "revenue_basis": "Q2 FY2026: Ansys $652M (28.7% of total), includes $12.5M gross channel accounting adjustment. FY2026 guidance implies ~$2.9B at midpoint. Ansys contributed $756.6M in FY2025 partial-year (closed July 17, 2025, so ~3.5 months of contribution). Full-year FY2026 is the first full fiscal year.",
+      "yoy_growth_pct": "Double-digit (management guided, no specific %, Ansys standalone grew 12% in FY2024)",
+      "growth_note": "Ansys standalone reported $2,544.8M revenue in FY2024, up 12% YoY. Management targets double-digit growth for the Ansys segment in FY2026 and beyond. SNPS guided FY2026 Ansys revenue at $2.9B vs $2.48B street estimate at deal announcement -- ahead of expectations.",
+      "adjusted_operating_margin_pct": "Not separately disclosed post-acquisition. Blended non-GAAP margin 39.5% suggests Ansys is dilutive vs EDA (Ansys pre-acquisition operated at ~20-25% adj. EBIT margin). $400M cost synergies by year 3 target; 50% of cost synergies expected by end FY2026.",
+      "nature": "high-growth-platform",
+      "nature_detail": "Multiphysics simulation is a high-growth platform with strong secular drivers: AI hardware thermal/electromagnetic complexity, automotive electrification, robotics, and physical AI systems all require simulation that cannot be approximated analytically. Ansys's market leadership (deployed in >65% of enterprises) creates network effects through certified simulation databases and workflow integrations.",
+      "key_products": [
+        "Mechanical/FEA (Ansys Mechanical)",
+        "CFD (Fluent)",
+        "Electromagnetics (HFSS)",
+        "Multiphysics Fusion (chip-to-system, multi-die -- first wave generally available June 17, 2026)",
+        "Optics/Photonics",
+        "Systems simulation"
+      ],
+      "synergy_targets": {
+        "cost_synergies_target_b": 0.4,
+        "cost_synergy_year": "Year 3 post-close (FY2028)",
+        "cost_synergies_pct_achieved_by_end_fy2026": 50,
+        "revenue_synergies_target_b": 0.4,
+        "revenue_synergy_year": "Year 4 post-close (FY2029)",
+        "source": "SNPS management guidance; Citi Nov 2025 initiation; Seeking Alpha May 2026"
+      },
+      "contracted_demand": "PARTIALLY CONTRACTED -- Ansys ACV was >$2.3B growing ~10-12% on constant currency basis pre-acquisition, with high recurring revenue. Multiphysics Fusion and cross-sell to EDA customers is EXTRAPOLATED."
+    },
+    {
+      "name": "Other / Divestitures",
+      "fy2026_revenue_estimate_b": 0.03,
+      "revenue_mix_pct": 0.3,
+      "revenue_basis": "Q2 FY2026 Other was ~0.3% of revenue ($~7M). Includes Power Artist (divested) and Processor IP Solutions (pending divestiture, impacted FY2026 guidance).",
+      "nature": "declining-divestiture",
+      "note": "Not economically material. SNPS is divesting non-core assets post-Ansys to focus on three core segments."
+    }
+  ],
+
+  "tam_and_addressable_market": {
+    "combined_tam_usd_bn": 31,
+    "combined_tam_year": 2026,
+    "combined_tam_source": {
+      "value": 31,
+      "source_url": "https://news.synopsys.com/2025-07-17-Synopsys-Completes-Acquisition-of-Ansys",
+      "tier": "company_filed",
+      "note": "SNPS management $31B TAM figure for combined EDA+IP+Simulation. This is the company's own addressable market claim -- treated as a ceiling, not a floor."
+    },
+    "sub_markets": [
+      {
+        "name": "Global EDA Market",
+        "tam_2025_usd_bn": 12.0,
+        "tam_2026_usd_bn": 13.0,
+        "growth_cagr_pct": 12.0,
+        "growth_note": "Historical CAGR was 5-7%; accelerating to 12% due to AI chip design activity, hyperscaler custom silicon, and advanced node complexity. SemiAnalysis data: hyperscaler custom silicon created $15-20B in new chip design activity vs near-zero five years ago.",
+        "sources": [
+          {
+            "value": "~$12-13B (2025E)",
+            "source_url": "https://www.mordorintelligence.com/industry-reports/electronic-design-automation-eda-tools-market",
+            "tier": "research_firm",
+            "note": "Mordor Intelligence. Multiple sources triangulate in $12-14B range."
+          },
+          {
+            "value": "~12% CAGR 2025-2031",
+            "source_url": "https://uk.finance.yahoo.com/news/electronic-design-automation-tools-eda-162900781.html",
+            "tier": "research_firm",
+            "note": "Several market research aggregators; consistent across Mordor, Persistence, DataInsights."
+          }
+        ],
+        "snps_addressable_share": "SNPS directly addresses the full EDA TAM. Current share ~31% (SNPS) vs ~30% (CDNS) vs ~13% (Siemens EDA).",
+        "single_source_flag": false
+      },
+      {
+        "name": "Semiconductor IP Licensing Market",
+        "tam_2025_usd_bn": 8.5,
+        "growth_cagr_pct": 9.8,
+        "growth_note": "12% CAGR 2016-2024 (sell-side provided); deceleration possible. ARM dominates at 41-44% share. SNPS #2 at ~13-22% (source divergence on exact share).",
+        "sources": [
+          {
+            "value": "$8.48B (2025)",
+            "source_url": "https://www.snsinsider.com/reports/semiconductor-intellectual-property-ip-market-1631",
+            "tier": "research_firm",
+            "note": "SNS Insider. GrandView Research corroborates ~$7.95B. Multiple sources in $8-9B range."
+          }
+        ],
+        "snps_addressable_share": "SNPS addresses the wired interface IP sub-segment most directly (~55%+ share there) and processor IP (ARM-dominated, SNPS minor). Total IP share 13-22% depending on methodology.",
+        "single_source_flag": false
+      },
+      {
+        "name": "Engineering Simulation / Multiphysics (Ansys's Market)",
+        "tam_2025_usd_bn": 15.5,
+        "growth_cagr_pct": 13.0,
+        "growth_note": "IMARC projects simulation software reaching $44.3B by 2034 -- this is broader than just physics-based/engineering simulation. Engineering simulation specifically (FEA, CFD, electromagnetics) is estimated at $2.7-15B depending on scope. Ansys's own served market (engineering simulation excl. general software) is closer to $8-10B today.",
+        "sources": [
+          {
+            "value": "$2,658M engineering simulation (2025E)",
+            "source_url": "https://www.congruencemarketinsights.com/report/engineering-simulation-software-market",
+            "tier": "research_firm",
+            "note": "Engineering simulation software specifically. Broader simulation software market ($15B+) overstates Ansys's addressable space."
+          },
+          {
+            "value": "$15.46B simulation software (2026)",
+            "source_url": "https://www.coherentmarketinsights.com/industry-reports/simulation-software-market",
+            "tier": "research_firm",
+            "note": "Broader definition including gaming, training, financial simulation. Use narrower definition for SNPS/Ansys."
+          }
+        ],
+        "snps_addressable_share": "Ansys is the clear leader in engineering simulation, deployed in >65% of enterprises. Within the engineering physics simulation sub-market (the relevant TAM), Ansys's ~$2.5B revenue implies ~25-30% share of a ~$8-10B market.",
+        "single_source_flag": true,
+        "single_source_note": "TAM for Ansys's specific market (engineering simulation excl. general) has wide range across sources. The $8-10B range is Theia bottom-up: Ansys $2.5B FY2024 revenue / estimated 25-30% share. Flag: single-source triangulation."
+      }
+    ],
+    "snps_total_revenue_fy2026": 9.67,
+    "snps_capture_of_combined_tam_pct": 31.2,
+    "capture_note": "$9.67B of $31B company-stated TAM = ~31%. This is the capture rate management implies. The honest independent addressable market (EDA ~$12B + IP ~$8.5B + simulation ~$8-10B = ~$28-30B) puts capture at ~32%. SNPS is a large-share, high-penetration incumbent, not a land-grab story -- the opportunity is wallet share expansion, not greenfield."
+  },
+
+  "competitors": [
+    {
+      "name": "Cadence Design Systems (CDNS)",
+      "position": "Co-leader in EDA, #1 in analog/mixed-signal and system design",
+      "market_share_pct": 30,
+      "share_basis": "Multiple sources: Mordor Intelligence, MatrixBCG competitive analysis, sell-side consensus. SNPS ~31%, CDNS ~30%. Effectively tied for overall EDA leadership.",
+      "trajectory": "stable-gaining-in-AI-EDA",
+      "strengths": [
+        "Analog/mixed-signal EDA (Virtuoso -- dominant)",
+        "Palladium hardware emulator (SNPS Zebu is the direct rival)",
+        "System design (Allegro PCB)",
+        "ChipStack AI Super Agent -- achieved Level-5 autonomy, NVIDIA partnership, 40x RTL validation speedup claimed",
+        "Custom/AI silicon customers (strong Google, AWS relationships)"
+      ],
+      "weaknesses": [
+        "No multiphysics simulation capability (SNPS+Ansys combination has no CDNS comparable)",
+        "Physical design market is SNPS-led (IC Compiler II)",
+        "TCAD simulation is SNPS-led"
+      ],
+      "share_dynamic": "SNPS and CDNS are in an agentic AI arms race. CDNS's ChipStack went to Level-5 autonomy (NVIDIA-powered, 40x speedup). SNPS's Agent Engineer is at L4 with 25+ specialized agents and cross-domain (silicon to systems). The differentiation in AI-EDA is: CDNS leads in verification autonomy depth; SNPS leads in breadth across the full flow and in multi-physics. Neither is taking dramatic share from the other in core EDA -- the real competition is for incremental wallet share from AI-driven consumption pricing.",
+      "source": "Futurum Group June 2026 -- Cadence and Synopsys Accelerate Agentic EDA Race at Computex"
+    },
+    {
+      "name": "Siemens EDA (formerly Mentor Graphics)",
+      "position": "#3 in EDA with strength in PCB, IC packaging, automotive",
+      "market_share_pct": 13,
+      "share_basis": "Multiple sources confirm ~13% global share. Not a strategic threat to SNPS's core market.",
+      "trajectory": "stable",
+      "share_dynamic": "Siemens EDA is a distant #3. PCB and automotive electronics design are its strongholds. SNPS is NOT competing in PCB (Cadence Allegro is the PCB rival); SNPS's Multiphysics Fusion targets multi-die/3D IC which is adjacent to but distinct from PCB. Siemens does not participate in leading-edge AI chip EDA.",
+      "source": "MatrixBCG competitive analysis; Mordor Intelligence"
+    },
+    {
+      "name": "Empyrean Technology (华大九天) + Primarius Technologies",
+      "position": "Dominant Chinese domestic EDA vendors; growing to fill gap from US export restrictions",
+      "market_share_pct_china": 10,
+      "market_share_global": "<1%",
+      "trajectory": "gaining-in-China-only",
+      "details": "Empyrean holds ~6% of China's EDA market (April 2024 data), making it the largest Chinese domestic player. China's self-sufficiency in EDA exceeded 10% by 2024. Empyrean acquired Xpeedic in March 2025, extending into SiP and 3D IC EDA. Revenue H1 2025: RMB 502M ($69M), up 13% YoY -- tiny vs SNPS/CDNS. R&D at 72.84% of revenue reflects a company still building capability, not monetizing at scale.",
+      "capability_gap": "Chinese EDA tools are estimated 3-5 years behind leading-edge SNPS/CDNS tools. Empyrean has achieved full-process coverage for analogue circuits and memory (announced August 2025 for memory EDA), but lacks advanced digital implementation, verification, and TCAD capabilities at leading nodes (2nm, 3nm). The gap is particularly wide in hardware-assisted verification (Zebu, Palladium -- significant capital equipment) which requires years of development.",
+      "threat_timeline": "5-10 years to become a credible threat to SNPS globally. Threat to China revenues is already materializing (China now ~10% of total and declining). Threat to SNPS's global share at leading nodes: LOW probability over the 5-year investment horizon.",
+      "source_urls": [
+        "https://www.trendforce.com/news/2025/08/19/news-empyrean-reportedly-unveils-chinas-first-full-process-eda-platform-for-memory-chip-production/",
+        "https://www.yicaiglobal.com/news/chinese-chip-design-software-shares-jump-amid-us-export-controls-on-synopsys-and-cadence",
+        "https://en.wikipedia.org/wiki/Empyrean_Technology"
+      ]
+    },
+    {
+      "name": "ARM Holdings",
+      "position": "#1 in semiconductor IP (processor cores) at 41-44% global share",
+      "trajectory": "dominant-growing",
+      "relevance_to_snps": "ARM dominates processor IP -- SNPS does not compete here. SNPS competes in interface IP (PCIe, DDR, HBM, UCIe) where ARM has minimal presence. They are complementary, not head-to-head. SNPS has a strategic collaboration with ARM (announced in databundle) for AGI CPU development using SNPS full-stack EDA+IP.",
+      "source": "Multiple IP market reports; SNPS 10-K description"
+    },
+    {
+      "name": "Dassault Systemes (SIMULIA) / MSC Software / Altair",
+      "position": "Engineering simulation competitors to Ansys",
+      "trajectory": "stable-niche",
+      "relevance_to_snps": "In engineering simulation broadly, Dassault SIMULIA, MSC Software (acquired by Hexagon), and Altair compete. Ansys's differentiation is breadth (FEA + CFD + electromagnetics + optics), the semiconductor-specific workflow integrations, and certification databases. The Multiphysics Fusion portfolio (chip-to-system) has no equivalent across competitors -- neither Dassault nor Altair has semiconductor EDA integration.",
+      "source": "ANSYS Form 425 filings FY2025; SNPS management commentary"
+    }
+  ],
+
+  "share_dynamic": {
+    "summary": "The EDA share dynamic is a two-player equilibrium with a shifting AI battlefront. SNPS and CDNS together hold ~61% of global EDA and have held this position for a decade. Neither is taking dramatic organic share from the other in core tools -- the contracts are 3-5 year, the switching costs are prohibitive (re-training 500+ engineers mid-project is career-ending for a design manager), and both serve the same leading semiconductor fabs and designers. The contest is NOW at two margins: (1) the AI-agent monetization layer -- whether SNPS's broader L4 multi-agent stack or CDNS's deeper verification autonomy wins the consumption pricing race; (2) the multi-physics frontier -- where SNPS+Ansys has a unique offering that CDNS cannot match without a comparable acquisition. The China share is being ceded to local vendors, but this affects both SNPS and CDNS proportionally and is largely priced into both.",
+    "key_dynamics": [
+      {
+        "dynamic": "Hyperscaler custom silicon expanding the EDA pie",
+        "direction": "both-benefit",
+        "evidence": "Hyperscaler custom silicon (Google TPU, AWS Trainium/Graviton, Microsoft Maia, Meta MTIA) created $15-20B in new chip design activity per SemiAnalysis estimate. Each new chip program requires a full EDA tool stack at advanced nodes. This is a market expansion event, not share shift -- the incumbent duopoly captures the new spend.",
+        "source": "SemiAnalysis EDA Market Primer (paywalled, cited by multiple secondary sources)"
+      },
+      {
+        "dynamic": "AI agent consumption pricing -- SNPS vs CDNS",
+        "direction": "contested",
+        "evidence": "SNPS at Computex 2026: 20 customers evaluating 25+ specialized AI agents; hybrid subscription+consumption pricing model announced. CDNS ChipStack at Level-5, NVIDIA-powered, 40x RTL speedup. This is the active competitive frontier. 20 evaluation customers for SNPS's agents as of mid-2026 is EARLY -- not yet monetized at scale.",
+        "source": "Futurum Group June 2026; SNPS Converge 2026 announcements"
+      },
+      {
+        "dynamic": "Multi-physics simulation (SNPS unique advantage)",
+        "direction": "snps-wins",
+        "evidence": "Multiphysics Fusion first wave generally available June 17, 2026. No comparable exists -- CDNS has no multiphysics simulation capability. Target customers: AI chip designers needing thermal/electromagnetic co-simulation for HBM stacks, CoWoS packages, and chiplet interconnects. TSMC CoWoS users (NVIDIA H/B/GB series), AMD chiplet (EPYC/Instinct), Intel Foundry advanced packaging customers are the natural early adopters.",
+        "source": "HPCwire June 2026 Multiphysics Fusion launch; Futurum Group Converge analysis"
+      },
+      {
+        "dynamic": "China EDA share shift to domestic vendors",
+        "direction": "snps-and-cdns-lose",
+        "evidence": "China self-sufficiency in EDA exceeded 10% in 2024, up from near-zero in 2020. Export restrictions (briefly reimposed May 2025, rescinded July 2025) accelerated local adoption. China was ~11.5% of SNPS FY2025 revenue and ~10% in recent quarters, declining. Empyrean's capability gap means full substitution is impossible at leading nodes, but trailing-edge Chinese chip design (80nm-28nm) may increasingly use local tools.",
+        "source": "Yicai Global; TrendForce Aug 2025; SNPS CNBC coverage May 2025; Bullfincher revenue by geography"
+      }
+    ]
+  },
+
+  "revenue_drivers": [
+    "Advanced node complexity: each new process node (3nm, 2nm, 1.6nm) exponentially increases design complexity and required tool compute hours -- expanding the TAM and the spend per design",
+    "Hyperscaler custom silicon: Google, AWS, Microsoft, Meta are each running 5+ concurrent ASIC programs requiring full EDA stacks; this class of customer barely existed as EDA buyers five years ago",
+    "AI agent consumption pricing: transition from per-seat subscription to subscription+consumption as AI agents invoke far more tool licenses than human engineers -- potential step-change in revenue per customer",
+    "Ansys cross-sell: EDA customers who already use SNPS tools are natural buyers of Multiphysics Fusion for 3D IC signoff; cross-sell pipeline exists without needing new customer acquisition",
+    "IP royalty model: hyperscalers moving to royalty-based interface IP licensing; long-tail recurring revenue stream once design cycles complete (~1-2 year cycles per management, so royalties meaningful post-FY27)",
+    "Hardware-assisted verification (Zebu emulator): AI chip complexity drives pre-silicon verification demand; emulators are capital equipment with high recurring software attach rates"
+  ],
+
+  "npat_margin_drivers": [
+    "Revenue mix shift: EDA (43% adj. op. margin) growing faster than IP (24%) near-term boosts blended margin",
+    "Ansys cost synergies: $400M cost synergy target, 50% achieved by end FY26 per management; if delivered, adds ~200bps to blended operating margin by FY27",
+    "SBC headwind: $893M SBC in FY2025 (12.7% of revenue) -- substantial dilution and GAAP-to-non-GAAP gap; management targets reduction as % of revenue",
+    "Interest expense headwind: $14.3B total debt (post-Ansys), ~$296M interest expense in first half FY26 per 10-Q -- depresses GAAP EPS materially vs non-GAAP; normalizes as debt repaid from FCF",
+    "AI agent pricing upside: if consumption model takes hold, incremental revenue falls largely to operating income (low marginal cost for software tool usage)"
+  ],
+
+  "product_differentiation": {
+    "core_EDA_moat": "The IC Compiler II physical design tool and VCS/Zebu verification suite have 15+ years of customer workflow integration. Switching is not merely a software change -- it requires re-qualifying the tool's outputs against foundry design rules, re-training engineering teams, and re-building custom scripts. No mid-project switch has occurred at a Tier-1 IDM or fabless in memory. The switching cost is existential for the project.",
+    "multiphysics_fusion_differentiation": "Chip-to-system simulation integrating EDA timing signoff with Ansys thermal/electromagnetic analysis has no competitor. CDNS can buy PCB tools (Allegro) but not physics simulation at Ansys's scale. The product launched GA June 17, 2026.",
+    "agent_engineer_differentiation": "SNPS claims L4 multi-agent orchestration across 25+ specialized agents spanning verification, implementation, and analog. CDNS's ChipStack is deeper in verification autonomy but narrower in scope. The race is not over -- CDNS is at L5 in its claimed taxonomy, though the taxonomy definitions differ between the two companies.",
+    "ip_differentiation": "SNPS is the leader in wired interface IP (PCIe, HBM, UCIe) -- the plumbing of AI hardware. As chiplet/multi-die architectures proliferate, these interface IP blocks are required in every design. ~55% share in wired interface IP is a strong position in the fastest-growing IP sub-segment."
+  },
+
+  "five_forces": {
+    "supplier_power": "LOW. EDA vendors have minimal meaningful suppliers. Compute infrastructure (cloud) is a cost input; foundry design rule kits are inputs but foundries need EDA vendors as much as vice versa. SNPS negotiates from strength.",
+    "buyer_power": "LOW-MEDIUM. Individual semiconductor customers have limited power -- EDA is a small fraction (~1-3%) of their R&D budget, switching costs are prohibitive, and tools are mission-critical. However, hyperscalers are large enough to negotiate volume discounts and are structurally pushing for alternative pricing (royalty-based) that could cap per-customer spend growth.",
+    "threat_of_new_entrants": "VERY LOW in core EDA. EDA tools require 20+ years of accumulated algorithm IP, customer relationship depth, and process-node certification. The required upfront R&D investment (Empyrean spends 73% of revenue on R&D and is still far behind) is a near-absolute barrier. In AI-enabled layers, the barrier is lower -- startups are attacking point tasks -- but the orchestration layer (what SNPS and CDNS provide) remains defensible.",
+    "threat_of_substitutes": "LOW-MEDIUM. The threat is not substitute tools but AI-driven automation reducing the number of engineers (and hence seats) needed. If agentic AI reduces chip design headcount, it compresses the seat-based TAM. SNPS's response (consumption pricing per agent use) is the correct structural hedge -- AI disrupts the seat model but creates a consumption model. Whether consumption revenue exceeds seat revenue loss is the central uncertainty.",
+    "competitive_rivalry": "MEDIUM-HIGH within the duopoly. SNPS and CDNS compete intensely for incremental wallet share, agentic AI leadership, and new customer segments (hyperscalers). Outside the duopoly, rivalry is muted -- Siemens EDA is not a strategic threat at leading nodes."
+  },
+
+  "moat": {
+    "type": "switching_cost_plus_network_effects",
+    "strength": "WIDE",
+    "argument": "EDA is among the most defensible software moats in technology. The switching cost is not merely financial -- it is temporal (3-5 years to re-qualify a new tool suite), organizational (re-training 500+ engineers), and career-risk (a design failure traced to a new tool is a career event for the project manager). No leading-edge customer has switched primary EDA vendor mid-program in recent memory. The network effect operates through foundry process design kits (PDKs) which are built and certified with specific EDA tools -- TSMC, Samsung, and Intel Foundry all have deep SNPS-integration, creating a circular dependency that reinforces incumbent advantage. The IP business adds a second moat layer: silicon-proven IP blocks carry warranty and indemnification -- customers will not use unproven IP for leading-edge designs. SNPS's 25+ years of certified IP blocks across process nodes cannot be replicated quickly."
+  },
+
+  "sources": [
+    {"name": "Synopsys Q2 FY2026 10-Q", "url": "https://www.sec.gov/Archives/edgar/data/0000883241/000088324126000018/snps-20260430.htm", "tier": "company_filed"},
+    {"name": "Synopsys Ansys Acquisition Completion", "url": "https://news.synopsys.com/2025-07-17-Synopsys-Completes-Acquisition-of-Ansys", "tier": "company_filed"},
+    {"name": "Synopsys FY2026 Q2 Guidance Raise", "url": "https://seekingalpha.com/news/4530353-synopsys-targets-9_61b-revenue-for-2026-while-advancing-joint-ai-solutions-and-accelerating", "tier": "sellside_secondary"},
+    {"name": "Mordor Intelligence EDA Market", "url": "https://www.mordorintelligence.com/industry-reports/electronic-design-automation-eda-tools-market", "tier": "research_firm"},
+    {"name": "Synopsys Multiphysics Fusion GA Launch", "url": "https://www.hpcwire.com/off-the-wire/synopsys-launches-multiphysics-fusion-portfolio-for-ai-and-hpc-chip-design/", "tier": "industry_press"},
+    {"name": "Futurum Group Cadence vs Synopsys Agentic EDA", "url": "https://futurumgroup.com/insights/cadence-and-synopsys-accelerate-agentic-eda-race-at-computex/", "tier": "industry_analyst"},
+    {"name": "Futurum Group SNPS Q2 FY2026 Earnings", "url": "https://futurumgroup.com/insights/synopsys-q2-fy-2026-ai-driven-chip-design-demand-lifts-outlook/", "tier": "industry_analyst"},
+    {"name": "TrendForce Empyrean Memory EDA", "url": "https://www.trendforce.com/news/2025/08/19/news-empyrean-reportedly-unveils-chinas-first-full-process-eda-platform-for-memory-chip-production/", "tier": "industry_press"},
+    {"name": "Yicai Global China EDA stocks", "url": "https://www.yicaiglobal.com/news/chinese-chip-design-software-shares-jump-amid-us-export-controls-on-synopsys-and-cadence", "tier": "industry_press"},
+    {"name": "Empyrean Technology Wikipedia", "url": "https://en.wikipedia.org/wiki/Empyrean_Technology", "tier": "reference"},
+    {"name": "SNS Insider Semiconductor IP Market", "url": "https://www.snsinsider.com/reports/semiconductor-intellectual-property-ip-market-1631", "tier": "research_firm"},
+    {"name": "SemiAnalysis EDA Market Primer", "url": "https://newsletter.semianalysis.com/p/eda-market-primer", "tier": "research_firm"},
+    {"name": "CNBC Synopsys China export restrictions", "url": "https://www.cnbc.com/2025/05/29/synopsys-china-export.html", "tier": "news"},
+    {"name": "Synopsys China export rescission PR", "url": "https://news.synopsys.com/2025-07-02-Synopsys-Issues-Statement-in-Connection-to-the-Lifting-of-Recent-U-S-Export-Restrictions-Related-to-China", "tier": "company_filed"},
+    {"name": "MatrixBCG SNPS competitive landscape", "url": "https://matrixbcg.com/blogs/competitors/synopsys", "tier": "secondary"},
+    {"name": "Coherent Market Insights Simulation Software", "url": "https://www.coherentmarketinsights.com/industry-reports/simulation-software-market", "tier": "research_firm"},
+    {"name": "GrandView Research Semiconductor IP", "url": "https://www.grandviewresearch.com/industry-analysis/semiconductor-ip-market", "tier": "research_firm"}
+  ]
+}

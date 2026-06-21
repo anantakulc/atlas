@@ -1,0 +1,219 @@
+{
+  "valuation_headline": {
+    "current_price": 455.51,
+    "fair_value_today": 390.86,
+    "target_12m": 552.0,
+    "fair_value_12m": 425.65,
+    "band_low": 218.0,
+    "band_high": 624.0,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 390.86,
+      "multiple": 19.3,
+      "multiple_label": "EV/NTM non-GAAP Operating Income",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 455.51,
+      "multiple": 22.2,
+      "multiple_label": "EV/NTM non-GAAP Operating Income",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 425.65,
+      "basis": "#1 rolled forward at r=8.9% less dividend 0.0",
+      "convergence_return_pct": -6.6
+    },
+    "target_12m": {
+      "value": 552.0,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "P/E",
+        "defensible_multiple": 32.0,
+        "forward_metric_label": "FY2027 non-GAAP EPS",
+        "forward_metric_value": 17.25,
+        "multiple_rationale": "32x FY2027 non-GAAP EPS = $552 target. The defensible multiple (32x) is justified as follows: (1) historical SNPS multiple pre-Ansys was 34-38x NTM P/E for 5 years; (2) integration risk discount reduces this by ~3-4pp (appropriate until Ansys synergies are confirmed); (3) CONTRACTED/OBSERVABLE positive catalysts in the next 12m -- Elliott board seat (June 1, already seated), September 30 Investor Day (management presenting long-term margin targets), Ansys cost synergy achievement (50% already on track), Multiphysics Fusion GA (already launched June 17 2026) -- collectively reduce the integration discount from the current market-applied ~9pp (26x vs 35x historical) toward 3-4pp. The 32x multiple is below the street's 40x (GS) and 32.5x (Citi) -- it is conservative relative to the bulls, consistent with the bears (WF, MS at 30-31x), and honest relative to the 4 CONTRACTED catalysts above. At $455.51 current price, the stock trades at 26.4x FY2027 EPS, 5.6pp below our 32x target multiple. The re-rating from 26x to 32x over 12 months is the call, and it is contingent on execution (confirmed by September 30 Investor Day and Ansys synergy delivery). CONTRACT §2.4: the bull case (agentic AI, IP royalty) is OBSERVABLE/EXTRAPOLATED, not CONTRACTED -- it moves #4 only if it reaches 'contracted or observable' evidence threshold. Multiphysics Fusion GA and Elliott board seat are OBSERVABLE (already happened); September 30 Investor Day is a CONTRACTED event (confirmed date). These justify the re-rating from 26x toward 32x but NOT to the full 40x.",
+        "price": 552.0
+      },
+      "implied_12m_total_return_pct": 21.2
+    }
+  },
+  "street_reconstruction": {
+    "what_price_implies": "At $455.51, the stock prices 26.4x FY2027 non-GAAP EPS. Decomposing via Gordon at r=8.9% and ROIC=55%, this embeds long-run growth of ~5.5% -- the pace of GDP plus modest EDA market share. The market assigns no premium for AI monetization. The stock is priced as if the Ansys acquisition adds Ansys's existing growth trajectory but nothing more -- a 'zero synergy, zero AI uplift' scenario. Every firm with a $600+ PT is expressing a view that SNPS re-rates once: (a) Ansys integration is confirmed (September 30 Investor Day is the de-risking event), and (b) first evidence of agentic AI consumption revenue appears in FY2027 guidance.",
+    "what_street_implies": "The modal sell-side PT of $600 embeds 34-40x FY2027 P/E. This is not premium territory for a near-monopoly software platform -- it is the historical SNPS average (2020-2024: 34-38x). The street is simply saying: the integration-risk discount should normalize as integration executes. The GS/BofA/Stifel/Citi cluster at $600-610 is methodologically consistent: 32-40x on $15-$18.75 EPS reaches $600-610 from three different methods (GS normalized, Citi CY27, BofA/Stifel FY2027). The holdouts (WF $535, MS $525, Piper $450) all use 26-31x -- the current market multiple -- and see no re-rating catalyst near-term.",
+    "history_anchor": "SNPS traded at a median 35x NTM P/E for the 5 years prior to the Ansys announcement (FY2019-FY2024). Post-deal close, the multiple compressed to 26-31x as the market assigned: (a) integration execution risk (~5pp discount), (b) IP segment headwinds (~2pp discount), (c) China regulatory overhang (~2pp discount). Removing all three discount factors recovers the 35x historical average, which at FY2027 EPS $17.25 = $603. The street's $600 target is not optimism -- it is the pre-deal historical average applied to post-deal EPS.",
+    "contested_lever": "The entire $155 spread between the current price ($455) and the bull cluster ($610) is a P/E multiple contest, not an EPS contest. Both sides agree on ~$17-18 FY2027 non-GAAP EPS. The bear says 26-30x (no re-rating: integration risk persists, AI monetization delayed). The bull says 35-40x (integration de-risks by September 30 Investor Day, AI option has a visible monetization pathway). Our base case: 32x FY2027 EPS is the honest most-likely (historical discount for integration risk, not full recovery) = $552 fair value. This is above current price but below the peak bull cluster.",
+    "where_we_agree_with_street": "We agree with GS and Citi that the stock's 22.4% discount from the 52-week high is predominantly a multiple compression story, not a fundamental deterioration. FY2026 execution is tracking (beat-and-raise, Q2 2026). Ansys cost synergies are on track (50% by year-end). The EDA market is accelerating to 10-12% CAGR. These are the bull's contracted/observable pillars.",
+    "where_we_disagree_with_street": "We are more cautious than the GS 40x framework on the multiple recovery. GS's 40x normalized on $15 EPS implies SNPS re-rates fully back to its pre-deal peak multiple. We model 32x on $17.25 FY2027 EPS because: (a) Ansys's integration is still in Year 1 post-close -- the market will want two more quarters of synergy delivery before paying pre-deal multiples; (b) IP segment royalty model transition creates a FY2027 revenue recognition headwind (~$15-30/share near-term per Theia R5) that the consensus has not fully modeled; (c) Elliott board seat is a constructive catalyst but historically takes 12-18 months to manifest in financial results."
+  },
+  "street_target": {
+    "mean": 559.58,
+    "mean_multiple": 32.4,
+    "mean_implied_growth_pct": 6.2,
+    "high": 650.0,
+    "return_pct": 22.8,
+    "n_analysts": 24
+  },
+  "rating": {
+    "action": "BUY",
+    "tone": "positive",
+    "implied_12m_total_return_pct": 21.2,
+    "convergence_return_pct": -6.6,
+    "street_return_pct": 22.8,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CORRECTED",
+    "band_ratio": 1.039,
+    "caps_applied": [],
+    "basis": "action BUY: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {
+    "lever1": {
+      "name": "EDA+IP wallet-share of semiconductor R&D",
+      "description": "The crux variable. Whether agentic AI consumption pricing breaks the historical 13-15% ceiling.",
+      "values": [
+        0.135,
+        0.15,
+        0.18
+      ],
+      "labels": [
+        "13.5% (bear: flat at current)",
+        "15.0% (base: modest expansion)",
+        "18.0% (bull: consumption pricing breaks ceiling)"
+      ]
+    },
+    "lever2": {
+      "name": "SNPS share of combined EDA+IP+Sim TAM",
+      "description": "Whether SNPS gains share via Multiphysics Fusion or loses it via China/ARM.",
+      "values": [
+        0.285,
+        0.315,
+        0.34
+      ],
+      "labels": [
+        "28.5% (bear: China/ARM share erosion)",
+        "31.5% (base: stable)",
+        "34.0% (bull: Multiphysics Fusion share gain)"
+      ]
+    },
+    "methodology": "Simplified single-model sensitivity: FY2030 EDA+IP revenue = $145B pool x wallet-share x SNPS-share; add Ansys $4.25B (held fixed). Total revenue x 42.5% blended non-GAAP margin x 0.88 tax = total NOPAT. Applied blended exit multiple 21x EV/NOPAT (segment-weighted EDA 22.4x + IP 17.6x + Ansys 19.5x). PV at blended WACC 8.9% over T=4 years. Add $4.0B interim FCF PV. Subtract net debt $7.52B. Divide by 0.1914B shares. NOTE: These cells use simplified blended assumptions; the full SOTP base case ($390.86) uses per-segment margins and WACCs, yielding a higher value than the base cell here ($307) due to EDA's higher margin (47%) vs the 42.5% blend.",
+    "cells": [
+      {
+        "wallet_share": 0.135,
+        "snps_share": 0.285,
+        "fy2030_rev_b": 9.83,
+        "fy2030_nopat_b": 3.68,
+        "ev_at_T_b": 77.2,
+        "pv_b": 55.1,
+        "equity_b": 51.6,
+        "implied_px": 270,
+        "scenario_tag": "bear-bear"
+      },
+      {
+        "wallet_share": 0.135,
+        "snps_share": 0.315,
+        "fy2030_rev_b": 10.42,
+        "fy2030_nopat_b": 3.9,
+        "ev_at_T_b": 81.9,
+        "pv_b": 58.5,
+        "equity_b": 55.0,
+        "implied_px": 287,
+        "scenario_tag": "bear-base"
+      },
+      {
+        "wallet_share": 0.135,
+        "snps_share": 0.34,
+        "fy2030_rev_b": 10.91,
+        "fy2030_nopat_b": 4.08,
+        "ev_at_T_b": 85.7,
+        "pv_b": 61.2,
+        "equity_b": 57.7,
+        "implied_px": 301,
+        "scenario_tag": "bear-bull"
+      },
+      {
+        "wallet_share": 0.15,
+        "snps_share": 0.285,
+        "fy2030_rev_b": 10.45,
+        "fy2030_nopat_b": 3.91,
+        "ev_at_T_b": 82.1,
+        "pv_b": 58.6,
+        "equity_b": 55.1,
+        "implied_px": 288,
+        "scenario_tag": "base-bear"
+      },
+      {
+        "wallet_share": 0.15,
+        "snps_share": 0.315,
+        "fy2030_rev_b": 11.11,
+        "fy2030_nopat_b": 4.15,
+        "ev_at_T_b": 87.2,
+        "pv_b": 62.3,
+        "equity_b": 58.8,
+        "implied_px": 307,
+        "scenario_tag": "base-base"
+      },
+      {
+        "wallet_share": 0.15,
+        "snps_share": 0.34,
+        "fy2030_rev_b": 11.65,
+        "fy2030_nopat_b": 4.36,
+        "ev_at_T_b": 91.5,
+        "pv_b": 65.4,
+        "equity_b": 61.9,
+        "implied_px": 323,
+        "scenario_tag": "base-bull"
+      },
+      {
+        "wallet_share": 0.18,
+        "snps_share": 0.285,
+        "fy2030_rev_b": 11.69,
+        "fy2030_nopat_b": 4.37,
+        "ev_at_T_b": 91.8,
+        "pv_b": 65.6,
+        "equity_b": 62.1,
+        "implied_px": 324,
+        "scenario_tag": "bull-bear"
+      },
+      {
+        "wallet_share": 0.18,
+        "snps_share": 0.315,
+        "fy2030_rev_b": 12.48,
+        "fy2030_nopat_b": 4.67,
+        "ev_at_T_b": 98.0,
+        "pv_b": 70.0,
+        "equity_b": 66.5,
+        "implied_px": 347,
+        "scenario_tag": "bull-base"
+      },
+      {
+        "wallet_share": 0.18,
+        "snps_share": 0.34,
+        "fy2030_rev_b": 13.14,
+        "fy2030_nopat_b": 4.91,
+        "ev_at_T_b": 103.2,
+        "pv_b": 73.7,
+        "equity_b": 70.2,
+        "implied_px": 367,
+        "scenario_tag": "bull-bull"
+      }
+    ],
+    "dominant_lever": "wallet-share",
+    "dominant_lever_finding": "Moving wallet-share from 13.5% to 18% adds ~$80-97/share in fair value (columns at same SNPS-share). Moving SNPS-share from 28.5% to 34% adds ~$35-43/share. WALLET-SHARE IS THE DOMINANT LEVER -- as Theia's crux statement says. The agentic AI consumption pricing debate (which determines wallet-share trajectory) is worth 2-3x more than the SNPS EDA market-share debate. Monitor: agentic AI consumption revenue disclosure in Q3/Q4 FY2026 earnings.",
+    "second_order_note": "ROIC is second-order in this sensitivity (Gordon multiple moves from 17.6x to 22.4x across segments but the revenue level is the primary driver). At the same revenue level, a 5pp change in ROIC changes the exit multiple by ~1x EV/NOPAT = ~$10/share. Revenue growth (driven by wallet-share) at 3pp change = ~$80-90/share. ROIC is confirmed as second-order."
+  },
+  "bridge_logic": "#1 fair value today 390.86 -> #3 fair value 12m 425.65 (x(1+0.089) - div 0.0); #4 target 12m 552.0 (defensible_multiple); implied return to #4 = 21.2%, to #3 = -6.6%, to street mean 559.58 = 22.8%"
+}

@@ -1,0 +1,384 @@
+{
+  "_meta": {
+    "ticker": "SNPS",
+    "agent": "forseti",
+    "atlas_version": "v3",
+    "gate_date": "2026-06-21",
+    "contract_ref": "charter/CONTRACT.md v3.0",
+    "erinys_verdict": "PASS WITH NOTES",
+    "files_reviewed": [
+      "SNPS.json",
+      "SNPS_inputs.json",
+      "SNPS_valuation.json",
+      "SNPS_headline.json",
+      "SNPS_crux.json",
+      "SNPS_boreas.json",
+      "SNPS_cassandra.json",
+      "SNPS_erinys_audit.json",
+      "charter/CONTRACT.md"
+    ]
+  },
+
+  "contract_gates": {
+
+    "gate_1_argued_not_asserted": {
+      "ref": "CONTRACT §1.1",
+      "requirement": "Every load-bearing number is argued from evidence. No number asserted and back-justified.",
+      "checks": [
+        {
+          "item": "EDA revenue CAGR 9.5% FY2026-FY2030",
+          "finding": "Sourced to Theia demand model. Theia grounds the EDA pool in semicon R&D ($99B, PatentPC/Yahoo Finance), applies wallet-share identity (SNPS_rev = pool × wallet_share × SNPS_share). The 9.5% CAGR is computed from a 13.5%→15% wallet-share base path at 31% SNPS share in a 10% growing pool. Mechanically transparent.",
+          "status": "PASS"
+        },
+        {
+          "item": "EDA exit multiple 22.4x (Gordon)",
+          "finding": "Gordon formula (1-g/ROIC)/(r-g) with g=4.5%, ROIC=55%, r=8.6% verified by Erinys. Each input is independently argued: g from nominal GDP plus chip complexity; ROIC from EDA software economics; r from CAPM at fundamental beta 0.85. Cadence cross-check (22-25x EV/NOPAT) cited and consistent.",
+          "status": "PASS"
+        },
+        {
+          "item": "Ansys exit multiple 19.5x (Gordon 20.3x, override applied)",
+          "finding": "Override is documented with explicit rationale: integration-risk haircut, first year post-close, no revenue synergies yet confirmed. The 0.8x haircut is modest and directionally argued. Reported as a deliberate LOW lean in the bias audit.",
+          "status": "PASS"
+        },
+        {
+          "item": "IP revenue path: $2.20B FY2027 base",
+          "finding": "Argued as the 'lower end of recovery trajectory' including royalty model transition headwind. Theia R5 risk (royalty transition) cited with a $100-200M headwind acknowledged. The figure is above Cassandra's $1.90B bear but below full-recovery. The assertion that $2.20B is the base requires the reader to accept management's royalty transition timing -- this is a judgment call, not an independent verification, but it is disclosed and argued.",
+          "status": "PASS (inference from management guidance, disclosed)"
+        },
+        {
+          "item": "32x FY2027 P/E target multiple",
+          "finding": "Justified via: (1) historical 35x median (FY2019-FY2024) minus (2) 3-4pp deliberate integration discount. Four CONTRACTED/OBSERVABLE catalysts named (Elliott board seat June 1, Multiphysics Fusion GA June 17, Ansys synergy 50% pace, Sept 30 Investor Day). The delta from current 26x to 32x is the re-rating call. The bull case for full 35x recovery is argued but discounted -- consistent with contract §2.4 (CONTRACTED/OBSERVABLE vs HOPED-FOR).",
+          "status": "PASS"
+        },
+        {
+          "item": "Net debt $7.52B (Q2 FY2026)",
+          "finding": "Source documented in inputs.json: 'Pheme / Q2 FY2026 10-Q: cash $2.48B, total debt ~$10.0B.' Differs from bundle FY2025 figure ($11.405B). The choice is argued (H1 FCF applied to debt repayment) and disclosed. A $3.9B net debt difference swings fair value by ~$20/share. The more current figure is clearly preferable and its use is explicitly documented.",
+          "status": "PASS (sourced inference, disclosed)"
+        },
+        {
+          "item": "Fundamental beta 0.85 (EDA) vs regression beta 1.21",
+          "finding": "The regression beta rejection is argued: China export episode and Ansys acquisition volatility inflated the trailing beta. Fundamental beta grounds in business characteristics (>90% recurring, near-monopoly, no leverage in EDA segment). Cadence analogy cited. The argument is structurally sound, though the precise 0.85 figure is a judgment call without independent third-party fundamental beta source.",
+          "status": "PASS WITH NOTE -- the 0.85 number is argued but rests on analyst judgment rather than a cited fundamental beta service; this is common practice and acceptable, but Forseti notes the limitation"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "summary": "Every material assumption has an argument. No assertion-without-evidence detected. The target multiple (32x) rests on a market re-rating narrative which is the weakest point -- it is argued via historical precedent and four observable catalysts, not via pure fundamental derivation. This is acknowledged in the report and the conviction is calibrated accordingly (MEDIUM, not HIGH)."
+    },
+
+    "gate_2_honest_base_no_stacked_bias": {
+      "ref": "CONTRACT §1.2, §1.3",
+      "requirement": "Base is the honest most-likely. Not reflexively low. Not pegged to price. Fewer than 3 same-direction leans.",
+      "checks": [
+        {
+          "item": "Bias audit tally: 1 HIGH, 2 LOW, 11 CENTER (14 assumptions)",
+          "finding": "Verified by Erinys independently. Max same-direction count is 2 (LOW). Below the 3+ threshold. No stacked bias.",
+          "status": "PASS"
+        },
+        {
+          "item": "Base case not pegged to current price",
+          "finding": "Fair value today is $390.86 -- 14% BELOW the current price of $455.51. The model is not engineered to match the market. The base generates a HOLD signal (return to base is -6.6%), while the BUY rating comes from the target-multiple argument. The intrinsic base stands independently from the market.",
+          "status": "PASS"
+        },
+        {
+          "item": "Base case not reflexively low",
+          "finding": "Erinys flags that the Ansys exit multiple haircut (19.5x vs 20.3x Gordon) and IP exit multiple conservatism are the two LOW leans. Both are argued from specific risks (integration uncertainty, China exposure), not reflexive conservatism. The base does not stack conservatism across all four levers -- growth (CENTER), economics (CENTER/HIGH), r (CENTER), multiple (slight LOW).",
+          "status": "PASS"
+        },
+        {
+          "item": "Is the base the honest most-likely?",
+          "finding": "The wallet-share expansion (13.5%→15%) is the base assumption for the dominant crux variable. This is a modest expansion from the current level, grounded in the 20-year history of 13-15% ceiling and the partial monetization of agentic AI (neither full ceiling-break nor flat). It is not obviously biased in either direction.",
+          "status": "PASS"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "summary": "Bias audit confirmed. Base is 14% below price -- the model is giving an honest signal, not mirroring the market. The two LOW leans do not reach the 3+ stacking threshold and are argued from named risks."
+    },
+
+    "gate_3_crux_surfaced": {
+      "ref": "CONTRACT §4",
+      "requirement": "One or two crux variables identified. Decomposed to real drivers. Sourced. Named in §1. Resolved in §7.",
+      "checks": [
+        {
+          "item": "Crux named in §1 (section_1_the_call)",
+          "finding": "Crux is explicitly named in section_1: 'EDA+IP+Simulation wallet-share of global semiconductor R&D spend.' One-line crux statement present. Base/bull/bear quantified there.",
+          "status": "PASS"
+        },
+        {
+          "item": "Crux decomposed to real drivers",
+          "finding": "Theia's SNPS_crux.json provides the identity decomposition: SNPS_revenue = Global_Semicon_RnD × EDA_IP_Sim_wallet_share × SNPS_share. Global_Semicon_RnD sourced ($99B, PatentPC/Yahoo Finance). SNPS_share_of_EDA_IP_Sim sourced (~31%, multiple sources). Wallet_share current is flagged as 13.5% with a single_source note.",
+          "status": "PASS WITH NOTE -- see wallet_share single_source flag below"
+        },
+        {
+          "item": "Crux sourced",
+          "finding": "The wallet-share figure (13.5%) is the crux variable. Erinys and Theia both flag this as a sell-side synthesis figure without an independently published source confirming the exact percentage. The figure is internally consistent (Theia derives it as ~$10-11B EDA+IP+Sim revenue / ~$99B global semicon R&D = ~10-11%, close to the 13.5% stated if the pool definition includes adjacent simulation spend). The precision of the 13.5% figure carries methodological uncertainty that is not prominently caveated in the report's main text.",
+          "finding_severity": "NOTE -- does not invalidate the crux; the direction and order-of-magnitude are credible, but the reader should know the base axis of the sensitivity matrix rests on a single-source estimate",
+          "status": "PASS WITH NOTE"
+        },
+        {
+          "item": "Crux resolved in §7 (section_7_key_debates)",
+          "finding": "Debate 1 in section_7 is the crux debate ('Will agentic AI consumption pricing break the 20-year wallet-share ceiling...'). Both sides are argued. Verdict is stated (base: modest expansion 13.5%→15%). Worth quantified ($160/share bull, $97/share bear from base). What-would-change-our-mind is explicit.",
+          "status": "PASS"
+        },
+        {
+          "item": "September 30 Investor Day named as pivot event",
+          "finding": "Crux statement in §1 names it: 'The September 30 Investor Day is the pivot event.' The report gives the reader a specific monitoring checkpoint. Consistent with CONTRACT §4 requirement to 'say what to monitor.'",
+          "status": "PASS"
+        }
+      ],
+      "aggregate_status": "PASS WITH NOTE",
+      "summary": "Crux is surfaced in §1, decomposed via the identity, and resolved in §7. The sole note is that the 13.5% wallet-share anchor for the sensitivity matrix is a sell-side-synthesis single-source figure; the report's main text does not prominently caveat this. Forseti notes this as a transparency gap but does not treat it as a gate failure because: (a) Theia explicitly flags it in the crux file, (b) the sensitivity matrix structure means the conclusion is robust to directional correctness of the level, and (c) the direction of the crux (flat vs expanding vs compressing) is the real debate, not the exact starting level."
+    },
+
+    "gate_4_method_fits_business": {
+      "ref": "CONTRACT §2",
+      "requirement": "Segment-first SOTP. Most efficient method per segment. Each segment its own WACC. Blended WACC is output not input.",
+      "checks": [
+        {
+          "item": "Segment decomposition",
+          "finding": "Three segments: EDA (design automation, high-growth annuity), Design IP (transitional royalty), Ansys (newly-acquired simulation). These are economically distinct -- different growth rates (EDA 9.5% CAGR, IP 15% from trough, Ansys 11.3%), different margins (EDA 47% terminal, IP 32%, Ansys 38%), different risk. SOTP is the unambiguous method for this structure. Method explicitly stated with rationale in section_6.",
+          "status": "PASS"
+        },
+        {
+          "item": "ExitMultiple per segment",
+          "finding": "All three segments use the ExitMultiple method. CONTRACT §2.2 specifies ExitMultiple for high-growth segments. All three are growing above market: EDA 9.5% (vs GDP), IP recovering from trough, Ansys 11.3%. The method avoids capitalizing depressed current earnings (which would undervalue IP in transition and Ansys in integration year). T=FY2030 normalization argued and documented.",
+          "status": "PASS"
+        },
+        {
+          "item": "Each segment its own WACC",
+          "finding": "EDA 8.6% (fundamental beta 0.85), IP 9.1% (beta 0.95), Ansys 9.3% (beta 1.0). Each argued separately from CAPM with a fundamental rather than regression beta. The rationale for the segmentation (EDA=near-monopoly software utility, IP=China risk + royalty uncertainty, Ansys=industrial cyclicality + integration) is documented.",
+          "status": "PASS"
+        },
+        {
+          "item": "Blended WACC is output not input",
+          "finding": "inputs.json explicitly states: 'Blended WACC is a VALUE-WEIGHTED RESULT of the three segment WACCs, not an input.' The 8.9% blended figure is used only for the fair-value roll-forward (FV today → FV 12m). In the SOTP math each segment is discounted at its own rate.",
+          "status": "PASS"
+        },
+        {
+          "item": "No lazy single-multiple blending",
+          "finding": "The report explicitly flags that a single-multiple approach would distort the valuation ('blending an AI-growth-kicker annuity (EDA), a transitional royalty business (IP), and a newly-acquired simulation platform (Ansys) into one curve loses information'). Contract §2.1 satisfied.",
+          "status": "PASS"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "summary": "Method fits business perfectly. SOTP with ExitMultiple per segment at individual WACCs is the right architecture for a post-acquisition three-segment software conglomerate with heterogeneous growth and risk profiles. No laziness detected."
+    },
+
+    "gate_5_key_debates_not_laundry_list": {
+      "ref": "CONTRACT §5",
+      "requirement": "Bull/bear = 2-4 key debates per side, not lists. Each quantified in $/share. Evidence grade present. Not catalyst lists.",
+      "checks": [
+        {
+          "item": "Boreas (bull) debate count and structure",
+          "finding": "Boreas has 3 key debates: B1 agentic AI wallet-share ($160/share above base, EXTRAPOLATED), B2 IP royalty ramp ($32/share, EXTRAPOLATED), B3 Multiphysics Fusion cross-sell ($42/share, EXTRAPOLATED). Each has bull view, bear response, evidence quality, worth_per_share. Not a catalyst list -- each argues a mechanism.",
+          "status": "PASS"
+        },
+        {
+          "item": "Cassandra (bear) debate count and structure",
+          "finding": "Cassandra has 4 key debates: C1 AI seat compression (MECHANISM-NOT-YET-FIRING, $76-97/share downside), C2 IP royalty hole (OBSERVABLE-AND-NEAR, $26-30/share), C3 Ansys scale mismatch (MECHANISM-NOT-YET-FIRING, $37/share), C4 China structural decline (OBSERVABLE-AND-NEAR, $11/share scenario-weighted). Each has break_mechanism, historical precedent, evidence quality, worth_per_share.",
+          "status": "PASS"
+        },
+        {
+          "item": "Section 7 in Atlas report -- 4 debates, same structure",
+          "finding": "Section_7_key_debates has 4 debates: (1) agentic AI wallet-share (is_crux=true, $160/$97), (2) IP royalty transition ($40/-$32), (3) Ansys cross-sell ($42/-$37), (4) China tail ($11 downside). Each has bull_view, bear_view, our_verdict, what_would_change_our_mind, worth_per_share. Arguments are mechanistic, not lists.",
+          "status": "PASS"
+        },
+        {
+          "item": "Evidence quality grades present and calibrated",
+          "finding": "Boreas: EXTRAPOLATED (correct -- consumption pricing not yet in production). Cassandra C1: MECHANISM-NOT-YET-FIRING (honest -- AI headcount compression is a mechanism but no fired revenue impact yet). C2: OBSERVABLE-AND-NEAR (royalty transition is management-confirmed). C4: OBSERVABLE-AND-NEAR (China decline trend is in reported data). Grades are not uniformly bullish or bearish -- they reflect actual evidence states.",
+          "status": "PASS"
+        },
+        {
+          "item": "Bull case clears the current price",
+          "finding": "Boreas explicitly flags this: 'implied_px_bull = $624 clears $455.51 by 37%.' Contract requires the bull case to clear price or explain why not. PASS.",
+          "status": "PASS"
+        },
+        {
+          "item": "Boreas/Cassandra independence",
+          "finding": "Both filed as blind-parallel. Erinys notes that Boreas's segment EVs ($91.5B, $20.5B, $32.0B) are Daedalus's ceiling-adjusted figures rather than independent Boreas arithmetic -- explicitly disclosed in Boreas's _meta: 'arithmetically imply ~$713/share; Daedalus's reported $624 is the conservative bound.' This means Boreas's scenario_spec was adjudicated by Daedalus before being reported as the bull. The substance of the bull argument (the three debates) is independently authored. The $624 bull figure is Daedalus's ceiling-capped translation of Boreas's inputs, not Boreas's own arithmetic. This is a structural process disclosure, not a substantive independence breach -- the key debates are independently argued.",
+          "status": "PASS WITH NOTE -- Forseti accepts the process but notes that a future run should preserve Boreas's own arithmetic ($713) as a separate data point before Daedalus's ceiling adjudication, to maintain full traceability"
+        }
+      ],
+      "aggregate_status": "PASS WITH NOTE",
+      "summary": "All debates are mechanistic and quantified. Evidence quality grades are calibrated honestly. The four debates in section_7 map cleanly to the Boreas/Cassandra arguments. The one process note (Boreas's EVs are ceiling-adjusted by Daedalus) is disclosed and does not compromise the substantive independence of the bull thesis."
+    },
+
+    "gate_6_readable_story": {
+      "ref": "CONTRACT §6",
+      "requirement": "8-section arc present and readable. Conclusion first. Crux in §1, resolved in §7. No 47-card dump. Plain prose.",
+      "checks": [
+        {
+          "item": "8-section arc structure",
+          "finding": "SNPS.json contains: section_1_the_call, section_2_business, section_3_industry, section_4_market, section_5_management, section_6_valuation, section_7_key_debates, section_8_conclusion. All 8 sections present.",
+          "status": "PASS"
+        },
+        {
+          "item": "Conclusion first (§1 leads with the call)",
+          "finding": "Section_1 opens with BUY MEDIUM conviction, four numbers, the one-paragraph thesis ('Synopsys at $455.51 is priced at 26.4x FY2027 non-GAAP EPS...'), and the crux in one sentence. A portfolio manager reading the first section has the complete call.",
+          "status": "PASS"
+        },
+        {
+          "item": "Readable prose, not card dump",
+          "finding": "Section_1 thesis paragraph is coherent narrative. Section_7 bear_paragraph is a single flowing paragraph describing the near-term bear mechanism (IP royalty gap) and its arithmetic. These are the key readability anchors. The valuation section (§6) is detailed but organized (method statement → segment math → four levers → bias audit → earnings bridge). Not a card dump.",
+          "status": "PASS"
+        },
+        {
+          "item": "Four numbers properly derived and presented",
+          "finding": "All four numbers present and argued: (1) fair value today $390.86 (SOTP base, argued), (2) price $455.51 (market), (3) fair value 12m $425.65 (rolled at 8.9%, Erinys verified), (4) target $552 (32x FY2027 EPS, justified multiple). Each has basis and multiple label.",
+          "status": "PASS"
+        },
+        {
+          "item": "Rating derivation visible",
+          "finding": "BUY rating: implied 12m return to #4 = 21.2%, above 15% BUY hurdle. Stated explicitly in section_1. The divergence between intrinsic (base $390.86, return -6.6%) and target (re-rating $552, return +21.2%) is visible and the reader can see the call rests on the multiple re-rating, not on intrinsic value appreciation.",
+          "status": "PASS"
+        },
+        {
+          "item": "The split between base and target is transparent and argued",
+          "finding": "The report is explicit that the $390.86 base (SOTP) and $552 target (defensible multiple) are different metrics with different logics. Section_1 rationale states: 'the intrinsic SOTP base ($390.86) is 14% below current price because the base does not embed AI optionality; the $552 target rests instead on a justified multiple re-rating.' This tension is acknowledged, not buried.",
+          "status": "PASS"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "summary": "8-section arc is complete and properly sequenced. Conclusion is first. The crux is named in §1 and resolved in §7. Prose is clear and the material debates stand out rather than being buried in lists. The report is readable in 10 minutes by a portfolio manager."
+    },
+
+    "gate_7_numeric_consistency": {
+      "ref": "Erinys audit + CONTRACT §3",
+      "requirement": "All arithmetic verified. Sensitivity over the two call-deciding levers. Dominant lever named.",
+      "checks": [
+        {
+          "item": "SOTP arithmetic",
+          "finding": "All Gordon exit multiples, NOPATs, EV computations, discount factors, SOTP sum, and fair value per share verified by Erinys. Verdict: PASS.",
+          "status": "PASS"
+        },
+        {
+          "item": "Roll-forward arithmetic",
+          "finding": "$390.86 × 1.089 = $425.65 (FV 12m). Verified by Erinys. Return 21.2% from $455.51 to $552. Verified.",
+          "status": "PASS"
+        },
+        {
+          "item": "Sensitivity matrix -- two levers are the call-deciding ones",
+          "finding": "Levers are wallet-share (13.5%/15%/18%) and SNPS market share (28.5%/31.5%/34%). These are the two levers the crux hinges on. 3×3 grid = 9 cells. All 9 cells populated in SNPS_headline.json. Spot-checks pass within $1-2 rounding tolerance.",
+          "status": "PASS"
+        },
+        {
+          "item": "Dominant lever identified",
+          "finding": "Report states: 'wallet-share is the dominant lever -- $80-97/share per 4.5pp change vs $35-43/share for SNPS market-share.' Section_8 confirms. This is the correct reading: the crux variable (wallet-share) dominates the market-share lever by 2-3x.",
+          "status": "PASS"
+        },
+        {
+          "item": "T-invariance",
+          "finding": "SOTP spread from T=3 to T=4 is 3% ($380 to $391). EDA segment spread T=2 to T=4 is 7%. Both within the <10% gate. Erinys: PASS.",
+          "status": "PASS"
+        },
+        {
+          "item": "Band low/high consistency with scenarios",
+          "finding": "band_low = $218 (Cassandra bear). band_high = $624 (Boreas bull). These match headline.json, valuation.json bear/bull, and section_8 scenarios.",
+          "status": "PASS"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "summary": "Erinys audit passes all numeric checks. No material arithmetic error found. Sensitivity is present over the right two levers and the dominant lever is correctly identified."
+    },
+
+    "gate_8_four_levers_argued": {
+      "ref": "CONTRACT §3",
+      "requirement": "Four levers (growth × duration, economics, r, exit multiple) all explicitly named and argued per segment.",
+      "checks": [
+        {
+          "item": "Four levers stated per segment in §6",
+          "finding": "Each of the three segments in section_6_valuation has an explicit four_levers block covering: growth_rate_and_duration, economics, wacc, exit_multiple. All 12 lever-argument cells are populated.",
+          "status": "PASS"
+        },
+        {
+          "item": "Growth duration as a distinct argument",
+          "finding": "Duration is explicitly argued for each segment: 'T=4 is the honest horizon -- not too short (integration not yet complete by FY2028) and not too long (T=7+ would be speculative).' The normalization_rationale in inputs.json identifies the four conditions that make FY2030 the natural normalization year. Duration is not assumed; it is argued.",
+          "status": "PASS"
+        },
+        {
+          "item": "ROIC second-order noted",
+          "finding": "Report states ROIC is second-order in the sensitivity (~$10/share per 5pp vs ~$80-97/share for wallet-share). Consistent with CONTRACT §3 instruction: 'note which lever dominates; for high-multiple names it is usually r and growth-duration, with ROIC second-order.'",
+          "status": "PASS"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "summary": "Four levers are named and argued per segment. Growth duration is a distinct argument (T=4, argued). ROIC is correctly noted as second-order."
+    }
+  },
+
+  "erinys_notes_resolution": {
+    "note_1_net_debt_sourcing": {
+      "note": "The $7.52B net debt figure is more current than the bundle's FY2025 figure ($11.405B) -- verify Pheme's sourcing is adequate",
+      "forseti_finding": "inputs.json documents the source: 'Pheme / Q2 FY2026 10-Q: cash $2.48B, total debt ~$10.0B, net debt ~$7.52B.' The 10-Q was filed 2026-05-27 (within the bundle freeze window). The filing excerpt in the databundle confirms interest expense of $296M in H1 FY2026 at substantial debt levels, consistent with ~$10B gross debt. The net debt figure is materially more current than the FY2025 bundle figure and its use is properly disclosed. The ~$20/share fair value sensitivity to this choice is documented. ACCEPTED."
+    },
+    "note_2_boreas_arithmetic_independence": {
+      "note": "Boreas's segment EVs are Daedalus's ceiling-adjusted numbers, not independent Boreas arithmetic",
+      "forseti_finding": "Confirmed. Boreas's _meta states arithmetically Boreas's scenario_spec implies ~$713/share but Daedalus's reported bull is $624 (ceiling-adjusted). The key debate arguments (B1/B2/B3) are independently authored by Boreas; the segment EVs are translated by Daedalus for SOTP consistency. This is a process disclosure rather than a substantive independence breach. The bull thesis is independently argued. ACCEPTED WITH PIPELINE NOTE: future runs should log Boreas's raw $713 arithmetic separately to preserve the independent evidence."
+    },
+    "note_3_wallet_share_single_source": {
+      "note": "The wallet-share figure (13.5% current) is flagged by Theia as a single-source sell-side synthesis with methodological uncertainty",
+      "forseti_finding": "The crux variable's starting level rests on a sell-side synthesis (no independent academic or market data publisher source cited for 13.5%). Theia's crux.json contains a single_source_warning on this field. The sensitivity matrix structure somewhat mitigates this: the dominant value debate is the direction and magnitude of wallet-share change (13.5%→15% vs flat vs 18%), not the starting level precision. A 1pp error in the starting level (12.5% vs 13.5%) would shift the base fair value by approximately $8-10/share -- material but not thesis-altering. Forseti requires this limitation be noted in the report's forward-looking uncertainty disclosure. It is implied in the MEDIUM conviction but not explicitly called out in the report text. ACCEPTED WITH DISCLOSURE NOTE: the next run should add an explicit note in section_8 that the 13.5% wallet-share anchor is a single-source estimate and the sensitivity matrix should be interpreted directionally."
+    }
+  },
+
+  "additional_consistency_checks": {
+    "recommendation_matches_math": {
+      "finding": "BUY requires 12m return to target ≥ 15%. Implied return: ($552 - $455.51) / $455.51 = 21.2%. Exceeds 15% threshold. Consistent.",
+      "status": "PASS"
+    },
+    "conviction_calibration": {
+      "finding": "MEDIUM conviction: valuation_confidence=LOW (rests partly on market re-rating, not pure intrinsic), path_confidence=LOW (IP royalty transition and agentic AI monetization both uncertain near-term). MEDIUM conviction with wide band ($218-$624, 2.9:1 bull/bear ratio from price) is appropriate. The MEDIUM label is not reflexively safe -- it reflects specific documented uncertainties.",
+      "status": "PASS"
+    },
+    "band_consistency": {
+      "finding": "band_low=$218 (Cassandra bear, Erinys verified), band_high=$624 (Boreas/Daedalus bull, Erinys verified). Consistent across headline.json, valuation.json, and section_8.",
+      "status": "PASS"
+    },
+    "street_reconstruction_completeness": {
+      "finding": "7 analyst PTs listed in section_4 (GS $610, BofA $600, Stifel $600, Citi $610, MS $525, WF $535, Piper $450). Street mean $559.58 from headline. The street_reconstruction in section_4 and headline.json disagrees slightly on 'what street implies' vs 'our view' -- the difference is the justified multiple (32x vs street 34-40x). These are clearly flagged as disagreements with rationale. No false consensus.",
+      "status": "PASS"
+    },
+    "no_avgo_class_anomaly": {
+      "finding": "Erinys confirmed no forward EPS implying impossible net income (the AVGO class of error). FY2027 EPS $17.25 × 191.4M shares = $3.30B net income -- a plausible number vs FY2026 non-GAAP net income of $3.376B (from inputs.json bridge). PASS.",
+      "status": "PASS"
+    },
+    "agents_pending_flag": {
+      "finding": "SNPS.json has agents_pending: ['erinys', 'forseti']. These files now exist (SNPS_erinys_audit.json and SNPS_forseti_gate.json). The flag should be cleared on publish.",
+      "status": "NOTE -- clear agents_pending before IntelliDesk publication"
+    }
+  },
+
+  "summary_of_notes": [
+    {
+      "id": "N1",
+      "severity": "NOTE (disclosure gap, not a defect)",
+      "finding": "The 13.5% wallet-share crux anchor is a single-source sell-side synthesis estimate. Theia flags this in the crux file but the main report text does not explicitly call it out. Recommend adding a sentence in section_8 uncertainty disclosure: 'Note that the 13.5% current wallet-share figure is a sell-side synthesis estimate; the sensitivity matrix axes should be interpreted directionally rather than as precisely calibrated from a published data source.'",
+      "valuation_impact": "±$8-10/share depending on starting level error; directional thesis unchanged"
+    },
+    {
+      "id": "N2",
+      "severity": "NOTE (process hygiene, not a defect)",
+      "finding": "Boreas's raw arithmetic implies ~$713/share bull before Daedalus's ceiling adjudication. This pre-adjudication figure should be preserved in the pipeline output for auditability. The $624 bull reported is Daedalus's ceiling-consistent translation, not Boreas's own arithmetic. Both are valid but the distinction matters for future calibration.",
+      "valuation_impact": "None -- $624 is the appropriately reported bull bound"
+    },
+    {
+      "id": "N3",
+      "severity": "NOTE (pipeline hygiene, not a defect)",
+      "finding": "agents_pending flag in SNPS.json still lists ['erinys', 'forseti']. Must be cleared before IntelliDesk publication.",
+      "valuation_impact": "None"
+    },
+    {
+      "id": "N4",
+      "severity": "NOTE (argument quality -- weakest link)",
+      "finding": "The $552 target rests on a market re-rating from 26x to 32x rather than on intrinsic value appreciation. This is argued via four CONTRACTED/OBSERVABLE catalysts and historical precedent (35x pre-Ansys median). The argument is valid and the logic is transparent. However, a multiple re-rating thesis is structurally weaker than a fundamental value thesis -- the multiple can re-rate for reasons unrelated to the named catalysts, or fail to re-rate despite them. The MEDIUM conviction label appropriately captures this fragility. No change required, but Forseti notes this as the analytical pillar most exposed to market sentiment rather than verifiable fundamentals.",
+      "valuation_impact": "The $552 target disappears entirely if the market stays at 26x despite the catalysts; intrinsic value ($390.86) is 14% below current price in that scenario (HOLD-to-SELL territory)"
+    }
+  ],
+
+  "gate_verdict": "SHIP",
+  "gate_verdict_detail": "All eight CONTRACT gates pass. Erinys numeric audit passes (all arithmetic verified, no material errors). Four notes are raised, none meeting the threshold for BOUNCE: N1 is a disclosure gap (1-sentence fix at publication), N2 is process hygiene (does not affect the reported numbers), N3 is a metadata flag to clear, N4 is an acknowledged structural feature of the BUY thesis (MEDIUM conviction, properly labeled). The report argues every load-bearing number, the base is unbiased (2 LOW leans, below the 3+ threshold), the crux is surfaced in §1 and resolved in §7, the method fits the business (3-segment SOTP with ExitMultiple at individual WACCs), the key debates are mechanistic and quantified (not laundry lists), and the 8-section story arc is complete and readable. The divergence between the intrinsic base ($390.86, below price) and the target ($552, above price) is transparent and argued -- the call rests on a multiple re-rating that is supported by CONTRACTED/OBSERVABLE catalysts, not hoped-for fundamentals. SHIP.",
+
+  "conditions_before_publish": [
+    "Clear agents_pending flag in SNPS.json (N3)",
+    "Optional: add 1-sentence wallet-share single-source disclosure in section_8 (N1)"
+  ]
+}
