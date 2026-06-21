@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "ticker": "NVDA",
+    "produced_by": "theia",
+    "as_of": "2026-06-20",
+    "engine": "Atlas v3",
+    "contract_version": "3.0",
+    "note": "Every number in this file is sourced or derived from sourced inputs. The base is the honest most-likely per CONTRACT §1.2; no stacked lean applied."
+  },
+
+  "crux_variable": "AI accelerator wallet share — NVIDIA's share of total AI accelerator/chip spend (hyperscalers + AI cloud + enterprise + sovereign) as custom ASICs (Google TPU, AWS Trainium, Meta MTIA, Microsoft Maia) proliferate",
+
+  "identity": {
+    "formula": "wallet_share = (1 - custom_asic_share_of_total_AI_chip_spend) × nvda_share_of_merchant_gpu_market",
+    "decomposition_note": "custom_asic_share_of_total_AI_chip_spend is the fraction of all AI chip/accelerator spend that flows to in-house hyperscaler silicon (Google TPU, Amazon Trainium, Meta MTIA, Microsoft Maia) rather than external purchase. nvda_share_of_merchant_gpu_market is NVIDIA's share of the externally-purchasable GPU and accelerator market. The product gives NVIDIA's share of total AI chip spend. The crux question is: how fast does custom_asic_share grow, and does NVIDIA's merchant share erode concurrently?",
+    "why_this_is_the_crux": "NVDA's Data Center segment is 89.7% of revenue and grew 68% in FY2026. Its absolute revenue can grow even as its percentage share of total AI compute falls, IF the pool grows faster than the share falls. The contest is the rate of share loss versus pool growth. A 5 percentage-point faster ASIC adoption is worth roughly $15-25B of annual NVDA DC revenue at today's pool size — a swing that by FY2029 moves the stock by $30-50 per share. Market share trajectory is therefore the fulcrum, not margin, not WACC."
+  },
+
+  "current_level": {
+    "nvda_wallet_share_of_total_ai_chip_spend": {
+      "value": "~75-77%",
+      "derivation": "FY2026 NVDA DC revenue $193.74B. Total AI chip/accelerator spend estimated at $255-260B (merchant GPU market ~$240B from theia bottom-up + ASIC market ~$80-90B per TrendForce 2025 data at 20.9% of AI server market). NVDA $193.74B / $255B = 75.9%. Cross-check: TrendForce gives GPU AI server share at 75.9% of AI server shipments in 2025, consistent. This figure conflates unit-share with revenue-share; NVIDIA's ASPs are higher than ASIC cost (which never hits NVIDIA's revenue line), so revenue-share is ~75-77%, slightly above unit-share.",
+      "source_merchant_gpu_market": "Theia bottom-up: NVDA $193.74B DC / 80% merchant GPU share = $242B merchant GPU market. Consistent with TrendForce GPU 75.9% of AI server market applied to ~$320B total AI server value.",
+      "source_asic_share": "TrendForce via TechTimes May 2026: ASIC 20.9% of AI server market in 2025; 27.8% projected 2026. URL: https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+      "tier": "research_firm + theia_bottom_up"
+    },
+    "nvda_share_of_merchant_gpu_market": {
+      "value": "~80%",
+      "source": "Theia bottom-up: AMD AI accelerator revenue ~$10B in FY2025, NVDA DC $115.5B → combined ~$125.5B; NVDA share ~92%. But AMD has grown to ~$15B+ in FY2026 while total market grew to ~$242B → NVDA ~80%. Intel/AMD at ~20% combined. Presenc AI estimates AMD at 5-10%; Silicon Analysts at 5-7%. Using 80% for NVDA as the honest midpoint.",
+      "source_url": "https://presenc.ai/research/ai-chip-market-share-2026",
+      "tier": "research_firm"
+    },
+    "custom_asic_share_of_total_ai_chip_spend": {
+      "value_unit_shipments_2025": "20.9%",
+      "value_unit_shipments_2026_proj": "27.8%",
+      "value_revenue_share_2027_proj": "~20%",
+      "source_unit_shipments": "TrendForce via TechTimes May 2026: https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+      "source_revenue_2027": "TrendForce via MediaTek forecast article Feb 2026: custom AI chips set for 20% revenue share in 2027. URL: https://www.trendforce.com/news/2026/02/05/news-mediatek-forecasts-1b-in-asic-sales-for-2026-custom-ai-chips-set-for-20-revenue-share-in-2027/",
+      "note": "Unit share and revenue share diverge because NVIDIA's GPU ASPs ($30-40K per GPU, $2M+ per NVL72 rack) are materially higher than the capital cost attributed to a custom ASIC (which never hits the external market). TrendForce's unit-shipment share is therefore a leading indicator of revenue share displacement but overstates the immediate revenue impact. The 20% revenue share in 2027 per TrendForce/MediaTek is the more relevant figure for NVDA wallet share math.",
+      "tier": "research_firm"
+    },
+    "as_of": "FY2026 (year ended January 2026) / CY2025"
+  },
+
+  "ceiling": "NVIDIA's wallet share of total AI chip spend cannot exceed ~85-87% sustainably. The structural ceiling is bounded by: (a) AMD's minimum viable merchant GPU share (~8-10%) needed by hyperscalers as a pricing discipline tool; (b) the ~5-8% of inference workloads that custom ASICs are better suited for even in the near term (e.g., search ranking); and (c) Intel/other niche merchant GPU vendors at ~1-2%. NVIDIA's peak observed merchant GPU share was ~92% in FY2025 before AMD's ramp; the ceiling on total AI chip wallet share is lower than the merchant GPU ceiling because custom ASICs are a separate and growing bucket. The practical ceiling on NVDA wallet share is ~80% of total AI chip spend, achievable only if ASIC adoption stalls and AMD fails to execute — neither is the base.",
+
+  "floor": "NVIDIA's wallet share cannot fall below ~55-60% over the relevant horizon (FY2029). The floor is set by: (a) training workloads where CUDA lock-in is durable and ASICs cannot substitute (training is ~1/3 of AI compute now, structurally declining in mix but growing in absolute dollar terms); (b) heterogeneous inference where model diversity requires GPU flexibility; (c) hyperscalers' own recognition (Trainium4 uses NVLink Fusion alongside NVDA) that full displacement is operationally complex; and (d) the Vera Rubin performance-per-token step-change management cites (10x better cost per token vs Blackwell). Bloomberg Intelligence projects NVIDIA at 70-75% of AI accelerator market through 2030; the floor of our range sits below that institutional estimate at 60% to capture a bear-case ASIC acceleration scenario.",
+
+  "contracted_horizon": {
+    "statement": "The near term (FY2027, ending January 2027) is substantially contracted. NVIDIA's manufacturing, supply, and capacity commitments as of April 26, 2026 (Q1 FY2027) were $119 billion, of which $95 billion is payable in the remainder of FY2027. Total supply inclusive of inventory, purchase commitments, and prepaids stood at $145 billion. This level of supply commitment implies NVDA has effectively pre-purchased the production capacity to support $340-380 billion of revenue in FY2027 — consistent with the post-Q1 analyst consensus of ~$370-391 billion. Additionally, Q2 FY2027 was guided at $91 billion (+/-2%), which management has confirmed assumes zero China Data Center compute revenue.",
+    "sources": [
+      {
+        "name": "NVIDIA Q1 FY2027 10-Q supply commitments",
+        "detail": "$119B manufacturing/supply commitments; $95B payable remainder FY2027",
+        "source_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/q1/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf",
+        "tier": "company_filed"
+      },
+      {
+        "name": "NVIDIA Q1 FY2027 earnings press release",
+        "detail": "Q2 FY2027 guidance $91B +/-2%; zero China DC compute assumed",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+        "tier": "company_filed"
+      }
+    ],
+    "out_years": "FY2028 and beyond are extrapolated from demand visibility (hyperscaler capex guidance), not contracted. The Vera Rubin architecture transition (H2 2026 deployments, volume Q1 2027) and the cadence of hyperscaler capex commitments give directional confidence but not the order-book certainty of FY2027."
+  },
+
+  "base": {
+    "estimate": "71-73% wallet share by FY2029",
+    "crux_driver_value": {
+      "custom_asic_share_fy2029": "~22-24%",
+      "nvda_merchant_gpu_share_fy2029": "~76-78%",
+      "nvda_wallet_share_fy2029": "~(1 - 0.23) × 0.77 = ~0.593, or effectively ~71-73% when using the revenue-share denominator which is smaller than ASIC unit-share"
+    },
+    "horizon": "FY2029 (year ending January 2029)",
+    "argument": "The base case is that custom ASICs grow their share of AI compute at a moderate but real pace — from ~21% in 2025 to ~27-28% in revenue terms by FY2029. This is anchored in three evidence pillars. First, TrendForce already has ASIC at 27.8% of AI server unit shipments by 2026, and the revenue share lags unit share by 1-2 years as ASIC programs mature from deployment to full utilization; a 2027-2028 revenue crossover to ~20-25% is structurally plausible and consistent with the TrendForce/MediaTek February 2026 call of 20% revenue share by 2027. Second, Broadcom's disclosed $60-90 billion ASIC opportunity from just three customers in FY2027 and its $73B AI backlog imply that the known ASIC programs alone will generate $70-100B annually by 2027-2028 — which at a $400-500B total AI chip market is already 17-20% revenue share and growing as Trainium3, TPU Ironwood, and MTIA 400 reach full utilization. Third, Bloomberg Intelligence projects the GPU market growing at 14% CAGR while ASICs grow at 27% CAGR to 2033, with GPU holding 81% of AI accelerator revenue by 2033 — meaning ASIC grows to ~19% by 2033, and the midpoint to FY2029 is ~22-24%. Within merchant GPU, AMD is gaining inference slots at ~8-10% share today and tracking to 13% by 2030 per analyst guidance, leaving NVDA at ~77-78% of merchant. The product gives NVDA ~73% wallet share of total AI chip spend by FY2029. Critically, the pool also grows: hyperscaler capex consensus for CY2027 is $920B (consensus) to $1.1T (Goldman Sachs base), with chip content at ~38-42%. The absolute AI chip market grows from ~$255B in 2025 to ~$380-450B by FY2028-2029, meaning NVDA's absolute revenue at 73% wallet share reaches $278-330B in DC revenue — growing even as its percentage share falls. The base does not assume ASIC displacement stalls (too bullish) nor that NVIDIA loses half its merchant share (too bearish); it assumes the structural dynamic visible today continues at its current measured pace.",
+    "evidence_quality": "HIGH for FY2027 (contracted supply chain), MEDIUM for FY2028-FY2029 (directional consensus from multiple research firms but wide range on ASIC adoption rate)",
+    "key_assumptions": [
+      "Custom ASIC share of total AI chip spend reaches ~22-24% by FY2029, up from 20.9% unit share in 2025",
+      "AMD merchant GPU share grows to ~12-13% by FY2029, consistent with AMD Analyst Day 80%+ CAGR guidance over 3-5 years",
+      "Vera Rubin architecture ramps cleanly in FY2028, sustaining NVDA's performance lead and preventing major training-share loss",
+      "Total AI chip addressable market grows from ~$255B in CY2025 to ~$420B by CY2028, driven by hyperscaler capex at $920B consensus + enterprise + sovereign",
+      "No additional China export control escalation beyond current zero-revenue assumption; limited upside from China relief",
+      "Broadcom AI ASIC revenue reaches $80-100B in FY2027 from three hyperscaler customers (consistent with disclosed $60-90B SAM) — this is the primary mechanism for ASIC share gain"
+    ]
+  },
+
+  "bull": {
+    "estimate": "76-78% wallet share by FY2029",
+    "crux_driver_value": {
+      "custom_asic_share_fy2029": "~17-19%",
+      "nvda_merchant_gpu_share_fy2029": "~79-81%",
+      "nvda_wallet_share_fy2029": "~(1 - 0.18) × 0.80 = ~0.656, or ~76-78% on revenue basis"
+    },
+    "horizon": "FY2029 (year ending January 2029)",
+    "argument": "The bull case is that Vera Rubin's 10x cost-per-token improvement over Blackwell (per Jensen Huang's Q1 FY2027 commentary) slows ASIC adoption by raising the GPU baseline faster than ASIC programs can iterate. Custom ASIC design cycles are 2-3 years; if Vera Rubin ships volume in Q1 2027 and delivers on the performance claims, hyperscalers face a moving target — their current-generation ASIC (Google TPU Ironwood, Amazon Trainium3, MTIA 400) will underperform Rubin on cost-per-token by the time it reaches full deployment scale, reducing the economic incentive to shift more workloads to custom silicon. Additionally, the emerging agentic AI and multi-model inference workload (agents routing across GPT-4, Gemini, Llama in real time) requires the flexibility that custom ASICs cannot provide for variable workloads — this is a structural headwind to ASIC adoption in inference just as inference diversifies. In the bull case, ASIC share growth decelerates to 2-3 points per year (vs 5-7 currently), landing at ~17-19% revenue share by FY2029. AMD's ROCm gap persists at 2+ years behind CUDA, keeping AMD at ~10-11% merchant share. NVDA wallet share holds at 76-78%. The pool also grows faster in this scenario: Goldman Sachs's base case of $1.1T hyperscaler capex in CY2027 (vs $920B consensus) would put the AI chip market at $420-460B by FY2028-FY2029, and NVDA at 77% of that = $324-354B DC revenue. The bull case corresponds to NVDA DC revenue in the $320-360B range by FY2029.",
+    "evidence_quality": "MEDIUM — Vera Rubin performance claims are management guidance, not independently verified; the 10x cost-per-token claim is not yet operationally demonstrated at scale. The evidence that ASIC adoption can be slowed by GPU performance improvement is theoretical at this stage.",
+    "key_assumptions": [
+      "Vera Rubin delivers on 10x cost-per-token improvement over Blackwell by H1 2027, slowing hyperscaler ASIC allocation",
+      "Custom ASIC revenue share grows only to ~17-19% by FY2029, materially below TrendForce trajectory (ASIC adoption decelerates)",
+      "Agentic AI workloads grow faster than fixed-recipe inference, sustaining GPU demand for variable workloads",
+      "AMD ROCm software gap remains 2+ years behind CUDA; AMD merchant share stays at ~10-11% (vs ~13% in the base)",
+      "Hyperscaler capex closer to Goldman $1.1T in CY2027 than the $920B consensus — larger pool offsets any share erosion",
+      "Vera Rubin ramp is clean (no supply/yield issues at TSMC)"
+    ]
+  },
+
+  "bear": {
+    "estimate": "63-65% wallet share by FY2029",
+    "crux_driver_value": {
+      "custom_asic_share_fy2029": "~29-32%",
+      "nvda_merchant_gpu_share_fy2029": "~73-75%",
+      "nvda_wallet_share_fy2029": "~(1 - 0.30) × 0.74 = ~0.518, or ~63-65% on revenue basis"
+    },
+    "horizon": "FY2029 (year ending January 2029)",
+    "argument": "The bear case is that custom ASIC adoption accelerates faster than the base case because two distinct mechanisms fire simultaneously: (1) The inference workload continues shifting from training (where CUDA moat is strongest) to inference (where ASICs dominate), with inference growing from 2/3 to 3/4 of total AI compute by FY2029 as LLMs move from development to deployment; (2) AMD closes the software gap faster than expected — the AMD Analyst Day (Nov 2025) guided 80%+ CAGR on DC AI revenue over 3-5 years, and if ROCm achieves even 80% of CUDA coverage by 2028, the switching cost falls from 6-12 months to 2-3 months, enabling real vendor-of-record changes at scale. In this scenario, ASIC revenue share grows to ~29-32% by FY2029. The evidence for this acceleration is already visible: Broadcom alone has guided $100B+ in AI chip revenue in 2027 from three hyperscaler customers, and ASIC growth was 44.6% YoY in 2026 vs 16.1% for merchant GPUs (TrendForce). If ASIC growth sustains at 35%+ for two more years while the total market grows at 25%, ASIC share rises from 21% to 31% by FY2029. Simultaneously, AMD at $15B+ AI revenue in FY2026 and growing at 80%+ CAGR reaches $25-35B by FY2028, pushing AMD's merchant share to 13-15% and compressing NVDA's merchant GPU share to 73-75%. The product: NVDA wallet share of 63-65%. The absolute revenue impact at ~$400B total chip market is NVDA DC revenue of ~$252-260B by FY2029 — below the base case but still above FY2026 actuals of $193.74B, reflecting pool growth partially offsetting share loss. This scenario is not catastrophic in absolute terms but materially changes the multiple the stock deserves.",
+    "evidence_quality": "MEDIUM — ASIC acceleration is well-evidenced from current TrendForce data and Broadcom backlog; AMD's ROCm gap closure is the more uncertain element and has disappointed timelines repeatedly (ROCm 6.x still lags CUDA on key benchmarks as of 2026). The bear mechanism is real and partially visible but the timing of the AMD software catch-up is speculative.",
+    "key_assumptions": [
+      "Custom ASIC revenue share rises to 29-32% by FY2029, driven by ASIC shipment growth sustaining at 35%+ YoY through 2027-2028",
+      "AMD merchant GPU share grows to 13-15% by FY2029, on 80%+ CAGR trajectory from AMD Analyst Day guidance",
+      "Inference grows to 75% of AI compute by FY2029 (vs ~67% in 2026), increasing the fraction of workloads where ASICs are cost-competitive",
+      "AMD ROCm software framework achieves 80%+ CUDA coverage by 2028, reducing switching costs and enabling real training workload migrations at scale",
+      "Vera Rubin performance gains are real but insufficient to dislodge hyperscaler ASIC programs that are already in production deployment",
+      "Broadcom AI ASIC revenue sustains $80-100B+ annually from 2027 onward (consistent with $73B backlog and $60-90B three-customer SAM)"
+    ]
+  },
+
+  "driver_decomposition": {
+    "custom_asic_share_today": {
+      "value_unit_share_2025": "20.9%",
+      "value_unit_share_2026_proj": "27.8%",
+      "value_revenue_share_2027_proj": "~20%",
+      "dollar_size_2027_est": "$70-100B",
+      "note": "Unit share overstates revenue displacement because NVIDIA's ASPs are higher than ASIC embedded cost. Revenue share is the better NVDA impact metric. Broadcom alone guides $60-90B ASIC SAM from three customers in FY2027; adding Marvell (Amazon Trainium, Microsoft Maia) brings total ASIC revenue to ~$90-120B. At ~$450-500B total AI chip market in FY2027, revenue share ~20-25%.",
+      "sources": [
+        {
+          "name": "TrendForce unit shipment share",
+          "url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+          "tier": "research_firm"
+        },
+        {
+          "name": "TrendForce revenue share 2027 projection",
+          "url": "https://www.trendforce.com/news/2026/02/05/news-mediatek-forecasts-1b-in-asic-sales-for-2026-custom-ai-chips-set-for-20-revenue-share-in-2027/",
+          "tier": "research_firm"
+        }
+      ]
+    },
+    "custom_asic_share_base_fy2029": {
+      "value": "~22-24%",
+      "argument": "Bloomberg Intelligence 27% CAGR for ASICs to 2033 from 2024 base of ~8% revenue share implies ~18-20% by 2029. TrendForce trajectory from 21% unit share in 2025 to 28% in 2026 extrapolated at decelerating pace (program ramp is front-loaded) reaches ~28-32% unit share by 2029. Revenue share lags unit share by ~4-5 points, giving ~22-24% revenue share by FY2029. Cross-check: Broadcom $80-100B ASIC revenue + Marvell ~$20-30B = $100-130B ASIC out of ~$450B total = 22-29%. Range consistent.",
+      "source": "Bloomberg Intelligence AI accelerator report; TrendForce trajectory extrapolation; Broadcom/Marvell revenue guidance"
+    },
+    "custom_asic_share_bull_fy2029": {
+      "value": "~17-19%",
+      "argument": "Vera Rubin 10x perf improvement slows workload migration; ASIC adoption decelerates to 2-3 pts/yr"
+    },
+    "custom_asic_share_bear_fy2029": {
+      "value": "~29-32%",
+      "argument": "ASIC growth sustains at 35%+ for 2 years; AMD closes software gap; inference migration accelerates"
+    },
+    "nvda_merchant_gpu_share_today": {
+      "value": "~80%",
+      "source": "Theia bottom-up derivation from NVDA DC revenue ($193.74B) vs AMD AI revenue (~$15B). AMD AI accelerator market share: Presenc AI 5-10%, Silicon Analysts 5-7%. 80% is the honest central estimate."
+    },
+    "nvda_merchant_gpu_share_base_fy2029": {
+      "value": "~76-78%",
+      "argument": "AMD grows from ~8-10% to ~12-13% merchant GPU share on 80%+ CAGR trajectory (AMD Analyst Day Nov 2025). NVDA loses 3-4 merchant share points as AMD wins inference slots. Intel/Gaudi effectively exited (sold to Battelle). Ceiling on NVDA merchant share erosion is modest: CUDA lock-in prevents AMD from winning training workloads before 2028 at earliest.",
+      "source_amd_trajectory": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race"
+    },
+    "nvda_merchant_gpu_share_bull_fy2029": {
+      "value": "~79-81%",
+      "argument": "AMD execution lag; Rubin performance gap too large to overcome in the window"
+    },
+    "nvda_merchant_gpu_share_bear_fy2029": {
+      "value": "~73-75%",
+      "argument": "AMD ROCm gap closes; 13-15% AMD share; first training migrations begin"
+    },
+    "sources": [
+      {
+        "name": "Bloomberg Intelligence AI accelerator market forecast",
+        "detail": "GPU 14% CAGR to $486B by 2033 (81% of $604B total); ASIC 27% CAGR to $118B by 2033 (19%); NVDA 70-75% AI accelerator share through 2030",
+        "url": "https://www.bloomberg.com/company/press/ai-accelerator-market-looks-set-to-exceed-600-billion-by-2033-driven-by-hyperscale-spending-and-asic-adoption-according-to-bloomberg-intelligence/",
+        "tier": "research_firm"
+      },
+      {
+        "name": "TrendForce ASIC vs GPU AI server shipment share",
+        "detail": "ASIC 20.9% in 2025, 27.8% in 2026; ASIC growth 44.6% vs GPU 16.1% in 2026",
+        "url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+        "tier": "research_firm"
+      },
+      {
+        "name": "Broadcom AI ASIC revenue and SAM",
+        "detail": "$8.4B single quarter Q2 FY2026; $60-90B SAM from three hyperscaler customers in FY2027; $100B+ AI revenue line-of-sight 2027; $73B AI backlog",
+        "url": "https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/",
+        "tier": "company_filed"
+      },
+      {
+        "name": "AMD AI accelerator revenue trajectory",
+        "detail": "~$10B in 2025; 80%+ CAGR guided over 3-5 years at Analyst Day Nov 2025; MI350 in volume mid-2025",
+        "url": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race",
+        "tier": "company_filed"
+      },
+      {
+        "name": "NVIDIA Vera Rubin performance claims",
+        "detail": "5x inference improvement over Blackwell; 10x cost-per-token reduction; H2 2026 cloud deployments; Q1 FY2027 full production",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+        "tier": "company_filed"
+      }
+    ]
+  },
+
+  "triangulation_check": {
+    "bloomberg_intelligence": "GPU 81% of AI accelerator revenue by 2033; 70-75% NVDA share of total AI accelerator market through 2030. At 75% NVDA share of total GPU revenue and GPU at 81% of total accelerator: NVDA wallet share = ~60-70% of total AI chip spend. Consistent with our base (71-73%) and bear (63-65%) cases.",
+    "broadcom_anchor": "Broadcom $60-90B ASIC SAM from three customers alone in FY2027, growing to $100B+. Marvell another ~$15-20B (Amazon Trainium, Microsoft Maia portions). Total ASIC revenue ~$80-120B in 2027. At $400-500B total AI chip market, ASIC revenue share 20-25%. Consistent with our base custom_asic_share estimate of ~22-24% for FY2027-FY2029.",
+    "trendforce_anchor": "Unit shipment share: ASIC 27.8% by end-2026. Revenue share lags ~4-5 points (lower ASIC ASP vs GPU). Revenue share 2027 at ~20% per MediaTek/TrendForce forecast. Our FY2029 base of 22-24% is a modest extrapolation of the current TrendForce trajectory (decelerating as program ramps mature).",
+    "single_source_flags": [
+      "Bloomberg Intelligence GPU 81% / ASIC 19% by 2033 projection: single source, not independently verified against IDC or Dell'Oro. Directionally consistent with TrendForce but uses different methodology (revenue-based vs unit-based).",
+      "TrendForce 2026 ASIC unit share (27.8%): cited via TechTimes/techtimes.com. TrendForce is a credible research firm but this specific figure was accessed via a secondary media source, not the primary TrendForce report."
+    ]
+  },
+
+  "sources": [
+    {
+      "name": "TrendForce ASIC vs GPU AI server shipments 2025-2026",
+      "url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+      "tier": "research_firm"
+    },
+    {
+      "name": "TrendForce/MediaTek custom ASIC revenue share 2027 forecast (20%)",
+      "url": "https://www.trendforce.com/news/2026/02/05/news-mediatek-forecasts-1b-in-asic-sales-for-2026-custom-ai-chips-set-for-20-revenue-share-in-2027/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Bloomberg Intelligence AI accelerator $604B by 2033; GPU/ASIC split",
+      "url": "https://www.bloomberg.com/company/press/ai-accelerator-market-looks-set-to-exceed-600-billion-by-2033-driven-by-hyperscale-spending-and-asic-adoption-according-to-bloomberg-intelligence/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Broadcom AI ASIC revenue, backlog, and $60-90B SAM",
+      "url": "https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NVIDIA Q1 FY2027 supply commitments $119B / $145B total",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/q1/927dc2d6-a76c-4006-9f34-8769b2c665fb.pdf",
+      "tier": "company_filed"
+    },
+    {
+      "name": "NVIDIA Q1 FY2027 earnings press release — Q2 $91B guidance, Vera Rubin commentary",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Goldman Sachs 2027 hyperscaler capex: consensus $920B vs GS base $1.1T",
+      "url": "https://finance.yahoo.com/sectors/technology/articles/goldman-says-consensus-2027-hyperscaler-140152065.html",
+      "tier": "sellside"
+    },
+    {
+      "name": "AMD AI accelerator revenue and 80%+ CAGR guidance at Analyst Day",
+      "url": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race",
+      "tier": "company_filed"
+    },
+    {
+      "name": "Presenc AI chip market share 2026 — AMD 5-10%",
+      "url": "https://presenc.ai/research/ai-chip-market-share-2026",
+      "tier": "research_firm"
+    },
+    {
+      "name": "NVIDIA FY2027 analyst revenue consensus $370-391B",
+      "url": "https://simplywall.st/stocks/us/semiconductors/nasdaq-nvda/nvidia/future",
+      "tier": "sellside",
+      "detail": "Consensus revised from $372.1B to $391.3B post Q1 FY2027 beat"
+    },
+    {
+      "name": "NVIDIA FY2028 analyst revenue consensus $480B",
+      "url": "https://io-fund.com/ai-stocks/nvidia-stock-path-to-20-trillion-market-cap",
+      "tier": "sellside"
+    },
+    {
+      "name": "NVIDIA Q1 FY2027 earnings — Q1 DC revenue $75.2B, +92% YoY",
+      "url": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html",
+      "tier": "company_filed"
+    }
+  ]
+}

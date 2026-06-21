@@ -1,0 +1,311 @@
+{
+  "_meta": {
+    "ticker": "NVDA",
+    "produced_by": "theia",
+    "as_of": "2026-06-20",
+    "engine": "Atlas v3",
+    "contract_version": "3.0"
+  },
+
+  "business_overview": {
+    "summary": "NVIDIA designs and sells high-performance parallel computing platforms. The company built its franchise in gaming GPUs, then pivoted to data center AI infrastructure where it now generates ~90% of revenue. Its economic engine is the combination of Blackwell GPU silicon, InfiniBand and NVLink networking, and the CUDA software stack — a vertically integrated AI factory that hyperscalers and enterprises rent or buy. The other segments (Gaming, Professional Visualization, Automotive) are real but comparatively small; their economics are annuity-like at the moment and growing modestly. NVDA is, in practice, a one-segment company whose fate is decided by the AI accelerator market.",
+    "business_model": "NVIDIA designs chips (fabless), contracts manufacturing to TSMC (primarily), and sells complete systems (GB200 NVL72, GB300 NVL72 racks) directly or through ODMs (Foxconn, Quanta). Revenue is hardware-dominated; software (CUDA, NIM, NVIDIA AI Enterprise) is bundled or lightly monetized. The switching cost lives in the CUDA software stack: 5+ million developers, 15 years of cuDNN/cuBLAS/NCCL/PyTorch tuning, and 90%+ of AI frameworks written natively to CUDA. Gross margins (~71% FY2026, trending toward 75%+) reflect this pricing power; most value is captured at the silicon + systems layer, with networking growing fastest (+142% FY2026, +199% in Q1 FY2027).",
+    "segments": [
+      {
+        "name": "Data Center (Compute & Networking)",
+        "revenue_fy2026_b": 193.74,
+        "revenue_share_pct": 89.7,
+        "revenue_growth_pct_fy2026": 68.0,
+        "revenue_fy2025_b": 115.5,
+        "gross_margin_pct_approx": 75.0,
+        "nature": "high-growth",
+        "sub_segments": {
+          "compute_fy2026_b": 178.7,
+          "networking_fy2026_b": 15.0,
+          "networking_growth_pct": 142.0
+        },
+        "note": "Primary growth engine. Revenue split roughly 50% hyperscalers, 50% AI clouds / enterprise / sovereign (Q1 FY2027 management commentary). Customer concentration high: top 4 customers were 61% of Q3 FY2026 revenue (approximately Microsoft, Amazon, Google, Meta via ODMs). Blackwell architecture now dominant; GB200 NVL72 and GB300 NVL72 rack systems the primary product."
+      },
+      {
+        "name": "Gaming",
+        "revenue_fy2026_b": 16.04,
+        "revenue_share_pct": 7.4,
+        "revenue_growth_pct_fy2026": 41.0,
+        "revenue_fy2025_b": 11.4,
+        "gross_margin_pct_approx": 55.0,
+        "nature": "mature-annuity",
+        "note": "94-95% discrete GPU market share (Jon Peddie Research, Q4 2025). RTX 50 series (Blackwell consumer) drove Q2 FY2026 record. AIB market expected to decline ~10% in 2026 on memory price inflation and tariff headwinds. No competitive threat from AMD (5% share). Long-term growth tied to PC refresh cycle and the AI PC transition, not a high-conviction accelerant."
+      },
+      {
+        "name": "Professional Visualization",
+        "revenue_fy2026_b": 3.19,
+        "revenue_share_pct": 1.5,
+        "revenue_growth_pct_fy2026": 70.0,
+        "revenue_fy2025_b": 1.88,
+        "gross_margin_pct_approx": 65.0,
+        "nature": "mature-annuity",
+        "note": "RTX PRO 6000 Blackwell workstation GPU launched. Workstation graphics TAM ~$3.5B in 2025 growing at ~8% CAGR to 2034 (Verified Market Reports). NVIDIA has essentially monopolistic share here. Growth in FY2026 driven by AI-workstation demand; sustainable at mid-single-digit rates absent major enterprise refresh."
+      },
+      {
+        "name": "Automotive",
+        "revenue_fy2026_b": 2.35,
+        "revenue_share_pct": 1.1,
+        "revenue_growth_pct_fy2026": 55.0,
+        "revenue_fy2025_b": 1.52,
+        "gross_margin_pct_approx": 50.0,
+        "nature": "high-growth (early stage)",
+        "note": "DRIVE Thor / DRIVE AGX Orin platforms deployed by BYD, Geely, Toyota, Volvo, Zoox, and others. Design win pipeline disclosed at $14B over 2023-2028 (NVIDIA 2024 earnings). Revenue recognition is 2-4 years lagged from win date. Robotaxi programs (Zoox, Waymo partners) represent a potential step-change. This segment is growing rapidly off a small base; the question is timing and completion of programs, not technology."
+      },
+      {
+        "name": "OEM & Other",
+        "revenue_fy2026_b": 0.62,
+        "revenue_share_pct": 0.3,
+        "revenue_growth_pct_fy2026": 79.0,
+        "nature": "mature-annuity",
+        "note": "Crypto / embedded / legacy. Immaterial to valuation."
+      }
+    ],
+    "customers": {
+      "top_customer_concentration": "Top 2 unnamed customers = 39% of Q2 FY2026 revenue; top 4 = 61% of Q3 FY2026 revenue. Likely Microsoft, Amazon, Google, Meta (via ODMs like Foxconn/Quanta). NVDA does not name them in filings.",
+      "source": "Data Center Dynamics (DCD), CNBC, Motley Fool — Q2 and Q3 FY2026 10-Q disclosures",
+      "geographic_split": "US-dominated; China essentially zero for advanced AI chips (H20 effectively banned since April 2025; February 2026 limited license allows only ~$60M). China was ~5-7% of Data Center revenue pre-ban.",
+      "source_geographic": "Futurum Research FY2026 Q1 analysis; NVIDIA earnings call commentary (Q1 FY2027 guide assumes zero China DC compute)"
+    }
+  },
+
+  "industry_structure": {
+    "tam_usd_bn": {
+      "ai_accelerator_2024": 140.6,
+      "ai_accelerator_2025": 160.0,
+      "ai_accelerator_2026_est": 200.0,
+      "ai_accelerator_2030_mordor": 440.3,
+      "ai_accelerator_2030_knowledge_sourcing": 249.2,
+      "source_mordor": {
+        "value": "USD 440.3B by 2030",
+        "source_url": "https://www.mordorintelligence.com/industry-reports/ai-accelerators-market",
+        "tier": "research_firm",
+        "note": "Mordor includes GPUs, ASICs, FPGAs for AI"
+      },
+      "source_knowledge_sourcing": {
+        "value": "USD 249.2B by 2030 at 36.66% CAGR from USD 52.3B in 2025",
+        "source_url": "https://www.knowledge-sourcing.com/report/ai-accelerator-market",
+        "tier": "research_firm",
+        "note": "Narrower definition"
+      },
+      "source_goldmansachs_context": {
+        "value": "Hyperscaler capex 2025-2027 = $1.15T total (Goldman Sachs projection cited in Tom's Hardware)",
+        "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion",
+        "tier": "sellside",
+        "note": "Total infrastructure; chip content ~35-40%"
+      },
+      "triangulation_note": "Wide variance across research firms reflects scope differences. Anchor: NVIDIA itself did $193.7B in DC revenue in FY2026 alone. At ~80% share, the merchant GPU addressable market is ~$240B for FY2026 (theia bottom-up). The Mordor $440B by 2030 is the broadest; $249B from Knowledge Sourcing is narrower. Both likely undercount absolute spend if hyperscaler capex stays at $600-700B/yr. Single-source risk: neither estimate verified against a named IDC or Dell'Oro primary."
+    },
+    "tam_growth_pct_cagr_2026_2030": {
+      "range": "25-37%",
+      "base_estimate": "28%",
+      "basis": "Mordor 2030 / 2026 base implies ~22% CAGR; Knowledge Sourcing 36.7%; hyperscaler capex guidance runs 25-30% YoY. 28% is the honest midpoint. Inference overtaking training (2/3 of workload by 2026) sustains demand but shifts it toward lower ASP inference chips.",
+      "source_url": "https://www.mordorintelligence.com/industry-reports/ai-accelerators-market",
+      "tier": "research_firm"
+    },
+
+    "sub_markets": [
+      {
+        "name": "AI Training — Merchant GPU",
+        "description": "Large-model training runs at hyperscalers and frontier AI labs. Requires flexible, high-bandwidth, high-precision compute. NVIDIA's natural monopoly: CUDA-native frameworks, NVLink scale-up, InfiniBand scale-out. Hard to replace because training frameworks are CUDA-native and switching is 6-12 months of engineering.",
+        "custom_asic_threat": "LOW for large training runs. Google TPU v8 AX Sunfish (Broadcom) targets training but for Google-only workloads. Third parties cannot buy a Google TPU."
+      },
+      {
+        "name": "AI Inference — Merchant GPU",
+        "description": "Running trained models in production. 2/3 of total AI compute demand by 2026 (TechTimes, BingX). Lower precision (INT8/FP4) requirements vs training. Economics favor specialized hardware: custom ASICs can achieve better perf/watt for fixed workloads.",
+        "custom_asic_threat": "HIGH. This is where Google TPU Ironwood, Amazon Trainium3, Meta MTIA, and Microsoft Maia all concentrate. Hyperscalers run fixed-workload inference (search, recommendation, their own models) at massive scale — the exact use case ASICs optimize for."
+      },
+      {
+        "name": "Custom ASIC — Hyperscaler Self-Build",
+        "description": "Chips designed by hyperscalers, manufactured via Broadcom (Google TPU, Meta MTIA) or Marvell (Amazon Trainium, Microsoft Maia). Grows at 44.6% in 2026 vs 16.1% for GPU shipments (TrendForce). Not competing for the same dollar as NVIDIA on an external market basis — but displacing NVIDIA from hyperscaler wallet share.",
+        "size_2025_pct_of_ai_servers": "20.9",
+        "size_2026_pct_of_ai_servers_proj": "27.8",
+        "source_url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+        "tier": "research_firm"
+      },
+      {
+        "name": "Gaming GPU (Discrete)",
+        "description": "Consumer add-in boards. TAM ~$20-25B. NVIDIA holds 94-95% share. AMD at 5% and falling. Intel Arc irrelevant commercially.",
+        "growth_outlook": "AIB market -10% in 2026 on memory prices and tariffs. RTX 50 series offsets with share gains and ASP lift. Steady mid-single-digit growth outlook 2027+.",
+        "source_url": "https://www.jonpeddie.com/news/q425-pc-gpu-shipments-decreased-by-1-3-from-last-quarter-which-is-a-prelude-to-the-creep-forward/",
+        "tier": "research_firm"
+      },
+      {
+        "name": "Automotive ADAS/AV Compute",
+        "description": "In-vehicle AI compute for ADAS and autonomous driving. NVIDIA DRIVE Thor dominates new design wins. TAM grows from ~$3B today to ~$10-15B by 2030 as AV penetration rises.",
+        "growth_outlook": "NVIDIA has $14B design win pipeline through 2028. Revenue recognition lagged 2-4 years. This is a growth option, not a near-term driver."
+      }
+    ],
+
+    "competitors": [
+      {
+        "name": "AMD (Instinct MI300X/MI350/MI400)",
+        "position": "Merchant GPU #2. Only credible publicly-available GPU alternative to NVIDIA in AI.",
+        "share_ai_accelerator_2025": "5-10%",
+        "share_source": {
+          "value": "AMD AI accelerator revenue ~$10B in 2025; NVIDIA DC ~$115B in FY2025 → AMD ~8% of combined. Silicon Analysts estimate 5-7%; Presenc AI estimates up to 10%.",
+          "source_url_1": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race",
+          "source_url_2": "https://presenc.ai/research/ai-chip-market-share-2026",
+          "tier": "sellside + research_firm"
+        },
+        "trajectory": "GAINING but slowly. MI300X secured inference wins at Microsoft, Meta, OpenAI. MI350 (3nm, 288GB HBM3E, 35x inference improvement) enters volume in mid-2025. Analysts project AMD could reach 13% by 2030. AMD's own Analyst Day (Nov 2025) guided 80%+ CAGR on DC AI revenue over 3-5 years. The key constraint is ROCm software stack — still 2-3 years behind CUDA in framework coverage. Hyperscalers use AMD as a price lever, not a primary platform.",
+        "why_not_winning_more": "CUDA switching cost (6-12 months engineering), NVLINK system-level integration, software framework coverage. AMD is winning inference slots where the workload is ported; it is not winning training."
+      },
+      {
+        "name": "Google (TPU v7 Ironwood / TPU v8 Sunfish+Zebrafish)",
+        "position": "Largest single custom silicon program. For Google's internal use only — not a merchant product. Design partner: Broadcom (training), MediaTek (inference).",
+        "share_of_googles_compute": "Material and growing. Google does not disclose what fraction of its compute runs on TPU vs GPU, but investor comments suggest TPU handles the majority of Google's own inference (Search AI, Gemini serving) while NVIDIA GPUs handle frontier training and third-party workloads on Google Cloud.",
+        "trajectory": "TPU v7 Ironwood: 4,614 FP8 TFLOPS, 192GB HBM3E, 7.37 TB/s bandwidth — competitive with Blackwell on perf/watt for fixed workloads. TPU v8 splits: Sunfish (training, Broadcom) and Zebrafish (inference, MediaTek). This bifurcation signals maturation. Google TPUs have an ~8-year head start in production at scale.",
+        "source_url": "https://www.forwardfuture.ai/p/the-ai-compute-boom-has-room-for-everyone",
+        "tier": "media"
+      },
+      {
+        "name": "Amazon (Trainium3 / Inferentia)",
+        "position": "AWS custom silicon for its own cloud workloads. Trainium3: 3nm, 2.517 PFLOPS FP8, 144GB HBM3E at 4.9 TB/s. Design partner: Marvell.",
+        "share_of_aws_compute": "Amazon deployed >1M Trainium processors by Dec 2025 (AWS CEO Matt Garman, re:Invent 2025). Trainium handles AWS-native ML workloads; NVIDIA remains dominant for third-party EC2 customers who request NVIDIA instances.",
+        "trajectory": "SCALING. Trainium3 in general availability from Q2 2026. Trainium4 adds NVLink Fusion support, enabling hybrid Trainium+NVIDIA clusters — an interesting nuance: Amazon is not purely displacing NVIDIA but adding alongside.",
+        "source_url": "https://hashrateindex.com/blog/hyperscaler-ai-asic-market-report-part-1/",
+        "tier": "media"
+      },
+      {
+        "name": "Microsoft (Maia 100)",
+        "position": "Azure custom accelerator. Design partner: Marvell. Deployed in Azure data centers alongside NVIDIA H100/H200/B200.",
+        "share_of_microsoft_compute": "Maia used primarily for Bing/Microsoft internal AI inference; NVIDIA remains the primary platform for Azure AI services sold to third parties and for OpenAI's training runs.",
+        "trajectory": "Marvell projects up to $11B in AI ASIC revenue for 2026, partially from Microsoft and Amazon programs. Microsoft remains NVIDIA's largest or second-largest customer — so custom silicon is incremental to, not a replacement of, NVIDIA spend at Microsoft.",
+        "source_url": "https://hashrateindex.com/blog/hyperscaler-ai-asic-market-report-part-1/",
+        "tier": "media"
+      },
+      {
+        "name": "Meta (MTIA 400)",
+        "position": "Meta's custom inference accelerator. MTIA 400 completed testing and entered production deployment in 2026. Design partner: Broadcom (Marvell is co-designer on some programs).",
+        "trajectory": "MTIA 400 in production at Meta data centers for ranking/recommendation (Meta's highest-volume inference workload). Meta still buys NVIDIA GPUs for training and for generative AI workloads. Meta is AMD's largest confirmed GPU customer (MI300X deployments). Pattern: Meta uses custom chips for its highest-volume, lowest-variety inference and GPUs for everything else.",
+        "source_url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+        "tier": "media"
+      },
+      {
+        "name": "Broadcom (ASIC design partner)",
+        "position": "Not a merchant AI chip seller. The co-design engine behind Google TPU and Meta MTIA. Holds ~70% of the custom AI ASIC co-design market.",
+        "revenue": "Broadcom AI ASIC revenue $8.4B in a single quarter (Q2 FY2026, +106% YoY). CEO Hock Tan guided $100B+ AI chip revenue line-of-sight in 2027, backed by a $73B AI backlog.",
+        "competitive_relevance": "Broadcom amplifies the ASIC threat to NVIDIA by making hyperscaler custom programs commercially viable at scale. Every dollar of Broadcom AI revenue is a dollar of silicon in a hyperscaler's data center that did not go to NVIDIA.",
+        "source_url": "https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/",
+        "tier": "company_filed"
+      },
+      {
+        "name": "Intel (Gaudi 3)",
+        "position": "Distant third in merchant AI accelerators. Gaudi 3 launched 2024 at competitive price points but ecosystem traction is minimal. Intel's enterprise relationships and x86 integration provide some niche wins.",
+        "share_ai_accelerator": "<1%",
+        "trajectory": "DECLINING relevance in AI. Intel sold its Gaudi AI program to a startup (Battelle) in early 2026. Effectively out of the AI accelerator merchant market.",
+        "source": "Industry consensus; no major hyperscaler Gaudi 3 deployment announced"
+      }
+    ],
+
+    "the_share_dynamic": {
+      "summary": "The AI accelerator market is large enough that NVIDIA's absolute revenue grows even as its share percentage declines. The structural dynamic is: (1) NVIDIA holds ~80% of the merchant AI accelerator market; (2) custom ASICs are growing their share of total AI compute from ~21% in 2025 to ~28% in 2026 and are projected to surpass GPU shipments by 2028 in unit terms; (3) AMD gains slowly in inference (5-10% merchant share, targeting 13% by 2030); (4) the key question is not whether NVIDIA loses share — it will — but at what rate and whether hyperscaler capex growth (28% CAGR) compensates.",
+      "mechanism": "Custom ASICs displace NVIDIA at the INFERENCE layer for high-volume, predictable workloads (search ranking, recommendation, serving fixed models). NVIDIA retains dominance at the TRAINING layer (CUDA lock-in, model diversity, scale-out networking) and for variable/experimental inference. The inference/training split is now roughly 2/3 inference, 1/3 training in 2026. Hyperscalers run a dual-track: NVIDIA for training and heterogeneous inference; custom ASICs for their highest-volume, fixed-recipe inference jobs.",
+      "quantified_trajectory": {
+        "asic_share_of_ai_servers_2025": "20.9%",
+        "asic_share_of_ai_servers_2026_proj": "27.8%",
+        "gpu_share_of_ai_servers_2025": "75.9%",
+        "gpu_share_of_ai_servers_2026_proj": "69.7%",
+        "asic_yoy_growth_2026": "44.6%",
+        "gpu_yoy_growth_2026": "16.1%",
+        "source_url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm",
+        "tier": "research_firm",
+        "note": "TrendForce cited. Single-source; triangulated against Broadcom ASIC backlog ($73B) and AMD revenue trajectory. The directional story is consistent across multiple sources; precise percentages are TrendForce estimates."
+      },
+      "why_nvidia_retains_training": "CUDA has 5M+ registered developers. Switching from CUDA to ROCm (AMD) or Neuron (Amazon) requires 6-12 months of engineering per large-scale user. Training frameworks (PyTorch, TensorFlow, JAX) are natively tuned for CUDA. NVLink scale-up (3.6 TB/s within an NVL72 rack) is unique; no ASIC vendor offers comparable bandwidth at scale. The GB200/GB300 NVL72 rack-level systems are sold as complete AI factories, not individual chips.",
+      "vera_rubin_counter": "NVIDIA's Vera Rubin (H2 2026, volume in 2027) targets 5x inference improvement over Blackwell and 10x cost-per-token reduction per management commentary. If delivered, this could slow ASIC adoption by raising the NVIDIA performance bar faster than ASICs can ramp. The risk: ASIC programs (especially Google's) are also on annual cadences."
+    },
+
+    "addressable_market": {
+      "nvda_directly_addressable_merchant_gpu": {
+        "description": "The fraction of total AI compute spend that runs on merchant (non-internal) silicon. NVIDIA competes for this directly. Custom ASICs are not available for purchase externally.",
+        "size_fy2026_theia_bottom_up": 240.0,
+        "derivation": "NVIDIA's FY2026 DC revenue of $193.7B at ~80% share implies a merchant AI accelerator market of ~$242B. This cross-checks: TrendForce GPU share of AI server market (69.7-75.9%) applied to ~$320B total AI server market (GPU + ASIC) gives ~$220-240B merchant GPU addressable market. Consistent.",
+        "tier": "theia_bottom_up",
+        "nvda_capture_pct": "80%",
+        "ceiling_note": "The ceiling on NVIDIA's share in merchant GPUs is bounded by AMD and Intel. AMD at 5-10% is the practical floor for NVIDIA's share. NVIDIA cannot realistically hold >90% of merchant GPU long-term because hyperscalers use AMD as a price discipline tool."
+      },
+      "gaming_discrete_gpu": {
+        "size_usd_bn": 22.0,
+        "nvda_capture_pct": "94-95%",
+        "source_url": "https://www.jonpeddie.com/news/q425-pc-gpu-shipments-decreased-by-1-3-from-last-quarter-which-is-a-prelude-to-the-creep-forward/",
+        "tier": "research_firm"
+      },
+      "workstation_professional_vis": {
+        "size_usd_bn": 3.5,
+        "nvda_capture_pct": ">90%",
+        "source_url": "https://www.verifiedmarketreports.com/product/workstation-graphics-cards-market/",
+        "tier": "research_firm"
+      },
+      "automotive_adas_av": {
+        "size_usd_bn_2026": 3.0,
+        "size_usd_bn_2030_est": 12.0,
+        "nvda_capture_pct_of_design_wins": "leading share in new ADAS SoC programs",
+        "note": "$14B disclosed design pipeline through 2028 per NVIDIA 2024 earnings. Revenue recognition 2-4 year lag."
+      }
+    },
+
+    "revenue_drivers": [
+      "AI training capex at hyperscalers (Microsoft, Amazon, Google, Meta) — the primary engine; CAGR 25-30% through 2028 before deceleration",
+      "Inference build-out at AI cloud providers (CoreWeave, Lambda, etc.) and enterprise — growing fastest in mix",
+      "Sovereign AI programs (government-funded AI infrastructure globally — UAE, France, Japan, India) — incremental but additive",
+      "Networking mix shift: InfiniBand and Spectrum-X Ethernet growing faster than compute; NVLink pure attach to Blackwell systems",
+      "PC gaming RTX refresh cycle (AI-driven features driving ASP lift even on flat/declining unit volumes)",
+      "Automotive ADAS production ramp from $14B design win pipeline (2026-2030)"
+    ],
+
+    "npat_margin_drivers": [
+      "Gross margin: Blackwell architecture mix, software attach (NIM/NVIDIA AI Enterprise), manufacturing yields at TSMC",
+      "R&D as revenue scale: R&D ~10% of revenue at $215B scale; leverage accrues as revenue grows faster than R&D spend",
+      "SBC: High as % of revenue (~8-10%) but partially offset by buybacks; net dilution ~0.5-1% annually",
+      "Export controls: China ban ($8B annualized headwind in FY2026) contained to H20 product; no advanced chip licenses",
+      "Supply chain: TSMC CoWoS-L packaging remains constrained; Blackwell demand exceeds supply through at least mid-2026 per management"
+    ],
+
+    "product_differentiation": {
+      "cuda_ecosystem": "5M+ developers, 15 years of library accumulation (cuDNN, cuBLAS, NCCL), 90%+ of AI frameworks tuned natively. The moat is NOT the GPU chip spec — it is the software stack that makes NVIDIA the path of least resistance for any new AI workload.",
+      "nvlink_scale_up": "NVLink 5.0 in Blackwell provides 900 GB/s GPU-to-GPU bandwidth within an NVL72 rack. No competitor (AMD, ASIC vendors) matches this for large-model training requiring tight all-reduce collective operations.",
+      "infiniband_networking": "Mellanox/NVIDIA InfiniBand holds ~70% of HPC/AI cluster networking. Scale-out networking is an NVDA-owned layer that ASIC vendors cannot easily replicate.",
+      "full_stack": "NVIDIA sells not just chips but complete compute factories: GB200 NVL72 racks (72 GPUs + NVLink fabric + InfiniBand), DGX systems, NVIDIA AI Enterprise software. The ODM (Foxconn, Quanta) sells the customer a pre-integrated system. This makes NVIDIA difficult to dislodge on a module-by-module basis.",
+      "annual_architecture_cadence": "Blackwell (2024-2025) to Vera Rubin (H2 2026) to next-gen annually. NVIDIA's cadence is faster than most custom ASIC programs (typically 2-3 year design cycles), which means NVIDIA's baseline keeps rising."
+    },
+
+    "five_forces": {
+      "buyer_power": "HIGH and growing. Top 4 hyperscaler customers = 61% of Q3 FY2026 revenue. Amazon, Microsoft, Google, and Meta individually negotiate at massive scale. Each runs its own custom silicon program partly as a negotiating lever — the mere existence of TPU/Trainium/MTIA gives hyperscalers optionality that disciplines NVDA pricing. However, CUDA lock-in limits the practical ability to substitute quickly.",
+      "supplier_power": "HIGH. TSMC is the sole advanced node (3nm, 4nm, 5nm) manufacturer for NVDA's most critical chips. CoWoS-L advanced packaging is also TSMC-only and currently constrained. NVDA has secured allocations but faces supply limits on Blackwell into mid-2026. HBM3E supply from SK Hynix/Samsung also tight.",
+      "threat_of_new_entrants": "MODERATE-LOW for merchant GPU (capital intensity, ecosystem moat, manufacturing access are high barriers). HIGH for custom ASIC (any hyperscaler with $5B/yr capex can fund a Broadcom/Marvell custom program). The threat is not a new external chip company — it is the insourcing by existing customers.",
+      "threat_of_substitutes": "MEDIUM, rising. Custom ASICs are the primary substitute, but only for predictable, high-volume inference. Training has no credible substitute for CUDA+NVLink at scale. FPGAs (Xilinx/AMD, Intel Altera) are niche.",
+      "competitive_rivalry": "LOW in merchant GPU (AMD is the only rival and holds 5-10% share). HIGH in total AI compute when custom ASICs are included. The competitive intensity is rising — AMD gaining inference slots, every hyperscaler funding custom programs."
+    },
+
+    "moat": {
+      "type": "Ecosystem / switching cost + scale / network effect",
+      "strength": "STRONG for training; MODERATE and declining for inference",
+      "argument": "CUDA's 15-year head start and 5M+ developer ecosystem is genuinely hard to replicate. The switching cost for a hyperscaler to port its full ML stack from CUDA to ROCm or Neuron is real: 6-12 months of engineering at minimum, with regression risk on model quality. This moat is STRONGEST in training (where framework diversity and model experimentation are essential) and WEAKEST in high-volume inference (where a fixed workload can be compiled once to a custom ASIC and run forever at lower cost). The practical consequence: NVIDIA's moat protects its training share more durably than its inference share. Inference share erosion is structural; training share erosion requires AMD to close the software gap, which Analyst Day targets suggest AMD aspires to by 2028-2030.",
+      "source": "Built In CUDA moat analysis; Alphastreet CUDA lock-in analysis; industry consensus"
+    },
+
+    "sources": [
+      {"name": "TrendForce ASIC/GPU shipment share 2025-2026", "url": "https://www.techtimes.com/articles/317225/20260526/custom-ai-chips-outpace-nvidia-gpu-growth-2026-asic-shipments-set-triple-gpu-rate.htm", "tier": "research_firm"},
+      {"name": "Jon Peddie Research Q4 2025 GPU market share", "url": "https://www.jonpeddie.com/news/q425-pc-gpu-shipments-decreased-by-1-3-from-last-quarter-which-is-a-prelude-to-the-creep-forward/", "tier": "research_firm"},
+      {"name": "Mordor Intelligence AI accelerator market 2030", "url": "https://www.mordorintelligence.com/industry-reports/ai-accelerators-market", "tier": "research_firm"},
+      {"name": "NVDA Q4 FY2026 earnings (CNBC)", "url": "https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html", "tier": "company_filed"},
+      {"name": "NVDA Q1 FY2027 earnings (CNBC)", "url": "https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html", "tier": "company_filed"},
+      {"name": "NVDA customer concentration (DCD)", "url": "https://www.datacenterdynamics.com/en/news/two-unnamed-customers-accounted-for-almost-40-of-nvidias-q2-2026-revenue/", "tier": "company_filed"},
+      {"name": "Hyperscaler custom ASIC state of play (Tom's Hardware May 2026)", "url": "https://www.tomshardware.com/tech-industry/semiconductors/custom-ai-asics-examined-from-broadcom-to-mtia", "tier": "media"},
+      {"name": "Hyperscaler capex 2026 ($660-725B)", "url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion", "tier": "sellside"},
+      {"name": "AMD AI accelerator revenue trajectory", "url": "https://markets.financialcontent.com/wral/article/marketminute-2025-9-17-amds-mi350-series-gpus-propel-q3-2025-revenue-to-87-billion-igniting-ai-race", "tier": "company_filed"},
+      {"name": "Broadcom AI ASIC revenue and backlog", "url": "https://www.heygotrade.com/en/blog/broadcom-vs-marvell-custom-ai-silicon-battle-2026/", "tier": "sellside"},
+      {"name": "CUDA moat and switching cost analysis (Alphastreet)", "url": "https://news.alphastreet.com/nvidias-cuda-lock-in-and-supply-scarcity-make-its-ai-chip-moat-harder-to-break-than-it-looks/", "tier": "sellside"},
+      {"name": "NVIDIA gaming GPU market 94-95% (Tom's Hardware)", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-dominates-discrete-gpu-market-as-sales-of-amd-radeon-graphics-cards-hit-historical-low", "tier": "research_firm"},
+      {"name": "NVIDIA automotive design win pipeline $14B", "url": "https://www.indexbox.io/blog/nvidias-automotive-sector-a-surge-in-revenue-and-innovation/", "tier": "company_filed"},
+      {"name": "Q1 FY2027 Data Center revenue $75.2B, 92% YoY growth", "url": "https://intellectia.ai/blog/nvda-stock-earnings-analysis-may-2026", "tier": "company_filed"},
+      {"name": "NVIDIA H20 China ban $4.5B charge, $8B annualized impact", "url": "https://www.computerweekly.com/news/366625005/Nvidia-takes-45bn-hit-due-export-restrictions", "tier": "company_filed"}
+    ]
+  }
+}

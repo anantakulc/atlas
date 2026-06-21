@@ -1,0 +1,557 @@
+{
+  "_meta": {
+    "ticker": "NVDA",
+    "produced_by": "erinys",
+    "as_of": "2026-06-20"
+  },
+  "verdict": "FLAG",
+  "claim_table": [
+    {
+      "claim": "FY2026 Revenue $215.94B",
+      "source_file": "NVDA_databundle.json financials.income[FY2026].revenue_b",
+      "source_value": "215.938",
+      "report_value": "215.94",
+      "status": "VERIFIED",
+      "note": "Rounding only"
+    },
+    {
+      "claim": "FY2026 FCF $96.68B",
+      "source_file": "NVDA_databundle.json financials.cashflow[FY2026].fcf_b",
+      "source_value": "96.676",
+      "report_value": "96.68",
+      "status": "VERIFIED",
+      "note": "Rounding only"
+    },
+    {
+      "claim": "FY2026 FCF margin 44.8%",
+      "source_file": "NVDA_databundle.json ratios.fcf_margin_pct",
+      "source_value": "44.8 (also 96.676/215.938=44.77%)",
+      "report_value": "44.8%",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "FY2026 EBIT margin 60.4%",
+      "source_file": "NVDA_databundle.json: 130.387/215.938",
+      "source_value": "60.38%",
+      "report_value": "60.4%",
+      "status": "VERIFIED",
+      "note": "Correct derivation"
+    },
+    {
+      "claim": "FY2026 EPS $4.90",
+      "source_file": "NVDA_databundle.json financials.income[FY2026].eps",
+      "source_value": "4.9 (also 120.067/24.514=4.898)",
+      "report_value": "4.90",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "FY2026 Gross Margin 71.1%",
+      "source_file": "NVDA_databundle.json ratios.gross_margin_pct",
+      "source_value": "71.1 (153.463/215.938=71.07%)",
+      "report_value": "71.1%",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "Net debt $0.44B",
+      "source_file": "NVDA_databundle.json market_stats.net_debt_b",
+      "source_value": "0.435 (11.04-10.605)",
+      "report_value": "0.44",
+      "status": "VERIFIED",
+      "note": "Rounds to 0.44"
+    },
+    {
+      "claim": "Shares outstanding 24.22B",
+      "source_file": "NVDA_databundle.json market_stats.shares_outstanding_b",
+      "source_value": "24.221",
+      "report_value": "24.22",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "Current price $210.69",
+      "source_file": "NVDA_databundle.json price.current",
+      "source_value": "210.69",
+      "report_value": "210.69",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "ROE 76.3%",
+      "source_file": "NVDA_databundle.json ratios.roe_pct",
+      "source_value": "76.3",
+      "report_value": "76.3%",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Beta (regression) 2.2",
+      "source_file": "NVDA_databundle.json price.beta",
+      "source_value": "2.202",
+      "report_value": "2.2",
+      "status": "VERIFIED",
+      "note": "Correctly identified as rally-inflated; fundamental beta 1.05 used in CAPM per CONTRACT \u00a72.3"
+    },
+    {
+      "claim": "Q1 FY2027 DC revenue $75.2B (+92% YoY)",
+      "source_file": "NVDA_market_facts.json latest_earnings.data_center_revenue_b",
+      "source_value": "75.2 / yoy 92",
+      "report_value": "$75.2B +92%",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Q1 FY2027 gross margin GAAP 74.9%",
+      "source_file": "NVDA_market_facts.json latest_earnings.gross_margin_gaap_pct",
+      "source_value": "74.9",
+      "report_value": "74.9%",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Q2 FY2027 revenue guide $91B",
+      "source_file": "NVDA_market_facts.json latest_earnings.q2_fy2027_guidance.revenue_b",
+      "source_value": "91.0",
+      "report_value": "$91B",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "$95B supply commitments payable remainder FY2027",
+      "source_file": "NVDA_crux.json contracted_horizon (sourced Q1 FY2027 10-Q)",
+      "source_value": "$95B payable remainder FY2027",
+      "report_value": "$95B",
+      "status": "VERIFIED",
+      "note": "Company-filed source"
+    },
+    {
+      "claim": "NTM EPS $12.73 (yfinance) flagged as artifact; report uses $9.34",
+      "source_file": "NVDA_databundle.json estimates.eps_ntm; NVDA_market_facts.json eps_ntm_artifact_check",
+      "source_value": "12.727",
+      "report_value": "12.73 (artifact); $9.34 used in valuation",
+      "status": "VERIFIED",
+      "note": "Correctly identified as blended forward-quarters annualization artifact of a steep quarterly ramp. $12.73 x 24.22B = $308B implied NI which exceeds FY2026 actual $120B but is an artifact, not impossible. Pheme flags it; valuation anchors to $9.34 FY2027 non-GAAP consensus. Correctly handled."
+    },
+    {
+      "claim": "FY2027 non-GAAP EPS $9.34",
+      "source_file": "NVDA_market_facts.json eps_ntm_artifact_check.fy2027_nongaap_consensus",
+      "source_value": "~9.34",
+      "report_value": "$9.34",
+      "status": "VERIFIED",
+      "note": "Pheme-sourced pre-Q1-beat consensus; used correctly"
+    },
+    {
+      "claim": "NTM P/E (corrected, non-GAAP on $9.34) = 22.6x",
+      "source_file": "Derived: 210.69/9.34",
+      "source_value": "22.56x",
+      "report_value": "22.6x",
+      "status": "VERIFIED",
+      "note": "Rounds to 22.6x"
+    },
+    {
+      "claim": "TTM P/E 32.3x (GAAP)",
+      "source_file": "Derived: 210.69/(1.08+1.30+1.76+2.39); NVDA_databundle.json valuation_multiples.pe_ttm=32.26",
+      "source_value": "32.26",
+      "report_value": "32.3x",
+      "status": "VERIFIED",
+      "note": "Match within rounding"
+    },
+    {
+      "claim": "PEG ratio 0.65",
+      "source_file": "NVDA_databundle.json valuation_multiples.peg",
+      "source_value": "0.6484",
+      "report_value": "0.65",
+      "status": "VERIFIED",
+      "note": "Rounds to 0.65"
+    },
+    {
+      "claim": "DC NOPAT FY2030 $335.0B",
+      "source_file": "NVDA_demand.json scenarios.base.fy2030_revenue_dc_usd_bn=560.0; 560x0.65x0.92",
+      "source_value": "334.96",
+      "report_value": "335.0",
+      "status": "VERIFIED",
+      "note": "Derivation correct; minor rounding"
+    },
+    {
+      "claim": "NOPAT path (FY2026-FY2030): [115.9, 209.3, 264.3, 305.1, 335.0]",
+      "source_file": "Derived: DC_rev x 65% x 92% per year",
+      "source_value": "[115.93, 209.30, 264.26, 304.98, 334.96]",
+      "report_value": "[115.9, 209.3, 264.3, 305.1, 335.0]",
+      "status": "VERIFIED",
+      "note": "All five values correct within rounding"
+    },
+    {
+      "claim": "DC exit multiple 19.15x [(1-g/ROIC)/(r-g)]",
+      "source_file": "Derived: (1-0.055/0.55)/(0.102-0.055)",
+      "source_value": "19.1489",
+      "report_value": "19.15",
+      "status": "VERIFIED",
+      "note": "Gordon formula correct"
+    },
+    {
+      "claim": "Gaming exit multiple 18.0x",
+      "source_file": "Derived: (1-0.04/0.40)/(0.09-0.04)",
+      "source_value": "18.0000",
+      "report_value": "18.0",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "ProViz Gordon multiple 25.4x capped to 23x",
+      "source_file": "Derived: (1-0.05/0.45)/(0.085-0.05)",
+      "source_value": "25.397",
+      "report_value": "25.4x capped to 23x",
+      "status": "FLAG",
+      "note": "Formula gives 25.4x; report applies a 23x cap 'for conservatism vs hardware comps.' This is a documented mild-low lean (~$0.10/share impact; immaterial in isolation) and one of three mild-low leans in the bias audit tally"
+    },
+    {
+      "claim": "Automotive exit multiple 24.44x",
+      "source_file": "Derived: (1-0.08/0.30)/(0.11-0.08)",
+      "source_value": "24.4444",
+      "report_value": "24.44",
+      "status": "VERIFIED",
+      "note": "Rounding"
+    },
+    {
+      "claim": "DC EV at T: 335.0x19.15=$6,415.25B",
+      "source_file": "Derived",
+      "source_value": "6415.25",
+      "report_value": "6415.25",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Discount factor (1+10.2%)^4 = 1.4748",
+      "source_file": "Derived: 1.102^4",
+      "source_value": "1.4748",
+      "report_value": "1.4748",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "DC PV terminal = 6415.25/1.4748 = 4349.98B",
+      "source_file": "Derived",
+      "source_value": "4349.98",
+      "report_value": "4349.979 (implied)",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Interim FCF PV $478.0B (DC, FY2027-FY2029)",
+      "source_file": "Derived: sum(DC_rev x 45%/(1.102)^t)",
+      "source_value": "478.2",
+      "report_value": "478.0",
+      "status": "VERIFIED",
+      "note": "Cross-check gives 478.2B; $0.2B rounding \u2014 immaterial"
+    },
+    {
+      "claim": "DC implied EV $4,827.979B",
+      "source_file": "Derived: 6415.25/1.4748+478.0",
+      "source_value": "4827.98",
+      "report_value": "4827.979",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Gaming EV $109.8B (EBIT $6.1B x 18x)",
+      "source_file": "Derived: 16.5x37%x18",
+      "source_value": "109.89",
+      "report_value": "109.8",
+      "status": "VERIFIED",
+      "note": "Minor rounding"
+    },
+    {
+      "claim": "ProViz EV $40.25B (EBIT $1.75B x 23x)",
+      "source_file": "Derived: 3.5x50%x23",
+      "source_value": "40.25",
+      "report_value": "40.25",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Automotive EV $34.343B",
+      "source_file": "Derived: 2.04x24.44/(1.11)^4+1.5",
+      "source_value": "34.349",
+      "report_value": "34.343",
+      "status": "VERIFIED",
+      "note": "$0.006B rounding on exit multiple"
+    },
+    {
+      "claim": "SOTP sum of EVs $5,012.372B",
+      "source_file": "Derived: 4827.979+109.8+40.25+34.343",
+      "source_value": "5012.372",
+      "report_value": "5012.372",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Implied equity $5,011.937B",
+      "source_file": "Derived: 5012.372-0.435",
+      "source_value": "5011.937",
+      "report_value": "5011.937",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Fair value today $206.93",
+      "source_file": "Derived: 5011.937/24.221",
+      "source_value": "206.93",
+      "report_value": "206.93",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Bear NOPAT_T $275.1B",
+      "source_file": "NVDA_demand.json scenarios.bear.fy2030_revenue_dc_usd_bn=460; derived 460x0.65x0.92",
+      "source_value": "275.08",
+      "report_value": "275.1",
+      "status": "VERIFIED",
+      "note": "Minor rounding"
+    },
+    {
+      "claim": "Bear DC EV $3,997.777B",
+      "source_file": "Derived: 275.1x19.15/1.4748+425.6",
+      "source_value": "3997.8",
+      "report_value": "3997.777",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "Bear interim FCF PV $425.6B",
+      "source_file": "Derived from bear DC revenues (340, 390, 430) x 45% FCF margin",
+      "source_value": "427.9",
+      "report_value": "425.6",
+      "status": "FLAG",
+      "note": "My recompute from demand.json bear DC revs gives $427.9B vs $425.6B reported ($2.3B gap, 0.5%). Source of discrepancy is likely more granular quarterly buildup used in the model vs rounded annual figures in demand.json. Bear per-share ($172.65) is correctly verified \u2014 this is a second-order rounding issue only"
+    },
+    {
+      "claim": "Bear per-share $172.65",
+      "source_file": "Derived: (3997.8+184.393-0.435)/24.221",
+      "source_value": "172.65",
+      "report_value": "172.65",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Bull NOPAT_T $360.6B",
+      "source_file": "NVDA_demand.json scenarios.bull ceiling-capped fy2030=603; 603x0.65x0.92",
+      "source_value": "360.55",
+      "report_value": "360.6",
+      "status": "VERIFIED",
+      "note": "Minor rounding"
+    },
+    {
+      "claim": "Bull DC EV $5,206.496B",
+      "source_file": "Derived: 360.6x19.15/1.4748+524.1",
+      "source_value": "5206.5",
+      "report_value": "5206.496",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "Bull interim FCF PV $524.1B",
+      "source_file": "Derived from bull DC revenues (360, 490, 590) x 45%",
+      "source_value": "527.0",
+      "report_value": "524.1",
+      "status": "FLAG",
+      "note": "My recompute gives $527.0B vs $524.1B ($2.9B gap, 0.6%). Same origin as bear interim issue. Bull per-share ($222.55) correctly verified"
+    },
+    {
+      "claim": "Bull per-share $222.55",
+      "source_file": "Derived: (5206.5+184.393-0.435)/24.221",
+      "source_value": "222.54",
+      "report_value": "222.55",
+      "status": "VERIFIED",
+      "note": "Rounds to $222.55"
+    },
+    {
+      "claim": "12m fair value $225.54 = $206.93 x (1+9.0%) - $0.01",
+      "source_file": "NVDA_headline.json four_numbers.fair_value_12m; bridge_logic",
+      "source_value": "206.93x1.09-0.01=225.54",
+      "report_value": "225.54",
+      "status": "FLAG",
+      "note": "Math checks out at stated 9.0% rate. BUT the blended WACC is ~10.2% (DC is 96.3% of EV). Using 10.2% gives FV_12m=$228.03 (+$2.49 vs stated $225.54). The stated 9.0% is the Gaming segment WACC \u2014 incorrect rate applied to a company whose value is 96% DC. Impact 1.1% on FV_12m; does not change HOLD rating. Recommend using blended WACC or DC WACC for the roll-forward"
+    },
+    {
+      "claim": "Implied 12m return 7.1%",
+      "source_file": "Derived: (225.54-210.69)/210.69",
+      "source_value": "7.05%",
+      "report_value": "7.1%",
+      "status": "VERIFIED",
+      "note": "Rounds to 7.1%"
+    },
+    {
+      "claim": "HOLD rating (BUY \u226515%, SELL \u2264-10%)",
+      "source_file": "CONTRACT.md \u00a76; NVDA_headline.json rating",
+      "source_value": "7.1% < 15%",
+      "report_value": "HOLD",
+      "status": "VERIFIED",
+      "note": "HOLD is correct: 7.1% < 15% BUY hurdle, > -10% SELL hurdle"
+    },
+    {
+      "claim": "band_low=$172.65 = bear; band_high=$222.55 = bull",
+      "source_file": "NVDA_headline.json valuation_headline",
+      "source_value": "Bear $172.65, Bull $222.55",
+      "report_value": "band_low 172.65, band_high 222.55",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "CAPM: DC Ke=4.4%+1.05x5.5%=10.175%\u224810.2%",
+      "source_file": "Derived",
+      "source_value": "10.175%",
+      "report_value": "10.2%",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "CAPM: Gaming Ke=4.4%+0.85x5.5%=9.075%\u22489.0%",
+      "source_file": "Derived",
+      "source_value": "9.075%",
+      "report_value": "9.0%",
+      "status": "VERIFIED",
+      "note": "Rounds"
+    },
+    {
+      "claim": "CAPM: ProViz Ke=4.4%+0.75x5.5%=8.525%\u22488.5%",
+      "source_file": "Derived",
+      "source_value": "8.525%",
+      "report_value": "8.5%",
+      "status": "VERIFIED",
+      "note": "Rounds"
+    },
+    {
+      "claim": "CAPM: Auto Ke=4.4%+1.20x5.5%=11.0%",
+      "source_file": "Derived",
+      "source_value": "11.0%",
+      "report_value": "11.0%",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "Justified EV multiple 23.9x EV/FY2027 DC NOPAT",
+      "source_file": "Derived: (206.93x24.221+0.435)/209.3",
+      "source_value": "23.93",
+      "report_value": "23.9",
+      "status": "VERIFIED",
+      "note": "Rounds to 23.9x"
+    },
+    {
+      "claim": "Market EV multiple 24.4x",
+      "source_file": "Derived: (210.69x24.221+0.435)/209.3",
+      "source_value": "24.43",
+      "report_value": "24.4",
+      "status": "VERIFIED",
+      "note": "Rounds to 24.4x"
+    },
+    {
+      "claim": "FY2026 revenue growth rates (125.9%, 114.2%, 65.5%)",
+      "source_file": "NVDA_databundle.json financials.income",
+      "source_value": "FY24:125.9% FY25:114.2% FY26:65.5%",
+      "report_value": "125.9% / 114.2% / 65.5%",
+      "status": "VERIFIED",
+      "note": "All three correct from bundle"
+    },
+    {
+      "claim": "Analyst consensus mean target $298.93",
+      "source_file": "NVDA_databundle.json estimates.target_mean",
+      "source_value": "298.9322",
+      "report_value": "298.93",
+      "status": "VERIFIED",
+      "note": "Exact (rounding)"
+    },
+    {
+      "claim": "59 of 62 analysts Buy or Strong Buy",
+      "source_file": "NVDA_databundle.json recommendation_trend",
+      "source_value": "strongBuy:10, buy:49, hold:2, sell:1 = 59/62",
+      "report_value": "59 of 62",
+      "status": "VERIFIED",
+      "note": "Exact"
+    },
+    {
+      "claim": "FY2026 DC revenue $193.74B, 89.7% of total",
+      "source_file": "NVDA_demand.json calibration.fy2026_actual.nvda_dc_actual_usd_bn",
+      "source_value": "193.74 (193.74/215.938=89.72%)",
+      "report_value": "$193.74B / 89.7%",
+      "status": "VERIFIED",
+      "note": "Match"
+    },
+    {
+      "claim": "FY2026 buybacks $40.1B",
+      "source_file": "NVDA_databundle.json financials.cashflow[FY2026].buybacks_b",
+      "source_value": "40.086",
+      "report_value": "$40.1B",
+      "status": "VERIFIED",
+      "note": "Rounds to $40.1B"
+    },
+    {
+      "claim": "Derivation text: 'FY2027 $350B = $193.7B NOPAT'",
+      "source_file": "NVDA_valuation.json primary_method.inputs.segments[DC].exit_inputs.derivation.nopat_path_derivation",
+      "source_value": "350x0.65x0.92=209.3B (correct); prose says $193.7B (wrong)",
+      "report_value": "$193.7B",
+      "status": "FAIL",
+      "note": "The nopat_path_derivation prose states 'FY2027 $350B = $193.7B NOPAT'. This is wrong: $350B x 65% x 92% = $209.3B. The $193.7B is the FY2026 DC REVENUE, not FY2027 NOPAT. The nopat_path_b array is correct (209.3B for FY2027). This is a prose error in a load-bearing derivation field \u2014 not a computation error but a factual inaccuracy. Recommend correcting the derivation text"
+    },
+    {
+      "claim": "T-invariance: sub-table T=4 entry $199.33",
+      "source_file": "NVDA_valuation.json outputs.segments[DC].outputs.t_invariance",
+      "source_value": "Should equal main SOTP $206.93 at T=4",
+      "report_value": "$199.33",
+      "status": "FLAG",
+      "note": "The T=4 entry in the t_invariance sub-table ($199.33) differs from the primary SOTP output ($206.93) by $7.60. This occurs because the sub-table appears to use a fixed interim_fcf_pv regardless of T, rather than computing per-T. The conceptual T-invariance property holds (T=3 vs T=4 clean recompute: $200.51 vs $206.93 = 3.1% swing, within 10%). The reported sub-table swing (T=2 $191.81 to T=3 $199.98 = 4.3%) is also within spec. The primary fair value ($206.93) is correct. The sub-table T=4 entry is an internal inconsistency"
+    },
+    {
+      "claim": "Bias audit same_direction_count = 1",
+      "source_file": "NVDA.json bias_audit.same_direction_count",
+      "source_value": "3 mild-low leans by Erinys count",
+      "report_value": "1",
+      "status": "FLAG",
+      "note": "Report counts 1 confirmed LOW lean but the bias_audit rows contain 3 same-direction (low) leans: (1) ROIC 55% below observed, (2) ProViz multiple 23x vs 25.4x Gordon, (3) interim FCF 45% vs DC-specific ~48-50%. Per CONTRACT \u00a71.3, three same-direction leans requires a BIAS flag. The aggregate cumulative lean is ~$16/share (7.7% of base). However: (a) each lean is individually documented; (b) the directional effect pushes fair value UPWARD (toward BUY), which does not manufacture a false SELL or false BUY; (c) the HOLD rating is not reversed. The field should read 3 (mild) not 1, with a note explaining why the leans are not disqualifying"
+    }
+  ],
+  "bias_audit": {
+    "bull_lean_count": 0,
+    "bear_lean_count": 3,
+    "neutral_count": 7,
+    "verdict": "FLAG",
+    "detail": "Three mild-low (bear-direction) leans: (1) DC ROIC 55% vs observed 76.3% ROE \u2014 $12/share stated as second-order; (2) ProViz Gordon multiple capped at 23x vs formula 25.4x \u2014 <$0.10/share, immaterial; (3) Interim FCF margin 45% on DC revenue vs report-acknowledged ~48-50% DC-specific rate \u2014 ~$4/share PV impact. Aggregate: ~$16/share below honest center (7.7% of base). CONTRACT \u00a71.3 threshold technically met (3 same-direction). Mitigating: all leans documented, directional effect pushes value UPWARD (strengthens HOLD not weakens it), none individually material to the rating. The bias_audit.same_direction_count field should read 3 (mild) not 1."
+  },
+  "exit_multiple_recompute": {
+    "dc_nopat_T": 335.0,
+    "exit_multiple": 19.1489,
+    "terminal_ev_b": 6414.894,
+    "discount_factor": 1.4748,
+    "pv_terminal_b": 4349.738,
+    "plus_interim_fcf_pv_b": 478.0,
+    "dc_ev_b": 4827.738,
+    "other_segments_ev_b": 184.393,
+    "net_debt_b": 0.435,
+    "equity_value_b": 5011.696,
+    "equity_value_per_share": 206.92,
+    "reported_px": 206.93,
+    "match": false
+  },
+  "t_invariance_check": {
+    "note": "T=3 vs T=4 clean recompute shows a 3.1% swing ($200.51 vs $206.93), within the <10% spec. T-invariance property holds. The reported sub-table shows 4.3% swing, also within spec. The T=4 entry in the sub-table ($199.33) is internally inconsistent with the main SOTP output ($206.93) \u2014 see issues list.",
+    "t3_px_recompute": 200.5,
+    "t4_px_recompute": 206.92,
+    "t3_vs_t4_swing_pct": 3.2,
+    "t3_vs_t4_pass": true,
+    "reported_table_swing_pct": 4.3,
+    "reported_table_pass": true,
+    "t4_sub_table_vs_sotp_diff": 7.599999999999994,
+    "sub_table_internal_inconsistency": true,
+    "t_invariance_conclusion": "PASS (property holds; sub-table arithmetic approximation flagged separately)"
+  },
+  "issues": [
+    "FAIL: Derivation text in NVDA_valuation.json (nopat_path_derivation) states 'FY2027 $350B = $193.7B NOPAT' \u2014 factually wrong. $350B x 65% x 92% = $209.3B. The $193.7B is the FY2026 DC REVENUE. The nopat_path array is correct; this is a prose error in a load-bearing derivation field. Fix the text.",
+    "FLAG: T-invariance sub-table T=4 entry ($199.33) is internally inconsistent with the main SOTP fair value ($206.93), a $7.60 discrepancy. The sub-table appears to use a fixed interim_fcf_pv rather than adjusting per T. The conceptual T-invariance property holds (T=3 to T=4 clean recompute = 3.1% swing, within 10%). Recommend regenerating the sub-table with period-appropriate interim FCFs.",
+    "FLAG: bias_audit.same_direction_count=1 understates the tally. Three mild-low leans are present (ROIC 55%, ProViz multiple cap, interim FCF margin 45%). Per CONTRACT \u00a71.3 the threshold is three same-direction leans. Aggregate cumulative impact ~$16/share (7.7% of base). Leans push value UPWARD (not toward a false SELL) so the rating is unaffected, but the field should read '3 (mild)' not '1' with an explicit explanation of why the leans are not disqualifying.",
+    "FLAG: Roll-forward rate for #1 to #3 stated as 9.0% (NVDA.json four_numbers.fair_value_12m.basis; NVDA_headline.json bridge_logic). The correct blended WACC is ~10.2% (DC = 96.3% of EV). Using 10.2% gives FV_12m = $228.03 vs reported $225.54, a $2.49 difference (1.1%). The stated 9.0% is the Gaming WACC and appears to have been misapplied to the company-level roll-forward. Does not change the HOLD rating.",
+    "FLAG: Bear interim FCF PV ($425.6B) and bull interim FCF PV ($524.1B) cannot be precisely replicated from the rounded annual DC revenues in demand.json (bear: $427.9B computed; bull: $527.0B computed). Gaps of $2.3B and $2.9B respectively (0.5-0.6%). Per-share outcomes ($172.65 bear; $222.55 bull) are correctly verified. Second-order rounding issue only \u2014 no action required for the rating.",
+    "NOTE: NTM EPS $12.73 artifact correctly identified and not used in valuation. No action required.",
+    "NOTE: segment weight_pct labels (DC 89.7%) refer to REVENUE share, not EV share (DC EV is 96.3% of total). Correct labeling \u2014 not an error."
+  ]
+}

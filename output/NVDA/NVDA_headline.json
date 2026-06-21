@@ -1,0 +1,71 @@
+{
+  "valuation_headline": {
+    "current_price": 210.69,
+    "fair_value_today": 206.93,
+    "target_12m": 228.03,
+    "fair_value_12m": 228.03,
+    "band_low": 172.65,
+    "band_high": 222.55,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 206.93,
+      "multiple": 23.9,
+      "multiple_label": "EV/FY2027 DC Segment NOPAT",
+      "basis": "base case (Metis) intrinsic value \u2014 the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 210.69,
+      "multiple": 24.4,
+      "multiple_label": "EV/FY2027 DC Segment NOPAT",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 228.03,
+      "basis": "#1 rolled forward at blended WACC r=10.2% less dividend $0.01",
+      "convergence_return_pct": 8.2
+    },
+    "target_12m": {
+      "value": 228.03,
+      "basis": "intrinsic_convergence (no separate traded-multiple view authored)",
+      "detail": null,
+      "implied_12m_total_return_pct": 8.2
+    }
+  },
+  "street_reconstruction": {},
+  "street_target": {
+    "mean": null,
+    "mean_multiple": null,
+    "mean_implied_growth_pct": null,
+    "high": null,
+    "return_pct": null,
+    "n_analysts": null
+  },
+  "rating": {
+    "action": "HOLD",
+    "tone": "neutral",
+    "implied_12m_total_return_pct": 8.2,
+    "convergence_return_pct": 8.2,
+    "street_return_pct": null,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "HIGH",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "MEDIUM",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": 0.241,
+    "caps_applied": [],
+    "basis": "action HOLD: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {},
+  "bridge_logic": "#1 fair value today 206.93 -> #3 fair value 12m 228.03 (x(1+0.102) - div 0.01); #4 target 12m 228.03 (intrinsic_convergence); implied return to #4 = 8.2%, rating HOLD (<15% BUY hurdle)"
+}
