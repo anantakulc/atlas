@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "ticker": "TXN",
+    "agent": "Daedalus",
+    "atlas_version": "v3",
+    "produced_utc": "2026-06-21",
+    "note": "Street reconstruction on NTM FCF. Pheme's corrected consensus EPS of $8.95 (32-analyst) used as the NTM anchor per the estimate-artifact flag. FCF/share proxy for NTM: consensus ~$6.92/share for CY2026 from Pheme. Anchor switched to P/FCF (the true owner-earnings currency for a capex-normalizing name) so the implied growth is in FCF terms."
+  },
+  "ticker": "TXN",
+  "currency": "USD",
+  "current_price": 322.86,
+  "shares_outstanding_b": 0.910,
+  "net_debt_b": 10.82,
+  "fundamental_discount_rate": 0.090,
+  "terminal_growth": 0.045,
+  "horizon_years": 10,
+
+  "anchor": {
+    "type": "P/FCF",
+    "metric_label": "NTM FCF/share (consensus CY2026)",
+    "metric_value": 6.92,
+    "fcf_conversion": 1.0,
+    "roic": 0.30,
+    "note": "P/FCF is the right anchor for TXN: the entire bull thesis is a FCF-per-share re-rating as capex normalizes from $5B peak to $2-3B. Using NTM FCF/share $6.92 per Pheme (consensus, third-party aggregation). EPS $8.95 consensus used for the NTM P/E dual. FCF conversion = 1.0 since this is already FCF. ROIC 30% is the consolidated estimate; Analog alone is 35%+."
+  },
+
+  "street": {
+    "target_mean": 294.41,
+    "target_high": 400.00,
+    "target_low": 200.00,
+    "n_analysts": 32,
+    "rating": "buy",
+    "thesis": "Analog/embedded inventory correction has ended; FCF per share re-rates sharply as capex normalizes from $5B peak to $2-3B; industrial up 30%+ YoY and data center up 90% YoY in Q1-2026 are the two new growth drivers; 300mm manufacturing moat translates to structural gross margin expansion toward 65%+. Silicon Labs adds embedded wireless connectivity. The call on the stock is a FCF-per-share inflection, priced at 36x NTM EPS."
+  },
+
+  "history": {
+    "anchor_cagr_5y": 0.05,
+    "note": "FCF/share has been extremely volatile: $5.74/share at peak (FY2022 on $5.9B FCF / ~1.03B shares), then collapsed to ~$1.55/share (FY2024: $1.50B FCF / 0.92B shares) as the capex super-cycle depressed FCF. The capex cycle is the dominant FCF driver, not revenue. A pure 5-year CAGR on FCF is meaningless here; the correct anchor is FCF at normalization (FY2026-2027 consensus $6.92-$8.00+/share)."
+  },
+
+  "peers": [
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "multiple": 34.0,
+      "metric": "NTM P/FCF",
+      "note": "ADI trades at ~34x NTM FCF; similar analog franchise but no 300mm moat and higher leverage post-Maxim. Gross margin ~68% but structurally fabless at 200mm."
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "multiple": 22.0,
+      "metric": "NTM P/FCF",
+      "note": "MCHP at ~22x NTM FCF; similar Embedded/MCU exposure but significantly higher leverage (~8x net debt/EBITDA post-Microsemi) and lower analog quality mix. Discount vs TXN is warranted."
+    },
+    {
+      "ticker": "STM",
+      "name": "STMicroelectronics",
+      "multiple": 15.0,
+      "metric": "NTM P/FCF",
+      "note": "STM at ~15x NTM FCF; more automotive-MCU-power discrete mix; European listing; lower multi-year FCF growth visibility. Significant discount to TXN reflects higher cyclicality and absence of 300mm moat."
+    },
+    {
+      "ticker": "NXP",
+      "name": "NXP Semiconductors",
+      "multiple": 18.0,
+      "metric": "NTM P/FCF",
+      "note": "NXP at ~18x NTM FCF; highly automotive-concentrated (~70%), recovering in 2026 alongside TXN. Less analog content exposure, more MCU-dominated."
+    },
+    {
+      "ticker": "ON",
+      "name": "onsemi",
+      "multiple": 20.0,
+      "metric": "NTM P/FCF",
+      "note": "onsemi (ON) at ~20x NTM FCF; SiC and power management focus, heavy EV exposure. Comparable auto exposure but different technology (SiC vs TXN's analog). Peer FCF yield and multiple midpoint."
+    }
+  ],
+
+  "contested_lever": "FCF per share at normalized capex ($6.92 consensus, >$8 management target, $8.20 Theia base) AND the sustainable exit FCF multiple the market applies once capex normalizes. The call hinges on: (1) does industrial recovery continue at current pace or stall? (2) is the 300mm manufacturing moat durable enough to justify a premium multiple above peer group? At 47x NTM FCF vs the peer group at 15-34x, TXN already prices a structural premium — the crux is whether that premium is earned.",
+
+  "justified_g_grid": [0.03, 0.05, 0.07, 0.08, 0.10, 0.12, 0.15],
+  "roic_grid": [0.15, 0.20, 0.30, 0.35],
+  "duality_g_grid": [0.04, 0.045, 0.05]
+}

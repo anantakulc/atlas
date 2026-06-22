@@ -1,0 +1,349 @@
+{
+  "_meta": {
+    "ticker": "TXN",
+    "agent": "Pheme",
+    "atlas_version": "v3",
+    "freeze_date": "2026-06-21",
+    "snapshot_id": "TXN_2026-06-21T0131Z",
+    "sources": [
+      "TXN_databundle.json (yfinance, as_of 2026-06-21T01:31Z)",
+      "TI Q1 2026 earnings release (investor.ti.com, 2026-04-22)",
+      "Q1 2026 earnings call transcript (multiple sources, 2026-04-22)",
+      "WebSearch: analyst TP/rating actions April-June 2026",
+      "Manufacturing Dive: data center cycle commentary",
+      "TI newsroom: Silicon Labs acquisition (2026-02-04)"
+    ]
+  },
+
+  "price_and_market_stats": {
+    "current_price_usd": 322.86,
+    "price_as_of": "2026-06-21",
+    "high_52w": 331.51,
+    "low_52w": 152.73,
+    "ma50": 281.61,
+    "ma200": 210.30,
+    "ytd_pct": 83.99,
+    "return_1y_pct": 67.47,
+    "beta": 1.309,
+    "market_cap_b": 293.83,
+    "enterprise_value_b": 302.78,
+    "shares_outstanding_b": 0.910,
+    "net_debt_b": 10.82,
+    "adtv_usd_m": 3080.1,
+    "dividend_per_share": 5.68,
+    "dividend_yield_pct": 1.76
+  },
+
+  "valuation_multiples_as_frozen": {
+    "pe_ttm": 55.28,
+    "pe_ntm_bundle": 34.27,
+    "ev_ebitda_ttm": 34.94,
+    "ev_sales_ttm": 16.42,
+    "pb": 17.51,
+    "peg": 1.54,
+    "note": "pe_ttm verified: $322.86 / TTM EPS $5.84 (Q2-25 $1.41 + Q3-25 $1.48 + Q4-25 $1.27 + Q1-26 $1.68) = 55.28. Consistent."
+  },
+
+  "estimate_artifact_check": {
+    "status": "FLAG — NTM EPS FIELD DISCREPANCY",
+    "eps_ntm_yfinance": 9.4206,
+    "eps_ntm_consensus_32_analysts": 8.9480,
+    "pe_ntm_bundle_uses": 9.4206,
+    "pe_ntm_bundle_value": 34.27,
+    "pe_ntm_corrected_on_consensus": 36.08,
+    "corrected_forward_eps": 8.95,
+    "corrected_pe_ntm": 36.1,
+    "explanation": "The bundle's eps_ntm=9.42 and the 32-analyst consensus eps_ntm_consensus=8.95 differ by ~5.3%. The pe_ntm=34.27 in the bundle is computed from the yfinance eps_ntm (9.42), not from street consensus. At $322.86 / $8.95 = 36.1x. Daedalus should use the 36.1x figure as the consensus-derived NTM multiple. The yfinance eps_ntm=9.42 may reflect a forward year blend or non-GAAP adjustment; it cannot be reconciled without the underlying yfinance period definition. Both fields are reported; the 32-analyst consensus figure (8.95) is the market-standard reference.",
+    "ttm_eps_check": {
+      "quarterly_sum": 5.84,
+      "pe_ttm_implied": 55.28,
+      "bundle_pe_ttm": 55.28,
+      "verdict": "CONSISTENT — TTM PE confirmed"
+    },
+    "fcf_artifact_note": "FY2025 FCF = $2.60B (14.7% FCF margin). Consensus FCF/share for CY2026 is approximately $6.92 (third-party sources). Management FCF/share framework implies >$8/share if CY2026 demand trends continue. At $322.86 price, 2026 consensus FCF yield = 2.1% ($6.92/$322.86). The FCF compression in FY2023-FY2025 is entirely capex-driven (LFAB/SM1 build). FCF should normalize sharply as 2026 capex guidance of $2-3B represents a roughly 40% step-down from FY2023 peak."
+  },
+
+  "consensus_estimates": {
+    "n_analysts": 32,
+    "target_mean_usd": 294.41,
+    "target_median_usd": 300.00,
+    "target_high_usd": 400.00,
+    "target_low_usd": 200.00,
+    "recommendation_key": "buy",
+    "recommendation_trend": {
+      "strong_buy": 2,
+      "buy": 15,
+      "hold": 17,
+      "sell": 2,
+      "strong_sell": 0,
+      "total": 36,
+      "pct_buy_or_strong_buy": 47,
+      "pct_hold": 47,
+      "pct_sell_or_strong_sell": 6
+    },
+    "note_on_target_vs_price": "Consensus mean target $294.41 is 8.8% BELOW current price $322.86. Consensus median $300 is 7.1% below. The stock has run significantly through the consensus target range since the Q1-2026 earnings beat. The most recent raises (Citi $345, BofA $370, Seaport $400) sit above price; the older, unrevised targets drag the consensus mean below. This is a lagging-consensus situation.",
+    "forward_estimates": {
+      "fy2026": {
+        "revenue_b_est": 21.0,
+        "eps_est": 8.95,
+        "fcf_per_share_est": 6.92,
+        "note": "Revenue estimate ~$21B implies ~19% growth from FY2025 $17.68B. EPS $8.95 = 32-analyst consensus. FCF/share $6.92 from third-party consensus vs management framework of >$8."
+      },
+      "fy2027": {
+        "revenue_b_est": 23.0,
+        "eps_est": 9.0,
+        "note": "Revenue estimate ~$23B (+10% vs FY2026). EPS ~$9 at current consensus. Further FCF per share expansion expected as capex normalizes to $1.5-2B range."
+      },
+      "source_caveat": "FY2026/FY2027 estimates from web search aggregation (multiple sources). Not in Hermes bundle. Flag for Daedalus: treat as approximate range, not point estimates."
+    }
+  },
+
+  "post_earnings_analyst_actions": {
+    "last_earnings_date": "2026-04-22",
+    "last_earnings_period": "Q1 2026",
+    "earnings_reaction": {
+      "result": "BEAT on both revenue and EPS",
+      "revenue_reported_b": 4.83,
+      "revenue_consensus_b": 4.52,
+      "eps_reported": 1.68,
+      "eps_consensus": 1.37,
+      "beat_pct_revenue": 6.9,
+      "beat_pct_eps": 22.6,
+      "stock_reaction": "Stock rose ~7% on the day (April 23, 2026) on the beat-and-raise; described by multiple sources as 'best-ever Q1' by management",
+      "source": "Quiver Quantitative; Investing.com earnings call transcript summary; WebSearch aggregation"
+    },
+    "rating_and_pt_changes": [
+      {
+        "date": "2026-06-15",
+        "firm": "Citi",
+        "analyst": "Christopher Danely",
+        "action": "PT raised, rating maintained",
+        "old_pt": 280,
+        "new_pt": 345,
+        "rating": "Buy",
+        "rating_change": "none",
+        "note": "Named TXN top semiconductor pick; cited product price increases and TI's expanding data center power market share",
+        "source": "WebSearch (multiple sources)"
+      },
+      {
+        "date": "2026-05-25",
+        "firm": "Bank of America",
+        "analyst": "not identified in sources",
+        "action": "PT raised, rating maintained",
+        "old_pt": 320,
+        "new_pt": 370,
+        "rating": "Buy",
+        "rating_change": "none",
+        "note": "Said multi-year content gains underappreciated; industrial and auto 'have finally turned the corner'; cited 'transformative' AI data center growth",
+        "source": "Yahoo Finance / Insider Monkey"
+      },
+      {
+        "date": "2026-05-22",
+        "firm": "Seaport Research",
+        "analyst": "Jay Goldberg",
+        "action": "Upgraded, PT initiated",
+        "old_pt": null,
+        "new_pt": 400,
+        "rating": "Buy",
+        "rating_change": "Upgraded from Neutral to Buy",
+        "note": "Highest PT on the Street as of freeze date. Bullish on cycle recovery and manufacturing moat",
+        "source": "WebSearch aggregation"
+      },
+      {
+        "date": "2026-04-23",
+        "firm": "Baird",
+        "analyst": "not identified in sources",
+        "action": "PT raised, rating maintained",
+        "old_pt": 225,
+        "new_pt": 300,
+        "rating": "Outperform",
+        "rating_change": "none",
+        "note": "33% PT increase immediately post-Q1; reflects earnings recovery and cycle inflection",
+        "source": "GuruFocus"
+      },
+      {
+        "date": "2026-04-23 (approx)",
+        "firm": "Wells Fargo",
+        "analyst": "not identified in sources",
+        "action": "PT raised, rating maintained",
+        "old_pt": 260,
+        "new_pt": 300,
+        "rating": "Equal Weight",
+        "rating_change": "none",
+        "note": "Maintained cautious stance despite raising PT; Equal Weight signals valuation concern even with cycle recovery",
+        "source": "WebSearch aggregation"
+      },
+      {
+        "date": "2026-04-23 (approx)",
+        "firm": "UBS",
+        "analyst": "not identified in sources",
+        "action": "PT raised",
+        "old_pt": 260,
+        "new_pt": 295,
+        "rating": "not confirmed in sources",
+        "rating_change": "none",
+        "note": "Part of broad post-Q1 PT lift wave",
+        "source": "WebSearch aggregation"
+      },
+      {
+        "date": "2026-04-23 (approx)",
+        "firm": "JPMorgan",
+        "analyst": "not identified in sources",
+        "action": "PT raised",
+        "old_pt": 227,
+        "new_pt": 280,
+        "rating": "not confirmed in sources",
+        "rating_change": "none",
+        "note": "Part of broad post-Q1 PT lift wave",
+        "source": "WebSearch aggregation"
+      },
+      {
+        "date": "2026-04-23 (approx)",
+        "firm": "Cantor Fitzgerald",
+        "analyst": "not identified in sources",
+        "action": "PT raised, rating maintained",
+        "old_pt": null,
+        "new_pt": 250,
+        "rating": "Neutral",
+        "rating_change": "none",
+        "note": "Bears remain: Cantor at $250 vs $322 price signals valuation concern; Street is split",
+        "source": "Yahoo Finance investment story article"
+      },
+      {
+        "date": "2026-04-23 (approx)",
+        "firm": "Broad wave (Goldman Sachs, TD Cowen, Benchmark, KeyBanc, Rosenblatt, Jefferies, Truist, Stifel, BofA, Barclays, Mizuho, Aletheia)",
+        "analyst": "various",
+        "action": "PT raised and/or rating upgraded",
+        "old_pt": "various (pre-earnings range ~$220-320)",
+        "new_pt": "various (post-earnings range $278-$370)",
+        "rating": "various",
+        "rating_change": "BofA, Barclays, Mizuho, Aletheia moved to more positive ratings",
+        "note": "A wall of raises post-Q1. Multiple firms, simultaneous direction. This is a hard market fact: the post-print analyst tape was overwhelmingly bullish.",
+        "source": "Yahoo Finance investment story article; WebSearch aggregation"
+      }
+    ],
+    "tape_summary": "At least 15+ firms raised price targets within days of the Q1 2026 print on April 22. At least 4 firms upgraded ratings. The range of new targets spans $250 (Cantor, bear end) to $400 (Seaport, bull end). The mean consensus target at $294 lags the price because older unrevised estimates anchor the average below recent raises. The direction of the tape is unambiguously bullish: no downgrades or material target cuts in the April-June period."
+  },
+
+  "street_thesis": "TXN is the structural beneficiary of the analog/embedded inventory correction ending, with three reinforcing drivers: (1) industrial demand recovering from a severe de-stocking trough with Q1-2026 industrial revenue up 30%+ YoY; (2) a new and fast-growing data center power and connectivity revenue stream, up ~90% YoY in Q1, that was not in prior models; (3) a manufacturing model built around 300mm internal fabs (LFAB, SM1, SM2) that will structurally lower costs and lift gross margins as utilization scales, with capex normalizing from $5B peak to $2-3B in 2026. FCF per share is expected to re-rate sharply as capex rolls off. The Silicon Labs acquisition ($7.5B, all-cash, expected H1-2027 close) strengthens embedded processing and wireless connectivity.",
+
+  "capex_guidance": [
+    {
+      "buyer": "Texas Instruments (self, manufacturing investment)",
+      "fy": "FY2026",
+      "capex_guide_b": "2.0-3.0",
+      "incl_finance_leases": false,
+      "quote": "CapEx for 2026 is targeted at $2 billion to $3 billion, with a growing focus on internalizing back-end assembly and test given identified capacity bottlenecks in the market",
+      "source_url": "https://investor.ti.com/static-files/9d0b308f-8b7e-4e0c-9377-5fa5877243fe",
+      "note": "This is TXN's own capex, not customer capex. It represents a ~40-50% step-down from FY2023 peak capex of $5.07B. The key demand-curve datapoints for Theia are hyperscaler and industrial customer capex, which are not available in the Hermes bundle."
+    }
+  ],
+  "capex_guidance_note_for_theia": "The Hermes bundle contains no customer capex data (SEC fetch failed). Data center revenue grew ~90% YoY in Q1-2026, but the absolute data center revenue figure is not segmented in TXN's public filings — it is disclosed as an end-market comment, not a formal segment. Hyperscaler capex levels relevant to TXN's data center power business are not in the bundle. Theia will need to source these independently.",
+
+  "sentiment": {
+    "social_sentiment": {
+      "source": "stocktwits",
+      "status": "not available — HTTPError in bundle",
+      "verdict": "not in bundle"
+    },
+    "short_interest_pct": 2.0,
+    "short_interest_source": "WebSearch aggregation (approximate, not in bundle)",
+    "institutional_ownership_pct": 92.62,
+    "institutional_ownership_source": "bundle (holders.institutional_pct)",
+    "insider_ownership_pct": 0.28,
+    "institutional_ownership_note": "92.6% institutional is typical for large-cap quality semis. No major institutional buying/selling data in bundle. Short interest of ~2% is low — does not suggest a significant short overhang.",
+    "options_positioning": "not in bundle"
+  },
+
+  "reverse_multiple_decomposition": {
+    "price": 322.86,
+    "consensus_nmt_eps": 8.95,
+    "nmt_pe_corrected": 36.1,
+    "ev_b": 302.78,
+    "nmt_revenue_est_b": 21.0,
+    "ev_nmt_sales": 14.4,
+    "consensus_fcf_per_share_2026_est": 6.92,
+    "price_to_consensus_fcf_2026": 46.7,
+    "decomposition": {
+      "interpretation": "At 36x NTM EPS, the market is pricing TXN well above its through-cycle mid-cycle P/E (analog semis typically trade 20-25x mid-cycle). The premium has two components: (1) cyclical recovery — EPS is still below peak ($9.41 in FY2022), so the market is looking through a trough multiple; (2) structural re-rate — data center demand and the 300mm manufacturing model imply a structurally higher FCF margin at cycle normalization, justifying a higher steady-state multiple.",
+      "gordon_growth_implied": {
+        "assumption_r": 0.10,
+        "fcf_per_share_2026_consensus": 6.92,
+        "price_to_fcf_ratio": 46.7,
+        "implied_terminal_g_pct": 7.9,
+        "verdict": "A 36x P/E or ~47x CY2026 FCF at r=10% implies approximately 7.9% long-run FCF growth. This is aggressive for a cyclical analog semi. The implied terminal g is only sustainable if (a) the data center power segment continues to scale for many years and (b) capex normalization permanently widens FCF margins vs history."
+      },
+      "what_is_priced_in": "The market prices a structural inflection, not just a cyclical recovery. Specifically: continued data center revenue growth, capex normalization driving FCF per share well above $8 by 2027-2028, industrial and auto end-markets holding at or above Q1-2026 run rates, and the 300mm manufacturing moat translating into durable gross margin expansion to 59-62%. A reversion to pre-data-center demand or a capex restart would break the thesis."
+    }
+  },
+
+  "market_view": {
+    "whats_priced_in": "The current price of $322.86 (36x NTM EPS of $8.95) prices a structural earnings inflection, not merely cyclical recovery. The market expects: (1) FCF per share to recover well past the $5.74 FY2022 peak as capex normalizes; (2) gross margins to expand to the high-50s to low-60% range on 300mm utilization scale; (3) data center power becoming a durable new revenue stream. A mean-reversion of demand or a capex restart would require meaningful multiple de-rating.",
+    "street_view": "Bulls argue TXN is in the early innings of a multi-year FCF per share expansion cycle, driven by three independent drivers (industrial recovery, data center build-out, and capex normalization). Bears argue the stock has already priced the entire recovery at 36x NTM earnings, and that the Silicon Labs deal ($7.5B all-cash) adds integration risk and leverage to an already-stressed balance sheet. The tape since Q1 earnings is overwhelmingly bullish — over 15 target raises, at least 4 upgrades, zero downgrades.",
+    "post_earnings_analyst_actions_summary": "Q1-2026 (April 22, 2026): revenue +6.9% vs consensus, EPS +22.6% vs consensus. At least 15+ analyst firms raised price targets in the weeks following the print. Seaport upgraded to Buy at $400. BofA raised to $370. Citi raised to $345 (June 15, after product price increase news). No downgrades in the April-June period. The consensus mean target of $294 lags the price because pre-earnings targets have not all been refreshed.",
+    "news_narrative": "Q1-2026 was described as the company's best-ever Q1 by management, driven by industrial up ~30% and data center up ~90% year-over-year. The stock rose ~7% on April 23. The beat was genuine (not a guide-down-then-beat): Q2 guidance of $5.0-5.4B exceeded prior consensus of ~$4.8B. The narrative is a cyclical-recovery-plus-structural-growth story, not a beat-but-flat-guidance situation. The Silicon Labs acquisition announcement (February 4, 2026) adds scale to embedded processing and wireless connectivity; synergies of ~$450M expected within three years post-close (expected H1 2027).",
+    "sentiment_narrative": "Social sentiment data unavailable (StockTwits HTTPError in bundle). Short interest ~2% — not a contrarian signal. Institutional ownership 92.6%. The stock is up ~84% YTD and ~67% over one year, trading near its 52-week high of $331.51 — momentum is strong. No insider selling data in bundle.",
+    "runway": "The stock is trading within 3% of its 52-week high at $322.86 vs $331.51 high. Consensus mean target of $294 is below price, but the most-recently-revised targets (Seaport $400, BofA $370, Citi $345) imply 7-24% upside from current levels. The next catalyst is Q2-2026 earnings (July 22, 2026). Q2 guidance implies $5.0-5.4B revenue vs Q1's $4.83B — sequential growth would further validate the recovery thesis.",
+    "runway_verdict": "VALUATION RISK IS REAL AND DISTINCT FROM THE RUNWAY. The fundamental demand runway (industrial recovery + data center growth) appears intact based on Q1 evidence. However, the multiple at 36x NTM P/E is pricing significant further FCF growth beyond 2026. The separation is: the business is fundamentally in recovery (positive runway), but the valuation already reflects optimistic assumptions (valuation risk is HIGH). A priced-for-perfection dynamic exists at the current price level.",
+    "market_lean": {
+      "direction": "BULL",
+      "strength": "STRONG",
+      "basis": "Post-Q1 analyst tape is overwhelmingly bullish (15+ raises, 4 upgrades, 0 downgrades). Fundamental recovery is data-confirmed (Q1 revenue +19% YoY, industrial +30%, data center +90%). Stock momentum is strong (up 84% YTD). Short interest is low. However, the 36x NTM multiple and stock trading near 52-week highs mean the bull case is substantially priced. The residual uncertainty is whether data center demand is durable (not a temporary hyperscaler cycle) and whether the Silicon Labs deal integrates smoothly."
+    }
+  },
+
+  "q1_2026_operational_facts": {
+    "revenue_b": 4.83,
+    "revenue_growth_yoy_pct": 19.0,
+    "revenue_growth_seq_pct": 9.0,
+    "gross_margin_pct": 58.0,
+    "operating_income_b": 1.80,
+    "operating_margin_pct": 37.0,
+    "eps_diluted": 1.68,
+    "segment_revenue": {
+      "analog_b": 3.92,
+      "analog_growth_yoy_pct": 22,
+      "analog_operating_margin_pct": 41.7,
+      "embedded_processing_b": 0.723,
+      "embedded_processing_growth_yoy_pct": 12,
+      "embedded_operating_margin_pct": 16.9,
+      "other_b": 0.178,
+      "other_growth_yoy_pct": -16
+    },
+    "end_market_commentary": {
+      "industrial_growth_yoy_pct": "approximately +30",
+      "industrial_growth_seq_pct": "approximately +20",
+      "automotive_growth_seq": "approximately flat (China auto down, rest-of-world up)",
+      "data_center_growth_yoy_pct": "approximately +90",
+      "data_center_growth_seq_pct": "approximately +25",
+      "personal_electronics": "not specifically called out in available sources"
+    },
+    "inventory_days": 209,
+    "inventory_b": 4.7,
+    "inventory_trend": "Down from 222 days previous quarter; management targets low end of 150-250 day range during upturn",
+    "q2_2026_guidance": {
+      "revenue_low_b": 5.0,
+      "revenue_high_b": 5.4,
+      "revenue_midpoint_b": 5.2,
+      "eps_low": 1.77,
+      "eps_high": 2.05,
+      "eps_midpoint": 1.91,
+      "implied_gross_margin_commentary": "management guided low-to-mid 59% gross margin for Q2 vs 58% in Q1"
+    },
+    "capex_guidance_fy2026_b": "2.0-3.0",
+    "source": "Q1 2026 earnings call (April 22, 2026); 10-Q (SEC); WebSearch aggregation"
+  },
+
+  "silicon_labs_acquisition": {
+    "announced": "2026-02-04",
+    "deal_value_b": 7.5,
+    "price_per_share": 231.00,
+    "structure": "all-cash",
+    "expected_close": "H1 2027",
+    "rationale": "Adds embedded wireless connectivity (IoT) portfolio to TXN's analog and embedded processing; combined entity to be global leader in embedded wireless connectivity",
+    "synergies_annual_b": 0.45,
+    "synergy_timeline_years": 3,
+    "eps_accretion": "accretive to EPS in first full year post-close (excluding transaction costs)",
+    "note": "This is TXN's largest acquisition since National Semiconductor ($6.5B, 2011). All-cash structure will increase net debt by ~$7.5B. Net debt post-close would reach approximately $18B vs $10.8B at freeze date. This is a material balance sheet change Daedalus must factor into the valuation."
+  }
+}

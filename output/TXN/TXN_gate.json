@@ -1,0 +1,102 @@
+{
+  "ticker": "TXN",
+  "gate_date": "2026-06-22",
+  "gating_agent": "Forseti",
+  "atlas_version": "v3",
+  "contract_version": "v3.0",
+  "gates": [
+    {
+      "gate": "argued_not_asserted",
+      "ref": "CONTRACT §1.1",
+      "pass": true,
+      "note": "Every load-bearing number is argued from evidence. The Analog g_LT of 4.5% cites four sources (Fortune Business Insights, Coherent Market Insights, Mordor Intelligence TAM; plus content-per-vehicle and data center as incremental uplift). The ROIC of 35% is argued from trough ROE, Q1-2026 Analog margin, incremental 300mm economics, and historical peak. The discount rate is derived via CAPM with stated inputs (Rf=4.40%, beta_fundamental=0.85, ERP=5.50%). The NOPAT_T is built step-by-step from revenue path, EBIT margin, tax rate, and SBC. The target multiple (27x CY2027 FCF) is argued via Gordon formula plus moat premium vs peer median. No bare assertions found. The street reconstruction is explicit: the market is pricing 12% FCF CAGR for 10 years, stated and sourced."
+    },
+    {
+      "gate": "no_stacked_bias",
+      "ref": "CONTRACT §1.3",
+      "pass": true,
+      "note": "PASS WITH CONDITION. The bias_audit in TXN_valuation.json and TXN.json reports four same-direction SLIGHT BEAR leans (Analog g_LT, Analog r, Embedded exit multiple, interim FCF PV) against zero bull leans. CONTRACT §1.3 threshold is three-or-more same-direction = a bias. The report correctly identifies this is four and argues robustness: the SELL conclusion survives relaxing any single assumption. Erinys confirmed: relaxing all four to center adds approximately $40-55/sh to base fair value (producing a base of ~$145-160), still 50-55% below the $323 price. The SELL is not manufactured by conservative stacking. The disclosure is explicit and the defense is arithmetically sound. Condition: the four-lean fact pattern is noted; a future run should check whether the Embedded interim FCF PV (currently $1.5B vs calculated $1.7B) and the Analog interim FCF PV (50% haircut) are genuinely conservative or systematically so."
+    },
+    {
+      "gate": "crux_surfaced",
+      "ref": "CONTRACT §4",
+      "pass": true,
+      "note": "The crux is clearly named in §1 (our_view and crux.one_line): 'FCF per share at normalized capex, conditional on the pace and depth of the industrial/automotive revenue recovery.' It is named in the recommendation.rationale. It is the first key_debate in §7 (marked is_crux=true). It is resolved in the conclusion: 'the base FCF path ($7.44/sh in FY2027) at any reasonable analog multiple lands at $105-200, not $323.' The crux is surfaced, assigned a $/share swing (+$62/-$49 from base), and resolved explicitly. Full compliance with CONTRACT §4."
+    },
+    {
+      "gate": "method_fits_business",
+      "ref": "CONTRACT §2",
+      "pass": true,
+      "note": "TXN has two economically distinct segments. The report correctly uses SOTP (CONTRACT §2.1) with ExitMultiple per segment (CONTRACT §2.2, appropriate for businesses that are recovering/normalizing rather than fully mature). Each segment has its own Ke: Analog 9.0% (beta 0.85) and Embedded 10.0% (beta 1.05), explicitly derived via CAPM (CONTRACT §2.3). The method_why in valuation_headline states the rationale. The normalization-year logic (T=5, FY2031, when 300mm utilization exceeds 80% and SLAB synergies are realized) is stated and argued. T-invariance is checked and confirmed. No single blended multiple applied across distinct segments (the CONTRACT's primary concern). The choice to use Ke rather than WACC for both segments (with Ke deliberately conservative given post-SLAB leverage) is noted in the bias audit and is an argued choice, not an oversight."
+    },
+    {
+      "gate": "four_levers_argued_and_sensitized",
+      "ref": "CONTRACT §3",
+      "pass": true,
+      "note": "All four levers are named and argued: (1) Growth: Analog NOPAT path to $7.5B at normalization, sourced from TAM data and market share analysis. (2) Economics: margin recovery from 41.7% Q1-2026 toward 43.5% FY2031 as 300mm utilization scales; cash tax 18% from CHIPS Act ITC; SBC explicitly deducted. (3) Discount rate: CAPM-derived separately for each segment. (4) Exit multiple: Gordon formula with g/ROIC/r stated and peer-checked. The mandatory sensitivity (3x3 matrix over Analog NOPAT and exit multiple) is present and labeled as to dominant and second-order levers. The crux finding is stated: no cell in the matrix produces a fair value within 30% of $323. CONTRACT §3 fully satisfied."
+    },
+    {
+      "gate": "readable_as_story",
+      "ref": "CONTRACT §6",
+      "pass": true,
+      "note": "The report follows the 8-section arc. §1 (our_view + recommendation): makes the call (SELL MEDIUM), names the crux in one sentence, gives the four numbers. §2 (business_overview): explains TXN's segments, business model, and historicals as a narrative ('three-act cycle'). §3 (industry_position): names competitors (ADI, MCHP, NXP, STM, Renesas) with share dynamics and competitive forces. §4 (market_view): what is priced in (12% FCF CAGR for 10 years), analyst tape, sentiment. §5 (management): CEO, CFO, capital allocation record. §6 (segment_valuation + four_levers + multiple_maths): argued SOTP with four numbers each as value and multiple. §7 (key_debates): four debates, argued both ways, with $/share quantification and our verdict. §8 (range_and_sensitivity + conclusion): bear/base/bull range, sensitivity matrix, call. The prose is plain and directional. A PM can follow the arc. The conclusion ('SELL; revisit on Q2 earnings July 22 if industrial growth sustains above 20% YoY and inventory days break below 180') names the inflection trigger explicitly."
+    },
+    {
+      "gate": "four_numbers_consistent",
+      "ref": "CONTRACT §6, last para",
+      "pass": true,
+      "note": "(1) Fair value today $105.63 = SOTP base (Erinys verified). (2) Price $322.86 = bundle current price (matches to penny). (3) Fair value 12m $109.46 = $105.63 x 1.09 - $5.68 (Erinys verified to $109.46). (4) 12m target $200.88 = $7.44 x 27x (Erinys verified exactly). Rating SELL from -36.0% total return to target #4 (below -10% threshold). All four numbers are internally consistent. Each is presented as both value and multiple in the four_numbers block and the snapshot table."
+    },
+    {
+      "gate": "key_debates_quantified",
+      "ref": "CONTRACT §5",
+      "pass": true,
+      "note": "All four key_debates carry explicit $/share quantifications in worth_per_share: (1) Crux debate: +$62/sh base-to-bull, -$49/sh base-to-bear. (2) Discount rate: +$63/sh from r=9% to r=8% on bull NOPAT; +$40/sh at base NOPAT. (3) SLAB acquisition: -$21/sh from base fair value if synergies delayed 18 months. (4) Multiple compression: -$26/sh vs base if exit multiple compresses from 19.4x to 15x on bear NOPAT. All four debates name the bull_view, bear_view, our_verdict, and what_would_change_our_mind. This satisfies CONTRACT §5's requirement for 'the swing on value.'"
+    },
+    {
+      "gate": "bull_cannot_clear_price_stated",
+      "ref": "CONTRACT §5 + Boreas spec",
+      "pass": true,
+      "note": "The report explicitly states the bull cannot clear price in multiple locations: (1) TXN.json our_view: 'the argued bull, which requires industrial revenue to fully recover to prior-peak AND data center to reach 20% of revenue simultaneously, reaches only $168-231 per share.' (2) key_debates[0] worth_per_share: '+$62/sh base-to-bull' => $105+62=$167, still 48% below $323. (3) sensitivity_matrix.where_cases_land: 'No cell reaches $323.' (4) The bull FCF cross-check ($10.50 x 30x = $315) is cited as 'barely reaching current price' -- the report notes this requires both the highest-evidence-quality FCF path AND a persistently above-Gordon multiple simultaneously. Boreas himself states in can_bull_clear_price=false. The narrative resolution in §8 restates this. Full compliance."
+    },
+    {
+      "gate": "bias_audit_present",
+      "ref": "CONTRACT §1.3",
+      "pass": true,
+      "note": "bias_audit is present in both TXN_valuation.json and reproduced in TXN.json. The rows list nine assumptions with leans. The same_direction_count=4 is correctly tallied. The verdict explains why the SELL survives. The crux_of_audit ('The key SELL driver is the multiple gap (42x actual vs 16x justified), not the FCF/share estimate') is an important and accurate observation: the SELL is not sensitive to the individual assumption leans."
+    },
+    {
+      "gate": "segment_nopat_checks",
+      "ref": "CONTRACT §3, Erinys task",
+      "pass": true,
+      "note": "Erinys recomputed segment NOPAT from primaries. Analog FY2031: $22.1B rev x 43.5% EBIT = $9.61B x 82% = $7.88B - $0.38B SBC = $7.50B ✓. Embedded FY2031: $4.48B x 22% = $0.986B x 82% = $0.809B - $0.05B = $0.759B (rounded to $0.75B, conservatively) ✓. Both NOPAT_T figures are correctly derived and consistently used in the exit multiple formula."
+    },
+    {
+      "gate": "gordon_formula_well_behaved",
+      "ref": "CONTRACT §2.2",
+      "pass": true,
+      "note": "In all three scenarios (base, bull, bear) and both segments, g < r is confirmed: Analog base g=4.5% < r=9%; Embedded base g=4.0% < r=10%; Bull Analog g=5.0% < r=9%; Bear Analog g=3.0%/3.5% < r=9%/9.5%. The Gordon formula is valid in every cell. No blow-up risk."
+    },
+    {
+      "gate": "sotp_sums_correctly_less_net_debt",
+      "ref": "CONTRACT §2.1",
+      "pass": true,
+      "note": "Aggregate: ($106.419B + $7.708B - $18.0B) / 0.91B = $96.127B / 0.91B = $105.63/sh ✓. Net debt of $18.0B correctly represents post-SLAB (current $10.823B + $7.5B acquisition). The debt is allocated to segments in the narrative (14/4 split) for storytelling but deducted at the aggregate level in the math, which is the correct convention for SOTP."
+    }
+  ],
+  "minor_defects_noted": [
+    {
+      "id": "D1",
+      "severity": "MINOR -- does not block SHIP",
+      "description": "Segment contribution text in TXN.json four_numbers.fair_value_today.basis: 'Analog $97.95/sh + Embedded $7.68/sh - post-SLAB net debt $18B/0.91B shares = $105.63' is misleadingly formatted. The $97.95 and $7.68 are already post-debt (using an implicit 17.3/0.7 debt split), so the text double-implies a net debt deduction that is not being made. The correctly stated decomposition from the model is: Analog (EV $106.4B - $14.0B debt) / 0.91 = $101.56/sh; Embedded (EV $7.7B - $4.0B debt) / 0.91 = $4.07/sh; sum = $105.63. Recommend correcting the basis text for clarity. Aggregate math is correct."
+    },
+    {
+      "id": "D2",
+      "severity": "MINOR -- does not block SHIP",
+      "description": "Bear scenario value is inconsistently cited as $52.64 in band_low and headline fields (Daedalus valuation model, using g=3.5%, ROIC=25%, r=9.5%, Gordon=14.33x) vs $56 in report body synthesis_paths and scenario_assumptions (Cassandra own calc, using g=3.0%, ROIC=30%, r=9%, Gordon=15.0x). Both are correctly computed from their respective inputs. The inconsistency is presentational. The reader is not given a clear explanation of why the 'bear' number differs between the band and the scenario table. Recommend harmonizing to a single bear value or labeling the distinction."
+    }
+  ],
+  "bounce_items": [],
+  "verdict": "SHIP",
+  "verdict_statement": "SHIP -- TXN report cleared all CONTRACT gates. Every load-bearing number is argued from evidence; the bias audit is present and accurately tallied; the crux (FCF/sh at normalized capex conditioned on industrial recovery pace) is named in §1 and resolved in §7; the SOTP ExitMultiple method is the correct choice for two economically distinct segments; the four numbers are internally consistent; all four key debates are quantified in $/share; and the report explicitly states the bull ($168-231) cannot clear the current price ($323). Two minor presentational defects (D1: segment contribution text misleadingly formatted; D2: bear value cited as $52.64 vs $56 in different sections) do not affect the analytical conclusion and do not warrant a BOUNCE. The SELL MEDIUM conviction rating is arithmetically supported and survives the bias audit defense."
+}

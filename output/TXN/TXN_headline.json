@@ -1,0 +1,110 @@
+{
+  "valuation_headline": {
+    "current_price": 322.86,
+    "fair_value_today": 105.63,
+    "target_12m": 200.88,
+    "fair_value_12m": 109.46,
+    "band_low": 52.64,
+    "band_high": 168.04,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 105.63,
+      "multiple": 15.9,
+      "multiple_label": "EV/NTM NOPAT (FY2026E)",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 322.86,
+      "multiple": 42.1,
+      "multiple_label": "EV/NTM NOPAT (FY2026E)",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 109.46,
+      "basis": "#1 rolled forward at r=9.0% less dividend 5.68",
+      "convergence_return_pct": -64.3
+    },
+    "target_12m": {
+      "value": 200.88,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "P/FCF",
+        "defensible_multiple": 27.0,
+        "forward_metric_label": "CY2027 FCF/share (base case)",
+        "forward_metric_value": 7.44,
+        "multiple_rationale": "27x CY2027 FCF as the defensible 12m traded multiple. Argued: (1) At the BASE FCF path ($7.44/sh in FY2027), TXN warrants a premium to peer group median (20x P/FCF) but not the current 47x. (2) The 300mm moat is REAL and DURABLE — no analog peer has matched TXN's 300mm scale investment; this justifies a structural premium to the 15-20x peer median. (3) Premium to peers is warranted: the Gordon formula at g=4.5%, ROIC=30%, r=9% gives a justified P/FCF of (1-4.5%/30%)/(9%-4.5%) = 0.85/0.045 = 18.9x. Adding a premium for the manufacturing moat (not captured in a generic Gordon) of ~3-4 turns: 22-23x intrinsic. (4) The incremental premium to 27x reflects CONTRACTED near-term growth (Q2 guide above consensus) and the SILICON LABS SLAB catalytic value (EPS-accretive year 1 per TXN) plus CHIPS Act cash flows. (5) 27x FCF is BELOW the current 47x and BELOW the post-Q1 consensus range of 30-35x FCF; it does NOT require the market to stay at its current re-rated level. (6) The bull scenario of $10.50/sh at 30x = $315 is near-price; the defensible multiple at 27x x $7.44 = $201. This is a CONSERVATIVE target that the evidence supports without heroic assumptions. Judgment: contracted Q2 guide beat ($5.0-5.4B vs prior $4.8B consensus) and industrial recovery momentum support applying above the pure-intrinsic 22x but below the current market 47x. Moving to 27x is defensible; moving to 35x+ would require the bull case to be contracted, which it is not.",
+        "price": 200.88
+      },
+      "implied_12m_total_return_pct": -36.0
+    }
+  },
+  "street_reconstruction": {
+    "currency": "P/FCF",
+    "what_price_implies": "At 42.5x NTM FCF/share (consensus CY2026), the current price implies a ~12.1% FCF CAGR for 10y (then 4% terminal) at r=9.0%.",
+    "what_street_implies": "The street mean target implies ~10.9% for 10y.",
+    "history_anchor": "FCF/share has been extremely volatile: $5.74/share at peak (FY2022 on $5.9B FCF / ~1.03B shares), then collapsed to ~$1.55/share (FY2024: $1.50B FCF / 0.92B shares) as the capex super-cycle depressed FCF. The capex cycle is the dominant FCF driver, not revenue. A pure 5-year CAGR on FCF is meaningless here; the correct anchor is FCF at normalization (FY2026-2027 consensus $6.92-$8.00+/share).",
+    "contested_lever": "FCF per share at normalized capex ($6.92 consensus, >$8 management target, $8.20 Theia base) AND the sustainable exit FCF multiple the market applies once capex normalizes. The call hinges on: (1) does industrial recovery continue at current pace or stall? (2) is the 300mm manufacturing moat durable enough to justify a premium multiple above peer group? At 47x NTM FCF vs the peer group at 15-34x, TXN already prices a structural premium — the crux is whether that premium is earned."
+  },
+  "street_target": {
+    "mean": 294.41,
+    "mean_multiple": 38.7,
+    "mean_implied_growth_pct": 10.9,
+    "high": 400.0,
+    "return_pct": -8.8,
+    "n_analysts": 32
+  },
+  "rating": {
+    "action": "SELL",
+    "tone": "negative",
+    "implied_12m_total_return_pct": -36.0,
+    "convergence_return_pct": -64.3,
+    "street_return_pct": -8.8,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "HIGH",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CORRECTED",
+    "band_ratio": 1.092,
+    "caps_applied": [],
+    "basis": "action SELL: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {
+    "description": "TXN SOTP base-case implied price per share. Rows = Analog NOPAT at normalization year T=5 (FY2031), the primary FCF lever. Cols = Analog exit multiple (EV/NOPAT Gordon at steady state), the secondary lever (reflects market re-rate risk). Embedded Processing fixed at base case EV of $7.7B. Net debt = $18.0B post-Silicon Labs close.",
+    "dominant_lever": "Analog NOPAT at normalization (FCF/share path). The matrix is nearly 3x taller than it is wide — moving from Bear NOPAT to Bull NOPAT (a 76% increase) shifts fair value by $90 ($83 to $143 at base multiple), whereas moving from Low to High exit multiple (a 29% increase) shifts fair value by only $37 ($93 to $120 at base NOPAT). Growth (earnings at T) is the dominant lever. Exit multiple is second-order.",
+    "second_order_lever": "Exit multiple (r and g). At HIGH conviction in Analog NOPAT path, the exit multiple matters but cannot close the gap to current price in any cell. Even at the maximum sensitivity cell (Bull x High = $162), TXN remains 50% above its intrinsic SOTP value. The call does NOT depend on the exit multiple assumption.",
+    "crux_finding": "No cell in the 3x3 sensitivity matrix produces a fair value within 30% of the current price ($323). The current price requires: Analog NOPAT at T=5 well above the bull case ($10.2B), implying revenue substantially above $25.5B and/or margins above 44%, AND a re-rating to 30-35x exit multiple (well above the Gordon-derived 19.4x at steady state). The gap between the bull fair value ($162) and current price ($323) is structural, not a rounding difference. It reflects the market pricing a FCF per share path and a multiple that neither base nor bull evidence supports on the argued assumptions.",
+    "row_label": "Analog NOPAT at FY2031 (the FCF/share proxy)",
+    "col_label": "Exit multiple (EV/NOPAT, Gordon at r=9%, g_LT=4.5%, ROIC=35% for base)",
+    "data": {
+      "Bear ($5.8B NOPAT - stalled recovery)": {
+        "Low (17x - below Gordon)": 72.3,
+        "Base (19.4x - Gordon formula)": 82.1,
+        "High (22x - above Gordon, moat premium)": 93.0
+      },
+      "Base ($7.5B NOPAT - Theia base recovery)": {
+        "Low (17x - below Gordon)": 92.9,
+        "Base (19.4x - Gordon formula)": 105.6,
+        "High (22x - above Gordon, moat premium)": 119.7
+      },
+      "Bull ($10.2B NOPAT - full recovery + data center)": {
+        "Low (17x - below Gordon)": 125.7,
+        "Base (19.4x - Gordon formula)": 142.9,
+        "High (22x - above Gordon, moat premium)": 162.1
+      }
+    },
+    "current_price_reference": 322.86,
+    "premium_to_best_case": "Current price $322.86 is 99% above the bull fair value $162.1 even at the highest multiple in the grid. The market prices a scenario that is NOT in this 3x3 grid — it implies either (a) NOPAT_T well above $15B (requires revenue exceeding $30B by FY2031), or (b) a re-rating to 30-35x exit multiple permanently, or both."
+  },
+  "bridge_logic": "#1 fair value today 105.63 -> #3 fair value 12m 109.46 (x(1+0.090) - div 5.68); #4 target 12m 200.88 (defensible_multiple); implied return to #4 = -36.0%, to #3 = -64.3%, to street mean 294.41 = -8.8%"
+}

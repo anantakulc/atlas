@@ -1,0 +1,223 @@
+{
+  "_meta": {
+    "ticker": "TXN",
+    "agent": "Cassandra",
+    "atlas_version": "v3",
+    "produced_utc": "2026-06-21",
+    "blind_to": "Boreas output (TXN_bull.json) — never read",
+    "base_reference": "Daedalus base SOTP: $105.63 fair value today; 12m target $200.88 at 27x CY2027 FCF $7.44/sh. SELL, MEDIUM conviction.",
+    "crux": "FCF per share at normalized capex, conditional on the pace and depth of industrial/automotive revenue recovery"
+  },
+
+  "bear_thesis_one_sentence": "Industrial recovery stalls at $6-7B as global manufacturing capex softens and China auto de-stocking enters a second leg, keeping TXN revenue at $19-20B through 2027 rather than the $23B base, while the SLAB acquisition adds $7.5B of hard debt that Daedalus's $105 base barely prices yet the market at $323 has already discarded entirely.",
+
+  "engagement_with_base": {
+    "daedalus_base_fair_value": 105.63,
+    "current_price": 322.86,
+    "bear_thesis_on_the_base": "The Daedalus base at $105 is already a severe indictment of the current price. The bear does not need to argue that $105 is too optimistic. The two bear debates are: (1) even $105 may be too high if the industrial recovery is shallower and longer than Theia's base, pushing bear FCF/share to $5.16 rather than $8.20 and intrinsic value below $60; and (2) the convergence timing risk — TXN could remain at $300+ for 12-18 months before the market accepts that $105 is the right number, imposing an opportunity cost that is itself a real risk to the bear thesis. Both matter. The bear must name each.",
+    "bear_value_per_share_intrinsic": 56,
+    "bear_value_arithmetic": "Analog bear: NOPAT at T=5 $5.8B x 15.0x exit multiple (tighter than Daedalus 19.36x; see Debate 3 for mechanism) / (1.09^5 = 1.539) = EV at T $87.0B / 1.539 = $56.5B discounted EV + $8.0B PV interim FCF (compressed: FY2027 FCF from Analog ~$3.5B on stalled revenue, rising slowly) = $64.5B segment EV less $14.0B net debt = $50.5B equity / 0.91B shares = $55.5/sh Analog. Embedded bear: NOPAT at T=5 $0.55B x 10.0x (SLAB integration failure risk) / (1.105^5 = 1.611) = $5.5B / 1.611 = $3.4B + $1.0B PV interim = $4.4B less $4.0B debt = $0.4B / 0.91B shares = $0.44/sh. Bear total: ~$56/sh. Consistent direction with Daedalus bear cell ($52.64) — the $4 gap reflects my tighter exit multiple argument vs Daedalus's unchanged 19.36x in the bear. I use 15x because the bear mechanism (stalled recovery = no demonstrated structural re-rate) invalidates the Gordon premium.",
+    "spread_to_base": "Bear $56 vs base $105 = $49/sh downside from the base alone. Bear $56 vs current price $323 = $267/sh downside, or 83% loss. The bear does not manufacture a precise point estimate; $56 is the honest lower reading of the crux at fair multiples for a stalled-cycle analog semi."
+  },
+
+  "debates": [
+    {
+      "id": 1,
+      "title": "Industrial recovery stalls at $6-7B as China auto de-stocks for a second leg, repeating the 2022-2024 inventory collapse that the consensus missed in real time",
+      "is_crux_debate": true,
+      "bear_view": "TXN's industrial revenue (33% of total, the largest single end-market) fell from $8.5B-equivalent in FY2022 to approximately $5.8B in FY2025 -- a seven-consecutive-quarter decline that no consensus model anticipated. Q1-2026 showed industrial up approximately +30% YoY, which sounds like recovery but off an extremely depressed base. The base case requires industrial to recover toward $7-8B by FY2027. The bear is that inventory de-stocking in the analog/embedded supply chain is not over. TXN's own inventory days were 209 at end of Q1-2026, down from 222 but still far above the normalized 150-day range management targets. This tells you the supply chain has not cleared. If industrial customers keep working down elevated distributor and OEM inventories rather than placing new orders, TXN's industrial revenue plateaus at $6-7B (the current run-rate) rather than recovering toward the $8B+ base requires. China automotive is an additional compressor: management said explicitly on the Q1-2026 call that China auto was 'down' while rest-of-world was near all-time highs. China is approximately 20-25% of TXN's automotive end-market. A second-leg de-stock in China auto (as EV production growth cools from the 2024 surge and Western tariffs bite Chinese exports) would flatten automotive at its current $5.8B level through 2027.",
+      "break_mechanism": "The specific mechanism is distributor inventory re-accumulation at TXN followed by order attrition. TXN sells ~$2-3B through distributors. When end-demand softens, distributors stop placing orders while they work down inventory on their shelves. TXN's 209-day inventory figure is measured at TXN, not at the distributor -- meaning TXN is pushing product to the channel at a rate that may exceed current end-demand. The tell would be two consecutive quarters where inventory days stop falling or re-expand above 220. How you see it coming: watch TXN's reported inventory-days trend at Q2-2026 (July 22) and Q3-2026 results. If the sequential decline reverses, the stall thesis is firing.",
+      "historical_precedent": "The 2022-2024 analog inventory cycle is the direct precedent. TXN revenue fell from $20.0B in FY2022 to $15.6B in FY2024, a 22% peak-to-trough decline, over seven quarters. The consensus in Q3-2022 expected only a brief, shallow correction. The analogous historical case outside TXN: Microchip Technology (MCHP) in 2019 saw a similar dynamic, with distributor inventory corrections extending well past what management guided, producing four quarters of revenue decline vs an initial two-quarter consensus estimate. In cyclical analog semis, corrections routinely run 50-100% longer than the initial consensus. In TXN's case, the 2022-2024 correction itself lasted 7 quarters vs a consensus expectation of 2-3 quarters.",
+      "quantification": {
+        "bear_assumption": "Industrial stays at $6.5B (vs $8.0B base). Automotive stays flat at $5.8B (vs $6.5B base). Total FY2027 revenue $20.0B vs base $23.0B.",
+        "revenue_delta_b": -3.0,
+        "fcf_impact": "At 36% CFO margin on $20.0B = $7.2B CFO; minus $2.5B capex = $4.7B FCF; divided by 0.91B shares = $5.16/sh. Base FCF was $8.20/sh. Delta: -$3.04/sh.",
+        "value_per_share_delta": "At 19.4x exit multiple (unchanged): $5.16 x 19.4x = $100.1/sh equity vs base $8.20 x 19.4x = $159.1/sh. Delta = -$59/sh to the base fair value. At the bear multiple (15x): $5.16 x 15x = $77.4/sh. Delta to base fair value ($105): -$28/sh. My bear value at stall scenario: ~$56/sh total including both the reduced FCF AND the multiple compression argued in Debate 3.",
+        "$/share_downside_vs_base": -49,
+        "$/share_downside_vs_price": -267
+      },
+      "evidence_quality": "OBSERVABLE-AND-NEAR",
+      "evidence_citation": "TXN Q1-2026: inventory days 209 (still above normalized 150-day target, down from 222 -- not yet cleared). Management Q1-2026 call: China auto explicitly 'down'. BNP Paribas noted 'automotive semiconductor demand remains weak, with recovery likely delayed to 2027' (TXN_crux.json bear argument). TXN distributor inventory dynamics observable at each quarterly print. The 2022-2024 cycle precedent is the exact same company."
+    },
+    {
+      "id": 2,
+      "title": "Silicon Labs acquisition ($7.5B all-cash) destroys FCF-per-share and adds leverage at exactly the wrong point in the cycle -- the 2007-analog Microchip Technology precedent",
+      "is_crux_debate": false,
+      "bear_view": "TXN is paying $7.5B all-cash for Silicon Labs, closing H1-2027. This adds approximately $7.5B to net debt, taking it from the current $10.8B to approximately $18B post-close -- a number Daedalus uses in its base. The problem is the TIMING. TXN is acquiring a company at peak-cycle acquisition multiples ($7.5B for $785M revenue = 9.5x revenue, 30%+ revenue multiple) while its own FCF is compressed at $2.60B in FY2025. The $7.5B acquisition requires TXN to service $18B in total debt against FCF that is in recovery but not yet normalized. Interest expense on $18B at 3.8% = $684M pre-tax, or $560M post-tax. At 0.91B shares, that is $0.62/sh of permanent interest drag. More critically, if the industrial recovery stalls (Debate 1), TXN will have levered up at the trough to acquire a business that is synergy-dependent for FCF accretion. The base case treats SLAB synergies ($450M within 3 years) as essentially certain. The bear case: synergies are achievable but slow, because IoT/wireless connectivity integration requires product-line rationalization, salesforce integration, and customer retention -- each step taking 1-2 years. If synergies trail by 18 months, FCF from Embedded stays compressed at $0.35-0.40B/yr for FY2027-FY2028, adding no value above the $7.5B price paid.",
+      "break_mechanism": "The mechanism is leverage at trough FCF combined with acquisition-integration delay. When TXN closes SLAB in H1-2027, FCF will have just begun recovering from the $2.60B trough (FY2025). If FY2026 FCF is $4-5B (still below the $5.9B FY2022 level), TXN will be running approximately 3.6-4.5x net debt/FCF -- elevated for a cyclical semi. Any revenue disappointment in 2027 (see Debate 1) extends this leverage ratio past 4x for another year. How you see it coming: watch SLAB integration cost disclosure at first post-close quarterly, and watch whether TXN raises the capex guide above $3B in FY2027 for back-end assembly bottlenecks (management cited this as the reason the high end of FY2026 capex is $3B rather than $2B).",
+      "historical_precedent": "Microchip Technology acquired Atmel in 2016 for $3.6B (all-cash) at 2.6x revenue, a modest multiple. MCHP levered to approximately 2.5x net debt/EBITDA at close. Then it acquired Microsemi in 2018 for $8.35B (again all-cash) at much higher multiples, pushing leverage to 7.5x net debt/EBITDA. When the analog semiconductor correction hit in 2019, MCHP was forced to cut its dividend and suspend buybacks -- not because of business failure but because leverage left no margin for error. TXN's SLAB deal is not as extreme (9.5x revenue but ~$785M revenue, relatively small), but the structure is similar: all-cash, trough-timing acquisition, synergy dependence. The more direct precedent is National Semiconductor, which TXN itself acquired in 2011 for $6.5B -- the last deal of this scale for TXN. National Semi integration took 4+ years to reach full synergy realization.",
+      "quantification": {
+        "bear_assumption": "SLAB synergies trail by 18 months; Embedded FCF stays compressed at $0.35B/yr through FY2027. Interest drag $0.62/sh. Net debt stays at $18B for 2+ years.",
+        "interest_drag_per_share": -0.62,
+        "synergy_delay_fcf_impact": "If SLAB adds zero FCF in FY2027 (integration year) vs $0.4B expected in base, that is $0.44/sh less than base. Combined with interest drag: -$1.06/sh FCF impact vs base in FY2027.",
+        "value_per_share_impact": "At 19.4x exit multiple on FCF: -$1.06 x 19.4x = -$20.6/sh vs base fair value of $105. Bear SOTP segment equity: Embedded contributes $0.44/sh vs base $8.47/sh -- a -$8/sh delta from segment compression alone, plus the net debt allocation.",
+        "$/share_downside_vs_base": -21,
+        "$/share_downside_vs_price": null,
+        "note": "This debate is incremental to Debate 1 -- in the worst case both fire together, but they are analytically separable. The SLAB leverage risk is most material if Debate 1 (revenue stall) fires simultaneously. In isolation, SLAB integration delay costs ~$20/sh vs base."
+      },
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_citation": "SLAB deal not yet closed (expected H1-2027). $7.5B all-cash structure confirmed (TXN newsroom Feb 4, 2026; TXN_market_facts.json silicon_labs_acquisition). Net debt post-close will be approximately $18B (Daedalus uses $18B, confirmed). TXN's FY2025 FCF was $2.60B, making leverage ratio at close approximately 6.9x FCF on current FCF (though 2026 FCF is recovering). MCHP 2016-2019 precedent is documented. Mechanism is real and named; it has not fired because the deal has not yet closed."
+    },
+    {
+      "id": 3,
+      "title": "Multiple compression from 19-27x to 14-16x FCF as the market recognizes TXN is a cyclical analog semi, not a software annuity -- the 2022-2024 de-rating of MCHP and ON Semi is the template",
+      "is_crux_debate": false,
+      "bear_view": "Daedalus's SOTP uses a Gordon-formula exit multiple of 19.4x EV/NOPAT, derived from r=9.0% and g_LT=4.5% for Analog. This is the STRUCTURAL debate: does TXN at normalization deserve 19x or 14-16x? The market currently prices approximately 42x EV/NOPAT (NTM). Daedalus argues the stock should re-rate DOWN to 19x. The bear argues it should re-rate further, to 14-16x EV/NOPAT, because the 19x Gordon multiple assumes the 4.5% long-run growth is durable and the 35% ROIC is sustained. The bear mechanism: (1) TXN's $23B revenue base in the base case assumes industrial returns toward prior-peak -- if it does not (Debate 1), the long-run revenue path is $19-20B, implying 2-3% growth not 4.5%. At 3% growth and 9% r, the Gordon multiple is (1 - 3%/30%) / (9% - 3%) = 0.90/0.06 = 15x. (2) Historically, when analog semis fail to demonstrate the earnings recovery the market priced, they trade at 12-15x earnings, not 19-25x. ON Semiconductor (ON) de-rated from 30x+ P/E in 2022 to 15x in 2023-2024 as its EV automotive cycle decelerated. MCHP traded at 25x+ in 2021 and compressed to 12-14x in 2023 as the MCU cycle rolled. TXN would not escape this pattern in the stall scenario.",
+      "break_mechanism": "The specific mechanism is: the market is currently paying 36x NTM P/E because it believes TXN is in the early innings of a structural re-rate (300mm moat creates software-like operating leverage). If two consecutive quarters show industrial revenue growth below 10% YoY or actually declining sequentially (a stall, not a decline), the narrative breaks. The market re-rates from 'structural re-rate in progress' to 'cyclical semi that levered up to buy SLAB.' That is a 15-18x P/E business, not a 35-40x business. The de-rating does not require a recession. It requires only that the growth narrative fails to materialize on schedule. How you see it coming: Q2-2026 (July 22) and Q3-2026 prints are the inflection tests. If Q3 industrial growth year-over-year falls from +30% to +10-15%, the re-rating begins.",
+      "historical_precedent": "ON Semiconductor 2022-2024: ON traded at 30-35x P/E at peak cycle (2022) on the thesis that EV/ADAS semiconductor content would structurally re-rate margins. When EV growth decelerated in China and OEM order deferrals hit, ON compressed to 14-16x P/E -- a 50-55% multiple compression in 18 months even as revenue held up reasonably (it declined ~10%, not 20%+). The valuation compression preceded the earnings disappointment. MCHP 2021-2023: MCHP reached 27x P/E on the MCU supercycle thesis; compressed to 12x by mid-2023 as inventory correction extended. Same mechanism: multiple priced a structural re-rate that proved to be a cyclical one.",
+      "quantification": {
+        "bear_assumption": "Exit multiple compresses to 15x EV/NOPAT (Gordon at r=9%, g_LT=3.0%, ROIC=30%) for Analog; 10x for Embedded (SLAB integration risk).",
+        "gordon_bear_analog": "(1 - 0.030/0.30) / (0.09 - 0.03) = 0.90 / 0.06 = 15.0x",
+        "gordon_bear_embedded": "(1 - 0.04/0.20) / (0.10 - 0.04) = 0.80/0.06 = 13.3x, compressed to 10x for SLAB integration risk",
+        "analog_bear_ev": "NOPAT_T $5.8B x 15.0x / 1.539 discount = $56.5B EV at T; + $8.0B PV interim FCF = $64.5B; less $14.0B net debt = $50.5B equity; / 0.91B shares = $55.5/sh Analog",
+        "embedded_bear_ev": "NOPAT_T $0.55B x 10.0x / 1.611 = $3.4B + $1.0B interim = $4.4B; less $4.0B debt = $0.4B / 0.91B = $0.44/sh",
+        "bear_sotp_total": "$55.5 + $0.44 = $55.94/sh, approximately $56/sh",
+        "vs_daedalus_bear_cell": "Daedalus's bear sensitivity cell (Bear NOPAT x Base multiple) = $82.1. My bear additionally compresses the multiple from 19.4x to 15x, taking $56 vs $82 -- a $26/sh additional downside from multiple compression alone.",
+        "multiple_compression_$/share": -26,
+        "$/share_downside_vs_base": -50,
+        "$/share_downside_vs_price": -267,
+        "note": "If Debate 1 (stalled revenue) fires WITHOUT multiple compression, the bear value is approximately $82 (Daedalus's own bear cell). If Debate 1 fires WITH multiple compression (Debate 3), the bear value is approximately $56. The difference is $26/sh -- and it is determined entirely by whether the market continues to price TXN as a structural compounder or re-rates it as a cyclical."
+      },
+      "evidence_quality": "MECHANISM-NOT-YET-FIRING",
+      "evidence_citation": "ON Semi de-rating 2022-2024 is documented. MCHP 2021-2023 de-rating is documented. TXN current NTM P/E 36.1x (Pheme: pe_ntm_corrected 36.08) vs historical through-cycle 20-25x for analog semis. The mechanism (multiple compression on narrative failure) is real and has fired on exact analog comps. It has not yet fired on TXN because industrial recovery is still ongoing. Q2 and Q3 2026 prints are the trigger observation points."
+    },
+    {
+      "id": 4,
+      "title": "Forensic check: FCF conversion at 52% and dividend overcommitment mean TXN will fund the SLAB deal with fresh debt, not retained FCF -- the capital structure is weaker than it appears",
+      "is_crux_debate": false,
+      "bear_view": "TXN's FCF conversion (FCF/net income) was 52% in FY2025 (bundle: fcf_conversion 0.52). This is structurally depressed by the capex cycle -- understood -- but the bear notes that even in the good years, TXN pays more in dividends than it generates in FCF. FY2025: dividends paid $5.0B, FCF $2.60B -- TXN borrowed $2.4B to maintain the dividend. FY2024: dividends $4.8B, FCF $1.5B -- borrowed $3.3B. FY2023: dividends $4.6B, FCF $1.35B -- borrowed $3.2B. Over FY2023-FY2025, TXN paid out $14.4B in dividends against $5.5B in FCF, borrowing $8.9B to make up the gap. Total debt rose from $8.7B (FY2022) to $14.0B (FY2025) -- a $5.3B net increase over three years. Now add $7.5B for SLAB. Post-SLAB total debt approaches $21.5B (gross). The dividend at $5.68/sh x 0.91B shares = $5.2B/yr is not covered by FCF until 2027-2028 at the earliest, and only if both Debate 1 does NOT fire (revenue recovers to $23B) and capex holds at $2B. The dividend coverage ratio is the structural check: FCF must reach $5.2B/yr just to cover the dividend without borrowing. At $5.2B needed and $4.7B bear-case FCF (Debate 1 stall), the dividend is not self-funding in 2027. This is not a dividend cut risk per se -- TXN has a 21-year dividend growth record -- but it does mean net debt will continue rising through 2027 in the bear scenario, compressing equity value further.",
+      "break_mechanism": "The mechanism is straightforward: if FCF stays below $5.2B (the dividend), TXN issues more debt or cuts buybacks to zero. Buybacks are already minimal ($1.5B in FY2025 vs $3.6B in FY2022). The additional debt worsens the leverage ratio, raises interest costs (each $1B of additional debt at 3.8% = $30M pre-tax, $0.027/sh post-tax), and eventually constrains the ability to invest in capacity. How you see it coming: FCF < dividend is observable every quarter. The FY2026 FCF / dividend comparison is the clearest near-term signal. At management's own $8+/sh FCF target for 2026 (which requires $2B capex at low end), FCF would be $7.3B vs dividend $5.2B -- covered. But the bear scenario ($4.7B FCF) means it is not covered and net debt rises further.",
+      "historical_precedent": "Texas Instruments itself 2023-2025 is the direct precedent: three consecutive years of dividend > FCF, funded by debt issuance. This is not a sign of distress (TXN has investment-grade credit) but it does mean that intrinsic value is being partially funded by leverage, which the market is treating as though it were organic FCF. The bear point: when the stock is priced at 36x NTM earnings and 47x NTM FCF, investors are implicitly assuming FCF will grow fast enough to make the dividend self-sustaining AND service SLAB debt AND fund future capex. The arithmetic is demanding.",
+      "quantification": {
+        "bear_assumption": "Dividend not covered in FY2027 bear scenario. Additional net debt accrual of approximately $0.5B/yr through 2027. Net debt at $18.5B by end-FY2027 (bear) vs $18.0B base.",
+        "dividend_coverage_ratio_bear": "FCF $4.7B / Dividend $5.2B = 0.90x -- under-covered by $0.5B/yr",
+        "additional_debt_per_year_b": 0.5,
+        "interest_drag_incremental": "Additional $0.5B debt at 3.8% = $19M pre-tax = $15.6M post-tax = $0.017/sh per year. De minimis on its own.",
+        "equity_dilution_impact": "Not material as TXN funds via debt not equity. But the leverage trajectory (net debt potentially reaching $19-20B in a stall) further compresses the equity value vs base.",
+        "$/share_downside_vs_base": -5,
+        "note": "This debate is the smallest in dollar terms ($5/sh vs base) but the most forensically important: it signals the capital structure has less margin for error than the 300mm narrative implies. It compounds with Debates 1 and 2 -- if revenue stalls AND SLAB synergies are slow AND the dividend is not covered, the balance sheet constraint becomes a real overhang. In isolation it is not a sell; as a compounding factor it matters."
+      },
+      "evidence_quality": "OBSERVABLE-AND-NEAR",
+      "evidence_citation": "FY2023-2025 cashflow data: dividends paid $4.557B, $4.795B, $4.999B vs FCF $1.349B, $1.498B, $2.603B (TXN_databundle.json cashflow array). Total debt $11.2B (FY2023) to $14.0B (FY2025) = +$2.8B over two years. Net debt $10.82B at freeze date (bundle market_stats). SLAB $7.5B all-cash (TXN_market_facts.json silicon_labs_acquisition). Dividend per share $5.68, shares 0.91B = $5.17B annual dividend cost. All observable from the frozen bundle."
+    }
+  ],
+
+  "scenario_spec": {
+    "label": "Bear",
+    "description": "Industrial recovery stalls at current run-rate; China auto stays soft; SLAB adds leverage without near-term FCF accretion; multiple compresses from market-implied 36x to through-cycle 15-16x FCF",
+    "revenue": {
+      "FY2026_b": 19.5,
+      "FY2027_b": 20.0,
+      "FY2026_argument": "Q1-2026 annualized: $4.83B x 4 = $19.3B. Q2 guidance midpoint $5.2B implies H2 sequential growth. Bear assumes slight H2 moderation as channel inventory absorption slows and China auto headwinds persist. $19.5B is the realistic stall number, not a recession -- it represents approximately 10% growth over FY2025 ($17.7B), entirely from Q1-2026 run-rate momentum.",
+      "FY2027_argument": "Revenue plateaus at $20.0B in the stall scenario. Industrial stays at $6.5B (vs $8.0B base) because global manufacturing capex softens and channel re-stocking does not materialize. Automotive stays at $5.8B (China down, RoW flat). Data center grows but from a small base (~$2.5B vs $3.5B base). Personal electronics flat. SLAB adds $785M to Embedded from Q3-2027 forward (~$500M annualized contribution in FY2027)."
+    },
+    "fcf_per_share": {
+      "FY2026": 4.62,
+      "FY2026_arithmetic": "Revenue $19.5B x CFO margin 36% = $7.02B CFO; minus capex $2.8B (high end of guidance, back-end bottlenecks persist) = FCF $4.22B; / 0.91B shares = $4.64/sh. Rounded to $4.62/sh.",
+      "FY2027": 5.16,
+      "FY2027_arithmetic": "Revenue $20.0B x CFO margin 36% (compressed: industrial utilization stays low, gross margin recovers only to 59-60% not 63%+) = $7.20B CFO; minus capex $2.5B (partial normalization; SLAB integration adds back-end assembly spend) = FCF $4.70B; / 0.91B shares = $5.16/sh.",
+      "vs_theia_bear": "$5.16/sh matches Theia's bear FCF/share estimate of $5.00-5.60/sh. The arithmetic is independently consistent.",
+      "vs_management_target": "Management targets >$8.00/sh FCF for FY2026. The bear requires capex to land at $2.8B (vs $2.0B low end) and CFO margin to stay at 36% (vs management's implied 42%+). Both conditions are within the observable range: Q1-2026 operating margin was 37% and the $3B capex high end is management's own number."
+    },
+    "normalized_fcf_margin_pct": 23.5,
+    "normalized_fcf_margin_argument": "FCF $4.70B / Revenue $20.0B = 23.5%. This is the bear normalized margin. For context: FY2022 peak FCF margin was 29.6% ($5.9B / $20.0B). The bear is not saying the margin permanently stays at FY2024's trough (9.6%), but it is saying the FCF margin recovers only partially -- to 23-24% -- because (a) gross margin is stuck in the 59-60% range rather than recovering to 63%+, (b) capex does not fully normalize at $2B until 2028-2029 rather than 2026-2027, and (c) SLAB integration costs suppress operating margin in Embedded.",
+    "exit_multiple": {
+      "used": 15.0,
+      "type": "EV/NOPAT (Analog segment); 10.0x for Embedded",
+      "gordon_derivation_analog": "(1 - g/ROIC) / (r - g) = (1 - 0.030/0.30) / (0.09 - 0.03) = 0.90 / 0.06 = 15.0x",
+      "bear_multiple_argument": "The bear multiple is derived from the Gordon formula under bear-case assumptions: g_LT = 3.0% (not 4.5% base) because if industrial stalls, the long-run revenue CAGR for TXN Analog is closer to 3% (analog market growth of 5-7% but TXN at peak market share and no cyclical recovery tailwind). ROIC = 30% (not 35%) because 300mm cost advantages are not fully realized at stalled utilization. At r=9%, g=3%, ROIC=30%, the Gordon multiple is 15x. This is 23% below Daedalus's 19.4x base multiple. For context: ADI traded at 15-17x EV/NOPAT during the 2023 analog correction. MCHP compressed to 12-14x. TXN at 15x is not a distressed multiple -- it is a mid-cycle multiple for a quality analog semi in a stalled recovery.",
+      "peer_check": "ADI through-cycle 15-17x EV/NOPAT (2023 trough). MCHP through-cycle 12-14x (2023 trough, post-leverage). TXN at 15x sits at the quality end of the stalled-cycle peer range, reflecting genuine moat value but not the structural re-rate the market is currently pricing at 42x."
+    },
+    "implied_value_per_share": 56,
+    "implied_value_arithmetic": {
+      "analog_segment": {
+        "nopat_T_b": 5.8,
+        "exit_multiple": 15.0,
+        "ev_at_T_b": 87.0,
+        "discount_factor": 1.539,
+        "pv_terminal_b": 56.5,
+        "pv_interim_fcf_b": 8.0,
+        "segment_ev_b": 64.5,
+        "net_debt_allocation_b": 14.0,
+        "segment_equity_b": 50.5,
+        "per_share": 55.5
+      },
+      "embedded_segment": {
+        "nopat_T_b": 0.55,
+        "exit_multiple": 10.0,
+        "ev_at_T_b": 5.5,
+        "discount_factor": 1.611,
+        "pv_terminal_b": 3.41,
+        "pv_interim_fcf_b": 1.0,
+        "segment_ev_b": 4.41,
+        "net_debt_allocation_b": 4.0,
+        "segment_equity_b": 0.41,
+        "per_share": 0.45
+      },
+      "total_bear_value_per_share": 55.95,
+      "rounded": 56,
+      "vs_base": 105.63,
+      "vs_price": 322.86,
+      "$/share_below_base": -49.63,
+      "$/share_below_price": -266.86,
+      "pct_below_price": -82.7
+    },
+    "relative_value_floor": {
+      "methodology": "Peer through-cycle P/FCF",
+      "peer_through_cycle_multiple": 15.0,
+      "applied_to": "Bear FY2027 FCF/share $5.16",
+      "implied_equity_per_share": 77.4,
+      "note": "At 15x through-cycle P/FCF (MCHP/ADI trough), bear FCF of $5.16/sh implies $77.40/sh. This is slightly above the SOTP bear ($56) because the SOTP reflects the multiple compression on NOPAT (including the SLAB net debt burden) more precisely. The range $56-77 is the honest bear range. The midpoint ($67) is a useful reference: it is 79% below the current price."
+    },
+    "probability_weight": {
+      "label": "MEDIUM",
+      "basis": "OBSERVABLE-AND-NEAR evidence (inventory days still elevated, China auto explicitly down in Q1-2026, dividend not covered by FCF) supports the stall mechanism as real and near. The bear requires only continuation of current trends -- not a reversal or macro shock. However, industrial grew +30% in Q1-2026, and Q2 guidance implies continued sequential growth -- the stall is a 'growth decelerates' not a 'growth reverses' call. This makes it MECHANISM quality overall: the stall could start at Q3-2026 if inventory clearance slows, but Q2 data will be the first discriminating test.",
+      "conviction_asymmetry": "HIGH conviction that $105 base is far below $323 (the gap is 3x). MEDIUM conviction that the bear ($56) is the right landing point vs the base ($105) -- the stall scenario requires Q3-2026 to show inventory days re-expanding, which is visible but not yet fired."
+    }
+  },
+
+  "structural_forensic_checks": {
+    "cash_conversion": {
+      "fcf_conversion_ttm": 0.52,
+      "verdict": "FCF conversion of 52% is structurally depressed by the capex cycle -- this is the thesis, not a red flag on its own. However, CFO/net income conversion was $7.15B/$5.0B = 1.43x in FY2025, which is healthy (non-cash D&A is large, as expected for a capital-intensive fab business). The depressed FCF conversion is 100% capex-driven -- legitimate, but the bear notes that capex at $4.55B in FY2025 was self-funded partly by debt (see Debate 4), not by retained earnings.",
+      "flag": "LOW CONCERN on its own; material only in combination with SLAB debt load"
+    },
+    "receivables_vs_revenue": {
+      "note": "Receivables data not in bundle (SEC EDGAR fetch failed). Cannot perform the standard receivables/revenue ratio check. Flag: Daedalus and Erinys should verify Q1-2026 10-Q receivable days. Any unusual extension in receivables days would signal distributors are slow-paying, which is an early de-stocking indicator.",
+      "flag": "DATA GAP -- cannot verify from frozen bundle"
+    },
+    "sbc": {
+      "sbc_per_share_estimate": 0.38,
+      "sbc_as_pct_of_revenue_est": "~2.0% ($0.35B / $17.7B FY2025 revenue)",
+      "verdict": "SBC is modest relative to TXN's scale -- 2% of revenue is reasonable for a hardware company with 33,000 employees. Not a concern. Daedalus deducts $0.38/sh from FCF in the owner earnings bridge, which is correct.",
+      "flag": "NO CONCERN"
+    },
+    "buyback_quality": {
+      "buybacks_FY2025_b": 1.477,
+      "buybacks_FY2022_b": 3.615,
+      "trend": "Buybacks fell from $3.6B (FY2022) to $1.5B (FY2025) as FCF compressed. Management characterizes buybacks as primarily tax-withholding on vesting, not open-market capital return. The reduction is consistent with FCF constraint -- not a dilution concern. Shares outstanding stable at 0.91-0.913B over FY2022-FY2025 (bundle). No concern on dilution.",
+      "flag": "NO CONCERN on buyback quality; modest concern that capital return is constrained and will remain so through SLAB close"
+    },
+    "margin_sustainability": {
+      "gross_margin_trajectory": "57.0% FY2025; 58.0% Q1-2026 (recovering). Base requires 63-65% by FY2027. Bear case: gross margin reaches only 60-61% by FY2027 because 300mm utilization is lower than base (stalled revenue means fewer wafers pulled through the fabs). At 60% GM on $20B revenue: GP $12.0B vs $13.3B at 63% GM = $1.3B less gross profit. At 35% opex ratio (similar to current), this flows directly to operating income and FCF.",
+      "operating_leverage_risk": "TXN's cost structure is heavily fixed (fab D&A is ~$2.1B/yr based on EBITDA-EBIT gap of $2.1B in FY2025). In a revenue stall at $20B, operating leverage works AGAINST the bear: TXN earns more on each additional dollar of revenue but loses proportionally on each dollar of revenue that does not materialize. The bear's revenue stall (-$3B vs base) flows through at approximately 70-75% incremental margin, imposing $2.1-2.25B less operating income than base.",
+      "flag": "MEDIUM CONCERN -- margin sustainability depends entirely on the revenue recovery, which is the crux debate itself"
+    },
+    "too_good_inconsistency_check": {
+      "item": "Management FCF target of >$8/sh for FY2026",
+      "analysis": "Management's $8/sh FCF target for FY2026 requires: (a) capex at $2B (low end of $2-3B guide), AND (b) revenue at $22B (annualized Q2 midpoint of $5.2B), AND (c) CFO margin recovering to 42% (from 40.4% in FY2025). All three must materialize simultaneously. The bear notes: TXN explicitly cited back-end assembly bottlenecks as the reason the capex range is $2-3B (not $2B flat). If capex lands at $2.8-3.0B (high end), the $8/sh target is missed by ~$1.00/sh ($0.9B additional capex / 0.91B shares). This is NOT an inconsistency in the data but a sensitivity that management disclosed and the market appears to be pricing through rather than pricing for. The bear prices $2.8B capex (high-end of guide) as the more likely outcome.",
+      "flag": "MODERATE CONCERN -- management target is achievable at the optimistic end of their own guide on both capex and revenue; the bear prices the pessimistic end of the same guide"
+    }
+  },
+
+  "convergence_timing_risk": {
+    "description": "A separate and important bear consideration: even if the fundamental bear is right (intrinsic value $56), TXN could remain at $300+ for 12-18 months before the market reprices. This is the opportunity cost argument that is distinct from fundamental analysis.",
+    "mechanism": "The stock is up 84% YTD. Momentum investors, quant funds, and analysts who just raised targets to $370-400 (BofA, Seaport) will not reverse in one quarter. The next catalyst test is Q2-2026 (July 22). If Q2 beats again (Q2 guide $5.0-5.4B is achievable and TXN has now beaten two consecutive quarters), the stock may push to $340-360 before the stall thesis has time to develop. The bear is not wrong about the fundamental, but a short position initiated at $323 could face a further 10-15% move against before the bear thesis fires.",
+    "implication_for_timing": "The convergence risk argues for patience over the 12-18 month horizon and supports the Daedalus SELL recommendation as a 12-month view rather than an immediate catalyst play. The bear's $56 intrinsic is the fundamental destination; the path includes a possible further rally to Q2 earnings and then a gradual repricing as industrial growth decelerates in H2-2026 and FY2027.",
+    "what_accelerates_convergence": "Two consecutive quarters of industrial revenue growth below 10% YoY (vs current +30%); capex guidance raised above $3B; SLAB close with disclosed integration costs above synergy run-rate; Q2 guidance for Q3 that implies flat or declining sequential revenue.",
+    "what_delays_convergence": "Q2 beat (revenue $5.4B, high end of guide); industrial growth stays above 20% YoY; data center grows sequentially; management reaffirms $8+/sh FCF target."
+  },
+
+  "evidence_quality_overall": "OBSERVABLE-AND-NEAR",
+  "evidence_quality_justification": "Debate 1 (stall thesis) is OBSERVABLE-AND-NEAR: TXN inventory days at 209 (above normalized 150, down from 222 but not cleared), China auto explicitly down in Q1-2026, dividend not self-funded for three consecutive years -- all from the frozen bundle. Debate 2 (SLAB leverage) is MECHANISM-NOT-YET-FIRING: the deal has not closed, but the structure and debt load are contracted and public. Debate 3 (multiple compression) is MECHANISM-NOT-YET-FIRING: the mechanism has fired on exact analog comparables (ON Semi, MCHP) but has not yet fired on TXN because Q1-2026 beat was strong. Debate 4 (FCF/dividend gap) is OBSERVABLE-AND-NEAR: three years of data in the bundle confirm. The dominant debate (Debate 1, the crux) is OBSERVABLE-AND-NEAR. The overall grade is OBSERVABLE-AND-NEAR -- the bear does not require a macro shock or recession. It requires continuation of already-visible trends."
+}

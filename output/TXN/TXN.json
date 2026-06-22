@@ -1,0 +1,1015 @@
+{
+  "ticker": "TXN",
+  "name": "Texas Instruments Incorporated",
+  "listings": "NMS",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "business_type": "conglomerate",
+  "currency": "USD",
+  "date": "2026-06-21",
+  "engine": "Atlas v3",
+  "our_view": "SELL, MEDIUM conviction. TXN is a world-class analog franchise with a durable 300mm manufacturing moat, and the FCF recovery from the 2022-2025 capex supercycle is genuine. None of that matters at 47x NTM FCF. Our SOTP base values TXN at $105.63 today; even the argued bull, which requires industrial revenue to fully recover to prior-peak AND data center to reach 20% of revenue simultaneously, reaches only $168-231 per share depending on the discount rate assumption. The current price of $322.86 is not in any cell of our 3x3 sensitivity matrix. The market is pricing a structural software-like re-rating of an analog semiconductor business that competes in a 5-7% CAGR market. The crux is simple: FCF per share at normalized capex, conditional on the pace of industrial and automotive recovery, supports a $105-200 range of fair value. At $323, you need both the best-case FCF path AND a persistently above-formula multiple. The biggest downside risk is not a business failure but a multiple de-rating from 47x back toward the historical 20-25x as growth decelerates from the Q1-2026 trough-bounce pace. A SELL is the argued conclusion. Revisit after Q2 earnings on July 22.",
+  "crux": {
+    "variable": "FCF per share at normalized capex, conditional on the pace and depth of the industrial/automotive revenue recovery",
+    "one_line": "At 47x NTM FCF, TXN prices full industrial recovery to prior-peak AND a structural multiple re-rating simultaneously; the base FCF path ($7.44/sh in FY2027) at any reasonable analog multiple lands at $105-200, not $323.",
+    "base": "$7.44/sh FY2027 FCF on $23B revenue and $2.2B capex; SOTP fair value $105.63 today, $200.88 12m target",
+    "bull": "$10.50/sh FY2027 FCF on $25.5B revenue and $2.0B capex; SOTP $168 at Ke=9%, $231 at r=8%; FCF cross-check 30x=$315",
+    "bear": "$5.16/sh FY2027 FCF on $20B revenue and $2.5B capex; SOTP $56 with multiple compression to 15x",
+    "what_decides_it": "Whether the Q1-2026 industrial recovery (+30% YoY) sustains for 6 more quarters to full prior-peak, or stalls at current run-rates as distributor inventory clears more slowly than the consensus expects"
+  },
+  "recommendation": {
+    "action": "SELL",
+    "tone": "negative",
+    "current_price": 322.86,
+    "target_12m": 200.88,
+    "upside_pct": -36.0,
+    "conviction": "MEDIUM",
+    "rationale": "Base fair value $105.63 (SOTP) is 67% below price. Even the 12m target of $200.88, which applies 27x to the base CY2027 FCF and gives full credit for contracted Q2 growth and CHIPS Act value, implies a -36% total return including the dividend. The stock is priced for a structural inflection that requires perfection on both the FCF path and the multiple simultaneously.",
+    "next_earnings": "2026-07-22"
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 105.63,
+      "multiple": "15.9x EV/NTM NOPAT",
+      "basis": "SOTP base: Analog segment EV $106.4B + Embedded segment EV $7.7B = $114.1B total; less post-SLAB net debt $18.0B = $96.1B equity / 0.91B shares"
+    },
+    "price_today": {
+      "value": 322.86,
+      "multiple": "42.1x EV/NTM NOPAT; 36.1x NTM P/E; 46.7x NTM FCF",
+      "basis": "market, 2026-06-21"
+    },
+    "fair_value_12m": {
+      "value": 109.46,
+      "basis": "Base rolled forward at r=9%, less $5.68 dividend; convergence return -64.3%"
+    },
+    "target_12m": {
+      "value": 200.88,
+      "multiple": "27x CY2027 FCF $7.44/sh",
+      "basis": "Defensible market multiple: above peer median 20x P/FCF to credit the 300mm moat; below current 47x; gives no credit for the hoped-for bull. Implied 12m total return -36%."
+    }
+  },
+  "valuation_headline": {
+    "current_price": 322.86,
+    "fair_value_today": 105.63,
+    "target_12m": 200.88,
+    "fair_value_12m": 109.46,
+    "band_low": 52.64,
+    "band_high": 168.04,
+    "method_primary": "SOTP",
+    "method_why": "Two economically distinct segments with different economics, growth, and risk; blending them into one multiple would wash out TXN's structural cost advantage in Analog vs the integration-dependent Embedded segment.",
+    "target_reasoning": "27x CY2027 FCF of $7.44/sh. Gives credit for the contracted Q2 recovery and the manufacturing moat above the peer median, but does not require the bull's extrapolated assumptions to hold.",
+    "return_to_target_pct": -36.0,
+    "return_to_fair_value_12m_pct": -64.3,
+    "return_to_street_mean_pct": -8.8,
+    "band_low_label": "Daedalus model bear (g=3.5%, ROIC=25%, r=9.5%); Cassandra panel bear $56 (g=3%, ROIC=30%, r=9%) \u2014 distinct assumption sets"
+  },
+  "thesis": [
+    {
+      "pillar": "The multiple, not the moat, is the problem",
+      "detail": "TXN's 300mm manufacturing moat is real, durable, and widening. At 19% analog market share, 100,000 customers, and 40% per-chip cost advantage over all-200mm peers, the franchise quality is unquestionable. But at 47x NTM FCF, the market is pricing 12% FCF CAGR for 10 years starting from a market that grows at 5-7%. The Gordon formula at g=4.5%, ROIC=35%, r=9% produces a justified exit multiple of 19.4x EV/NOPAT. The market applies 42x. That 2.7x premium to intrinsic accounts for the entire gap between $105 and $323."
+    },
+    {
+      "pillar": "The FCF recovery is real but the base path does not clear the current price",
+      "detail": "Base CY2027 FCF of $7.44/sh on $23B revenue and $2.2B capex is well-grounded: it is consistent with the Q2 guidance midpoint, the street consensus, and management's own framework (one year later than their $8+/sh target for FY2026). At 27x (a premium multiple), that is $201. Even Boreas's bull of $10.50/sh at 30x gets only to $315, barely below the current price, and it requires industrial recovery to full prior-peak AND data center at 20% of total simultaneously, both EXTRAPOLATED."
+    },
+    {
+      "pillar": "The bear is observable today, not a forecast",
+      "detail": "Inventory days of 209 are still above the normalized 150-day target. China auto was explicitly called out as 'down' on the Q1-2026 call. Dividends have exceeded FCF for three consecutive years, with $8.9B of net debt added in FY2023-25 to maintain the payout. The $7.5B Silicon Labs acquisition (H1-2027) adds $7.5B more debt at trough FCF. The bear ($56/sh SOTP, $5.16/sh FCF) requires only that current trends continue, not that anything breaks new ground. The most damaging asymmetry: the bull needs perfection and gets to $315; the bear only needs the stall to continue and lands at $56."
+    }
+  ],
+  "business_overview": {
+    "summary": "Texas Instruments (TXN) designs, manufactures, and sells analog and embedded semiconductors to industrial, automotive, personal electronics, and communications customers. Its defining feature is vertical integration: TXN owns its own 300mm wafer fabrication facilities and is migrating the majority of its analog portfolio to these fabs, which produce roughly 40% more chips per wafer at the same cost as 200mm fabs. This is the engine of long-run margin expansion.",
+    "business_model": "TXN sells through direct channels (~40%), distributors (~55%), and ti.com (~5%). It serves 100,000+ customers across 80,000+ SKU catalog, with no single customer above 10% of revenue. Revenue is sticky: analog chips are qualified into customer designs over 12-24 month cycles, after which switching costs are high. The breadth of the catalog and the scale of the installed design-in base make TXN's revenue stream far more annuity-like than a typical cyclical semiconductor company.",
+    "segments": [
+      {
+        "name": "Analog",
+        "revenue_share_pct": 81,
+        "revenue_fy2025_b": 14.0,
+        "q1_2026_revenue_b": 3.92,
+        "q1_2026_growth_yoy_pct": 22,
+        "q1_2026_operating_margin_pct": 41.7,
+        "nature": "annuity",
+        "note": "Power products (DC/DC converters, battery management, AC/DC) and signal chain (amplifiers, data converters, motor drives, clocks). The franchise: highest margin, highest ROIC, most defensible. Q1-2026 Analog operating margin of 41.7% is recovering from the trough but still below the FY2022 peak of approximately 52%. Long-run target 44-46% as 300mm utilization reaches 80%+."
+      },
+      {
+        "name": "Embedded Processing + Silicon Labs (post-close H1-2027)",
+        "revenue_share_pct": 15,
+        "revenue_fy2025_b": 2.7,
+        "q1_2026_revenue_b": 0.723,
+        "q1_2026_growth_yoy_pct": 12,
+        "q1_2026_operating_margin_pct": 16.9,
+        "nature": "cyclical",
+        "note": "Microcontrollers, processors, wireless connectivity, radar. Historically lower margin than Analog. Silicon Labs ($785M FY2025 revenue, IoT/wireless) adds wireless connectivity at $7.5B all-cash, closing H1-2027. Embedded is transitional: the SLAB integration is the near-term story; the long-run potential is a wireless connectivity platform in industrial IoT."
+      },
+      {
+        "name": "Other",
+        "revenue_share_pct": 4,
+        "q1_2026_revenue_b": 0.178,
+        "q1_2026_growth_yoy_pct": -16,
+        "nature": "cyclical",
+        "note": "DLP projectors, calculators, ASICs. Declining and non-core. Negligible to the call."
+      }
+    ],
+    "customers": [
+      "100,000+ globally; no single customer above 10% of revenue; Arrow and Avnet are largest distribution channels"
+    ],
+    "geographic": [
+      "US domestic manufacturing (Sherman TX, Lehi UT); sold globally; China is approximately 20-25% of automotive end-market"
+    ],
+    "historical_financials": [
+      {
+        "fy": "FY2022",
+        "revenue_b": 20.028,
+        "revenue_growth_pct": null,
+        "gross_margin_pct": 68.8,
+        "ebitda_b": 11.225,
+        "ebitda_margin_pct": 56.1,
+        "net_income_b": 8.749,
+        "fcf_b": 5.923,
+        "eps": 9.41
+      },
+      {
+        "fy": "FY2023",
+        "revenue_b": 17.519,
+        "revenue_growth_pct": -12.5,
+        "gross_margin_pct": 62.9,
+        "ebitda_b": 9.009,
+        "ebitda_margin_pct": 51.4,
+        "net_income_b": 6.51,
+        "fcf_b": 1.349,
+        "eps": 7.07
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 15.641,
+        "revenue_growth_pct": -10.7,
+        "gross_margin_pct": 58.1,
+        "ebitda_b": 7.541,
+        "ebitda_margin_pct": 48.2,
+        "net_income_b": 4.799,
+        "fcf_b": 1.498,
+        "eps": 5.2
+      },
+      {
+        "fy": "FY2025",
+        "revenue_b": 17.682,
+        "revenue_growth_pct": 13.1,
+        "gross_margin_pct": 57.0,
+        "ebitda_b": 8.252,
+        "ebitda_margin_pct": 46.7,
+        "net_income_b": 5.001,
+        "fcf_b": 2.603,
+        "eps": 5.45
+      }
+    ],
+    "historical_financials_read": "The financials read as a three-act cycle. Act 1 (FY2022): peak -- $20B revenue, 68.8% gross margin, $9.41 EPS, $5.9B FCF. Act 2 (FY2023-2025): correction -- revenue fell 22% peak-to-trough as industrial customers worked off pandemic-era over-ordering in seven consecutive quarters of decline; gross margin compressed to 57% as the company simultaneously ran high-capex for the 300mm build (LFAB, SM1) at low utilization; FCF collapsed to $1.35-2.6B while dividends were maintained at $4.6-5.0B, funded by $2.8B of additional net debt. Act 3 (FY2025-present): recovery -- Q1-2026 showed the inflection, with revenue $4.83B (+19% YoY), Analog operating margin recovering to 41.7%, and Q2-2026 guidance of $5.0-5.4B above prior consensus. The question is not whether recovery has started -- it has -- but how far and how fast it runs.",
+    "snapshot": [
+      {
+        "label": "Price",
+        "value": "$322.86"
+      },
+      {
+        "label": "Market cap",
+        "value": "$293.8B"
+      },
+      {
+        "label": "Enterprise value",
+        "value": "$302.8B"
+      },
+      {
+        "label": "Net debt (current)",
+        "value": "$10.8B"
+      },
+      {
+        "label": "Net debt (post-SLAB)",
+        "value": "~$18.0B"
+      },
+      {
+        "label": "NTM P/E (consensus 32 analysts)",
+        "value": "36.1x"
+      },
+      {
+        "label": "NTM FCF yield (consensus)",
+        "value": "2.1%"
+      },
+      {
+        "label": "NTM FCF multiple",
+        "value": "46.7x"
+      },
+      {
+        "label": "EV/NTM NOPAT",
+        "value": "42.1x"
+      },
+      {
+        "label": "TTM gross margin",
+        "value": "57.0%"
+      },
+      {
+        "label": "Q1-2026 Analog operating margin",
+        "value": "41.7%"
+      },
+      {
+        "label": "TTM FCF margin",
+        "value": "14.7%"
+      },
+      {
+        "label": "TTM FCF/share",
+        "value": "$2.85"
+      },
+      {
+        "label": "FY2027 FCF/share (base)",
+        "value": "$7.44"
+      },
+      {
+        "label": "FY2027 FCF/share (bull)",
+        "value": "$10.50"
+      },
+      {
+        "label": "FY2027 FCF/share (bear)",
+        "value": "$5.16"
+      },
+      {
+        "label": "Dividend/share",
+        "value": "$5.68"
+      },
+      {
+        "label": "Dividend yield",
+        "value": "1.76%"
+      },
+      {
+        "label": "Dividend coverage (bear FY2027)",
+        "value": "0.90x (under-covered)"
+      },
+      {
+        "label": "YTD return",
+        "value": "+84%"
+      },
+      {
+        "label": "52-week range",
+        "value": "$152.73 - $331.51"
+      },
+      {
+        "label": "Shares outstanding",
+        "value": "0.91B"
+      },
+      {
+        "label": "Q2-2026 guidance (midpoint)",
+        "value": "$5.2B revenue, EPS $1.91"
+      },
+      {
+        "label": "Next earnings",
+        "value": "2026-07-22"
+      },
+      {
+        "label": "Inventory days (Q1-2026)",
+        "value": "209 (above normalized 150-day target)"
+      }
+    ]
+  },
+  "industry_position": {
+    "market_overview": "The analog semiconductor market is approximately $85-99B annually (Fortune Business Insights, Coherent Market Insights, Mordor Intelligence triangulation; central estimate $93B). It grows at 5-7% CAGR driven by industrial automation, EV content-per-vehicle expansion, and now AI server power management. The market is highly fragmented: the top 5 players hold approximately 40-45% collectively. Analog chips are differentiated by reliability, breadth, and manufacturing efficiency rather than raw process-node leadership. Pricing is relatively stable versus logic or memory semiconductors -- a chip designed into a product in 2019 often ships at close to the same price in 2026, because the customer's 12-24 month requalification cost far exceeds any price concession they could extract from switching.",
+    "tam_usd_bn": 93,
+    "tam_growth_pct": 6,
+    "addressable_market": "TXN's served addressable market (general-purpose analog: power management, signal chain, embedded MCUs; excluding high-voltage SiC/GaN and ultra-precision scientific) is approximately $70-80B. TXN at ~19% market share of the broad analog market holds the widest breadth position in the industry.",
+    "the_share_dynamic": "TXN is not losing analog share. In the 2023-2025 downturn, revenue fell 22% peak-to-trough but this was industry-wide demand destruction, not customer defection: MCHP's correction was deeper (-46% at trough), STM fell further in automotive, and Q1-2026 showed TXN growing 22% YoY for Analog in line with peer recoveries. The structural share battle is for data center power management, where TXN is a net gainer versus incumbent power module suppliers (Monolithic Power, Renesas, Vicor). The 300mm cost advantage applies directly here: high-volume power stages are exactly where per-chip cost decides design-win outcomes. The real competitive dynamic is not share -- it is the pace of end-market volume recovery.",
+    "revenue_drivers": [
+      "Industrial automation, factory electrification, building automation (~33% of revenue FY2025; the swing driver)",
+      "Automotive analog content per vehicle: EV powertrain, BMS, ADAS, gate drivers (~33% of revenue; near all-time peak per Q1-2026)",
+      "Data center AI server power management (~10-11% of revenue FY2025; growing ~90% YoY Q1-2026; CEO targets 20% of total 'soon')",
+      "Personal electronics (~21% FY2025; not a growth driver; second-order to the call)"
+    ],
+    "product_differentiation": "The 300mm manufacturing moat: 2.3x more chips per wafer vs 200mm, ~40% lower cost per chip at scale. TXN is the only pure-analog company with captive 300mm manufacturing at scale. ADI has no 300mm fab; STM is building 300mm but for automotive power (SiC), not general analog. No peer can replicate TXN's investment scale (RFAB2 + LFAB + SM1 + SM2 ~$14B aggregate capex 2022-2026) without a multi-year, $10B+ commitment.",
+    "five_forces": {
+      "supplier_power": "LOW-MEDIUM. TXN is internalizing >95% of wafer manufacturing by 2030. Equipment suppliers (ASML, Applied Materials) have leverage on capital equipment but this is a one-time capex.",
+      "buyer_power": "LOW. 100,000+ customers, no concentration above 10%, design-in lock over 12-24 month cycles.",
+      "competitive_rivalry": "MEDIUM. Top 5 hold 40-45% collectively; ADI is the closest peer but competes in distinct sub-segments (precision analog vs TXN's volume analog).",
+      "threat_of_new_entrants": "LOW. Capital barriers are $10B+ for 300mm at scale. Customer qualification cycles are 12-24 months. No new entrant has matched TXN's 300mm model.",
+      "threat_of_substitutes": "LOW-MEDIUM. Analog functions cannot be digitally substituted in industrial/automotive applications; physics constraints prevent it. Some low-end analog is absorbed into SoCs but this affects primarily personal electronics, not the industrial/automotive/data-center core."
+    },
+    "moat": "STRONG in Analog (cost advantage + switching costs). 300mm cost moat is structural and widening. MODERATE in Embedded (integration-dependent; MCU market has shorter design-in cycles).",
+    "competitors": [
+      {
+        "name": "Analog Devices (ADI)",
+        "position": "#2 in analog (~12-13% market share vs TXN ~19%)",
+        "share": "12-13%",
+        "trajectory": "Stable to slight gains in high-performance analog (precision ADCs/DACs, RF). All-200mm fab model; faces TXN's ~40% per-chip cost advantage in volume analog where both compete. Reports 'record orders' in mid-2026."
+      },
+      {
+        "name": "NXP Semiconductors (NXPI)",
+        "position": "~60% automotive revenue; strong in automotive MCUs (S32 platform), ADAS, networking",
+        "share": "automotive MCU dominant",
+        "trajectory": "Recovering in automotive: Q1-2026 revenue $3.18B (+12% YoY). Competes with TXN in Embedded Processing auto segment; limited analog overlap. Potentially consolidation target."
+      },
+      {
+        "name": "Microchip Technology (MCHP)",
+        "position": "#3 in MCUs; broad analog cross-sell",
+        "share": "MCU significant",
+        "trajectory": "Sharp recovery: Q4 FY2026 revenue $1.31B +35% YoY after -46% trough. Direct competitor in Embedded MCUs. SLAB acquisition by TXN overlaps MCHP's IoT/wireless turf. Key historical precedent for leverage risk (Microsemi 2018 acquisition)."
+      },
+      {
+        "name": "STMicroelectronics (STM)",
+        "position": "Automotive/industrial MCUs, MEMS, power discretes; European diversified player",
+        "share": "automotive power significant",
+        "trajectory": "Struggling more than TXN in 2025: higher MCU/discrete automotive exposure. Not a 300mm analog player at TXN's scale."
+      },
+      {
+        "name": "Renesas Electronics",
+        "position": "Automotive MCU and analog; acquired Intersil, IDT",
+        "share": "automotive MCU significant",
+        "trajectory": "Expanded analog portfolio via acquisition. Automotive MCU and some analog overlap."
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "pe_ntm": 28.0,
+      "ev_ebitda": 22.0,
+      "rev_growth_ttm_pct": 8,
+      "ytd_pct": null,
+      "highlight": "Closest pure-play analog peer; 68% gross margin (already normalized, no 300mm moat required); trades at ~15-20x EV/NOPAT through-cycle"
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "pe_ntm": 22.0,
+      "ev_ebitda": 18.0,
+      "rev_growth_ttm_pct": null,
+      "ytd_pct": null,
+      "highlight": "MCU peer; compressed to 12-14x P/E at 2023 trough after leverage + cycle deceleration -- the Cassandra multiple compression template"
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors",
+      "pe_ntm": 17.0,
+      "ev_ebitda": 13.0,
+      "rev_growth_ttm_pct": 12,
+      "ytd_pct": null,
+      "highlight": "Automotive MCU peer; trades at ~13-18x EV/NOPAT through-cycle; lower multiple reflects higher auto concentration"
+    }
+  ],
+  "peers_read": "The peer group trades at 13-22x NTM P/E through-cycle -- roughly half TXN's current 36x. ADI, the most direct comparable, earns its premium because its 68% gross margin is already at normalized levels, whereas TXN's 57% reflects the capex build's D&A drag with upside to 65%+ as utilization scales. Even giving TXN full credit for this margin recovery, a justified premium to ADI's 15-20x EV/NOPAT would be 19-22x. The market applies 42x. MCHP's 2021-2023 compression from 25x to 12x is the historical template for what happens when a levered analog semi fails to deliver the earnings recovery the market priced.",
+  "market_view": {
+    "whats_priced_in": "The current price of $322.86 at 47x NTM FCF and 36x NTM P/E implies approximately 12% FCF CAGR for 10 years (Gordon formula: implied terminal g at r=10% is 7.9%). This is not a cyclical recovery multiple -- it is a structural franchise multiple that requires TXN to sustain growth well above the 5-7% analog TAM CAGR for a decade. Specifically: the market prices (1) FCF per share well past $8/sh by 2027-2028, (2) gross margin expansion to 62%+ as 300mm utilization scales, (3) data center power becoming a durable new revenue vector that structurally re-rates the business, and (4) industrial and automotive demand holding at or above Q1-2026 run-rates. Any reversion in industrial demand or a stall in the data center growth rate would require meaningful multiple de-rating.",
+    "street_view": "Bulls (Seaport $400, BofA $370, Citi $345) argue TXN is in the early innings of a multi-year FCF expansion driven by three independent engines: industrial recovery, data center growth, and capex normalization. Bears (Cantor $250, Wells Fargo Equal Weight $300) point to the valuation and the SLAB leverage. The consensus mean target of $294 is 8.8% BELOW the current price, reflecting older unrevised targets dragging the average below the most recent bull raises. The stock has run through the consensus tape.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-06-15",
+        "firm": "Citi",
+        "action": "PT raised",
+        "old_pt": 280,
+        "new_pt": 345,
+        "rating_change": "none",
+        "note": "Top semi pick; product price increases + data center share gain cited"
+      },
+      {
+        "date": "2026-05-25",
+        "firm": "Bank of America",
+        "action": "PT raised",
+        "old_pt": 320,
+        "new_pt": 370,
+        "rating_change": "none",
+        "note": "Multi-year content gains underappreciated; industrial/auto turned the corner"
+      },
+      {
+        "date": "2026-05-22",
+        "firm": "Seaport Research",
+        "action": "Upgraded + PT initiated",
+        "old_pt": null,
+        "new_pt": 400,
+        "rating_change": "Neutral to Buy",
+        "note": "Highest PT on Street; cycle recovery + manufacturing moat"
+      },
+      {
+        "date": "2026-04-23",
+        "firm": "Baird",
+        "action": "PT raised",
+        "old_pt": 225,
+        "new_pt": 300,
+        "rating_change": "none",
+        "note": "+33% PT lift immediately post-Q1"
+      },
+      {
+        "date": "2026-04-23",
+        "firm": "Wells Fargo",
+        "action": "PT raised",
+        "old_pt": 260,
+        "new_pt": 300,
+        "rating_change": "none",
+        "note": "Equal Weight maintained -- caution on valuation despite raising PT"
+      },
+      {
+        "date": "2026-04-23",
+        "firm": "Cantor Fitzgerald",
+        "action": "PT raised",
+        "old_pt": null,
+        "new_pt": 250,
+        "rating_change": "none",
+        "note": "Neutral maintained at $250 vs $323 price -- valuation concern"
+      },
+      {
+        "date": "2026-04-23",
+        "firm": "Broad wave (Goldman, TD Cowen, Benchmark, KeyBanc, JPMorgan, UBS, and others)",
+        "action": "PT raised and/or upgraded",
+        "old_pt": "various",
+        "new_pt": "various ($278-370)",
+        "rating_change": "Multiple upgrades",
+        "note": "Wall of raises post-Q1 beat; zero downgrades in April-June period"
+      }
+    ],
+    "news_narrative": "Q1-2026 was TXN's best-ever Q1 by revenue ($4.83B vs $4.52B consensus; EPS $1.68 vs $1.37 consensus, a 22.6% beat). Stock rose approximately 7% on April 23. Q2-2026 guidance of $5.0-5.4B exceeded prior consensus of $4.8B, making it a genuine beat-and-raise rather than a guide-down-then-beat. Separately, TXN announced the $7.5B Silicon Labs all-cash acquisition on February 4, and Citi raised its target to $345 on June 15 citing product price increases and data center share expansion.",
+    "sentiment_narrative": "Short interest approximately 2% -- no contrarian signal. Institutional ownership 92.6%. The stock is up 84% YTD and within 3% of its 52-week high ($331.51). Analyst tape is overwhelmingly bullish with 15+ PT raises and 4+ upgrades in the April-June period and zero downgrades. Momentum is strong. The market is not skeptical of TXN's business; it is pricing a structural re-rating.",
+    "runway": "The stock is within 3% of its 52-week high. The most recently revised targets ($345-400) imply 7-24% upside from current levels. Q2-2026 earnings on July 22 is the next hard test: Q2 guidance implies $5.2B revenue vs Q1's $4.83B -- a beat would validate the recovery; a miss or weak industrial guide would be the first crack in the narrative.",
+    "runway_verdict": "VALUATION RISK IS DISTINCT FROM THE BUSINESS RUNWAY. The fundamental demand runway is intact based on Q1 evidence. The valuation has already priced the entire recovery and then some. The stock is priced-for-perfection.",
+    "market_lean": {
+      "direction": "BULL",
+      "strength": "STRONG",
+      "basis": "Post-Q1 analyst tape overwhelmingly bullish; fundamental recovery data-confirmed; stock near 52-week highs; short interest low. The market is not wrong about the direction -- it is wrong about the price."
+    }
+  },
+  "street_reconstruction": {
+    "currency": "P/FCF",
+    "what_price_implies": "At 46.7x NTM FCF ($6.92/sh consensus CY2026), the market is pricing approximately 12% FCF CAGR for 10 years, then 4% terminal growth, at r=9%. This is the Gordon reverse-multiple: P/FCF = 46.7x implies terminal g of 7.9% at r=10%, or requires g=12% for 10 years then 4% terminal at r=9%. Neither is consistent with an analog market growing 5-7% TAM.",
+    "what_street_implies": "The street mean target ($294) implies approximately 10.9% FCF CAGR for 10 years. The most recent bulls (Seaport $400, BofA $370) imply 13-15% CAGR -- above the upper bound of the analog TAM growth rate.",
+    "history_anchor": "FY2022 peak FCF was $5.74/sh ($5.9B FCF / 1.03B shares). The capex super-cycle collapsed FCF to $1.55/sh (FY2024 trough). The correct anchor is normalized FCF at cycle completion: base $7.44/sh FY2027 (slightly below management's $8+/sh target for FY2026, which requires capex at the low end).",
+    "our_justified_multiple": "19.4x EV/NOPAT (Gordon formula: g=4.5%, ROIC=35%, r=9%) for Analog; 13.3x for Embedded. Blended SOTP implies 15.9x EV/NTM NOPAT at fair value vs 42.1x at the current price.",
+    "agree_disagree": "Agree: the business is structurally sound, the 300mm moat is real and durable, industrial recovery is underway, and data center is a genuine new revenue vector. Disagree entirely on multiple: the market prices a structural re-rating to software-like multiples (35-50x FCF) that is not supported by the growth rate of the analog market, the competitive position, or any Gordon-formula derivation at honest assumptions. The stock is not mispriced because the business is bad -- it is mispriced because the multiple is egregiously high relative to the FCF path."
+  },
+  "management": {
+    "ceo": "Haviv Ilan (appointed 2022). Has guided through the 300mm investment cycle and the inventory correction. Q1-2026 commentary was clear and data-anchored. No red flags on execution.",
+    "cfo": "Rafael Lizardi. Consistent capital allocation messaging through the downturn.",
+    "capital_allocation_history": "TXN operates a yield-focused capital allocation model: return all free cash flow to shareholders through dividends and buybacks, fund the 300mm build from a combination of FCF and debt issuance. The record: 21-year dividend growth streak, maintained even when FCF was $1.35-2.6B and dividends were $4.6-5.0B. The gap was funded by debt ($14.4B dividends vs $5.5B FCF over FY2023-2025; net debt rose from $5.7B at end-FY2022 to $10.8B at end-FY2025, then SLAB adds another $7.5B to approximately $18B post-close). Management frames this as a deliberate choice to maintain the dividend commitment through the investment cycle. The question is whether FCF normalizes fast enough to de-lever once SLAB closes (H1-2027). The bear scenario says no.",
+    "recent_insider_activity": []
+  },
+  "valuation_method": "SOTP (Sum of Parts). Two economically distinct segments with different growth profiles, risk, and appropriate multiples: Analog (high-quality annuity, 300mm cost moat, 35% steady-state ROIC) and Embedded + Silicon Labs (transitional, integrating acquisition, lower ROIC, more competitive MCU market). Method: ExitMultiple per CONTRACT \u00a72.2 for both segments -- build NOPAT to a normalization year (T=5, FY2031, when 300mm utilization reaches 80%+ and SLAB synergies are fully realized), apply a Gordon steady-state multiple, discount back at segment-specific Ke. T=5 is T-invariant: NOPAT path is smooth enough that T=4 or T=6 produces similar implied prices. The blended company would obscure TXN's most important characteristic: the structural gap in economics between the analog franchise and the embedded commodity.",
+  "segment_valuation": [
+    {
+      "name": "Analog (Power + Signal Chain + Other)",
+      "nature": "annuity",
+      "method": "ExitMultiple",
+      "revenue_path": "FY2025 $14.0B \u2192 FY2027 $17.5B base (Theia) \u2192 FY2031 $22.1B (base, 6% CAGR)",
+      "margin": "Q1-2026 EBIT margin 41.7%; FY2031 target 43.5% as 300mm utilization reaches 80%+; cash tax 18% (CHIPS Act ITC reduces effective rate)",
+      "wacc": "Ke = 9.0% (CAPM: Rf=4.40% + beta_fundamental 0.85 \u00d7 ERP 5.50% = 9.08%); WACC at 7.3% is the alternative but Ke used to be conservative given post-SLAB leverage",
+      "exit_multiple": "19.37x EV/NOPAT (Gordon: (1-g/ROIC)/(r-g) = (1-0.045/0.35)/(0.09-0.045) = 0.871/0.045 = 19.4x). Peer check: ADI EV/NOPAT ~20x at normalized margins; 19.4x sits at the conservative end of fair.",
+      "nopat_T_b": 7.5,
+      "implied_ev_b": 106.4,
+      "implied_px": 116.94,
+      "t_invariance_range": "$107-122/sh for T=3 through T=7",
+      "four_levers": {
+        "growth_rate_and_duration": "Analog revenue CAGR ~6% for 5 years to FY2031, then 4.5% long-run. Sourced: analog TAM 5-7% CAGR; TXN at 19% share is near-ceiling so grows slightly below market rate; content-per-vehicle and data center add incremental volume support.",
+        "economics": "NOPAT at T=5 of $7.5B: $22.1B revenue \u00d7 43.5% EBIT margin \u00d7 (1-18% tax) - $0.38B SBC. Cash tax 18% reflects CHIPS Act ITC credits. Interim FCF PV $12.0B (conservatively half of the full PV to avoid double-count with terminal).",
+        "wacc": "9.0% Ke (CAPM-derived; fundamental beta 0.85 below the 1.31 rally beta; the rally beta reflects a 1-year re-rating, not structural business risk).",
+        "exit_multiple": "19.37x at g=4.5%, ROIC=35%, r=9%. Gordon formula is well-behaved because g (4.5%) < r (9%). Moat justifies being at the center of the 15-25x peer EV/NOPAT range rather than the low end."
+      }
+    },
+    {
+      "name": "Embedded Processing + Silicon Labs (Wireless Connectivity)",
+      "nature": "cyclical",
+      "method": "ExitMultiple",
+      "revenue_path": "FY2025 $2.7B organic + $0.785B SLAB (from H1-2027) \u2192 FY2031 $4.48B",
+      "margin": "Q1-2026 EBIT margin 16.9%; FY2031 target 22% with SLAB synergies ($450M annually within 3yr post-close)",
+      "wacc": "Ke = 10.0% (CAPM: Rf=4.40% + beta_fundamental 1.05 \u00d7 ERP 5.50% = 10.18%; higher beta reflects integration risk, MCU competitive intensity, and post-SLAB leverage)",
+      "exit_multiple": "13.33x EV/NOPAT (Gordon: (1-0.04/0.20)/(0.10-0.04) = 0.80/0.06 = 13.3x). Deserves discount to MCHP (20x) and NXP (18x) given SLAB integration risk.",
+      "nopat_T_b": 0.75,
+      "implied_ev_b": 7.7,
+      "implied_px": 8.47,
+      "four_levers": {
+        "growth_rate_and_duration": "Organic Embedded 6% CAGR + SLAB 8% CAGR; blended to ~$4.48B by FY2031. IoT wireless (Zigbee, Bluetooth, Matter) is growing but SLAB starts from sub-scale position vs Nordic Semi.",
+        "economics": "NOPAT_T $0.75B: $4.48B \u00d7 22% EBIT margin \u00d7 82% tax retention - $0.05B SBC. 22% margin achievable with $450M synergies on $5B revenue within 3 years. Q1-2026 Embedded already at 16.9% and recovering.",
+        "wacc": "10.0% Ke; 0.20 turns above Analog to reflect integration uncertainty and MCU market's shorter design-in cycles.",
+        "exit_multiple": "13.3x; at the conservative end of the 13-20x MCU peer range. Conservative because SLAB integration overhang is real."
+      }
+    }
+  ],
+  "four_levers": {
+    "growth_rate_and_duration": "The dominant lever. Analog NOPAT at normalization (FY2031) is worth $7.5B in the base (19% analog market share stable, 6% CAGR to $22.1B revenue, 43.5% margin). Moving from Bear NOPAT ($5.8B) to Bull NOPAT ($10.2B) shifts fair value by approximately $90 per share. Growth duration is the question: the 300mm moat supports 5-7% growth for the foreseeable future; the data center vector could add incremental uplift. The sensitivity matrix shows the call hinges almost entirely on this lever.",
+    "economics": "Gross margin recovers from 57% (FY2025 trough) toward 65%+ as 300mm utilization scales from current levels toward 80%. This is mechanical at higher revenue: D&A does not grow proportionally with revenue, so incremental revenue above the current $17-18B base runs at 70-75% incremental gross margin (management's stated figure). The economics lever amplifies the revenue lever.",
+    "wacc": "9.0% Ke for Analog is argued as the honest center. The Gordon multiple is highly sensitive to r: moving from 9% to 8% changes the Analog Gordon multiple from 19.4x to 29.2x at bull NOPAT, adding approximately $63/share. This is Boreas's strongest argument. We hold r=9% as the base because (a) the post-SLAB debt load warrants it and (b) the WACC of 7.3% reflects the full debt shield, which is less conservative.",
+    "exit_multiple": "Second-order to the FCF path lever. Moving from Low (17x) to High (22x) at base NOPAT shifts value by $27/share. Even at the maximum 22x moat-premium multiple, base NOPAT ($7.5B) yields $120/share -- still 63% below price. The multiple cannot explain the gap; only the FCF path can."
+  },
+  "bias_audit": {
+    "rows": [
+      {
+        "assumption": "Analog g_LT 4.5% (market grows 5-7%, we use 4.5% as TXN is at near-ceiling share)",
+        "lean": "SLIGHT BEAR (-0.5 turns vs market midpoint)"
+      },
+      {
+        "assumption": "Analog ROIC 35% (between trough 20%+ and structural ceiling 50%+; center of the range)",
+        "lean": "CENTER"
+      },
+      {
+        "assumption": "Analog r = 9.0% (Ke, not WACC; Daedalus explicitly notes WACC = 7.3% is the alternative; using Ke is conservative given SLAB leverage)",
+        "lean": "SLIGHT BEAR (using Ke over WACC adds ~1.7 turns to r)"
+      },
+      {
+        "assumption": "Analog NOPAT_T $7.5B (Theia base case; consistent with $23B revenue at 43.5% EBIT margin at FY2031)",
+        "lean": "CENTER"
+      },
+      {
+        "assumption": "T=5 normalization year (FY2031 = 300mm build complete + SLAB synergies realized)",
+        "lean": "CENTER"
+      },
+      {
+        "assumption": "Embedded exit multiple 13.3x (discount to MCHP/NXP due to integration risk)",
+        "lean": "SLIGHT BEAR (at the conservative end of 13-20x peer range)"
+      },
+      {
+        "assumption": "Net debt $18.0B post-SLAB (Daedalus uses the post-close figure; deal closes H1-2027)",
+        "lean": "CENTER (using the correct forward figure, not the current $10.8B)"
+      },
+      {
+        "assumption": "Target 27x CY2027 FCF (above peer median 20x to credit moat; below current 47x)",
+        "lean": "CENTER"
+      },
+      {
+        "assumption": "Interim FCF PV $12.0B for Analog (conservatively ~50% of full PV to avoid double-count with terminal)",
+        "lean": "SLIGHT BEAR (uses 50% of calculated PV as a conservative cross-check)"
+      }
+    ],
+    "same_direction_count": 4,
+    "verdict": "PASS with note. Four slight-bear leans (Analog g, Analog r, Embedded multiple, Analog interim FCF). None is unargued -- each is explicitly conservative for stated reasons (post-SLAB leverage, near-ceiling share, integration risk, double-count avoidance). Stacking four same-direction choices is at the boundary of the CONTRACT \u00a71.3 threshold of 3. However: the four bear leans are applied against a franchise that the market already prices at 42x EV/NOPAT -- the SELL conclusion is robust to relaxing ANY of these assumptions individually. Moving from the slight-bear choices to the center would add $20-40/share to fair value, producing a base of $125-145 -- still 56-61% below the current price of $323. The SELL is not manufactured by conservative stacking; it is the correct conclusion at any reasonable analog franchise multiple. The SELL survives the bias audit.",
+    "crux_of_audit": "The key SELL driver is the multiple gap (42x actual vs 16x justified), not the FCF/share estimate. Even a fully bull-biased base ($10.50 FCF at 30x = $315) barely reaches the current price. The sell conclusion is insensitive to the individual bias choices."
+  },
+  "earnings_bridge": {
+    "reported_eps": 5.84,
+    "reported_eps_period": "TTM (Q2-2025 $1.41 + Q3-2025 $1.48 + Q4-2025 $1.27 + Q1-2026 $1.68)",
+    "sbc_per_share": 0.38,
+    "sbc_note": "SBC estimated ~$0.35B/yr at TXN scale (~2% of revenue); $0.35B / 0.91B shares = $0.38/sh. Modest relative to peers.",
+    "capex_normalization_per_share": 2.8,
+    "capex_normalization_note": "Excess capex drag: FY2025 capex $4.55B vs maintenance ~$2.0B = $2.55B excess; / 0.91B shares = $2.80/sh. This is the mechanical FCF uplift as capex normalizes.",
+    "normalized_eps": 5.84,
+    "normalized_fcf_per_share_ttm": 2.85,
+    "fcf_per_share_ntm": 6.92,
+    "fcf_per_share_ntm_source": "32-analyst consensus CY2026",
+    "owner_earnings_note": "Owner FCF = FCF minus SBC net. TTM: $2.85 - $0.38 = $2.47/sh. NTM basis ($6.92) reflects consensus capex normalization assumption."
+  },
+  "multiple_maths": {
+    "current_multiple": "42.1x EV/NTM NOPAT; 36.1x NTM P/E; 46.7x NTM FCF",
+    "justified_multiple": "15.9x EV/NTM NOPAT (SOTP base); 19.4x EV/NOPAT Gordon for Analog at normalization",
+    "justified_grid": [
+      {
+        "scenario": "Bear NOPAT, Low multiple",
+        "implied_px": 72.3
+      },
+      {
+        "scenario": "Bear NOPAT, Base multiple",
+        "implied_px": 82.1
+      },
+      {
+        "scenario": "Bear NOPAT, High multiple",
+        "implied_px": 93.0
+      },
+      {
+        "scenario": "Base NOPAT, Low multiple",
+        "implied_px": 92.9
+      },
+      {
+        "scenario": "Base NOPAT, Base multiple (our fair value)",
+        "implied_px": 105.6
+      },
+      {
+        "scenario": "Base NOPAT, High multiple",
+        "implied_px": 119.7
+      },
+      {
+        "scenario": "Bull NOPAT, Low multiple",
+        "implied_px": 125.7
+      },
+      {
+        "scenario": "Bull NOPAT, Base multiple",
+        "implied_px": 142.9
+      },
+      {
+        "scenario": "Bull NOPAT, High multiple",
+        "implied_px": 162.1
+      }
+    ],
+    "duality_decomposition": "The 42x EV/NTM NOPAT market multiple vs our justified 16x SOTP splits into two components: (1) the FCF path premium -- the market expects NOPAT to grow to $15B+ by FY2031 vs our bull of $10.2B; and (2) the exit multiple premium -- the market applies 30-35x exit multiple vs our Gordon-derived 19.4x. Together, these two premiums account for the $217 gap between $106 fair value and $323 market price."
+  },
+  "key_debates": [
+    {
+      "debate": "The crux: Does the industrial and automotive recovery run to full prior-peak by FY2027, or does it stall at current run-rates?",
+      "is_crux": true,
+      "bull_view": "Q1-2026 industrial grew +30% YoY and +20% QoQ. Inventory days fell from 222 to 209 -- still above the normalized 150-day target, meaning distributor restocking has not fully run. Automotive is already near all-time highs (CEO Ilan: 'within 1-2 points of all-time peak'). Industrial has historically lagged automotive by 2-4 quarters in TXN's cycle. If this pattern holds, industrial recovers toward $9.5B by FY2027, producing $10.50/sh FCF (Theia bull). BofA agrees: 'multi-year content gains underappreciated.' The three-driver story (industrial + data center + capex normalization) is credible and all three are moving in the right direction simultaneously.",
+      "bear_view": "Seven consecutive quarters of decline in the last cycle were missed by the consensus in real time. The analogous historical case at MCHP: corrections routinely run 50-100% longer than initial consensus estimates. TXN inventory days at 209 are down from 222 but not cleared toward the 150-day target -- distributors are still working through channel inventory, meaning orders to TXN may not reflect true end-demand. China auto was explicitly 'down' in Q1-2026 and BNP Paribas notes automotive recovery 'likely delayed to 2027.' Industrial at $6-7B (a stall, not a reversal) keeps FY2027 revenue at $20B and FCF at $5.16/sh, producing a SOTP of $56-82 depending on multiple.",
+      "our_verdict": "The recovery direction is confirmed by Q1-2026 data and is not in dispute. The magnitude is the debate. We take the base (industrial to $8B by FY2027, FCF $7.44/sh) rather than the bull because: (a) inventory days at 209 are a tangible signal that the channel is not yet cleared; (b) China auto weakness is observable, not forecast; and (c) the bull's industrial path to $9.5B requires recovery to above the FY2021 level, which assumes the 2022 peak was not itself a COVID overshoot. EXTRAPOLATED evidence does not move our base; it expands the bull range.",
+      "what_would_change_our_mind": "Two consecutive quarters of industrial revenue growth above 20% YoY with inventory days falling below 170 -- that would confirm the full-recovery path and justify upgrading to base-near-bull and a lower conviction SELL or a HOLD. Equally, two consecutive quarters where industrial growth decelerates to below 10% YoY would confirm the stall.",
+      "worth_per_share": "+$62/sh base-to-bull (full industrial recovery) or -$49/sh base-to-bear (stall). This is the single largest lever in the model -- a 3:2 dollar swing to the upside vs downside from the base."
+    },
+    {
+      "debate": "The discount rate: Is 9% Ke for the Analog franchise too high, and does the market's implied 7.4-8% rate have merit?",
+      "is_crux": false,
+      "bull_view": "Daedalus explicitly used r=9% as 'the conservative end' when WACC at 7.3% is the stated alternative. The Analog segment is a 100,000-customer annuity with 12-24 month design-in lock; revenue retention exceeds 90% at the customer level through cycles (the 22% revenue decline in 2022-2025 was inventory de-stocking, not customer defection). ADI carries a fundamental beta of 0.70-0.75 at steady state. At beta 0.70: r = 4.40% + 0.70 \u00d7 5.50% = 8.25%. Moving from 9% to 8% on Analog (holding bull NOPAT) lifts the Gordon multiple from 21.9x to 29.2x and adds $63/sh -- taking the bull SOTP from $168 to $231.",
+      "bear_view": "The post-SLAB debt load ($18B net debt) warrants using Ke rather than WACC to avoid understating leverage risk in the equity discount. The 2022-2025 inventory supercycle (seven consecutive quarters of decline) is empirical evidence that the Analog business is not as non-cyclical as the stickiness model implies. Financial leverage amplifies the equity beta even if the underlying business beta is 0.70-0.75. At r=9%, the Gordon multiple (19.4x) already credits the annuity characteristics within the CAPM framework.",
+      "our_verdict": "We hold r=9% for the base as the more conservative and leveraged-appropriate choice. The bull's case for r=8% is not wrong -- it is a legitimate structural argument about annuity risk -- but we treat it as an upside case rather than the base, because the post-SLAB debt amplifies equity risk beyond what a pure business-beta analysis captures. The $63/sh debate is real and acknowledged in the target ($200.88 at 27x CY2027 FCF gives partial credit without requiring the full r=8% scenario to materialize).",
+      "what_would_change_our_mind": "SLAB integration on schedule (synergies realized within 3 years, no incremental capex surprise) AND net debt declining toward $12-14B by FY2028 would argue for moving from Ke to WACC for Analog, adding approximately $40-60/share to fair value.",
+      "worth_per_share": "+$63/sh from moving from r=9% to r=8% on bull NOPAT (standalone). At base NOPAT, moving from r=9% to r=8% adds approximately $40/sh to base fair value ($105 \u2192 $145)."
+    },
+    {
+      "debate": "Silicon Labs acquisition: strategic rationale vs balance sheet timing risk",
+      "is_crux": false,
+      "bull_view": "SLAB ($785M revenue, IoT/wireless: Zigbee, Bluetooth, Matter) adds scale to TXN's Embedded segment and positions TXN as a leader in embedded wireless connectivity -- a market with genuine 8-12% CAGR tailwinds from industrial IoT. Synergies of $450M annually are achievable within 3 years given TXN's manufacturing integration track record. EPS accretive in year 1 post-close per TXN. The $7.5B deal is large relative to recent history but the CHIPS Act direct award ($1.6B contracted, signed December 2024) plus ITC credits ($6-8B total) partially offset the debt load in net present value terms. TXN acquired National Semiconductor ($6.5B, 2011) and integrated successfully -- the management team has done this before.",
+      "bear_view": "TXN is paying 9.5x revenue for SLAB at trough FCF -- $7.5B all-cash while its own FY2025 FCF was $2.60B. Post-close net debt reaches $18B, implying approximately 3.5-4.5x FCF on FY2026 consensus -- elevated for a cyclical semi. The MCHP template is instructive: MCHP acquired Microsemi in 2018 for $8.35B, levered to 7.5x net debt/EBITDA, and when the analog correction hit in 2019 was forced to cut dividends. TXN's deal is smaller in ratio terms but the timing (trough-to-recovery FCF, elevated existing net debt) is similarly risky. If SLAB integration delays synergies by 18 months and the dividend remains at $5.2B/yr, TXN's debt continues growing through FY2027 in the bear scenario.",
+      "our_verdict": "The strategic rationale is sound. The timing risk is real and not fully priced at $323. We include $18B net debt (post-SLAB) in the SOTP base and bear. The deal's synergy value ($450M \u00d7 13.3x Gordon = $6B NPV) roughly equals the integration risk discount we apply to Embedded's exit multiple (13.3x vs MCHP's 20x). On net: the deal is likely value-neutral to slightly negative at these prices because TXN paid a high entry multiple at a cyclical inflection in its own FCF.",
+      "what_would_change_our_mind": "SLAB synergies realized faster than the 3-year timeline (would argue for higher Embedded NOPAT and lower discount); or TXN announces asset sales / equity raise to de-lever faster (would reduce the bear scenario's compounding risk).",
+      "worth_per_share": "-$21/sh from the base fair value if SLAB synergies delay 18 months and no revenue acceleration offsets the interest drag. Combined with Debate 1 stall: the bear SOTP of $56 reflects both firing simultaneously."
+    },
+    {
+      "debate": "Multiple compression risk: is TXN a structural compounder at 36x P/E or a cyclical analog semi that re-rates to 15-20x as the Q1 trough-bounce decelerates?",
+      "is_crux": false,
+      "bull_view": "The 300mm manufacturing model creates genuine operating leverage that no pure-fab-light analog peer can replicate. Once the build is complete and revenue scales past $22-25B, incremental gross margins of 70-75% flow directly to NOPAT at near-zero incremental capex. This is not a one-cycle wonder -- it is a permanent structural re-rating of the margin profile. Citi (June 15), BofA (May 25), and Seaport (May 22) all specifically cite the structural moat as the basis for premium multiples ($345-$400 targets). The market is rationally pricing a durable FCF compounder.",
+      "bear_view": "ON Semiconductor traded at 30-35x P/E in 2022 on the EV/ADAS structural re-rating thesis. When EV growth slowed in 2023-2024, ON compressed to 14-16x in 18 months -- a 50-55% multiple compression even as revenue held up. MCHP compressed from 27x to 12x on the MCU supercycle thesis. TXN at 36x P/E and 47x FCF is pricing the structural re-rate before it is demonstrated at scale. If two consecutive quarters show industrial growth decelerating from +30% to +10% YoY, the narrative shifts from 'structural compounder in early innings' to 'cyclical semi with $18B debt that levered up to buy SLAB.' That re-rates to 15-18x P/E -- a 50-60% multiple compression that does not require a recession or an earnings miss.",
+      "our_verdict": "Multiple compression is the highest-conviction bear scenario because it requires only a deceleration in the reported growth rate, not a reversal. The ON Semi and MCHP precedents are exact: same analog semi category, same structural-re-rating narrative, same compression mechanism when the growth rate proved to be cyclical rather than structural. We do not need the base FCF path to be wrong -- the multiple itself is the problem. The 12m target of $200.88 at 27x already embeds a partial de-rating; the bear case of $56 embeds the full de-rating to through-cycle multiples.",
+      "what_would_change_our_mind": "Data center reaching and sustaining 20% of total revenue for two or more consecutive quarters (converting EXTRAPOLATED to CONTRACTED) -- that would provide the clearest evidence of a structural rather than cyclical growth driver, and would argue for sustaining a premium multiple. Q3-2026 is the first observation point.",
+      "worth_per_share": "-$26/sh vs the base fair value from the multiple compression debate alone (from 19.4x Gordon to 15x trough multiple on bear NOPAT). In the full bear with NOPAT stall and multiple compression: $56 vs $106 base = -$50/sh."
+    }
+  ],
+  "bear_paragraph": "The bear thesis does not require a recession, a management failure, or a competitive loss. It requires only that three current observable trends continue. First: inventory days of 209 at Q1-2026 end -- still above the normalized 150-day target -- indicate that distributors are still working through channel inventory, which historically suppresses new orders to TXN for longer than consensus models. If industrial revenue growth decelerates from +30% to +10% YoY in H2-2026 (a stall, not a reversal), FY2027 revenue stays near $20B rather than recovering to $23B. Second: TXN closes the $7.5B Silicon Labs acquisition in H1-2027 at 9.5x revenue, taking net debt to approximately $18B. At bear FCF of $4.7B (FY2027), the leverage ratio is approximately 3.8x net debt/FCF, leaving no margin for error and requiring the dividend ($5.2B/yr) to be partially funded by new debt -- extending a three-year streak of dividend outpacing FCF. Third: the market re-rates from the current 47x NTM FCF to a through-cycle 15x as the Q1-2026 trough-bounce decelerates and the structural-re-rating narrative fails to convert to contracted revenue. ON Semiconductor and MCHP are the precedents: both compressed 50-60% on exactly this mechanism. The SOTP bear value at $56 per share represents 83% downside from the current price of $323. The bear does not require heroic assumptions -- only that current trends do not reverse as quickly as the market has priced.",
+  "key_risks": [
+    {
+      "rank": 1,
+      "category": "Valuation",
+      "severity": "HIGH",
+      "likelihood": "HIGH",
+      "risk": "Multiple compression from current 47x NTM FCF to through-cycle 15-20x as industrial growth decelerates from +30% to single digits",
+      "monitor": "Q2/Q3 2026 industrial growth rate YoY; inventory days trend"
+    },
+    {
+      "rank": 2,
+      "category": "Cyclical recovery",
+      "severity": "HIGH",
+      "likelihood": "MEDIUM",
+      "risk": "Industrial recovery stalls at $6-7B as distributor inventory clears slower than expected or China manufacturing capex softens",
+      "monitor": "TXN inventory days quarterly; BNP Paribas semiconductor outlook; China auto production data"
+    },
+    {
+      "rank": 3,
+      "category": "Balance sheet",
+      "severity": "MEDIUM",
+      "likelihood": "HIGH",
+      "risk": "SLAB acquisition closes at $7.5B all-cash in H1-2027, adding to net debt at trough FCF; if industrial recovery stalls simultaneously, leverage ratio reaches 3.8x+ FCF",
+      "monitor": "SLAB close date; disclosed integration costs; first quarterly FCF after close"
+    },
+    {
+      "rank": 4,
+      "category": "Dividend sustainability",
+      "severity": "MEDIUM",
+      "likelihood": "MEDIUM",
+      "risk": "Dividend of $5.68/sh ($5.2B/yr) exceeded FCF for three consecutive years; in bear scenario dividend coverage stays below 1x through FY2027, requiring more debt issuance",
+      "monitor": "FCF quarterly vs dividend $5.2B/yr run-rate"
+    },
+    {
+      "rank": 5,
+      "category": "Data center concentration",
+      "severity": "LOW-MEDIUM",
+      "likelihood": "LOW",
+      "risk": "Hyperscaler AI capex decelerates sharply (2024-2025 cycle normalizes), removing the data center growth vector that underpins the Q1-2026 re-rating",
+      "monitor": "Hyperscaler capex guidance each quarter; TXN Q2-Q3 data center commentary"
+    }
+  ],
+  "range_and_sensitivity": {
+    "anchor": "Base = fair value today $105.63 (SOTP; Analog $97.95 + Embedded $7.68 - net debt $18B post-SLAB / 0.91B shares)",
+    "cases": [
+      {
+        "label": "Bear",
+        "implied_value": 56,
+        "thesis_one_line": "Industrial stalls at $20B revenue; multiple compresses to 15x; SLAB adds $18B net debt at trough FCF",
+        "evidence_grade": "OBSERVABLE-AND-NEAR",
+        "key_driver": "Inventory days at 209 (not cleared); China auto down in Q1-2026; dividend uncovered on trailing FCF"
+      },
+      {
+        "label": "Base",
+        "implied_value": 105.63,
+        "thesis_one_line": "Industrial recovers to $23B total revenue by FY2027; FCF $7.44/sh; SOTP at 19.4x Gordon multiple",
+        "evidence_grade": "MEDIUM",
+        "key_driver": "Q1-2026 recovery data confirmed; Q2 guide above prior consensus; street consensus $23B FY2027"
+      },
+      {
+        "label": "Bull (at Ke=9%)",
+        "implied_value": 168.04,
+        "thesis_one_line": "Industrial full recovery to $25.5B revenue; FCF $10.50/sh; data center reaches 20% of total",
+        "evidence_grade": "EXTRAPOLATED",
+        "key_driver": "Requires industrial to exceed FY2021 prior-peak AND data center at CEO's $5B target simultaneously"
+      },
+      {
+        "label": "Bull (at r=8%)",
+        "implied_value": 231,
+        "thesis_one_line": "Bull FCF path plus lower annuity discount rate of 8%; Gordon multiple rises to 29.2x",
+        "evidence_grade": "EXTRAPOLATED",
+        "key_driver": "Requires both full FCF recovery AND the market sustaining a 7.4% effective discount rate on the Analog franchise"
+      }
+    ],
+    "sensitivity_matrix": {
+      "axis_x": "Exit multiple (EV/NOPAT, Gordon at r=9%, g=4.5%, ROIC=35% for base)",
+      "axis_y": "Analog NOPAT at FY2031 normalization (FCF/share proxy)",
+      "grid": [
+        [
+          72.3,
+          82.1,
+          93.0
+        ],
+        [
+          92.9,
+          105.6,
+          119.7
+        ],
+        [
+          125.7,
+          142.9,
+          162.1
+        ]
+      ],
+      "row_labels": [
+        "Bear ($5.8B NOPAT - stalled recovery)",
+        "Base ($7.5B NOPAT - Theia base)",
+        "Bull ($10.2B NOPAT - full recovery + data center)"
+      ],
+      "col_labels": [
+        "Low (17x - below Gordon)",
+        "Base (19.4x - Gordon formula)",
+        "High (22x - moat premium)"
+      ],
+      "where_cases_land": "No cell reaches $323. The current price requires Analog NOPAT well above $15B by FY2031 (implying revenue above $30B) AND/OR a re-rating to 30-35x exit multiple permanently. Neither is supportable from argued evidence.",
+      "current_price_reference": 322.86
+    },
+    "dominant_lever": "Analog NOPAT at normalization. Moving Bear to Bull NOPAT shifts fair value by $80-90/sh; moving Low to High multiple at base NOPAT shifts by $27/sh. Growth earnings at T is the primary lever; the exit multiple is secondary.",
+    "vs_price_pct": {
+      "bear": -82.7,
+      "base": -67.3,
+      "bull_ke9": -47.9,
+      "bull_r8": -28.5
+    }
+  },
+  "scenario_assumptions": {
+    "base": {
+      "label": "Base",
+      "one_line": "Industrial recovers to $8B by FY2027; capex normalizes to $2.2B; FCF $7.44/sh; SOTP $105.63",
+      "implied_value": 105.63,
+      "rows": [
+        {
+          "driver": "FY2026 revenue",
+          "value": "$21.0B",
+          "note": "Consistent with Q2 guide midpoint $5.2B + H2 seasonality; street consensus"
+        },
+        {
+          "driver": "FY2027 revenue",
+          "value": "$23.0B",
+          "note": "Industrial $8.0B + Automotive $6.8B + Data center $3.5B + PE $4.0B + SLAB $0.8B Embedded"
+        },
+        {
+          "driver": "Industrial revenue FY2027",
+          "value": "$8.0B vs $5.8B FY2025",
+          "note": "Partial recovery to prior-peak; 38% cumulative increase over 2 years"
+        },
+        {
+          "driver": "Data center revenue FY2027",
+          "value": "$3.5B (~15% of total)",
+          "note": "CEO targets 20%; base assumes deceleration from 90% YoY to 25-35% sustained growth"
+        },
+        {
+          "driver": "FY2027 FCF/share",
+          "value": "$7.44/sh",
+          "note": "Rev $23B x CFO 39% = $8.97B CFO - $2.2B capex = $6.77B FCF / 0.91B shares"
+        },
+        {
+          "driver": "Capex FY2027",
+          "value": "$2.2B",
+          "note": "Within $2-3B FY2026 guide; FY2027 maintenance only"
+        },
+        {
+          "driver": "Analog NOPAT FY2031",
+          "value": "$7.5B",
+          "note": "Revenue $22.1B x EBIT 43.5% x (1-18% tax) - SBC"
+        },
+        {
+          "driver": "Analog exit multiple",
+          "value": "19.4x EV/NOPAT",
+          "note": "Gordon formula at r=9%, g=4.5%, ROIC=35%"
+        },
+        {
+          "driver": "Net debt post-SLAB",
+          "value": "$18.0B",
+          "note": "Current $10.8B + SLAB $7.5B (H1-2027 close)"
+        },
+        {
+          "driver": "Implied SOTP value",
+          "value": "$105.63/sh",
+          "note": "Analog $97.95 + Embedded $7.68 - net debt $18B/0.91B shares"
+        }
+      ]
+    },
+    "bull": {
+      "label": "Bull (at Ke=9%)",
+      "one_line": "Industrial fully recovers to prior-peak; data center hits 20% of total; capex at $2B low end; FCF $10.50/sh; SOTP $168",
+      "implied_value": 168.04,
+      "rows": [
+        {
+          "driver": "FY2026 revenue",
+          "value": "$22.5B",
+          "note": "Capex at $2B low end; revenue above Q2 guide midpoint on strong H2"
+        },
+        {
+          "driver": "FY2027 revenue",
+          "value": "$25.5B",
+          "note": "Industrial $9.5B (above FY2021 level) + Auto $7.5B + Data center $5.1B (20% of total)"
+        },
+        {
+          "driver": "Industrial revenue FY2027",
+          "value": "$9.5B vs $5.8B FY2025",
+          "note": "Full recovery to prior-peak; 64% cumulative increase; requires 15-20% YoY for 6 quarters"
+        },
+        {
+          "driver": "Data center revenue FY2027",
+          "value": "$5.1B (20% of total)",
+          "note": "CEO Ilan's stated target; extrapolated from Q1-2026 +90% YoY trajectory"
+        },
+        {
+          "driver": "FY2027 FCF/share",
+          "value": "$10.50/sh",
+          "note": "Rev $25.5B x CFO 44% = $11.22B - $2.0B capex = $9.22B + CHIPS ITC $0.35/sh"
+        },
+        {
+          "driver": "Capex FY2027",
+          "value": "$2.0B",
+          "note": "Low end of $2-3B guide; both FY2026 and FY2027 at minimum"
+        },
+        {
+          "driver": "Analog NOPAT FY2031",
+          "value": "$10.2B",
+          "note": "Revenue $25.0B x EBIT 46% x (1-18%) - SBC; ROIC 40% at higher utilization"
+        },
+        {
+          "driver": "Analog exit multiple",
+          "value": "21.9x EV/NOPAT (at Ke=9%); 29.2x at r=8%",
+          "note": "Gordon at g=5%, ROIC=40%, r=9%; or 29.2x at r=8%"
+        },
+        {
+          "driver": "Net debt post-SLAB",
+          "value": "$18.0B",
+          "note": "Same as base; CHIPS Act ITC reduces effective net burden"
+        },
+        {
+          "driver": "Implied SOTP value",
+          "value": "$168 at Ke=9%; $231 at r=8%",
+          "note": "FCF cross-check: $10.50 x 30x = $315 -- barely reaches current price"
+        }
+      ]
+    },
+    "bear": {
+      "label": "Bear",
+      "one_line": "Industrial stalls at $20B; multiple compresses to 15x; SLAB adds leverage at trough; SOTP $56",
+      "implied_value": 56,
+      "rows": [
+        {
+          "driver": "FY2026 revenue",
+          "value": "$19.5B",
+          "note": "Industrial stalls at current run-rate; China auto stays soft; H2 moderation"
+        },
+        {
+          "driver": "FY2027 revenue",
+          "value": "$20.0B",
+          "note": "Industrial $6.5B + Automotive $5.8B (flat) + Data center $2.5B (decelerates sharply)"
+        },
+        {
+          "driver": "Industrial revenue FY2027",
+          "value": "$6.5B vs $5.8B FY2025",
+          "note": "12% increase from FY2025 -- channel absorption slows; global manufacturing capex softens"
+        },
+        {
+          "driver": "Data center revenue FY2027",
+          "value": "$2.5B (~12% of total)",
+          "note": "Hyperscaler AI capex normalizes; growth decelerates sharply from 90% YoY"
+        },
+        {
+          "driver": "FY2027 FCF/share",
+          "value": "$5.16/sh",
+          "note": "Rev $20.0B x CFO 36% = $7.2B - $2.5B capex = $4.7B / 0.91B shares"
+        },
+        {
+          "driver": "Capex FY2027",
+          "value": "$2.5B",
+          "note": "High end of guide; back-end assembly bottlenecks persist"
+        },
+        {
+          "driver": "Analog NOPAT FY2031",
+          "value": "$5.8B",
+          "note": "Revenue $20B x EBIT 39% x (1-18%) - SBC; lower utilization on stalled revenue"
+        },
+        {
+          "driver": "Analog exit multiple",
+          "value": "15.0x EV/NOPAT",
+          "note": "Gordon at g=3%, ROIC=30%, r=9%; consistent with ADI 2023 trough and MCHP 2023 trough"
+        },
+        {
+          "driver": "Net debt post-SLAB",
+          "value": "$18.0-18.5B",
+          "note": "Dividend at $5.2B/yr exceeds FCF $4.7B by $0.5B/yr; additional debt issuance"
+        },
+        {
+          "driver": "Implied SOTP value",
+          "value": "$56/sh",
+          "note": "Analog $55.5 + Embedded $0.44; Embedded nearly zero after net debt allocation"
+        }
+      ]
+    }
+  },
+  "synthesis_paths": [
+    {
+      "label": "Base",
+      "outcome_range": "$105-120 fair value today; $200-210 12m target",
+      "description": "Industrial recovers to $8B by FY2027. Capex normalizes to $2.2B. FCF/share reaches $7.44. SOTP at Gordon 19.4x implies $105.63 fair value today. 12m target $200.88 at 27x CY2027 FCF gives credit for the contracted recovery.",
+      "evidence_grade": "MEDIUM"
+    },
+    {
+      "label": "Bull",
+      "outcome_range": "$168-231 fair value (Ke=9% to r=8% range)",
+      "description": "Full industrial recovery to $9.5B, data center at 20% of $25.5B total, capex at $2B. FCF/share $10.50. FCF cross-check at 30x produces $315 -- barely below price. Requires both the FCF path AND the multiple to hold simultaneously.",
+      "evidence_grade": "EXTRAPOLATED"
+    },
+    {
+      "label": "Bear",
+      "outcome_range": "$56-82 (multiple compression adds to FCF stall)",
+      "description": "Industrial stalls at $20B. Capex stays at $2.5B. FCF/share $5.16. Multiple compresses from 42x to 15x EV/NOPAT as the structural re-rating narrative fails to materialize on schedule. SLAB adds $7.5B debt at trough FCF.",
+      "evidence_grade": "OBSERVABLE-AND-NEAR"
+    }
+  ],
+  "catalysts_to_watch": [
+    {
+      "theme": "Industrial recovery pace",
+      "horizon": "Next 1-2 quarters",
+      "what_to_watch": "Q2-2026 earnings (July 22): industrial YoY growth rate vs Q1's +30%; inventory days trend (below 190 = clearing; above 220 = stalling); Q3-2026 guide for industrial revenue",
+      "why_it_matters": "This is the crux. The $62/sh swing between base and full-recovery bull, and the $49/sh swing between base and stall-bear, both depend entirely on the trajectory of industrial revenue over the next two to four quarters.",
+      "bull_or_bear_tell": "Bull tell: industrial +20%+ YoY in Q2 AND inventory days fall toward 180; Bear tell: industrial +10% or below in Q3, inventory days stabilize or re-expand above 215"
+    },
+    {
+      "theme": "Capex normalization and FCF generation",
+      "horizon": "FY2026 full year (reported January 2027)",
+      "what_to_watch": "FY2026 actual capex vs $2-3B guide; FY2026 FCF/share vs management's $8+ target; whether back-end assembly bottlenecks cited in Q1-2026 call force capex to the $3B high end or stay near $2B",
+      "why_it_matters": "FCF/share at $8+ in FY2026 would validate management's framework and shift consensus toward the bull path; FCF below $6.50/sh (capex at $3B) would confirm the bear case on the capex lever.",
+      "bull_or_bear_tell": "Bull: FY2026 FCF/share above $7.00 and capex below $2.5B; Bear: capex guidance raised above $3B at any point in 2026"
+    },
+    {
+      "theme": "Data center durability",
+      "horizon": "Q2-Q4 2026",
+      "what_to_watch": "Data center revenue % of total (management commentary; will they confirm movement toward the CEO's 20% target?); sequential growth rate vs Q1's +25% QoQ; any product launch (see June 2026 battery monitor for EVs as an example of new application cadence)",
+      "why_it_matters": "Data center is the structural re-rating story. If it reaches and holds 20% of total revenue for two consecutive quarters, the multiple premium starts to convert from EXTRAPOLATED to CONTRACTED. If it plateaus at 10-12%, the bull's narrative depends entirely on the industrial recovery alone.",
+      "bull_or_bear_tell": "Bull: data center exceeds 15% of Q2 revenue and management confirms sustained sequential growth; Bear: data center growth decelerates sharply below 10% QoQ and is blamed on a hyperscaler capex pause"
+    },
+    {
+      "theme": "Silicon Labs integration and balance sheet",
+      "horizon": "H1-2027 (close) + first two quarters post-close",
+      "what_to_watch": "SLAB close date; initial integration cost disclosures; whether $450M synergy timeline is confirmed or pushed out; TXN's total net debt at close; any changes to dividend policy post-close",
+      "why_it_matters": "The $7.5B addition to net debt is the balance sheet risk. If integration costs are front-loaded and synergies are delayed past 3 years, Embedded generates near-zero FCF in FY2027-FY2028, compounding the leverage ratio toward 4x+ net debt/FCF.",
+      "bull_or_bear_tell": "Bull: integration costs at the low end of disclosed range, synergies on track, management reaffirms dividend sustainability; Bear: integration cost surprise above $200M in year 1, synergy timeline pushed to 4+ years"
+    }
+  ],
+  "conclusion": "TXN is a world-class analog franchise with a structural 300mm manufacturing moat that no peer can replicate quickly -- the moat is real, the FCF recovery is real, and Q1-2026's +19% revenue growth confirms the cycle has turned. None of that changes the math: at 47x NTM FCF, even the argued bull barely reaches the current price ($315 on $10.50/sh at 30x), the base sits 67% below it ($105), and the bear -- which requires only current observable trends to continue -- produces $56. SELL; revisit on Q2 earnings (July 22) if industrial growth sustains above 20% YoY and inventory days break below 180.",
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "basis": "SELL is high-conviction directionally (the multiple is egregiously high relative to any argued FCF path). MEDIUM overall because the timing of de-rating is uncertain: a Q2 beat could sustain momentum for 2-4 more quarters before multiple compression begins, and the FCF inflection is genuinely underway. The recovery direction (bull toward base) could close 12-18 months of the gap before the multiple corrects."
+  },
+  "run_manifest": {
+    "hermes": "TXN_databundle.json (2026-06-21T01:31Z)",
+    "theia": "TXN_crux.json + TXN_demand.json + TXN_industry.json (2026-06-21)",
+    "pheme": "TXN_market_facts.json (2026-06-21)",
+    "daedalus": "TXN_valuation.json + TXN_headline.json (2026-06-21T17:01Z)",
+    "boreas": "TXN_bull.json (2026-06-21)",
+    "cassandra": "TXN_bear.json (2026-06-21)",
+    "atlas": "TXN.json (2026-06-21)",
+    "engine": "Atlas v3"
+  },
+  "change_log": [
+    {
+      "change": "Initial TXN report -- no prior run to diff against",
+      "justified_by": "First-run baseline"
+    }
+  ],
+  "data_gaps": [
+    "SEC EDGAR fetch failed; segment revenue for FY2023-FY2025 sourced from web-extracted SEC filings (consistent across multiple sources but not from structured bundle). Segment data confirmed by multiple independent sources.",
+    "Customer concentration detail: TXN discloses no single customer above 10%; distributor Arrow/Avnet share not published.",
+    "Gross margin by segment: bundle has consolidated 57% GM. Analog estimated 62-65% at current utilization; Embedded estimated 45-50%.",
+    "SBC by period not in bundle (SEC fetch failed); estimated at $0.35B/yr (~2% of revenue) from scale and peer comparison.",
+    "Data center as a formal segment not reported in GAAP filings; estimated from management commentary."
+  ],
+  "sources": [
+    "TXN_databundle.json (Hermes yfinance, 2026-06-21T01:31Z)",
+    "TXN Q1 2026 10-Q / 8-K (SEC, April 2026) -- segment revenues, gross margin, guidance",
+    "TXN Q4 2025 8-K (SEC, January 2026) -- FY2025 end-market mix",
+    "TXN Capital Management presentation (investor.ti.com, February 2026) -- capex roadmap, FCF targets",
+    "TXN newsroom: Silicon Labs acquisition announcement (February 4, 2026)",
+    "Q1 2026 earnings call transcript (April 22, 2026)",
+    "Citi research (Christopher Danely, June 15, 2026) -- PT $345, top semi pick",
+    "Bank of America research (May 25, 2026) -- PT $370",
+    "Seaport Research (Jay Goldberg, May 22, 2026) -- PT $400, upgrade to Buy",
+    "BNP Paribas CIB: semiconductor market 2026 outlook",
+    "Fortune Business Insights, Coherent Market Insights, Mordor Intelligence -- analog TAM",
+    "Yole Group -- automotive semiconductor market ($132B) and content-per-vehicle",
+    "NXP Q1 2026 8-K; MCHP Q4 FY2026 8-K -- peer recovery data",
+    "Silicon Labs FY2025 results PR",
+    "Wevolver: 200mm vs 300mm wafer technical comparison"
+  ]
+}

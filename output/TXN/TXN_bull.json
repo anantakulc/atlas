@@ -1,0 +1,218 @@
+{
+  "_meta": {
+    "ticker": "TXN",
+    "agent": "Boreas",
+    "atlas_version": "v3",
+    "produced_utc": "2026-06-21",
+    "blind_to_cassandra": true,
+    "sources": [
+      "TXN_crux.json (Theia, 2026-06-21)",
+      "TXN_valuation.json (Daedalus, 2026-06-21)",
+      "TXN_market_facts.json (Pheme, 2026-06-21)",
+      "TXN_databundle.json (Hermes, 2026-06-21)",
+      "TXN Q1 2026 earnings call (April 22, 2026): industrial +30% YoY, data center +90% YoY, CEO guides data center to 20% of total 'soon'",
+      "TXN Capital Management presentation (Feb 2026): capex $2-3B guide FY2026",
+      "CHIPS Act: $1.6B direct award (signed December 2024); $6-8B ITC total",
+      "Citi (Christopher Danely, June 15 2026): top semi pick, PT $345; product price increases + data center share gain named",
+      "BofA (May 25 2026): PT $370; 'multi-year content gains underappreciated', industrial/auto 'finally turned the corner'",
+      "Seaport Research (Jay Goldberg, May 22 2026): upgrade Buy, PT $400; cycle recovery + manufacturing moat"
+    ]
+  },
+
+  "bull_thesis_one_sentence": "TXN at the bull is the compounding of three simultaneous re-ratings: industrial/automotive volumes returning to prior-peak mix (driving Analog NOPAT from $7.5B to $10.2B at normalization), a structurally justified lower discount rate of ~8% on a 100,000-customer annuity with 12-24 month design-in lock (versus the 9% Ke Daedalus conservatively used), and data center power reaching CEO-guided 20% of total revenue on 300mm capacity that is already built, together yielding a bull intrinsic of approximately $230/share -- and a further $85 of premium the market is pricing for the franchise permanence of the moat.",
+
+  "price_target_engagement": {
+    "daedalus_base_intrinsic": 105.63,
+    "daedalus_bull_sotp_ke9pct": 168.04,
+    "bull_sotp_at_r8pct": 231.0,
+    "fcf_crosscheck_bull_at_30x": 315.0,
+    "current_price": 322.86,
+    "can_bull_clear_price": false,
+    "why_not": "The honest bull SOTP (Debate 1 + Debate 2 combined: ~$231/sh at r=8%, bull NOPAT) still sits $92 below the current $322.86 price. On the FCF cross-check, $10.50/sh at 30x FCF = $315 -- within $8 of price. No argued combination of NOPAT and Gordon-formula multiple gets to $323 without either (a) FCF/share above the Theia ceiling ($10.50) or (b) a persistently 30x+ multiple that the Gordon formula does not support at any honest g < r. The bull case therefore argues: the market's current price is NOT irrational, but it prices a franchise premium -- the durable scarcity of the 300mm manufacturing moat -- on top of the intrinsic FCF path. If the bull FCF path ($10.50/sh) materializes and the market sustains a 30x FCF multiple (7.4% implied r, justified only if TXN's design-in annuity truly reduces systematic risk to that level), the stock is approximately at fair value. The bull does not argue the stock is cheap; it argues the stock is NOT egregiously mispriced if two things both prove true: the industrial/auto recovery delivers full-peak FCF, and the market's implied discount rate (7.4%) is closer to the truth than Daedalus's Ke (9.0%)."
+  },
+
+  "debates": [
+    {
+      "debate_id": 1,
+      "title": "The crux: Industrial and automotive volumes recover fully to prior-peak mix by FY2027, not just partially",
+      "why_this_decides_the_call": "Analog revenue at FY2022 peak was $16.6B on $20B total (83% mix). FY2025 Analog was $14.3B on $17.7B total (81% mix). The crux is not whether industrial recovers -- Q1-2026 industrial +30% YoY confirms it has begun -- but whether the recovery is FULL (returning industrial to ~38-40% of total, the 2021-2022 level) or PARTIAL (leveling off at 33% current mix). Full recovery is the Theia bull: $25.5B total revenue by FY2027 with industrial at $9.5B (+64% vs FY2025 $5.8B). Partial recovery is the base: $23.0B with industrial at $8.0B. The difference is $2.5B in revenue, most of which runs at the incremental 300mm margin of 70-75% gross, driving an Analog NOPAT swing from $7.5B to $10.2B at the normalization year. This is the largest single lever in the model.",
+      "bull_argument": {
+        "what_must_be_true": "Industrial revenue grows from ~$5.8B (FY2025) to ~$9.5B by FY2027, a 64% total recovery over two years. This is not recovery to a new record -- it returns industrial to the 2021 level ($9.3B FY2021) that preceded the Q4-2021 inventory supercycle. The argument is sequential: (1) Q1-2026 industrial grew +30% YoY AND +20% sequentially -- the recovery is accelerating, not decelerating; (2) CEO Haviv Ilan stated Q1-2026 automotive demand was 'at or within 1-2 points of all-time peak level' -- automotive is nearly fully recovered already; (3) industrial typically lags automotive by 2-4 quarters in TXN's cycle history; (4) Q2-2026 guidance of $5.0-5.4B ($5.2B midpoint) annualizes to $20.8B -- the trajectory to $25.5B by FY2027 requires continued ~15-20% YoY growth for 6 quarters from Q2-2026, which is consistent with a recovery from a multi-year trough (inventory days of 209 in Q1-2026 are still above the 150-day bottom of the target range, meaning restocking has not yet fully run).",
+        "evidence": [
+          "Q1-2026 industrial revenue: +30% YoY, +20% QoQ (Q1 earnings call, April 22 2026)",
+          "Q1-2026 automotive: CEO Ilan stated 'at or within 1-2 points of all-time peak level' (Q1 earnings call)",
+          "Q2-2026 revenue guide: $5.0-5.4B midpoint $5.2B, above prior consensus of $4.8B -- management beat-and-raise signals recovery confidence",
+          "BofA (May 25 2026): 'industrial and auto have finally turned the corner'; 'multi-year content gains underappreciated'",
+          "Inventory days: 209 in Q1-2026, still above bottom of 150-day target range -- distributor restocking not yet complete",
+          "Yole Group: automotive analog content per vehicle 2-2.5x higher for EVs vs ICE; secular volume support even at flat unit production"
+        ],
+        "what_would_have_to_fail": "The recovery stalls because (a) global manufacturing capex rolls over (a macro call, not a TXN-specific one) or (b) the 2022 peak was a COVID pull-forward with no volume floor. The evidence against stall: seven consecutive quarters of decline ended in Q4-2025, the Q1-2026 acceleration was broad-based, and inventory days have only partially normalized.",
+        "dollar_per_share_swing": {
+          "base_analog_equity_b": 92.4,
+          "bull_analog_equity_b": 147.0,
+          "swing_b": 54.6,
+          "plus_embedded_swing_b": 2.2,
+          "total_swing_b": 56.8,
+          "per_share_swing": 62.4,
+          "note": "Moving Analog NOPAT at normalization from $7.5B (base) to $10.2B (bull), holding r=9%, g=5%, ROIC=40% (higher utilization), at T=5 (FY2031): Analog equity goes from $92.4B to $147.0B, or +$54.6B / 0.91B shares = +$60/sh on Analog alone. Embedded adds ~$2.4/sh. Total Debate 1 swing: +$62/sh, taking SOTP from $105.63 to $168/sh."
+        },
+        "evidence_quality": "EXTRAPOLATED",
+        "evidence_quality_reasoning": "Q1-2026 data confirms recovery onset (CONTRACTED). Full recovery to prior-peak $9.5B industrial by FY2027 requires the trajectory to hold for 6 more quarters -- consistent with the trough dynamics and inventory data, but not yet booked. Classified EXTRAPOLATED: reasonable read of the trend, not a hoped-for wish."
+      }
+    },
+    {
+      "debate_id": 2,
+      "title": "The discount rate: Daedalus's 9% Ke overstates TXN Analog's risk; the structurally correct rate is 8-8.5%, and the market's implied rate of 7.4% is not irrational given the franchise's annuity characteristics",
+      "why_this_decides_the_call": "The Gordon multiple is the most sensitive lever in the SOTP: it is squared relative to FCF/share in its impact on value. Daedalus used r=9% (Ke, not WACC) for Analog, explicitly noting this was 'deliberately conservative given post-SLAB leverage' and that WACC=7.3% would be the alternative. Moving from Ke=9% to a midpoint of 8% on Analog (while holding the bull NOPAT) changes the Gordon multiple from 21.9x to 29.2x and adds ~$63/sh to the bull SOTP. This is not a small rounding: it is a $63 per share debate that runs entirely on the question of what risk premium is appropriate for a franchise with 100,000+ customers, 80,000+ SKUs, and 12-24 month design-in lock cycles.",
+      "bull_argument": {
+        "what_must_be_true": "TXN Analog's true fundamental beta is closer to 0.65-0.75 than 0.85. The 0.85 beta Daedalus used is itself already lower than the 1.31 regression beta (which Daedalus correctly rejected as rally-inflated), but the bull argues that even 0.85 overstates the cyclical risk of a business where revenue retention at the customer level exceeds 90% and the average design-in cycle is 12-24 months. ADI, the closest analog semiconductor peer (pun intended), has carried a fundamental beta of 0.7-0.75 at steady state. At beta 0.70: r = 4.40% + 0.70 x 5.50% = 8.25%. At beta 0.75: r = 4.40% + 0.75 x 5.50% = 8.53%. The bull argues r=8.0-8.5% is the honest center for the Analog franchise at full utilization -- not a heroic assumption, and below what Daedalus already identified as the post-SLAB WACC (7.3%).",
+        "evidence": [
+          "Daedalus's own text: 'WACC = 7.3%... using Ke not WACC for the segment to avoid understating the cost after the deal-driven debt load. This is a correct conservative choice' -- Daedalus explicitly acknowledged r=9% is the conservative end",
+          "100,000+ customers, 80,000+ SKUs, 12-24 month design-in cycles: TXN's own Capital Management presentation",
+          "Analog gross margin at peak (FY2022): 68.8% -- structurally defensive business economics",
+          "ADI fundamental beta: 0.70-0.75 at steady state (industry benchmark for analog annuity businesses)",
+          "Citi (June 15 2026): TXN named 'top semiconductor pick', cited product price increases -- pricing power is a further beta reducer",
+          "Market's implied discount rate at $322.86 with $10.50/sh FCF bull: 7.4% -- the market itself is pricing Analog closer to 7.5% r than 9%"
+        ],
+        "what_would_have_to_fail": "The analog business turns out to be more cyclical than implied by the design-in model -- either because customers accelerate qualification of alternatives or because macroeconomic shocks compress demand faster than the stickiness model predicts. The 2022-2025 inventory supercycle (seven consecutive quarters of decline) is the empirical bear on this: even sticky businesses lost demand in a sharp inventory correction. The bull acknowledges this: r=8% (not 7.4%) is the honest center because some cyclical risk is real and the post-SLAB leverage adds financial risk.",
+        "dollar_per_share_swing": {
+          "bull_sotp_at_ke_9pct": 168.04,
+          "bull_sotp_at_r_8pct": 231.0,
+          "swing_per_share": 63.0,
+          "methodology": "Move Analog discount rate from 9% to 8% with bull NOPAT_T=$10.2B held constant. Gordon multiple goes from 21.9x to 29.2x. EV at T = $10.2B x 29.2x = $297.8B. Discounted at 8% for 5yr: $297.8B / 1.469 = $202.7B PV terminal. Add interim FCF PV $16B = $218.7B implied EV. Less $14B net debt = $204.7B equity / 0.91B shares = $225/sh Analog contribution. Add Embedded bull contribution ~$6.4/sh = $231/sh total. Swing vs bull at Ke=9% ($168): +$63/sh.",
+          "note": "This debate is independent of Debate 1: it is a pure multiple question, not a revenue question. Even if industrial/auto recovery delivers only the BASE revenue path ($7.5B Analog NOPAT), moving to r=8% lifts base SOTP from $105.63 to approximately $150/sh."
+        },
+        "evidence_quality": "EXTRAPOLATED",
+        "evidence_quality_reasoning": "The case for r<9% rests on the structural characteristics of the Analog annuity (contractually sticky) and Daedalus's own acknowledgment that 9% is the conservative end of the range. The market's current implied r of 7.4% is an observable market fact (not contracted) but the correct fundamental r is a modeling judgment, not a contracted quantity. EXTRAPOLATED: a reasonable structural read, not yet proven by cycle-through behavior post-SLAB."
+      }
+    },
+    {
+      "debate_id": 3,
+      "title": "Data center power: the CEO's 20%-of-total target is credible on already-built 300mm capacity, adding ~$12/sh in standalone PV over the base",
+      "why_this_decides_the_call": "Data center revenue grew +90% YoY in Q1-2026 to approximately 10-11% of TXN total. CEO Ilan guided data center to 'soon' be 20% of total on the Q1-2026 earnings call. The base case (Daedalus) assigns data center approximately $3.5B on $23B total revenue (15%). The bull assigns $5.1B on $25.5B total (20%). The $1.6B incremental data center revenue flows at the highest incremental margins in TXN's model -- 300mm power management fabs are already built and equipped, meaning the marginal revenue has near-zero incremental capex. This is the debate the base underweights: TXN was not a data center power vendor three years ago. The Q1-2026 +90% YoY growth is not a cycle beat -- it reflects a new demand vector from AI server power management (voltage regulators, power switches, DC/DC converters) that TXN's analog portfolio is well-positioned to serve.",
+      "bull_argument": {
+        "what_must_be_true": "Data center revenue reaches $5.1B by FY2027 (20% of $25.5B total). From the $4.83B Q1-2026 annualized run rate, total TXN data center is approximately $1.8-2.1B today. Growing from $2B to $5.1B over approximately 6 quarters requires continued 25-30% QoQ growth in the early quarters, decelerating as TXN gains a larger base. The +25% QoQ growth in Q1-2026 already demonstrated this pace is real. The mechanism: hyperscaler AI capex has shifted a significant fraction of data center power management demand to analog-heavy board-level power (voltage regulators, point-of-load converters) away from discrete solutions. TXN's power management portfolio (the largest by breadth in the industry) benefits asymmetrically from this architectural shift because AI servers require far more granular power management than traditional servers.",
+        "evidence": [
+          "Q1-2026 data center revenue: +90% YoY, +25% QoQ (Q1 earnings call, April 22 2026)",
+          "CEO Haviv Ilan on Q1-2026 call: data center 'soon' to be 20% of total (a stated management target, not speculative)",
+          "Motley Fool (June 19 2026): 'TXN named as pick-and-shovel AI stock powering the data center boom' -- consistent with new structural demand vector thesis",
+          "Citi (June 15 2026): 'expanding data center power market share' cited as key to $345 PT",
+          "FY2025 data center revenue: grew >50% full year (Theia sourced from Q1-2026 call commentary)",
+          "AI server power management: each AI GPU cluster requires ~3-5x the analog power management components vs traditional servers -- industry-specific content uplift"
+        ],
+        "what_would_have_to_fail": "Hyperscaler AI capex growth decelerates sharply, data center power spending reverts to traditional server patterns, or TXN loses content share to ADI or smaller power management specialists. The bull notes this debate is real: data center is 10% of revenue today and the CEO target of 20% requires sustained 25%+ QoQ growth for several quarters. It is the fastest-growing segment but also the least locked-in (shorter design cycles than industrial/automotive analog).",
+        "dollar_per_share_swing": {
+          "incremental_dc_revenue_b": 1.6,
+          "incremental_fcf_margin_pct": 45,
+          "incremental_fcf_b": 0.72,
+          "incremental_fcf_per_share": 0.79,
+          "gordon_multiple_at_r9_g45": 19.37,
+          "pv_discount_factor_3yr_9pct": 1.295,
+          "per_share_swing": 11.8,
+          "note": "Incremental $1.6B data center revenue (from $3.5B base to $5.1B bull) at 45% incremental FCF margin = $0.72B FCF / 0.91B shares = $0.79/sh/yr incremental. At Gordon multiple 19.4x, discounted 3 years to present: $0.79 x 19.4 / 1.295 = $11.8/sh. This is the standalone PV of the data center upgrade from base to bull, independent of Debate 1. Note this is partially embedded in the Debate 1 NOPAT swing; the true standalone contribution is ~$12/sh when isolated."
+        },
+        "evidence_quality": "EXTRAPOLATED",
+        "evidence_quality_reasoning": "Q1-2026 +90% YoY growth is a real operational fact (CONTRACTED for the period). The CEO target of 20% of total is a stated management goal, not a contracted revenue order. Growth from 10% to 20% of total requires sustained demand -- possible given AI server trends, but dependent on hyperscaler AI capex remaining elevated. EXTRAPOLATED: a reasonable and credible extrapolation of a running trend, not yet reached."
+      }
+    }
+  ],
+
+  "scenario_spec": {
+    "label": "Bull",
+    "revenue_fy2026_b": 21.0,
+    "revenue_fy2027_b": 25.5,
+    "revenue_fy2026_note": "Consistent with Q2-2026 guidance midpoint $5.2B annualized ($20.8B) plus typical H2 seasonal acceleration. In line with street consensus ($21.0B).",
+    "revenue_fy2027_note": "Full industrial recovery to $9.5B (from $5.8B FY2025), automotive sustaining near-peak, data center reaching $5.1B (20% of total per CEO guide), personal electronics stable. Requires ~15-20% YoY growth sustained for 6 quarters -- consistent with recovery from a 7-quarter trough.",
+    "fcf_per_share_fy2026": 8.20,
+    "fcf_per_share_fy2026_note": "Revenue $21B x CFO margin 43% = $9.03B CFO minus capex $2.0B (low end of guide) = $7.03B FCF / 0.91B shares = $7.73/sh + CHIPS ITC credit ~$0.40/sh = $8.13/sh, rounded to $8.20. Management's own target is >$8/sh -- this is achievable on low-end capex guide.",
+    "fcf_per_share_fy2027": 10.50,
+    "fcf_per_share_fy2027_note": "Theia bull: Rev $25.5B x CFO margin 44% = $11.22B CFO minus $2.0B capex = $9.22B FCF / 0.91B shares = $10.13/sh plus CHIPS ITC credits ~$0.35/sh = ~$10.50/sh. CFO margin of 44% approaches but does not exceed the FY2022 peak (43.5%) -- achievable at 300mm utilization >75%.",
+    "normalized_fcf_margin_pct": 38.5,
+    "normalized_fcf_margin_note": "CFO margin 44% minus capex/rev 5.5% (at $2.0B capex on $25.5B revenue) = 38.5% FCF margin. This is above the FY2022 peak FCF margin (29.6%) because capex was $2.8B then on $20B revenue (14% capex/rev) versus $2.0B on $25.5B (7.8% capex/rev). The 300mm build is complete; maintenance capex is structurally lower as a percent of revenue than the expansion-era capex was.",
+    "analog_segment_bull": {
+      "nopat_at_T_fy2031_b": 10.2,
+      "revenue_at_T_fy2031_b": 25.0,
+      "ebit_margin_at_T_pct": 46.0,
+      "roic_at_T_pct": 40.0,
+      "r_used_pct": 9.0,
+      "r_note": "Held at Daedalus's 9% Ke (conservative). The Debate 2 uplift to r=8% is separately quantified as a $63/sh swing -- it is NOT stacked into the NOPAT calc to avoid double-counting.",
+      "g_lt_pct": 5.0,
+      "exit_multiple_gordon": 21.9,
+      "exit_multiple_derivation": "(1 - 0.05/0.40) / (0.09 - 0.05) = (1 - 0.125) / 0.04 = 0.875 / 0.04 = 21.88x. Higher than base (19.4x) because ROIC rises from 35% to 40% on higher 300mm utilization -- the reinvestment rate falls (less earnings needed to fund growth), justifying a higher payout ratio in the Gordon formula.",
+      "years_to_T": 5,
+      "interim_fcf_pv_b": 16.0,
+      "net_debt_allocation_b": 14.0,
+      "implied_equity_b": 147.0,
+      "implied_px_contribution": 161.5
+    },
+    "embedded_segment_bull": {
+      "nopat_at_T_fy2031_b": 0.95,
+      "r_used_pct": 10.0,
+      "g_lt_pct": 4.0,
+      "exit_multiple_gordon": 13.3,
+      "interim_fcf_pv_b": 2.0,
+      "net_debt_allocation_b": 4.0,
+      "implied_equity_b": 5.9,
+      "implied_px_contribution": 6.5,
+      "note": "SLAB integration delivers $785M revenue, $450M synergies within 3yr, NOPAT uplift from 0.75B (base) to 0.95B (bull) on higher synergy realization and IoT wireless growth."
+    },
+    "sotp_bull": {
+      "sum_equity_b": 152.9,
+      "net_debt_b": 18.0,
+      "note_net_debt": "Post-Silicon Labs close ($7.5B all-cash); net debt rises from $10.8B at freeze to ~$18B post-close (H1 2027). Already in Daedalus base and bull.",
+      "implied_equity_net_of_debt_b": 152.9,
+      "shares_b": 0.91,
+      "value_per_share": 168.04,
+      "derivation_note": "Pure SOTP at Ke=9% and bull NOPAT assumptions. Matches Daedalus bull scenario $168.04 (confirmed). The further $63/sh from the discount-rate debate (Debate 2) is additive: $168 + $63 = $231/sh at r=8%."
+    },
+    "fcf_crosscheck": {
+      "fcf_per_share_fy2027": 10.50,
+      "multiple_used": 30.0,
+      "multiple_derivation": "30x FCF = Gordon formula at r=7.4%, g=4.5%, ROIC=35%: (1-0.129)/(0.074-0.045) = 0.871/0.029 = 30.0x. The market's current implied discount rate at $323 price with $10.50 FCF/sh = 7.4% -- this is the rate the market is pricing, derived from the observable price, not asserted. The bull argues 7.4-8.0% is the plausible range for an analog annuity franchise, versus Daedalus's Ke of 9.0%.",
+      "implied_value_per_share": 315.0
+    },
+    "probability_weight": 0.25,
+    "probability_note": "Per CONTRACT v3 and v2.1 asymmetry: evidence grade EXTRAPOLATED = 25% weight on the bull (HIGH=35%, MED=25%, LOW=15%). Not a forecast of outcome probability -- the conviction asymmetry the portfolio manager should assign to this scenario for expected-value purposes.",
+    "honest_range_note": "The bull SOTP at Ke=9% is $168/sh. The bull with r=8% is ~$231/sh. The FCF cross-check at 30x is $315/sh. The current price of $322.86 is at or above the top of the honest bull range. The bull does not argue the stock is cheap; it argues the market is pricing a structurally defensible franchise premium on a contracted direction of FCF expansion. The $8 gap between $315 (FCF cross-check) and $323 (price) represents either (a) the CHIPS ITC perpetuity (~$5/sh) plus dividends already priced in, or (b) a modest franchise premium that is not egregious. The bull requires both bull FCF ($10.50/sh by FY2027) AND the market sustaining a 30x FCF multiple. If either fails, the stock has material downside to intrinsic."
+  },
+
+  "daedalus_base_engagement": {
+    "daedalus_finding": "Base SOTP $105.63 intrinsic; 12m target $200.88; SELL MEDIUM conviction",
+    "bull_disagrees_on": [
+      {
+        "point": "NOPAT at normalization (Analog): Daedalus uses $7.5B (FY2031). The bull argues $10.2B is achievable if industrial recovery is full. The $2.7B NOPAT difference at 19-22x multiple = $51-59B of segment EV, or $55-65/sh -- this is the single largest lever and it is genuinely contested.",
+        "base_assumption": "$7.5B Analog NOPAT at FY2031 on $17.5B FY2027 Analog revenue",
+        "bull_assumption": "$10.2B Analog NOPAT at FY2031 on $20.5B FY2027 Analog revenue (full industrial recovery)"
+      },
+      {
+        "point": "Discount rate for Analog: Daedalus uses Ke=9%, explicitly noting WACC=7.3% is the alternative. The bull argues 8-8.5% is the honest center for an annuity franchise, adding ~$40-65/sh to the bull SOTP depending on NOPAT path.",
+        "base_assumption": "r=9.0% (Ke, conservative per Daedalus's own language)",
+        "bull_assumption": "r=8.0% (between WACC=7.3% and Ke=9.0%); the market's implied r of 7.4% is cited as the upper bound of what the market will pay"
+      }
+    ],
+    "bull_agrees_with_daedalus_on": [
+      "Method choice: ExitMultiple SOTP is correct for TXN's two economically distinct segments",
+      "T=5 normalization year (FY2031): appropriate for capex cycle completion + SLAB integration",
+      "Net debt post-SLAB: $18.0B is the correct post-close figure",
+      "Embedded segment: lower ROIC (20%), higher r (10%), integration risk -- appropriately discounted",
+      "The gap between intrinsic and market price is real: the market prices a structural premium above any Gordon-formula intrinsic"
+    ],
+    "structural_premium_argument": "Daedalus's finding that no sensitivity cell reaches $323 is arithmetically correct on the Ke=9% base. The bull case does not deny this. It argues: (1) with r=8% and bull NOPAT, intrinsic reaches ~$231/sh; (2) the remaining $92 to price reflects a franchise permanence premium -- 300mm manufacturing is a one-time capital commitment that competitors cannot replicate without spending $10B+ over 5-7 years (documented: RFAB2 + SM1 + SM2 = ~$14B aggregate capex 2022-2026); (3) the CHIPS Act subsidies ($1.6B direct + $6-8B ITC) are a permanent structural advantage, not priced in the Gordon formula; (4) the market is willing to pay for franchise duration, not just point-in-time FCF -- this is observable in how the stock re-rated from $153 to $323 in one year as the FCF inflection became visible. This last point (franchise premium) is HOPED-FOR in evidence terms and is explicitly labeled as such."
+  },
+
+  "chips_act_note": {
+    "direct_award_b": 1.6,
+    "direct_award_status": "CONTRACTED -- signed December 2024 per Theia sources",
+    "direct_award_per_share": 1.76,
+    "itc_total_b": "6-8",
+    "itc_annual_b": 0.40,
+    "itc_pv_at_9pct": 4.4,
+    "itc_per_share": 4.9,
+    "itc_status": "EXTRAPOLATED -- flows through tax line as credits are earned; not in Daedalus SOTP",
+    "total_chips_pv_per_share": 6.7,
+    "note": "CHIPS Act benefits are NOT modeled in Daedalus's SOTP. The $1.6B direct award (CONTRACTED, signed) alone = $1.76/sh. The ITC PV at 9% is ~$4.9/sh. Together $6.7/sh -- not enough to close the $323-$168 gap but a real, contracted tailwind that the SOTP misses. Theia already included $0.35/sh of ITC in the bull FCF/share path; the remainder is structural balance sheet value not captured in the exit-multiple approach."
+  },
+
+  "evidence_quality_overall": "EXTRAPOLATED",
+  "evidence_quality_reasoning": "The load-bearing bull assumptions -- industrial recovery to prior-peak, data center at 20% of total, capex at $2.0B low end -- are all EXTRAPOLATED. The recovery direction is confirmed by Q1-2026 data (CONTRACTED for that quarter). The full-recovery magnitude and data center target are credible extensions of running trends but not yet booked. The discount rate argument is a structural modeling judgment, not a contract. The CHIPS direct award ($1.6B) is the only CONTRACTED element beyond the Q2 guidance. The overall evidence grade is EXTRAPOLATED: the bull is a reasonable and sourced higher reading of the crux, not a wish."
+}
