@@ -1,0 +1,957 @@
+{
+  "ticker": "ARM",
+  "name": "Arm Holdings plc",
+  "listings": "NMS",
+  "sector": "Technology",
+  "industry": "Semiconductors",
+  "business_type": "ip_licensor",
+  "currency": "USD",
+  "date": "2026-06-20",
+  "engine": "Atlas v3",
+  "section_1_the_call": {
+    "our_view": "SELL. ARM's IP licensor model is genuinely excellent; near-monopoly in mobile, a real royalty rate upgrade cycle (v8 to v9 to CSS), and a credible data center royalty ramp. But at $439.46 and 143x non-GAAP NTM P/E, the stock has priced in more than even our most generous bull scenario of $85/share. Justifying the current price requires approximately $42B in FY2030 IP revenue; more than four times the $10.1B ceiling of our bull case. The single biggest risk is not a revenue miss; it is that the market re-rates from 143x to 40x on nothing more than time passing and the AGI CPU supply ramp proving slower than pre-priced.",
+    "crux": {
+      "variable": "Effective royalty revenue per chip (blended), driven by architecture mix shift (v8→v9→CSS) and end-market mix shift (smartphone→data center)",
+      "one_line": "The call turns on whether the blended royalty rate per chip can sustain a doubling by FY2030; and whether the market will wait long enough at 143x P/E for the numbers to catch up.",
+      "base": "v9 reaches 55% of royalty revenue by FY2028, CSS reaches 15%, data center doubles in FY2027 and sustains 40-50% growth through FY2029. FY2030 IP revenue $9.3B, NOPAT $4.46B. Fair value $57.36.",
+      "bull": "CSS adoption accelerates to 30% of royalty revenue by FY2028, AGI CPU supply unlocks early contributing $6B in FY2030 chip revenue. FY2030 IP revenue $10.1B, fair value $65-85/share.",
+      "bear": "Qualcomm ALA legal precedent caps ARM's rate migration on its largest ALA licensees; China RISC-V erodes 22% of revenue; multiple compresses from 143x to 40x. Bear intrinsic $38/share; relative re-rating floor $122.80 (40x NTM P/E).",
+      "what_decides_it": "The Qualcomm appeal outcome and the Q4 FY2027 AGI CPU production ramp confirmation. If ARM wins the appeal and AGI CPU ships on schedule, the intrinsic band shifts up but still does not clear the current price. If ARM loses and AGI CPU slips, the multiple compresses violently."
+    },
+    "recommendation": {
+      "action": "SELL",
+      "tone": "negative",
+      "current_price": 439.46,
+      "target_12m": 57.41,
+      "upside_pct": -86.9,
+      "conviction": "MEDIUM",
+      "rationale": "Fair value $57.36 (base SOTP, bias-audit PASS) implies -87% 12m return to target. Even the three-debate bull at $85/share implies -81%. The market is pricing ARM as a near-risk-free perpetuity at a 5.6% implied cost of capital; we estimate 10.5%. Conviction is MEDIUM not HIGH because: (a) near-term v9/CSS momentum is real and partially contracted; (b) post-Computex AGI CPU demand signal is genuine; (c) the market can sustain extreme multiples through a narrative cycle. The bear evidence (Qualcomm ruling, RISC-V penetration, China exposure) is OBSERVABLE-AND-NEAR; the bull evidence (CSS acceleration, AGI CPU ramp) is EXTRAPOLATED.",
+      "next_earnings": "2026-07-29"
+    },
+    "four_numbers": {
+      "fair_value_today": {
+        "value": 57.36,
+        "multiple": 28.0,
+        "multiple_label": "EV/NTM non-GAAP NOPAT",
+        "basis": "Base case SOTP; argued intrinsic, no probability weighting"
+      },
+      "price_today": {
+        "value": 439.46,
+        "multiple": 221.6,
+        "multiple_label": "EV/NTM non-GAAP NOPAT",
+        "basis": "Market"
+      },
+      "fair_value_12m": {
+        "value": 62.52,
+        "basis": "Fair value today rolled forward at r=9.0% less dividend $0 (assemble.py default; SOTP segment WACC is 10.5%)"
+      },
+      "target_12m": {
+        "value": 57.41,
+        "multiple": 18.7,
+        "multiple_label": "NTM non-GAAP P/E",
+        "basis": "Justified P/E at 10.5% WACC; no lean applied; bull evidence EXTRAPOLATED, bear OBSERVABLE-AND-NEAR"
+      },
+      "band_low": 42.06,
+      "band_high": 80.52,
+      "method_primary": "SOTP",
+      "method_why": "Two economically distinct IP streams (royalties and license) with a third nascent chip-sales business at different margins and risk profiles require segment-level ExitMultiple valuation, not a single blended multiple.",
+      "target_reasoning": "Target = justified NTM P/E (18.7x) × $3.07 NTM non-GAAP EPS = $57.41. No positive lean applied because the bull (CSS at 30% by FY2028) is EXTRAPOLATED, not contracted. No negative lean below intrinsic because the Qualcomm appeal outcome is uncertain in both directions.",
+      "implied_return_to_target": -86.9,
+      "implied_return_to_fv12m": -85.8,
+      "implied_return_to_street": -37.4
+    },
+    "thesis": [
+      {
+        "pillar": "The royalty rate upgrade is real and ongoing; but it's in the price several times over",
+        "detail": "v9 chips pay ~5% of chip ASP vs v8's 2.5-3.5%; CSS pays >10%. v9 was 31% of royalty revenue in Q4 FY2026, rising ~10pp/year. The rate migration is contracted for 1-2 years of royalty recognition already in the pipeline. Our base case captures this fully ($9.3B FY2030 IP revenue, $57 fair value). The market is pricing $42B+; requiring everything to go right plus a cost of capital below 6%."
+      },
+      {
+        "pillar": "Multiple compression is the primary risk, not a revenue miss",
+        "detail": "At 143x NTM non-GAAP P/E (peer median: 40x), ARM's stock needs no fundamental deterioration to fall 72%; it merely needs the market to re-rate toward 40x on the same $3.07 consensus EPS. The catalyst is ARM's own proof-of-plan void: Q1 FY2027 (July 29, 2026) will be the first test of whether AGI CPU supply is accelerating. NVIDIA de-rated from 80x to 20x NTM P/E in 12 months in 2022 on a narrative shift with the underlying thesis unchanged."
+      },
+      {
+        "pillar": "Two named mechanisms can break the royalty rate trajectory; neither is a tail risk",
+        "detail": "Qualcomm won the Nuvia case (Delaware, October 2025). If ARM's appeal fails, ALA licensees can resist CSS renegotiation at the higher rate; capping the blended rate migration on ARM's largest high-ASP payers. China (22% of revenue) faces RISC-V substitution via Alibaba T-Head in the same data center AI inference market that drives ARM's fastest royalty growth. These are documented mechanisms, not hypothetical risks."
+      }
+    ]
+  },
+  "section_2_business": {
+    "business_overview": {
+      "summary": "ARM designs CPU, GPU, and NPU instruction set architectures and system IP, then licenses them to semiconductor partners worldwide. The business is pure IP monetization: ARM writes the architecture, partners build and sell the chips, ARM earns a royalty on every chip shipped plus upfront licensing fees for IP access. Gross margins are 97.5%; the economics of a tollbooth on the global semiconductor supply chain. Founded in 1990 in Cambridge, UK; IPO'd on Nasdaq in September 2023 at $51/share; subsidiary of SoftBank Group Corp.",
+      "business_model": "Two revenue streams: (1) Royalties; per-chip fees earned when ARM-licensed silicon ships, typically 2.5-10%+ of chip ASP depending on architecture generation. (2) License and Other; upfront/recurring IP access fees (TLA, ALA, SL), tools, and related services. A third stream (AGI CPU chip sales) is nascent with zero FY2026 revenue and first production scheduled Q4 FY2027. The royalty stream lags licensing by 2-4 years: today's license bookings (ACV +22% in FY2026) predict royalty revenue in FY2028-FY2030.",
+      "segments": [
+        {
+          "name": "Royalties",
+          "revenue_share_pct": 53,
+          "revenue_b": 2.613,
+          "growth_pct": 21.1,
+          "margin_pct": 97.5,
+          "nature": "growth",
+          "note": "Per-chip royalties on ~30B chips/year shipped by ARM licensees. Architecture mix shifting from v8 (2.5-3.5% of ASP) to v9 (~5%) to CSS (>10%). Data center royalties doubling YoY. Near-100% gross margin; segment NOPAT ~55% at FY2030 scale."
+        },
+        {
+          "name": "License and Other",
+          "revenue_share_pct": 47,
+          "revenue_b": 2.307,
+          "growth_pct": 25.3,
+          "margin_pct": 97.5,
+          "nature": "growth",
+          "note": "IP access fees and tools. ACV +22% YoY in FY2026 is the leading indicator for royalty revenue 2-4 years out. Q4 FY2026 licensing record of $819M reflects CSS deal bookings. Segment NOPAT ~30% at FY2030 scale (more engineering support required)."
+        },
+        {
+          "name": "AGI CPU Chip Sales",
+          "revenue_share_pct": 0,
+          "revenue_b": 0.0,
+          "growth_pct": null,
+          "margin_pct": null,
+          "nature": "growth",
+          "note": "Nascent hardware business. $20B+ demand pipeline disclosed Q4 FY2026; supply-constrained to ~$1B initially. First production Q4 FY2027 (guided $90M implied by $0.40 NTM quarterly EPS guidance vs $0.34 IP-only run rate). Named customers: Meta, Oracle, ByteDance. Gross margin estimated 40-50% vs IP's 97.5%."
+        }
+      ],
+      "customers": [
+        "Apple (indirect via TSMC/Qualcomm)",
+        "Qualcomm",
+        "MediaTek",
+        "Samsung LSI",
+        "Amazon Web Services (Graviton)",
+        "Google (Axion)",
+        "Microsoft (Cobalt 100)",
+        "NVIDIA",
+        "Meta",
+        "Oracle",
+        "ByteDance"
+      ],
+      "geographic": [
+        {
+          "region": "China",
+          "revenue_share_pct": 22,
+          "note": "Served via ARM Technology (China) JV. RISC-V risk. Political exposure."
+        },
+        {
+          "region": "US",
+          "revenue_share_pct": 28,
+          "note": "Hyperscaler data center, smartphone (Apple indirect)"
+        },
+        {
+          "region": "Japan",
+          "revenue_share_pct": 10
+        },
+        {
+          "region": "Taiwan/Korea",
+          "revenue_share_pct": 20,
+          "note": "TSMC customers, Samsung"
+        },
+        {
+          "region": "Other",
+          "revenue_share_pct": 20
+        }
+      ]
+    },
+    "historical_financials": [
+      {
+        "fy": "FY2023",
+        "revenue_b": 2.679,
+        "revenue_growth_pct": null,
+        "gross_margin_pct": 96.0,
+        "ebitda_b": 0.848,
+        "ebitda_margin_pct": 31.7,
+        "net_income_b": 0.524,
+        "fcf_b": 0.646,
+        "eps": 0.51
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 3.233,
+        "revenue_growth_pct": 20.7,
+        "gross_margin_pct": 95.2,
+        "ebitda_b": 0.279,
+        "ebitda_margin_pct": 8.6,
+        "net_income_b": 0.306,
+        "fcf_b": 0.947,
+        "eps": 0.29
+      },
+      {
+        "fy": "FY2025",
+        "revenue_b": 4.007,
+        "revenue_growth_pct": 24.0,
+        "gross_margin_pct": 97.0,
+        "ebitda_b": 1.014,
+        "ebitda_margin_pct": 25.3,
+        "net_income_b": 0.792,
+        "fcf_b": 0.158,
+        "eps": 0.61
+      },
+      {
+        "fy": "FY2026",
+        "revenue_b": 4.92,
+        "revenue_growth_pct": 22.8,
+        "gross_margin_pct": 97.5,
+        "ebitda_b": 1.157,
+        "ebitda_margin_pct": 23.5,
+        "net_income_b": 0.904,
+        "fcf_b": 0.949,
+        "eps": 0.85
+      }
+    ],
+    "historical_financials_read": "Three consecutive years of 20%+ revenue growth establishes ARM as a compounding IP business, not a cyclical semiconductor name. The v9/CSS transition is already in the numbers: royalties grew 21% in FY2026 on ~5-7% unit growth, meaning the blended rate per chip rose ~14-16% from architecture and end-market mix alone. EBITDA margins are volatile year-to-year (FY2024 depressed by elevated investment) but FCF has been consistently positive. The FY2026 FCF of $949M vs non-GAAP NI of $1.88B reflects elevated capex ($575M, of which ~$375M is AGI CPU chip infrastructure). Maintenance capex is ~$150-200M. SBC (~$500M/year) is an economic cost not captured in FCF.",
+    "snapshot": [
+      {
+        "label": "Price",
+        "value": "$439.46"
+      },
+      {
+        "label": "Market cap",
+        "value": "$467.6B"
+      },
+      {
+        "label": "Enterprise value",
+        "value": "$420.2B"
+      },
+      {
+        "label": "Net cash",
+        "value": "$2.29B"
+      },
+      {
+        "label": "Shares outstanding",
+        "value": "1.064B"
+      },
+      {
+        "label": "52-week range",
+        "value": "$100.02 to $452.70"
+      },
+      {
+        "label": "YTD return",
+        "value": "+283%"
+      },
+      {
+        "label": "1-year return",
+        "value": "+203%"
+      },
+      {
+        "label": "Beta",
+        "value": "3.79"
+      },
+      {
+        "label": "Revenue FY2026",
+        "value": "$4.92B"
+      },
+      {
+        "label": "Revenue growth (FY2026)",
+        "value": "+22.8%"
+      },
+      {
+        "label": "Gross margin",
+        "value": "97.5%"
+      },
+      {
+        "label": "EBITDA margin",
+        "value": "23.5%"
+      },
+      {
+        "label": "FCF margin",
+        "value": "19.3%"
+      },
+      {
+        "label": "FCF",
+        "value": "$949M"
+      },
+      {
+        "label": "GAAP EPS FY2026",
+        "value": "$0.85"
+      },
+      {
+        "label": "Non-GAAP EPS FY2026",
+        "value": "$1.77"
+      },
+      {
+        "label": "NTM non-GAAP EPS (consensus)",
+        "value": "$3.07"
+      },
+      {
+        "label": "NTM non-GAAP P/E",
+        "value": "143x"
+      },
+      {
+        "label": "EV/Sales TTM",
+        "value": "85x"
+      },
+      {
+        "label": "EV/EBITDA TTM",
+        "value": "394x"
+      },
+      {
+        "label": "Next earnings",
+        "value": "2026-07-29"
+      },
+      {
+        "label": "Dividend",
+        "value": "None"
+      },
+      {
+        "label": "Insider ownership",
+        "value": "0.07%"
+      },
+      {
+        "label": "Institutional ownership",
+        "value": "95.4%"
+      }
+    ]
+  },
+  "section_3_industry": {
+    "industry_position": {
+      "market_overview": "ARM occupies a structural tollbooth position in the global semiconductor supply chain. Every ARM-licensed chip that ships; approximately 30 billion per year; pays ARM a royalty. The addressable market is the entire CPU/GPU/NPU IP layer of semiconductor design: a $100B annual chip-ASP market at the CPU level alone (CEO Haas, Q4 FY2026), implying a royalty revenue ceiling of $8-10B at 8-10% blended rates. ARM is already at $2.6B in royalties with multiple architecture step-ups ahead.",
+      "tam_usd_bn": 100,
+      "tam_growth_pct": 8,
+      "addressable_market": "The relevant TAM for ARM's royalty business is not the semiconductor market ($600B+) but specifically the CPU/GPU ASP base where ARM's IP earns royalties. At ~$100B total (smartphones ~$45B, data center ~$25B, automotive $10B, IoT/embedded $20B), ARM's current $2.6B in royalties implies ~2.6% blended rate on the royalty base. The rate upgrade cycle (v9 at 5%, CSS at 10%+) doubles that toward 5-10%; suggesting the royalty ceiling is $5-10B from IP licensing alone, consistent with Theia's modeled $8-10B ceiling.",
+      "the_share_dynamic": "ARM's competitive position is unusual: it does not compete for share in the traditional sense. It already has near-100% share of smartphone CPU IP. The contest is over RATE, not volume. v9 and CSS are ARM's mechanism to earn more per existing chip. The only volume threat is RISC-V (open-source, royalty-free alternative) which has reached 25% of embedded/IoT design wins by unit volume. However, RISC-V has not penetrated premium segments: Apple M-series uses ARM (full CSS), Google Axion and AWS Graviton use ARM Neoverse CSS, Qualcomm Snapdragon remains ARM. The realistic displacement risk is in low-ASP IoT (minimal royalty impact) and China (22% of revenue, structural risk).",
+      "revenue_drivers": [
+        "v9/CSS architecture migration: blended royalty rate per chip rising ~14-16% per year from mix shift alone",
+        "Data center AI workloads: highest-ASP chips, highest royalty rates, doubling royalty revenue YoY",
+        "License ACV growth (+22% YoY): leading indicator for royalty revenue 2-4 years out",
+        "Smartphone ASP inflation: higher-ASP flagship chips earn more royalty per unit",
+        "Automotive design wins: 3-7 year design cycles provide royalty visibility far into the future"
+      ],
+      "npat_margin_drivers": [
+        "Fixed R&D cost base: as royalty revenue scales, NOPAT margins expand significantly",
+        "Near-zero incremental cost per royalty dollar",
+        "SBC dilution (~$500M/year) is economic drag not captured in non-GAAP metrics"
+      ],
+      "product_differentiation": "ARM's moat is an ecosystem, not a product. The ARM ISA is the common language of 30 billion chips per year, 97%+ of smartphones, ~50% of hyperscaler custom CPU compute. Switching away from ARM requires redesigning the entire software stack for a customer's product line: compilers, operating systems, device drivers, security firmware. The lock-in is deep and multi-year. Even where RISC-V offers a royalty-free alternative, the software ecosystem cost of switching is prohibitive in premium segments.",
+      "five_forces": {
+        "buyer_power": "LOW-MEDIUM. ARM licensees are large and sophisticated, but the ISA switching cost is prohibitive in premium segments. Qualcomm's legal challenge is the clearest exercise of buyer power in ARM's history.",
+        "supplier_power": "LOW. ARM's IP is internally generated R&D. No external supply dependencies.",
+        "new_entrants": "LOW for premium segments. HIGH for low-ASP IoT via RISC-V. The CPU ISA market has extremely high barriers (ecosystem, toolchain, software compatibility).",
+        "substitutes": "RISC-V (open-source, royalty-free) is a genuine substitute at the low end. Custom silicon (Apple M-series, Google TPU) substitutes ARM-licensed silicon for the hyperscaler custom design but still uses ARM ISA in many cases.",
+        "rivalry": "ARM is near-monopoly in its market. x86 (Intel/AMD) is the competitor in server and PC; segments ARM is now entering via Neoverse."
+      },
+      "moat": "WIDE. ISA-level ecosystem lock-in with decades of software compatibility. The moat is the ARM instruction set, 30 billion devices have run on it. Switching any of them to a different ISA requires a complete software stack rewrite.",
+      "competitors": [
+        {
+          "name": "RISC-V (open-source ecosystem: SiFive, Ventana, Alibaba T-Head, Western Digital)",
+          "position": "Royalty-free alternative ISA; growing at low ASP end",
+          "share": "25% of embedded/IoT design wins by unit volume (Jan 2026)",
+          "trajectory": "Gaining in low-ASP IoT and China (government-directed). Not competitive in premium smartphone or hyperscaler custom CPU within the valuation horizon."
+        },
+        {
+          "name": "x86 (Intel, AMD)",
+          "position": "Dominant in PC and server market that ARM is now entering",
+          "share": "~75% of server CPU market by revenue",
+          "trajectory": "ARM Neoverse taking data center share via custom silicon; AWS Graviton, Google Axion, Microsoft Cobalt all ARM. Intel/AMD face structural headwinds as hyperscalers move to custom ARM-based silicon."
+        },
+        {
+          "name": "Custom silicon (Apple M-series, Amazon Graviton, Google Axion, Microsoft Cobalt)",
+          "position": "ARM licensees who design custom chips; not competitors; they pay ARM royalties",
+          "share": "~50% of hyperscaler custom CPU compute is ARM-based",
+          "trajectory": "ARM's fastest-growing royalty source. Custom silicon designs at the highest ASPs earn ARM the highest royalty rates. These are ARM's best customers, not its competitors."
+        },
+        {
+          "name": "Qualcomm (ALA licensee, legal dispute)",
+          "position": "Largest ALA licensee; ARM's most important customer and its largest legal risk",
+          "share": "~20%+ of ARM's high-ASP royalty revenue",
+          "trajectory": "Won Nuvia case in Delaware (Oct 2025). If ARM's appeal fails, Qualcomm and other ALA holders can resist CSS renegotiation; capping the rate migration on ARM's highest-ASP customers."
+        }
+      ]
+    },
+    "peers": [
+      {
+        "ticker": "QCOM",
+        "name": "Qualcomm",
+        "pe_ntm": 15,
+        "ev_ebitda": 11,
+        "rev_growth_ttm": 9,
+        "note": "ARM's largest ALA licensee and royalty risk. QTL IP division trades at 15x. ARM's mature steady-state comp"
+      },
+      {
+        "ticker": "CDNS",
+        "name": "Cadence Design Systems",
+        "pe_ntm": 45,
+        "ev_ebitda": 35,
+        "rev_growth_ttm": 14,
+        "note": "IP/EDA peer. Similar moat, slower growth. 45x P/E for 14% growth. ARM at 143x for 23% growth is extreme premium"
+      },
+      {
+        "ticker": "SNPS",
+        "name": "Synopsys",
+        "pe_ntm": 40,
+        "ev_ebitda": 30,
+        "rev_growth_ttm": 12,
+        "note": "IP/EDA peer. 40x P/E; peer median for high-quality semiconductor IP businesses"
+      },
+      {
+        "ticker": "NVDA",
+        "name": "NVIDIA",
+        "pe_ntm": 35,
+        "ev_ebitda": 30,
+        "rev_growth_ttm": 69,
+        "note": "AI silicon reference. 35x NTM P/E for 3x ARM's revenue growth rate. ARM's premium to NVDA is not justified on growth alone"
+      }
+    ],
+    "peers_read": "The peer group illustrates the multiple problem starkly. Synopsys and Cadence; both high-quality IP-adjacent businesses with sustainable competitive moats; trade at 40-45x NTM P/E on 12-14% revenue growth. ARM's 143x P/E represents a 3.2-3.6x premium for a business growing revenue at 23%. Even NVIDIA, growing revenue at nearly 3x ARM's rate and generating $60B+ in revenue, trades at a 40% discount to ARM's multiple. The only precedent for sustaining 143x NTM P/E for a multi-year period is a company that is growing non-GAAP EPS at 40%+ per year for a decade; which requires ARM's revenue to reach $25B+ and margins to expand dramatically, simultaneously, for 10 years."
+  },
+  "section_4_market_view": {
+    "market_view": {
+      "whats_priced_in": "At $439.46 and 143x NTM non-GAAP P/E, the market is pricing in a decade of ~43% non-GAAP EPS growth per year. To decompose: at r=12.5% (our fundamental WACC), sustaining 43% EPS growth for 10 years then growing at 5% in perpetuity is what the current price implies in the Gordon framework. ARM's actual revenue CAGR for the past three years has been ~22%. The gap between the price-implied growth (43%) and the evidenced trajectory (22%) cannot be closed by any plausible set of near-term catalysts. What IS priced in: the full CEO $15B revenue target (FY2031) on schedule, AGI CPU achieving software-level margins, and a WACC below 6% (consistent with treating ARM as a near-risk-free perpetuity).",
+      "street_view": "38 analysts cover ARM. 7 strong buy, 22 buy, 10 hold, 2 sell. Mean target: $275 (38% below spot). Target high: $500 (Mizuho, Bernstein; post-Computex raises from $425 and $300 respectively). Target low: $125 (Morgan Stanley, Equal Weight, April 7, 2026). The stock has massively outrun the entire sell-side distribution: the highest target on the street is still only 13.8% above the current price. The market has decided to trade beyond analyst coverage.",
+      "post_earnings_analyst_actions": [
+        {
+          "date": "2026-05-06",
+          "firm": "Wells Fargo",
+          "action": "target_raise",
+          "old_pt": 255,
+          "new_pt": 410,
+          "rating_change": false,
+          "note": "Overweight maintained; AGI CPU demand signal and post-Computex CEO commentary"
+        },
+        {
+          "date": "2026-05-06",
+          "firm": "Mizuho",
+          "action": "target_raise",
+          "old_pt": 425,
+          "new_pt": 500,
+          "rating_change": false,
+          "note": "Outperform maintained; AGI CPU $20B+ demand pipeline"
+        },
+        {
+          "date": "2026-05-06",
+          "firm": "Bernstein",
+          "action": "target_raise",
+          "old_pt": 300,
+          "new_pt": 500,
+          "rating_change": false,
+          "note": "Outperform maintained; data center royalty thesis"
+        },
+        {
+          "date": "2026-04-07",
+          "firm": "Morgan Stanley",
+          "action": "downgrade",
+          "old_pt": null,
+          "new_pt": 150,
+          "rating_change": true,
+          "note": "Downgrade to Equal Weight; valuation concerns, multiple unsustainable pre-Computex"
+        }
+      ],
+      "news_narrative": "Post-Computex 2026 (June 2026) has been the defining narrative catalyst: ByteDance and Oracle confirmed as AGI CPU customers, CEO Rene Haas stated the $15B revenue target 'arrives years early,' and the stock surged to 52-week highs. The Morgan Stanley downgrade in April at $150 appears prescient on valuation but early on timing. 'Advanced Micro Devices vs. Arm Holdings: Which AI CPU Stock Is the Better Buy?' (Motley Fool, June 18) captures the moment; the market is comparing ARM to AMD, not to IP licensors.",
+      "sentiment_narrative": "Sentiment is emphatically bull. 76.3% of analysts rate buy or strong buy. Institutional ownership is 95.4%; no retail float to squeeze. The stock is at 52-week highs with ADTV of $6.3B. The risk is not sentiment flip but the mathematical impossibility of growing into 143x P/E on any realistic timeline.",
+      "market_lean": "BULL / STRONG. Near-unanimous sell-side buy consensus, post-Computex momentum, CEO growth statement ahead of schedule. The disagreement is purely on whether the price already captures the growth."
+    },
+    "street_reconstruction": {
+      "currency": "NTM non-GAAP P/E on $3.07 consensus EPS",
+      "what_price_implies": "At $439.46 and 143x NTM non-GAAP P/E, the market is embedding ~43% non-GAAP EPS growth per year for 10 years at r=12.5%. ARM's demonstrated 3-year revenue CAGR is 22%. To reach 43% EPS CAGR from a 22% revenue base requires simultaneous revenue acceleration and dramatic margin expansion. Neither is in ARM's FY2027 guidance (guided ~20% revenue growth, $0.40 non-GAAP EPS per quarter annualizing to ~$1.60/year vs consensus $3.07 non-GAAP NTM).",
+      "what_street_implies": "The street mean ($275, 89.6x NTM P/E) implies ~36% EPS growth for 10 years; still requires significant acceleration from the 22% revenue trajectory. The bear target ($125, 40.7x) is essentially 40x P/E on $3.07; the peer median multiple, no growth premium.",
+      "history_anchor": "ARM's revenue CAGR FY2023-FY2026 was 22.5% p.a. Non-GAAP EPS expansion was faster due to operating leverage but from a small base. The consensus $3.07 NTM EPS vs FY2026 non-GAAP $1.77 EPS implies ~73% EPS growth in the next 12 months; driven partly by AGI CPU revenue ramp ($90M+ Q4 FY2027) and partly by margin expansion.",
+      "our_justified_multiple": "18.7x NTM non-GAAP P/E ($57.41 target) at r=10.5%. The spread between our 18.7x and the market's 143x is not about the revenue path; it is about r. The market prices ARM at an implied r of ~5.6% (decomposed via Gordon at g=5%, ROIC=60%). We estimate the fundamental cost of equity at 10.5% for an IP licensor with China exposure, a pending legal appeal, and a nascent chip business. This is the central disagreement.",
+      "agree_disagree": "DISAGREE with the market on r, and therefore on almost everything that follows. The growth path is approximately right (Theia's base is close to consensus). The terminal growth rate is debatable (5% vs market's implied higher). But the 5pp difference in r between us (10.5%) and the market (5.6%) multiplies through the Gordon multiple to produce a 8x difference in fair value ($57 vs $439)."
+    }
+  },
+  "section_5_management": {
+    "management": {
+      "ceo": "Rene Haas (CEO since 2022). Architect of ARM's AI/AGI CPU pivot and the $15B revenue target. His post-Computex statement that $15B 'arrives years early' drove the most recent surge. Track record: three consecutive years of 20%+ revenue growth, successful IPO at $51/share in 2023. Credibility risk: AGI CPU demand signals have been very strong but supply constraints mean the proof-of-delivery is Q4 FY2027 at earliest.",
+      "cfo": "Jason Child (CFO). FY2027 guidance: ~20% revenue growth, $0.40 non-GAAP EPS per quarter (annualizing to $1.60 vs consensus $3.07; the difference is the AGI CPU ramp assumption).",
+      "capital_allocation_history": "No dividends. No buybacks. Capital allocation has been growth investment: R&D at ~40% of revenue, the AGI CPU chip infrastructure buildout ($375M elevated capex in FY2026). SBC is ~$500M/year; a meaningful shareholder dilution cost. ARM has generated $2.3B in net cash on the balance sheet with no debt to speak of.",
+      "softbank_relationship": "SoftBank Group owns ~90% of ARM post-IPO (subject to lock-up expirations). This creates a governance overhang. SoftBank's investment timeline and capital needs could create selling pressure. On the other hand, SoftBank's strategic commitment to ARM's AI/AGI CPU vision aligns management incentives.",
+      "recent_insider_activity": []
+    }
+  },
+  "section_6_valuation": {
+    "valuation_method": "SOTP with ExitMultiple for the Core IP Business (royalties + license combined) and a Multiple for the AGI CPU option. The ExitMultiple method (CONTRACT §2.2) is correct for ARM: normalize NOPAT to FY2030 (when v9/CSS migration matures and data center royalty trajectory stabilizes), apply a steady-state Gordon growth multiple (derived from r, g, ROIC; not picked), discount at the segment WACC. The two IP streams share a cost structure and are valued together. The AGI CPU chip business is pre-revenue and valued as an option on its committed demand pipeline.",
+    "segment_valuation": [
+      {
+        "name": "Core IP Business (Royalties + License)",
+        "nature": "growth",
+        "method": "ExitMultiple",
+        "revenue_path": {
+          "fy2027": 5.97,
+          "fy2028": 7.22,
+          "fy2029": 8.4,
+          "fy2030": 9.3
+        },
+        "nopat_margin_at_normalization": 0.48,
+        "nopat_T_b": 4.46,
+        "wacc": 0.105,
+        "g_lt": 0.05,
+        "roic": 0.8,
+        "exit_multiple_gordon": 17.05,
+        "implied_ev_b": 56.73,
+        "implied_px": 53.32,
+        "four_levers": {
+          "growth_rate_and_duration": "IP revenue grows from $4.92B FY2026 to $9.30B FY2030 (4-year CAGR 17.2%). Argued from: (a) v9 at 31% of royalty revenue in Q4 FY2026, rising ~10pp/year (ARM company disclosure); (b) data center royalties guided to 'double year-on-year again' in FY2027 (CEO, Q4 FY2026 earnings); (c) ACV +22% YoY in FY2026, converting to royalties 2-4 years out. Duration: v9/CSS transition takes ~4-5 years to reach saturation; growth normalizes to 5% thereafter.",
+          "economics": "NOPAT margin rises from ~38% in FY2026 to 48% in FY2030 via operating leverage (R&D fixed cost as revenue scales). Arm management guides to ~38% non-GAAP NI margin at $25B revenue (chip business included, lower-margin); at $9.3B IP-only revenue, 48% NOPAT is the honest center; above current (depressed by one-time capex and SBC/size) and below gross margin (97.5%, ignores real OpEx).",
+          "wacc": "r = 10.5% (fundamental beta 1.10 × ERP 5.5% + rf 4.3%). Fundamental beta 1.10 reflects: sticky contracted royalty pipeline (ACV visibility), qualified by China revenue risk (22%), Qualcomm legal overhang, AGI CPU execution risk. The regression beta of 3.79 embeds stock momentum, not business risk. At beta 1.10, ARM's IP risk is comparable to Qualcomm's QTL division (~1.1 beta); a fair center.",
+          "exit_multiple": "Gordon formula: (1 − g/ROIC) / (r − g) = (1 − 0.05/0.80) / (0.105 − 0.05) = 0.9375/0.055 = 17.05x EV/NOPAT. Cross-check: Dolby ~20x, InterDigital ~13x; ARM at 17x is the honest center for an IP licensor with larger TAM than Dolby but more risk than a fully mature IP stream. Formula-derived, not picked."
+        }
+      },
+      {
+        "name": "AGI CPU Chip Sales Option",
+        "nature": "growth",
+        "method": "Multiple",
+        "revenue_fy2030_b": 4.0,
+        "multiple_applied": "0.5x EV/Revenue",
+        "implied_ev_b": 2.0,
+        "implied_px": 1.88,
+        "rationale": "$2B EV is the honest center: the $2B+ committed demand pipeline (Meta, Oracle, ByteDance) is a real commercial floor, but the business has no margin history, supply constraints, and licensee conflict risk. $2B = 0.5x $4B FY2030 base revenue; equivalent to discounting a FY2030 chip-company multiple (1.8x EV/Revenue) at 15% WACC over 4 years."
+      }
+    ],
+    "bias_audit": {
+      "rows": [
+        {
+          "assumption": "r = 10.5% (fundamental beta 1.10)",
+          "lean": "AT_CENTER; fixed from initial 11.5% draft which leaned conservative. Comparable to Qualcomm (~1.1 beta). China risk, Qualcomm legal prevent going lower."
+        },
+        {
+          "assumption": "Exit multiple 17.05x EV/NOPAT (Gordon-derived)",
+          "lean": "AT_CENTER; between InterDigital 13x (lower ROIC, smaller TAM) and Dolby 20x (more mature). Formula output, not picked."
+        },
+        {
+          "assumption": "NOPAT margin FY2030 at 48%",
+          "lean": "AT_CENTER; above current 38% (operating leverage is real), below 97.5% gross margin. Consistent with management's margin trajectory on IP-only basis."
+        },
+        {
+          "assumption": "Terminal growth g_lt = 5%",
+          "lean": "AT_CENTER; consistent with semiconductor market unit growth and modest rate improvement beyond CSS. Not reflexively low (3%) or aggressive (8%)."
+        },
+        {
+          "assumption": "FY2030 IP revenue $9.30B",
+          "lean": "AT_CENTER. Theia's base demand model from sourced evidence. Three years of 20%+ growth provides the baseline; no acceleration assumed."
+        },
+        {
+          "assumption": "AGI CPU option EV $2.0B",
+          "lean": "AT_CENTER; at the high end of '$0-2B' range, matching committed demand pipeline evidence. Not speculative zero, not the full $15B FY2031 target."
+        },
+        {
+          "assumption": "Interim FCF PV included ($5.73B)",
+          "lean": "AT_CENTER; material and per METHODS.md. Omitting it would be conservative by $5.39/share."
+        }
+      ],
+      "same_direction_count_low": 0,
+      "same_direction_count_high": 0,
+      "verdict": "NO SYSTEMATIC BIAS. Initial draft had three conservative leans; all corrected. Post-correction, no stack of 3+ in any direction. Base output of $57.36 is the honest most-likely. SELL follows from math, not stacked conservatism."
+    },
+    "earnings_bridge": {
+      "gaap_eps_fy2026": 0.85,
+      "nongaap_eps_fy2026": 1.77,
+      "sbc_addback": 0.5,
+      "elevated_capex_vs_maintenance": 0.375,
+      "nongaap_eps_ntm_consensus": 3.07,
+      "fcf_per_share": 0.89,
+      "bridge_note": "GAAP to non-GAAP gap is primarily SBC (~$500M). The 143x market multiple is on non-GAAP NTM EPS ($3.07). GAAP trailing P/E is ~517x. Our SOTP uses NOPAT (unlevered, pre-SBC) as the exit multiple numerator because Gordon gives enterprise value. The numerator bridge: FY2026 non-GAAP EBIT ~$1.89B at 38.5% margin; after 15% cash tax = $1.61B NOPAT. At $9.3B FY2030 IP revenue × 48% NOPAT margin = $4.46B NOPAT; the anchor for the Gordon exit."
+    },
+    "multiple_maths": {
+      "current_multiple": {
+        "value": 143,
+        "label": "NTM non-GAAP P/E"
+      },
+      "justified_multiple": {
+        "value": 18.7,
+        "label": "NTM non-GAAP P/E at r=10.5%"
+      },
+      "premium": "7.7x; the market is paying 7.7x our justified multiple",
+      "to_close_gap_requires": "Either r drops from 10.5% to 5.6% (requires treating ARM as government-bond-like) OR revenue reaches ~$42B in FY2030 (vs $9.3B base, vs $10.1B bull ceiling)"
+    }
+  },
+  "section_7_debates": {
+    "key_debates": [
+      {
+        "debate": "CSS rate migration: how fast and how stickily can ARM charge 10%+ of chip ASP?",
+        "is_crux": true,
+        "bull_view": "CSS is already contracted in the licensing pipeline: Q4 FY2026 licensing hit a record $819M, ACV grew 22% YoY; deals signed today convert to CSS royalties in FY2028-FY2029 at >10% of chip ASP. v9 went from 20% to 31% of royalty revenue in four quarters; CSS following the same trajectory would reach 15-30% by FY2028. At 30% CSS penetration, FY2030 IP revenue reaches $10.1B and NOPAT rises to $4.95B; adding ~$8.56/share to fair value. Evidence quality: EXTRAPOLATED (v9 trajectory contracted; CSS conversion rate is the extrapolation).",
+        "bear_view": "Qualcomm won the Nuvia case (Delaware, Oct 2025), establishing that ALA licensees can design custom CPU cores at legacy TLA rates without renegotiating to CSS terms. CSS-level rates (>10%) are the target of this litigation precisely because they are 4x v8 rates; every major ALA holder (Qualcomm, MediaTek, Samsung) has the same incentive to resist CSS renegotiation. If CSS stays below 8% of royalty revenue by FY2028 (vs 15% base), the NOPAT uplift from the rate migration disappears, worth -$7 to -$9/share from our base.",
+        "our_verdict": "The bull trajectory is real but legally contested. We model the base at CSS = 15% of royalty revenue by FY2028, giving full credit to TLA licensees (Apple, hyperscalers) but skepticism on ALA licensees pending the appeal. The net: CSS migration proceeds but at a pace that drives our base $9.3B IP revenue; not the bull's $10.1B. The appeal outcome (expected FY2027) is the specific watch-point.",
+        "what_would_change_our_mind": "ARM wins the Qualcomm appeal AND CSS deal bookings in FY2027 sustain the $819M+ quarterly pace. Both required; neither alone closes the gap to the current price.",
+        "worth_per_share": "+$8.56 (bull CSS) or -$7 to -$9 (bear CSS + Qualcomm win)"
+      },
+      {
+        "debate": "AGI CPU ramp: option or business?",
+        "is_crux": false,
+        "bull_view": "The demand signal is the most credible in ARM's history: $20B+ pipeline confirmed at Q4 FY2026 earnings with named customers (Meta, Oracle, ByteDance), and demand reportedly doubled within 6 weeks of the March 2026 launch. Supply, not demand, is the constraint. Once supply unlocks, $6B+ in FY2030 chip revenue is a conservative extrapolation of the management's $15B FY2031 target. The incremental EV at 0.8x FY2030 chip revenue = $4.8B, adding $2.63/share vs Daedalus's $2.0B option value. Evidence quality: CONTRACTED for named customer commitments; EXTRAPOLATED for revenue quantum.",
+        "bear_view": "Supply is locked for only $1B of $20B+ stated demand. First production Q4 FY2027 at an implied $90M (based on guidance math). The AGI CPU competes directly with ARM's own IP licensing business in data center; every hyperscaler that buys an AGI CPU chip from ARM is a hyperscaler NOT paying CSS royalties on a custom design. The cannibalization risk is real and not modeled. Additionally, gross margin on the chip business (~40-50%) is dramatically below the IP margin (97.5%), diluting blended company margins as AGI CPU scales. Evidence quality: OBSERVABLE-AND-NEAR for the supply constraint; MECHANISM for the cannibalization.",
+        "our_verdict": "We value AGI CPU at $2.0B EV (option); the honest center between zero (ignores real committed demand) and $8B (full bull, supply constraint resolved). The AGI CPU is not yet evidence that ARM's fair value clears $439. Even the bull case with AGI CPU EV at $4.8B only moves the needle by $2.63/share.",
+        "what_would_change_our_mind": "Q4 FY2027 earnings showing production revenue >$500M in the quarter AND gross margin >50% on AGI CPU. That would demonstrate the business model works at scale.",
+        "worth_per_share": "+$2.63 (full committed demand bull) or $0 (supply delay + cannibalization)"
+      },
+      {
+        "debate": "China RISC-V and Qualcomm legal: how much of the royalty base is at risk?",
+        "is_crux": false,
+        "bull_view": "China (22% of revenue) is a known risk that ARM has managed for years via its JV structure. ARM Technology China is governed independently, limiting the political exposure. RISC-V remains non-competitive in premium smartphone and hyperscaler custom CPU; the segments driving ARM's rate migration. The RISC-V threat in IoT/embedded is real but those segments earn ARM the lowest royalty rates; the financial impact is muted by the high-ASP segments growing faster.",
+        "bear_view": "China RISC-V is structural, not cyclical. Alibaba T-Head's XUANTIE C950 targets data center AI inference; the same high-ASP segment driving ARM's fastest royalty growth. A 25% China revenue erosion removes $270M/year of near-100%-margin revenue; at the 17.05x Gordon exit multiple, that is $3.09B of EV destruction or $2.90/share. At 40% erosion (government-directed scenario), the impact is $4.93/share. ARM's China JV structure limits pricing enforcement power precisely when enforcement matters most. Historical precedent: MIPS lost embedded processor share to ARM in 2000-2010 through the same dynamic; open-licensing alternative displaced a proprietary royalty structure in a specific market.",
+        "our_verdict": "We model a base that does not assume China revenue erosion; giving ARM full credit for maintaining its JV revenues. The bear -$2.90/share impact is the honest downside if RISC-V displaces 25% of China revenue. We monitor: T-Head chip tape-out announcements and Chinese government procurement decisions.",
+        "what_would_change_our_mind": "Disclosure of ARM China revenue declining >10% YoY for two consecutive quarters.",
+        "worth_per_share": "-$2.90 (25% China erosion) to -$4.93 (40% erosion)"
+      },
+      {
+        "debate": "Multiple: at 143x NTM P/E, when and why does the re-rating happen?",
+        "is_crux": false,
+        "bull_view": "Multiple is always the last thing that matters; if ARM delivers 40%+ EPS CAGR for three consecutive years, the multiple compresses naturally as the denominator catches up. The Q1 FY2027 earnings (July 29, 2026) could be the first proof point: if AGI CPU supply ramps and guidance goes above $0.40 NTM EPS quarterly, multiple compression reverses. The $500 bull targets from Mizuho and Bernstein imply 163x NTM P/E; the market is already pricing in the possibility of sustained high multiples.",
+        "bear_view": "The proof-of-plan void is the trigger. Between now and Q4 FY2027 (first AGI CPU production revenue), there are four quarters of earnings where ARM's reported revenue is driven by the IP business only. Q1 FY2027 guidance was $1.26B revenue, $0.40 non-GAAP EPS quarterly; annualizing to $1.60/year, implying the consensus $3.07 NTM EPS is backloaded entirely into Q4 FY2027 AGI CPU ramp. If that ramp disappoints, $3.07 comes down and the multiple has no denominator to compress into. At 40x P/E on $3.07 consensus EPS = $122.80; pure multiple compression without any revenue shortfall. At 40x on a $2.50 revised EPS = $100. Historical precedent: NVIDIA 2022, -75% peak to trough from 80x to 20x NTM P/E on a narrative shift.",
+        "our_verdict": "This is the most likely mechanism by which ARM reaches our target ($57). The path is not revenue deterioration but multiple compression; the market re-rating from 143x to 40x on unchanged or modestly declining EPS. Timing is uncertain (our MEDIUM conviction) but the direction is not. The July 29 Q1 FY2027 earnings is the first test.",
+        "what_would_change_our_mind": "Three consecutive quarters of Q4 FY2027+ production revenue at >$500M/quarter on the AGI CPU, sustained at 50%+ gross margin. That would make 40x a cheap multiple for the new revenue profile.",
+        "worth_per_share": "-$316 (re-rate from 143x to 40x NTM P/E, unchanged EPS)"
+      }
+    ],
+    "bear_paragraph": "ARM is a genuinely excellent IP licensing business; we have no disagreement with that. The bear case is not about the business; it is about the price. At 143x non-GAAP NTM P/E, three independent mechanisms can each individually produce a -50%+ drawdown: (1) the Qualcomm legal precedent capping CSS royalty rate migration on ALA licensees; this is not a risk, it is an existing court ruling with an appeal pending; (2) the 'proof-of-plan void' between now and Q4 FY2027 AGI CPU production revenue, during which the quarterly EPS trajectory from IP alone implies ~$1.60/year annualized non-GAAP EPS vs consensus $3.07; a 48% gap entirely dependent on a supply ramp management has not committed to above $1B; (3) China RISC-V displacing 22% of revenue at the highest-growth end of ARM's end market, not the low-ASP IoT where RISC-V is already winning. Any one of these three mechanisms; legal, supply, geopolitical; triggers a multiple compression from 143x to 40x (the peer median). The mathematical floor from pure multiple compression (unchanged EPS, no revenue shortfall) is $122.80. Our intrinsic bear ($38.11) assumes two of the three mechanisms materialize. The asymmetry is unambiguous: $500 at the bull upside (13.8% above spot) vs $38-122 on the realistic downside.",
+    "key_risks": [
+      {
+        "rank": 1,
+        "category": "Legal",
+        "severity": "HIGH",
+        "likelihood": "MEDIUM",
+        "risk": "ARM loses Qualcomm ALA appeal, establishing precedent that ALA licensees can design custom CPU cores at legacy rates, capping CSS royalty rate migration on highest-ASP payers",
+        "monitor": "Appeal docket; Qualcomm Q earnings royalty rate disclosures; CSS deal booking pace at ARM"
+      },
+      {
+        "rank": 2,
+        "category": "Multiple compression",
+        "severity": "HIGH",
+        "likelihood": "HIGH",
+        "risk": "Market re-rates from 143x to 40x NTM non-GAAP P/E on unchanged fundamentals as AGI CPU supply ramp proves slower than pre-priced",
+        "monitor": "Q1 FY2027 earnings (July 29, 2026) guidance; quarterly AGI CPU production commentary"
+      },
+      {
+        "rank": 3,
+        "category": "Geopolitical",
+        "severity": "MEDIUM",
+        "likelihood": "MEDIUM",
+        "risk": "China RISC-V displaces ARM in data center AI inference; Chinese government procurement directed away from ARM JV",
+        "monitor": "ARM China quarterly revenue disclosures; T-Head tape-out announcements; Chinese hyperscaler procurement"
+      },
+      {
+        "rank": 4,
+        "category": "Execution",
+        "severity": "MEDIUM",
+        "likelihood": "MEDIUM",
+        "risk": "AGI CPU chip business cannibalizes CSS licensing relationships; licensees slow CSS adoption pending ARM's competitive intent",
+        "monitor": "License ACV growth rate; CSS deal bookings; licensee commentary on ARM's chip business"
+      },
+      {
+        "rank": 5,
+        "category": "Dilution",
+        "severity": "LOW",
+        "likelihood": "HIGH",
+        "risk": "SBC dilution (~$500M/year) and SoftBank selling overhang create ongoing headwind",
+        "monitor": "Quarterly SBC disclosures; SoftBank lock-up expiration dates"
+      }
+    ]
+  },
+  "section_8_conclusion": {
+    "range_and_sensitivity": {
+      "anchor": "base = fair value today ($57.36)",
+      "cases": [
+        {
+          "label": "BEAR",
+          "implied_value": 38.11,
+          "thesis_one_line": "Qualcomm legal + China RISC-V erode the royalty rate path; AGI CPU delayed; IP revenue $6.5B FY2030",
+          "evidence_grade": "MECHANISM / OBSERVABLE-AND-NEAR",
+          "key_driver": "FY2030 IP revenue $6.5B vs $9.3B base (-$2.81B NOPAT_T)"
+        },
+        {
+          "label": "BASE",
+          "implied_value": 57.36,
+          "thesis_one_line": "v9/CSS migration continues at current pace; data center doubles in FY2027; AGI CPU nascent; IP revenue $9.3B FY2030",
+          "evidence_grade": "CONTRACTED (near-term) / EXTRAPOLATED (FY2028+)",
+          "key_driver": "FY2030 IP NOPAT $4.46B × 17.05x Gordon multiple / 1.488 discount"
+        },
+        {
+          "label": "BULL",
+          "implied_value": 85.49,
+          "thesis_one_line": "CSS accelerates to 30% royalty share; AGI CPU $6B FY2030; WACC compresses to 9.5%",
+          "evidence_grade": "EXTRAPOLATED (CSS) / CONTRACTED (AGI CPU demand) / EXTRAPOLATED (WACC)",
+          "key_driver": "FY2030 IP revenue $10.1B + AGI CPU $4.8B EV + WACC 9.5%"
+        }
+      ],
+      "sensitivity_matrix": {
+        "axis_x": "Royalty NOPAT margin at FY2030 (%%)",
+        "axis_y": "WACC for Core IP (%%)",
+        "grid": [
+          [
+            null,
+            "40%%",
+            "44%%",
+            "48%%",
+            "52%%",
+            "56%%"
+          ],
+          [
+            "10.0%%",
+            45,
+            50,
+            54,
+            58,
+            63
+          ],
+          [
+            "10.5%%",
+            42,
+            46,
+            50,
+            54,
+            59
+          ],
+          [
+            "11.0%%",
+            38,
+            42,
+            46,
+            50,
+            54
+          ],
+          [
+            "11.5%%",
+            35,
+            39,
+            43,
+            47,
+            51
+          ],
+          [
+            "12.0%%",
+            33,
+            37,
+            40,
+            44,
+            48
+          ]
+        ],
+        "where_cases_land": "Note: grid shows terminal-value component only (Core IP TV discounted to today), excluding $5.39/sh interim FCF PV and $1.88/sh AGI CPU option. Add ~$7.27/sh to each cell for full SOTP. Base (10.5% WACC, 48% margin): grid $50-54 + $7.27 = full SOTP ~$57. Bull (9.5% WACC, 52% margin): grid $65-70 + $7.27 = ~$73-77. Bear (11.5% WACC, 44% margin): grid $39-43 + $7.27 = ~$46-50. Current price $439 is not visible on the grid at any combination of modeled inputs."
+      },
+      "vs_price_pct": -87.0
+    },
+    "scenario_assumptions": {
+      "base": {
+        "label": "Base; honest most-likely",
+        "one_line": "v9/CSS migration continues at current documented pace; data center royalties double in FY2027 as guided; AGI CPU supply-constrained through FY2027.",
+        "implied_value": 57.36,
+        "rows": [
+          {
+            "driver": "FY2030 IP revenue",
+            "value": "$9.30B",
+            "note": "CAGR 17.2% FY2026-FY2030; sourced from Theia demand model"
+          },
+          {
+            "driver": "Crux: blended royalty rate (FY2030)",
+            "value": "~2x FY2026",
+            "note": "v9 at 55%, CSS at 15% of royalty revenue by FY2028"
+          },
+          {
+            "driver": "NOPAT margin FY2030",
+            "value": "48%%",
+            "note": "Operating leverage; R&D fixed cost declining as % of revenue"
+          },
+          {
+            "driver": "WACC (Core IP)",
+            "value": "10.5%%",
+            "note": "Fundamental beta 1.10; r=rf+b×ERP=4.3%+1.1×5.5%"
+          },
+          {
+            "driver": "Exit multiple (Gordon)",
+            "value": "17.05x EV/NOPAT",
+            "note": "Derived: (1-0.05/0.80)/(0.105-0.05)"
+          },
+          {
+            "driver": "AGI CPU option EV",
+            "value": "$2.0B",
+            "note": "0.5x FY2030 base chip revenue $4.0B"
+          },
+          {
+            "driver": "Net cash",
+            "value": "$2.3B"
+          },
+          {
+            "driver": "Implied value per share",
+            "value": "$57.36"
+          }
+        ]
+      },
+      "bull": {
+        "label": "Bull; credible higher reading",
+        "one_line": "CSS accelerates to 30% of royalty revenue by FY2028; AGI CPU supply unlocks ahead of guidance; WACC compresses on contracted ACV visibility.",
+        "implied_value": 85.49,
+        "rows": [
+          {
+            "driver": "FY2030 IP revenue",
+            "value": "$10.1B",
+            "note": "CSS at 30% of royalty rev by FY2028; AGI CPU $6B in FY2030"
+          },
+          {
+            "driver": "Crux: blended royalty rate (FY2030)",
+            "value": "~2.5x FY2026",
+            "note": "CSS at 30%, data center royalties at 35% of pool"
+          },
+          {
+            "driver": "NOPAT margin FY2030",
+            "value": "49%%",
+            "note": "Similar to base; AGI CPU adds volume but lowers blended margin"
+          },
+          {
+            "driver": "WACC (Core IP)",
+            "value": "9.5%%",
+            "note": "Fundamental beta 0.95; ACV visibility + Qualcomm appeal win"
+          },
+          {
+            "driver": "Exit multiple (Gordon)",
+            "value": "20.83x EV/NOPAT",
+            "note": "Derived: (1-0.05/0.80)/(0.095-0.05)"
+          },
+          {
+            "driver": "AGI CPU option EV",
+            "value": "$4.8B",
+            "note": "0.8x FY2030 bull chip revenue $6.0B"
+          },
+          {
+            "driver": "Net cash",
+            "value": "$2.3B"
+          },
+          {
+            "driver": "Implied value per share",
+            "value": "$85.49"
+          }
+        ]
+      },
+      "bear": {
+        "label": "Bear; credible lower reading",
+        "one_line": "Qualcomm ALA precedent caps CSS adoption; China revenue erodes 25%; AGI CPU delayed to FY2028.",
+        "implied_value": 38.11,
+        "rows": [
+          {
+            "driver": "FY2030 IP revenue",
+            "value": "$6.50B",
+            "note": "Royalty $4.0B (Qualcomm cap + China -25%), license $3.3B"
+          },
+          {
+            "driver": "Crux: blended royalty rate (FY2030)",
+            "value": "~1.3x FY2026",
+            "note": "CSS stays at <8% of royalty rev; ALA licensees resist renegotiation"
+          },
+          {
+            "driver": "NOPAT margin FY2030",
+            "value": "45%%",
+            "note": "Lower due to China revenue loss (near-100% margin segment)"
+          },
+          {
+            "driver": "WACC (Core IP)",
+            "value": "10.5%%",
+            "note": "Unchanged from base; legal risk prevents compression"
+          },
+          {
+            "driver": "Exit multiple (Gordon)",
+            "value": "17.05x EV/NOPAT",
+            "note": "Same Gordon formula; lower NOPAT_T drives the decline"
+          },
+          {
+            "driver": "AGI CPU option EV",
+            "value": "$0.3B",
+            "note": "Minimal: supply delays to FY2028, licensee conflict dampens demand"
+          },
+          {
+            "driver": "Net cash",
+            "value": "$2.3B"
+          },
+          {
+            "driver": "Implied value per share",
+            "value": "$38.11"
+          }
+        ]
+      }
+    },
+    "synthesis_paths": [
+      {
+        "label": "Intrinsic convergence (base)",
+        "outcome_range": "$57 to $65",
+        "description": "ARM's IP business delivers its contracted and extrapolated revenue trajectory. v9/CSS migration proceeds at the current pace. Data center royalties double in FY2027 as guided. AGI CPU ramps slowly but creates option value. Market eventually prices ARM at a P/E consistent with the fundamental cost of capital. Path requires multiple compression from 143x to ~18x; a 7.7x de-rating without any revenue shortfall.",
+        "evidence_grade": "CONTRACTED (near-term royalty) / EXTRAPOLATED (FY2028+ margins)"
+      },
+      {
+        "label": "Bear break (Qualcomm + China + void)",
+        "outcome_range": "$38 to $80",
+        "description": "Qualcomm appeal fails (caps CSS migration on ALA base); China revenue erodes 20-25% via government-directed RISC-V substitution; AGI CPU supply fails to ramp materially before FY2028, creating a 6-quarter proof-of-plan void. Multiple compresses to 40x NTM P/E ($122.80 purely from multiple) and simultaneously the EPS denominator stagnates (IP growth alone: $1.60-1.80 annualized non-GAAP EPS in FY2027). Two compression forces hit simultaneously. Bear intrinsic $38.",
+        "evidence_grade": "OBSERVABLE-AND-NEAR (Qualcomm ruling done) / MECHANISM (China RISC-V)"
+      },
+      {
+        "label": "Bull continuation (CSS + AGI CPU ramp)",
+        "outcome_range": "$65 to $120",
+        "description": "CSS deal bookings convert ahead of base-case assumptions: CSS reaches 25-30% of royalty revenue by FY2028 rather than 15%. AGI CPU supply unlocks ahead of guidance. ARM wins the Qualcomm appeal. FY2030 IP revenue reaches $10-11B, NOPAT $5B+. Multiple still compresses from 143x but settles at a higher level (~35-45x, a premium to peers for the growth rate). Best-case outcome approaches $100-120 range; still -73% below current price if the multiple does not follow the growth.",
+        "evidence_grade": "EXTRAPOLATED"
+      }
+    ],
+    "catalysts_to_watch": [
+      {
+        "theme": "Q1 FY2027 Earnings (July 29, 2026); the first proof-of-plan test",
+        "horizon": "near",
+        "what_to_watch": "Revenue vs $1.26B guide; non-GAAP EPS vs $0.40 guide; AGI CPU supply ramp commentary (units, customers, delivery timeline); Q2 FY2027 guidance",
+        "why_it_matters": "At 143x NTM P/E, the consensus $3.07 NTM EPS requires the AGI CPU ramp to accelerate in H2 FY2027. If guidance does not show that acceleration, $3.07 comes down and the multiple has no denominator.",
+        "bull_or_bear_tell": "BULL: Revenue guidance >$1.5B for Q2 FY2027 with AGI CPU supply ramp explicitly mentioned. BEAR: Revenue guidance in line at ~$1.3B with supply language unchanged, implying $3.07 NTM EPS is backloaded and uncertain."
+      },
+      {
+        "theme": "Qualcomm ALA Appeal Outcome",
+        "horizon": "mid",
+        "what_to_watch": "Delaware appeals court ruling on the Nuvia ALA case; specifically whether ALA licensees must renegotiate to CSS rates or can design custom CPU cores at legacy TLA rates",
+        "why_it_matters": "CSS migration (>10% of chip ASP) is the crux lever. If ALA licensees win, CSS adoption slows materially on the highest-ASP chips in ARM's royalty base. ARM wins → BULL on rate migration; ARM loses → BEAR on the rate migration crux.",
+        "bull_or_bear_tell": "BULL: Court rules for ARM, reinstating CSS renegotiation obligation. BEAR: Court rules for Qualcomm, affirming the Delaware trial court finding."
+      },
+      {
+        "theme": "AGI CPU Production Volume Q4 FY2027",
+        "horizon": "mid",
+        "what_to_watch": "First disclosed AGI CPU production revenue in Q4 FY2027 earnings; gross margin on chip segment; customer delivery confirmation; second-year supply guidance",
+        "why_it_matters": "This is the binary event that either validates the $20B+ demand pipeline as real revenue or confirms a longer supply ramp that pushes the thesis to FY2028+. One quarter does not settle it but two consecutive quarters of >$500M chip revenue at >50% gross margin would move the thesis from 'option' to 'business'.",
+        "bull_or_bear_tell": "BULL: Q4 FY2027 chip revenue >$500M, gross margin >50%, FY2028 chip guidance >$2B. BEAR: Q4 FY2027 chip revenue $90-200M, gross margin undisclosed, supply language unchanged."
+      },
+      {
+        "theme": "China Revenue Trajectory",
+        "horizon": "mid",
+        "what_to_watch": "ARM China segment revenue disclosure; T-Head XUANTIE C950 data center design wins; Chinese hyperscaler CPU procurement announcements (Alibaba, Baidu, Tencent)",
+        "why_it_matters": "China is 22% of ARM revenue at near-100% NOPAT margin. A 25% erosion removes $2.90/share from fair value; 40% erosion removes $4.93/share. This is the slow-moving mechanism that doesn't show up in a single quarter but matters over the valuation horizon.",
+        "bull_or_bear_tell": "BULL: ARM China revenue continues to grow at 10-15% YoY in FY2027. BEAR: China revenue flat or declining YoY, with management commentary on RISC-V competition."
+      }
+    ],
+    "conclusion": "ARM's IP licensing model is structurally excellent and the royalty rate upgrade cycle is real and partially contracted; but at 143x non-GAAP NTM P/E and $439/share, the stock embeds approximately $42B in FY2030 IP revenue vs our $9.3B base and $10.1B bull ceiling, and requires a cost of capital below 6%; even our three-debate bull at $85 implies -81% from the current price, meaning the market must be right about ARM's fundamental value in a way that cannot be reconciled with any conventional SOTP. SELL, MEDIUM conviction: the downside from here is -87% to intrinsic with the primary risk being pure multiple compression, not a revenue miss."
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "assigned_by": "daedalus",
+    "valuation_confidence": "LOW",
+    "path_confidence": "LOW",
+    "basis": "SELL, MEDIUM: bear evidence (Qualcomm ruling OBSERVABLE-AND-NEAR, China RISC-V MECHANISM) argues for HIGH conviction; bull evidence (CSS acceleration, AGI CPU demand) is EXTRAPOLATED but real. MEDIUM because: (a) timing of multiple compression is uncertain; (b) AGI CPU supply could unlock faster than modeled; (c) ARM could win the Qualcomm appeal. Scenario band $38-$85 (ratio 0.83 vs $57 base), which caps at MEDIUM per gate logic. The asymmetry is clear; downside is -87%, upside from bull case is -81% vs current price; but acknowledges that the market can sustain narrative multiples for extended periods."
+  },
+  "run_manifest": {
+    "pipeline_version": "Atlas v3",
+    "run_date": "2026-06-20",
+    "hermes_snapshot": "ARM_2026-06-20T0806Z",
+    "agents_run": [
+      "Hermes",
+      "Pheme",
+      "Theia",
+      "Daedalus",
+      "Boreas",
+      "Cassandra"
+    ],
+    "agents_pending": [
+      "Erinys",
+      "Forseti"
+    ],
+    "engine_files": [
+      "sotp_compute.py",
+      "comps_implied.py",
+      "assemble.py"
+    ]
+  },
+  "data_gaps": [
+    "EDGAR not fetched (no CIK for ARM as UK-listed on US exchange); segment P&Ls not in structured data; segment revenue estimates from public earnings disclosures",
+    "Social sentiment data unavailable (HTTPError on Stocktwits)",
+    "Qualcomm ALA appeal outcome not yet public (appeal filed, docket active)",
+    "AGI CPU gross margin not disclosed (first production Q4 FY2027)",
+    "China segment revenue percentage inferred from company commentary, not formally disclosed"
+  ],
+  "sources": [
+    "ARM Holdings plc Q4 FY2026 earnings call transcript (May 2026)",
+    "ARM Holdings plc Q4 FY2025 earnings call transcript",
+    "ARM Holdings plc Annual Report FY2026",
+    "EE Times: ARM royalty rate data (v8/v9/CSS rates, Q1 FY2026)",
+    "Tom's Hardware: Qualcomm-ARM Nuvia case analysis (October 2025)",
+    "DigiTimes: RISC-V China competition analysis (February 2026)",
+    "MarketsAndMarkets: RISC-V market sizing 2026",
+    "yfinance / Hermes databundle: ARM_2026-06-20T0806Z",
+    "Pheme market intelligence freeze: output/ARM/ARM_market_facts.json",
+    "Theia landscape analysis: output/ARM/ARM_crux.json, ARM_industry.json, ARM_demand.json",
+    "Daedalus SOTP: output/ARM/ARM_inputs.json, ARM_valuation.json",
+    "Boreas bull case: output/ARM/ARM_bull.json",
+    "Cassandra bear case: output/ARM/ARM_bear.json"
+  ]
+}

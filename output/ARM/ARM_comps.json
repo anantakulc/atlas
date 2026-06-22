@@ -1,0 +1,168 @@
+{
+  "schema_version": "2.0",
+  "ticker": "ARM",
+  "currency": "USD",
+  "computed_at": "2026-06-21T06:22:25Z",
+  "basis": "P/E",
+  "metric_label": "NTM non-GAAP EPS",
+  "metric_value": 3.07,
+  "fcf_conversion": 0.75,
+  "roic": 0.3,
+  "fundamental_discount_rate": 0.125,
+  "terminal_growth": 0.05,
+  "horizon_years": 10,
+  "current": {
+    "price": 439.46,
+    "value_b": 467.6,
+    "multiple": 143.2,
+    "implied_growth": 0.4315,
+    "implied_growth_pct": 43.1
+  },
+  "street": {
+    "thesis": "ARM is the dominant ISA licensor for mobile and AI silicon; royalty rate uplift from v9/CSS migration and data center growth drive sustained 20%+ revenue growth through the decade",
+    "n_analysts": 38,
+    "rating": "buy",
+    "target_mean": {
+      "price": 275.0,
+      "value_b": 292.6,
+      "multiple": 89.6,
+      "implied_growth": 0.3611,
+      "implied_growth_pct": 36.1
+    },
+    "target_high": {
+      "price": 500.0,
+      "value_b": 532.0,
+      "multiple": 173.3,
+      "implied_growth": 0.4513,
+      "implied_growth_pct": 45.1
+    },
+    "target_low": {
+      "price": 125.0,
+      "value_b": 133.0,
+      "multiple": 43.3,
+      "implied_growth": 0.2474,
+      "implied_growth_pct": 24.7
+    }
+  },
+  "history_context": {
+    "anchor_cagr_5y": 0.25,
+    "note": "Non-GAAP EPS CAGR approximated from revenue/margin improvement since FY2024 IPO; revenue CAGR FY2023-FY2026 was 22.5% p.a."
+  },
+  "justified_grid": [
+    {
+      "growth": 0.15,
+      "growth_pct": 15.0,
+      "justified_multiple": 21.6,
+      "value_b": 66.2,
+      "implied_price": 62.21
+    },
+    {
+      "growth": 0.18,
+      "growth_pct": 18.0,
+      "justified_multiple": 26.8,
+      "value_b": 82.2,
+      "implied_price": 77.23
+    },
+    {
+      "growth": 0.2,
+      "growth_pct": 20.0,
+      "justified_multiple": 30.9,
+      "value_b": 94.9,
+      "implied_price": 89.16
+    },
+    {
+      "growth": 0.22,
+      "growth_pct": 22.0,
+      "justified_multiple": 35.7,
+      "value_b": 109.5,
+      "implied_price": 102.87
+    },
+    {
+      "growth": 0.25,
+      "growth_pct": 25.0,
+      "justified_multiple": 44.1,
+      "value_b": 135.5,
+      "implied_price": 127.31
+    },
+    {
+      "growth": 0.28,
+      "growth_pct": 28.0,
+      "justified_multiple": 54.5,
+      "value_b": 167.3,
+      "implied_price": 157.24
+    },
+    {
+      "growth": 0.3,
+      "growth_pct": 30.0,
+      "justified_multiple": 62.7,
+      "value_b": 192.4,
+      "implied_price": 180.79
+    }
+  ],
+  "duality_decomposition": {
+    "note": "single-stage justified forward P/E = (1 - g/ROIC)/(r - g); shows the ROIC/payout lever",
+    "r": 0.125,
+    "roic_columns": [
+      0.2,
+      0.3,
+      0.5,
+      0.8
+    ],
+    "rows": [
+      {
+        "growth": 0.04,
+        "growth_pct": 4.0,
+        "roic_20": 9.4,
+        "roic_30": 10.2,
+        "roic_50": 10.8,
+        "roic_80": 11.2
+      },
+      {
+        "growth": 0.06,
+        "growth_pct": 6.0,
+        "roic_20": 10.8,
+        "roic_30": 12.3,
+        "roic_50": 13.5,
+        "roic_80": 14.2
+      },
+      {
+        "growth": 0.08,
+        "growth_pct": 8.0,
+        "roic_20": 13.3,
+        "roic_30": 16.3,
+        "roic_50": 18.7,
+        "roic_80": 20.0
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "QCOM (QTL division)",
+      "multiple": 12.0,
+      "note": "Closest royalty-model comp; QTL earns ~50% EBIT margin on patent royalties — ARM's closest structural peer, but QTL is mature and ARM is in a rate-upgrade cycle"
+    },
+    {
+      "ticker": "CDNS",
+      "multiple": 45.0,
+      "note": "IP/EDA peer; 30%+ FCF margins but growing at 15% not 25%; ARM deserves premium"
+    },
+    {
+      "ticker": "SNPS",
+      "multiple": 40.0,
+      "note": "IP/EDA peer; similar quality but slower growth trajectory"
+    },
+    {
+      "ticker": "NVDA",
+      "multiple": 35.0,
+      "note": "AI silicon reference point at mature scale; ARM at its royalty build-out is earlier stage"
+    }
+  ],
+  "peer_median_multiple": 40.0,
+  "reconstruction": {
+    "currency": "P/E",
+    "what_price_implies": "At 152.3x NTM non-GAAP EPS, the current price implies a ~43.1% earnings CAGR for 10y (then 5% terminal) at r=12.5%.",
+    "what_street_implies": "The street mean target implies ~36.1% for 10y.",
+    "history_anchor": "Non-GAAP EPS CAGR approximated from revenue/margin improvement since FY2024 IPO; revenue CAGR FY2023-FY2026 was 22.5% p.a.",
+    "contested_lever": "Royalty rate per chip (blended): v9/CSS migration uplifts ARM's effective rate by 2x-4x; RISC-V displacement and Qualcomm legal precedent are the caps. Whether the blended rate doubles from FY2026 to FY2030 (base) or only rises 50% (bear) is the crux."
+  }
+}

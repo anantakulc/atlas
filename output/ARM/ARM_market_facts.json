@@ -1,0 +1,256 @@
+{
+  "ticker": "ARM",
+  "as_of_utc": "2026-06-20T08:06:12Z",
+  "snapshot_id": "ARM_2026-06-20T0806Z",
+  "pheme_version": "Atlas v3",
+
+  "price_action": {
+    "current": 439.46,
+    "consensus_target_mean": 275.0,
+    "vs_consensus_mean_pct": 59.8,
+    "vs_52w_high_pct": -2.92,
+    "vs_52w_low_pct": 339.4,
+    "ytd_pct": 283.04,
+    "return_1y_pct": 202.99,
+    "ma50": 264.53,
+    "ma200": 167.83,
+    "beta": 3.79,
+    "commentary": "ARM is trading 59.8% above the analyst consensus mean target of $275 and within 3% of its 52-week high of $452.70. The stock has risen 283% YTD and 203% over the past year, with the 52-week low at $100.02. The gap between price and consensus mean is not a simple bearish signal: as of this freeze, the highest individual analyst target is $500, meaning even the most bullish street voice on record is only 13.8% above the current price. The stock crossing its consensus mean in a sustained way signals the market is pricing outcomes well beyond the median analyst case. The primary catalyst for the move from the 52-week low to current levels is the May 6 2026 Q4 FY2026 earnings print (record $1.49B quarterly revenue, +20% YoY) and the subsequent announcement that the AGI CPU platform has secured over $2B in committed customer demand from Meta, Oracle, and ByteDance. The Computex 2026 week (early June) and the Neural Dawn mobile AI gaming demo (June 17, 2026) extended the move to near-highs as Bernstein and Mizuho raised targets to $500 and Wells Fargo lifted to $410. The price action reflects momentum driven by AI infrastructure narratives rather than near-term earnings power: at $439.46, the stock trades at roughly 275x the annualized run-rate of Q1 FY2027 management guidance non-GAAP EPS."
+  },
+
+  "analyst_tape": {
+    "num_analysts": 38,
+    "consensus_target_mean": 275.0,
+    "consensus_target_median": 255.0,
+    "target_high": 500.0,
+    "target_low": 125.0,
+    "rec_key": "buy",
+    "rec_mean": 1.85,
+    "rec_distribution": {
+      "strong_buy": 7,
+      "buy": 22,
+      "hold": 10,
+      "sell": 2,
+      "strong_sell": 0
+    },
+    "bullish_pct": 76.3,
+    "note_on_consensus_vs_price": "The consensus mean of $275 sits 37.4% below the current price of $439.46. This is not a stale consensus: recent individual target changes (Bernstein, Mizuho at $500; Wells Fargo at $410) have moved the high-end targets closer to price, but the average is dragged down by a cluster of holds and the two sell ratings. The target dispersion (high $500, low $125, mean $275) is unusually wide and signals genuine analytical disagreement on the AGI CPU revenue ramp and valuation, not just timing differences.",
+    "post_earnings_analyst_actions": [
+      {
+        "date": "2026-04-07",
+        "firm": "Morgan Stanley",
+        "action": "downgrade",
+        "old_pt": 135.0,
+        "new_pt": 150.0,
+        "old_rating": "Overweight",
+        "new_rating": "Equal Weight",
+        "note": "Downgraded citing near-term execution risks: soft demand, DRAM supply constraints, rising R&D costs from ARM's strategic pivot into designing its own AGI chips, and potential conflicts with existing IP licensees. Raised target to $150 but downgraded rating on margin pressure in transition period."
+      },
+      {
+        "date": "2026-05-06",
+        "firm": "Multiple firms",
+        "action": "post-earnings review",
+        "old_pt": null,
+        "new_pt": null,
+        "old_rating": null,
+        "new_rating": null,
+        "note": "Q4 FY2026 print on May 6: beat consensus on EPS ($0.60 non-GAAP vs $0.54 expected, +11.1%) and revenue ($1.49B vs ~$1.43B expected). Stock initially surged +13% in after-hours then fell 7.25% the next day as market focused on supply-side constraints: CEO Rene Haas disclosed AGI CPU demand had reached $20B in six weeks but supply is locked in for only the first $1B; Q1 FY2027 revenue guided to $1.26B (+20% YoY, below the $1.29B some bulls had modeled); guidance reflected smartphone unit headwind from memory chip shortage. Classic beat-but-guidance-disappointment reaction: fundamental trajectory intact, near-term supply-capacity gap introduced execution risk."
+      },
+      {
+        "date": "2026-05-07",
+        "firm": "Morgan Stanley",
+        "action": "price_target_raise",
+        "old_pt": 150.0,
+        "new_pt": null,
+        "old_rating": "Equal Weight",
+        "new_rating": "Equal Weight",
+        "note": "Raised price target after Q4 beat on strong CPU demand, maintained Equal Weight. Near-term risks on execution and margin pressure from the AGI CPU investment cycle were kept on the table."
+      },
+      {
+        "date": "2026-05-28",
+        "firm": "Wells Fargo",
+        "action": "price_target_raise",
+        "old_pt": 255.0,
+        "new_pt": 410.0,
+        "old_rating": "Overweight",
+        "new_rating": "Overweight",
+        "note": "Lifted target from $255 to $410 after Silicon Valley demand checks flagged heavy AI data center build-outs and rising inferencing workloads. Flagged ARM as a key CPU architecture winner. One of the largest absolute target raises in the post-earnings cycle."
+      },
+      {
+        "date": "2026-06-04",
+        "firm": "Mizuho",
+        "action": "price_target_raise",
+        "old_pt": 425.0,
+        "new_pt": 500.0,
+        "old_rating": "Outperform",
+        "new_rating": "Outperform",
+        "note": "Set Street-high target of $500, citing Computex 2026 developments: AGI CPU platform expanding to Oracle and ByteDance, RTX Spark enabling agentic AI at the edge. Analyst Vijay Rakesh modeled ARM reaching $15B in agentic AI CPU infrastructure revenue by 2031."
+      },
+      {
+        "date": "2026-06-17",
+        "firm": "Bernstein",
+        "action": "price_target_raise",
+        "old_pt": 300.0,
+        "new_pt": 500.0,
+        "old_rating": "Outperform",
+        "new_rating": "Outperform",
+        "note": "Raised target from $300 to $500, matching Mizuho at the Street high. Analyst David Dai cited ARM's architectural advantage for agentic AI workloads, noting power efficiency as a structural tailwind for ARM CPU in inferencing. Target raise coincided with ARM's Neural Dawn mobile AI gaming launch and the stock hitting near-52-week highs."
+      },
+      {
+        "date": "2026-02-05",
+        "firm": "New Street",
+        "action": "upgrade",
+        "old_pt": null,
+        "new_pt": null,
+        "old_rating": "Neutral",
+        "new_rating": "Buy",
+        "note": "Analyst Pierre Ferragu upgraded to Buy from Neutral following strong royalty performance trajectory. Prior to the post-earnings target wave."
+      }
+    ],
+    "street_thesis_one_line": "ARM's royalty model on power-efficient CPU architecture positions it to capture a structurally growing share of AI data-center compute (custom silicon from hyperscalers) and the AGI CPU segment could generate $15B in annual revenue by FY2031, justifying a premium growth multiple.",
+    "estimate_artifact_check": {
+      "eps_ntm_bundle": 3.0678,
+      "eps_ntm_period": "+1y (non-GAAP forward consensus)",
+      "pe_ntm_implied": 143.2,
+      "flag": "YELLOW: NEEDS DAEDALUS RECONCILIATION",
+      "analysis": "The bundle's eps_ntm of $3.07 is a non-GAAP forward consensus figure. Reconciling against the available data: FY2026 GAAP net income / shares = $0.904B / 1.064B = $0.85 GAAP EPS trailing; non-GAAP FY2026 EPS was $1.77 per the Q4 earnings call (stripping SBC and amortization, ARM's standard presentation). Q1 FY2027 non-GAAP management guidance midpoint = $0.40. Annualizing the Q1 guidance gives $1.60 non-GAAP run-rate; for the NTM consensus to reach $3.07, the back-half of FY2027 must deliver approximately $1.87 in combined Q2-Q4 non-GAAP EPS, or roughly $0.62 per quarter on average for Q2/Q3/Q4 vs $0.40 in Q1. This is a plausible but aggressive ramp if AGI CPU production revenues begin in Q4 FY2027 as guided (~$90M in Q4). The $3.07 NTM figure is non-GAAP and incorporates the AGI CPU H2 ramp thesis: it is not directly comparable to trailing GAAP metrics. GAAP NTM EPS would be materially lower due to SBC (ARM carries substantial equity compensation). Daedalus must value on non-GAAP NTM and state the GAAP reconciliation gap explicitly. The pe_ntm of 143x in the bundle is internally consistent with the $3.07 figure but does not reflect the more conservative annualized-Q1-guidance multiple of ~275x or the GAAP trailing multiple of ~517x. Use $3.07 non-GAAP NTM as the consensus input but flag the GAAP gap.",
+      "gaap_trailing_eps": 0.85,
+      "gaap_trailing_pe": 517.0,
+      "nongaap_trailing_eps_fy2026": 1.77,
+      "nongaap_trailing_pe": 248.3,
+      "q1_fy2027_nongaap_guidance_midpoint": 0.40,
+      "annualized_q1_guidance_pe": 274.7,
+      "eps_ntm_for_valuation": 3.07,
+      "eps_ntm_basis": "non-GAAP forward consensus, including estimated AGI CPU H2 FY2027 ramp; treat as street non-GAAP, not GAAP"
+    }
+  },
+
+  "market_view": {
+    "what_is_priced_in": "At $439.46 (EV/NTM Sales ~79x, NTM P/E ~143x non-GAAP), the market is pricing a multi-year compounding thesis, not the near-term earnings. The reverse-multiple decomposition implies the stock requires roughly $15-25B in long-run annual revenue at sustained high margins to justify today's EV of ~$465B at a normalized exit multiple. This is precisely ARM management's own FY2031 target ($15B AGI CPU + $10B IP = $25B combined). The market is therefore betting that ARM hits its own five-year plan, on schedule, without supply-chain disruption or competitive share loss. A stock that trades at 17x the current year's non-GAAP EPS run-rate is pricing perfection on duration, not rate. The specific near-term constraint visible in the May 2026 earnings (supply locked for $1B vs $20B+ of demand) means the market is accepting execution risk on a supply-gated ramp as a timing rather than a structural problem.",
+    "sentiment": "BULLISH, STRONG. The recommendation distribution is 76.3% buy or strong buy (29 of 38 analysts). The two sells and ten holds anchor the consensus mean below price, but the directional bias in the analyst tape is decidedly bullish. Post-earnings target raises from Wells Fargo ($255 to $410), Mizuho ($425 to $500), and Bernstein ($300 to $500) in the six weeks following the May 6 print represent a wall of upgrades from credible bulge-bracket and specialist firms. Social sentiment data was unavailable (StockTwits HTTPError in the bundle); the Stocktwits headline in the news feed (ARM surging to 52-week highs, June 18) is consistent with bullish retail positioning. Flag: social sentiment is unverified.",
+    "sentiment_narrative": "The analyst community is overwhelmingly bullish on the long-term thesis (AGI CPU, royalty ramp, data-center architecture shift) but sharply divided on valuation. The 10 holds and 2 sells are not fundamental bears on ARM's business model; they are valuation bears who view the current price as pricing in the bull case already. Bank of America moved its target to $335 but held a Neutral rating, a pattern consistent with 'right business, wrong price.' The wall of post-Computex target raises (June 4-17) drove the stock to near-all-time highs, with the highest targets ($500) now within 13.8% of spot. Momentum is firmly positive.",
+    "key_catalysts_watched": [
+      "Q1 FY2027 earnings (July 29, 2026): first test of whether AGI CPU production ramp is on track for $90M Q4 FY2027 target; royalty growth rate vs the guided ~20% full-year; licensing H2 back-weighting confirmation.",
+      "AGI CPU supply unlock: management has secured $2B in committed customer demand from Meta, Oracle, ByteDance but first production revenues constrained to Q4 FY2027 by wafer/memory/packaging supply; any acceleration of supply capacity is a positive catalyst; any further delay is a negative.",
+      "Hyperscaler custom silicon adoption: AWS Graviton, Google Axion, Microsoft Cobalt all ARM-based; the rate of Arm-architecture capture in new server additions vs x86 is a structural royalty driver; any hyperscaler capex guidance cut or insourcing of non-ARM architecture is a risk.",
+      "ARM's own chip strategy execution: the strategic pivot to designing proprietary AGI CPUs creates potential conflict with existing IP licensees (Qualcomm, Apple, MediaTek); Morgan Stanley's April 2026 downgrade cited this risk explicitly.",
+      "FY2027 royalty growth trajectory: guided 'roughly 20% for the year'; upside if data-center royalties (more than doubled YoY in FY2026) continue to accelerate; downside if smartphone market weakness (memory shortage headwind) persists.",
+      "Neural Dawn and mobile AI gaming adoption: ARM's June 2026 Neural Dawn launch (built with Sumo Digital, targeting Android devices with upcoming Mali GPUs) signals a bid to expand royalty and licensing in mobile AI gaming; near-term revenue is not material but signals roadmap for higher-value GPU IP licensing."
+    ],
+    "news_narrative": "The last earnings event (May 6, 2026) was a beat-but-guidance-caution print. ARM beat Q4 FY2026 EPS by 11% ($0.60 non-GAAP vs $0.54 expected) and hit record revenue of $1.49B. The initial after-hours reaction was +13%. The next day the stock fell 7.25% to $220 as the market processed two negatives: (1) Q1 FY2027 revenue guidance of $1.26B was below some bulls' models; (2) the supply constraint on AGI CPU: demand has reached $20B+ but supply is locked for only $1B near-term. This is the classic beat-but-no-raise-on-demand pattern, where the fundamental thesis is unimpaired but the street's near-term model overshoots and gets corrected. The stock then recovered strongly in May and June on a wave of Computex-related announcements (ByteDance and Oracle confirming AGI CPU deployments, ARM CEO stating the $15B revenue target will arrive ahead of schedule), culminating in a new 52-week high near $452 on June 17-18. The Neural Dawn mobile gaming demo (June 17) added a narrative expansion point into mobile AI graphics but is not a near-term revenue driver.",
+    "post_earnings_analyst_actions_summary": "After the May 6 Q4 FY2026 print, the analyst tape bifurcated: (1) Wells Fargo raised target from $255 to $410 (Overweight, late May); (2) Mizuho raised to $500 (Outperform, June 4); (3) Bernstein raised from $300 to $500 (Outperform, June 17). Morgan Stanley had downgraded in April (pre-earnings) to Equal Weight with a $150 target; some sources cite Morgan Stanley subsequently raising the target after the Q4 beat while maintaining the cautious rating. Bank of America raised to $335 (Neutral). This is a wall of post-earnings raises from sell-side, with the key characteristic being that the largest raises (Wells Fargo +$155, Bernstein +$200) happened 3-6 weeks after the print, suggesting the Computex 2026 customer announcements (Oracle, ByteDance) were the proximate trigger, not the earnings beat alone.",
+    "runway": "The fundamental revenue runway is visible and contracted through FY2028 ($2B+ in committed AGI CPU orders from Meta, Oracle, ByteDance; hyperscaler custom silicon deployments already in production). Royalty growth at ~20% YoY is supported by structural trends (ARM capturing CPU share in data centers at expense of x86). The execution risk is in the transition: ARM is simultaneously a capital-light IP licensor and an increasingly capital-intensive chip designer; the two roles create potential licensee conflict and rising R&D spend. The supply constraint on AGI CPU is the near-term gating factor.",
+    "runway_verdict": "Fundamental runway is strong: multi-year contracted demand, structural architecture shift, triple-digit royalty growth in data centers, and a credible $25B revenue target for FY2031 with named customers. Valuation risk is distinct and acute: at EV/NTM Sales ~79x and non-GAAP NTM P/E ~143x, the stock prices the bull case without margin of safety. A compression from 143x to 80x NTM P/E on flat EPS consensus would imply a ~44% price decline. The HOUSE_VIEW discipline applies: a great business at the wrong price is not a buy. The runway is long; the entry point is contested.",
+    "market_lean": {
+      "direction": "BULL",
+      "strength": "STRONG",
+      "basis": "76% buy-or-better analyst consensus, wall of post-earnings target raises (Bernstein, Mizuho, Wells Fargo all meaningfully higher in June), stock near all-time high, AGI CPU customer wins accelerating, hyperscaler capex at record levels ($700B+ collectively in 2026 with ARM architecture central to all three major cloud providers' custom silicon programs. The lean is on fundamentals, not momentum. Valuation risk is flagged separately and is real.",
+      "valuation_risk_flag": "The price is 59.8% above the consensus mean target. The highest analyst target ($500) is only 13.8% above spot. This is a narrow margin even for the most bullish analysts. The stock is priced for the FY2031 management plan to execute exactly as stated. Any supply delay, licensee defection, or macro-driven capex cut would require significant multiple compression from today's levels. This is a valuation risk separate from the fundamental thesis."
+    },
+    "positioning_notes": "Institutional ownership at 95.41% is extremely high, consistent with a large-cap liquid name with near-zero retail float. Insider ownership at 0.07% reflects ARM's structure as a SoftBank subsidiary (SoftBank Group holds the majority economic interest); the low insider figure therefore does not signal disinterest by management but rather reflects concentrated parent ownership rather than direct management holdings. No buyback or dividend program in the data (consistent with the company's growth-reinvestment posture and SoftBank parent capital discipline). Average daily trading volume of $6.29B is very high, consistent with active institutional and options market participation."
+  },
+
+  "earnings_calendar": {
+    "next_date": "2026-07-29",
+    "fiscal_quarter": "Q1 FY2027",
+    "guidance_revenue": "1.26B +/- 50M",
+    "guidance_eps_nongaap": "0.40 +/- 0.04",
+    "notes": "Q1 FY2027 will be the first post-AGI-CPU-launch quarter with any production revenue, though management guided initial production sales only in Q4 FY2027. The key print variables: (1) whether royalty growth maintains ~20% pace; (2) any update on AGI CPU supply unlock timeline; (3) confirmation of licensing H2 back-weighting. A miss on revenue vs the $1.26B midpoint, or any downward revision to the AGI CPU ramp timeline, would pressure the stock materially given the current pricing."
+  },
+
+  "capex_guidance": [
+    {
+      "buyer": "Amazon Web Services",
+      "fy": "2026",
+      "capex_guide_b": 200.0,
+      "incl_finance_leases": true,
+      "arm_relevance": "AWS Graviton (ARM-based) accounts for over half of new server capacity additions; ARM receives royalties on each Graviton chip shipped.",
+      "quote": "Amazon plans $200 billion in CapEx for 2026 versus $125 billion in 2025.",
+      "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+    },
+    {
+      "buyer": "Google / Alphabet",
+      "fy": "2026",
+      "capex_guide_b": 180.0,
+      "incl_finance_leases": true,
+      "arm_relevance": "Google Cloud uses ARM-based Axion processors; ARM receives royalties. Google is a key hyperscaler customer for both custom silicon and ARM IP licensing.",
+      "quote": "Google plans $175 to $185 billion in CapEx, up from $91 billion in 2025.",
+      "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+    },
+    {
+      "buyer": "Microsoft",
+      "fy": "2026",
+      "capex_guide_b": 115.0,
+      "incl_finance_leases": true,
+      "arm_relevance": "Microsoft offers instances powered by its ARM-based Cobalt chips; ARM receives royalties. Microsoft is a named AGI CPU ecosystem participant.",
+      "quote": "Microsoft plans $110 to $120 billion in 2026, compared to $90 billion in 2025.",
+      "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+    },
+    {
+      "buyer": "Meta Platforms",
+      "fy": "2026",
+      "capex_guide_b": 135.0,
+      "incl_finance_leases": true,
+      "arm_relevance": "Meta is a confirmed AGI CPU early customer (in the $2B+ committed demand), representing a direct expansion from IP royalties into ARM's proprietary chip business.",
+      "quote": "Meta raised full-year capex guidance to $125-$145B citing higher component and data center costs.",
+      "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+    },
+    {
+      "buyer": "Oracle",
+      "fy": "2026-2027",
+      "capex_guide_b": null,
+      "incl_finance_leases": null,
+      "arm_relevance": "Oracle is a named AGI CPU customer, deploying ARM's first in-house data-centre CPU in its cloud infrastructure. Part of the $2B+ committed demand pipeline for FY2027-2028.",
+      "quote": "ByteDance and Oracle are using Arm's in-house AGI CPU, completing the hyperscaler-x86 exit.",
+      "source_url": "https://thenextweb.com/news/arm-agi-cpu-bytedance-oracle-data-centre"
+    },
+    {
+      "buyer": "ByteDance",
+      "fy": "2026-2027",
+      "capex_guide_b": null,
+      "incl_finance_leases": null,
+      "arm_relevance": "ByteDance is a named AGI CPU customer, one of the four confirmed buyers (alongside Meta, Oracle, and one additional customer). Part of the $2B+ committed demand for FY2027-2028.",
+      "quote": "ByteDance and Oracle Adopt Arm AGI CPU; Arm Forecasts $20 Billion in Revenue by 2028.",
+      "source_url": "https://www.kucoin.com/news/flash/bytedance-and-oracle-adopt-arm-agi-cpu-arm-forecasts-20b-revenue-by-2028"
+    },
+    {
+      "buyer": "Hyperscaler aggregate",
+      "fy": "2026",
+      "capex_guide_b": 725.0,
+      "incl_finance_leases": true,
+      "arm_relevance": "Aggregate of Google, Amazon, Microsoft, Meta capex guidance for 2026, up 77% YoY from $410B. Approximately 75% allocated to AI infrastructure. ARM's royalty base scales with server and custom silicon shipments from this pool.",
+      "quote": "Google, Amazon, Microsoft, and Meta collectively plan to spend $725 billion on capex in 2026, up 77% from last year's record $410 billion.",
+      "source_url": "https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion"
+    }
+  ],
+
+  "social_sentiment": {
+    "source": "stocktwits",
+    "status": "UNAVAILABLE",
+    "error": "HTTPError in Hermes bundle fetch",
+    "note": "Social sentiment data could not be retrieved. A Stocktwits headline in the news feed ('Why Did RXT, NBIS, ARM Stocks Surge To 52-Week Highs?', June 18 2026) is consistent with bullish retail attention at 52-week highs. Social signal is flagged as UNVERIFIED."
+  },
+
+  "industry_log_entry": {
+    "ticker": "ARM",
+    "run_date": "2026-06-20",
+    "sector": "Semiconductors / IP Licensing",
+    "business_model": "Royalty on CPU/GPU IP shipped by licensees (mobile, server, auto, IoT) plus licensing fees for new IP access; pivoting into proprietary chip design (AGI CPU).",
+    "dominant_theme": "AI data-center architecture shift from x86 to ARM-based custom silicon; proprietary AGI CPU ramp.",
+    "key_multiples": {
+      "ev_ntm_sales": 78.8,
+      "pe_ntm_nongaap": 143.2,
+      "pe_gaap_trailing": 517.0
+    },
+    "market_lean_at_freeze": "BULL / STRONG"
+  },
+
+  "data_gaps_and_flags": [
+    "SEC EDGAR not fetched (no CIK in Hermes bundle); filing excerpts (segment revenue breakdown, RPO/backlog) not available from structured data. ARM's fiscal 2026 annual report details must be sourced from newsroom.arm.com or SEC filings directly.",
+    "Social sentiment (StockTwits) unavailable due to HTTPError.",
+    "Post-earnings analyst actions are sourced from web search summaries, not primary broker research; individual firm targets (Morgan Stanley post-Q4 target, BofA exact target) have search-summary provenance only and should be verified against primary sources before inclusion in the final report.",
+    "eps_ntm of $3.07 is a non-GAAP forward consensus including an aggressive H2 FY2027 AGI CPU ramp; GAAP NTM EPS will be materially lower. Daedalus must use non-GAAP basis and bridge to GAAP.",
+    "Peers array is empty in the bundle; peer valuation comparison must be constructed by Daedalus from public sources (NVDA, QCOM, MRVL, TSMC as relevant comp set).",
+    "Segments array is empty; ARM's revenue split (licensing vs royalty) sourced from Q4 FY2026 earnings call: FY2026 licensing $2.31B (47%), royalty $2.61B (53%)."
+  ]
+}
