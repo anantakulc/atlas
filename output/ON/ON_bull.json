@@ -1,0 +1,203 @@
+{
+  "ticker": "ON",
+  "agent": "boreas",
+  "as_of": "2026-06-21",
+  "charter_version": "3.0",
+  "crux_reading": "HIGHER",
+
+  "thesis_summary": "The bull case for onsemi rests on a single load-bearing claim: the 55% share of new EV model design wins at the 2026 Beijing Auto Show is a 12-to-24-month leading indicator for revenue market share, and if it converts, onsemi's SiC market share rises from ~22-25% toward 28% by FY2027-28, lifting PSG-SiC revenue from the $1.5B base path to $2.24B by FY2027 at a larger market ($8B vs base $6.5B). Compounding that, the GaNEXUS AI datacenter platform (launched June 2026, $1.5B design funnel, >30 active hyperscaler programs) reaches $1.0B revenue by FY2027 as 48V-to-800VDC architecture shifts pull forward GaN content per rack. Wolfspeed's emergence from bankruptcy with $4.6B debt eliminated removes the most aggressive pure-play competitor and strengthens onsemi's vertically-integrated SiC substrate advantage. Together, these two moves lift total company FY2027 revenue to $8.5B (vs base $7.0B) and drive FY2030 NOPAT high enough to reach a SOTP bull value of $80.15 per share. That is the honest upper bound. It does NOT clear the current price of $121.62 -- the market appears to price non-GAAP EPS multiples on estimates that add back ~$1.2B/yr of real economic costs (D&A on fab investments, SBC), a denominator the intrinsic model cannot endorse.",
+
+  "key_debates": [
+    {
+      "debate_id": 1,
+      "debate": "SiC market share trajectory: does the 55% design-win signal convert to revenue share of 28%, or does Infineon's 200mm cost lead cap onsemi at the current 22-25%?",
+      "why_this_is_the_crux": "The SiC share variable is the single biggest swing in the model. Moving from base 23% to bull 28% on an $8B market in FY2027 adds $0.745B PSG revenue versus base, and compounds through FY2030 to add $0.429B of FY2030 NOPAT. Isolating this lever (holding AMG and ISG at base) adds +$12.93/sh to the SOTP. It is the primary crux variable per Theia's ON_crux.json.",
+      "bull_position": "The 55% share of new EV model design wins at the 2026 Beijing Auto Show is a stated, sourced fact from the Q1 2026 earnings call (SEC 8-K, May 4, 2026). Design-win share in power semiconductors leads revenue share by 12-to-24 months: the production vehicles using those designed-in modules do not enter volume production until one to two model-year cycles after the design decision. The historical precedent is onsemi's own trajectory: its aggressive LTA campaign in 2022-2023 (ZEEKR, VW Group, BMW, NIO, Li Auto, Hyundai) converted into a measured #2 SiC market-share position by 2023 (TrendForce: 22-25% vs a prior #4 rank in 2022). The same mechanism is now occurring one cycle later: if 55% of 2026 new-model design wins reflects onsemi's actual socket count, that cohort of vehicles enters volume production in FY2027-2028. At 28% of a $8B SiC market (YOLE: $8.9B by 2028, so $8B in 2027 is one year early -- aggressive but within the ceiling), onsemi's SiC revenue reaches $2.24B in FY2027 vs the base $1.495B. The Infineon 200mm threat is real but is an FY2028-2030 problem, not an FY2027 one: Infineon's Kulim Malaysia 200mm fab is in ramp mode through 2026 and does not reach scale cost structure until late 2027 at earliest. European Tier 1 automotive qualification cycles of new device suppliers take 18-to-36 months after production release -- which means even if Infineon achieves cost parity on 200mm in 2027, the socket displacement does not show up in onsemi's revenue until FY2029-2030. The Czech Republic 200mm fab (EU grant 450M euros, received December 2025; first wafers late 2026) means onsemi will have its own 200mm response arriving before Infineon's cost advantage can fully convert. The bear's 200mm displacement threat is correctly identified but its timing is 12-to-18 months too early to kill the FY2027 bull.",
+      "key_evidence": [
+        "55% of new EV model design wins at 2026 Beijing Auto Show: onsemi Q1 2026 earnings call, SEC 8-K May 4, 2026 (company_filed). This is the leading indicator that precedes revenue share by 12-24 months.",
+        "Q1 2026 PSG revenue +14% YoY -- first YoY growth in 7 quarters: onsemi Q1 2026 8-K. The cycle turn is confirmed, not forecast.",
+        "SiC device market $8.9B by 2028 at 31% CAGR: YOLE Intelligence SiC 2022-2028. Bull FY2027 $8.0B is one year early but WITHIN this ceiling (8.0 < 8.9).",
+        "Infineon 200mm SiC rollout began from Villach in February 2025 and Kulim is ramping: Compound Semiconductor News. Full cost advantage at volume not expected until late 2027 -- a 12-18 month window before displacement threat fully materialises.",
+        "Automotive Tier 1 qualification timelines of 18-36 months for new device entrants: industry-standard -- means even Infineon winning a design today does not displace onsemi revenue until FY2028-2029.",
+        "EU approved 450M euro grant for Czech Republic 200mm SiC fab, December 2025: TrendForce. Locked-in investment reduces substrate and cost-structure gap vs Infineon's Kulim advantage."
+      ],
+      "what_would_have_to_be_true": "The 55% design-win rate at Beijing Auto Show reflects genuine socket awards (not aspirational bookings), EV production volumes for those model platforms ramp as planned in FY2027, and Infineon's 200mm cost advantage does not generate Tier 1 re-sourcing decisions until FY2028+ (consistent with automotive qualification lead times).",
+      "what_changes_the_mind": "If Infineon publicly announces a major European OEM supply agreement displacing a current onsemi socket (a Bosch or Continental announcement would be the tell), or if Q2-Q3 2026 PSG revenue fails to show continued YoY growth, the design-win signal is not converting and the bull collapses back to base.",
+      "quantification": "SiC revenue at 28% share of $8.0B market = $2.24B FY2027 vs base $1.495B (+$0.745B). Compounding to FY2030 with ~15% CAGR adds $0.429B to PSG FY2030 NOPAT_T ($1.431B for SiC-only bull vs base $1.002B). Discount at PSG WACC 10.5% over T=4 years: isolating this lever adds +$12.93/sh to the SOTP base of $45.53, reaching $58.46/sh for SiC share debate alone.",
+      "evidence_quality": "EXTRAPOLATED -- the 55% design-win share is an observed, company-stated fact (CONTRACTED in that sense), but the FY2027 revenue conversion depends on EV production volumes ramping and onsemi holding those sockets through SOP. The revenue has not yet flowed. EXTRAPOLATED is the honest grade: trend is visible and directionally supported, but not yet in the backlog."
+    },
+    {
+      "debate_id": 2,
+      "debate": "AI datacenter as a real second revenue vector: does GaNEXUS reach $1.0B by FY2027, or does it stay a small niche against entrenched GaN incumbents (Infineon GaN Systems, TI LMG5200)?",
+      "why_this_is_the_debate": "Isolating only the AI datacenter lever (holding SiC at base, AMG at base) adds approximately +$10.56/sh to the SOTP by lifting PSG FY2030 NOPAT_T to ~$1.338B from the base $1.002B. It is the second-order swing after SiC share. The debate matters because the $1.5B design funnel (confirmed June 2026 GaNEXUS launch) is large relative to the current $500M run-rate -- but design funnel conversion is uncertain.",
+      "bull_position": "The AI datacenter power semiconductor market is undergoing a structural shift that is measurable now. Racks running at 120kW (current-generation AI training) use approximately $9,500 of power semiconductor content per rack. Racks at 800VDC (the next-generation architecture, which powers compute densities of 200kW+) use approximately $115,000 of content per rack -- a 12x content increase per rack unit for the same space. The 48V-to-800VDC bus voltage shift is not speculative: hyperscalers including Microsoft, Meta, and Google have publicly stated rack power density roadmaps consistent with 800V bus adoption in FY2026-2028. GaN devices at 40-to-650V (the range that GaNEXUS covers) are the enabling technology for this transition at the intermediate conversion stages: they reduce magnetic component size by 60% and improve power density 2x versus silicon MOSFETs (stated in the GaNEXUS press release, June 9, 2026). The >30 hyperscaler active programs on the Q1 2026 earnings call are the funnel entering revenue conversion. Historical design-funnel-to-revenue conversion in power analog is 18-to-36 months. If the $1.5B funnel began forming in H2 2025 (consistent with when onsemi confirmed it was actively engaged), revenue reaches $1.0B by H2 2027 at a 60-65% conversion rate. The bull does NOT require onsemi to displace Infineon GaN Systems or TI LMG5200 from existing sockets -- it requires onsemi to capture a share of the NET NEW capacity being installed in AI data centers, which is growing at 40%+ CAGR (YOLE power GaN October 2025: $3B by 2030 at 42% CAGR from a 2025 base). The addressable AI datacenter GaN market in FY2027 is approximately $0.8-1.2B for onsemi's 40-650V voltage range (derived as: $3B by 2030 at 42% CAGR from ~$0.4B 2025 base = $1.6B by 2027 total power GaN; onsemi targeting 60-65% of that range). Bull $1.0B is ~63% of the estimated FY2027 addressable sub-market -- aggressive but supported by the funnel size relative to the market.",
+      "key_evidence": [
+        "AI datacenter revenue $250M+ FY2025, management guiding for doubling to ~$500M in FY2026 (+30% QoQ in Q1 2026 already confirmed): onsemi Q4 2025 and Q1 2026 earnings calls, SEC 8-K.",
+        "GaNEXUS launch June 9, 2026: 40-650V portfolio, design funnel >$1.5B, >30 active hyperscaler programs, 2x power density improvement vs silicon: GlobewireNewswire / onsemi press release June 9, 2026.",
+        "800V DC rack content per rack $115,000 vs 120kW rack $9,500 -- 12x content per unit: onsemi Q1 2026 earnings / market_facts.json. This is the monetisation mechanism: the industry is moving from onsemi's addressable $9,500/rack to $115,000/rack.",
+        "Power GaN device market growing at 42% CAGR to $3B by 2030: YOLE Intelligence, October 2025. $1.0B bull in FY2027 implies ~33% of ~$3B total-by-2030 market -- consistent with onsemi's stated 30-35% hyperscaler program engagement.",
+        "Qorvo SiC JFET acquisition December 2025 ($115M): positions onsemi for the SiC portion of the AI datacenter power tree (high-side switching at 1200V DC link), not just GaN -- broadens the total content per rack."
+      ],
+      "what_would_have_to_be_true": "The $1.5B design funnel converts at a 60-65% rate within 18-24 months, consistent with the industry's typical power analog design-in-to-revenue cycle. The 800VDC architecture rollout continues on the hyperscalers' stated roadmaps. Infineon's GaN Systems unit, which has a head start and existing hyperscaler relationships from the 2023 acquisition, does not capture more than 50% of the new-architecture wins.",
+      "what_changes_the_mind": "If Q3 or Q4 2026 AI datacenter revenue growth decelerates from the current +30% QoQ trajectory to flat or negative, the funnel is not converting. Alternatively, if a major hyperscaler announces a standardised GaN power architecture that specifies Infineon GaN Systems as the sole-source supplier, the funnel conversion opportunity closes.",
+      "quantification": "AI datacenter bull ($1.0B FY2027) vs base ($0.65B): +$0.35B revenue at ~35% EBIT margin x 0.84 tax = +$0.103B NOPAT incremental at FY2027, growing to +$0.233B at FY2030 (25% CAGR assumption). Lifting PSG NOPAT_T from base $1.002B to ~$1.338B, discounted at PSG WACC 10.5% over T=4 years, yields PSG EV uplift of ~$3.8B, or +$10.56/sh above the base. When combined with the SiC share debate (Debate 1), PSG-only bull adds +$19.25/sh vs base.",
+      "evidence_quality": "EXTRAPOLATED -- the $1.5B design funnel is company-disclosed and the +30% QoQ momentum in Q1 2026 is real. But funnel-to-revenue conversion over 18-to-24 months is a rate assumption, not a contracted delivery schedule. GaNEXUS was just launched (June 2026); no revenue from the new product line has yet been booked. EXTRAPOLATED is the correct grade: reasonable read of a real and confirmed trend, but not yet in the contract."
+    },
+    {
+      "debate_id": 3,
+      "debate": "Treo platform optionality in AMG: does the Treo BCD 65nm analog platform reach $450-700M revenue by FY2027-28, opening a durable second-margin engine, or does TI's entrenched analog portfolio contain it at a sub-$300M niche?",
+      "why_this_is_the_debate": "AMG's Treo platform carries a 60-70% gross margin (Q1 2026 management commentary) vs onsemi's blended 38.5% gross margin. Moving Treo from base ($300-400M FY2027) to bull ($450M FY2027) accelerates AMG's NOPAT trajectory enough to add +$9.18/sh to the SOTP. Treo is the only segment where the bull does not depend on the EV cycle or AI capex -- its driver is design-in adoption in a $36B analog TAM where onsemi was essentially absent two years ago.",
+      "bull_position": "Treo grew 2.5x quarter-over-quarter in Q1 2026, from a near-zero FY2024 base. That rate of sequential growth is only possible if multiple design-in wins that were secured in 2024-2025 are simultaneously moving to production. A 2.5x QoQ implies that at least two-to-three separate customer programs ramped to volume revenue in the same quarter -- which itself validates the design funnel momentum. Company guidance for Treo is $1B revenue by 2030 (stated investor day target). On a typical S-curve ramp (slow early, accelerating mid-cycle, plateauing late), reaching $1B by 2030 from near-zero in 2024 implies $250-350M by FY2026, $450-600M by FY2027, and $700M+ by FY2028. The Q1 2026 2.5x sequential growth places the FY2026 revenue trajectory above the company's own midpoint path. The bull case requires Treo to reach $450M in FY2027 -- the lower end of the range implied by the stated $1B FY2030 target and the Q1 2026 observed ramp rate. This is not a stretch: it is the company's own math. TI is the entrenched analog competitor but competes primarily on breadth (14+ fabs, 80,000+ products), not on the specific BCD 65nm node differentiation that Treo targets. The BCD 65nm process node creates a 18-to-36-month re-design barrier for any customer who has taped out a Treo chip -- the design-in stickiness that makes analog franchises valuable is already accruing to Treo.",
+      "key_evidence": [
+        "Treo revenue 2.5x QoQ in Q1 2026, from near-zero FY2024 base: onsemi Q1 2026 8-K (company_filed).",
+        "Company target: $1B Treo revenue by FY2030: onsemi investor communications (company_filed).",
+        "Treo gross margin 60-70% (per Q1 2026 management commentary): meaningfully above blended corporate 38.5%.",
+        "AMG design funnel >$1B at Q1 2026 (revenue + pipeline): onsemi Q1 2026 earnings discussion (company_filed).",
+        "BCD 65nm process creates 18-36 month re-design barrier for customers -- the same lock-in mechanism that sustains TI's 50%+ market share in legacy analog after decades: industry analog design-in dynamics."
+      ],
+      "what_would_have_to_be_true": "Treo's 2.5x QoQ Q1 2026 growth is not a one-time pull-forward (a stocking event by a single large customer) but represents the leading edge of a genuine multi-customer ramp. Q2 and Q3 2026 Treo revenue must sustain sequential growth, confirming a platform ramp rather than a single program.",
+      "what_changes_the_mind": "If Q2 2026 AMG revenue shows Treo flattening after the Q1 surge, the 2.5x was a pull-forward and the platform adoption is slower. The tell to watch is AMG gross margin trajectory: if blended AMG gross margin does not expand toward 42-44% by H2 2026, Treo mix is not scaling as the bull requires.",
+      "quantification": "AMG bull NOPAT_T at FY2030: $0.739B (Treo reaching $700M FY2028, $450M FY2027, legacy analog at $2.35B) vs base AMG NOPAT_T $0.519B. Gordon exit at r=9.5%, g=5%, ROIC=22%: 17.17x EV/NOPAT. AMG bull EV $8.826B vs base $5.253B. Isolating only AMG at bull (PSG+ISG at base): +$9.18/sh above the base. The AMG debate is the second-biggest single-segment swing.",
+      "evidence_quality": "EXTRAPOLATED -- the 2.5x sequential Q1 growth is observed, and the $1B FY2030 target is company-stated. But two data points (Q1 2026 + stated target) do not yet constitute a confirmed revenue ramp. The conversion from design funnel to sustained revenue is a function of customer program success, not just design-in awards. EXTRAPOLATED: real trend, not yet durable."
+    }
+  ],
+
+  "debate_interactions": "The three debates are partially independent but share a common execution risk: the Czech Republic 200mm SiC fab must ramp successfully to underpin both the SiC margin recovery (which enables the PSG EBIT margin path from 24% to 26-28% by FY2030) and the competitive response to Infineon's 200mm cost advantage. The fab is a single point of operational execution common to all three bull debates. If it underperforms (lower yield, slower ramp), all three debates weaken simultaneously -- not independently.",
+
+  "scenario_spec": {
+    "revenue_fy2026_b": 6.55,
+    "revenue_fy2027_b": 8.49,
+    "psg_revenue_fy2027_b": 4.44,
+    "sic_revenue_fy2027_b": 2.24,
+    "sic_market_fy2027_b": 8.0,
+    "on_sic_share_fy2027_b": 0.28,
+    "ai_datacenter_fy2027_b": 1.0,
+    "psg_legacy_silicon_fy2027_b": 1.2,
+    "amg_revenue_fy2027_b": 2.70,
+    "treo_revenue_fy2027_b": 0.45,
+    "isg_revenue_fy2027_b": 1.35,
+    "gross_margin_fy2027_b": 0.47,
+    "ebit_margin_fy2027_b": 0.265,
+    "psg_nopat_T_fy2030_b": 1.664,
+    "amg_nopat_T_fy2030_b": 0.739,
+    "isg_ebit_fy2030_b": 0.363,
+    "psg_wacc": 0.105,
+    "amg_wacc": 0.095,
+    "isg_multiple_ev_ebit": 18,
+    "psg_exit_multiple_gordon": 14.94,
+    "amg_exit_multiple_gordon": 17.17,
+    "psg_ev_b": 16.675,
+    "amg_ev_b": 8.826,
+    "isg_ev_b": 6.534,
+    "total_segment_ev_b": 32.035,
+    "net_debt_b": 0.857,
+    "shares_outstanding_b": 0.389,
+    "implied_value_per_share": 80.15,
+    "clears_price": false,
+    "why_not_price": "The full bull case at $80.15 covers 66% of the current price ($121.62). The gap reflects that the market values onsemi on non-GAAP EPS multiples (28x NTM non-GAAP EPS of $4.32), which add back approximately $1.2B/yr of real economic costs -- specifically D&A on the Czech Republic and other SiC fab investments ($0.5-0.6B/yr) and SBC ($0.15-0.20B/yr). Owner FCF at the bull normalization year (FY2028-2030) is approximately $2.64-3.50/sh, not the $6.50-7.50 non-GAAP EPS the bull path implies. The intrinsic bull value of $80.15 uses owner-FCF (NOPAT) as the denominator -- the correct economic numerator -- and at that figure the $121.62 price requires a NOPAT of $3.21B (= total company bull NOPAT of $2.4B compounded at 15% for three more years), which implies $21B+ in revenue, well above any credible 2030-2035 forecast. The market's premium over the intrinsic bull is the unresolved valuation gap."
+  },
+
+  "delta_to_base_by_debate": {
+    "debate_1_sic_share_only": {
+      "lever": "PSG SiC share 28% vs 23% base on $8.0B market",
+      "value_per_share": 58.46,
+      "delta_to_base": 12.93
+    },
+    "debate_2_ai_datacenter_only": {
+      "lever": "AI datacenter $1.0B vs $0.65B base",
+      "value_per_share": 56.09,
+      "delta_to_base": 10.56
+    },
+    "debate_3_amg_treo_only": {
+      "lever": "AMG Treo $0.45B FY2027 vs $0.30B base, NOPAT_T $0.739B vs $0.519B",
+      "value_per_share": 54.71,
+      "delta_to_base": 9.18
+    },
+    "combined_psg_bull": {
+      "lever": "PSG SiC share AND AI datacenter both at bull (other segments at base)",
+      "value_per_share": 64.78,
+      "delta_to_base": 19.25
+    },
+    "full_bull_all_segments": {
+      "lever": "All three segments at bull inputs (Daedalus bull scenario)",
+      "value_per_share": 80.15,
+      "delta_to_base": 34.62
+    }
+  },
+
+  "ceiling_check": {
+    "sic_market_fy2027_bull_b": 8.0,
+    "sic_market_ceiling_b": 8.9,
+    "sic_market_check": "PASS -- $8.0B in FY2027 is below YOLE's $8.9B FY2028 ceiling. The bull path arrives one year earlier than the YOLE forecast peak; credible given AI datacenter SiC JFET demand accelerating the market ahead of purely automotive-driven forecasts.",
+    "on_share_bull_pct": 28,
+    "on_share_ceiling_pct": 30,
+    "on_share_check": "PASS -- 28% share is within the 30% ceiling (Infineon's own stated target, implying 30% is credibly achievable but competitive). onsemi at 28% remains #2 and does NOT require displacing STMicro as #1.",
+    "ai_dc_revenue_bull_b": 1.0,
+    "power_gan_market_fy2027_est_b": 1.6,
+    "ai_dc_wallet_share_implied": "62.5% of estimated fy2027 power GaN addressable market for onsemi's 40-650V range",
+    "ai_dc_check": "FLAGGED but not breached -- $1.0B requires onsemi to capture ~63% of its addressable sub-market, which is aggressive. The ceiling is the $3B total power GaN market by 2030 (YOLE); $1.0B in FY2027 is ~33% of the total by-2030 market achieved 3 years early. This is at the optimistic end of the range. Acknowledged as EXTRAPOLATED (not CONTRACTED) for this reason.",
+    "overall_verdict": "Bull path is arithmetically within Theia's sourced ceilings on the primary lever (SiC market size and share). The AI datacenter sub-market estimate is aggressive and flagged. No ceiling breach."
+  },
+
+  "overall_evidence_quality": {
+    "grade": "EXTRAPOLATED",
+    "basis": "The crux bull variable -- SiC design-win share converting to 28% revenue market share by FY2027 -- rests on one confirmed leading indicator (55% of 2026 Beijing Auto Show wins, company_filed Q1 2026 8-K) and the historical precedent of onsemi's own prior LTA campaign converting into market share gain. The AI datacenter lever rests on a confirmed design funnel ($1.5B, GaNEXUS press release June 9 2026) and confirmed momentum (+30% QoQ Q1 2026, company_filed). Neither lever is yet in signed revenue contracts for FY2027. EXTRAPOLATED is the right grade: the trend is real and sourced, the conversion is a reasonable extrapolation, not a hope.",
+    "not_contracted_because": "SiC design wins are agreements for a car program to use onsemi devices in the design specification -- they become revenue only when the vehicle program reaches volume production, and the OEM's actual production volumes may differ from plan. GaNEXUS FY2027 revenue is a funnel-conversion estimate, not a signed purchase order.",
+    "not_hoped_for_because": "The design-win share data is an observed fact, not an assumed one. The +30% QoQ AI datacenter momentum is already in reported revenue. The GaNEXUS funnel is confirmed by management. These are not wishes -- they are real pipeline signals that a reasonable analyst would extrapolate forward."
+  },
+
+  "sources": [
+    {
+      "name": "onsemi Q1 2026 8-K (primary earnings source: PSG +14% YoY, AI DC +30% QoQ, 55% Beijing Auto Show wins, GM 38.5%)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001097864/000114036126018868/ef20072220_ex99-1.htm",
+      "tier": "company_filed"
+    },
+    {
+      "name": "onsemi GaNEXUS press release June 9, 2026 ($1.5B design funnel, >30 hyperscaler programs, 40-650V, 2x power density)",
+      "url": "https://www.globenewswire.com/news-release/2026/06/09/3308568/0/en/onsemi-Introduces-GaNEXUS-Gallium-Nitride-Power-Portfolio.html",
+      "tier": "company_filed"
+    },
+    {
+      "name": "TrendForce SiC market share ranking 2023 (onsemi #2 at 22-25%, STMicro #1 at 32.6%)",
+      "url": "https://www.trendforce.com/presscenter/news/20240620-12196.html",
+      "tier": "research_firm"
+    },
+    {
+      "name": "YOLE Intelligence SiC 2022-2028: $8.9B by 2028 at 31% CAGR",
+      "url": "https://www.powerwaywafer.com/yole-sic-power-semiconductor-market-report.html",
+      "tier": "research_firm"
+    },
+    {
+      "name": "YOLE Power GaN $3B by 2030 at 42% CAGR (October 2025)",
+      "url": "https://www.semiconductor-today.com/news_items/2025/oct/yole-291025.shtml",
+      "tier": "research_firm"
+    },
+    {
+      "name": "EU approved 450M euro grant for onsemi Czech Republic 200mm SiC fab (December 2025)",
+      "url": "https://www.trendforce.com/news/2025/12/01/news-onsemi-to-receive-e450m-government-grant-for-advanced-sic-power-device-fab-in-czech-republic/",
+      "tier": "research_firm"
+    },
+    {
+      "name": "Wolfspeed emerged from Chapter 11 with $4.6B debt eliminated (June-September 2025)",
+      "url": "https://elevenflo.com/blog/wolfspeed-bankruptcy-46b-debt-restructuring",
+      "tier": "research_firm"
+    },
+    {
+      "name": "ON_crux.json (Theia v3, as_of 2026-06-21): crux variable, base/bull/bear SiC and AI DC paths, ceiling checks",
+      "url": "local",
+      "tier": "internal"
+    },
+    {
+      "name": "ON_valuation.json (Daedalus v3, as_of 2026-06-21): base SOTP $45.53, bull SOTP $80.15, bear SOTP $12.21",
+      "url": "local",
+      "tier": "internal"
+    },
+    {
+      "name": "ON_demand.json (Theia v3): segment revenue paths, ceiling gate summary, key assumptions ladder",
+      "url": "local",
+      "tier": "internal"
+    }
+  ],
+
+  "note_on_market_price": "The current price of $121.62 sits 51% above the intrinsic bull value of $80.15. This is not a rounding error or a model calibration question -- it is a fundamental disagreement about the correct earnings denominator. The market uses non-GAAP EPS of $4.32 NTM and a 28x multiple. The intrinsic model uses owner FCF (NOPAT after tax) that strips out D&A on the SiC fab investments and SBC -- costs the non-GAAP convention adds back but which represent real capital that has been deployed and must earn a return. If the market is correct that the SiC fabs are permanently high-utilisation assets whose D&A genuinely overstates the economic maintenance requirement, and that SBC is truly a non-cash employee benefit that does not dilute intrinsic value per share, then the market's denominator is valid and onsemi at $121.62 is arguably fair value on the bull. That is a legitimate debate. But it is NOT a debate Boreas takes a position on -- it is the job of the Atlas synthesis to surface it. The bull's job here is honest: the intrinsic NOPAT-based ceiling is $80.15, and that is what we report."
+}

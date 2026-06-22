@@ -1,0 +1,107 @@
+{
+  "ticker": "ON",
+  "auditor": "erinys",
+  "as_of": "2026-06-22",
+  "verdict": "PASS WITH NOTES",
+  "checks": [
+    {
+      "check": "SOTP arithmetic -- segment EVs and equity bridge",
+      "result": "PASS",
+      "note": "All three segments verified from stated inputs. PSG: Gordon (1-4.5%/25%)/(10.5%-4.5%)=13.6667x; EV_at_T=1.002x13.67=13.694B; PV=13.694/1.4909=9.185B (reported 9.187B, diff <0.02%). AMG: (1-4%/20%)/(9.5%-4%)=14.5455x; PV=0.519x14.55/1.4377=5.251B (reported 5.253B, <0.04%). ISG: 0.258x16=4.128B. Sum=18.564B (reported 18.568B, 0.02% diff). Net debt bundle-verified: 3.005-2.148=0.857B. Equity=17.707B/0.389B shares=$45.52/sh (reported $45.53, <0.02%). All differences within rounding tolerance."
+    },
+    {
+      "check": "Four numbers bridge",
+      "result": "PASS WITH NOTES",
+      "note": "#1=$45.53 verified. #3: $45.53x1.09=$49.63 verified at r=9.0% per bridge_logic. INCONSISTENCY: ON.json states 'blended WACC 9.0%' for the roll-forward rate while ON_inputs.json states the blended WACC is 10.2% (value-weighted: PSG 10.5% at ~55% of SOTP, AMG/ISG 9.5% each). At 10.2%, #3=$50.17, not $49.63. The 9.0% used in the computation is internally consistent with itself but contradicts the stated blended WACC. This produces a $0.54 (1.1%) difference in #3 — below the 2% material threshold. #4=$45.35 verified: 10x$1.85B-$0.857B/0.389B=$45.35. Implied return -62.7% verified. Rating SELL correctly follows from -62.7% vs the -10% threshold."
+    },
+    {
+      "check": "Sensitivity matrix spot check",
+      "result": "PASS WITH NOTES",
+      "note": "All nine cell values are arithmetically correct when rows are treated as PSG FY2030 revenue ($2.65B/$4.59B/$7.08B) and columns as PSG EBIT margin (15%/22%/28%). Sample verifications: [rev=2.65B,margin=15%]=29.8 VERIFIED; [rev=4.59B,margin=22%]=41.9 VERIFIED (base case); [rev=7.08B,margin=28%]=61.1 VERIFIED (61.2 computed, <0.2% rounding). LABEL ERROR: The JSON metadata and matrix_note state 'Rows = PSG EBIT margin, Columns = PSG FY2030 revenue' — this is TRANSPOSED relative to the actual data arrangement. The numbers are right; the axis labels in the JSON are reversed. Correction required in the metadata."
+    },
+    {
+      "check": "T-invariance stated",
+      "result": "PASS",
+      "note": "T-invariance is present and correctly computed in ON_valuation.json (t_invariance_full_sotp). Spread over T=3.0 to T=5.0: $45.90 to $45.19 = $0.71 = 1.56%, reported as 1.6%. Consistent with the report statement 'answer stable at $45-47 across T=3 to T=5'. PSG segment t_invariance table (T=2: $24.46, T=3: $24.27, T=4: $23.62) also present. AMG t_invariance similarly present. The verdict 'T-INVARIANT at T=4 normalization' is correctly stated."
+    },
+    {
+      "check": "Databundle cross-check",
+      "result": "PASS WITH NOTES",
+      "note": "All material figures trace correctly to the bundle (snapshot_id: ON_2026-06-21T0130Z). Price $121.62: MATCH. Shares 0.389B: MATCH. Net debt (cash 2.148B - debt 3.005B = 0.857B): MATCH. FY2025 revenue $5.995B: MATCH. FY2025 GAAP EPS $0.29: MATCH. NTM non-GAAP EPS $4.315 (bundle: 4.31516): MATCH. 52-week range $44.56-$134.92: MATCH. YTD +114.5%: MATCH. Consensus target $107.15 (bundle: 107.148): MATCH. 27 analysts: MATCH. Analyst split 13 Buy/18 Hold/0 Sell (bundle: strongBuy=1+buy=12=13, hold=18, sell=0): MATCH. Market cap $47.3B (bundle: 47.286B): MATCH. FY2025 FCF $1.419B: MATCH. FY2025 buybacks $1.378B (Cassandra): MATCH. MINOR: Report uses EV ~$48.2B (computed as price*shares+net_debt=48.17B); bundle shows EV=48.525B from yfinance (likely includes minority interest). Difference $0.33B (0.7%), within tolerance. FY2025 gross margin 33.1% (bundle ratios): matches report's 33.1% trough figure."
+    },
+    {
+      "check": "Bull/bear deltas consistent",
+      "result": "PASS WITH NOTES",
+      "note": "Cassandra -$14.80 PSG-debate delta VERIFIED: Bear PSG NOPAT_T=0.500B, Gordon=(1-3.5%/16%)/(11%-3.5%)=10.417x, EV_at_T=5.208B, PV=5.208/1.518=3.431B; delta vs base PSG EV 9.187B = -5.756B; /0.389B shares = -$14.80/sh. MATCH. Full bull $80.15 VERIFIED: PSG EV=16.675B (1.664x14.935/1.4909), AMG EV=8.826B (0.739x17.17/1.4377), ISG EV=6.534B (0.363x18); sum=32.035B; less 0.857B; /0.389B = $80.15. MATCH. INCONSISTENCY in Boreas SiC-debate-only quantification: the stated NOPAT_T increment of +0.429B (from 1.002B to 1.431B) generates a per-share delta of +$10.10/sh at base Gordon 13.67x, not the claimed +$12.93/sh. To reach $12.93/sh requires a NOPAT increment of $0.549B (to 1.551B). The stated $12.93 and $58.46 are inconsistent with the stated NOPAT_T of 1.431B. This is a minor internal inconsistency in the Boreas debate quantification text; the full bull $80.15 is correct and verified separately."
+    },
+    {
+      "check": "Bias audit tally",
+      "result": "PASS",
+      "note": "ON_valuation.json bias_audit counts 9 assumptions reviewed: 1 SLIGHT-CONSERVATIVE (AMG EBIT margin 19-20%), 8 NEUTRAL, 0 AGGRESSIVE. same_direction_count reported as 1 in ON.json. Threshold for stacked bias is 3+. 1 < 3, PASS. ON.json bias_audit.same_direction_count=1 matches the valuation.json lean_count (conservative=1). The verdict 'PASS — NO STACKED BIAS' is correctly supported. The identified conservative lean (AMG EBIT margin potentially 22-24% at honest center vs stated 19-20%) is acknowledged and does not compound with any other lean."
+    }
+  ],
+  "flags": [
+    {
+      "flag": "Sensitivity matrix axis labels transposed",
+      "severity": "COSMETIC",
+      "detail": "The fair_values grid in ON_valuation.json sensitivity_matrix is computed with rows=PSG FY2030 revenue and columns=PSG EBIT margin. The JSON metadata (axis_1_label, axis_2_label) and the matrix_note ('Rows = PSG EBIT margin. Columns = PSG FY2030 revenue') state the opposite. All 9 cell values are arithmetically correct; only the documentation of the axes is reversed. A reader following the label description would misread the table (e.g., would interpret the top-left cell as low-margin/low-revenue when it is actually low-revenue/low-margin — they both happen to be 29.8, but the interior cells differ). Correction: update the matrix_note and axis metadata to 'Rows = PSG FY2030 revenue, Columns = PSG EBIT margin'."
+    },
+    {
+      "flag": "#3 roll-forward rate inconsistency",
+      "severity": "MINOR",
+      "detail": "ON.json four_numbers.fair_value_12m states '#1 rolled forward at blended WACC 9.0%'. ON_headline.json bridge_logic confirms r=9.0%. However ON_inputs.json blended_wacc is 10.2% (PSG 10.5% at ~55% SOTP weight, AMG/ISG 9.5% each = ~10.2%). Using 9.0% gives #3=$49.63; using 10.2% gives #3=$50.17. The $0.54 difference is 1.1% — within the 2% pass threshold — but the stated rate in the narrative (9.0%) should be reconciled with the stated blended WACC (10.2%). Likely explanation: the 9.0% is an approximation or a rounding of a slightly different blended estimate."
+    },
+    {
+      "flag": "PSG FY2026 NOPAT path: reasoning text inconsistency",
+      "severity": "COSMETIC",
+      "detail": "The reasoning text states PSG FY2026 NOPAT = $0.560B derived from '$2.885B x 24% EBIT x 0.84 tax'. The actual arithmetic is 2.885 x 0.24 x 0.84 = 0.582B, not 0.560B (3.9% difference). This is an intermediate path point only — it does not feed into the exit-multiple computation which uses the terminal NOPAT_T=1.002B (verified correct). AMG FY2026 has a smaller mismatch (0.315B stated vs 0.318B computed, 0.8%). Both terminal-year NOPATs are verified correct. The error is in the explanatory reasoning text, not the valuation computation."
+    },
+    {
+      "flag": "Boreas SiC-debate-only delta inconsistency",
+      "severity": "MINOR",
+      "detail": "Boreas states that isolating the SiC market-share debate (NOPAT_T increment of $0.429B, from 1.002B to 1.431B) adds +$12.93/sh to reach $58.46. Computed: 0.429B increment x Gordon 13.67x / discount 1.4909 / 0.389B shares = +$10.10/sh (to $55.63), not +$12.93/sh. To reach $12.93/sh requires a NOPAT increment of $0.549B (total NOPAT_T 1.551B, not 1.431B as stated). The full bull case $80.15 is independently verified correct. The inconsistency is limited to the intermediate single-debate quantification in ON_bull.json."
+    }
+  ],
+  "corrections_required": [
+    {
+      "file": "ON_valuation.json and ON_headline.json (sensitivity_matrix)",
+      "correction": "Update matrix_note from 'Rows = PSG EBIT margin. Columns = PSG FY2030 revenue' to 'Rows = PSG FY2030 revenue. Columns = PSG EBIT margin'. Also update axis_1_label and axis_2_label so axis_1 (with values [2.65, 4.59, 7.08]) is labelled as the row axis (revenue) and axis_2 (with values [0.15, 0.22, 0.28]) as the column axis (margin). The grid values themselves are arithmetically correct and require no change.",
+      "priority": "LOW — cosmetic label error; values are correct"
+    },
+    {
+      "file": "ON_valuation.json, ON.json (reasoning text for PSG FY2026 NOPAT path)",
+      "correction": "The reasoning text '$2.885B x 24% EBIT x 0.84 tax = $0.560B' should read '= $0.582B' (or the revenue or margin assumption should be adjusted to be consistent with the stated $0.560B NOPAT). This is a cosmetic fix to the explanatory text; the terminal NOPAT_T used in the valuation is correct.",
+      "priority": "LOW — cosmetic; does not affect the valuation result"
+    },
+    {
+      "file": "ON_bull.json (delta_to_base_by_debate.debate_1_sic_share_only)",
+      "correction": "The stated delta_to_base=12.93 is inconsistent with the stated NOPAT_T increment of +0.429B (which generates +$10.10/sh, not +$12.93/sh). Correct either the delta to $10.10 and value_per_share to $55.63, or correct the NOPAT_T to 1.551B (increment +0.549B) with appropriate update to the quantification text. The full bull $80.15 is unaffected.",
+      "priority": "LOW — internal Boreas debate quantification only; full bull verified correct"
+    }
+  ],
+  "verified_claims": [
+    {"claim": "PSG Gordon exit multiple 13.67x", "source": "ON_valuation.json exit_inputs r=10.5%, g=4.5%, ROIC=25%", "status": "VERIFIED", "note": "Computed 13.6667x; rounds to 13.67x"},
+    {"claim": "PSG implied EV $9.187B", "source": "ON_valuation.json outputs.segments[0]", "status": "VERIFIED", "note": "Computed 9.185B; <0.02% diff"},
+    {"claim": "AMG Gordon exit multiple 14.55x", "source": "ON_valuation.json r=9.5%, g=4%, ROIC=20%", "status": "VERIFIED", "note": "Computed 14.5455x; rounds to 14.55x"},
+    {"claim": "AMG implied EV $5.253B", "source": "ON_valuation.json outputs.segments[1]", "status": "VERIFIED", "note": "Computed 5.251B; <0.04% diff"},
+    {"claim": "ISG implied EV $4.128B", "source": "ON_valuation.json outputs.segments[2]", "status": "VERIFIED", "note": "0.258B x 16 = 4.128B exact"},
+    {"claim": "SOTP aggregate: sum $18.568B, equity $17.711B, FV $45.53", "source": "ON_valuation.json outputs.aggregate", "status": "VERIFIED", "note": "Computed sum 18.564B, equity 17.707B, FV $45.52; all <0.05% rounding"},
+    {"claim": "Net debt $0.857B", "source": "ON_databundle.json balance FY2025: cash 2.148B - debt 3.005B", "status": "VERIFIED", "note": "Exact match"},
+    {"claim": "Fair value 12m #3 = $49.63", "source": "ON_headline.json bridge_logic at r=9.0%", "status": "VERIFIED", "note": "$45.53 x 1.09 = $49.63"},
+    {"claim": "Target 12m #4 = $45.35", "source": "ON_headline.json, ON_inputs.json target_12m at 10x EBITDA", "status": "VERIFIED", "note": "10x$1.85B-$0.857B/0.389B=$45.35"},
+    {"claim": "Implied return -62.7%", "source": "Computed from #4 vs price", "status": "VERIFIED", "note": "(45.35-121.62)/121.62=-62.7%"},
+    {"claim": "Rating SELL", "source": "CONTRACT §6 threshold SELL <= -10%", "status": "VERIFIED", "note": "-62.7% << -10%; SELL is correct"},
+    {"claim": "T-invariance spread 1.6% over T=3 to T=5", "source": "ON_valuation.json t_invariance_full_sotp", "status": "VERIFIED", "note": "Spread $0.71/$45.53=1.56%~1.6%; verdict stated"},
+    {"claim": "Bull SOTP $80.15", "source": "ON_valuation.json scenarios[bull], ON_bull.json scenario_spec", "status": "VERIFIED", "note": "Computed PSG 16.669B + AMG 8.827B + ISG 6.534B = 32.030B less 0.857B / 0.389B = $80.14; <0.01% rounding"},
+    {"claim": "Bear PSG-debate delta -$14.80/sh", "source": "ON_bear.json key_debates[0].value_impact", "status": "VERIFIED", "note": "Bear PSG EV 3.43B vs base 9.187B = -5.757B / 0.389 = -$14.80"},
+    {"claim": "Bias audit: 1 conservative lean, verdict PASS", "source": "ON_valuation.json bias_audit, ON.json bias_audit", "status": "VERIFIED", "note": "9 assumptions: 1 SLIGHT-CONSERVATIVE (AMG margin), 8 NEUTRAL, 0 AGGRESSIVE; 1 < 3 threshold"},
+    {"claim": "Price $121.62", "source": "ON_databundle.json price.current", "status": "VERIFIED", "note": "Exact match"},
+    {"claim": "Shares 389M / 0.389B", "source": "ON_databundle.json market_stats.shares_outstanding_b", "status": "VERIFIED", "note": "Exact match"},
+    {"claim": "NTM non-GAAP EPS $4.315/$4.32", "source": "ON_databundle.json estimates.eps_ntm=4.31516", "status": "VERIFIED", "note": "Rounds to $4.32 at 2dp"},
+    {"claim": "NTM P/E 28.2x", "source": "ON_databundle.json valuation_multiples.pe_ntm=28.184", "status": "VERIFIED", "note": "Rounds to 28.2x"},
+    {"claim": "FY2025 revenue $5.995B/~$6.0B", "source": "ON_databundle.json financials.income[0].revenue_b", "status": "VERIFIED", "note": "Exact match"},
+    {"claim": "FY2025 FCF $1.419B", "source": "ON_databundle.json financials.cashflow[0].fcf_b", "status": "VERIFIED", "note": "Exact match"},
+    {"claim": "Consensus target $107.15", "source": "ON_databundle.json estimates.target_mean=107.148", "status": "VERIFIED", "note": "Rounds to $107.15"},
+    {"claim": "NTM EPS $4.315 not anomalous", "source": "ON_databundle.json; FY2023 EPS $4.89 at peak", "status": "VERIFIED", "note": "Recovery from $0.29 GAAP trough to ~$4.32 non-GAAP NTM is consistent with historical peak; no AVGO-style impossible income implied (1.68B non-GAAP NI on 0.389B shares vs $1.056B annualized non-GAAP run-rate from Q1 2026; reasonable recovery path)"}
+  ]
+}

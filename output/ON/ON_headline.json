@@ -1,0 +1,125 @@
+{
+  "valuation_headline": {
+    "current_price": 121.62,
+    "fair_value_today": 45.53,
+    "target_12m": 45.35,
+    "fair_value_12m": 49.63,
+    "band_low": 12.21,
+    "band_high": 80.15,
+    "method_primary": "SOTP",
+    "method_why": ""
+  },
+  "four_numbers": {
+    "fair_value_today": {
+      "value": 45.53,
+      "multiple": 10.0,
+      "multiple_label": "EV/NTM EBITDA (blended FY2026-2027)",
+      "basis": "base case (Metis) intrinsic value — the anchor, not a weighted blend"
+    },
+    "price_today": {
+      "value": 121.62,
+      "multiple": 26.0,
+      "multiple_label": "EV/NTM EBITDA (blended FY2026-2027)",
+      "basis": "market"
+    },
+    "fair_value_12m": {
+      "value": 49.63,
+      "basis": "#1 rolled forward at r=9.0% less dividend 0.0",
+      "convergence_return_pct": -59.2
+    },
+    "target_12m": {
+      "value": 45.35,
+      "basis": "defensible_multiple",
+      "detail": {
+        "basis": "EV/EBITDA",
+        "defensible_multiple": 10.0,
+        "forward_metric_label": "NTM EBITDA (FY2027 base ~$1.85B rolled forward)",
+        "forward_metric_value": 1.85,
+        "multiple_rationale": "Our SOTP yields ~$45.50/share intrinsic. Rolled forward at r=10.2% (blended WACC): #3 = $50.15. The bear case evidence (Infineon 200mm ramp observable, impairments DOCUMENTED) is OBSERVABLE-AND-NEAR per Theia, which per METHODS.md moves the target slightly below #3. Target = $50 (barely below #3; not a dramatic lean because the bull design-win evidence is EXTRAPOLATED, a real offsetting force). The $50 target corresponds to ~10x NTM EBITDA. Mature semis trade 12-18x EV/EBITDA but on NORMALIZED (not recovery-year) EBITDA. At recovery-year EBITDA of ~$1.85B and 10x multiple, EV = $18.5B, equity = $17.6B, price = $45.30/sh. The gap to #4 ($50) reflects one year's value creation at our WACC.",
+        "price": 45.35
+      },
+      "implied_12m_total_return_pct": -62.7
+    }
+  },
+  "street_reconstruction": {},
+  "street_target": {
+    "mean": null,
+    "mean_multiple": null,
+    "mean_implied_growth_pct": null,
+    "high": null,
+    "return_pct": null,
+    "n_analysts": null
+  },
+  "rating": {
+    "action": "SELL",
+    "tone": "negative",
+    "implied_12m_total_return_pct": -62.7,
+    "convergence_return_pct": -59.2,
+    "street_return_pct": null,
+    "hurdle_buy_pct": 15.0,
+    "hurdle_sell_pct": -10.0,
+    "margin_of_safety_pct": 12.0
+  },
+  "conviction": {
+    "label": "MEDIUM",
+    "valuation_confidence": "LOW",
+    "path_confidence": "MEDIUM",
+    "assigned_by": "daedalus",
+    "bull_self_conviction": "MEDIUM",
+    "bear_self_conviction": "HIGH",
+    "ensemble_stability": "MEDIUM",
+    "data_quality": "CLEAN",
+    "band_ratio": 1.492,
+    "caps_applied": [],
+    "basis": "action SELL: Daedalus assigned MEDIUM (evidence read across base/bull/bear) -> MEDIUM"
+  },
+  "sensitivity_matrix": {
+    "description": "The two crux levers: PSG FY2030 revenue (SiC recovery level) x PSG EBIT margin (fab utilization recovery). AMG and ISG held at base.",
+    "dominant_lever": "PSG FY2030 revenue (SiC recovery). Moving from bear $2.65B to bull $7.08B at same margin = 2.1-3.0x value swing. Revenue is the dominant lever.",
+    "second_order": "ROIC in the Gordon formula is second-order (changing 20% to 30% = ~14% change in multiple = ~5-7% in FV). EBIT margin is second-order to revenue.",
+    "axes": {
+      "axis_1_label": "PSG FY2030 revenue",
+      "axis_1_values_b": [
+        2.65,
+        4.59,
+        7.08
+      ],
+      "axis_1_labels": [
+        "$2.65B (bear)",
+        "$4.59B (base)",
+        "$7.08B (bull)"
+      ],
+      "axis_2_label": "PSG EBIT margin (FY2030)",
+      "axis_2_values": [
+        0.15,
+        0.22,
+        0.28
+      ],
+      "axis_2_labels": [
+        "15% (bear)",
+        "22% (base-mid)",
+        "28% (bull)"
+      ]
+    },
+    "fair_values": [
+      [
+        29.8,
+        33.4,
+        36.6
+      ],
+      [
+        35.5,
+        41.9,
+        47.3
+      ],
+      [
+        42.9,
+        52.7,
+        61.1
+      ]
+    ],
+    "matrix_note": "Rows = PSG EBIT margin. Columns = PSG FY2030 revenue. Current price $121.62 is far above all cells. Even the bull-bull ($7.08B rev, 28% margin) yields only $61.1/share -- half the current price. The market is not using intrinsic NOPAT valuation.",
+    "current_price_context": "To justify $121.62 at our Gordon multiple (13.67x EV/NOPAT) requires total company NOPAT of $3.21B = $21.2B revenue at 18% margin. That is 2.3x the total company bull case FY2030 revenue ($9.19B) and exceeds the total projected global SiC device market by 2030."
+  },
+  "bridge_logic": "#1 fair value today 45.53 -> #3 fair value 12m 49.63 (x(1+0.090) - div 0.0); #4 target 12m 45.35 (defensible_multiple); implied return to #4 = -62.7%, to #3 = -59.2%, to street mean None = None%"
+}

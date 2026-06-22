@@ -1,0 +1,302 @@
+{
+  "ticker": "ON",
+  "as_of": "2026-06-21",
+  "price": 121.62,
+  "market_cap_b": 47.286,
+  "ytd_pct": 114.5,
+  "return_1y_pct": 130.25,
+
+  "analyst_tape": {
+    "num_analysts": 27,
+    "rec_mean": 2.19,
+    "rec_label": "Moderate Buy (mean 2.19 on 1=Strong Buy to 5=Strong Sell scale)",
+    "target_mean": 107.15,
+    "target_median": 105.0,
+    "target_high": 150.0,
+    "target_low": 68.0,
+    "buy_count": 13,
+    "hold_count": 18,
+    "sell_count": 0,
+    "strong_buy_count": 1,
+    "note": "Stock trades 13.6% ABOVE the mean analyst target ($121.62 vs $107.15). This is a meaningful priced-for-perfection signal: even with a moderate-buy consensus, the stock has run through the street's central estimate. Mizuho's $150 target is the sole bull above price."
+  },
+
+  "post_announcement_rating_actions": [
+    {
+      "date": "2026-05-05",
+      "firm": "KeyBanc Capital Markets",
+      "action": "price_target_raise",
+      "old_pt": 75,
+      "new_pt": 125,
+      "rating": "Overweight",
+      "rating_change": "maintained",
+      "note": "Called a cyclical bottom; cited positive lead times, book-to-bill, and backlog trends; expects strong H2 seasonality plus AI datacenter demand doubling"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Bank of America",
+      "action": "price_target_raise",
+      "old_pt": 85,
+      "new_pt": 115,
+      "rating": "Buy",
+      "rating_change": "maintained",
+      "note": "Q2 guidance 'helped meaningfully by rapidly scaling AI franchise'; saw inflection in industrial and auto"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Susquehanna",
+      "action": "price_target_raise",
+      "old_pt": 100,
+      "new_pt": 120,
+      "rating": "Positive",
+      "rating_change": "maintained",
+      "note": "Company has 'finally called a bottom'; highlighted AI datacenter revenue expected to double YoY in 2026"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Deutsche Bank",
+      "action": "price_target_raise",
+      "old_pt": 75,
+      "new_pt": 110,
+      "rating": "Buy",
+      "rating_change": "maintained",
+      "note": "Called Q1 an 'inflection point'; cited AI datacenter strength and recovering automotive demand"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Roth Capital",
+      "action": "price_target_raise",
+      "old_pt": 70,
+      "new_pt": 125,
+      "rating": "Buy",
+      "rating_change": "maintained",
+      "note": "Beat on revenue, Q2 guide above Street; recovering auto demand and AI datacenter wins cited"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "JPMorgan",
+      "action": "price_target_raise",
+      "old_pt": 70,
+      "new_pt": 100,
+      "rating": "Neutral",
+      "rating_change": "maintained",
+      "note": "Acknowledged industrial and AI datacenter strength plus content share gains; kept Neutral given valuation"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Goldman Sachs",
+      "action": "price_target_raise",
+      "old_pt": 60,
+      "new_pt": 80,
+      "rating": "Neutral",
+      "rating_change": "maintained",
+      "note": "Mixed on SiC and image sensor segment performance; limited restocking visibility; lowest of the post-Q1 raises"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Barclays",
+      "action": "price_target_raise",
+      "old_pt": 75,
+      "new_pt": 100,
+      "rating": "Equal Weight",
+      "rating_change": "maintained",
+      "note": "Raised on improving demand signals; held at equal-weight given stock already near revised target"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Citi",
+      "action": "price_target_raise",
+      "old_pt": 68,
+      "new_pt": 100,
+      "rating": "Neutral",
+      "rating_change": "maintained",
+      "note": "Recognized Q1 beat and improving demand; retained Neutral on valuation"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Truist Securities",
+      "action": "price_target_raise",
+      "old_pt": 66,
+      "new_pt": 101,
+      "rating": "Hold",
+      "rating_change": "maintained",
+      "note": "Recovery acknowledged; Hold maintained on price already near revised target"
+    },
+    {
+      "date": "2026-05-05",
+      "firm": "Cantor Fitzgerald",
+      "action": "price_target_raise",
+      "old_pt": 95,
+      "new_pt": 100,
+      "rating": "Neutral",
+      "rating_change": "maintained",
+      "note": "Minor raise; remained most cautious among covering firms on the pace of recovery"
+    },
+    {
+      "date": "2026-06-15",
+      "firm": "Citi",
+      "action": "price_target_raise",
+      "old_pt": 100,
+      "new_pt": 120,
+      "rating": "Neutral",
+      "rating_change": "maintained",
+      "note": "Second raise in six weeks; cited recent price hikes and analog market recovery; initiated 90-day upside catalyst watch for September analyst day"
+    },
+    {
+      "date": "2026-06-00",
+      "firm": "Mizuho",
+      "action": "price_target_raise",
+      "old_pt": 130,
+      "new_pt": 150,
+      "rating": "Outperform",
+      "rating_change": "maintained",
+      "note": "Only firm with a target above the current price ($150 vs $121.62); most bullish on AI datacenter + SiC recovery combo"
+    }
+  ],
+
+  "post_earnings_pattern": "BEAT-AND-RAISE with unanimous target hikes but wide spread. Q1 2026 (May 4): revenue $1.513B beat $1.490B est., non-GAAP EPS $0.64 beat $0.61 est., gross margin 38.5% third consecutive quarterly expansion. Q2 2026 guide: $1.535-1.635B revenue, non-GAAP GM 38-40%. All 10+ firms that commented raised targets. The spread ($80-$150) and fact that 15 of 27 analysts remain Hold/Neutral despite the raise wave reveals the market debate: recovery is confirmed, but whether the 114% YTD move has already discounted it is contested.",
+
+  "street_thesis_one_line": "Onsemi is a cyclical power-and-sensing semiconductor company at an earnings trough, bottoming as automotive SiC content ramps (55% share of new EV models at 2026 Beijing Auto Show), AI datacenter power demand accelerates (revenue doubling YoY), and the new Treo analog platform opens a $36B TAM; the bull case is that normalised non-GAAP EPS recovers to $5+ by FY2028, making the current 28x NTM P/E cheap on through-cycle earnings.",
+
+  "estimate_artifact_check": {
+    "eps_ntm_bundle": 4.315,
+    "eps_ntm_source": "yfinance, labeled '+1y'",
+    "eps_ntm_verified": 4.32,
+    "pe_ntm_bundle": 28.2,
+    "flag": "CONDITIONALLY CLEAN — with important context. The $4.315 NTM EPS is consistent with a forward blended consensus spanning roughly Q3 2026 through Q2 2027 (i.e., the next 12 months from mid-2026). It is NOT the FY2026 calendar-year consensus, which is closer to $2.90-$3.20 non-GAAP. The arithmetic is internally consistent: $121.62 / $4.315 = 28.2x P/E as stated. However, Daedalus must NOT use $4.315 as a FY2026 EPS figure — it should be treated as a mid-cycle forward number that blends current-year ($2.90 non-GAAP) with expected FY2027 recovery (~$5.50). FY2026 GAAP EPS is far lower (Q1 GAAP was -$0.08 due to amortisation and restructuring charges, vs non-GAAP $0.64). Flag: USE NON-GAAP NTM CONSISTENTLY; do not mix GAAP and non-GAAP.",
+    "fy2026_nonGAAP_eps_consensus": "~2.90-3.20 (full year, non-GAAP; based on Q1 actuals $0.64 + Q2 guide midpoint ~$0.72 + H2 recovery trajectory)",
+    "fy2027_nonGAAP_eps_consensus": "~4.50-5.50 (recovery year, implied by analyst targets)",
+    "ttm_pe_note": "TTM P/E of 89.4x is inflated by one-off charges in the downcycle (FY2025 net income $121M on prior-peak revenues); treat as distorted and ignore for valuation"
+  },
+
+  "q1_2026_actuals": {
+    "revenue_m": 1513,
+    "revenue_yoy_pct": 5.0,
+    "revenue_qoq_pct": -1.1,
+    "nonGAAP_EPS": 0.64,
+    "GAAP_EPS": -0.08,
+    "nonGAAP_gross_margin_pct": 38.5,
+    "GAAP_gross_margin_pct": 38.5,
+    "automotive_revenue_m": 797.3,
+    "AI_datacenter_revenue_qoq_growth_pct": 30,
+    "note": "Q1 marked the first YoY revenue growth quarter since Q2 2023 — management called it 'a clear inflection point'. Gross margin 38.5% is the third consecutive quarterly expansion from the ~33% trough in mid-2025."
+  },
+
+  "q2_2026_guidance": {
+    "revenue_range_b": [1.535, 1.635],
+    "revenue_midpoint_b": 1.585,
+    "nonGAAP_gross_margin_range_pct": [38.0, 40.0],
+    "note": "Guidance excludes $30-40M of non-core revenue exits (intentional divestiture of ~$300M in non-core 2026 revenue). Adjusted organic growth midpoint ~+7% QoQ — above seasonal. No specific non-GAAP EPS guidance range recovered from public sources; Q2 consensus ~$0.72."
+  },
+
+  "capex_guidance": [],
+
+  "reverse_multiple": {
+    "current_price": 121.62,
+    "current_pe_ntm": 28.2,
+    "ntm_eps_used": 4.315,
+    "ntm_eps_note": "Blended forward consensus spanning ~Q3 2026-Q2 2027; NOT FY2026 calendar estimate",
+    "implied_5y_revenue_cagr": "~8-10% from FY2025 trough ($6.0B to ~$9-10B by FY2030)",
+    "implied_peak_nonGAAP_eps": "~$5.50-6.00 by FY2028 (prior peak was non-GAAP ~$5.80 in FY2023, the market assumes a full return to peak and then modest growth beyond)",
+    "implied_normalised_pe_on_peak": "~20-22x peak earnings (at $121.62 / ~$5.80 peak non-GAAP EPS)",
+    "implied_wacc": "~9-10% (consistent with beta 1.98, risk-free ~4.3%, equity premium ~4.5%; Daedalus should build segment-level WACCs with each own CAPM derivation)",
+    "street_reconstruction": "The street is paying 28x a forward blended EPS of $4.32 that it expects to reach as the company recovers from a severe downcycle (gross margin 33% trough back to 45%+ normalised). The bull case — the one that justifies $125-$150 targets — requires: (1) revenue recovering to $8-9B by FY2028 at 18-20% operating margins, (2) AI datacenter revenue doubling to ~$1B+ annually by FY2027 as GaNEXUS and Treo platform scale, and (3) SiC automotive content maintaining ~55% share of new EV model wins while the EV market resumes growth post-2025 softness. On those assumptions, FY2028 non-GAAP EPS of $5.50+ at 22-25x = $120-137 fair value, making the current price roughly fair on an optimistic base.",
+    "point_of_disagreement": "The key contested variable is whether gross margin can recover to 45%+ (FY2023 level) given: (a) deliberate fab capacity investments made at cycle peak are now underutilized (utilisation rates drove the margin collapse), and (b) SiC competitive pricing pressure from Infineon/STMicro. The holds/neutrals (Goldman $80, Barclays $100) are not bears on the business — they believe the recovery is real but that $121 already prices in the full margin recovery. The bulls (Mizuho $150) argue margin will EXCEED prior peak as the Treo and GaNEXUS portfolio shift mix toward higher-margin products."
+  },
+
+  "sentiment": {
+    "social": "UNAVAILABLE (StockTwits HTTPError — no data retrieved)",
+    "institutional_pct": 108.98,
+    "insider_pct": 0.34,
+    "institutional_note": "Institutional ownership >100% reflects short interest and timing of reporting windows, not a data error — normal for a heavily traded large-cap semicon",
+    "52w_high": 134.92,
+    "52w_low": 44.56,
+    "ma50": 105.60,
+    "ma200": 68.51,
+    "price_vs_52w_high_pct": -9.9,
+    "price_vs_ma200_pct": 77.5,
+    "price_vs_ma50_pct": 15.2,
+    "technicals_note": "Stock is 78% above its 200-day MA and within 10% of its 52-week high. This is not a mean-reversion setup — the stock has moved from deep-trough ($44.56) to within striking distance of prior highs ($134.92) in a single 12-month run. The 15% gap above the 50-day MA suggests near-term momentum is stretched but trend intact."
+  },
+
+  "key_news": [
+    {
+      "title": "This Company Could Become the Nvidia of AI Inference",
+      "publisher": "Motley Fool",
+      "date": "2026-06-20",
+      "url": "https://www.fool.com/investing/2026/06/20/this-company-could-become-the-nvidia-of-ai-inferen/",
+      "relevance": "Bull thesis piece arguing onsemi's power semiconductors (SiC, GaN) are the essential picks-and-shovels for AI inference racks; highlights 120kW rack content of $9,500 vs 800V rack content of $115,000 as the up-content lever"
+    },
+    {
+      "title": "ON Semiconductor Launches GaNEXUS Gallium Nitride Power Portfolio",
+      "publisher": "Insider Monkey / onsemi press release",
+      "date": "2026-06-19",
+      "url": "https://finance.yahoo.com/technology/articles/semiconductor-launches-ganexus-gallium-nitride-102510380.html",
+      "relevance": "GaNEXUS: GaN FETs 40V-650V plus integrated smart devices; design funnel >$1.5B; targets AI data center power delivery and industrial; can reduce magnetic component size 60% and improve power density 2x vs silicon"
+    },
+    {
+      "title": "ON Semiconductor Stock Could Be 17% Overvalued After Its Recent Run",
+      "publisher": "Simply Wall St. / Yahoo Finance",
+      "date": "2026-06-20",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductor-stock-could-17-overvalued-101316663.html",
+      "relevance": "Bear data point: model-based fair value ~$103.97, implying current price 17% rich; corroborates holds/neutrals from Goldman, Barclays, Cantor"
+    },
+    {
+      "title": "ON Semiconductor: Overbought Ahead of Slow Fundamental Recovery, Downgrade to Hold",
+      "publisher": "Seeking Alpha",
+      "date": "2026-06-00",
+      "url": "https://seekingalpha.com/article/4898948-on-semiconductor-stock-q1-overbought-ahead-of-slower-fundamental-recovery-downgrade-hold",
+      "relevance": "Downgrade after +44% rally from March 2026 bottom; argues fundamental recovery is slower than priced; bullish on long-term thesis but tactical hold"
+    },
+    {
+      "title": "Q1 2026 Earnings: Revenue $1.513B, non-GAAP EPS $0.64, GM 38.5%; AI Datacenter +30% QoQ",
+      "publisher": "SEC 8-K / Earnings Call (May 4, 2026)",
+      "date": "2026-05-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001097864/000114036126018868/ef20072220_ex99-1.htm",
+      "relevance": "Primary source. Beat on revenue and EPS. Third consecutive gross margin expansion. AI datacenter doubled YoY in Q1. SiC wins: 55% share of new EV models at 2026 Beijing Auto Show. Q2 guide above seasonal."
+    },
+    {
+      "title": "ON Semiconductor: The Rally Still Has Legs — Upgrade to Buy",
+      "publisher": "Seeking Alpha",
+      "date": "2026-06-00",
+      "url": "https://seekingalpha.com/article/4913529-on-semiconductor-stock-rally-still-has-legs-upgrade-buy",
+      "relevance": "Counter-bull take: argues Q1 was first YoY revenue growth since Q2 2023, AI and SiC are structural not cyclical, stock still undervalued on through-cycle earnings"
+    }
+  ],
+
+  "sic_competitive_position": {
+    "market_share_2023": {
+      "STMicroelectronics": "32.6% (leader)",
+      "onsemi": "~22-25% (#2, rose from #4 in 2022)",
+      "Infineon": "~15-18% (#3)",
+      "Wolfspeed": "~12-15% (#4)",
+      "ROHM": "~8-10% (#5)",
+      "source": "TrendForce (June 2024) and multiple market research reports (2024-2025)"
+    },
+    "key_dynamics": "onsemi gained 2 ranking positions in one year (2022→2023) through aggressive LTA wins with EV OEMs. The 2024-2025 EV demand slowdown hit hard — revenue decline from $8.3B to $6.0B reflects automotive/industrial inventory correction, not share loss. The SiC market itself grew but onsemi's utilisation fell as fab investments (Czech Republic) came online during a demand trough. SiC competition is intensifying: STMicro expanded; Infineon moving to 200mm wafers for cost reduction; Chinese domestic SiC suppliers (BYD internal) emerging as medium-term risk.",
+    "ev_content": "120kW rack AI content $9,500; 800V EV traction inverter content $115,000 — the EV remains the largest content opportunity per unit but requires EV cycle recovery"
+  },
+
+  "earnings_date": "2026-08-03",
+
+  "runway_comment": "Near-term sentiment is aggressively positive: the stock has returned 130% in 12 months, trades through the consensus analyst target, and attracted a wave of post-Q1 target hikes. The September 2026 analyst day (flagged by Citi's 90-day catalyst watch) is the next major catalyst, where management is expected to present updated long-term revenue and margin targets — a reset of the through-cycle earnings power thesis. The key sentiment risk: 18 of 27 analysts remain Hold/Neutral despite the raise wave, suggesting the crowded-long positioning and premium-to-consensus price create asymmetric downside if Q2 revenue comes in below the $1.585B midpoint or gross margin expansion stalls. Q2 earnings (August 3) is a near-term binary: a second consecutive beat extends the rally; any shortfall risks a sharp sentiment reversal from an already-stretched technical position.",
+
+  "market_lean": {
+    "direction": "BULL",
+    "strength": "MODERATE-STRONG",
+    "basis": "Unanimous post-Q1 target hike wave, first YoY revenue growth in 3 years, AI datacenter doubling, SiC model wins at 55% of new EVs. Lean is bull but contested: 15/27 analysts are holds/neutrals, stock is 13.6% above consensus target, and the Simply Wall St model plus Goldman's $80 target represent a meaningful sceptical minority. The bullish headline narrative is valid; the valuation is the fault line."
+  },
+
+  "sources": [
+    "ON_databundle.json (Hermes freeze, 2026-06-21T01:30Z)",
+    "SEC EDGAR 8-K Q1 2026 press release: https://www.sec.gov/Archives/edgar/data/0001097864/000114036126018868/ef20072220_ex99-1.htm",
+    "Q1 2026 earnings call transcript (Alphastreet, Motley Fool, Benzinga) — May 4, 2026",
+    "Yahoo Finance: KeyBanc price target hike article (May 5, 2026)",
+    "TrendForce SiC market share report (June 2024): https://www.trendforce.com/presscenter/news/20240620-12196.html",
+    "onsemi GaNEXUS press release: https://www.onsemi.com/company/news-media/press-announcements/en/onsemi-introduces-ganexus-gallium-nitride-power-portfolio",
+    "Seeking Alpha downgrades and upgrades (June 2026)",
+    "Yahoo Finance / Simply Wall St overvaluation piece (June 20, 2026)",
+    "Gurufocus: Citi price target raise June 15, 2026",
+    "WebSearch aggregated analyst actions (May-June 2026)"
+  ]
+}

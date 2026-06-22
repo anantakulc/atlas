@@ -1,0 +1,184 @@
+{
+  "ticker": "ON",
+  "company_name": "ON Semiconductor Corporation (onsemi)",
+  "hq": "Scottsdale, Arizona",
+  "employees": 22600,
+  "founded": 1992,
+  "exchange": "NASDAQ",
+
+  "business_summary": "onsemi is a power and intelligent sensing semiconductor company serving automotive, industrial, and data center markets. Its strategic pivot — executed from 2021 under CEO Hassane El-Khoury — shifted the company from a broad 'commodity analog' supplier toward a focused intelligent power and sensing platform, deliberately exiting low-margin commodity products (~$300M in 2026) and investing in SiC (silicon carbide), GaN (gallium nitride), and advanced CMOS image sensors. The result is a higher-quality but more concentrated revenue mix, exposed to automotive EV content and AI data center power — both of which went through simultaneous corrections in 2024-2025, driving revenue down 27% from peak ($8.33B FY2022 → $6.00B FY2025) and gross margin from 47% to 33%.",
+
+  "segments": [
+    {
+      "name": "Power Solutions Group (PSG)",
+      "description": "The largest segment by revenue. Designs and manufactures power semiconductor devices for power conversion, power switching, signal conditioning, and circuit protection. Core product families include SiC MOSFETs and SiC JFETs (the Treo SiC traction inverter platform), intelligent power modules (IPMs), IGBTs, MOSFETs, thyristors, and rectifiers. PSG is the primary beneficiary of EV traction inverter content (800V architecture = ~$115,000 system content per vehicle opportunity vs ~$9,500 for a 120kW AI rack).",
+      "revenue_share_est": "~55-60% of total revenue",
+      "products": [
+        "SiC MOSFETs (EliteSiC family)",
+        "SiC JFETs",
+        "Treo SiC intelligent power module platform",
+        "GaN FETs (GaNEXUS family, 40V-650V, launched June 2026)",
+        "Integrated smart GaN devices",
+        "IGBTs and IPMs",
+        "Power modules for EV traction inverters and OBCs"
+      ],
+      "end_markets": [
+        "Automotive EV traction inverters (primary driver — 800V architecture content)",
+        "EV on-board chargers (OBCs)",
+        "DC fast charging infrastructure",
+        "AI data center power delivery (GaNEXUS — newer)",
+        "Renewable energy (solar central inverters, energy storage)",
+        "Industrial motor drives"
+      ],
+      "margin_profile": "Highest-margin segment when at full utilisation; SiC has structurally higher gross margins than silicon but is sensitive to fab utilisation — the Czech Republic fab ramp into a demand trough compressed margins sharply in 2024-2025. Normalised segment gross margin ~48-52% (vs ~33% trough)."
+    },
+    {
+      "name": "Analog and Mixed-Signal Group (AMG)",
+      "description": "Designs analog and mixed-signal ICs including power management, sensor interface, connectivity, and standard products. The flagship platform is Treo — described as 'the industry's most advanced analog and mixed-signal platform built on BCD 65nm technology' targeting a $36B addressable market. Treo is already generating initial revenue with a target of $1B revenue by 2030. AMG serves the broadest end-market mix in onsemi's portfolio.",
+      "revenue_share_est": "~25-30% of total revenue",
+      "products": [
+        "Treo platform (BCD 65nm — power management ICs, LDOs, voltage translators, analog front-ends, ethernet controllers, sensor interfaces)",
+        "Battery management ICs",
+        "Gate drivers",
+        "Analog front ends for industrial sensors",
+        "Connectivity ICs"
+      ],
+      "end_markets": [
+        "Automotive (ADAS, body electronics, EV battery management)",
+        "Industrial automation and robotics",
+        "AI data centers (power management)",
+        "Aerospace and defense",
+        "Medical"
+      ],
+      "margin_profile": "Moderate gross margins relative to PSG; Treo platform should carry structurally higher margins as it scales given BCD process differentiation and high design-in stickiness."
+    },
+    {
+      "name": "Intelligent Sensing Group (ISG)",
+      "description": "Develops CMOS image sensors, image signal processors, short-wave infrared (SWIR) sensors, and photon-counting technologies (SPAD arrays, silicon photomultipliers). ISG is the smallest segment but the highest-IP intensity. Its CMOS image sensors target automotive ADAS (the primary revenue source), factory automation, safety systems, and robotics. SWIR sensors and SPAD arrays address lidar, medical imaging, and quantum sensing adjacencies.",
+      "revenue_share_est": "~15-20% of total revenue",
+      "products": [
+        "CMOS image sensors (automotive ADAS — front, side, rear cameras)",
+        "Image signal processors (ISPs)",
+        "SWIR image sensors",
+        "Single-photon avalanche diode (SPAD) arrays",
+        "Silicon photomultiplier (SiPM) devices",
+        "Lidar receiver ICs"
+      ],
+      "end_markets": [
+        "Automotive ADAS (primary — cameras for NCAP and OEM safety standards)",
+        "Factory automation and machine vision",
+        "Security and surveillance",
+        "Robotics (depth sensing)",
+        "Medical imaging",
+        "Scientific / quantum sensing"
+      ],
+      "margin_profile": "Typically highest gross margins in the portfolio (image sensors are IP-intensive, high ASP) but ISG revenues were soft in the 2024-2025 correction as ADAS content per vehicle plateaued and industrial machine vision contracted."
+    }
+  ],
+
+  "end_market_exposure": {
+    "automotive_pct_est": "~52-55%",
+    "industrial_pct_est": "~25-30%",
+    "ai_datacenter_pct_est": "~5-8% (growing rapidly from near zero in 2024; doubling YoY in 2026)",
+    "other_pct_est": "~10-15% (computing, communications, consumer — being deliberately exited as non-core)",
+    "automotive_revenue_q1_2026_m": 797.3,
+    "note": "Q1 2026 automotive was $797M of $1,513M total (53%). The company's auto exposure is concentrated in EV powertrain (SiC) and ADAS imaging — two sub-markets that corrected sharply from 2024 over-inventory. Industrial exposure is to factory automation, renewable energy, and AI data center power (the fastest-growing sub-segment within industrial)."
+  },
+
+  "industry": {
+    "name": "Power and Intelligent Sensing Semiconductors",
+    "sub_markets": [
+      "Silicon carbide (SiC) power devices",
+      "Gallium nitride (GaN) power devices",
+      "Automotive power ICs",
+      "Analog and mixed-signal ICs",
+      "CMOS image sensors (automotive grade)"
+    ],
+    "key_drivers": [
+      "EV penetration and architecture upgrade to 800V (the single largest driver of SiC content per vehicle)",
+      "AI data center power density — each new AI rack generation requires more power conversion, favouring SiC and GaN",
+      "ADAS regulatory mandates (Euro NCAP, US NHTSA) driving camera/sensor content per vehicle",
+      "Renewable energy (solar, wind, storage) requiring wide bandgap power conversion",
+      "Industrial automation and robotics electrification"
+    ],
+    "cycle_position": "Recovering from a deep inventory correction (2024-2025). The correction had two causes: (1) EV demand overestimation — automakers and Tier 1s over-ordered SiC and power ICs in 2022-2023, then drew down inventory in 2024-2025; (2) industrial/automation slowdown as capital spending contracted globally. onsemi's revenue fell 27% from peak. As of Q1 2026, the correction appears to be bottoming: book-to-bill has improved, lead times are normalising, and onsemi reported its first YoY revenue growth quarter in three years.",
+    "wafer_fab_dynamics": "onsemi operates a fab-lite-to-fab model with significant internal manufacturing. Key facilities: East Fishkill NY (200mm silicon, acquired from GlobalFoundries), Roznov Czech Republic (SiC substrate and wafer fab, partly CHIPS Act-funded with ~$2B expected), Hudson NH, and multiple global assembly/test sites. The Czech Republic SiC fab is the strategic investment — it underpins onsemi's ambition to be vertically integrated in SiC (from substrate to device), which reduces substrate cost risk vs competitors that buy Wolfspeed or SiCrystal substrates. Permitting delays pushed first-wafer milestones to late 2026. Industry-wide: Infineon is building 200mm SiC wafer capacity in Malaysia; STMicro is investing in Italy. The transition from 150mm to 200mm SiC wafers is the key cost lever — producers that reach 200mm volume first gain structural cost advantage.",
+    "sic_market_size": {
+      "2025_estimate_b": 2.73,
+      "2030_forecast_b": 8.41,
+      "cagr_2025_2030_pct": 25.7,
+      "automotive_share_pct": 62,
+      "source": "Mordor Intelligence / multiple market research (2025)"
+    },
+    "gan_market_note": "GaN for power electronics is an earlier-stage market than SiC, projected to grow rapidly as AI data center power budgets scale. onsemi's GaNEXUS launch (June 2026) targets 40V-650V applications; the $1.5B design funnel is the key indicator of early traction. Competition: Infineon (CoolGaN), Texas Instruments, GaN Systems (acquired by Infineon)."
+  },
+
+  "competitive_position": {
+    "sic_market_share": {
+      "year": "2023",
+      "onsemi_rank": 2,
+      "onsemi_share_pct": "~22-25%",
+      "STMicro_share_pct": "~32.6%",
+      "Infineon_share_pct": "~15-18%",
+      "Wolfspeed_share_pct": "~12-15%",
+      "ROHM_share_pct": "~8-10%",
+      "source": "TrendForce (June 2024)"
+    },
+    "key_competitive_differentiators": [
+      "Vertical integration in SiC (substrate → device) via Czech Republic fab — if ramped, lowest cost SiC producer",
+      "55% share of new EV model wins at 2026 Beijing Auto Show — leading design-win momentum in next-generation EVs",
+      "Treo platform (BCD 65nm) — differentiated process node for automotive analog ICs, high barrier to re-design",
+      "GaNEXUS — early mover in integrated smart GaN for AI data center power trees"
+    ],
+    "key_competitive_risks": [
+      "STMicro (#1 in SiC) has stronger European OEM relationships and is aggressively pricing to defend share",
+      "Infineon's 200mm SiC transition (Malaysia) could undercut onsemi on cost by 2027-2028",
+      "Chinese domestic SiC suppliers (BYD in-house, Sanan IC, SICC) gaining in China's EV market — China EV is onsemi's highest-growth SiC region",
+      "Wolfspeed (pure-play SiC substrate supplier) faces financial distress, creating substrate supply uncertainty — but also opportunity for onsemi's internal fab",
+      "GaN competition: Infineon already acquired GaN Systems; Texas Instruments has mature GaN for data center"
+    ],
+    "named_peers": [
+      {"name": "STMicroelectronics", "ticker": "STM", "relevance": "#1 SiC market share; primary automotive power semiconductor rival"},
+      {"name": "Infineon Technologies", "ticker": "IFNNY", "relevance": "#3 SiC; dominant in automotive MCUs and general power; building 200mm SiC"},
+      {"name": "Texas Instruments", "ticker": "TXN", "relevance": "Primary rival in analog/mixed-signal (AMG segment); broader product portfolio but less SiC focused"},
+      {"name": "Wolfspeed", "ticker": "WOLF", "relevance": "Pure-play SiC substrate and device; onsemi is their customer and competitor; Wolfspeed's distress is a competitor risk"},
+      {"name": "Renesas Electronics", "ticker": "RNECY", "relevance": "Automotive MCU and power rival; less direct overlap in SiC"},
+      {"name": "NXP Semiconductors", "ticker": "NXPI", "relevance": "Automotive semiconductor rival (MCU/radar/connectivity); less direct in power"}
+    ]
+  },
+
+  "management": {
+    "CEO": "Hassane El-Khoury (appointed 2021)",
+    "CFO": "Thad Trent",
+    "strategic_pivot_note": "El-Khoury's 2021 strategic pivot is the key management fact: he refocused onsemi from 50,000+ product breadth to a narrowed, high-value portfolio, divested non-core product lines, and invested in SiC manufacturing. The pivot created the current cycle sensitivity (deeper revenue trough) but also the structural margin expansion story (higher-value mix). Execution has been strong on design wins; the risk is the fab investment timing coincided with the demand trough.",
+    "insider_ownership_pct": 0.34,
+    "insider_note": "Very low insider ownership (0.34%) is a modest negative signal — management's incentives are primarily compensation-linked, not equity-linked. Not disqualifying but worth noting for capital allocation assessment."
+  },
+
+  "capital_allocation": {
+    "dividends": "None",
+    "buybacks_fy2025_b": 1.378,
+    "buybacks_fy2024_b": 0.654,
+    "capex_fy2025_b": 0.341,
+    "capex_fy2024_b": 0.694,
+    "capex_fy2023_b": 1.539,
+    "capex_note": "Capex peaked in FY2023 ($1.54B) as the Czech Republic SiC fab and other capacity investments were made. FY2025 capex fell sharply to $341M as the company moderated investment during the downcycle. The buyback acceleration in FY2025 ($1.38B vs $654M in FY2024) is notable — management is returning capital while in a revenue trough, which is either a sign of confidence in recovery or a short-term EPS management tool."
+  },
+
+  "industry_log_entry": {
+    "run_date": "2026-06-21",
+    "ticker": "ON",
+    "cycle": "Recovering from downcycle (inventory correction 2024-2025; Q1 2026 inflection point confirmed)",
+    "auto_ev_demand": "SiC EV content growing: 55% design-win share at 2026 Beijing Auto Show; China auto down 6% YoY but onsemi China auto revenue grew — suggests content gain offsetting volume headwind. EV architecture transition to 800V is the structural tailwind. Risk: Chinese domestic SiC supply growth could displace onsemi in the largest EV market over 3-5 years.",
+    "sic_market_outlook": "SiC market projected to grow at ~25.7% CAGR 2025-2030 to $8.4B. onsemi's #2 market position (22-25% share) is defensible through vertical integration if Czech fab ramps on schedule. Competitive intensity rising from STMicro (pricing pressure) and Infineon (200mm investment). The market is large enough for three or four winners.",
+    "ai_datacenter_dynamics": "Early but accelerating. Q1 2026 AI datacenter +30% QoQ, doubling YoY. GaNEXUS launch targets the power tree from AC/DC rectification through point-of-load regulation. Content per rack: $9,500 (120kW) to $115,000 (800V racks). The $1.5B GaN design funnel is the leading indicator — conversion to revenue depends on hyperscaler rack deployment timelines.",
+    "gross_margin_trajectory": "Trough 33.1% (TTM); recovering to 38.5% in Q1 2026 (third consecutive quarterly expansion). Bull path: 45%+ by FY2028 as SiC fab utilisation recovers and Treo/GaNEXUS mix shift toward higher-margin products. Bear path: pricing pressure in SiC from STMicro and Infineon limits recovery to 40-42% structural ceiling.",
+    "key_watch_items": [
+      "September 2026 analyst day — management to update long-term revenue and margin targets",
+      "Czech Republic SiC fab first-wafer milestone (late 2026)",
+      "Q2 2026 earnings (August 3) — second data point on gross margin expansion pace",
+      "EV demand recovery trajectory, particularly China market in H2 2026",
+      "Wolfspeed financial distress resolution — substrate supply chain risk"
+    ]
+  }
+}

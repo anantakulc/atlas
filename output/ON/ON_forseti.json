@@ -1,0 +1,81 @@
+{
+  "ticker": "ON",
+  "gatekeeper": "forseti",
+  "as_of": "2026-06-22",
+  "verdict": "SHIP",
+  "gates": [
+    {
+      "gate": "argue_not_assert",
+      "result": "PASS",
+      "note": "Every load-bearing assumption is sourced and argued: PSG FY2030 revenue base $4.59B traced to Theia demand model, TrendForce 22-25% SiC share, YOLE/Mordor $6.5B market; WACC 10.5% built via CAPM with explicit fundamental beta de-risking from 1.977 regression to 1.6 (credited contracted LTAs + EU grant); Gordon exit 13.67x computed from r=10.5%, g=4.5%, ROIC=25% -- not picked; AMG Treo path anchored on company-stated $1B FY2030 target + Q1 2026 2.5x QoQ observed ramp; ISG 16x EV/EBIT from Sony 22-25x and OmniVision 14-18x comp range. The $1.19B non-GAAP addback is sourced to Q1 2026 8-K GAAP vs non-GAAP actuals. Infineon bear mechanism cited to company-filed press releases (February 2025 Villach rollout, November 2024 Stellantis agreement). China localization sourced to S&P Global Automotive Insights September 2025 and STMicro earnings call statements. No bare numbers found."
+    },
+    {
+      "gate": "bias_audit",
+      "result": "PASS",
+      "note": "Daedalus bias_audit is present in ON_valuation.json and ON.json. 9 assumptions reviewed: 1 SLIGHT-CONSERVATIVE (AMG EBIT margin 19-20% vs possible honest-center 22-24%), 8 NEUTRAL, 0 AGGRESSIVE. same_direction_count=1, well below the 3+ threshold. Erinys independently verified the tally. The very large discount vs price ($45.53 vs $121.62) is explicitly defended as a finding -- the result of NOPAT-based valuation vs the street's non-GAAP EPS convention, not a conservative artifact. The bias audit correctly addresses the most dangerous outcome of this SELL: that it could be a stacked-conservative false SELL. It is not."
+    },
+    {
+      "gate": "method_fits_business",
+      "result": "PASS",
+      "note": "onsemi is a three-segment conglomerate; SOTP is correctly applied per CONTRACT §2.1. PSG (high-growth SiC) uses ExitMultiple with Gordon steady-state formula at FY2030 normalization -- the most efficient method per CONTRACT §2.2. AMG (moderate-growth Treo + legacy analog) uses ExitMultiple at FY2030 -- appropriate for an early-stage embedded platform in a moderate-growth legacy base. ISG (mature-cyclical CMOS imaging) uses earnings multiple (EV/EBIT) -- correct for a near-steady-state business. Each segment has its own CAPM-derived WACC (PSG 10.5%, AMG 9.5%, ISG 9.5%) with explicit fundamental beta build shown. T-invariance verified over T=3 to T=5 (spread $0.71, 1.6%). The method_why is stated in both ON.json and ON_valuation.json.primary_method.reasoning. Mandatory sensitivity matrix present; dominant lever named (PSG FY2030 revenue >> EBIT margin). Sensitivity axis label transposition (Erinys cosmetic flag) does not affect the numbers."
+    },
+    {
+      "gate": "four_levers_argued",
+      "result": "PASS",
+      "note": "All four levers are present and argued in ON.json.four_levers: (1) Growth rate and duration -- PSG 10% CAGR FY2026-2030 base, T-invariance confirms FY2030 as genuine normalization year, level of revenue at normalization (base $4.59B vs bull $7.08B vs bear $2.65B PSG) identified as the dominant swing. (2) Economics -- margins argued from Czech fab utilization trajectory; owner FCF $2.64/share computed from NOPAT $1.17B company-level less SBC. (3) WACC -- CAPM build shown for all three segments; fundamental beta rationale explicit for each. (4) Exit multiple -- Gordon formula output shown with inputs, reconciled to peer EV/EBIT range. The earnings bridge (ON.json.earnings_bridge) ties GAAP EPS, non-GAAP EPS, and owner FCF together, completing the numerator bridge. Sensitivity matrix identifies revenue as the dominant lever and ROIC as second-order."
+    },
+    {
+      "gate": "crux_surfaced",
+      "result": "PASS",
+      "note": "The crux is named in ON.json.our_view (the opening paragraph), in ON.json.crux.one_line, and in ON.json.thesis[0] (The denominator gap is the call). It is stated as: the market values onsemi on 28x non-GAAP EPS that adds back $1.19B/year of real costs; owner FCF is $2.64/share; the SOTP on NOPAT yields $45.53. The crux is resolved in key_debates[0] (the denominator debate) with a clear verdict: bear view wins; D&A on the SiC fab is a real cost; the justified multiple on owner FCF is 15-18x implying ~$45/share. The report also correctly names the ONE trigger that would flip the call: if onsemi demonstrates three consecutive years of capex materially below D&A, the addback would be partially valid. Section §1 (our_view) names the crux; §7 (key_debates[0]) resolves it. PASS."
+    },
+    {
+      "gate": "key_debates_quantified",
+      "result": "PASS",
+      "note": "Three key debates present, each with bull view, bear view, our verdict, what_would_change_our_mind, and worth_per_share. Debate 1 (denominator/crux): worth $76/share at current price, confirmed as the single largest swing. Debate 2 (SiC share trajectory): +$12.93/sh bull, -$14.80/sh bear, range $28-30/sh around base. Debate 3 (AI datacenter GaNEXUS): +$10.56/sh bull, -$6-8/sh bear. Each debate has an evidence_quality grade (EXTRAPOLATED / OBSERVABLE-AND-NEAR / MECHANISM-NOT-YET-FIRING). Debates are argued, not listed. Each includes the specific observable signal that would flip the verdict. The debates are the correct ones -- they anchor on the crux (denominator gap) and the two secondary contested variables (SiC share, AI datacenter). Note: Erinys flagged a minor inconsistency in Boreas's single-debate SiC-share delta ($12.93 stated vs $10.10 computed from stated NOPAT increment) -- but this is internal to Boreas's quantification text and the full bull $80.15 is verified correct. The debates as presented in ON.json.key_debates are coherent and pass."
+    },
+    {
+      "gate": "readable_story",
+      "result": "PASS",
+      "note": "The report follows the 8-section arc per CONTRACT §6: (1) our_view = the call with the four numbers and crux named; (2) business_overview = segments, business model, historical trend read as a narrative (not a transcribed table); (3) industry_position = market overview, named competitors with share dynamics, five forces, moat; (4) market_view = reverse-multiple decomposition, analyst tape with 7 named post-Q1 actions, sentiment narrative; (5) management = CEO, CFO, capital allocation record; (6) valuation_method + segment_valuation + four_levers = the argued base; (7) key_debates = 3 debates argued both ways with verdicts; (8) range_and_sensitivity + scenarios + conclusion = the call restated with the range. Conclusion is present and conclusion-first. Prose is readable with a clear bear paragraph, bull/bear theses, and synthesis_paths. No 47-card dump -- the debates are 3 focused arguments, not a laundry list. The snapshot has 24 items (>15 threshold). The peers section is read as a narrative (peers_read). Historical financials have an interpreted read (historical_financials_read). PASS."
+    },
+    {
+      "gate": "numeric_consistency",
+      "result": "PASS WITH NOTES",
+      "note": "Erinys PASS WITH NOTES. SOTP arithmetic verified to <0.05% rounding tolerance. Four numbers bridge verified. Bull $80.15 and bear Cassandra $19.85 verified. Bias audit tally verified. T-invariance verified. Three advisory flags: (1) COSMETIC -- sensitivity matrix axis labels transposed in JSON metadata (rows/columns described in reverse); actual grid values are correct. (2) MINOR -- #3 roll-forward uses r=9.0% stated while blended WACC is 10.2%; difference in #3 is $0.54 (1.1%), below 2% materiality threshold. (3) MINOR -- Boreas single-debate SiC delta ($12.93 stated vs $10.10 computed from stated inputs); full bull $80.15 is independently correct. None of these affect the fair value, target, or rating."
+    },
+    {
+      "gate": "completeness",
+      "result": "PASS",
+      "note": "snapshot has 24 metrics (threshold 15). All three segments documented with revenue, margin, nature, and WACC. Historical financials cover FY2022-2025 and are interpreted (historical_financials_read). industry_position includes moat, five forces, five named competitors with share data and trajectory. 3 key debates (within the 2-4 range), each with real bear view, what_flips, and $/share worth. Street reconstruction present: consensus $107.15 decomposed into implied non-GAAP EPS multiple, street thesis stated in one line, and the precise agree/disagree articulated. Earnings bridge present and ties NOPAT to owner FCF to non-GAAP EPS. scenario_assumptions present with per-case numbered rows. catalysts_to_watch in 4 thematic buckets with horizon, what_to_watch, and bull/bear tell. data_gaps field present and populated. sources field populated with 20 entries, tiered. Rating SELL consistent with -62.7% implied return vs -10% threshold. Band (low=$12.21 / high=$80.15) matches valuation scenarios. NOTE: score.py band_matches_scenarios reported FAIL because the script reads valuation_headline.band_low/band_high from ON.json, but ON.json does not carry a top-level valuation_headline key -- the band lives in ON_headline.json. The band data itself is correct and present; this is a scorecard script schema-mismatch, not a report defect."
+    }
+  ],
+  "blocking_issues": [],
+  "advisory_notes": [
+    {
+      "note": "Sensitivity matrix axis labels in ON_valuation.json and ON.json are transposed in the JSON metadata (matrix_note and axis_1/axis_2 labels say rows=margin and columns=revenue, but the actual grid is arranged with rows=revenue and columns=margin). The nine cell values are arithmetically correct. Correct the metadata labels before rendering the Excel Multiple Maths tab to avoid reader confusion.",
+      "severity": "COSMETIC",
+      "files": ["ON_valuation.json", "ON.json"]
+    },
+    {
+      "note": "The #3 fair_value_12m roll-forward uses r=9.0% in bridge_logic, while the stated blended WACC is 10.2%. The resulting $0.54 difference in #3 ($49.63 vs $50.17) is 1.1% -- below the 2% materiality threshold and does not change the rating or target. Reconcile the stated roll-forward rate to the blended WACC in a future revision.",
+      "severity": "MINOR",
+      "files": ["ON_headline.json", "ON.json"]
+    },
+    {
+      "note": "Boreas's single-debate SiC-share-only delta is stated as +$12.93/sh but the stated NOPAT increment ($0.429B) computes to +$10.10/sh. The full bull case $80.15 is independently verified correct and unaffected. The inconsistency is limited to the intermediate single-debate quantification in ON_bull.json.delta_to_base_by_debate. Correct in a future revision.",
+      "severity": "MINOR",
+      "files": ["ON_bull.json"]
+    },
+    {
+      "note": "score.py band_matches_scenarios reports FAIL because the mechanical checker reads valuation_headline.band_low/band_high from ON.json (where that key does not exist), not from ON_headline.json (where band_low=12.21 and band_high=80.15 are present and match the scenario range). The data is correct; the script schema reference needs updating.",
+      "severity": "SCRIPT-DEFECT",
+      "files": [".claude/skills/scorecard/score.py"]
+    },
+    {
+      "note": "Street reconstruction in ON_headline.json has street_target fields as null (mean, mean_multiple, mean_implied_growth_pct, high, return_pct, n_analysts all null). The street consensus IS documented in ON.json.market_view.street_view and ON.json.street_reconstruction with full narrative. The null fields in ON_headline.json are a structural gap in the structured output but the information is present in the report. Low priority -- no material impact.",
+      "severity": "ADVISORY",
+      "files": ["ON_headline.json"]
+    }
+  ]
+}
