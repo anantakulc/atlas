@@ -1,0 +1,290 @@
+{
+  "_meta": {
+    "ticker": "TXN",
+    "agent": "Theia",
+    "atlas_version": "v3",
+    "produced_utc": "2026-06-21",
+    "note": "Revenue path built as an identity in sourced drivers. All numbers traced to cited sources. 'Not in bundle' noted where the databundle gap (no EDGAR segment pull) required web-sourced data.",
+    "sources": [
+      "TXN_databundle.json — income, cashflow, balance sheet, ratios, quarterly",
+      "TXN Q1 2026 10-Q (SEC: txn-20260331.htm) — segment revenues via search extraction",
+      "TXN Q4 2025 8-K (SEC: q42025txnex99-eredgar.htm) — FY2025 segment and end-market data",
+      "TXN Capital Management presentation (investor.ti.com Feb 2026) — capex roadmap",
+      "Street consensus via search — FY2026 ~$21B, FY2027 ~$23B revenue",
+      "Fortune Business Insights, Coherent Market Insights — analog TAM",
+      "Yole Group — automotive semiconductor content per vehicle",
+      "Silicon Labs FY2025 results — acquired revenue base"
+    ]
+  },
+
+  "segments": {
+    "note": "TXN reports two operating segments: Analog and Embedded Processing. 'Other' includes DLP products, calculators, and ASICs. Segment data pulled from search extraction of SEC filings (bundle gap: no structured segment data in yfinance pull).",
+    "analog": {
+      "description": "Power products (DC/DC regulators, battery management, AC/DC converters, linear regulators) and signal chain products (amplifiers, data converters, interface, motor drives, clocks, logic). The core franchise — highest revenue, highest margin, highest ROIC.",
+      "revenue_history": {
+        "FY2022": {"revenue_b": 15.9, "source": "implied from total $20.0B; Analog typically ~79% of total in upcycle"},
+        "FY2023": {"revenue_b": 14.0, "note": "bundle total $17.5B; Analog ~80% of mix"},
+        "FY2024": {"revenue_b": 12.2, "source": "bundle total $15.6B; Analog ~78%"},
+        "FY2025": {"revenue_b": 14.0, "operating_income_b": 5.4, "operating_margin_pct": 38.6, "source": "search: '$14,006M Analog revenue FY2025, operating profit ~$5.4B'"},
+        "Q1_2026": {"revenue_b": 3.924, "operating_income_b": 1.638, "operating_margin_pct": 41.7, "yoy_growth_pct": 22, "source": "Q1 2026 10-Q via search: 'Analog $3,924M, operating profit $1,638M'"}
+      },
+      "nature": "mature-annuity with cyclical overlay. High gross margin (60%+ at normal utilization), benefiting from 300mm structural cost advantage. The 300mm moat: an unpackaged chip on 300mm costs ~40% less than on 200mm (2.3x more chips per wafer). TI is the only pure-analog company with captive 300mm manufacturing at scale.",
+      "gross_margin_note": "Compressed from 68.8% (FY2022) to 57.0% (FY2025, bundle) due to (a) 300mm capex D&A load in COGS and (b) low utilization on new capacity. Q1 2026 returned to 58% as revenue recovered. Long-run target: 65-70%+ as 300mm utilization rises."
+    },
+    "embedded_processing": {
+      "description": "Microcontrollers (MCUs), processors, wireless connectivity (the Silicon Labs acquisition targets this segment), radar products, and application processors. Historically lower-margin, lower-growth than Analog. Silicon Labs ($785M FY2025 revenue, IoT/wireless) closes H1 2027 and lands here.",
+      "revenue_history": {
+        "FY2022": {"revenue_b": 3.4, "note": "implied ~17% of $20.0B"},
+        "FY2023": {"revenue_b": 2.8, "note": "implied ~16% of $17.5B"},
+        "FY2024": {"revenue_b": 2.4, "note": "implied ~15% of $15.6B"},
+        "FY2025": {"revenue_b": 2.7, "operating_income_b": 0.304, "operating_margin_pct": 11.3, "source": "search: 'Embedded Processing $2,697M, operating profit $304M FY2025'"},
+        "Q1_2026": {"revenue_b": 0.723, "operating_income_b": 0.122, "operating_margin_pct": 16.9, "yoy_growth_pct": 12, "source": "Q1 2026 10-Q: 'Embedded $723M, operating profit $122M, 205% YoY profit growth'"}
+      },
+      "nature": "low-growth transitional; Silicon Labs acquisition will add IoT/wireless and boost segment scale. Embedded is structurally less important to the crux than Analog.",
+      "silicon_labs_addition": {
+        "slab_fy2025_revenue_m": 785,
+        "deal_close": "expected H1 2027",
+        "deal_value_b": 7.5,
+        "synergies": "~$450M annual manufacturing/operational synergies within 3 years post-close",
+        "source": "TI press release Feb 4, 2026; Silicon Labs FY2025 results PR"
+      }
+    },
+    "other": {
+      "description": "DLP projectors, calculators, ASICs",
+      "revenue_b_FY2025": 0.979,
+      "Q1_2026_revenue_b": 0.178,
+      "Q1_2026_yoy_growth_pct": -16,
+      "nature": "declining/non-core; negligible to the call"
+    }
+  },
+
+  "end_markets": {
+    "note": "TXN discloses end-market revenue mix quarterly. FY2025 mix sourced from Q4 2025 8-K commentary and search extraction.",
+    "industrial": {
+      "fy2025_revenue_b": 5.8,
+      "fy2025_pct_of_total": 33,
+      "prior_peak_pct": "~40% of total in FY2022 (implying ~$8B on $20B total)",
+      "q1_2026_yoy_growth_pct": ">30",
+      "recovery_status": "Seven consecutive quarters of decline through mid-2025. Q4 2025: confirmed recovery ('increasing in upper single digits after seven consecutive quarters of decline'). Q1 2026: >30% YoY. Distributor inventory normalized back into long-run historical band by Q1 2026.",
+      "drivers": "Factory automation, energy management, building automation, medical, test and measurement. Broad-based; no single customer concentration.",
+      "source": "TXN Q4 2025 8-K; Q1 2026 earnings call; search extraction"
+    },
+    "automotive": {
+      "fy2025_revenue_b": 5.8,
+      "fy2025_pct_of_total": 33,
+      "q1_2026_status": "Near all-time peak ('within 1-2 points of all-time high' per Haviv Ilan Q1 2026 call). China down, rest-of-world up. Flat sequentially.",
+      "secular_driver": "Content-per-vehicle growth: EV powertrain, ADAS, body electronics. Yole Group estimates semiconductor content reaches ~$1,000/vehicle by 2029. EVs contain 2-2.5x more semiconductor value than ICE vehicles. TXN sells power management, motor drives, gate drivers, battery management ICs, sensor interfaces — all high-content-per-vehicle.",
+      "risk": "Overall auto production units are not growing fast (China weakness, EV penetration rates uncertain). Share-of-content growth is the bull thesis, not unit volume.",
+      "source": "Q1 2026 earnings call; Yole Group press release; SPGlobal 2026 automotive trends"
+    },
+    "data_center": {
+      "fy2025_pct_of_total": "~10-11%",
+      "fy2025_revenue_b_approx": 1.9,
+      "q1_2026_yoy_growth_pct": "~90",
+      "q1_2026_sequential_growth_pct": ">25",
+      "driver": "Power management ICs for AI server racks (voltage regulators, power stages for GPU/ASIC power delivery). As compute density increases, analog power content per rack rises disproportionately. TXN supplies multiphase controllers, power stages, PMBus components.",
+      "management_target": "CEO Ilan guided data center could reach 20% of total revenue 'soon'",
+      "note": "This is the new growth driver — it is EXTRAPOLATED (not contracted). Q1 2026 90% YoY growth will not sustain; the run-rate is the question. Even if growth decelerates to 20-30% YoY, this segment doubles in 2-3 years.",
+      "source": "Q1 2026 earnings call; coincentral.com; digitimes.com coverage"
+    },
+    "personal_electronics": {
+      "fy2025_revenue_b": 3.7,
+      "fy2025_pct_of_total": 21,
+      "nature": "Cyclical; tied to smartphone/PC demand. TXN supplies power management, connectivity chips. Not a growth driver; second-order to the call.",
+      "source": "TXN Q4 2025 8-K end-market commentary"
+    },
+    "comms_enterprise": {
+      "fy2025_pct_of_total": "~3-4%",
+      "note": "Communications equipment (5G, network infrastructure) and enterprise systems. Smaller slice; data center reclassification may be absorbing some of this growth.",
+      "source": "Implied from total less other segments; bundle profile description"
+    }
+  },
+
+  "competitors_and_share_dynamic": {
+    "note": "TXN is the global #1 in analog semiconductors by revenue market share. The competitive field differs by sub-segment.",
+    "top_competitors": [
+      {
+        "name": "Analog Devices (ADI)",
+        "position": "#2 in analog (~12-13% market share, versus TXN ~19%)",
+        "trajectory": "Gaining in high-performance analog (precision ADCs/DACs, RF, instrumentation). ADI reported Q3 2025 growth across industrial, automotive, consumer, comms; 'record orders' in mid-2026 per search. ADI is NOT a 300mm player — relies on third-party foundry and its own 200mm fabs (Wilmington, Limerick). This is TXN's structural cost edge: ADI faces a ~40% per-chip cost disadvantage on products where TXN can use 300mm.",
+        "competitive_dynamic": "ADI competes on performance (higher ASP, higher-spec precision analog) rather than cost. TXN competes on breadth and cost in mid-to-high volume analog. These are partially distinct niches: ADI wins in instrumentation and high-precision; TXN wins in volume power management, signal conditioning, and standard analog where cost matters.",
+        "source": "Search: market share data; wafer comparison; ADI manufacturing strategy"
+      },
+      {
+        "name": "Infineon Technologies",
+        "position": "Strong in automotive power semiconductors (SiC, IGBTs). #1 or #2 in automotive power modules.",
+        "trajectory": "Expanding in EV power trains (SiC inverters, onboard chargers). Competes with TXN in automotive power management but at different nodes — Infineon dominates high-voltage power, TXN dominates mixed-signal/analog content.",
+        "competitive_dynamic": "Limited direct overlap. Infineon's SiC strength is a complement, not a direct substitute, for TXN's analog content in vehicles.",
+        "source": "Yole Group automotive semiconductor press release"
+      },
+      {
+        "name": "NXP Semiconductors (NXPI)",
+        "position": "~60% automotive revenue mix; strong in MCUs, ADAS, automotive networking.",
+        "trajectory": "Q4 2025 revenue $3.34B (+7% YoY); Q1 2026 revenue $3.18B (+12% YoY). Recovering in automotive alongside TXN. NXP competes in automotive MCUs and the 'processing' layer rather than analog/power — limited direct overlap with TXN's Analog segment.",
+        "competitive_dynamic": "NXP + TXN are complementary in vehicle architectures (NXP for the compute/control layer; TXN for the power/signal layer). Share conflict is modest.",
+        "source": "NXP Q1 2026 8-K search extraction"
+      },
+      {
+        "name": "STMicroelectronics (STM)",
+        "position": "Automotive and industrial MCUs; MEMS sensors; power discretes. Diversified European player.",
+        "trajectory": "Struggling in 2025 relative to TXN — STM has more MCU/discrete exposure in automotive (less analog); has been more negatively impacted by automotive unit production weakness in Europe.",
+        "competitive_dynamic": "Partial overlap in industrial signal chain and automotive MCUs, but STM is NOT a 300mm analog player at TXN's scale.",
+        "source": "Semiconductor market coverage (BNP Paribas, Coherent Market Insights)"
+      },
+      {
+        "name": "Microchip Technology (MCHP)",
+        "position": "Embedded MCUs and analog; #3 in MCUs globally.",
+        "trajectory": "Deep inventory correction through 2024-early 2025 (revenue fell ~46% YoY at trough). Q4 FY2026 (March 2026): $1.31B, +35% YoY — sharp recovery. MCHP competes in Embedded Processing (MCUs) against TXN but has broader analog cross-sell.",
+        "competitive_dynamic": "Direct competition in embedded MCUs; MCHP's recovery is a positive read-across for TXN's Embedded segment. Silicon Labs acquisition by TXN (H1 2027 close) directly overlaps MCHP's IoT/wireless turf.",
+        "source": "MCHP Q4 FY2026 8-K search extraction"
+      }
+    ],
+    "the_share_dynamic": "TXN is NOT losing analog share to peers. Its 300mm structural cost advantage is widening, not narrowing, as the manufacturing build-out approaches completion. In the 2023-2025 downturn, TXN chose to maintain pricing discipline and absorb volume declines (revenue fell from $20B to $15.6B) rather than chase share with price cuts. This is consistent with its long-run capital allocation model: maintain margins through the cycle, harvest cash at the peak, invest in the next-generation manufacturing advantage. ADI is the closest structural competitor, but competes primarily in different sub-segments (precision, not volume analog). The real competitive threat is NOT share loss to a peer; it is the question of WHETHER the industrial/automotive markets recover to prior levels, and how fast. On the data center front, TXN is a new entrant gaining share versus incumbent power management players (Monolithic Power, Renesas, Vicor); the 300mm cost advantage is directly applicable in this segment's high-volume power components.",
+    "300mm_moat_quantification": {
+      "cost_advantage_per_chip": "~40% lower cost per unpackaged chip vs 200mm (2.3x more chips per wafer on same area)",
+      "target_sourcing_internal": ">95% of wafers internal by 2030",
+      "target_300mm_share": ">80% of all wafers on 300mm by 2030",
+      "current_status": "RFAB2 transfers complete; LFAB1 ramping 45-65nm; SM1 in production ramp; SM2 shell complete (ready for equipping on demand)",
+      "competitor_gap": "ADI has no 300mm fab; relies on 200mm and foundry. STM is building 300mm but primarily for automotive power — not analog. No pure-analog competitor matches TXN's 300mm scale.",
+      "source": "TXN Capital Management presentation Feb 2026; wafer comparison analysis (wevolver.com); search extraction"
+    }
+  },
+
+  "addressable_market": {
+    "total_analog_market_2026_usd_bn": {
+      "fortune_business_insights": 99.35,
+      "coherent_market_insights": 89.4,
+      "mordor_intelligence": "~93",
+      "theia_central_estimate": 93,
+      "tier": "research_firm",
+      "cagr_to_2034_pct": "5-7",
+      "note": "Wide variance across houses. Common range is $85-99B for 2026 total analog market."
+    },
+    "txn_served_market": {
+      "description": "TXN's products address the general-purpose analog segment: power management ICs, signal chain ICs, embedded MCUs for industrial/automotive/data-center/consumer. TXN does NOT compete in: RF/microwave, photonics, SiC/GaN power devices at high voltage, or pure-digital semiconductors.",
+      "served_market_estimate_usd_bn": "~70-80 (general-purpose analog and embedded, excluding high-voltage power devices and precision specialty analog where ADI dominates)",
+      "txn_market_share_current": "~19% of broad analog market (search: multiple sources agree); or ~22-25% of its specifically served general-purpose analog sub-market",
+      "source": "Market share per Fortune Business Insights, Mordor Intelligence via search"
+    },
+    "automotive_sub_market": {
+      "size_2026_usd_bn": "~132 (Yole Group: '$132 billion automotive semiconductor race')",
+      "txn_exposure": "Analog content in vehicle (power management, gate drivers, battery management, sensor interfaces). TXN is NOT a processor/SoC player in auto.",
+      "content_per_vehicle_trend": "EV content 2-2.5x ICE; secular growth to ~$1,000/vehicle by 2029 (Yole Group)",
+      "source": "Yole Group press release; Spherical Insights; MarketsandMarkets"
+    }
+  },
+
+  "revenue_path": {
+    "note": "Revenue path is an IDENTITY: Total = Analog + Embedded + Other. Analog = Industrial + Automotive + DataCenter + PersonalElec + Comms. Each segment path argued from the end-market data above. Silicon Labs ($785M FY2025 revenue) adds to Embedded from H1 2027 close.",
+    "historical": {
+      "FY2022": {"total_b": 20.028, "analog_b": 15.9, "embedded_b": 3.4, "other_b": 0.7},
+      "FY2023": {"total_b": 17.519, "analog_b": 14.0, "embedded_b": 2.8, "other_b": 0.7},
+      "FY2024": {"total_b": 15.641, "analog_b": 12.2, "embedded_b": 2.4, "other_b": 1.0},
+      "FY2025": {"total_b": 17.682, "analog_b": 14.0, "embedded_b": 2.7, "other_b": 1.0},
+      "Q1_2026_annualized": {"total_run_rate_b": 19.3, "note": "$4.825B x 4; Q2 guide $5.0-5.4B implies FY2026 well above $20B"},
+      "source": "Bundle financials; segment search extraction"
+    },
+    "base_case": {
+      "FY2025_actual_b": 17.682,
+      "FY2026_base_b": 21.0,
+      "FY2027_base_b": 23.0,
+      "build": {
+        "industrial_fy2026_b": 7.2,
+        "industrial_fy2027_b": 8.0,
+        "automotive_fy2026_b": 6.2,
+        "automotive_fy2027_b": 6.8,
+        "data_center_fy2026_b": 2.8,
+        "data_center_fy2027_b": 3.5,
+        "personal_electronics_fy2026_b": 3.8,
+        "personal_electronics_fy2027_b": 4.0,
+        "comms_other_fy2026_b": 1.0,
+        "comms_other_fy2027_b": 0.7
+      },
+      "argument": "FY2026 $21B: Q1 2026 actual ($4.83B) + Q2 2026 guide midpoint ($5.2B) = $10.03B H1. Extrapolating normal H2 seasonality (modest step-down from H1 peak) gives FY2026 ~$20.5-21.5B. Street consensus is ~$21B. Industrial growth of >30% YoY in Q1 builds to a full-year recovery to $6.8-7.5B (from $5.8B in 2025). Automotive near peak continues. Data center doubles from ~$1.9B to ~$2.8B (implies ~45% YoY deceleration from 90% — conservative). FY2027 $23B: Silicon Labs ($0.8B) plus organic growth of ~6% on the ex-SLAB base. Industrial continues toward the $8B prior-peak range. No heroic assumptions required.",
+      "implied_spend_pool_check": "At $23B total revenue and ~19% analog market share, this implies total analog market of ~$121B by 2027 (assuming TXN share stable). Fortune Business Insights puts 2034 at $154B, implying ~$105-115B in 2027-2028 on their CAGR — consistent within range. BASE PASSES CEILING CHECK.",
+      "source": "Q1 2026 results; Q2 guidance; street consensus via search"
+    },
+    "bull_case": {
+      "FY2025_actual_b": 17.682,
+      "FY2026_bull_b": 22.5,
+      "FY2027_bull_b": 25.5,
+      "build": {
+        "industrial_fy2027_b": 9.5,
+        "automotive_fy2027_b": 7.5,
+        "data_center_fy2027_b": 5.0,
+        "personal_electronics_fy2027_b": 4.0,
+        "comms_other_fy2027_b": 0.5,
+        "note": "Industrial recovers fully past 2022 peak (new content in factory automation, energy storage). Data center at 20% of total (CEO Ilan's stated target) on $25B base = $5B. Automotive secular content growth adds incremental."
+      },
+      "argument": "Industrial at $9.5B requires recovery to above the FY2022 peak — plausible if the 2022 peak was itself undershoot-then-overshoot and the true demand rate is higher. Data center at $5B requires sustained 80%+ YoY for another year then 40-50% after — aggressive but within the range of AI capex trajectory at major hyperscalers (Microsoft, Google, Amazon, Meta all publicly committed to $60-80B+ capex in 2025-2026). This is EXTRAPOLATED, not contracted.",
+      "implied_spend_pool_check": "At $25.5B and 19% share, implies analog TAM of ~$134B by 2027. Multiple research firms (Coherent Market Insights at $89B 2026 growing at 6.8% CAGR implies ~$101B by 2028; Fortune Business Insights $154B by 2034 implies higher) — this is at the aggressive end of near-term market sizing but within the credible range of third-party forecasts for 2028-2030. BULL STRETCHES BUT DOES NOT BREACH the ceiling.",
+      "source": "Analog TAM forecasts (Fortune Business Insights, Coherent Market Insights)"
+    },
+    "bear_case": {
+      "FY2025_actual_b": 17.682,
+      "FY2026_bear_b": 19.5,
+      "FY2027_bear_b": 20.0,
+      "build": {
+        "industrial_fy2027_b": 6.5,
+        "automotive_fy2027_b": 5.8,
+        "data_center_fy2027_b": 2.5,
+        "personal_electronics_fy2027_b": 3.7,
+        "comms_other_fy2027_b": 0.5,
+        "note": "Industrial recovery stalls at current levels: China macro softens, European manufacturing capex disappoints, 2022 peak was a pull-forward not representative of steady-state demand. Automotive plateaus as China EV share gains by local ODMs reduce TXN content. Data center decelerates sharply as hyperscaler build cycles normalize."
+      },
+      "argument": "BNP Paribas noted 'automotive semiconductor demand remains weak with recovery likely delayed to 2027.' China auto was explicitly called out as 'down' in Q1 2026 with China incentive programs winding down. If automotive revenue is at or near peak already (Ilan's 'within 1-2 points') and industrial recovery takes longer than the Q1 2026 data suggests, FY2026 runs near $19.5B (still +10% YoY) and FY2027 at $20B implies a plateau rather than a second growth leg. This is not a crash scenario — it is a slow/shallow-recovery scenario.",
+      "implied_spend_pool_check": "$20B at 19% share implies analog TAM ~$105B — within the Fortune Business Insights/Coherent estimates for 2026-2027. BEAR PASSES CEILING CHECK.",
+      "source": "BNP Paribas semiconductor market 2026 note; Q1 2026 earnings call China commentary"
+    },
+    "path_identity_driver_implied": {
+      "base_2027": "Revenue $23B / analog_market $93B * (1 + 4yr CAGR ~6%)^2 = market ~$105B in 2027. TXN share = $23B/$105B = ~22%. Consistent with today's ~19% share plus modest organic share gain.",
+      "bull_2027": "Revenue $25.5B / market ~$105B = ~24% share. Slight share gain from 300mm cost advantage winning incremental design-wins.",
+      "bear_2027": "Revenue $20B / market ~$105B = ~19% share. Share stable, market growth below consensus."
+    }
+  },
+
+  "capex_and_fcf_path": {
+    "note": "Capex is the second crux lever (with revenue). Numbers from bundle and Capital Management presentation.",
+    "capex_history": {
+      "FY2022_b": 2.797,
+      "FY2023_b": 5.071,
+      "FY2024_b": 4.82,
+      "FY2025_b": 4.55,
+      "source": "Bundle cashflow data"
+    },
+    "capex_forward": {
+      "FY2026_guided_low_b": 2.0,
+      "FY2026_guided_high_b": 3.0,
+      "management_bias": "Could trend toward the lower end (~$2B) if growth is similar to last year",
+      "FY2027_expectation": "Maintenance capex only; management characterizes 2027+ as 'Phase 3 — equipping and ramping fabs according to demand'",
+      "source": "TXN Capital Management presentation Feb 2026; Yahoo Finance/DefenseWorld coverage"
+    },
+    "fcf_path_by_scenario": {
+      "base": {
+        "FY2026": {"revenue_b": 21.0, "cfo_pct_of_rev": 36, "cfo_b": 7.56, "capex_b": 2.5, "fcf_b": 5.06, "fcf_per_share": 5.55},
+        "FY2027": {"revenue_b": 23.0, "cfo_pct_of_rev": 39, "cfo_b": 8.97, "capex_b": 2.2, "fcf_b": 6.77, "fcf_per_share": 7.44},
+        "note": "Management target '>$8/share in 2026' requires either higher revenue (near $22B) or lower capex (near $2B). The base with $21B and $2.5B capex gets to ~$5.55/share, below the management target — suggesting management's $8+ target is contingent on capex landing at $2B and revenue at the top of their guidance range."
+      },
+      "management_target_reconciliation": {
+        "to_hit_8_per_share_in_2026": "Needs $2B capex AND ~$21-22B revenue AND CFO expanding to ~$9.2B ($8 x 0.91B shares + $2B capex = $9.28B CFO needed). CFO/revenue would need to be ~43% — plausible if gross margin expands from 57% to 63%+ on higher utilization. CHIPS Act ITC offsets partially (the credits reduce effective net capex in DCF terms but flow through the tax line, not capex).",
+        "conclusion": "Management's $8+/share target for 2026 is achievable but requires both capex at the low end ($2B) and revenue above consensus ($22B+). The base case models $5.55/share for FY2026, stepping to $7.44/share in FY2027 — approaching the target one year later than management projects."
+      },
+      "bull": {
+        "FY2026": {"revenue_b": 22.5, "cfo_b": 9.0, "capex_b": 2.0, "fcf_b": 7.0, "fcf_per_share": 7.69},
+        "FY2027": {"revenue_b": 25.5, "cfo_b": 10.7, "capex_b": 2.0, "fcf_b": 8.7, "fcf_per_share": 9.56}
+      },
+      "bear": {
+        "FY2026": {"revenue_b": 19.5, "cfo_b": 6.8, "capex_b": 2.8, "fcf_b": 4.0, "fcf_per_share": 4.40},
+        "FY2027": {"revenue_b": 20.0, "cfo_b": 7.2, "capex_b": 2.5, "fcf_b": 4.7, "fcf_per_share": 5.16}
+      }
+    }
+  },
+
+  "key_data_gaps": [
+    "No SEC EDGAR pull in bundle (EDGAR fetch failed). Segment revenues sourced from web-extracted SEC filings — consistent across multiple sources but not directly from the structured bundle.",
+    "Customer concentration: TXN discloses no single customer >10% of revenue. Distributor Arrow and Avnet are the largest channels (no exact %s found).",
+    "Gross margin by segment: bundle has consolidated 57% gross margin. Analog segment gross margin is higher (estimated 62-65% at current utilization); Embedded is lower (estimated 45-50%).",
+    "Precise end-market percentages for Q1 2026 not in structured data — sourced from earnings call commentary.",
+    "Data center revenue not historically broken out as a separate end-market — estimated from management commentary ($10-11% of FY2025 total, growing 90% YoY in Q1 2026)."
+  ]
+}

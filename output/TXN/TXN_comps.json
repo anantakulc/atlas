@@ -1,0 +1,183 @@
+{
+  "schema_version": "2.0",
+  "ticker": "TXN",
+  "currency": "USD",
+  "computed_at": "2026-06-21T16:57:06Z",
+  "basis": "P/FCF",
+  "metric_label": "NTM FCF/share (consensus CY2026)",
+  "metric_value": 6.92,
+  "fcf_conversion": 1.0,
+  "roic": 0.3,
+  "fundamental_discount_rate": 0.09,
+  "terminal_growth": 0.045,
+  "horizon_years": 10,
+  "current": {
+    "price": 322.86,
+    "value_b": 293.8,
+    "multiple": 42.5,
+    "implied_growth": 0.121,
+    "implied_growth_pct": 12.1
+  },
+  "street": {
+    "thesis": "Analog/embedded inventory correction has ended; FCF per share re-rates sharply as capex normalizes from $5B peak to $2-3B; industrial up 30%+ YoY and data center up 90% YoY in Q1-2026 are the two new growth drivers; 300mm manufacturing moat translates to structural gross margin expansion toward 65%+. Silicon Labs adds embedded wireless connectivity. The call on the stock is a FCF-per-share inflection, priced at 36x NTM EPS.",
+    "n_analysts": 32,
+    "rating": "buy",
+    "target_mean": {
+      "price": 294.41,
+      "value_b": 267.9,
+      "multiple": 38.7,
+      "implied_growth": 0.1093,
+      "implied_growth_pct": 10.9
+    },
+    "target_high": {
+      "price": 400.0,
+      "value_b": 364.0,
+      "multiple": 52.6,
+      "implied_growth": 0.1484,
+      "implied_growth_pct": 14.8
+    },
+    "target_low": {
+      "price": 200.0,
+      "value_b": 182.0,
+      "multiple": 26.3,
+      "implied_growth": 0.0606,
+      "implied_growth_pct": 6.1
+    }
+  },
+  "history_context": {
+    "anchor_cagr_5y": 0.05,
+    "note": "FCF/share has been extremely volatile: $5.74/share at peak (FY2022 on $5.9B FCF / ~1.03B shares), then collapsed to ~$1.55/share (FY2024: $1.50B FCF / 0.92B shares) as the capex super-cycle depressed FCF. The capex cycle is the dominant FCF driver, not revenue. A pure 5-year CAGR on FCF is meaningless here; the correct anchor is FCF at normalization (FY2026-2027 consensus $6.92-$8.00+/share)."
+  },
+  "justified_grid": [
+    {
+      "growth": 0.03,
+      "growth_pct": 3.0,
+      "justified_multiple": 20.6,
+      "value_b": 142.6,
+      "implied_price": 156.68
+    },
+    {
+      "growth": 0.05,
+      "growth_pct": 5.0,
+      "justified_multiple": 24.2,
+      "value_b": 167.2,
+      "implied_price": 183.77
+    },
+    {
+      "growth": 0.07,
+      "growth_pct": 7.0,
+      "justified_multiple": 28.3,
+      "value_b": 196.1,
+      "implied_price": 215.51
+    },
+    {
+      "growth": 0.08,
+      "growth_pct": 8.0,
+      "justified_multiple": 30.7,
+      "value_b": 212.4,
+      "implied_price": 233.35
+    },
+    {
+      "growth": 0.1,
+      "growth_pct": 10.0,
+      "justified_multiple": 36.0,
+      "value_b": 248.9,
+      "implied_price": 273.47
+    },
+    {
+      "growth": 0.12,
+      "growth_pct": 12.0,
+      "justified_multiple": 42.1,
+      "value_b": 291.4,
+      "implied_price": 320.24
+    },
+    {
+      "growth": 0.15,
+      "growth_pct": 15.0,
+      "justified_multiple": 53.3,
+      "value_b": 368.6,
+      "implied_price": 405.1
+    }
+  ],
+  "duality_decomposition": {
+    "note": "single-stage justified forward P/E = (1 - g/ROIC)/(r - g); shows the ROIC/payout lever",
+    "r": 0.09,
+    "roic_columns": [
+      0.15,
+      0.2,
+      0.3,
+      0.35
+    ],
+    "rows": [
+      {
+        "growth": 0.04,
+        "growth_pct": 4.0,
+        "roic_15": 14.7,
+        "roic_20": 16.0,
+        "roic_30": 17.3,
+        "roic_35": 17.7
+      },
+      {
+        "growth": 0.045,
+        "growth_pct": 4.5,
+        "roic_15": 15.6,
+        "roic_20": 17.2,
+        "roic_30": 18.9,
+        "roic_35": 19.4
+      },
+      {
+        "growth": 0.05,
+        "growth_pct": 5.0,
+        "roic_15": 16.7,
+        "roic_20": 18.8,
+        "roic_30": 20.8,
+        "roic_35": 21.4
+      }
+    ]
+  },
+  "peers": [
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "multiple": 34.0,
+      "metric": "NTM P/FCF",
+      "note": "ADI trades at ~34x NTM FCF; similar analog franchise but no 300mm moat and higher leverage post-Maxim. Gross margin ~68% but structurally fabless at 200mm."
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "multiple": 22.0,
+      "metric": "NTM P/FCF",
+      "note": "MCHP at ~22x NTM FCF; similar Embedded/MCU exposure but significantly higher leverage (~8x net debt/EBITDA post-Microsemi) and lower analog quality mix. Discount vs TXN is warranted."
+    },
+    {
+      "ticker": "STM",
+      "name": "STMicroelectronics",
+      "multiple": 15.0,
+      "metric": "NTM P/FCF",
+      "note": "STM at ~15x NTM FCF; more automotive-MCU-power discrete mix; European listing; lower multi-year FCF growth visibility. Significant discount to TXN reflects higher cyclicality and absence of 300mm moat."
+    },
+    {
+      "ticker": "NXP",
+      "name": "NXP Semiconductors",
+      "multiple": 18.0,
+      "metric": "NTM P/FCF",
+      "note": "NXP at ~18x NTM FCF; highly automotive-concentrated (~70%), recovering in 2026 alongside TXN. Less analog content exposure, more MCU-dominated."
+    },
+    {
+      "ticker": "ON",
+      "name": "onsemi",
+      "multiple": 20.0,
+      "metric": "NTM P/FCF",
+      "note": "onsemi (ON) at ~20x NTM FCF; SiC and power management focus, heavy EV exposure. Comparable auto exposure but different technology (SiC vs TXN's analog). Peer FCF yield and multiple midpoint."
+    }
+  ],
+  "peer_median_multiple": 20.0,
+  "reconstruction": {
+    "currency": "P/FCF",
+    "what_price_implies": "At 42.5x NTM FCF/share (consensus CY2026), the current price implies a ~12.1% FCF CAGR for 10y (then 4% terminal) at r=9.0%.",
+    "what_street_implies": "The street mean target implies ~10.9% for 10y.",
+    "history_anchor": "FCF/share has been extremely volatile: $5.74/share at peak (FY2022 on $5.9B FCF / ~1.03B shares), then collapsed to ~$1.55/share (FY2024: $1.50B FCF / 0.92B shares) as the capex super-cycle depressed FCF. The capex cycle is the dominant FCF driver, not revenue. A pure 5-year CAGR on FCF is meaningless here; the correct anchor is FCF at normalization (FY2026-2027 consensus $6.92-$8.00+/share).",
+    "contested_lever": "FCF per share at normalized capex ($6.92 consensus, >$8 management target, $8.20 Theia base) AND the sustainable exit FCF multiple the market applies once capex normalizes. The call hinges on: (1) does industrial recovery continue at current pace or stall? (2) is the 300mm manufacturing moat durable enough to justify a premium multiple above peer group? At 47x NTM FCF vs the peer group at 15-34x, TXN already prices a structural premium — the crux is whether that premium is earned."
+  }
+}

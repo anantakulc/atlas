@@ -1,0 +1,144 @@
+{
+  "_meta": {
+    "ticker": "TXN",
+    "agent": "Theia",
+    "atlas_version": "v3",
+    "produced_utc": "2026-06-21",
+    "sources_summary": [
+      "TXN Q1 2026 8-K / 10-Q (SEC, April 2026) — segment revenues, gross margin, guidance",
+      "TXN Q4 2025 8-K (SEC, January 2026) — FY2025 segment revenues, end-market mix",
+      "TXN Capital Management presentation (investor.ti.com, Feb 2026) — capex roadmap, FCF targets",
+      "Yahoo Finance / Street search (June 2026) — consensus revenue estimates, analyst tape",
+      "GuruFocus Q1 2026 earnings call highlights — end-market commentary",
+      "Manufacturing Dive / Futurum Q1 2026 coverage — end-market growth rates",
+      "Coherent Market Insights, Fortune Business Insights, Mordor Intelligence — analog TAM",
+      "Yole Group — automotive semiconductor market and content-per-vehicle",
+      "SPGlobal automotive semiconductor trends 2026",
+      "DefenseWorld / Yahoo Finance — capex normalization and FCF inflection coverage"
+    ]
+  },
+
+  "crux_variable": "FCF-per-share at normalized capex, conditional on the pace and depth of the industrial/automotive revenue recovery",
+
+  "description": "TXN's call hinges on a single compound variable: how much free cash flow per share it generates once the 300mm capex cycle ends and industrial/automotive demand completes its recovery. The two sub-drivers are (a) the REVENUE path — how fast Analog + Embedded revenues recover and then grow from the FY2025 base of $17.7B, driven by industrial and automotive end-market volume — and (b) the CAPEX drag — how quickly gross capex falls from the $5.0B peak (FY2023) toward maintenance levels as the Sherman and Lehi fabs ramp. Together these decide FCF/share at the normalization year. The stock at $322.86 (EV/Sales 16.4x TTM, P/E 55x TTM) already prices a substantial and fast recovery. The CRUX IS THE GAP between what the market is already pricing and what the industrial/automotive recovery actually delivers, measured in FCF per share.",
+
+  "crux_decomposition": {
+    "identity": "FCF/share = (Revenue x FCF_margin%) / shares_outstanding",
+    "sub_drivers": [
+      {
+        "driver": "Revenue",
+        "identity": "Revenue = Analog_revenue + Embedded_revenue + Other",
+        "sub_components": [
+          {
+            "name": "Industrial_revenue",
+            "current_weight_pct": 33,
+            "note": "FY2025: ~$5.8B (~33% of $17.7B total). Was 40%+ of mix in 2022. Had seven consecutive quarters of decline through mid-2025. Q4 2025 recovery confirmed; Q1 2026 grew >30% YoY. This is the SWING driver — largest end-market and deepest in the trough.",
+            "source": "TXN Q4 2025 8-K; Q1 2026 earnings call commentary"
+          },
+          {
+            "name": "Automotive_revenue",
+            "current_weight_pct": 33,
+            "note": "FY2025: ~$5.8B (~33% of total). Q1 2026: automotive demand at or within 1-2 points of all-time peak level per Haviv Ilan. China down, rest-of-world up. Content-per-vehicle secular tailwind (EV/ADAS) provides long-run volume support even if unit production is flat.",
+            "source": "Q1 2026 earnings call; Yole Group content-per-vehicle data"
+          },
+          {
+            "name": "Data_center_revenue",
+            "current_weight_pct": 10,
+            "note": "Now ~10-11% of total, grew ~90% YoY in Q1 2026 and >50% for full-year 2025. CEO Ilan guides for 20% of total 'soon'. Power management for AI servers is the driver. Fastest-growing but smallest segment; second-order to industrial/auto recovery in the crux arithmetic.",
+            "source": "Q1 2026 earnings call; coincentral.com analysis"
+          },
+          {
+            "name": "Personal_electronics_revenue",
+            "current_weight_pct": 21,
+            "note": "FY2025: ~$3.7B (~21% of total). Cyclical but not a growth engine. Second-order to the call.",
+            "source": "TXN Q4 2025 8-K end-market commentary"
+          }
+        ]
+      },
+      {
+        "driver": "FCF_margin_pct",
+        "identity": "FCF_margin = CFO_margin - (capex/revenue)",
+        "current_value": "14.7% TTM (FY2025: $2.6B FCF on $17.7B revenue)",
+        "at_peak_2022": "~29.6% ($5.9B FCF on $20.0B revenue)",
+        "capex_trajectory": {
+          "FY2022_actual": "$2.8B (pre-expansion peak)",
+          "FY2023_actual": "$5.1B (expansion peak)",
+          "FY2024_actual": "$4.8B",
+          "FY2025_actual": "$4.6B (per bundle: $4.55B capex)",
+          "FY2026_guided": "$2.0B-$3.0B (management guided; 'could trend toward $2B')",
+          "FY2027_plus": "Maintenance capex only if demand growth continues at current pace",
+          "note": "The capex cliff from $5B to $2B is the mechanical FCF lever. RFAB2 transfers complete; SM1 in production ramp; SM2 shell complete. The fabs are built — equipping and ramping is the remaining spend."
+        },
+        "target_fcf_per_share_2026_mgmt": ">$8.00",
+        "actual_fcf_per_share_2025": "~$2.85 (bundle: $2.603B FCF / 0.913B shares)",
+        "source": "TXN Capital Management update Feb 2026; Yahoo Finance coverage; bundle cashflow data"
+      },
+      {
+        "driver": "Gross_margin_trajectory",
+        "note": "FY2022: 68.8% (peak, low capex/high utilization). FY2023: 62.9%. FY2024: ~58%. FY2025: 57.0% (bundle: gross_margin_pct 57.0). Q1 2026: 58% ($2.8B GP on $4.825B revenue). Compression was driven by: (1) elevated 300mm capex adding D&A to COGS, and (2) lower utilization as revenue fell from $20B peak. Recovery requires BOTH revenue returning AND capex D&A normalizing. Long-run target: management characterizes 70%+ gross margin as achievable at scale with 300mm mix >80%.",
+        "source": "Bundle financials; macrotrends search; management commentary"
+      }
+    ]
+  },
+
+  "ceiling_and_floor": {
+    "revenue_ceiling": "The addressable analog+embedded market for TXN's served segments (industrial, automotive, comms, personal electronics) is estimated at $85-99B globally in 2026 (Fortune Business Insights; Coherent Market Insights). TXN at ~$17-21B revenue holds ~20-22% share of its addressable slice. The physical ceiling on annual revenue growth is the pace of the industrial cycle + automotive content growth — not TAM; TXN is already the #1 analog player by market share (~19% of the overall analog market).",
+    "fcf_floor": "If industrial recovery stalls and capex lands at $3B (high end of 2026 guide), FCF stays ~$4-5B on $20B revenue (~20-25% FCF margin) — well above the FY2024 trough of $1.5B FCF. The floor is structurally higher than recent prints because even a modest revenue recovery at reduced capex improves FCF materially.",
+    "fcf_ceiling_at_normalization": "At $25B revenue (2028-2029 bull case), 300mm fully ramped (>80% of wafers), capex at $2B maintenance, gross margin 65%+, FCF margin could reach 30-35%, implying $7.5-8.75B FCF or ~$8.50-9.60/share on ~910M shares. TI management's own $8+ target for 2026 is already a way-station."
+  },
+
+  "base": {
+    "crux_value_fcf_per_share_2027": "$8.20",
+    "revenue_assumption_2027_bn": "$23.0",
+    "cfo_margin_assumption": "~42%",
+    "fcf_margin_assumption": "~32% (CFO 42% minus capex 10%/rev)",
+    "capex_assumption_2027_bn": "$2.2",
+    "fcf_b_implied": "$6.77B ($23.0B x 42% CFO - $2.2B capex = $7.46B; rounding to $7.46B / 0.91B shares = $8.20/share)",
+    "arithmetic_check": "Rev $23.0B x CFO_margin 42% = CFO $9.66B. CFO $9.66B - capex $2.2B = FCF $7.46B. FCF / 0.91B shares = $8.20/share. Historical CFO margin: FY2022 peak 43.5%, FY2025 40.4% — 42% is between these, appropriate for a mid-recovery year with improving utilization.",
+    "confidence": "MEDIUM",
+    "argument": "The base is built on two evidence-grounded pillars. First, revenue: the Q1 2026 print ($4.83B, +19% YoY) and Q2 2026 guidance ($5.0-5.4B) annualize to a $20-22B run-rate, with industrial growing >30% YoY and automotive near its prior peak. Street consensus for FY2026 is ~$21B and FY2027 ~$23B, consistent with current run-rate plus the Silicon Labs contribution (~$785M FY2025 revenue, deal closing H1 2027). Second, capex: management guided FY2026 capex to $2-3B (from $4.55B in FY2025). The arithmetic: $23B revenue at 42% CFO margin (between FY2022 peak of 43.5% and FY2025 of 40.4%) = $9.66B CFO; minus $2.2B capex = $7.46B FCF; divided by 0.91B shares = $8.20/share. This is slightly above management's own $8+/share target for FY2026 — managements target is achievable in FY2026 only if capex lands at $2B (low end) and revenue reaches $22B. The base does NOT assume industrial returns to 2022 peak — it assumes a more modest recovery to $7-8B industrial at a 33-35% mix. Gross margin recovers from 57% toward 62-64% by 2027 as 300mm utilization rises. Conviction is MEDIUM because the industrial recovery pace (post-seven-quarter decline) and capex path are genuinely uncertain."
+  },
+
+  "bull": {
+    "crux_value_fcf_per_share_2027": "$10.50",
+    "revenue_assumption_2027_bn": "$25.5",
+    "cfo_margin_assumption": "~44%",
+    "capex_assumption_2027_bn": "$2.0",
+    "fcf_b_implied": "$25.5B x 44% CFO = $11.22B CFO - $2.0B capex = $9.22B FCF / 0.91B shares = $10.13/share (~$10.50 including CHIPS ITC tax benefits flowing through)",
+    "arithmetic_check": "Rev $25.5B x 44% CFO = $11.22B CFO. $11.22B - $2.0B = $9.22B FCF. $9.22B / 0.91B = $10.13/share. CHIPS Act ITC benefits (credited through tax line, not capex) add estimated $0.3-0.4/share, bringing to ~$10.50.",
+    "argument": "The bull requires three things simultaneously. (1) Industrial fully recovers toward the 2022 prior-peak mix: if industrial rebuilds from ~$5.8B (FY2025) toward $9.5B by 2027, that alone adds $3.7B in revenue with high incremental gross margins (management states 70-75% incremental gross margin on 300mm at scale). (2) Capex lands at the $2B low end of guidance in both 2026 and 2027. (3) Data center reaches ~20% of total (CEO Ilan's stated target) — on $25B base that is ~$5B. On these assumptions, $25.5B revenue with 44% CFO margin (approaching but not exceeding the FY2022 peak of 43.5% — achieved via higher 300mm utilization lifting gross margins) produces ~$9.2B FCF, or ~$10.50/share including CHIPS ITC benefits. The bull is EXTRAPOLATED: industrial recovery to prior-peak is plausible given secular content growth, but not yet booked. Data center at 20% requires continued hyperscaler AI capex. These are credible higher readings, not heroic assumptions."
+  },
+
+  "bear": {
+    "crux_value_fcf_per_share_2027": "$5.00",
+    "revenue_assumption_2027_bn": "$20.0",
+    "cfo_margin_assumption": "~38%",
+    "capex_assumption_2027_bn": "$2.5",
+    "fcf_b_implied": "$20.0B x 38% CFO = $7.60B CFO - $2.5B capex = $5.10B FCF / 0.91B shares = $5.60/share — rounds to ~$5.00/share if CFO margin stays compressed at 36%",
+    "arithmetic_check": "Rev $20.0B x 36% CFO = $7.20B CFO. $7.20B - $2.5B = $4.70B FCF. $4.70B / 0.91B = $5.16/share. (At 38% CFO: $7.60B - $2.5B = $5.10B / 0.91 = $5.60/share). Central bear estimate $5.00-5.60/share depending on CFO margin.",
+    "argument": "The bear requires one of two failure modes to occur. Either (1) the industrial recovery stalls at current levels ($6-7B) rather than recovering toward prior peak, because global manufacturing capex softens (macro headwind) or because the 2022 peak was a COVID/supply-chain pull-forward that will not recur. BNP Paribas noted 'automotive semiconductor demand remains weak, with recovery likely delayed to 2027.' If automotive/industrial combined stays at $11-12B rather than recovering to $14-15B, total revenue in 2027 stays near $20B. (2) Capex does not normalize as fast as management guides — if back-end assembly bottlenecks (management mentioned this as a reason for the $3B vs $2B capex range) persist, FCF stays suppressed. At $20B revenue with CFO margin of 36-38% (consistent with FY2024 trough levels), FCF is ~$4.7-5.1B, or $5.16-5.60/share. The bear does NOT require a recession — only that recovery is slower and shallower than consensus. The bear evidence is OBSERVABLE-AND-NEAR: BNP's delayed-recovery call; China auto explicitly 'down' in Q1 2026; macro sensitivity of industrial capex spending."
+  },
+
+  "why_it_decides_the_call": "TXN at $322.86 trades at 55x TTM earnings and 34x NTM earnings. The FCF-per-share range (bear $5.00 / base $8.20 / bull $10.50 for 2027) reveals the valuation tension: at 25x FCF (an appropriate multiple for a structurally advantaged analog franchise with a genuine 300mm moat), the base implies fair value of ~$205 in 2027, or ~$170 discounted back at 10% WACC — materially below the current price of $323. For the CURRENT price to be fair value, TXN needs either (a) a higher FCF/share ($10-12 range, the bull), which requires industrial recovery to fully restore AND data center to hit 20% of revenue; or (b) a materially higher multiple (30-35x FCF), which the market might justify if the 300mm manufacturing moat is re-rated as a durable structural franchise with software-like cash generation characteristics at full utilization. The CRUX IS THIS GAP: the base FCF path ($8.20/share in 2027) does not justify $323 at any reasonable analog semiconductor multiple. Only the bull path ($10.50/share) at 30x FCF gets close to current price ($315). Daedalus must determine whether the market's implicit pricing of ~$10+ FCF/share by 2027 is justified by contracted or extrapolated evidence, and what WACC and terminal multiple apply to this specific franchise. Revenue recovery pace and capex trajectory are the two levers that move the answer most; the terminal multiple on normalized FCF is the third lever and also contested.",
+
+  "contracted_vs_extrapolated": {
+    "contracted": [
+      "Q2 2026 revenue guidance $5.0-5.4B (management on the hook for this)",
+      "Capex of $2-3B for FY2026 (stated capital plan)",
+      "Silicon Labs deal announced at $7.5B all-cash; expected close H1 2027; ~$785M in annual revenue acquired",
+      "CHIPS Act direct funding: $1.6B (award agreement signed December 2024)",
+      "CHIPS ITC: $6-8B in total Treasury credits expected over build-out period"
+    ],
+    "extrapolated": [
+      "Industrial revenue returning to $8-9B (2022 peak) by FY2027",
+      "Data center reaching 20% of total revenue",
+      "Gross margin recovering to 65%+ by 2027-2028",
+      "FCF/share reaching $9-12 by 2027"
+    ],
+    "hoped_for": [
+      "Industrial demand exceeding prior peak on new content drivers (factory automation, electrification)",
+      "Capex falling below $2B in 2027 at maintenance level",
+      "Gross margin approaching 70% as 300mm share reaches 80%+"
+    ]
+  }
+}

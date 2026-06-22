@@ -1,0 +1,219 @@
+{
+  "ticker": "TXN",
+  "audit_date": "2026-06-22",
+  "auditor": "Erinys",
+  "atlas_version": "v3",
+  "claims": [
+    {
+      "claim": "SOTP aggregate math: sum_of_segment_ev_b $114.127 - net_debt $18.0B / 0.91B shares = $105.63",
+      "expected": "$105.63",
+      "verified": true,
+      "computation": "(106.419 + 7.708 - 18.0) / 0.91 = 96.127 / 0.91 = 105.634",
+      "note": "Aggregate arithmetic is correct. Rounding to $105.63 is acceptable (delta $0.004)."
+    },
+    {
+      "claim": "Analog Gordon exit multiple (1 - 0.045/0.35) / (0.09 - 0.045) = 19.37x",
+      "expected": "19.37x",
+      "verified": true,
+      "computation": "(1 - 0.1286) / 0.045 = 0.8714 / 0.045 = 19.365x",
+      "note": "Valuation reports 19.37; recomputed 19.365. Rounding is immaterial. Well-behaved: g=4.5% < r=9%."
+    },
+    {
+      "claim": "Analog segment EV: NOPAT_T $7.5B x 19.37x / (1.09)^5 + interim $12.0B = $106.419B",
+      "expected": "$106.419B",
+      "verified": true,
+      "computation": "EV_T = 7.5 x 19.365 = 145.238B; PV = 145.238/1.5386 = 94.395B; +12.0 = 106.395B",
+      "note": "Matches valuation 106.419B within $0.024B rounding. The valuation shows ev_at_T_b=145.275 (minor rounding vs 145.238); immaterial."
+    },
+    {
+      "claim": "Embedded Gordon exit multiple (1 - 0.04/0.20) / (0.10 - 0.04) = 13.33x",
+      "expected": "13.33x",
+      "verified": true,
+      "computation": "(1 - 0.20) / 0.06 = 0.80 / 0.06 = 13.333x",
+      "note": "Well-behaved: g=4.0% < r=10.0%."
+    },
+    {
+      "claim": "Embedded segment EV: NOPAT_T $0.75B x 13.33x / (1.10)^5 + interim $1.5B = $7.708B",
+      "expected": "$7.708B",
+      "verified": true,
+      "computation": "EV_T = 0.75 x 13.333 = 10.0B; PV = 10.0/1.6105 = 6.209B; +1.5 = 7.709B",
+      "note": "Matches valuation 7.708B within $0.001B rounding."
+    },
+    {
+      "claim": "12m fair value roll-forward: $105.63 x 1.09 - $5.68 = $109.46",
+      "expected": "$109.46",
+      "verified": true,
+      "computation": "105.63 x 1.09 = 115.137; minus 5.68 = 109.457",
+      "note": "Report says $109.46; computed $109.46. Exact match within rounding."
+    },
+    {
+      "claim": "12m target: $7.44 FCF/sh x 27x = $200.88",
+      "expected": "$200.88",
+      "verified": true,
+      "computation": "7.44 x 27.0 = 200.880",
+      "note": "Exact match."
+    },
+    {
+      "claim": "Implied 12m total return: ($200.88 + $5.68 - $322.86) / $322.86 = -36.0%",
+      "expected": "-36.0%",
+      "verified": true,
+      "computation": "(200.88 + 5.68 - 322.86) / 322.86 = -116.30 / 322.86 = -36.02%",
+      "note": "Rounds correctly to -36.0%."
+    },
+    {
+      "claim": "NTM P/E: $322.86 / $8.95 = 36.1x",
+      "expected": "36.1x",
+      "verified": true,
+      "computation": "322.86 / 8.95 = 36.07x",
+      "note": "Rounds correctly to 36.1x. EPS $8.95 from 32-analyst consensus (bundle eps_ntm_consensus=8.94802). The bundle yfinance eps_ntm=9.4206 (giving 34.3x, which matches bundle pe_ntm=34.27) was correctly set aside as the consensus-blend artifact: Pheme uses 8.94802 which yields 36.1x NTM P/E. No AVGO-style impossibility: implied FY2026 NI ~$8.6B on 0.91B shares is consistent with FY2022 peak NI $8.75B and the ongoing earnings recovery."
+    },
+    {
+      "claim": "T-invariance: Analog implied_px ranges $107.50 (T=7) to $121.76 (T=4) across T=3 to T=7",
+      "expected": "Range $107-122 per TXN.json valuation_method text",
+      "verified": true,
+      "computation": "Recomputed each T using NOPAT from nopat_path_b and constant interim_fcf_pv=12.0: T=3:120.00, T=4:121.73, T=5:116.92, T=6:112.16, T=7:107.48. Matches valuation cells within $0.04. Range $107-122 stated in TXN.json is confirmed.",
+      "note": "T-invariance is within an acceptable $14 band around the T=5 base, confirming the method is stable to normalization year choice. The report describes this as '$108-122' which understates the T=7 floor ($107.50). Flag: minor descriptive inaccuracy in t_invariance_range text ('$107-122/sh for T=3 through T=7' in TXN.json should be '$107-122' to be accurate -- T=7 is $107.50, so $107 is correct). Not material."
+    },
+    {
+      "claim": "Bias audit: same_direction_count=4 (SLIGHT BEAR), verdict PASS with note",
+      "expected": "Tally correct; no undisclosed stacking",
+      "verified": true,
+      "note": "Audit rows list nine assumptions. Four have SLIGHT BEAR lean: (1) Analog g_LT 4.5% vs market midpoint 5.5-6%; (2) Analog r=9.0% vs WACC=7.3%; (3) Embedded exit multiple 13.3x at conservative end; (4) Interim FCF PV $12.0B at ~50% of calculated value. Zero BULL leans. Five CENTER. The tally of 4 SAME-DIRECTION is accurately reported. CONTRACT §1.3 flags 'three or more' as a potential bias; the report acknowledges this at 4 and argues robustness: relaxing any single assumption adds $20-40/sh to fair value but does not change the SELL directional conclusion given the $217 gap to current price. The disclosure is present, the argument is made. Erinys rates this PASS WITH NOTE -- the four-lean fact pattern is at the boundary of the bias threshold and the report's own defense (SELL survives any individual relaxation) is arithmetically correct: even the bull at Ke=9% yields $168, still 48% below price."
+    },
+    {
+      "claim": "Bull SOTP $168.04 at Ke=9% (valuation.json outputs)",
+      "expected": "$168.04",
+      "verified": true,
+      "computation": "(161.049 + 9.863 - 18.0) / 0.91 = 152.912 / 0.91 = 168.04",
+      "note": "Matches exactly. Bull uses g=5%, ROIC=40%, NOPAT_T=10.2B for Analog (Gordon 21.875x) and NOPAT_T=0.95B for Embedded."
+    },
+    {
+      "claim": "Bull SOTP $231 at r=8% (Boreas Debate 2 quantification)",
+      "expected": "$231",
+      "verified": "INFERENCE",
+      "computation": "Boreas states: Analog EV at r=8%, NOPAT=10.2B, Gordon=(1-5%/40%)/(8%-5%)=29.2x; EV_T=10.2x29.2=297.8B; PV at 8% for 5yr=297.8/1.469=202.7B; +interim 16.0=218.7B; less 14.0 debt=204.7B; /0.91=225/sh Analog; +Embedded bull ~6.4 = ~231. Erinys recompute: (1-0.05/0.40)/(0.08-0.05)=0.875/0.03=29.167x; EV_T=10.2x29.167=297.5B; PV=297.5/(1.08^5)=297.5/1.469=202.5B; +16.0=218.5B; less 14.0=204.5B; /0.91=224.7/sh Analog. Embedded bull: PV_T=9.865/0.91=10.84 -> need to rerun at unchanged r=10%, still ~$6.5/sh. Total ~$231. Consistent with the claimed $231.",
+      "note": "The $231 is an inference/cross-check by Boreas, not the base model output. The arithmetic is directionally verified and consistent. The $63/sh swing from moving Analog r from 9% to 8% at bull NOPAT is independently confirmed: 168 + 63 = 231."
+    },
+    {
+      "claim": "Bear SOTP $52.64 (valuation.json bear scenario, the band_low figure)",
+      "expected": "$52.64",
+      "verified": true,
+      "computation": "Analog bear (g=3.5%, ROIC=25%, r=9.5%): Gordon=14.33x; EV_T=5.8x14.33=83.11B; PV=83.11/(1.095)^5=83.11/1.574=52.81B; +8.0=60.81B. Embedded bear (r=10.5%): Gordon=12.31x; EV_T=0.55x12.31=6.77B; PV=6.77/(1.105)^5=6.77/1.647=4.11B; +1.0=5.11B. Total equity=(60.81+5.11-18.0)/0.91=47.92/0.91=52.66≈52.64.",
+      "note": "Matches valuation.json bear scenario 52.64 within rounding."
+    },
+    {
+      "claim": "Cassandra own bear $56/sh (separate calculation in TXN_bear.json)",
+      "expected": "$56",
+      "verified": true,
+      "computation": "Analog (Cassandra): 5.8Bx15.0x/1.5386=56.54+8.0=64.54-14.0=50.54/0.91=55.54/sh. Embedded: 0.55x10x/1.6105=3.42+1.0=4.42-4.0=0.42/0.91=0.46/sh. Total=55.99≈56.",
+      "note": "Cassandra uses a more conservative exit multiple (15.0x derived from Gordon at g=3%, ROIC=30%, r=9%) than the valuation model bear (14.33x from g=3.5%, ROIC=25%, r=9.5%). Both are Gordon-derived and argued. The $3-4 difference between $52.64 (valuation) and $56 (Cassandra) reflects the different bear multiple assumption, not an arithmetic error."
+    },
+    {
+      "claim": "Band_low=$52.64 vs report body bear=$56 -- potential inconsistency",
+      "expected": "Band_low should equal bear scenario value",
+      "verified": false,
+      "note": "FLAG: TXN_headline.json band_low=52.64 (uses valuation.json bear output) while TXN.json range_and_sensitivity cases label 'Bear' shows implied_value=56 (Cassandra's own calculation). The valuation_headline in TXN.json also shows band_low=52.64. The report body uses $56 as the bear in synthesis_paths and scenario_assumptions, while the four_numbers band uses $52.64. This is a minor internal inconsistency: the band_low and the bear scenario value differ by $3.36 because two different exit multiple assumptions were used. Not a math error per se (both are correctly computed), but the report inconsistently references both numbers as 'the bear.'"
+    },
+    {
+      "claim": "Post-SLAB net debt ~$18B: current net_debt $10.823B + SLAB $7.5B = $18.323B ≈ $18B",
+      "expected": "$18B",
+      "verified": true,
+      "computation": "10.823 + 7.500 = 18.323; rounded to $18.0B in SOTP",
+      "note": "Rounding from $18.323B to $18.0B is a $0.323B understatement (1.8%). This is conservative (underestimates debt = slightly overstates equity value). At 0.91B shares this adds $0.36/sh to computed fair value. De minimis and conservative direction. No flag."
+    },
+    {
+      "claim": "Segment per-share contributions in four_numbers basis text: 'Analog $97.95/sh + Embedded $7.68/sh - post-SLAB net debt $18B/0.91B shares'",
+      "expected": "Internally consistent decomposition",
+      "verified": false,
+      "note": "FLAG: The phrasing implies a three-part formula (A + B - C = 105.63), but 97.95 + 7.68 = 105.63 and C ($18B/0.91B = $19.78/sh) is not subtracted in that sum. In reality 97.95 and 7.68 are post-debt-allocation segment contributions using an implied debt split of ~$17.3B to Analog and ~$0.7B to Embedded -- which does not match the stated 14/4 split in the segment model. The aggregate is correct: (106.419+7.708-18.0)/0.91=105.63. The decomposition text is misleadingly stated. The correctly stated per-segment post-debt contributions are: Analog (106.419-14.0)/0.91=$101.56/sh and Embedded (7.708-4.0)/0.91=$4.07/sh, summing to $105.63. The reported $97.95 and $7.68 do not reconcile to the 14/4 debt split."
+    },
+    {
+      "claim": "Rating: SELL based on implied 12m total return of -36.0% (hurdle is -10%)",
+      "expected": "SELL confirmed",
+      "verified": true,
+      "note": "-36.0% is well below the -10% SELL threshold. Rating is correct."
+    },
+    {
+      "claim": "Conviction: MEDIUM (valuation_confidence LOW, path_confidence LOW)",
+      "expected": "Consistent",
+      "verified": true,
+      "note": "Conviction MEDIUM is appropriate given the high directional certainty of the SELL (the multiple gap is structural) but genuine uncertainty on de-rating timing and FCF path magnitude. No inconsistency."
+    },
+    {
+      "claim": "Sensitivity matrix cells at base NOPAT $7.5B, base multiple 19.4x => $105.6",
+      "expected": "$105.6",
+      "verified": true,
+      "computation": "Recomputed above: (94.395 + 12.0 + 7.709 + 1.5 - 18.0) / 0.91 = 97.604/0.91 = 107.26... Wait -- the sensitivity matrix holds Embedded fixed at $7.7B and only varies Analog NOPAT and exit multiple. Corrected: Analog at base = (94.395+12.0)/0.91 per share + Embedded $7.7B/0.91 per share - net_debt... Actually the matrix is purely for Analog, with Embedded and net debt held fixed. Matrix cell base-base = 105.6 matches the SOTP base 105.63 ✓",
+      "note": "The sensitivity matrix correctly isolates Analog NOPAT and multiple as the two primary levers. The crux_finding ('no cell in the 3x3 reaches $323') is verified: the highest cell is $162.1, which is 50% below $322.86."
+    },
+    {
+      "claim": "NOPAT_T derivation -- Analog FY2031: $22.1B revenue x 43.5% EBIT x 82% tax retention - $0.38B SBC = $7.5B",
+      "expected": "$7.5B",
+      "verified": true,
+      "computation": "17.5 x (1.06)^4 = 17.5 x 1.2625 = 22.09B; x 0.435 = 9.61B EBIT; x 0.82 = 7.88B; minus 0.38 = 7.50B",
+      "note": "Arithmetic checks out."
+    },
+    {
+      "claim": "NOPAT_T derivation -- Embedded FY2031: $4.48B revenue x 22% EBIT x 82% - $0.05B SBC = $0.75B",
+      "expected": "$0.75B",
+      "verified": true,
+      "computation": "4.48 x 0.22 = 0.9856B EBIT; x 0.82 = 0.808B; minus 0.05 = 0.758 ≈ 0.76B; rounded to 0.75B (conservatively)",
+      "note": "The valuation text says 'rounded conservatively to 0.75B' from 0.76B. Correct."
+    },
+    {
+      "claim": "Boreas data center debate: $0.79/sh/yr x 19.4x / (1.09)^3 = $11.8/sh standalone PV",
+      "expected": "$11.8/sh",
+      "verified": true,
+      "computation": "0.72B FCF / 0.91B shares = 0.791/sh; x 19.37x = 15.33; / 1.09^3 = 15.33/1.295 = 11.84/sh",
+      "note": "Rounds to $11.8/sh as stated. Minor: Boreas says $0.79/sh but the exact is 0.791. Immaterial."
+    },
+    {
+      "claim": "Cassandra Debate 4: FY2025 dividends $5.0B vs FCF $2.60B -- dividend not covered",
+      "expected": "Bundle data",
+      "verified": true,
+      "computation": "Bundle cashflow FY2025: fcf_b=2.603, dividends_paid_b=-4.999. Coverage = 2.603/4.999 = 52%. FY2024: 1.498/4.795=31%. FY2023: 1.349/4.557=30%. Three consecutive years confirmed.",
+      "note": "All figures match the bundle exactly. The bear's argument on dividend shortfall is arithmetically supported by the bundle."
+    }
+  ],
+  "t_invariance_assessment": {
+    "analog_range": "$107.48 (T=7) to $121.73 (T=4) -- a $14 band",
+    "verdict": "PASS. The T-invariance is within a $14 band ($107-122) around the T=5 base of $116.94 (pre-debt, segment contribution). The report's claim of 'T=4 or T=6 produces similar implied prices' is verified: T=4 gives $121.73 and T=6 gives $112.16, both within ~4% of T=5. The method is stable.",
+    "note": "The T-invariance values in the report are per-segment Analog contribution BEFORE net debt deduction. That is consistent with how the engine computes them (debt is deducted at the aggregate level). The range reported in TXN.json ('$107-122/sh for T=3 through T=7') is accurate."
+  },
+  "bias_audit_assessment": {
+    "four_bear_leans": ["Analog g_LT 4.5% (market midpoint 5.5-6%)", "Analog r=9.0% Ke (vs WACC 7.3% alternative)", "Embedded exit multiple 13.3x (conservative end of 13-20x range)", "Interim FCF PV $12.0B (~50% of calculated fair PV)"],
+    "zero_bull_leans": true,
+    "contract_threshold": "3 or more same-direction = flag",
+    "tally_correct": true,
+    "verdict": "PASS WITH NOTE. The four-lean count is accurately disclosed (same_direction_count=4). CONTRACT §1.3 threshold of three-or-more is exceeded, but the bias_audit includes the required defense: relaxing any single assumption individually adds $20-40/sh to fair value but leaves the stock 50-60% above fair value. The SELL conclusion is not manufactured by the stacking; it is robust to any single assumption being moved to center. The note about this being 'at the boundary' is correct and present. Erinys confirms the tally and endorses the reported verdict of PASS with note."
+  },
+  "eps_artifact_check": {
+    "bundle_eps_ntm_yfinance": 9.4206,
+    "bundle_eps_ntm_consensus": 8.94802,
+    "report_uses": 8.95,
+    "implied_NI_at_9.4206": "9.4206 x 0.91B = $8.57B -- plausible range given FY2022 peak NI $8.75B and ongoing recovery. No impossibility like the AVGO case.",
+    "verdict": "NO AVGO-STYLE ANOMALY. Both EPS figures are plausible. The report correctly uses the 32-analyst consensus (8.94802 ≈ $8.95) and explicitly flags the yfinance blend (9.42) as an artifact in valuation_anchor. The yfinance blend implies $8.57B net income -- achievable at the bull end of the FY2026 consensus range. Neither figure is internally inconsistent."
+  },
+  "flags": [
+    {
+      "id": "F1",
+      "severity": "MINOR",
+      "claim": "Segment contribution text in four_numbers.fair_value_today.basis",
+      "issue": "The basis text 'Analog $97.95/sh + Embedded $7.68/sh - post-SLAB net debt $18B/0.91B shares' is misleadingly formatted. The $97.95 and $7.68 ARE already net of debt (using an implied 17.3/0.7 split), so the text reads as double-deducting net debt. The correctly stated decomposition is: Analog (EV $106.4B - debt $14.0B) / 0.91 = $101.56/sh + Embedded (EV $7.7B - debt $4.0B) / 0.91 = $4.07/sh = $105.63. The aggregate $105.63 is arithmetically correct; the decomposition text is not."
+    },
+    {
+      "id": "F2",
+      "severity": "MINOR",
+      "claim": "Bear scenario value inconsistency: band_low=$52.64 vs report body bear=$56",
+      "issue": "The headline and valuation_headline use band_low=$52.64 (valuation.json bear output using Daedalus assumptions: g=3.5%, ROIC=25%, r=9.5%). The report body (range_and_sensitivity, synthesis_paths, scenario_assumptions) uses the Cassandra bear of $56 (Gordon at g=3%, ROIC=30%, r=9% = 15x). Both are correctly computed bear values from different assumption sets. The inconsistency is that the report uses both interchangeably without labeling the distinction. Recommend: use a single bear figure consistently or label them 'Daedalus bear $52.64' vs 'Cassandra bear $56'."
+    },
+    {
+      "id": "F3",
+      "severity": "INFORMATIONAL",
+      "claim": "Interim FCF PV for Analog deliberately set at $12.0B (50% of calculated $24.6B PV)",
+      "issue": "Daedalus explicitly notes the $12.0B is a conservative 50% of the fair PV to avoid double-counting with the terminal value. This is a modeling judgment, not an error. However, it is one of the four bear-lean assumptions. Erinys notes: at the full $24.6B interim FCF PV (still conservative since double-count concern is noted), the Analog fair value per share would rise by roughly $13.8/sh ($12.6B additional / 0.91B shares), taking the base SOTP from $105.63 to approximately $119/sh -- still 63% below price. The conservative choice does not change the conclusion."
+    }
+  ],
+  "verdict": "PASS WITH NOTES",
+  "verdict_rationale": "All load-bearing arithmetic is verified. The exit-multiple math is correct, T-invariance is confirmed, the Gordon formula is well-behaved at all three scenarios (g < r in every case), and the SOTP aggregate checks exactly. Two minor flags: (F1) the segment contribution text in fair_value_today.basis is misleadingly formatted though the aggregate is correct; (F2) the bear scenario value is inconsistently stated as $52.64 (band_low) vs $56 (report body) from two different assumption sets. Neither flag affects the SELL conclusion, which is robust to all reasonable assumption variations. The bias audit tally is correctly disclosed at 4 same-direction leans with an adequate defense. No AVGO-style impossibility in the EPS figures."
+}
