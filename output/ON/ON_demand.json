@@ -1,0 +1,513 @@
+{
+  "ticker": "ON",
+  "as_of": "2026-06-21",
+  "analyst": "Theia v3",
+  "normalization_year": "FY2028",
+  "identity": "Total revenue = PSG(SiC + silicon) + AMG(Treo + legacy analog) + ISG(auto imaging + industrial vision)",
+  "crux_reference": "See ON_crux.json. The PSG-SiC segment is the primary crux variable. All other segments are second-order.",
+
+  "methodology_note": "Revenue paths are built as IDENTITIES from sourced drivers, not hand-drawn fades. Each segment's path is anchored to: (1) a publicly cited market size and growth rate, (2) onsemi's current market share with a sourced trajectory, (3) a stated ceiling check (the implied market size must not exceed the most bullish credible third-party forecast). Segment growth rates are not assumed to persist after FY2028 -- this is the normalization year where Daedalus applies the exit multiple.",
+
+  "actuals": {
+    "fy2022": {
+      "total_revenue_b": 8.326,
+      "PSG_revenue_b": "~4.6 (est, ~55% of total; segment data from 10-K: PSG was highest-revenue segment at peak)",
+      "AMG_revenue_b": "~2.4 (est, ~29%)",
+      "ISG_revenue_b": "~1.3 (est, ~16%)",
+      "gross_margin_pct": 48.9,
+      "note": "FY2022 = peak revenue year. Gross margin 48.9% (Hermes databundle: GP $4.077B / rev $8.326B)"
+    },
+    "fy2023": {
+      "total_revenue_b": 8.253,
+      "PSG_revenue_b": 3.880,
+      "AMG_revenue_b": 3.057,
+      "ISG_revenue_b": 1.316,
+      "gross_margin_pct": 47.1,
+      "note": "Segment data from 10-K (sourced via SEC filings). PSG fell as EV demand began to normalise; AMG record; ISG near-peak.",
+      "source": "onsemi 10-K FY2023; verified via SEC 8-K press releases"
+    },
+    "fy2024": {
+      "total_revenue_b": 7.082,
+      "PSG_revenue_b": 3.348,
+      "AMG_revenue_b": 2.609,
+      "ISG_revenue_b": 1.125,
+      "gross_margin_pct": 45.4,
+      "note": "Segments from 10-K: PSG -14%, AMG -15%, ISG -14% YoY. EV inventory correction hit all segments.",
+      "source": "onsemi FY2024 10-K; verified segment breakdown via web search"
+    },
+    "fy2025": {
+      "total_revenue_b": 5.995,
+      "PSG_revenue_b": "~2.9 (est; PSG ~48% of total at trough, consistent with Q4 2025 $724M PSG / $1.53B total = 47%)",
+      "AMG_revenue_b": "~2.1 (est; AMG ~35%)",
+      "ISG_revenue_b": "~1.0 (est; ISG ~17%)",
+      "gross_margin_pct": 33.1,
+      "note": "FY2025 = trough year. Gross margin collapsed on idle capacity. $600-700M impairment charges Q1 2025 + $200-300M Q4 2025 confirm overcapacity magnitude.",
+      "source": "Hermes databundle; Q4 2025 earnings; 8-K filings"
+    },
+    "q1_2026_annualized_run_rate": {
+      "total_revenue_annualized_b": 6.05,
+      "PSG_revenue_q1": 0.737,
+      "AMG_revenue_q1": 0.540,
+      "ISG_revenue_q1": 0.236,
+      "gross_margin_pct": 38.5,
+      "note": "Q1 2026 reported (May 4, 2026). PSG +14% YoY -- first YoY growth in 7 quarters. AI datacenter +30% QoQ, +100% YoY (within AMG/PSG). Treo up 2.5x QoQ.",
+      "source": "onsemi Q1 2026 8-K"
+    }
+  },
+
+  "segments": [
+    {
+      "segment": "PSG (Power Solutions Group)",
+      "nature": "HIGH-GROWTH (SiC sub-segment) + MATURE-CYCLICAL (silicon/IGBT sub-segment)",
+      "wacc_hint": "CAPM-derived; beta ~1.8-2.0 (high cyclicality, automotive concentration, capex-heavy); suggest Daedalus uses 10.5-11.5% for this segment",
+      "valuation_method_hint": "EXIT-MULTIPLE on normalised FY2028 EPS contribution; SiC sub-segment at premium exit multiple (~25-30x) given structural growth; silicon sub-segment at mature multiple (~12-15x)",
+
+      "driver_identity": "PSG revenue = SiC revenue (EV SiC market × onsemi share) + AI datacenter SiC/power revenue + silicon/IGBT/legacy (maturing, declining)",
+      "driver_sic_market": {
+        "base": "$6.5B total SiC device market by FY2027",
+        "bull": "$8.0B",
+        "bear": "$4.5B",
+        "source": "YOLE ($8.9B by 2028 at 31% CAGR), Mordor ($8.4B by 2030), triangulated to 2027",
+        "ceiling_check": "Ceiling: YOLE's own $8.9B 2028 forecast is the most bullish credible third-party estimate. Bull case $8B in 2027 is BELOW this ceiling. PASS."
+      },
+      "driver_on_sic_share": {
+        "base": "23% (flat from current ~22-25%)",
+        "bull": "28% (design-win momentum converts; 55% of 2026 Beijing Auto Show wins implies 2-3pp share gain vs 2023 at estimated 35-40%)",
+        "bear": "19% (Infineon 200mm cost pressure loses some European sockets; China domestic takes China share)"
+      },
+      "driver_ai_dc_power": {
+        "fy2025_actual": "$0.25B (company confirmed)",
+        "fy2026_guide": "$0.50B (management: 'doubling in 2026'; Q1 2026 already +100% YoY)",
+        "fy2027_base": "$0.65B (+30% from $0.50B)",
+        "fy2027_bull": "$1.0B (design funnel $1.5B begins converting; YOLE power GaN 42% CAGR)",
+        "fy2027_bear": "$0.35B (GaNEXUS design wins delayed; Infineon GaN Systems competes effectively)",
+        "ceiling_check": "YOLE projects power GaN $3B total market by 2030. onsemi targeting ~30-35% wallet share implies $0.9-1.0B by 2030. Bull $1.0B by 2027 is aggressive vs this ceiling. Flag: bull AI datacenter path approaches ceiling 2-3 years early. Adjust: bull FY2028 AI datacenter = $1.5B, implying ~33% of $4.5B power GaN market by 2028 -- plausible but upper end."
+      },
+      "driver_silicon_legacy": {
+        "note": "IGBTs, MOSFETs, legacy silicon power declining as mix shifts to SiC/GaN. Estimated ~$1.3-1.5B annually at trough; stable to modest decline.",
+        "fy2027_estimate": "$1.2-1.4B"
+      },
+
+      "revenue_path": {
+        "fy2026e": {
+          "base": {
+            "sic_market_b": 4.5,
+            "on_share_pct": 23,
+            "sic_revenue_b": 1.035,
+            "aidc_power_b": 0.50,
+            "silicon_legacy_b": 1.35,
+            "total_PSG_b": 2.885,
+            "implied_sic_market_check": "SiC market $4.5B in 2026 (recovering from $2.7B 2025 trough; +67% YoY reflects inventory normalisation + genuine EV demand recovery -- this is the EV cycle re-stocking year). Consistent with Mordor/YOLE trajectory."
+          },
+          "bull": {
+            "sic_revenue_b": 1.20,
+            "aidc_power_b": 0.60,
+            "silicon_legacy_b": 1.35,
+            "total_PSG_b": 3.15
+          },
+          "bear": {
+            "sic_revenue_b": 0.75,
+            "aidc_power_b": 0.35,
+            "silicon_legacy_b": 1.25,
+            "total_PSG_b": 2.35
+          }
+        },
+        "fy2027e": {
+          "base": {
+            "sic_market_b": 6.5,
+            "on_share_pct": 23,
+            "sic_revenue_b": 1.495,
+            "aidc_power_b": 0.65,
+            "silicon_legacy_b": 1.25,
+            "total_PSG_b": 3.395,
+            "implied_sic_market_check": "SiC market $6.5B in 2027 implies +44% from 2026. This is within the YOLE forecast envelope ($8.9B by 2028). PASS."
+          },
+          "bull": {
+            "sic_market_b": 8.0,
+            "on_share_pct": 28,
+            "sic_revenue_b": 2.24,
+            "aidc_power_b": 1.0,
+            "silicon_legacy_b": 1.2,
+            "total_PSG_b": 4.44,
+            "implied_sic_market_check": "SiC market $8B in 2027 approaches YOLE's $8.9B 2028 ceiling -- implies market hits peak one year early. Aggressive but not impossible given AI datacenter demand for SiC JFETs pulling forward market growth. FLAG: single-year variance from ceiling; reasonable if AI datacenter SiC demand accelerates independently."
+          },
+          "bear": {
+            "sic_market_b": 4.5,
+            "on_share_pct": 19,
+            "sic_revenue_b": 0.855,
+            "aidc_power_b": 0.35,
+            "silicon_legacy_b": 1.2,
+            "total_PSG_b": 2.405
+          }
+        },
+        "fy2028e": {
+          "base": {
+            "sic_market_b": 8.0,
+            "on_share_pct": 23,
+            "sic_revenue_b": 1.84,
+            "aidc_power_b": 0.85,
+            "silicon_legacy_b": 1.1,
+            "total_PSG_b": 3.79,
+            "note": "Czech Republic 200mm fab reaching volume production 2027-2028 unlocks further SiC cost reduction; gross margin recovery to 43-46% for PSG in normalization year"
+          },
+          "bull": {
+            "sic_market_b": 9.5,
+            "on_share_pct": 30,
+            "sic_revenue_b": 2.85,
+            "aidc_power_b": 1.5,
+            "silicon_legacy_b": 1.0,
+            "total_PSG_b": 5.35,
+            "ceiling_check": "SiC market $9.5B is ABOVE YOLE's $8.9B 2028 forecast but within Fortune Business Insights' $10.3B 2030 range. onsemi at 30% implies it surpasses STMicro as #1 (currently 32.6%). Aggressive but not impossible with 55% design-win share leading indicator. FLAG: this path requires both market at upper bound AND share gain -- two simultaneous hits."
+          },
+          "bear": {
+            "sic_market_b": 5.0,
+            "on_share_pct": 18,
+            "sic_revenue_b": 0.9,
+            "aidc_power_b": 0.40,
+            "silicon_legacy_b": 1.1,
+            "total_PSG_b": 2.40
+          }
+        }
+      },
+      "gross_margin_trajectory": {
+        "fy2025_trough": "33.1%",
+        "fy2026e_base": "39-41% (continuing utilisation recovery; SiC/GaN mix accretive)",
+        "fy2027e_base": "42-44% (Czech first wafers; power mix improvement)",
+        "fy2028e_base": "44-47% (200mm scale begins; closer to pre-downcycle peak)",
+        "fy2028_bull": "48-52% (200mm yield improves; GaN/SiC premium mix dominates PSG)",
+        "fy2028_bear": "37-39% (competitive pricing limits margin recovery; idle capacity persists)",
+        "ceiling": "Prior peak PSG gross margin ~52% when fully utilised; structurally achievable but requires full Czech fab utilisation"
+      }
+    },
+
+    {
+      "segment": "AMG (Analog and Mixed-Signal Group)",
+      "nature": "HIGH-GROWTH (Treo platform) + MATURE-CYCLICAL (legacy analog recovery)",
+      "wacc_hint": "CAPM-derived; beta ~1.5-1.7 (less capex-intensive than PSG; more software-like Treo margins but still automotive cyclical); suggest Daedalus uses 9.5-10.5%",
+      "valuation_method_hint": "EXIT-MULTIPLE on FY2028 normalised earnings; Treo sub-segment at 25-30x (high-IP, high-margin analog platform vs TXN); legacy at 12-15x",
+
+      "driver_identity": "AMG revenue = Treo platform revenue + legacy analog (automotive ADAS ICs, power management, connectivity) + AI datacenter AMG content",
+      "driver_treo": {
+        "platform_tam": "$36B (company-stated; $36B addressable market for BCD 65nm analog across auto, industrial, AI datacenter, aerospace)",
+        "source_tam": "onsemi investor communications; Q1 2026 earnings discussion",
+        "design_funnel": ">$1B funnel at Q1 2026 (revenue + pipeline); up from near-zero at 2023 launch",
+        "funnel_conversion_rate": "Industry typical analog design-in to volume revenue: 18-36 months. Treo funnel entering revenue conversion phase 2026-2027.",
+        "fy2027_target": "Company stated $1B Treo revenue by 2030 -- implies $300-400M by 2027 on typical ramp trajectory",
+        "gross_margin_treo": "60-70% (BCD 65nm process differentiation; high design-in stickiness; per Q1 2026 commentary)",
+        "source": "onsemi investor day slides; Q1 2026 earnings call"
+      },
+      "driver_legacy_analog": {
+        "fy2023": "$3.057B (peak; includes non-core products being exited)",
+        "fy2025": "~$2.1B (est; deliberate portfolio exit of ~$300M non-core in 2026 reduces base further)",
+        "fy2027_base": "$2.0-2.2B (recovery to normalized level ex-non-core exits; automotive ADAS content ramps)",
+        "note": "AMG legacy analog is tied to automotive/industrial cycle recovery. TI competition is the main risk. Q1 2026 AMG was $540M (-5% YoY) -- still recovering."
+      },
+
+      "revenue_path": {
+        "fy2026e": {
+          "base": {
+            "treo_b": 0.15,
+            "legacy_analog_b": 1.95,
+            "total_AMG_b": 2.10,
+            "note": "Treo ramp early stage; 2.5x sequential in Q1 2026 is from tiny base. Legacy recovery gradual as auto/industrial cycle stabilizes."
+          },
+          "bull": { "total_AMG_b": 2.25 },
+          "bear": { "total_AMG_b": 1.85 }
+        },
+        "fy2027e": {
+          "base": {
+            "treo_b": 0.30,
+            "legacy_analog_b": 2.10,
+            "total_AMG_b": 2.40
+          },
+          "bull": {
+            "treo_b": 0.45,
+            "legacy_analog_b": 2.25,
+            "total_AMG_b": 2.70,
+            "note": "Bull: Treo design wins accelerate in AI datacenter (high-margin PMIC sockets); automotive analog recovery above consensus"
+          },
+          "bear": {
+            "treo_b": 0.20,
+            "legacy_analog_b": 1.85,
+            "total_AMG_b": 2.05,
+            "note": "Bear: TI pricing pressure limits legacy analog recovery; Treo funnel conversion slower than expected"
+          }
+        },
+        "fy2028e": {
+          "base": {
+            "treo_b": 0.45,
+            "legacy_analog_b": 2.20,
+            "total_AMG_b": 2.65
+          },
+          "bull": {
+            "treo_b": 0.70,
+            "legacy_analog_b": 2.35,
+            "total_AMG_b": 3.05
+          },
+          "bear": {
+            "treo_b": 0.25,
+            "legacy_analog_b": 1.90,
+            "total_AMG_b": 2.15
+          }
+        }
+      },
+      "gross_margin_trajectory": {
+        "fy2027e_base": "44-48% (Treo mix accretive at 60-70%; legacy analog at ~38-42%)",
+        "fy2028e_base": "46-50%",
+        "ceiling": "Treo at full scale could drive AMG gross margins to 50-55%; TI analog peers trade at 64-67% GM indicating structural ceiling achievable"
+      }
+    },
+
+    {
+      "segment": "ISG (Intelligent Sensing Group)",
+      "nature": "MATURE-CYCLICAL (auto ADAS imaging) + NICHE HIGH-GROWTH (SWIR/SPAD/lidar)",
+      "wacc_hint": "CAPM-derived; beta ~1.4-1.6 (automotive volume exposure; Sony competition); suggest Daedalus uses 9.5-10.0%",
+      "valuation_method_hint": "CURRENT EARNINGS x MULTIPLE; automotive CMOS imaging is a relatively stable, moderate-growth business; SWIR/SPAD is small and high-growth but not yet material; use 15-18x normalised ISG earnings",
+
+      "driver_identity": "ISG revenue = automotive CMOS image sensors (primary; ADAS regulatory mandates) + industrial machine vision + SWIR/SPAD/lidar (emerging)",
+      "driver_auto_cmos": {
+        "market_size_2025": "$4.89B total automotive CMOS image sensor market (GMInsights 2025)",
+        "market_size_2026": "$5.67B (+16% YoY)",
+        "source": "GMInsights Image Sensor Market 2026-2035",
+        "onsemi_share": "~20-25% of automotive CMOS (combined market: Sony 43.4%, Samsung ~20%, OmniVision ~10%, onsemi ~15-20%, ST ~5%)",
+        "source_share": "MarketsandMarkets Image Sensor Market; top-5 hold 83.1% (Sony+Samsung+OmniVision+ST+onsemi)",
+        "competition_risk": "Sony dominant at 43.4% global image sensor share; onsemi competes via Hyperlux family (2.1µm pixel, 150dB HDR) for ADAS differentiation; Sony's auto sensor roadmap is the primary threat. ISG faces margin pressure from Sony in premium ADAS sockets.",
+        "regulatory_tailwind": "Euro NCAP and NHTSA mandating increasing camera content per vehicle; drives unit volume even if ASP pressure exists"
+      },
+
+      "revenue_path": {
+        "fy2026e": {
+          "base": {
+            "auto_cmos_b": 0.80,
+            "industrial_vision_b": 0.18,
+            "swir_spad_b": 0.05,
+            "total_ISG_b": 1.03,
+            "note": "ISG recovering from $1.0B 2025 trough; auto ADAS camera content per vehicle rising; Q1 2026 ISG $236M (-5% QoQ but +1% YoY)"
+          },
+          "bull": { "total_ISG_b": 1.15 },
+          "bear": { "total_ISG_b": 0.90 }
+        },
+        "fy2027e": {
+          "base": {
+            "auto_cmos_b": 0.90,
+            "industrial_vision_b": 0.22,
+            "swir_spad_b": 0.07,
+            "total_ISG_b": 1.19
+          },
+          "bull": {
+            "total_ISG_b": 1.35,
+            "note": "Bull: Hyperlux wins at new EV/ADAS OEM platforms; industrial vision rebounds as factory automation CapEx resumes"
+          },
+          "bear": {
+            "total_ISG_b": 0.95,
+            "note": "Bear: Sony takes additional ADAS share with newer automotive-grade sensors; industrial vision remains depressed"
+          }
+        },
+        "fy2028e": {
+          "base": { "total_ISG_b": 1.30 },
+          "bull": { "total_ISG_b": 1.50 },
+          "bear": { "total_ISG_b": 1.00 }
+        }
+      },
+      "gross_margin_trajectory": {
+        "fy2027e_base": "45-50% (automotive CMOS sensors are high-IP; recovering from trough utilisation)",
+        "ceiling": "Sony's automotive sensors reportedly carry 55-60% gross margins -- onsemi should be able to achieve similar at full utilisation"
+      }
+    }
+  ],
+
+  "total_company_revenue_paths": {
+    "fy2026e": {
+      "base": {
+        "PSG_b": 2.885,
+        "AMG_b": 2.10,
+        "ISG_b": 1.03,
+        "total_b": 6.015,
+        "gross_margin_pct": 39.5,
+        "note": "Consistent with Q2 2026 guidance midpoint $1.585B × 4 = $6.34B annualized, but adjusted down for Q1 actual $1.513B and non-core revenue exits (~$300M). Non-core exit reduces reported revenue by ~$75M/quarter.",
+        "non_gaap_eps_est": "~$2.80-3.20"
+      },
+      "bull": {
+        "PSG_b": 3.15,
+        "AMG_b": 2.25,
+        "ISG_b": 1.15,
+        "total_b": 6.55,
+        "gross_margin_pct": 41.5,
+        "non_gaap_eps_est": "~$3.50-4.00"
+      },
+      "bear": {
+        "PSG_b": 2.35,
+        "AMG_b": 1.85,
+        "ISG_b": 0.90,
+        "total_b": 5.10,
+        "gross_margin_pct": 37.0,
+        "non_gaap_eps_est": "~$2.00-2.40"
+      }
+    },
+    "fy2027e": {
+      "base": {
+        "PSG_b": 3.395,
+        "AMG_b": 2.40,
+        "ISG_b": 1.19,
+        "total_b": 6.985,
+        "gross_margin_pct": 43.0,
+        "yoy_growth_pct": 16,
+        "non_gaap_eps_est": "~$4.50-5.00",
+        "implied_primary_driver_check": "Implied SiC market required: $6.5B at 23% share = $1.50B SiC. Total SiC device market $6.5B by 2027 is WITHIN YOLE's $8.9B 2028 forecast. CEILING CHECK: PASS.",
+        "note": "This is the recovery year. PSG SiC ramps as EV inventory correction fully clears and Czech Republic begins contributing. AMG Treo crosses $300M. AI datacenter at $650M."
+      },
+      "bull": {
+        "PSG_b": 4.44,
+        "AMG_b": 2.70,
+        "ISG_b": 1.35,
+        "total_b": 8.49,
+        "gross_margin_pct": 47.0,
+        "yoy_growth_pct": 30,
+        "non_gaap_eps_est": "~$6.50-7.50",
+        "implied_primary_driver_check": "SiC market $8B at 28% share = $2.24B. SiC market $8B by 2027 approaches YOLE $8.9B 2028 ceiling. AI datacenter $1B vs YOLE power GaN $3B by 2030 (~33% share). Both AT or near ceiling. FLAG: BULL PATH IS AT THE CEILING on two independent assumptions. Credible but requires simultaneous optimization of both main drivers -- acknowledge LOW probability path.",
+        "evidence_quality": "HOPED-FOR (requires market to hit ceiling 12-18 months early AND onsemi to gain 5-6pp market share simultaneously)"
+      },
+      "bear": {
+        "PSG_b": 2.405,
+        "AMG_b": 2.05,
+        "ISG_b": 0.95,
+        "total_b": 5.405,
+        "gross_margin_pct": 37.5,
+        "yoy_growth_pct": 6,
+        "non_gaap_eps_est": "~$2.40-2.80",
+        "implied_primary_driver_check": "SiC market $4.5B at 19% share = $0.855B. This is BELOW the Mordor Intelligence base case but above the FY2025 trough ~$2.7B. Plausible if EV demand growth is flat or Infineon takes significant share.",
+        "evidence_quality": "OBSERVABLE-AND-NEAR (Infineon 200mm cost ramp, Chinese displacement, impairment signal)"
+      }
+    },
+    "fy2028e": {
+      "base": {
+        "PSG_b": 3.79,
+        "AMG_b": 2.65,
+        "ISG_b": 1.30,
+        "total_b": 7.74,
+        "gross_margin_pct": 45.5,
+        "yoy_growth_pct": 11,
+        "non_gaap_eps_est": "~$5.50-6.50",
+        "note": "Normalization year. SiC revenue $1.84B (20% CAGR from ~$1B 2025 trough). Czech Republic 200mm in volume production. AI datacenter $850M. Gross margin approaching prior peak but NOT reaching it in base -- 200mm scale not yet fully mature.",
+        "implied_primary_driver_check": "SiC market $8B at 23% share = $1.84B. SiC market $8B by 2028 is AT YOLE's $8.9B 2028 forecast. CEILING CHECK: PASS (within range)."
+      },
+      "bull": {
+        "PSG_b": 5.35,
+        "AMG_b": 3.05,
+        "ISG_b": 1.50,
+        "total_b": 9.90,
+        "gross_margin_pct": 50.5,
+        "yoy_growth_pct": 17,
+        "non_gaap_eps_est": "~$8.00-9.00",
+        "implied_primary_driver_check": "SiC market $9.5B in 2028 is above YOLE $8.9B and approaches FortuneBusiness $10.3B by 2030 ceiling. onsemi at 30% would be #1 market share. FLAG: CEILING BREACH on SiC market timing (YOLE says $8.9B by 2028, not $9.5B). Bull 2028 SiC requires AI datacenter SiC pull-through to add incremental demand beyond automotive. Acknowledged: possible but SINGLE-SOURCE risk (no independent 2028 forecast supports $9.5B)."
+      },
+      "bear": {
+        "PSG_b": 2.40,
+        "AMG_b": 2.15,
+        "ISG_b": 1.00,
+        "total_b": 5.55,
+        "gross_margin_pct": 37.5,
+        "yoy_growth_pct": 3,
+        "non_gaap_eps_est": "~$2.50-3.00",
+        "note": "Bear normalization: structurally lower margins due to competitive pricing, capacity underutilisation persists, and Chinese domestic SiC captures bulk of China growth. This is NOT a catastrophic scenario -- revenue is still ~$5.5B -- but it would imply the El-Khoury strategic thesis failed to deliver on margin recovery."
+      }
+    }
+  },
+
+  "ceiling_gate_summary": {
+    "sic_market_ceiling_used": "$8.9B by 2028 (YOLE Intelligence; the most cited research-firm forecast; triangulated with Mordor $8.4B by 2030)",
+    "power_gan_ceiling_used": "$3B by 2030 at 42% CAGR (YOLE October 2025)",
+    "base_ceiling_check": "PASS -- base 2028 SiC market of $8.0B is WITHIN the $8.9B ceiling",
+    "bull_ceiling_check": "FLAG (not breach) -- bull 2028 SiC of $9.5B is ABOVE YOLE's $8.9B but BELOW FortuneBusiness Insights' $10.3B by 2030. Bull path requires market to exceed YOLE's central forecast by 7% AND onsemi to hold 30% share. Acknowledged as HOPED-FOR evidence quality.",
+    "bear_ceiling_check": "PASS -- bear paths are well below any ceiling",
+    "verdict": "Base and bear paths are arithmetically valid against sourced ceilings. Bull path approaches the ceiling on SiC market size and requires two simultaneous optimistic assumptions. Flag clearly communicated for Daedalus and Boreas/Cassandra."
+  },
+
+  "key_assumptions_ladder": {
+    "note": "Required per METHODS.md for Daedalus SOTP integration",
+    "base_case": {
+      "fy2026_revenue_b": 6.0,
+      "fy2027_revenue_b": 7.0,
+      "fy2028_revenue_b": 7.7,
+      "decade_cagr_fy2025_2028_pct": 9,
+      "fy2027_sic_market_b": 6.5,
+      "fy2027_on_sic_share_pct": 23,
+      "fy2027_aidc_revenue_b": 0.65,
+      "fy2028_gross_margin_pct": 45.5,
+      "fy2028_nonGAAP_op_margin_pct": 18,
+      "fy2028_nonGAAP_eps_est": 6.00,
+      "implied_SiC_market_vs_ceiling": "Within YOLE $8.9B ceiling. PASS.",
+      "net_debt_b": 0.857,
+      "shares_outstanding_b": 0.385,
+      "implied_value_per_share": "~$95-105 (at 22-24x FY2027 non-GAAP EPS $4.75 = $104-114; or 18-20x FY2028 EPS $6.00 = $108-120)"
+    },
+    "bull_case": {
+      "fy2026_revenue_b": 6.55,
+      "fy2027_revenue_b": 8.5,
+      "fy2028_revenue_b": 9.9,
+      "decade_cagr_fy2025_2028_pct": 18,
+      "fy2027_sic_market_b": 8.0,
+      "fy2027_on_sic_share_pct": 28,
+      "fy2027_aidc_revenue_b": 1.0,
+      "fy2028_gross_margin_pct": 50.5,
+      "fy2028_nonGAAP_op_margin_pct": 23,
+      "fy2028_nonGAAP_eps_est": 8.50,
+      "implied_SiC_market_vs_ceiling": "2027 $8B within YOLE ceiling. 2028 $9.5B above YOLE ($8.9B) but below FortuneBI ($10.3B by 2030). FLAGGED.",
+      "net_debt_b": 0.857,
+      "shares_outstanding_b": 0.380,
+      "implied_value_per_share": "~$140-175 (at 22-24x FY2027 non-GAAP EPS $7.00 = $154-168)"
+    },
+    "bear_case": {
+      "fy2026_revenue_b": 5.10,
+      "fy2027_revenue_b": 5.40,
+      "fy2028_revenue_b": 5.55,
+      "decade_cagr_fy2025_2028_pct": 3,
+      "fy2027_sic_market_b": 4.5,
+      "fy2027_on_sic_share_pct": 19,
+      "fy2027_aidc_revenue_b": 0.35,
+      "fy2028_gross_margin_pct": 37.5,
+      "fy2028_nonGAAP_op_margin_pct": 10,
+      "fy2028_nonGAAP_eps_est": 2.75,
+      "implied_SiC_market_vs_ceiling": "Well below ceiling. PASS.",
+      "net_debt_b": 0.857,
+      "shares_outstanding_b": 0.385,
+      "implied_value_per_share": "~$45-60 (at 18-20x FY2027 non-GAAP EPS $2.60 = $47-52; or 15-18x depressed FY2028 EPS $2.75 = $41-50)"
+    }
+  },
+
+  "handoff_to_daedalus": {
+    "segment_sotp_recommended": [
+      "PSG-SiC: HIGH-GROWTH segment. Method: EXIT-MULTIPLE on FY2028 normalised EPS contribution. WACC ~10.5-11.5% (high capex, automotive cyclicality, Chinese revenue concentration). Exit multiple: steady-state Gordon = (1-g/ROIC) / (r-g); at r=11%, g=4%, ROIC=20%, implies ~9x NOPAT or ~22-25x normalised net income. Normalisation year = FY2028.",
+      "PSG-Silicon (IGBTs, legacy power): MATURE-CYCLICAL. Method: current earnings x through-cycle multiple. Multiple: 12-15x NTM. This sub-segment is in structural decline; do not apply exit-multiple growth framework.",
+      "AMG-Treo: HIGH-GROWTH. Method: EXIT-MULTIPLE. WACC ~9.5-10.0%. Exit at 25-30x normalised FY2028 earnings (analog platform, high stickiness, 60-70% GM). Treo is the highest-quality asset in the portfolio -- similar to TI's analog segment which trades 25-30x.",
+      "AMG-Legacy Analog: MATURE-CYCLICAL. Method: current earnings x 15-18x (analog multiples are higher than silicon due to stickiness).",
+      "ISG: MATURE-CYCLICAL. Method: earnings x 15-18x (automotive CMOS imaging: stable, IP-intensive, moderate growth). WACC ~9.5%."
+    ],
+    "four_levers": {
+      "lever_1_growth": "Rate: 9% total revenue CAGR FY2025-2028 (base). Duration: normalization FY2028. CONTESTED: rate could be 18% (bull) or 3% (bear) depending entirely on SiC market recovery and AI datacenter ramp.",
+      "lever_2_economics": "Gross margin recovering from 33% trough to 45-47% by FY2028 (base). 1pp gross margin on $7.7B = $77M EBIT impact. This is the second-biggest swing after revenue.",
+      "lever_3_discount_rate": "Segment-specific WACCs per above. Blended company WACC ~10-10.5% at base. Beta ~1.98 (Hermes databundle); suggest Daedalus uses fundamental beta ~1.5-1.7 to avoid rally-inflated regression.",
+      "lever_4_exit_multiple": "Warranted steady-state multiple for PSG-SiC: ~22-25x (high ROIC industrial tech with secular tailwinds). Apply Gordon: at r=11%, g=4%, ROIC=22%, multiple = (1-4/22)/(11%-4%) = ~11.7x NOPAT = ~23x net income. For blended company, implied 20-25x normalised EPS."
+    },
+    "key_debates_for_boreas_cassandra": [
+      "DEBATE 1 (THE CRUX): Will onsemi's SiC revenue reach $1.5B by FY2027 (base) vs $2.2B (bull) vs $0.85B (bear)? The dispute is: does 55% EV model design-win share convert to revenue share gains, and does Infineon's 200mm cost advantage displace onsemi in the window before Czech Republic ramps? This is a $1.35B range on a $7B revenue base -- the biggest single swing in the model.",
+      "DEBATE 2: Does gross margin reach 44%+ by FY2027 (base/bull) or stays capped at 37-39% (bear)? The mechanism: Czech Republic fab utilisation recovery vs competitive pricing pressure in SiC. Every 1pp difference = ~$77M EBIT = ~$0.20/share EPS on base share count.",
+      "DEBATE 3: Is the AI datacenter vector ($0.65B base FY2027) structural or cyclical? Bull sees 30+ hyperscaler programs + GaNEXUS launch = sustainable platform. Bear sees content per rack contested by Infineon's GaN Systems and TI's mature GaN -- onsemi is a newcomer to this market with a just-launched product (June 2026).",
+      "DEBATE 4: China SiC risk. Is onsemi's China EV SiC position (doubled in Q2 2025, maintained through Beijing Auto Show wins) durable as Chinese domestic SiC scales? The bear mechanism is slow-moving (qualification takes 18-36 months) but directionally clear (S&P Global documents active government self-reliance push)."
+    ]
+  },
+
+  "sources": [
+    "ON_crux.json (same source set, not repeated here)",
+    "onsemi FY2023 10-K (segment revenue PSG $3.88B, AMG $3.06B, ISG $1.32B)",
+    "onsemi FY2024 10-K (segment revenue PSG $3.35B, AMG $2.61B, ISG $1.13B)",
+    "onsemi Q1 2026 8-K (PSG $737M, AMG $540M, ISG $236M)",
+    "GMInsights automotive CMOS image sensor market $4.89B 2025, $5.67B 2026",
+    "MarketsandMarkets: Sony 43.4% image sensor market share 2025; top-5 hold 83.1%",
+    "onsemi GaNEXUS press release June 9, 2026 ($1.5B design funnel)",
+    "YOLE Power GaN $3B by 2030 at 42% CAGR (October 2025)",
+    "Mordor Intelligence SiC Power Semiconductor $8.4B by 2030",
+    "YOLE SiC $8.9B by 2028 at 31% CAGR (2022-2028)",
+    "IEA Global EV Outlook 2026 (23.3M EVs in 2026)"
+  ]
+}

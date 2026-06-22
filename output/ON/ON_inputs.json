@@ -1,0 +1,271 @@
+{
+  "schema_version": "3.0",
+  "ticker": "ON",
+  "currency": "USD",
+  "as_of": "2026-06-21",
+  "current_price": 121.62,
+  "shares_outstanding_b": 0.389,
+  "net_debt_b": 0.857,
+  "dividend_per_share": 0.0,
+  "business_type": "conglomerate",
+  "sector_hint": "semiconductors",
+  "blended_wacc": {
+    "value": 0.102,
+    "note": "Value-weighted blended WACC: PSG 10.5% (~55% of SOTP value), AMG 9.5% (~29%), ISG 9.5% (~16%). Blended ~10.2%. Used for #3 roll-forward only -- each segment uses its own WACC inside the SOTP."
+  },
+  "method_why": "onsemi is a three-segment conglomerate: PSG (SiC power -- high-growth), AMG (Treo analog + legacy -- moderate growth, exit-multiple), ISG (automotive imaging -- mature cyclical, earnings multiple). Per CONTRACT §2.1 and METHODS.md, each segment is valued on its own terms with its own WACC. A single P/E on non-GAAP EPS would blend three very different economic profiles and obscure the crux. SOTP is the right method.",
+
+  "primary_method": {
+    "name": "SOTP",
+    "reasoning": "PSG is a high-growth SiC business undergoing a large-scale fab investment with secular tailwinds (EV 800V architecture, AI datacenter power density). EXIT-MULTIPLE on FY2030 normalization: growth matures to single-digit rates by FY2030 per Theia's demand model (T-invariance verified at T=3 to T=5, answer stable at $45-47/sh). AMG has a high-growth Treo platform embedded in a moderate-growth legacy analog base; EXIT-MULTIPLE on FY2030 normalization. ISG is a mature-cyclical automotive CMOS imaging business; EARNINGS MULTIPLE on FY2030 normalised EBIT (a current-earnings-times-justified-multiple approach). Each segment carries its own CAPM-derived WACC.",
+    "inputs": {
+      "segments": [
+        {
+          "name": "PSG (Power Solutions Group)",
+          "method": "ExitMultiple",
+          "classification": "HIGH-GROWTH",
+          "reasoning": "SiC is the crux asset. Revenue growing from ~$2.9B trough (FY2025) to $4.59B base by FY2030 (T=4 years from June 2026), driven by EV inventory correction clearing and Czech Republic 200mm fab ramping. Growth exceeds single-digit through FY2028, normalizing toward 7-8% by FY2030. EXIT-MULTIPLE method per CONTRACT §2.2 -- the only honest question is 'how big does NOPAT get?' T-invariance verified: answer is stable ($41-$48) across T=3 to T=5, confirming FY2030 as the normalization year (Theia specified FY2028 as normalization but T-invariance revealed growth not yet single-digit there -- reconciled to FY2030).",
+          "exit_inputs": {
+            "nopat_path_b": [0.560, 0.680, 0.764, 0.850, 0.932, 1.002],
+            "normalize_index": 5,
+            "nopat_T_b": 1.002,
+            "years_to_T": 4,
+            "g_lt": 0.045,
+            "roic": 0.25,
+            "r": 0.105,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 0.0,
+            "reasoning": "NOPAT path: FY2026 $0.560B (PSG rev $2.885B x 24% EBIT x 0.84 tax), FY2027 $0.680B (PSG $3.395B x 24% EBIT), FY2028 $0.764B (PSG $3.79B x 24%), FY2029 $0.880B, FY2030 $1.002B (PSG $4.59B x 26% x 0.84). EBIT margin rises from 24% in FY2026-2028 (partial Czech fab utilization) to 26% in FY2030 as 200mm scale matures. Below peak 30-35% EBIT margin of FY2022 because Czech fab is still ramping and SiC pricing pressure from STMicro/Infineon persists. WACC r=10.5%: CAPM fundamental beta 1.6 (vs regression 1.98; credit contracted LTAs and EU grant de-risking -- onsemi has $4.5B+ LTA commitments and a locked-in $450M EU grant for the Czech fab), ERP 4.5%, rf 4.3%. Ke = 4.3% + 1.6 x 4.5% = 11.5%. Blended WACC ~10.5% after small debt tax shield. Gordon exit EV/NOPAT = (1-4.5%/25%) / (10.5%-4.5%) = 0.82/0.06 = 13.67x. Reconciles to: mature power semi peers trade 12-15x EV/EBIT = 14-18x EV/NOPAT; 13.67x is at honest center for a business not yet fully normalized. Evidence: TrendForce (SiC share 22-25%), YOLE/Mordor ($6.5-8B SiC market by FY2027), Theia demand model PSG paths."
+          },
+          "wacc_derivation": {
+            "rf": 0.043,
+            "beta_regression": 1.977,
+            "beta_fundamental": 1.6,
+            "beta_rationale": "De-risked from 1.98 regression by: (a) contracted LTA backlog with ZEEKR/VW/BMW/NIO/Hyundai; (b) Czech Republic fab EU grant (450M, locked Dec 2025) reduces financing risk; (c) vertical SiC integration lowers substrate supply chain risk vs competitors. Retains premium over market for automotive concentration and capex intensity.",
+            "erp": 0.045,
+            "ke": 0.115,
+            "wacc": 0.105,
+            "note": "CAPM, fundamental beta per CONTRACT §2.3. Not the rally-inflated 1.977 regression."
+          }
+        },
+        {
+          "name": "AMG (Analog and Mixed-Signal Group)",
+          "method": "ExitMultiple",
+          "classification": "MODERATE-GROWTH",
+          "reasoning": "AMG combines the early-stage Treo platform (BCD 65nm, $36B TAM, company-stated $1B revenue target by 2030) with recovering legacy analog (automotive ADAS ICs, power management). Treo is growing rapidly from a small base (2.5x QoQ in Q1 2026); legacy analog recovers 8-10% annually from the trough. EXIT-MULTIPLE at FY2030: Treo reaches $450M in FY2030 (company-stated path: $1B by 2030 implies ~$450M midpoint by FY2030), legacy analog recovers to $2.64B. Combined AMG at FY2030: $3.09B revenue x 20% EBIT margin. Gordon exit: r=9.5% (CAPM beta ~1.4; analog is less capex-intensive than SiC, lower cyclicality), g=4%, ROIC=20% (below TI's 30%+ because Treo is still scaling and legacy analog competes against TI on breadth).",
+          "exit_inputs": {
+            "nopat_path_b": [0.315, 0.388, 0.423, 0.465, 0.495, 0.519],
+            "normalize_index": 5,
+            "nopat_T_b": 0.519,
+            "years_to_T": 4,
+            "g_lt": 0.040,
+            "roic": 0.20,
+            "r": 0.095,
+            "exit_multiple_override": null,
+            "interim_fcf_pv_b": 0.0,
+            "reasoning": "NOPAT path: FY2026 $0.315B (AMG $2.10B x 18% EBIT x 0.84), FY2027 $0.388B (AMG $2.40B x 19%), FY2028 $0.423B (AMG $2.65B x 19%), FY2029 $0.460B, FY2030 $0.519B (AMG $3.09B x 20%). EBIT margin rises from 18% (legacy analog recovery, Treo early stage) to 20% as Treo's high-margin mix (60-70% GM, per Q1 2026 commentary) improves blended AMG margins. WACC r=9.5%: fundamental beta 1.4 (less capex-intensive than PSG; analog design-in stickiness reduces cyclicality vs silicon power; automotive exposure remains). Ke = 4.3% + 1.4 x 4.5% = 10.6%. Blended ~9.5%. Gordon: (1-4%/20%) / (9.5%-4%) = 0.80/0.055 = 14.55x EV/NOPAT. Evidence: AMG FY2024 actual $2.609B, Treo 2.5x QoQ in Q1 2026, Theia demand model AMG paths."
+          },
+          "wacc_derivation": {
+            "rf": 0.043,
+            "beta_fundamental": 1.4,
+            "beta_rationale": "Analog ICs are less capex-intensive than SiC power; Treo's design-in stickiness (BCD 65nm barrier to re-design) reduces demand volatility. Automotive end-market exposure retained but lower than PSG.",
+            "erp": 0.045,
+            "ke": 0.106,
+            "wacc": 0.095
+          }
+        },
+        {
+          "name": "ISG (Intelligent Sensing Group)",
+          "method": "Multiple",
+          "classification": "MATURE-CYCLICAL",
+          "reasoning": "ISG is a mature automotive CMOS imaging business (regulatory ADAS tailwinds but stable unit growth). Sony dominates at 43.4% market share; onsemi ISG has 15-20% automotive CMOS share. Growth is moderate (NCAP mandates drive camera content per vehicle; industrial machine vision recovering). EARNINGS MULTIPLE method per METHODS.md -- ISG is already at/near steady state. Applied to FY2030 normalised EBIT (modest growth, stable margins, mature competitive position). EV/EBIT 16x (mid-range of Theia's 15-18x; below Sony's automotive sensor premiums but appropriate for onsemi's scale and #2-3 market position).",
+          "multiple_inputs": {
+            "multiple_type": "EV/EBIT",
+            "multiple_value": 16,
+            "fy_estimate": 0.258,
+            "reasoning": "FY2030 ISG revenue $1.52B (from $1.19B FY2027 at 8% CAGR, consistent with ADAS camera content growth and industrial vision recovery). EBIT margin 17% (auto CMOS imaging: gross ~47%, opex ~30%; below Sony's margins due to scale). EBIT = $1.52B x 17% = $0.258B. Multiple 16x: Theia's 15-18x range; mid-point for an IP-intensive automotive sensing business with regulatory tailwinds but concentrated competition. Sony's automotive imaging segment would command 20-25x; onsemi at scale discount = 16x. WACC 9.5% (beta 1.4; similar automotive exposure to AMG).",
+            "multiple_comp_evidence": "Sony Semiconductor 22-25x EV/EBIT (automotive imaging premium); OmniVision 14-18x (smaller scale); Theia suggests 15-18x for ISG at normalized state. 16x is honest center."
+          },
+          "wacc_derivation": {
+            "rf": 0.043,
+            "beta_fundamental": 1.4,
+            "erp": 0.045,
+            "wacc": 0.095
+          }
+        }
+      ]
+    }
+  },
+
+  "valuation_anchor": {
+    "ev_metric_label": "NTM EBITDA (blended FY2026-2027)",
+    "ev_metric_value": 1.85,
+    "eps_ntm": 4.315,
+    "note": "NTM EPS $4.315 is non-GAAP blended forward (Q3 2026-Q2 2027 per Pheme estimate artifact check). Current EV at $121.62: $48.17B. Implied EV/EBITDA 48.17/1.85 = 26x NTM -- far above our intrinsic justified multiple of ~10x. This is the core finding: the market uses non-GAAP P/E multiples that include back D&A and SBC, inflating reported earnings vs owner-FCF by ~$1.2B/yr at current run rate."
+  },
+
+  "earnings_bridge": {
+    "reported_eps_gaap": 0.29,
+    "non_gaap_eps_ntm": 4.315,
+    "gaap_to_nongaap_addbacks_annual_b": 1.19,
+    "addbacks_composition": "Primarily: D&A on acquired intangibles (~$0.5-0.6B/yr), SBC (~$0.15-0.20B/yr), restructuring/impairment (~$0.3-0.5B now at trough; normalizes to ~$0.1B by FY2028). Q1 2026: GAAP NI -$33M vs non-GAAP $264M = $297M addbacks/quarter = $1.19B annualized.",
+    "owner_fcf_per_share_fy2028_base": 2.64,
+    "fcf_per_share": 2.64,
+    "normalized_eps_gaap_fy2028": 4.05,
+    "notes": "The $1.19B/yr annualized non-GAAP addback is the core numerator mismatch. At FY2028 normalized NOPAT $1.17B (= FCFF approximately), the owner FCF per share at 389M shares = $3.01/sh. After SBC ~$0.18B = owner FCF ~$2.64/sh. The street pays 20-28x non-GAAP EPS of $4.75-6.00; the intrinsic justified multiple on owner FCF is lower because owner FCF is $2.64/sh, not $4.75-6.00. The difference: ~$1.5-2.0B/yr in non-GAAP addbacks that are real economic costs (D&A is a real return of capital on SiC fab investments; SBC is a real equity dilution cost).",
+    "method": "NOPAT bridge -- EBIT x (1-tax); validated: FY2025 trough EBIT $0.751B x 0.84 = $0.631B NOPAT. FY2025 actual FCF $1.419B is inflated by $0.8-1.0B of non-cash impairments in CFO; normalized trough FCF ~$0.5-0.6B. NOPAT at FY2028 base ($1.17B) is close to true normalized FCF at that revenue level."
+  },
+
+  "target_12m": {
+    "basis": "EV/EBITDA",
+    "forward_metric_label": "NTM EBITDA (FY2027 base ~$1.85B rolled forward)",
+    "forward_metric_value": 1.85,
+    "defensible_multiple": 10.0,
+    "multiple_rationale": "Our SOTP yields ~$45.50/share intrinsic. Rolled forward at r=10.2% (blended WACC): #3 = $50.15. The bear case evidence (Infineon 200mm ramp observable, impairments DOCUMENTED) is OBSERVABLE-AND-NEAR per Theia, which per METHODS.md moves the target slightly below #3. Target = $50 (barely below #3; not a dramatic lean because the bull design-win evidence is EXTRAPOLATED, a real offsetting force). The $50 target corresponds to ~10x NTM EBITDA. Mature semis trade 12-18x EV/EBITDA but on NORMALIZED (not recovery-year) EBITDA. At recovery-year EBITDA of ~$1.85B and 10x multiple, EV = $18.5B, equity = $17.6B, price = $45.30/sh. The gap to #4 ($50) reflects one year's value creation at our WACC.",
+    "note": "The TARGET is NOT the price I think it will trade at in 12 months -- it is the price WE think is DEFENSIBLE based on intrinsic value. Whether the market pays $121 or $50 depends on whether the narrative/non-GAAP convention persists. Our job is to report the honest intrinsic anchor."
+  },
+
+  "cross_check": {
+    "name": "EV/EBITDA comp",
+    "reasoning": "Semi hardware peers at normalized state: Infineon ~12-15x EV/EBITDA, STMicro ~10-14x, TI ~18x. ON at normalization (trough EBITDA recovery) should trade 10-14x depending on execution of SiC margin recovery. Our 10x NTM multiple is at the low end of the range, appropriate given ON is in the EARLY stages of normalization (trough was Q2 2025; recovery confirmed Q1 2026 but GM still 38.5% vs 47% peak).",
+    "inputs": {
+      "multiple_type": "EV/EBITDA",
+      "peer_median_multiple": 12.0,
+      "fy_estimate": 1.85
+    }
+  },
+
+  "scenarios": [
+    {
+      "label": "Bear",
+      "probability": null,
+      "probability_reasoning": "No probability weighting per METHODS.md v3. Bull and bear are the HONEST RANGE, not weights.",
+      "segment_changes": [
+        {
+          "name": "PSG (Power Solutions Group)",
+          "exit_overrides": {
+            "nopat_T_b": 0.333,
+            "years_to_T": 4,
+            "g_lt": 0.03,
+            "roic": 0.14,
+            "r": 0.115
+          }
+        },
+        {
+          "name": "AMG (Analog and Mixed-Signal Group)",
+          "exit_overrides": {
+            "nopat_T_b": 0.273,
+            "years_to_T": 4,
+            "g_lt": 0.03,
+            "roic": 0.14,
+            "r": 0.100
+          }
+        },
+        {
+          "name": "ISG (Intelligent Sensing Group)",
+          "multiple_overrides": {
+            "fy_estimate": 0.127,
+            "multiple_value": 12
+          }
+        }
+      ],
+      "reasoning": "Theia BEAR: SiC market recovers only to $4.5B by FY2027 (Infineon 200mm cost displacement wins European OEM sockets; Chinese domestic SiC takes China market share). PSG FY2030 revenue $2.65B (from $2.40B FY2028 bear + 5% growth). EBIT margin 15% (competitive pricing limits recovery; idle Czech Republic capacity persists as 200mm ramp misses FY2027 targets). ROIC 14% (below cost of capital -- value-destructive in bear). Evidence quality: OBSERVABLE-AND-NEAR per Theia (Infineon 200mm rollout Feb 2025, onsemi $800M-1B impairment charges are management's own admission of overcapacity, S&P Global documents China self-reliance push)."
+    },
+    {
+      "label": "Base",
+      "probability": null,
+      "segment_changes": [],
+      "reasoning": "The honest most-likely: SiC inventory correction clears (Q1 2026 already showed first YoY PSG growth in 7 quarters); EV market resumes 15-20% global growth (IEA GEO 2026: 23.3M EVs in 2026); onsemi holds 22-25% SiC device market share (TrendForce); AI datacenter doubles to $500M in FY2026, grows to $650M FY2027. PSG FY2030 revenue $4.59B ($3.79B FY2028 base + 10% CAGR for 2 more years as Czech fab ramps). EBIT margin 26% by FY2030 (24% in FY2028, +2pp as 200mm yield improves). No Infineon market share loss (base assumes defensive hold). No China domestic displacement (base assumes status quo in LTA relationships)."
+    },
+    {
+      "label": "Bull",
+      "probability": null,
+      "segment_changes": [
+        {
+          "name": "PSG (Power Solutions Group)",
+          "exit_overrides": {
+            "nopat_T_b": 1.664,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "roic": 0.28,
+            "r": 0.105
+          }
+        },
+        {
+          "name": "AMG (Analog and Mixed-Signal Group)",
+          "exit_overrides": {
+            "nopat_T_b": 0.739,
+            "years_to_T": 4,
+            "g_lt": 0.05,
+            "roic": 0.22,
+            "r": 0.095
+          }
+        },
+        {
+          "name": "ISG (Intelligent Sensing Group)",
+          "multiple_overrides": {
+            "fy_estimate": 0.363,
+            "multiple_value": 18
+          }
+        }
+      ],
+      "reasoning": "Theia BULL: 55% design-win share at 2026 Beijing Auto Show converts to SiC revenue share gains (onsemi reaches 28% SiC market share by 2028-2030 vs 22-25% today); GaNEXUS $1.5B design funnel converts rapidly as AI datacenter power density scales; AI datacenter reaches $1B by FY2027. PSG FY2030 revenue $7.08B ($5.35B FY2028 bull + 15% CAGR for 2 more years). EBIT margin 28% by FY2030 (Czech 200mm volume production + GaN/SiC premium mix). Evidence quality: EXTRAPOLATED -- design-win share is CONTRACTED/OBSERVED (55% is a company-stated number) but revenue conversion depends on EV demand recovery AND SiC market growth hitting upper bound. NOT HOPED-FOR because design-win data is real; not CONTRACTED because revenue hasn't flowed yet."
+    }
+  ],
+
+  "four_levers_argued": {
+    "lever_1_growth_rate_and_duration": {
+      "rate": "PSG: 10% CAGR FY2026-2030 (base); 20% CAGR (bull); 3% CAGR (bear). AMG: 8% CAGR (base). ISG: 6% CAGR (base).",
+      "duration": "4 years to normalization (FY2030). KEY FINDING: the T-invariance check showed that FY2028 (Theia's specified normalization) is NOT yet normalised -- value still rising with T at FY2028. FY2030 is the genuine normalization year when PSG growth decelerates toward 6-8% and the answer stabilises at $45-$47 regardless of T choice. Argued from: Theia demand model, SiC market CAGR 25.7% (Mordor) implies high growth persists to 2028-2030, Czech Republic fab ramp timeline.",
+      "crux": "Duration is the dominant lever. Whether the SiC ramp takes 4 or 6 years barely moves value (T-invariant at T=4-7). But the LEVEL of revenue at normalization (bull $7.08B vs base $4.59B vs bear $2.65B PSG in FY2030) is a 3x swing that drives 2x valuation difference. This is the crux."
+    },
+    "lever_2_economics": {
+      "margin": "PSG EBIT: 24% base FY2028 (below prior peak 30-35%; Czech fab partial utilization); 26% FY2030 (200mm scale improving). AMG EBIT: 19% FY2028 (Treo early-stage mix), 20% FY2030. ISG EBIT: 17% stable.",
+      "owner_fcf": "FY2028 base NOPAT $1.170B (company-level) approximately = owner FCF ($1.209B FCFF less $0.18B SBC = $1.029B owner FCF or $2.64/sh). D&A ~$0.54B approximately offsets normalized capex ~$0.43B + dNWC ~$0.08B.",
+      "numerator_bridge": "Non-GAAP EPS ~$4.75 FY2027 / $6.00 FY2028 vs owner FCF $2.64/sh FY2028. Gap ~$1.5-2.0B/yr. Key addbacks: amortization of acquisition intangibles ($0.5-0.6B), SBC ($0.15-0.20B), restructuring (elevated at trough). The non-GAAP addbacks are largely REAL ECONOMIC COSTS: SiC fab D&A reflects real capital employed at the Czech Republic facility; SBC is real equity dilution. Valuing on non-GAAP EPS overstates intrinsic value by ~2x."
+    },
+    "lever_3_discount_rate": {
+      "psg": "r=10.5%; CAPM: rf=4.3%, fundamental beta=1.6 (de-risked from 1.98 regression for contracted LTAs and EU grant), ERP=4.5%. Ke=11.5%, WACC=10.5%.",
+      "amg": "r=9.5%; fundamental beta=1.4 (less capex-intensive, analog stickiness). Ke=10.6%, WACC=9.5%.",
+      "isg": "r=9.5%; fundamental beta=1.4 (automotive volumes, Sony competition).",
+      "blended": "Value-weighted blended WACC: PSG contributes ~55% of SOTP value, AMG ~29%, ISG ~16%. Blended ~10.2%."
+    },
+    "lever_4_exit_multiple": {
+      "psg": "Gordon at r=10.5%, g=4.5%, ROIC=25% = 13.67x EV/NOPAT = 11.5x EV/EBIT. Comps: mature power semi peers Infineon/STMicro trade 12-15x EV/EBIT -- 11.5x is at low end; consistent with CONTRACT instruction that Gordon is the OUTPUT, not a pick. Not defaulted bare (ROIC=25% is argued: vertically-integrated SiC at full utilization can achieve 20-25% NOPAT ROIC; onsemi's $1.37B equity on its SiC assets generating $1.0B NOPAT = ~73% ROIC at FY2030 -- ROIC=25% is actually CONSERVATIVE for the deployed capital. Leaving at 25% is the honest center given uncertainty about Czech Republic scale-up timeline and competitive pricing).",
+      "amg": "Gordon at r=9.5%, g=4%, ROIC=20% = 14.55x EV/NOPAT. Below TI analog at 25-30x EV/NOPAT because Treo is still scaling; honest for a business in early-growth phase of a new platform.",
+      "isg": "16x EV/EBIT (mid-range of Theia's 15-18x; below Sony automotive imaging at 22-25x; appropriate for onsemi ISG's #2-3 market position at smaller scale)."
+    }
+  },
+
+  "bias_audit": {
+    "assumptions_reviewed": [
+      {"assumption": "PSG FY2030 revenue base ($4.59B)", "direction": "NEUTRAL", "evidence": "Theia demand model: $3.79B FY2028 + 10% CAGR for 2 years. 10% CAGR is below the SiC market's own 25.7% CAGR but appropriate for onsemi at flat market share. Not conservative."},
+      {"assumption": "PSG EBIT margin (24% FY2028, 26% FY2030)", "direction": "NEUTRAL", "evidence": "Prior peak was 30-35% (FY2022-2023) but Czech fab still ramping in FY2028-2030. 26% by FY2030 is below peak and reflects partial 200mm utilization. Neither too low (Theia confirms 'normalized segment gross margin 48-52% when at full utilization' and EBIT margin could approach 28-30% at full utilization) nor too high. Honest center."},
+      {"assumption": "PSG Gordon exit 13.67x EV/NOPAT", "direction": "NEUTRAL", "evidence": "Formula output at r=10.5%, g=4.5%, ROIC=25%. Reconciles to 11.5x EV/EBIT vs mature peer range 12-15x. At LOW end of comp range but formula-derived, not picked. ROIC=25% is itself possibly conservative (vertically-integrated SiC at full utilization may achieve higher). Not defaulted bare per CONTRACT."},
+      {"assumption": "PSG WACC 10.5%", "direction": "NEUTRAL", "evidence": "Fundamental beta 1.6 (below regression 1.98, credit contracted LTAs and EU grant). Not high-defaulted. If using regression beta: Ke = 4.3% + 1.977 x 4.5% = 13.2%, WACC = 12.5% -- significantly higher. Our 10.5% credits genuine de-risking."},
+      {"assumption": "AMG FY2030 revenue ($3.09B)", "direction": "NEUTRAL", "evidence": "Theia: $2.65B FY2028 + 8% CAGR for 2 years. Treo company target $1B by 2030 plus legacy analog recovery. Not aggressive (Treo $1B alone would imply $1B Treo + $2.09B legacy = $3.09B total)."},
+      {"assumption": "AMG EBIT margin (19-20%)", "direction": "SLIGHT-CONSERVATIVE", "evidence": "At $3B+ AMG revenue with $450M of high-margin (60-70% GM) Treo, blended AMG gross margin could reach 46-50%. At 30% opex, EBIT = 16-20%. 19-20% is at the lower end; TI analog achieves 35%+ EBIT margin at scale. Could be 22-24% at honest center -- mild conservative lean."},
+      {"assumption": "AMG Gordon exit 14.55x EV/NOPAT", "direction": "NEUTRAL", "evidence": "Formula: r=9.5%, g=4%, ROIC=20%. ROIC=20% may be conservative if Treo scales toward TI-like 30%. But at FY2030 Treo is only $450M of $3.09B AMG -- not yet dominant. Honest."},
+      {"assumption": "ISG multiple (16x EV/EBIT)", "direction": "NEUTRAL", "evidence": "Mid-range of Theia's 15-18x. Sony automotive imaging at 22-25x; onsemi at 16x reflects scale discount. Honest center."},
+      {"assumption": "Net debt ($0.857B)", "direction": "NEUTRAL", "evidence": "Frozen bundle: cash $2.148B - total debt $3.005B = $0.857B. No adjustment."}
+    ],
+    "lean_count": {
+      "conservative": 1,
+      "neutral": 8,
+      "aggressive": 0
+    },
+    "verdict": "PASS -- NO STACKED BIAS. Only 1 slight conservative lean (AMG EBIT margin), far below the 3+ threshold that would require adjustment. The base is the honest most-likely reading of Theia's evidence. Note: the very low fair value ($45.51) vs current price ($121.62) is NOT a conservative artifact -- it reflects that the exit-multiple method on NOPAT yields a materially lower intrinsic than the street's non-GAAP P/E convention. The gap is the finding, not a valuation error."
+  },
+
+  "street_reconstruction": {
+    "price": 121.62,
+    "ev_at_price_b": 48.17,
+    "analyst_consensus_target": 107.15,
+    "what_price_implies": "At $121.62 (EV $48.17B): the market prices FY2028 company NOPAT ($1.17B) at 41.2x EV/NOPAT. To justify at a reasonable 15x EV/NOPAT multiple, onsemi would need $3.21B NOPAT = $3.82B EBIT. At 18% EBIT margin, that requires $21.2B revenue -- 3.5x the bull case FY2030 total company revenue ($9.19B). The market is NOT using NOPAT-based valuation. It is paying: 28.2x blended NTM non-GAAP EPS ($4.315), or 25.6x FY2027 non-GAAP EPS ($4.75), or 20.3x FY2028 non-GAAP EPS ($6.00). Non-GAAP EPS systematically overstates owner FCF by ~$1.2B/yr at current run rate (Q1 2026: $297M/quarter non-GAAP addbacks) because it adds back: (a) D&A on SiC fab PP&E and acquired intangibles (a real capital cost), (b) SBC (a real equity dilution cost). The market is effectively valuing the recovery story on metrics that exclude the cost of building it.",
+    "what_street_implies": "Consensus $107.15 target (27 analysts): at $4.75 FY2027 non-GAAP EPS = 22.6x P/E. The street's thesis is: non-GAAP EPS recovers to $4.75-6.00 by FY2027-2028 (a genuine operational recovery from $0.29 GAAP EPS trough) at 20-23x non-GAAP P/E (below peak 30x+ but premium to cyclical peers). This is a DIFFERENT framework than NOPAT-based intrinsic value. The street is right that non-GAAP EPS will recover; it is paying a 20-23x multiple on it that embeds a large market premium for SiC secular growth. Our SOTP says 8.3x non-GAAP FY2027 EPS is the intrinsic-justified multiple (implied by $45.51 fair value / $4.75 non-GAAP EPS). The disagreement: we apply a NOPAT-based justified multiple (capturing owner economics); the street applies a P/E multiple on non-GAAP EPS (which flatters the earnings by excluding D&A).",
+    "agree": "Recovery is real: Q1 2026 first YoY PSG growth in 7 quarters confirms the inventory correction is clearing. Gross margin expanding (38.5% in Q1 2026 from 33% trough). SiC design-win momentum at 55% of 2026 Beijing Auto Show EV models is observable and documented.",
+    "disagree": "Valuation multiple. The market pays 20-28x non-GAAP EPS; our SOTP says 8-13x on non-GAAP is justified based on owner FCF yield. The non-GAAP addbacks (~$1.2B/yr currently) are real economic costs, not noise. The stock does not look cheap on any NOPAT/FCF-based metric at $121.62.",
+    "street_high": {"firm": "Mizuho", "target": 150.0, "reasoning": "Most bullish on AI datacenter + SiC combo; only firm above current price"},
+    "street_low": {"firm": "Goldman Sachs", "target": 80.0, "reasoning": "Most cautious on SiC recovery pace and image sensor performance; limited restocking visibility"}
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "_meta": {
+    "ticker": "ON",
+    "snapshot_id": "ON_2026-06-21T0130Z",
+    "as_of_utc": "2026-06-21T01:30:38Z",
+    "market": "US",
+    "currency": "USD",
+    "adapter": "hermes/us",
+    "sources": [
+      {
+        "name": "yfinance",
+        "fetched_utc": "2026-06-21T01:30:38Z"
+      }
+    ],
+    "gaps": [
+      "SEC fetch failed: HTTPError",
+      "segment revenue: see filing_excerpts (parse the 10-Q segment note); not in structured yfinance data"
+    ]
+  },
+  "profile": {
+    "name": "ON Semiconductor Corporation",
+    "listings": "NMS",
+    "sector": "Technology",
+    "industry": "Semiconductors",
+    "country": "United States",
+    "description": "ON Semiconductor Corporation provides intelligent sensing and power solutions in Hong Kong, Singapore, the United Kingdom, the United States, and internationally. It operates through three segments: Power Solutions Group, Analog and Mixed-Signal Group, and Intelligent Sensing Group. The Power Solutions Group segment offers discrete, module, and integrated semiconductor devices designed to enable power conversion, including power switching, signal conditioning, and circuit protection technologies. Its Analog and Mixed-Signal Group segment designs and develops analog and mixed-signal solutions, including power management, sensor interface, connectivity, and standard products for automotive, industrial automation, AI data centers, computing, and mobile end markets. The Intelligent Sensing Group segment develops complementary metal-oxide-semiconductor image sensors, image signal processors, short-wave infrared sensors, and other products, as well as photon-counting technologies, including single-photon avalanche diode arrays and silicon photomultiplier devices for depth sensing, factory automation, safety systems, and robotics industries. ON Semiconductor Corporation was incorporated in 1992 and is headquartered in Scottsdale, Arizona.",
+    "employees": 22600.0,
+    "business_type_hint": "industrial"
+  },
+  "price": {
+    "current": 121.62000274658203,
+    "currency": "USD",
+    "high_52w": 134.9199981689453,
+    "low_52w": 44.560001373291016,
+    "ma50": 105.59839981079102,
+    "ma200": 68.50739999771118,
+    "ytd_pct": 114.5,
+    "return_1y_pct": 130.25,
+    "beta": 1.977
+  },
+  "market_stats": {
+    "market_cap_b": 47.286,
+    "enterprise_value_b": 48.525,
+    "shares_outstanding_b": 0.389,
+    "net_debt_b": 0.857,
+    "adtv_usd_m": 1630.4,
+    "dividend_per_share": null,
+    "dividend_yield_pct": null
+  },
+  "valuation_multiples": {
+    "pe_ttm": 89.42647,
+    "pe_ntm": 28.184357,
+    "ev_ebitda_ttm": 23.696,
+    "ev_sales_ttm": 8.003,
+    "pb": 6.5271297,
+    "peg": 0.4024
+  },
+  "financials": {
+    "income": [
+      {
+        "fy": "FY2025",
+        "revenue_b": 5.995,
+        "gross_profit_b": 1.984,
+        "ebit_b": 0.751,
+        "ebitda_b": 0.888,
+        "net_income_b": 0.121,
+        "eps": 0.29,
+        "shares_b": 0.412
+      },
+      {
+        "fy": "FY2024",
+        "revenue_b": 7.082,
+        "gross_profit_b": 3.216,
+        "ebit_b": 1.902,
+        "ebitda_b": 2.543,
+        "net_income_b": 1.573,
+        "eps": 3.63,
+        "shares_b": 0.433
+      },
+      {
+        "fy": "FY2023",
+        "revenue_b": 8.253,
+        "gross_profit_b": 3.884,
+        "ebit_b": 2.614,
+        "ebitda_b": 3.22,
+        "net_income_b": 2.184,
+        "eps": 4.89,
+        "shares_b": 0.447
+      },
+      {
+        "fy": "FY2022",
+        "revenue_b": 8.326,
+        "gross_profit_b": 4.077,
+        "ebit_b": 2.765,
+        "ebitda_b": 3.009,
+        "net_income_b": 1.902,
+        "eps": 4.24,
+        "shares_b": 0.448
+      }
+    ],
+    "balance": [
+      {
+        "fy": "FY2025",
+        "cash_b": 2.148,
+        "total_debt_b": 3.005,
+        "total_equity_b": 7.673,
+        "total_assets_b": 12.524
+      },
+      {
+        "fy": "FY2024",
+        "cash_b": 2.691,
+        "total_debt_b": 3.367,
+        "total_equity_b": 8.796,
+        "total_assets_b": 14.09
+      },
+      {
+        "fy": "FY2023",
+        "cash_b": 2.483,
+        "total_debt_b": 3.36,
+        "total_equity_b": 7.783,
+        "total_assets_b": 13.215
+      },
+      {
+        "fy": "FY2022",
+        "cash_b": 2.919,
+        "total_debt_b": 3.231,
+        "total_equity_b": 6.189,
+        "total_assets_b": 11.979
+      }
+    ],
+    "cashflow": [
+      {
+        "fy": "FY2025",
+        "cfo_b": 1.76,
+        "capex_b": 0.341,
+        "fcf_b": 1.419,
+        "dividends_paid_b": null,
+        "buybacks_b": -1.378
+      },
+      {
+        "fy": "FY2024",
+        "cfo_b": 1.906,
+        "capex_b": 0.694,
+        "fcf_b": 1.212,
+        "dividends_paid_b": null,
+        "buybacks_b": -0.654
+      },
+      {
+        "fy": "FY2023",
+        "cfo_b": 1.978,
+        "capex_b": 1.539,
+        "fcf_b": 0.438,
+        "dividends_paid_b": null,
+        "buybacks_b": -0.564
+      },
+      {
+        "fy": "FY2022",
+        "cfo_b": 2.633,
+        "capex_b": 1.036,
+        "fcf_b": 1.597,
+        "dividends_paid_b": null,
+        "buybacks_b": -0.26
+      }
+    ]
+  },
+  "estimates": {
+    "eps_ntm": 4.31516,
+    "target_mean": 107.14815,
+    "target_median": 105.0,
+    "num_analysts": 27.0,
+    "rec_mean": 2.19355,
+    "target_high": 150.0,
+    "target_low": 68.0,
+    "recommendation_key": "buy",
+    "eps_ntm_consensus": 4.31516,
+    "eps_ntm_consensus_period": "+1y"
+  },
+  "peers": [],
+  "segments": [],
+  "filings": [],
+  "earnings_date": "2026-08-03",
+  "news": [
+    {
+      "title": "This Company Could Become the Nvidia of AI Inference",
+      "publisher": "Motley Fool",
+      "url": "https://www.fool.com/investing/2026/06/20/this-company-could-become-the-nvidia-of-ai-inferen/",
+      "date": "2026-06-20T21:20:00Z"
+    },
+    {
+      "title": "Energy Expert: Electric Vehicles Are the ‘Keystone Species’ of the Next Megatrend. Will Tesla’s Stock See Massive Gains?",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/20/energy-expert-electric-vehicles-are-the-keystone-species-of-the-next-megatrend-will-teslas-stock-see-massive-gains/",
+      "date": "2026-06-20T14:41:07Z"
+    },
+    {
+      "title": "ON Semiconductor (ON) Stock Could Be 17% Overvalued After Its Recent Run",
+      "publisher": "Simply Wall St.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/semiconductor-stock-could-17-overvalued-101316663.html",
+      "date": "2026-06-20T10:13:16Z"
+    },
+    {
+      "title": "3 Stocks to Buy Now Before Wall Street Catches On",
+      "publisher": "24/7 Wall St.",
+      "url": "https://247wallst.com/investing/2026/06/19/3-stocks-to-buy-now-before-wall-street-catches-on/",
+      "date": "2026-06-19T17:05:23Z"
+    },
+    {
+      "title": "ON Semiconductor (ON) Launches GaNEXUS Gallium Nitride Power Portfolio for Enhanced Efficiency",
+      "publisher": "Insider Monkey",
+      "url": "https://finance.yahoo.com/technology/articles/semiconductor-launches-ganexus-gallium-nitride-102510380.html",
+      "date": "2026-06-19T10:25:10Z"
+    },
+    {
+      "title": "Power Integrations, Lattice Semiconductor, and onsemi Stocks Trade Up, What You Need To Know",
+      "publisher": "StockStory",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/power-integrations-lattice-semiconductor-onsemi-182928474.html",
+      "date": "2026-06-18T18:29:28Z"
+    }
+  ],
+  "social_sentiment": {
+    "source": "stocktwits",
+    "error": "HTTPError"
+  },
+  "recommendation_trend": {
+    "strongBuy": 1,
+    "buy": 12,
+    "hold": 18,
+    "sell": 0,
+    "strongSell": 0
+  },
+  "holders": {
+    "insider_pct": 0.34,
+    "institutional_pct": 108.98
+  },
+  "quarterly": [
+    {
+      "period": "2026-03-31",
+      "revenue_b": 1.513,
+      "net_income_b": -0.033,
+      "eps": -0.08
+    },
+    {
+      "period": "2025-12-31",
+      "revenue_b": 1.53,
+      "net_income_b": 0.182,
+      "eps": 0.45
+    },
+    {
+      "period": "2025-09-30",
+      "revenue_b": 1.551,
+      "net_income_b": 0.255,
+      "eps": 0.63
+    },
+    {
+      "period": "2025-06-30",
+      "revenue_b": 1.469,
+      "net_income_b": 0.17,
+      "eps": 0.41
+    }
+  ],
+  "ratios": {
+    "gross_margin_pct": 33.1,
+    "ebitda_margin_pct": 14.8,
+    "net_margin_pct": 2.0,
+    "fcf_margin_pct": 23.7,
+    "fcf_conversion": 11.73,
+    "roe_pct": 1.6,
+    "debt_to_equity": 0.39
+  },
+  "edgar": {
+    "gaps": [
+      "no CIK; EDGAR not fetched"
+    ]
+  }
+}
